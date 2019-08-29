@@ -1,0 +1,220 @@
+
+
+/* First created by JCasGen Fri Jul 20 13:34:02 CEST 2018 */
+package org.texttechnologielab.annotation.type;
+
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCasRegistry;
+import org.apache.uima.jcas.cas.TOP_Type;
+
+import org.apache.uima.jcas.cas.AnnotationBase;
+
+
+/**
+ * Updated by JCasGen Wed Aug 28 09:38:42 CEST 2019
+ * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyGeoVizContext.xml
+ *
+ * @generated
+ */
+public class GraphBase extends AnnotationBase {
+    /**
+     * @generated
+     * @ordered
+     */
+    @SuppressWarnings("hiding")
+    public final static int typeIndexID = JCasRegistry.register(GraphBase.class);
+    /**
+     * @generated
+     * @ordered
+     */
+    @SuppressWarnings("hiding")
+    public final static int type = typeIndexID;
+
+    /**
+     * @return index of the type
+     * @generated
+     */
+    @Override
+    public int getTypeIndexID() {
+        return typeIndexID;
+    }
+
+    /**
+     * Never called.  Disable default constructor
+     *
+     * @generated
+     */
+    protected GraphBase() {/* intentionally empty block */}
+
+    /**
+     * Internal - constructor used by generator
+     *
+     * @param addr low level Feature Structure reference
+     * @param type the type of this Feature Structure
+     * @generated
+     */
+    public GraphBase(int addr, TOP_Type type) {
+        super(addr, type);
+        readObject();
+    }
+
+    /**
+     * @param jcas JCas to which this Feature Structure belongs
+     * @generated
+     */
+    public GraphBase(JCas jcas) {
+        super(jcas);
+        readObject();
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * Write your own initialization here
+     * <!-- end-user-doc -->
+     *
+     * @generated modifiable
+     */
+    private void readObject() {/*default - does nothing empty block */}
+
+
+    //*--------------*
+    //* Feature: Id
+
+    /**
+     * getter for Id - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public String getId() {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_Id == null)
+            jcasType.jcas.throwFeatMissing("Id", "org.texttechnologielab.annotation.type.GraphBase");
+        return jcasType.ll_cas.ll_getStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_Id);
+    }
+
+    /**
+     * setter for Id - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setId(String v) {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_Id == null)
+            jcasType.jcas.throwFeatMissing("Id", "org.texttechnologielab.annotation.type.GraphBase");
+        jcasType.ll_cas.ll_setStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_Id, v);
+    }
+
+
+    //*--------------*
+    //* Feature: label
+
+    /**
+     * getter for label - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public String getLabel() {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_label == null)
+            jcasType.jcas.throwFeatMissing("label", "org.texttechnologielab.annotation.type.GraphBase");
+        return jcasType.ll_cas.ll_getStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_label);
+    }
+
+    /**
+     * setter for label - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setLabel(String v) {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_label == null)
+            jcasType.jcas.throwFeatMissing("label", "org.texttechnologielab.annotation.type.GraphBase");
+        jcasType.ll_cas.ll_setStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_label, v);
+    }
+
+
+    //*--------------*
+    //* Feature: create
+
+    /**
+     * getter for create - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public long getCreate() {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_create == null)
+            jcasType.jcas.throwFeatMissing("create", "org.texttechnologielab.annotation.type.GraphBase");
+        return jcasType.ll_cas.ll_getLongValue(addr, ((GraphBase_Type) jcasType).casFeatCode_create);
+    }
+
+    /**
+     * setter for create - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setCreate(long v) {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_create == null)
+            jcasType.jcas.throwFeatMissing("create", "org.texttechnologielab.annotation.type.GraphBase");
+        jcasType.ll_cas.ll_setLongValue(addr, ((GraphBase_Type) jcasType).casFeatCode_create, v);
+    }
+
+
+    //*--------------*
+    //* Feature: modified
+
+    /**
+     * getter for modified - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public long getModified() {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_modified == null)
+            jcasType.jcas.throwFeatMissing("modified", "org.texttechnologielab.annotation.type.GraphBase");
+        return jcasType.ll_cas.ll_getLongValue(addr, ((GraphBase_Type) jcasType).casFeatCode_modified);
+    }
+
+    /**
+     * setter for modified - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setModified(long v) {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_modified == null)
+            jcasType.jcas.throwFeatMissing("modified", "org.texttechnologielab.annotation.type.GraphBase");
+        jcasType.ll_cas.ll_setLongValue(addr, ((GraphBase_Type) jcasType).casFeatCode_modified, v);
+    }
+
+
+    //*--------------*
+    //* Feature: user
+
+    /**
+     * getter for user - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public String getUser() {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_user == null)
+            jcasType.jcas.throwFeatMissing("user", "org.texttechnologielab.annotation.type.GraphBase");
+        return jcasType.ll_cas.ll_getStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_user);
+    }
+
+    /**
+     * setter for user - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setUser(String v) {
+        if (GraphBase_Type.featOkTst && ((GraphBase_Type) jcasType).casFeat_user == null)
+            jcasType.jcas.throwFeatMissing("user", "org.texttechnologielab.annotation.type.GraphBase");
+        jcasType.ll_cas.ll_setStringValue(addr, ((GraphBase_Type) jcasType).casFeatCode_user, v);
+    }
+}
+
+    
