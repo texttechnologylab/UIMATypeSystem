@@ -10,12 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Named entities refer e.g. to persons, locations, organizations and so on. They often consist of multiple tokens.
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- *
- * @generated
- */
+/** Named entities refer e.g. to persons, locations, organizations and so on. They often consist of multiple tokens.
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * @generated */
 public class NamedEntity_Type extends Annotation_Type {
     /**
      * @generated
@@ -45,10 +42,9 @@ public class NamedEntity_Type extends Annotation_Type {
      */
     public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_value);
-    }
-
+      jcas.throwFeatMissing("value", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -56,11 +52,11 @@ public class NamedEntity_Type extends Annotation_Type {
      */
     public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
-        ll_cas.ll_setStringValue(addr, casFeatCode_value, v);
-    }
-
-
+      jcas.throwFeatMissing("value", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
+    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -77,10 +73,9 @@ public class NamedEntity_Type extends Annotation_Type {
      */
     public String getIdentifier(int addr) {
         if (featOkTst && casFeat_identifier == null)
-            jcas.throwFeatMissing("identifier", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_identifier);
-    }
-
+      jcas.throwFeatMissing("identifier", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_identifier);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -88,9 +83,11 @@ public class NamedEntity_Type extends Annotation_Type {
      */
     public void setIdentifier(int addr, String v) {
         if (featOkTst && casFeat_identifier == null)
-            jcas.throwFeatMissing("identifier", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
-        ll_cas.ll_setStringValue(addr, casFeatCode_identifier, v);
-    }
+      jcas.throwFeatMissing("identifier", "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity");
+    ll_cas.ll_setStringValue(addr, casFeatCode_identifier, v);}
+    
+  
+
 
 
     /**
@@ -101,18 +98,18 @@ public class NamedEntity_Type extends Annotation_Type {
      * @generated
      */
     public NamedEntity_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
+    casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
-        casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
-        casFeatCode_value = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_value).getCode();
+ 
+    casFeat_identifier = jcas.getRequiredFeatureDE(casType, "identifier", "uima.cas.String", featOkTst);
+    casFeatCode_identifier  = (null == casFeat_identifier) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_identifier).getCode();
 
-
-        casFeat_identifier = jcas.getRequiredFeatureDE(casType, "identifier", "uima.cas.String", featOkTst);
-        casFeatCode_identifier = (null == casFeat_identifier) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_identifier).getCode();
-
-    }
+  }
 }
 
 

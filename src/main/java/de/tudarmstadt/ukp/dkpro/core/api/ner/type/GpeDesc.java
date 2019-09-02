@@ -8,12 +8,10 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyTypes.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * XML source: /home/ahemati/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * @generated */
 public class GpeDesc extends NamedEntity {
     /**
      * @generated
@@ -33,17 +31,15 @@ public class GpeDesc extends NamedEntity {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected GpeDesc() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -52,18 +48,18 @@ public class GpeDesc extends NamedEntity {
      * @generated
      */
     public GpeDesc(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public GpeDesc(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -72,19 +68,19 @@ public class GpeDesc extends NamedEntity {
      * @generated
      */
     public GpeDesc(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 }

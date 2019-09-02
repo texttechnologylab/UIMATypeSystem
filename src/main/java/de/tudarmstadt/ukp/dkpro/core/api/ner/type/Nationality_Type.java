@@ -7,11 +7,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * @generated */
 public class Nationality_Type extends NamedEntity_Type {
     /**
      * @generated
@@ -34,10 +32,10 @@ public class Nationality_Type extends NamedEntity_Type {
      * @generated
      */
     public Nationality_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
-    }
+  }
 }
 
 

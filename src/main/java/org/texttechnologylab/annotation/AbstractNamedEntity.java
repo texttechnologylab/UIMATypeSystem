@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyTypes.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * XML source: /home/ahemati/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * @generated */
 public class AbstractNamedEntity extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected AbstractNamedEntity() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public AbstractNamedEntity(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public AbstractNamedEntity(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public AbstractNamedEntity(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public String getValue() {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_value);
-    }
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_value);}
+    
     /**
      * setter for value - sets
      *
@@ -112,12 +107,11 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public void setValue(String v) {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        jcasType.ll_cas.ll_setStringValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_value, v);
-    }
-
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_value, v);}    
+   
+    
     //*--------------*
     //* Feature: specific
 
@@ -128,11 +122,10 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public boolean getSpecific() {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_specific == null)
-            jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_specific);
-    }
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_specific == null)
+      jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_specific);}
+    
     /**
      * setter for specific - sets
      *
@@ -140,12 +133,11 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public void setSpecific(boolean v) {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_specific == null)
-            jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_specific, v);
-    }
-
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_specific == null)
+      jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_specific, v);}    
+   
+    
     //*--------------*
     //* Feature: metaphor
 
@@ -156,11 +148,10 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public boolean getMetaphor() {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_metaphor == null)
-            jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_metaphor);
-    }
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_metaphor == null)
+      jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_metaphor);}
+    
     /**
      * setter for metaphor - sets
      *
@@ -168,12 +159,11 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public void setMetaphor(boolean v) {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_metaphor == null)
-            jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_metaphor, v);
-    }
-
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_metaphor == null)
+      jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_metaphor, v);}    
+   
+    
     //*--------------*
     //* Feature: metonym
 
@@ -184,11 +174,10 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public boolean getMetonym() {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_metonym == null)
-            jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_metonym);
-    }
-
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_metonym == null)
+      jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_metonym);}
+    
     /**
      * setter for metonym - sets
      *
@@ -196,10 +185,9 @@ public class AbstractNamedEntity extends Annotation {
      * @generated
      */
     public void setMetonym(boolean v) {
-        if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type) jcasType).casFeat_metonym == null)
-            jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type) jcasType).casFeatCode_metonym, v);
-    }
-}
+    if (AbstractNamedEntity_Type.featOkTst && ((AbstractNamedEntity_Type)jcasType).casFeat_metonym == null)
+      jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((AbstractNamedEntity_Type)jcasType).casFeatCode_metonym, v);}    
+  }
 
     

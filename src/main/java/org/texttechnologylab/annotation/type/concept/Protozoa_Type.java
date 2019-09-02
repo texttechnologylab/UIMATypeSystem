@@ -8,11 +8,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:31 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * @generated */
 public class Protozoa_Type extends AbstractNamedEntity_Type {
     /**
      * @generated
@@ -35,10 +33,10 @@ public class Protozoa_Type extends AbstractNamedEntity_Type {
      * @generated
      */
     public Protozoa_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
-    }
+  }
 }
 
 

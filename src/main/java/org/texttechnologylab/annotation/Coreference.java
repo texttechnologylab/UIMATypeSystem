@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyTypes.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * XML source: /home/ahemati/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * @generated */
 public class Coreference extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class Coreference extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected Coreference() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class Coreference extends Annotation {
      * @generated
      */
     public Coreference(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public Coreference(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class Coreference extends Annotation {
      * @generated
      */
     public Coreference(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class Coreference extends Annotation {
      * @generated
      */
     public Coreference getLink() {
-        if (Coreference_Type.featOkTst && ((Coreference_Type) jcasType).casFeat_link == null)
-            jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
-        return (Coreference) (jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Coreference_Type) jcasType).casFeatCode_link)));
-    }
-
+    if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    return (Coreference)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link)));}
+    
     /**
      * setter for link - sets
      *
@@ -112,10 +107,9 @@ public class Coreference extends Annotation {
      * @generated
      */
     public void setLink(Coreference v) {
-        if (Coreference_Type.featOkTst && ((Coreference_Type) jcasType).casFeat_link == null)
-            jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
-        jcasType.ll_cas.ll_setRefValue(addr, ((Coreference_Type) jcasType).casFeatCode_link, jcasType.ll_cas.ll_getFSRef(v));
-    }
-}
+    if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link, jcasType.ll_cas.ll_getFSRef(v));}    
+  }
 
     

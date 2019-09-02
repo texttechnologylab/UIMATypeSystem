@@ -8,12 +8,10 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyTypes.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * XML source: /home/ahemati/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * @generated */
 public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity {
     /**
      * @generated
@@ -33,17 +31,15 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected NamedEntity() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -52,18 +48,18 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public NamedEntity(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public NamedEntity(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -72,19 +68,19 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public NamedEntity(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
     //*--------------*
@@ -97,11 +93,10 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public boolean getMetaphor() {
-        if (NamedEntity_Type.featOkTst && ((NamedEntity_Type) jcasType).casFeat_metaphor == null)
-            jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.NamedEntity");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((NamedEntity_Type) jcasType).casFeatCode_metaphor);
-    }
-
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_metaphor == null)
+      jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.NamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_metaphor);}
+    
     /**
      * setter for metaphor - sets
      *
@@ -109,12 +104,11 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public void setMetaphor(boolean v) {
-        if (NamedEntity_Type.featOkTst && ((NamedEntity_Type) jcasType).casFeat_metaphor == null)
-            jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.NamedEntity");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type) jcasType).casFeatCode_metaphor, v);
-    }
-
-
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_metaphor == null)
+      jcasType.jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.NamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_metaphor, v);}    
+   
+    
     //*--------------*
     //* Feature: metonym
 
@@ -125,11 +119,10 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public boolean getMetonym() {
-        if (NamedEntity_Type.featOkTst && ((NamedEntity_Type) jcasType).casFeat_metonym == null)
-            jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.NamedEntity");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((NamedEntity_Type) jcasType).casFeatCode_metonym);
-    }
-
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_metonym == null)
+      jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.NamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_metonym);}
+    
     /**
      * setter for metonym - sets
      *
@@ -137,10 +130,9 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
      * @generated
      */
     public void setMetonym(boolean v) {
-        if (NamedEntity_Type.featOkTst && ((NamedEntity_Type) jcasType).casFeat_metonym == null)
-            jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.NamedEntity");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type) jcasType).casFeatCode_metonym, v);
-    }
-}
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_metonym == null)
+      jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.NamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_metonym, v);}    
+  }
 
     

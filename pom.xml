@@ -54,17 +54,7 @@
         </dependency>
         <dependency>
             <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.languagetool-asl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.tokit-asl</artifactId>
+            <artifactId>de.tudarmstadt.ukp.dkpro.core.api.metadata-asl</artifactId>
             <version>1.10.0</version>
         </dependency>
     </dependencies>

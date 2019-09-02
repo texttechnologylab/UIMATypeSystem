@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * @generated */
 public class Coreference_Type extends Annotation_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class Coreference_Type extends Annotation_Type {
      */
     public int getLink(int addr) {
         if (featOkTst && casFeat_link == null)
-            jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
-        return ll_cas.ll_getRefValue(addr, casFeatCode_link);
-    }
-
+      jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_link);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,9 +52,11 @@ public class Coreference_Type extends Annotation_Type {
      */
     public void setLink(int addr, int v) {
         if (featOkTst && casFeat_link == null)
-            jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
-        ll_cas.ll_setRefValue(addr, casFeatCode_link, v);
-    }
+      jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    ll_cas.ll_setRefValue(addr, casFeatCode_link, v);}
+    
+  
+
 
 
     /**
@@ -68,14 +67,14 @@ public class Coreference_Type extends Annotation_Type {
      * @generated
      */
     public Coreference_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_link = jcas.getRequiredFeatureDE(casType, "link", "org.texttechnologylab.annotation.Coreference", featOkTst);
+    casFeatCode_link  = (null == casFeat_link) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_link).getCode();
 
-        casFeat_link = jcas.getRequiredFeatureDE(casType, "link", "org.texttechnologylab.annotation.Coreference", featOkTst);
-        casFeatCode_link = (null == casFeat_link) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_link).getCode();
-
-    }
+  }
 }
 
 

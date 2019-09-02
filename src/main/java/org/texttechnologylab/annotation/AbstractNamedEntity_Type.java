@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:34:30 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * @generated */
 public class AbstractNamedEntity_Type extends Annotation_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_value);
-    }
-
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,11 +52,11 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        ll_cas.ll_setStringValue(addr, casFeatCode_value, v);
-    }
-
-
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -76,10 +73,9 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public boolean getSpecific(int addr) {
         if (featOkTst && casFeat_specific == null)
-            jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return ll_cas.ll_getBooleanValue(addr, casFeatCode_specific);
-    }
-
+      jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return ll_cas.ll_getBooleanValue(addr, casFeatCode_specific);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -87,11 +83,11 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public void setSpecific(int addr, boolean v) {
         if (featOkTst && casFeat_specific == null)
-            jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        ll_cas.ll_setBooleanValue(addr, casFeatCode_specific, v);
-    }
-
-
+      jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    ll_cas.ll_setBooleanValue(addr, casFeatCode_specific, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -108,10 +104,9 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public boolean getMetaphor(int addr) {
         if (featOkTst && casFeat_metaphor == null)
-            jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return ll_cas.ll_getBooleanValue(addr, casFeatCode_metaphor);
-    }
-
+      jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return ll_cas.ll_getBooleanValue(addr, casFeatCode_metaphor);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -119,11 +114,11 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public void setMetaphor(int addr, boolean v) {
         if (featOkTst && casFeat_metaphor == null)
-            jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        ll_cas.ll_setBooleanValue(addr, casFeatCode_metaphor, v);
-    }
-
-
+      jcas.throwFeatMissing("metaphor", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    ll_cas.ll_setBooleanValue(addr, casFeatCode_metaphor, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -140,10 +135,9 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public boolean getMetonym(int addr) {
         if (featOkTst && casFeat_metonym == null)
-            jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        return ll_cas.ll_getBooleanValue(addr, casFeatCode_metonym);
-    }
-
+      jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    return ll_cas.ll_getBooleanValue(addr, casFeatCode_metonym);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -151,9 +145,11 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      */
     public void setMetonym(int addr, boolean v) {
         if (featOkTst && casFeat_metonym == null)
-            jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
-        ll_cas.ll_setBooleanValue(addr, casFeatCode_metonym, v);
-    }
+      jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.AbstractNamedEntity");
+    ll_cas.ll_setBooleanValue(addr, casFeatCode_metonym, v);}
+    
+  
+
 
 
     /**
@@ -164,26 +160,26 @@ public class AbstractNamedEntity_Type extends Annotation_Type {
      * @generated
      */
     public AbstractNamedEntity_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
+    casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
-        casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
-        casFeatCode_value = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_value).getCode();
+ 
+    casFeat_specific = jcas.getRequiredFeatureDE(casType, "specific", "uima.cas.Boolean", featOkTst);
+    casFeatCode_specific  = (null == casFeat_specific) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_specific).getCode();
 
+ 
+    casFeat_metaphor = jcas.getRequiredFeatureDE(casType, "metaphor", "uima.cas.Boolean", featOkTst);
+    casFeatCode_metaphor  = (null == casFeat_metaphor) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_metaphor).getCode();
 
-        casFeat_specific = jcas.getRequiredFeatureDE(casType, "specific", "uima.cas.Boolean", featOkTst);
-        casFeatCode_specific = (null == casFeat_specific) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_specific).getCode();
+ 
+    casFeat_metonym = jcas.getRequiredFeatureDE(casType, "metonym", "uima.cas.Boolean", featOkTst);
+    casFeatCode_metonym  = (null == casFeat_metonym) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_metonym).getCode();
 
-
-        casFeat_metaphor = jcas.getRequiredFeatureDE(casType, "metaphor", "uima.cas.Boolean", featOkTst);
-        casFeatCode_metaphor = (null == casFeat_metaphor) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_metaphor).getCode();
-
-
-        casFeat_metonym = jcas.getRequiredFeatureDE(casType, "metonym", "uima.cas.Boolean", featOkTst);
-        casFeatCode_metonym = (null == casFeat_metonym) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_metonym).getCode();
-
-    }
+  }
 }
 
 
