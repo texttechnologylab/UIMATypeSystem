@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Tue Aug 20 15:31:23 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Tue Sep 03 15:37:35 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
+ * @generated */
 public class Agreement extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class Agreement extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected Agreement() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class Agreement extends Annotation {
      * @generated
      */
     public Agreement(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public Agreement(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class Agreement extends Annotation {
      * @generated
      */
     public Agreement(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class Agreement extends Annotation {
      * @generated
      */
     public double getAgreementValue() {
-        if (Agreement_Type.featOkTst && ((Agreement_Type) jcasType).casFeat_agreementValue == null)
-            jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
-        return jcasType.ll_cas.ll_getDoubleValue(addr, ((Agreement_Type) jcasType).casFeatCode_agreementValue);
-    }
-
+    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementValue == null)
+      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementValue);}
+    
     /**
      * setter for agreementValue - sets
      *
@@ -112,12 +107,11 @@ public class Agreement extends Annotation {
      * @generated
      */
     public void setAgreementValue(double v) {
-        if (Agreement_Type.featOkTst && ((Agreement_Type) jcasType).casFeat_agreementValue == null)
-            jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
-        jcasType.ll_cas.ll_setDoubleValue(addr, ((Agreement_Type) jcasType).casFeatCode_agreementValue, v);
-    }
-
-
+    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementValue == null)
+      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementValue, v);}    
+   
+    
     //*--------------*
     //* Feature: agreementMeasure
 
@@ -128,11 +122,10 @@ public class Agreement extends Annotation {
      * @generated
      */
     public String getAgreementMeasure() {
-        if (Agreement_Type.featOkTst && ((Agreement_Type) jcasType).casFeat_agreementMeasure == null)
-            jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((Agreement_Type) jcasType).casFeatCode_agreementMeasure);
-    }
-
+    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementMeasure == null)
+      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementMeasure);}
+    
     /**
      * setter for agreementMeasure - sets
      *
@@ -140,10 +133,9 @@ public class Agreement extends Annotation {
      * @generated
      */
     public void setAgreementMeasure(String v) {
-        if (Agreement_Type.featOkTst && ((Agreement_Type) jcasType).casFeat_agreementMeasure == null)
-            jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
-        jcasType.ll_cas.ll_setStringValue(addr, ((Agreement_Type) jcasType).casFeatCode_agreementMeasure, v);
-    }
-}
+    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementMeasure == null)
+      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementMeasure, v);}    
+  }
 
     
