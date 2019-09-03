@@ -22,5 +22,28 @@
                 </featureDescription>
             </features>
         </typeDescription>
-    </types>
+    <typeDescription>
+      <name>org.texttechnologylab.iaa.AgreementContainer</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>overallAgreementValue</name>
+          <description>The overall agreement for the entire document.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>categorySpecificAgreementValues</name>
+          <description>An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>agreementMeasure</name>
+          <description>The agreement measure used to compute the values.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
 </typeSystemDescription>
