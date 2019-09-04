@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class FinishAnnotation_Type extends DocumentMetaData_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public String getUser(int addr) {
         if (featOkTst && casFeat_user == null)
-            jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_user);
-    }
-
+      jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_user);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,11 +52,11 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public void setUser(int addr, String v) {
         if (featOkTst && casFeat_user == null)
-            jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        ll_cas.ll_setStringValue(addr, casFeatCode_user, v);
-    }
-
-
+      jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    ll_cas.ll_setStringValue(addr, casFeatCode_user, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -76,10 +73,9 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public String getComment(int addr) {
         if (featOkTst && casFeat_comment == null)
-            jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_comment);
-    }
-
+      jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_comment);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -87,11 +83,11 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public void setComment(int addr, String v) {
         if (featOkTst && casFeat_comment == null)
-            jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        ll_cas.ll_setStringValue(addr, casFeatCode_comment, v);
-    }
-
-
+      jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    ll_cas.ll_setStringValue(addr, casFeatCode_comment, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -108,10 +104,9 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public String getTool(int addr) {
         if (featOkTst && casFeat_tool == null)
-            jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_tool);
-    }
-
+      jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_tool);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -119,9 +114,11 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      */
     public void setTool(int addr, String v) {
         if (featOkTst && casFeat_tool == null)
-            jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        ll_cas.ll_setStringValue(addr, casFeatCode_tool, v);
-    }
+      jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    ll_cas.ll_setStringValue(addr, casFeatCode_tool, v);}
+    
+  
+
 
 
     /**
@@ -132,22 +129,22 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
      * @generated
      */
     public FinishAnnotation_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_user = jcas.getRequiredFeatureDE(casType, "user", "uima.cas.String", featOkTst);
+    casFeatCode_user  = (null == casFeat_user) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_user).getCode();
 
-        casFeat_user = jcas.getRequiredFeatureDE(casType, "user", "uima.cas.String", featOkTst);
-        casFeatCode_user = (null == casFeat_user) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_user).getCode();
+ 
+    casFeat_comment = jcas.getRequiredFeatureDE(casType, "comment", "uima.cas.String", featOkTst);
+    casFeatCode_comment  = (null == casFeat_comment) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_comment).getCode();
 
+ 
+    casFeat_tool = jcas.getRequiredFeatureDE(casType, "tool", "uima.cas.String", featOkTst);
+    casFeatCode_tool  = (null == casFeat_tool) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_tool).getCode();
 
-        casFeat_comment = jcas.getRequiredFeatureDE(casType, "comment", "uima.cas.String", featOkTst);
-        casFeatCode_comment = (null == casFeat_comment) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_comment).getCode();
-
-
-        casFeat_tool = jcas.getRequiredFeatureDE(casType, "tool", "uima.cas.String", featOkTst);
-        casFeatCode_tool = (null == casFeat_tool) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_tool).getCode();
-
-    }
+  }
 }
 
 

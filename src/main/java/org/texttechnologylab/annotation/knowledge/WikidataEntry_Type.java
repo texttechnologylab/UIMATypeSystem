@@ -9,11 +9,9 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class WikidataEntry_Type extends KnowledgeEntry_Type {
     /**
      * @generated
@@ -43,10 +41,9 @@ public class WikidataEntry_Type extends KnowledgeEntry_Type {
      */
     public int getP31(int addr) {
         if (featOkTst && casFeat_P31 == null)
-            jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        return ll_cas.ll_getRefValue(addr, casFeatCode_P31);
-    }
-
+      jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_P31);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -54,11 +51,11 @@ public class WikidataEntry_Type extends KnowledgeEntry_Type {
      */
     public void setP31(int addr, int v) {
         if (featOkTst && casFeat_P31 == null)
-            jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        ll_cas.ll_setRefValue(addr, casFeatCode_P31, v);
-    }
-
-
+      jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    ll_cas.ll_setRefValue(addr, casFeatCode_P31, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -75,10 +72,9 @@ public class WikidataEntry_Type extends KnowledgeEntry_Type {
      */
     public int getP279(int addr) {
         if (featOkTst && casFeat_P279 == null)
-            jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        return ll_cas.ll_getRefValue(addr, casFeatCode_P279);
-    }
-
+      jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_P279);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -86,9 +82,11 @@ public class WikidataEntry_Type extends KnowledgeEntry_Type {
      */
     public void setP279(int addr, int v) {
         if (featOkTst && casFeat_P279 == null)
-            jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        ll_cas.ll_setRefValue(addr, casFeatCode_P279, v);
-    }
+      jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    ll_cas.ll_setRefValue(addr, casFeatCode_P279, v);}
+    
+  
+
 
 
     /**
@@ -99,18 +97,18 @@ public class WikidataEntry_Type extends KnowledgeEntry_Type {
      * @generated
      */
     public WikidataEntry_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_P31 = jcas.getRequiredFeatureDE(casType, "P31", "uima.cas.StringList", featOkTst);
+    casFeatCode_P31  = (null == casFeat_P31) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_P31).getCode();
 
-        casFeat_P31 = jcas.getRequiredFeatureDE(casType, "P31", "uima.cas.StringList", featOkTst);
-        casFeatCode_P31 = (null == casFeat_P31) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_P31).getCode();
+ 
+    casFeat_P279 = jcas.getRequiredFeatureDE(casType, "P279", "uima.cas.StringList", featOkTst);
+    casFeatCode_P279  = (null == casFeat_P279) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_P279).getCode();
 
-
-        casFeat_P279 = jcas.getRequiredFeatureDE(casType, "P279", "uima.cas.StringList", featOkTst);
-        casFeatCode_P279 = (null == casFeat_P279) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_P279).getCode();
-
-    }
+  }
 }
 
 

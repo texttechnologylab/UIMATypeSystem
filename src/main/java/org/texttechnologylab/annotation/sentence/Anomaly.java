@@ -8,12 +8,10 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly {
     /**
      * @generated
@@ -33,17 +31,15 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected Anomaly() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -52,18 +48,18 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
      * @generated
      */
     public Anomaly(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public Anomaly(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -72,19 +68,19 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
      * @generated
      */
     public Anomaly(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -98,11 +94,10 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
      * @generated
      */
     public String getValue() {
-        if (Anomaly_Type.featOkTst && ((Anomaly_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((Anomaly_Type) jcasType).casFeatCode_value);
-    }
-
+    if (Anomaly_Type.featOkTst && ((Anomaly_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Anomaly_Type)jcasType).casFeatCode_value);}
+    
     /**
      * setter for value - sets
      *
@@ -110,10 +105,9 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
      * @generated
      */
     public void setValue(String v) {
-        if (Anomaly_Type.featOkTst && ((Anomaly_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
-        jcasType.ll_cas.ll_setStringValue(addr, ((Anomaly_Type) jcasType).casFeatCode_value, v);
-    }
-}
+    if (Anomaly_Type.featOkTst && ((Anomaly_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Anomaly_Type)jcasType).casFeatCode_value, v);}    
+  }
 
     

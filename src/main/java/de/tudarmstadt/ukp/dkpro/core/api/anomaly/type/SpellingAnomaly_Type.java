@@ -7,11 +7,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class SpellingAnomaly_Type extends Anomaly_Type {
     /**
      * @generated
@@ -34,10 +32,10 @@ public class SpellingAnomaly_Type extends Anomaly_Type {
      * @generated
      */
     public SpellingAnomaly_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
-    }
+  }
 }
 
 

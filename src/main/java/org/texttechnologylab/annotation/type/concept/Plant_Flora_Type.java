@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
 /** 
- * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
  * @generated */
 public class Plant_Flora_Type extends AbstractNamedEntity_Type {
     /**

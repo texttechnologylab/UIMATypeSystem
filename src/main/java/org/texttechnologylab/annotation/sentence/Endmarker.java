@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class Endmarker extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class Endmarker extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected Endmarker() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class Endmarker extends Annotation {
      * @generated
      */
     public Endmarker(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public Endmarker(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class Endmarker extends Annotation {
      * @generated
      */
     public Endmarker(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
     //*--------------*
@@ -99,11 +95,10 @@ public class Endmarker extends Annotation {
      * @generated
      */
     public String getValue() {
-        if (Endmarker_Type.featOkTst && ((Endmarker_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Endmarker");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((Endmarker_Type) jcasType).casFeatCode_value);
-    }
-
+    if (Endmarker_Type.featOkTst && ((Endmarker_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Endmarker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Endmarker_Type)jcasType).casFeatCode_value);}
+    
     /**
      * setter for value - sets
      *
@@ -111,10 +106,9 @@ public class Endmarker extends Annotation {
      * @generated
      */
     public void setValue(String v) {
-        if (Endmarker_Type.featOkTst && ((Endmarker_Type) jcasType).casFeat_value == null)
-            jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Endmarker");
-        jcasType.ll_cas.ll_setStringValue(addr, ((Endmarker_Type) jcasType).casFeatCode_value, v);
-    }
-}
+    if (Endmarker_Type.featOkTst && ((Endmarker_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Endmarker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Endmarker_Type)jcasType).casFeatCode_value, v);}    
+  }
 
     
