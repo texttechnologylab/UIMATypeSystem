@@ -10,43 +10,40 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.DocumentAnnotation;
 
 
-/**
- * <p>The DocumentMetaData annotation stores information about a single processed
- * document. There can only be one of these annotations per CAS. The annotation is
- * created by readers and contains information to uniquely identify the document from
- * which a CAS was created. Writer components use this information when determining
- * under which filename a CAS is stored.<p>
- *
- * <p>There are two principle ways of identifying a document:<p>
- *
- * <ul>
- * <li><b>collection id / document id:</b> this simple system identifies a document
- * within a collection. The ID of the collection and the document are each
- * simple strings without any further semantics such as e.g. a hierarchy. For
- * this reason, this identification scheme is not well suited to preserve
- * information about directory structures.</li>
- *
- * <li><b>document base URI / document URI:</b> this system identifies a document using
- * a URI. The base URI is used to derive the relative path of the document with
- * respect to the base location from where it has been read. E.g. if the base
- * URI is <code>file:/texts</code> and the document URI is <code>file:/texts/english/text1.txt</code>, then the relativ
- * path of the document is <code>english/text1.txt</code>. This
- * information is used by writers to recreate the directory structure found
- * under the base location in the target location.</li>
- * </ul>
- *
- * <p>It is possible and indeed common for a writer to initialize both systems of
- * identification. If both systems are present, most writers default to using the
- * URI-based systems. However, most writers also allow forcing the use of the ID-based
- * systems.</p>
- *
- * <p>In addition to the features given here, there is a <i>language</i> feature inherited from UIMA's DocumentAnnotation. DKPro Core components expect a two letter ISO
- * 639-1 language code there.</p>
- * Updated by JCasGen Tue Jul 16 18:23:50 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
- *
- * @generated
- */
+/** <p>The DocumentMetaData annotation stores information about a single processed
+document. There can only be one of these annotations per CAS. The annotation is
+created by readers and contains information to uniquely identify the document from
+which a CAS was created. Writer components use this information when determining
+under which filename a CAS is stored.<p>
+
+<p>There are two principle ways of identifying a document:<p>
+
+<ul>
+<li><b>collection id / document id:</b> this simple system identifies a document
+  within a collection. The ID of the collection and the document are each
+  simple strings without any further semantics such as e.g. a hierarchy. For
+  this reason, this identification scheme is not well suited to preserve
+  information about directory structures.</li>
+
+<li><b>document base URI / document URI:</b> this system identifies a document using
+  a URI. The base URI is used to derive the relative path of the document with
+  respect to the base location from where it has been read. E.g. if the base
+  URI is <code>file:/texts</code> and the document URI is <code>file:/texts/english/text1.txt</code>, then the relativ
+  path of the document is <code>english/text1.txt</code>. This
+  information is used by writers to recreate the directory structure found
+  under the base location in the target location.</li>
+</ul>
+
+<p>It is possible and indeed common for a writer to initialize both systems of
+identification. If both systems are present, most writers default to using the
+URI-based systems. However, most writers also allow forcing the use of the ID-based
+systems.</p>
+
+<p>In addition to the features given here, there is a <i>language</i> feature inherited from UIMA's DocumentAnnotation. DKPro Core components expect a two letter ISO
+639-1 language code there.</p>
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class DocumentMetaData extends DocumentAnnotation {
     /**
      * @generated
@@ -66,17 +63,15 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected DocumentMetaData() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -85,18 +80,18 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public DocumentMetaData(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public DocumentMetaData(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -105,19 +100,19 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public DocumentMetaData(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -131,11 +126,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public String getDocumentTitle() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentTitle == null)
-            jcasType.jcas.throwFeatMissing("documentTitle", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentTitle);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentTitle == null)
+      jcasType.jcas.throwFeatMissing("documentTitle", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentTitle);}
+    
     /**
      * setter for documentTitle - sets The human readable title of the document.
      *
@@ -143,12 +137,11 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setDocumentTitle(String v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentTitle == null)
-            jcasType.jcas.throwFeatMissing("documentTitle", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentTitle, v);
-    }
-
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentTitle == null)
+      jcasType.jcas.throwFeatMissing("documentTitle", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentTitle, v);}    
+   
+    
     //*--------------*
     //* Feature: documentId
 
@@ -159,11 +152,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public String getDocumentId() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentId == null)
-            jcasType.jcas.throwFeatMissing("documentId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentId);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentId == null)
+      jcasType.jcas.throwFeatMissing("documentId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentId);}
+    
     /**
      * setter for documentId - sets The id of the document.
      *
@@ -171,12 +163,11 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setDocumentId(String v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentId == null)
-            jcasType.jcas.throwFeatMissing("documentId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentId, v);
-    }
-
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentId == null)
+      jcasType.jcas.throwFeatMissing("documentId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentId, v);}    
+   
+    
     //*--------------*
     //* Feature: documentUri
 
@@ -187,11 +178,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public String getDocumentUri() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentUri == null)
-            jcasType.jcas.throwFeatMissing("documentUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentUri);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentUri == null)
+      jcasType.jcas.throwFeatMissing("documentUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentUri);}
+    
     /**
      * setter for documentUri - sets The URI of the document.
      *
@@ -199,12 +189,11 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setDocumentUri(String v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentUri == null)
-            jcasType.jcas.throwFeatMissing("documentUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentUri, v);
-    }
-
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentUri == null)
+      jcasType.jcas.throwFeatMissing("documentUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentUri, v);}    
+   
+    
     //*--------------*
     //* Feature: collectionId
 
@@ -215,11 +204,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public String getCollectionId() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_collectionId == null)
-            jcasType.jcas.throwFeatMissing("collectionId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_collectionId);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_collectionId == null)
+      jcasType.jcas.throwFeatMissing("collectionId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_collectionId);}
+    
     /**
      * setter for collectionId - sets The ID of the whole document collection.
      *
@@ -227,12 +215,11 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setCollectionId(String v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_collectionId == null)
-            jcasType.jcas.throwFeatMissing("collectionId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_collectionId, v);
-    }
-
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_collectionId == null)
+      jcasType.jcas.throwFeatMissing("collectionId", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_collectionId, v);}    
+   
+    
     //*--------------*
     //* Feature: documentBaseUri
 
@@ -243,11 +230,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public String getDocumentBaseUri() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentBaseUri == null)
-            jcasType.jcas.throwFeatMissing("documentBaseUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentBaseUri);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentBaseUri == null)
+      jcasType.jcas.throwFeatMissing("documentBaseUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentBaseUri);}
+    
     /**
      * setter for documentBaseUri - sets Base URI of the document.
      *
@@ -255,12 +241,11 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setDocumentBaseUri(String v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_documentBaseUri == null)
-            jcasType.jcas.throwFeatMissing("documentBaseUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_documentBaseUri, v);
-    }
-
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_documentBaseUri == null)
+      jcasType.jcas.throwFeatMissing("documentBaseUri", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_documentBaseUri, v);}    
+   
+    
     //*--------------*
     //* Feature: isLastSegment
 
@@ -274,11 +259,10 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public boolean getIsLastSegment() {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_isLastSegment == null)
-            jcasType.jcas.throwFeatMissing("isLastSegment", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        return jcasType.ll_cas.ll_getBooleanValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_isLastSegment);
-    }
-
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_isLastSegment == null)
+      jcasType.jcas.throwFeatMissing("isLastSegment", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_isLastSegment);}
+    
     /**
      * setter for isLastSegment - sets CAS de-multipliers need to know whether a CAS is the
      * last multiplied segment.
@@ -289,10 +273,9 @@ public class DocumentMetaData extends DocumentAnnotation {
      * @generated
      */
     public void setIsLastSegment(boolean v) {
-        if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type) jcasType).casFeat_isLastSegment == null)
-            jcasType.jcas.throwFeatMissing("isLastSegment", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
-        jcasType.ll_cas.ll_setBooleanValue(addr, ((DocumentMetaData_Type) jcasType).casFeatCode_isLastSegment, v);
-    }
-}
+    if (DocumentMetaData_Type.featOkTst && ((DocumentMetaData_Type)jcasType).casFeat_isLastSegment == null)
+      jcasType.jcas.throwFeatMissing("isLastSegment", "de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_isLastSegment, v);}    
+  }
 
     

@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class FinishAnnotation extends DocumentMetaData {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected FinishAnnotation() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public FinishAnnotation(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public FinishAnnotation(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public FinishAnnotation(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public String getUser() {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_user == null)
-            jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_user);
-    }
-
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_user);}
+    
     /**
      * setter for user - sets
      *
@@ -112,12 +107,11 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public void setUser(String v) {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_user == null)
-            jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_user, v);
-    }
-
-
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_user, v);}    
+   
+    
     //*--------------*
     //* Feature: comment
 
@@ -128,11 +122,10 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public String getComment() {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_comment == null)
-            jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_comment);
-    }
-
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_comment);}
+    
     /**
      * setter for comment - sets
      *
@@ -140,12 +133,11 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public void setComment(String v) {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_comment == null)
-            jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_comment, v);
-    }
-
-
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_comment, v);}    
+   
+    
     //*--------------*
     //* Feature: tool
 
@@ -156,11 +148,10 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public String getTool() {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_tool == null)
-            jcasType.jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_tool);
-    }
-
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_tool == null)
+      jcasType.jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_tool);}
+    
     /**
      * setter for tool - sets
      *
@@ -168,10 +159,9 @@ public class FinishAnnotation extends DocumentMetaData {
      * @generated
      */
     public void setTool(String v) {
-        if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type) jcasType).casFeat_tool == null)
-            jcasType.jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
-        jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type) jcasType).casFeatCode_tool, v);
-    }
-}
+    if (FinishAnnotation_Type.featOkTst && ((FinishAnnotation_Type)jcasType).casFeat_tool == null)
+      jcasType.jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((FinishAnnotation_Type)jcasType).casFeatCode_tool, v);}    
+  }
 
     

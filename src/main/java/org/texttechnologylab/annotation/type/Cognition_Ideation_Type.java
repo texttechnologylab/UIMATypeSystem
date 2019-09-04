@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** 
- * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
  * @generated */
 public class Cognition_Ideation_Type extends NamedEntity_Type {
     /**

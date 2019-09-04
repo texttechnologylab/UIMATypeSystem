@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class KnowledgeEntry_Type extends Annotation_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class KnowledgeEntry_Type extends Annotation_Type {
      */
     public String getUri(int addr) {
         if (featOkTst && casFeat_uri == null)
-            jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_uri);
-    }
-
+      jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_uri);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,11 +52,11 @@ public class KnowledgeEntry_Type extends Annotation_Type {
      */
     public void setUri(int addr, String v) {
         if (featOkTst && casFeat_uri == null)
-            jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        ll_cas.ll_setStringValue(addr, casFeatCode_uri, v);
-    }
-
-
+      jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    ll_cas.ll_setStringValue(addr, casFeatCode_uri, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -76,10 +73,9 @@ public class KnowledgeEntry_Type extends Annotation_Type {
      */
     public String getSource(int addr) {
         if (featOkTst && casFeat_source == null)
-            jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_source);
-    }
-
+      jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_source);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -87,9 +83,11 @@ public class KnowledgeEntry_Type extends Annotation_Type {
      */
     public void setSource(int addr, String v) {
         if (featOkTst && casFeat_source == null)
-            jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        ll_cas.ll_setStringValue(addr, casFeatCode_source, v);
-    }
+      jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    ll_cas.ll_setStringValue(addr, casFeatCode_source, v);}
+    
+  
+
 
 
     /**
@@ -100,18 +98,18 @@ public class KnowledgeEntry_Type extends Annotation_Type {
      * @generated
      */
     public KnowledgeEntry_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_uri = jcas.getRequiredFeatureDE(casType, "uri", "uima.cas.String", featOkTst);
+    casFeatCode_uri  = (null == casFeat_uri) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_uri).getCode();
 
-        casFeat_uri = jcas.getRequiredFeatureDE(casType, "uri", "uima.cas.String", featOkTst);
-        casFeatCode_uri = (null == casFeat_uri) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_uri).getCode();
+ 
+    casFeat_source = jcas.getRequiredFeatureDE(casType, "source", "uima.cas.String", featOkTst);
+    casFeatCode_source  = (null == casFeat_source) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_source).getCode();
 
-
-        casFeat_source = jcas.getRequiredFeatureDE(casType, "source", "uima.cas.String", featOkTst);
-        casFeatCode_source = (null == casFeat_source) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_source).getCode();
-
-    }
+  }
 }
 
 

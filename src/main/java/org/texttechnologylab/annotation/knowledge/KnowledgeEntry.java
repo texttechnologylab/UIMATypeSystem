@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class KnowledgeEntry extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected KnowledgeEntry() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public KnowledgeEntry(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public KnowledgeEntry(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public KnowledgeEntry(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public String getUri() {
-        if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type) jcasType).casFeat_uri == null)
-            jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type) jcasType).casFeatCode_uri);
-    }
-
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_uri);}
+    
     /**
      * setter for uri - sets
      *
@@ -112,12 +107,11 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public void setUri(String v) {
-        if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type) jcasType).casFeat_uri == null)
-            jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type) jcasType).casFeatCode_uri, v);
-    }
-
-
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_uri, v);}    
+   
+    
     //*--------------*
     //* Feature: source
 
@@ -128,11 +122,10 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public String getSource() {
-        if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type) jcasType).casFeat_source == null)
-            jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type) jcasType).casFeatCode_source);
-    }
-
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source);}
+    
     /**
      * setter for source - sets
      *
@@ -140,10 +133,9 @@ public class KnowledgeEntry extends Annotation {
      * @generated
      */
     public void setSource(String v) {
-        if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type) jcasType).casFeat_source == null)
-            jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-        jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type) jcasType).casFeatCode_source, v);
-    }
-}
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source, v);}    
+  }
 
     

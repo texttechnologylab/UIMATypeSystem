@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class SuggestedAction extends Annotation {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected SuggestedAction() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public SuggestedAction(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public SuggestedAction(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public SuggestedAction(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public String getReplacement() {
-        if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type) jcasType).casFeat_replacement == null)
-            jcasType.jcas.throwFeatMissing("replacement", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
-        return jcasType.ll_cas.ll_getStringValue(addr, ((SuggestedAction_Type) jcasType).casFeatCode_replacement);
-    }
-
+    if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type)jcasType).casFeat_replacement == null)
+      jcasType.jcas.throwFeatMissing("replacement", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((SuggestedAction_Type)jcasType).casFeatCode_replacement);}
+    
     /**
      * setter for replacement - sets The text covered by the Anomaly annotation should be replaced with the contents of this feature.
      *
@@ -112,12 +107,11 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public void setReplacement(String v) {
-        if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type) jcasType).casFeat_replacement == null)
-            jcasType.jcas.throwFeatMissing("replacement", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
-        jcasType.ll_cas.ll_setStringValue(addr, ((SuggestedAction_Type) jcasType).casFeatCode_replacement, v);
-    }
-
-
+    if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type)jcasType).casFeat_replacement == null)
+      jcasType.jcas.throwFeatMissing("replacement", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
+    jcasType.ll_cas.ll_setStringValue(addr, ((SuggestedAction_Type)jcasType).casFeatCode_replacement, v);}    
+   
+    
     //*--------------*
     //* Feature: certainty
 
@@ -129,11 +123,10 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public float getCertainty() {
-        if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type) jcasType).casFeat_certainty == null)
-            jcasType.jcas.throwFeatMissing("certainty", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
-        return jcasType.ll_cas.ll_getFloatValue(addr, ((SuggestedAction_Type) jcasType).casFeatCode_certainty);
-    }
-
+    if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type)jcasType).casFeat_certainty == null)
+      jcasType.jcas.throwFeatMissing("certainty", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((SuggestedAction_Type)jcasType).casFeatCode_certainty);}
+    
     /**
      * setter for certainty - sets A score representing how certain is this suggested action.
      * Usually in [0,1].
@@ -142,10 +135,9 @@ public class SuggestedAction extends Annotation {
      * @generated
      */
     public void setCertainty(float v) {
-        if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type) jcasType).casFeat_certainty == null)
-            jcasType.jcas.throwFeatMissing("certainty", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
-        jcasType.ll_cas.ll_setFloatValue(addr, ((SuggestedAction_Type) jcasType).casFeatCode_certainty, v);
-    }
-}
+    if (SuggestedAction_Type.featOkTst && ((SuggestedAction_Type)jcasType).casFeat_certainty == null)
+      jcasType.jcas.throwFeatMissing("certainty", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.SuggestedAction");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((SuggestedAction_Type)jcasType).casFeatCode_certainty, v);}    
+  }
 
     

@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Named entities refer e.g. to persons, locations, organizations and so on. They often consist of multiple tokens.
- * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
+ * Updated by JCasGen Wed Sep 04 14:11:40 CEST 2019
  * @generated */
 public class NamedEntity_Type extends Annotation_Type {
     /**

@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class Unknown_Type extends Annotation_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class Unknown_Type extends Annotation_Type {
      */
     public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Unknown");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_value);
-    }
-
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Unknown");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,9 +52,11 @@ public class Unknown_Type extends Annotation_Type {
      */
     public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
-            jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Unknown");
-        ll_cas.ll_setStringValue(addr, casFeatCode_value, v);
-    }
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Unknown");
+    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
+    
+  
+
 
 
     /**
@@ -68,14 +67,14 @@ public class Unknown_Type extends Annotation_Type {
      * @generated
      */
     public Unknown_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
+    casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
-        casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
-        casFeatCode_value = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_value).getCode();
-
-    }
+  }
 }
 
 

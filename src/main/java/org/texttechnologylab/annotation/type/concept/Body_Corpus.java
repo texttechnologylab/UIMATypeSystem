@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.AbstractNamedEntity;
 
 
 /** 
- * Updated by JCasGen Mon Sep 02 13:00:09 CEST 2019
- * XML source: /home/ahemati/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Body_Corpus extends AbstractNamedEntity {
     /**

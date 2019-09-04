@@ -10,11 +10,9 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * @generated */
 public class Anomaly_Type extends Annotation_Type {
     /**
      * @generated
@@ -44,10 +42,9 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public String getDescription(int addr) {
         if (featOkTst && casFeat_description == null)
-            jcas.throwFeatMissing("description", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_description);
-    }
-
+      jcas.throwFeatMissing("description", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_description);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -55,11 +52,11 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public void setDescription(int addr, String v) {
         if (featOkTst && casFeat_description == null)
-            jcas.throwFeatMissing("description", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        ll_cas.ll_setStringValue(addr, casFeatCode_description, v);
-    }
-
-
+      jcas.throwFeatMissing("description", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    ll_cas.ll_setStringValue(addr, casFeatCode_description, v);}
+    
+  
+ 
     /**
      * @generated
      */
@@ -76,10 +73,9 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public int getSuggestions(int addr) {
         if (featOkTst && casFeat_suggestions == null)
-            jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        return ll_cas.ll_getRefValue(addr, casFeatCode_suggestions);
-    }
-
+      jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_suggestions);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -87,10 +83,9 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public void setSuggestions(int addr, int v) {
         if (featOkTst && casFeat_suggestions == null)
-            jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        ll_cas.ll_setRefValue(addr, casFeatCode_suggestions, v);
-    }
-
+      jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    ll_cas.ll_setRefValue(addr, casFeatCode_suggestions, v);}
+    
     /**
      * @param addr low level Feature Structure reference
      * @param i    index of item in the array
@@ -99,13 +94,13 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public int getSuggestions(int addr, int i) {
         if (featOkTst && casFeat_suggestions == null)
-            jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        if (lowLevelTypeChecks)
-            return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, true);
-        jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
-        return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
-    }
-
+      jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
+  }
+   
     /**
      * @param addr low level Feature Structure reference
      * @param i    index of item in the array
@@ -114,14 +109,14 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public void setSuggestions(int addr, int i, int v) {
         if (featOkTst && casFeat_suggestions == null)
-            jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        if (lowLevelTypeChecks)
-            ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, v, true);
-        jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
-        ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, v);
-    }
-
-
+      jcas.throwFeatMissing("suggestions", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_suggestions), i, v);
+  }
+ 
+ 
     /**
      * @generated
      */
@@ -138,10 +133,9 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public String getCategory(int addr) {
         if (featOkTst && casFeat_category == null)
-            jcas.throwFeatMissing("category", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        return ll_cas.ll_getStringValue(addr, casFeatCode_category);
-    }
-
+      jcas.throwFeatMissing("category", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_category);
+  }
     /**
      * @param addr low level Feature Structure reference
      * @param v    value to set
@@ -149,9 +143,11 @@ public class Anomaly_Type extends Annotation_Type {
      */
     public void setCategory(int addr, String v) {
         if (featOkTst && casFeat_category == null)
-            jcas.throwFeatMissing("category", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
-        ll_cas.ll_setStringValue(addr, casFeatCode_category, v);
-    }
+      jcas.throwFeatMissing("category", "de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly");
+    ll_cas.ll_setStringValue(addr, casFeatCode_category, v);}
+    
+  
+
 
 
     /**
@@ -162,22 +158,22 @@ public class Anomaly_Type extends Annotation_Type {
      * @generated
      */
     public Anomaly_Type(JCas jcas, Type casType) {
-        super(jcas, casType);
-        casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl) this.casType, getFSGenerator());
+    super(jcas, casType);
+    casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
+ 
+    casFeat_description = jcas.getRequiredFeatureDE(casType, "description", "uima.cas.String", featOkTst);
+    casFeatCode_description  = (null == casFeat_description) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_description).getCode();
 
-        casFeat_description = jcas.getRequiredFeatureDE(casType, "description", "uima.cas.String", featOkTst);
-        casFeatCode_description = (null == casFeat_description) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_description).getCode();
+ 
+    casFeat_suggestions = jcas.getRequiredFeatureDE(casType, "suggestions", "uima.cas.FSArray", featOkTst);
+    casFeatCode_suggestions  = (null == casFeat_suggestions) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_suggestions).getCode();
 
+ 
+    casFeat_category = jcas.getRequiredFeatureDE(casType, "category", "uima.cas.String", featOkTst);
+    casFeatCode_category  = (null == casFeat_category) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_category).getCode();
 
-        casFeat_suggestions = jcas.getRequiredFeatureDE(casType, "suggestions", "uima.cas.FSArray", featOkTst);
-        casFeatCode_suggestions = (null == casFeat_suggestions) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_suggestions).getCode();
-
-
-        casFeat_category = jcas.getRequiredFeatureDE(casType, "category", "uima.cas.String", featOkTst);
-        casFeatCode_category = (null == casFeat_category) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl) casFeat_category).getCode();
-
-    }
+  }
 }
 
 

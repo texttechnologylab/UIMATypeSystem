@@ -10,12 +10,10 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.StringList;
 
 
-/**
- * Updated by JCasGen Fri Jul 12 15:48:41 CEST 2019
- * XML source: /home/staff_homes/abrami/Projects/TextAnnotator2/TextAnnotator/TypeSystemDescriptor/src/main/resources/desc/type/TextTechnologyAnnotation.xml
- *
- * @generated
- */
+/** 
+ * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
 public class WikidataEntry extends KnowledgeEntry {
     /**
      * @generated
@@ -35,17 +33,15 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     @Override
-    public int getTypeIndexID() {
-        return typeIndexID;
-    }
-
+    public int getTypeIndexID() {return typeIndexID;}
+ 
     /**
      * Never called.  Disable default constructor
      *
      * @generated
      */
     protected WikidataEntry() {/* intentionally empty block */}
-
+    
     /**
      * Internal - constructor used by generator
      *
@@ -54,18 +50,18 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public WikidataEntry(int addr, TOP_Type type) {
-        super(addr, type);
-        readObject();
-    }
-
+    super(addr, type);
+    readObject();
+  }
+  
     /**
      * @param jcas JCas to which this Feature Structure belongs
      * @generated
      */
     public WikidataEntry(JCas jcas) {
-        super(jcas);
-        readObject();
-    }
+    super(jcas);
+    readObject();   
+  } 
 
     /**
      * @param jcas  JCas to which this Feature Structure belongs
@@ -74,19 +70,19 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public WikidataEntry(JCas jcas, int begin, int end) {
-        super(jcas);
-        setBegin(begin);
-        setEnd(end);
-        readObject();
-    }
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
-    /**
-     * <!-- begin-user-doc -->
+  /** 
+   * <!-- begin-user-doc -->
      * Write your own initialization here
      * <!-- end-user-doc -->
      *
-     * @generated modifiable
-     */
+   * @generated modifiable 
+   */
     private void readObject() {/*default - does nothing empty block */}
 
 
@@ -100,11 +96,10 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public StringList getP31() {
-        if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type) jcasType).casFeat_P31 == null)
-            jcasType.jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        return (StringList) (jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikidataEntry_Type) jcasType).casFeatCode_P31)));
-    }
-
+    if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type)jcasType).casFeat_P31 == null)
+      jcasType.jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikidataEntry_Type)jcasType).casFeatCode_P31)));}
+    
     /**
      * setter for P31 - sets
      *
@@ -112,12 +107,11 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public void setP31(StringList v) {
-        if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type) jcasType).casFeat_P31 == null)
-            jcasType.jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        jcasType.ll_cas.ll_setRefValue(addr, ((WikidataEntry_Type) jcasType).casFeatCode_P31, jcasType.ll_cas.ll_getFSRef(v));
-    }
-
-
+    if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type)jcasType).casFeat_P31 == null)
+      jcasType.jcas.throwFeatMissing("P31", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    jcasType.ll_cas.ll_setRefValue(addr, ((WikidataEntry_Type)jcasType).casFeatCode_P31, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
     //*--------------*
     //* Feature: P279
 
@@ -128,11 +122,10 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public StringList getP279() {
-        if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type) jcasType).casFeat_P279 == null)
-            jcasType.jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        return (StringList) (jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikidataEntry_Type) jcasType).casFeatCode_P279)));
-    }
-
+    if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type)jcasType).casFeat_P279 == null)
+      jcasType.jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikidataEntry_Type)jcasType).casFeatCode_P279)));}
+    
     /**
      * setter for P279 - sets
      *
@@ -140,10 +133,9 @@ public class WikidataEntry extends KnowledgeEntry {
      * @generated
      */
     public void setP279(StringList v) {
-        if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type) jcasType).casFeat_P279 == null)
-            jcasType.jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
-        jcasType.ll_cas.ll_setRefValue(addr, ((WikidataEntry_Type) jcasType).casFeatCode_P279, jcasType.ll_cas.ll_getFSRef(v));
-    }
-}
+    if (WikidataEntry_Type.featOkTst && ((WikidataEntry_Type)jcasType).casFeat_P279 == null)
+      jcasType.jcas.throwFeatMissing("P279", "org.texttechnologylab.annotation.knowledge.WikidataEntry");
+    jcasType.ll_cas.ll_setRefValue(addr, ((WikidataEntry_Type)jcasType).casFeatCode_P279, jcasType.ll_cas.ll_getFSRef(v));}    
+  }
 
     
