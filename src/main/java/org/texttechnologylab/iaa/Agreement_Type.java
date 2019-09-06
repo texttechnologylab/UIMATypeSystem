@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Sep 03 15:37:35 CEST 2019
+ * Updated by JCasGen Fri Sep 06 13:18:50 CEST 2019
  * @generated */
 public class Agreement_Type extends Annotation_Type {
     /**
