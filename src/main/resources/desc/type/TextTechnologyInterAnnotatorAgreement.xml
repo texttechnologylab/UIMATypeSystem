@@ -55,6 +55,11 @@
           <rangeTypeName>uima.cas.LongArray</rangeTypeName>
           <multipleReferencesAllowed>false</multipleReferencesAllowed>
         </featureDescription>
+        <featureDescription>
+          <name>categorySpecificAgreementValues</name>
+          <description>@deprecated</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
   </types>
