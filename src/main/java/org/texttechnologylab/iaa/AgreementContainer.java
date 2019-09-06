@@ -17,7 +17,7 @@ import org.apache.uima.jcas.cas.IntegerArray;
 
 
 /** 
- * Updated by JCasGen Fri Sep 06 13:18:50 CEST 2019
+ * Updated by JCasGen Fri Sep 06 13:58:26 CEST 2019
  * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
  * @generated */
 public class AgreementContainer extends Annotation {
@@ -256,6 +256,50 @@ public class AgreementContainer extends Annotation {
       jcasType.jcas.throwFeatMissing("categoryCounts", "org.texttechnologylab.iaa.AgreementContainer");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i);
     jcasType.ll_cas.ll_setLongArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i, v);}
+   
+    
+  //*--------------*
+  //* Feature: categorySpecificAgreementValues
+
+  /** getter for categorySpecificAgreementValues - gets @deprecated
+   * @generated
+   * @return value of the feature 
+   */
+  public StringArray getCategorySpecificAgreementValues() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues)));}
+    
+  /** setter for categorySpecificAgreementValues - sets @deprecated 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setCategorySpecificAgreementValues(StringArray v) {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for categorySpecificAgreementValues - gets an indexed value - @deprecated
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public String getCategorySpecificAgreementValues(int i) {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);}
+
+  /** indexed setter for categorySpecificAgreementValues - sets an indexed value - @deprecated
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setCategorySpecificAgreementValues(int i, String v) { 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i, v);}
   }
 
     
