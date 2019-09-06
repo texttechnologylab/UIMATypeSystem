@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Sep 03 15:37:35 CEST 2019
+ * Updated by JCasGen Fri Sep 06 13:14:55 CEST 2019
  * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
  * @generated */
 public class Agreement extends Annotation {
