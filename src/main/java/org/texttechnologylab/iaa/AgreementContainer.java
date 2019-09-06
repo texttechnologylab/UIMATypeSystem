@@ -17,7 +17,7 @@ import org.apache.uima.jcas.cas.IntegerArray;
 
 
 /** 
- * Updated by JCasGen Fri Sep 06 13:14:55 CEST 2019
+ * Updated by JCasGen Fri Sep 06 13:18:50 CEST 2019
  * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
  * @generated */
 public class AgreementContainer extends Annotation {
