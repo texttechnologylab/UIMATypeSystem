@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>1.7.4</version>
+    <version>1.7.5</version>
 
     <distributionManagement>
         <repository>
@@ -62,21 +62,16 @@
             <artifactId>de.tudarmstadt.ukp.dkpro.core.api.ner-asl</artifactId>
             <version>1.10.0</version>
         </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.languagetool-asl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-        <dependency>
-        	<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-        	<artifactId>de.tudarmstadt.ukp.dkpro.core.tokit-asl</artifactId>
-        	<version>1.10.0</version>
-        </dependency>
+		<dependency>
+		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.anomaly-asl</artifactId>
+		    <version>1.10.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.segmentation-asl</artifactId>
+		    <version>1.10.0</version>
+		</dependency>
     </dependencies>
 
 </project>
