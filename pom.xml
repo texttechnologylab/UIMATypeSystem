@@ -8,24 +8,7 @@
     <artifactId>typesystem</artifactId>
     <version>1.7.5</version>
 
-    <distributionManagement>
-        <repository>
-            <id>hu-central</id>
-            <name>alba-releases</name>
-            <url>http://service.hucompute.org/artifactory/libs-snapshot-local</url>
-        </repository>
-        <snapshotRepository>
-            <id>hu-snapshots</id>
-            <name>alba-snapshots</name>
-            <url>http://service.hucompute.org/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
     <repositories>
-        <repository>
-            <id>hu-central</id>
-            <name>alba-releases</name>
-            <url>http://service.hucompute.org/artifactory/libs-snapshot-local</url>
-        </repository>
         <repository>
             <id>ukp-oss-model-releases</id>
             <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-model-releases-local</url>
@@ -52,26 +35,26 @@
             <artifactId>uimaj-json</artifactId>
             <version>2.10.3</version>
         </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.api.metadata-asl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-        <dependency>
-            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-            <artifactId>de.tudarmstadt.ukp.dkpro.core.api.ner-asl</artifactId>
-            <version>1.10.0</version>
-        </dependency>
-		<dependency>
-		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.anomaly-asl</artifactId>
-		    <version>1.10.0</version>
-		</dependency>
-		<dependency>
-		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.segmentation-asl</artifactId>
-		    <version>1.10.0</version>
-		</dependency>
+<!--        <dependency>-->
+<!--            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>-->
+<!--            <artifactId>de.tudarmstadt.ukp.dkpro.core.api.metadata-asl</artifactId>-->
+<!--            <version>1.10.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>-->
+<!--            <artifactId>de.tudarmstadt.ukp.dkpro.core.api.ner-asl</artifactId>-->
+<!--            <version>1.10.0</version>-->
+<!--        </dependency>-->
+<!--		<dependency>-->
+<!--		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>-->
+<!--		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.anomaly-asl</artifactId>-->
+<!--		    <version>1.10.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>-->
+<!--		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.segmentation-asl</artifactId>-->
+<!--		    <version>1.10.0</version>-->
+<!--		</dependency>-->
     </dependencies>
 
 </project>
