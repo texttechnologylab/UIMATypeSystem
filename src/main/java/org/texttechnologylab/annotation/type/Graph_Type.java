@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Wed Apr 01 10:00:20 CEST 2020
+ * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
  * @generated */
 public class Graph_Type extends Node_Type {
   /** @generated */

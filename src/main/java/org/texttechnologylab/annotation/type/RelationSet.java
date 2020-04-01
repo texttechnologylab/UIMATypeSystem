@@ -12,8 +12,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 10:00:20 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyGraph.xml
+ * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOrientation.xml
  * @generated */
 public class RelationSet extends AnnotationBase {
   /** @generated

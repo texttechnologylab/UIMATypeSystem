@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.OrientationEdge;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:38 CET 2020
+ * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOrientation.xml
  * @generated */
 public class Behind extends OrientationEdge {
