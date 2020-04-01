@@ -18,7 +18,7 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.QuickAnnoUnit</name>
+            <name>org.texttechnologylab.annotation.type.QuickAnnoUnit</name>
 
             <description/>
 
@@ -86,7 +86,7 @@
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.TreeAnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.TreeAnnotationNode</supertypeName>
 
         </typeDescription>
     </types>

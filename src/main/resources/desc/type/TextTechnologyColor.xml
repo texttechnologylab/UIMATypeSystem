@@ -9,9 +9,9 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.Color</name>
+            <name>org.texttechnologylab.annotation.Color</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.AnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.AnnotationNode</supertypeName>
             <features>
                 <featureDescription>
                     <name>rgb</name>

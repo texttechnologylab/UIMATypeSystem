@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Jul 04 16:45:39 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:03:24 CET 2020 */
 package org.texttechnologylab.annotation.administration;
 
 import org.apache.uima.jcas.JCas;
@@ -11,108 +11,83 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * Updated by JCasGen Wed Apr 01 09:56:51 CEST 2020
  * @generated */
 public class FinishAnnotation_Type extends DocumentMetaData_Type {
-    /**
-     * @generated
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = FinishAnnotation.typeIndexID;
-    /**
-     * @generated
-     * @modifiable
-     */
-    @SuppressWarnings("hiding")
-    public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.administration.FinishAnnotation");
-
-    /**
-     * @generated
-     */
-    final Feature casFeat_user;
-    /**
-     * @generated
-     */
-    final int casFeatCode_user;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getUser(int addr) {
+  /** @generated */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = FinishAnnotation.typeIndexID;
+  /** @generated 
+     @modifiable */
+  @SuppressWarnings ("hiding")
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.administration.FinishAnnotation");
+ 
+  /** @generated */
+  final Feature casFeat_user;
+  /** @generated */
+  final int     casFeatCode_user;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getUser(int addr) {
         if (featOkTst && casFeat_user == null)
       jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_user);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setUser(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setUser(int addr, String v) {
         if (featOkTst && casFeat_user == null)
       jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_user, v);}
     
   
  
-    /**
-     * @generated
-     */
-    final Feature casFeat_comment;
-    /**
-     * @generated
-     */
-    final int casFeatCode_comment;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getComment(int addr) {
+  /** @generated */
+  final Feature casFeat_comment;
+  /** @generated */
+  final int     casFeatCode_comment;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getComment(int addr) {
         if (featOkTst && casFeat_comment == null)
       jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_comment);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setComment(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setComment(int addr, String v) {
         if (featOkTst && casFeat_comment == null)
       jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_comment, v);}
     
   
  
-    /**
-     * @generated
-     */
-    final Feature casFeat_tool;
-    /**
-     * @generated
-     */
-    final int casFeatCode_tool;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getTool(int addr) {
+  /** @generated */
+  final Feature casFeat_tool;
+  /** @generated */
+  final int     casFeatCode_tool;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getTool(int addr) {
         if (featOkTst && casFeat_tool == null)
       jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_tool);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setTool(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setTool(int addr, String v) {
         if (featOkTst && casFeat_tool == null)
       jcas.throwFeatMissing("tool", "org.texttechnologylab.annotation.administration.FinishAnnotation");
     ll_cas.ll_setStringValue(addr, casFeatCode_tool, v);}
@@ -121,14 +96,12 @@ public class FinishAnnotation_Type extends DocumentMetaData_Type {
 
 
 
-    /**
-     * initialize variables to correspond with Cas Type and Features
-     *
-     * @param jcas    JCas
-     * @param casType Type
-     * @generated
-     */
-    public FinishAnnotation_Type(JCas jcas, Type casType) {
+  /** initialize variables to correspond with Cas Type and Features
+	 * @generated
+	 * @param jcas JCas
+	 * @param casType Type 
+	 */
+  public FinishAnnotation_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

@@ -9,79 +9,79 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.Orientation</name>
+            <name>org.texttechnologylab.annotation.Orientation</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.AnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.AnnotationNode</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Above</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Above</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.After</name>
+            <name>org.texttechnologylab.annotation.orientation.type.After</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Around</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Around</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Behind</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Behind</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Below</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Below</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.In</name>
+            <name>org.texttechnologylab.annotation.orientation.type.In</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Infront</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Infront</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Left</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Left</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Right</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Right</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.OrientationEdge</name>
+            <name>org.texttechnologylab.annotation.OrientationEdge</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Edge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Edge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.Between</name>
+            <name>org.texttechnologylab.annotation.orientation.type.Between</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.At</name>
+            <name>org.texttechnologylab.annotation.orientation.type.At</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.NotAt</name>
+            <name>org.texttechnologylab.annotation.orientation.type.NotAt</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.orientation.type.On</name>
+            <name>org.texttechnologylab.annotation.orientation.type.On</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.OrientationEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.OrientationEdge</supertypeName>
         </typeDescription>
     </types>
 </typeSystemDescription>

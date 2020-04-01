@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue May 28 16:06:18 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
 package org.texttechnologylab.annotation.type.concept;
 
 import org.apache.uima.jcas.JCas;
@@ -9,30 +9,25 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
+ * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
  * @generated */
 public class Protozoa_Type extends AbstractNamedEntity_Type {
-    /**
-     * @generated
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = Protozoa.typeIndexID;
-    /**
-     * @generated
-     * @modifiable
-     */
-    @SuppressWarnings("hiding")
-    public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.type.concept.Protozoa");
+  /** @generated */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = Protozoa.typeIndexID;
+  /** @generated 
+     @modifiable */
+  @SuppressWarnings ("hiding")
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.type.concept.Protozoa");
 
 
-    /**
-     * initialize variables to correspond with Cas Type and Features
-     *
-     * @param jcas    JCas
-     * @param casType Type
-     * @generated
-     */
-    public Protozoa_Type(JCas jcas, Type casType) {
+
+  /** initialize variables to correspond with Cas Type and Features
+	 * @generated
+	 * @param jcas JCas
+	 * @param casType Type 
+	 */
+  public Protozoa_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

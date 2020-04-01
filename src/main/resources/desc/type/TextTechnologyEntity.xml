@@ -9,9 +9,9 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.TextTechnologyEntity</name>
+            <name>org.texttechnologylab.annotation.type.TextTechnologyEntity</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>value</name>
@@ -27,7 +27,7 @@
                     <name>knowledgeEntries</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.KnowledgeEntry</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.KnowledgeEntry</elementType>
                 </featureDescription>
                 <featureDescription>
                     <name>begin</name>

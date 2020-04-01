@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>IsoSpaceTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <imports>
+    <import location="IsoBaseTypeSystem.xml"/>
+  <import location="IsoSpaceTypeSystem.xml"/>
+  </imports>
+ 
+<types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.semaf.isospace.EventPath</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.semaf.isospace.Location</supertypeName>
+      <features>
+        <featureDescription>
+          <name>trigger</name>
+          <description/>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.Motion</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>startID</name>
+          <description/>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>midIDs</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>endID</name>
+          <description/>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>spatial_relator</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialSignal</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    </types>
+</typeSystemDescription>

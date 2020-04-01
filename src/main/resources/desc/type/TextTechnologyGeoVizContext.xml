@@ -11,7 +11,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.Context</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>ReferencedID</name>
@@ -166,7 +166,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.RelationGroup</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>relation</name>
@@ -188,7 +188,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.IndividualVis</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>geonamesID</name>
@@ -241,7 +241,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.RelationContext</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>relatesTo</name>
@@ -268,7 +268,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.DepthList</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>displayName</name>
@@ -286,7 +286,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.node.type.EntityVis</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>geonamesID</name>

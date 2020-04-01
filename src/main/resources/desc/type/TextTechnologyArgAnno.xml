@@ -9,9 +9,9 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgNode</name>
+            <name>org.texttechnologylab.annotation.type.ArgNode</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>graphId</name>
@@ -61,15 +61,15 @@
             </features>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgType</name>
+            <name>org.texttechnologylab.annotation.type.ArgType</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgNode</supertypeName>
             <features>
                 <featureDescription>
                     <name>conclusion</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
                 <featureDescription>
                     <name>mode</name>
@@ -80,79 +80,79 @@
                     <name>data</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgTextSegment</name>
+            <name>org.texttechnologylab.annotation.type.ArgTextSegment</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgNode</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgEdge</name>
+            <name>org.texttechnologylab.annotation.type.ArgEdge</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Edge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Edge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgTypeDirect</name>
+            <name>org.texttechnologylab.annotation.type.ArgTypeDirect</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgType</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgType</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgTypeOr</name>
+            <name>org.texttechnologylab.annotation.type.ArgTypeOr</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgType</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgType</supertypeName>
             <features>
                 <featureDescription>
                     <name>data2</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgTypeAnd</name>
+            <name>org.texttechnologylab.annotation.type.ArgTypeAnd</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgType</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgType</supertypeName>
             <features>
                 <featureDescription>
                     <name>data2</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgTypeUnless</name>
+            <name>org.texttechnologylab.annotation.type.ArgTypeUnless</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgType</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgType</supertypeName>
             <features>
                 <featureDescription>
                     <name>counterRebuttal</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
                 <featureDescription>
                     <name>rebuttal</name>
                     <description/>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    <elementType>org.texttechnologielab.annotation.type.ArgTextSegment</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.ArgTextSegment</elementType>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgEdgeLeft</name>
+            <name>org.texttechnologylab.annotation.type.ArgEdgeLeft</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgEdge</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.ArgEdgeRight</name>
+            <name>org.texttechnologylab.annotation.type.ArgEdgeRight</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.ArgEdge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.ArgEdge</supertypeName>
         </typeDescription>
     </types>
 </typeSystemDescription>

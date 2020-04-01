@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Aug 20 15:31:23 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:14:16 CET 2020 */
 package org.texttechnologylab.iaa;
 
 import org.apache.uima.jcas.JCas;
@@ -11,77 +11,59 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Sep 06 13:58:26 CEST 2019
+ * Updated by JCasGen Wed Apr 01 09:57:01 CEST 2020
  * @generated */
 public class Agreement_Type extends Annotation_Type {
-    /**
-     * @generated
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = Agreement.typeIndexID;
-    /**
-     * @generated
-     * @modifiable
-     */
-    @SuppressWarnings("hiding")
-    public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.iaa.Agreement");
-
-    /**
-     * @generated
-     */
-    final Feature casFeat_agreementValue;
-    /**
-     * @generated
-     */
-    final int casFeatCode_agreementValue;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public double getAgreementValue(int addr) {
+  /** @generated */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = Agreement.typeIndexID;
+  /** @generated 
+     @modifiable */
+  @SuppressWarnings ("hiding")
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.iaa.Agreement");
+ 
+  /** @generated */
+  final Feature casFeat_agreementValue;
+  /** @generated */
+  final int     casFeatCode_agreementValue;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public double getAgreementValue(int addr) {
         if (featOkTst && casFeat_agreementValue == null)
       jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
     return ll_cas.ll_getDoubleValue(addr, casFeatCode_agreementValue);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setAgreementValue(int addr, double v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setAgreementValue(int addr, double v) {
         if (featOkTst && casFeat_agreementValue == null)
       jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
     ll_cas.ll_setDoubleValue(addr, casFeatCode_agreementValue, v);}
     
   
  
-    /**
-     * @generated
-     */
-    final Feature casFeat_agreementMeasure;
-    /**
-     * @generated
-     */
-    final int casFeatCode_agreementMeasure;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getAgreementMeasure(int addr) {
+  /** @generated */
+  final Feature casFeat_agreementMeasure;
+  /** @generated */
+  final int     casFeatCode_agreementMeasure;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getAgreementMeasure(int addr) {
         if (featOkTst && casFeat_agreementMeasure == null)
       jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
     return ll_cas.ll_getStringValue(addr, casFeatCode_agreementMeasure);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setAgreementMeasure(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setAgreementMeasure(int addr, String v) {
         if (featOkTst && casFeat_agreementMeasure == null)
       jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
     ll_cas.ll_setStringValue(addr, casFeatCode_agreementMeasure, v);}
@@ -90,14 +72,12 @@ public class Agreement_Type extends Annotation_Type {
 
 
 
-    /**
-     * initialize variables to correspond with Cas Type and Features
-     *
-     * @param jcas    JCas
-     * @param casType Type
-     * @generated
-     */
-    public Agreement_Type(JCas jcas, Type casType) {
+  /** initialize variables to correspond with Cas Type and Features
+	 * @generated
+	 * @param jcas JCas
+	 * @param casType Type 
+	 */
+  public Agreement_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

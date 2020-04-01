@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Sep 03 15:37:01 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:14:16 CET 2020 */
 package org.texttechnologylab.iaa;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Sep 06 13:58:26 CEST 2019
+ * Updated by JCasGen Wed Apr 01 09:57:01 CEST 2020
  * @generated */
 public class AgreementContainer_Type extends Annotation_Type {
   /** @generated */

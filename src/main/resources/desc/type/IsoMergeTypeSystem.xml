@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>IsoSpaceTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <imports>
+    <import location="IsoBaseTypeSystem.xml"/>
+    <import location="IsoMetaTypeSystem.xml"/>
+    <import location="IsoSRTypeSystem.xml"/>
+    <import location="IsoSpaceTypeSystem.xml"/>
+    <import location="IsoSpaceV2TypeSystem.xml"/>
+    <import location="IsoSpatialTypeSystem.xml"/>
+    <import location="IsoSRTypeSystem.xml"/>
+    <import location="IsoTimeMLTypeSystem.xml"/>
+  </imports>
+</typeSystemDescription>

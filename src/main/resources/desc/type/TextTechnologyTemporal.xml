@@ -9,24 +9,24 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.Temporal</name>
+            <name>org.texttechnologylab.annotation.Temporal</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.AnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.AnnotationNode</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.temporal.type.Before</name>
+            <name>org.texttechnologylab.annotation.temporal.type.Before</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Temporal</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Temporal</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.temporal.type.After</name>
+            <name>org.texttechnologylab.annotation.temporal.type.After</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Temporal</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Temporal</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.temporal.type.During</name>
+            <name>org.texttechnologylab.annotation.temporal.type.During</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Temporal</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Temporal</supertypeName>
         </typeDescription>
     </types>
 </typeSystemDescription>

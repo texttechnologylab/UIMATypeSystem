@@ -9,29 +9,29 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.Attribution</name>
+            <name>org.texttechnologylab.annotation.Attribution</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.AnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.AnnotationNode</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.attribution.type.Smaler</name>
+            <name>org.texttechnologylab.annotation.attribution.type.Smaler</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Attribution</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Attribution</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.attribution.type.Bigger</name>
+            <name>org.texttechnologylab.annotation.attribution.type.Bigger</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Attribution</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Attribution</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.attribution.type.Louder</name>
+            <name>org.texttechnologylab.annotation.attribution.type.Louder</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Attribution</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Attribution</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.attribution.type.Quieter</name>
+            <name>org.texttechnologylab.annotation.attribution.type.Quieter</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.Attribution</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.Attribution</supertypeName>
         </typeDescription>
     </types>
 </typeSystemDescription>

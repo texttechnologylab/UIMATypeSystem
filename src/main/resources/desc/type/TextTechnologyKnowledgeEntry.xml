@@ -9,9 +9,9 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.KnowledgeEntry</name>
+            <name>org.texttechnologylab.annotation.type.KnowledgeEntry</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
             <features>
                 <featureDescription>
                     <name>identifier</name>

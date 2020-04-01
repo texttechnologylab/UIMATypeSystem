@@ -9,9 +9,9 @@
     </imports>
     <types>
         <typeDescription>
-            <name>org.texttechnologielab.annotation.type.TextTechnologyKnowledgeEdge</name>
+            <name>org.texttechnologylab.annotation.type.TextTechnologyKnowledgeEdge</name>
             <description/>
-            <supertypeName>org.texttechnologielab.annotation.type.Edge</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Edge</supertypeName>
             <features>
                 <featureDescription>
                     <name>linktype</name>

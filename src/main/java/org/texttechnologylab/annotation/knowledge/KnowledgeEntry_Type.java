@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Mar 11 19:34:15 CET 2019 */
+/* First created by JCasGen Fri Mar 20 09:03:24 CET 2020 */
 package org.texttechnologylab.annotation.knowledge;
 
 import org.apache.uima.jcas.JCas;
@@ -11,77 +11,59 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 04 14:12:24 CEST 2019
+ * Updated by JCasGen Wed Apr 01 09:56:51 CEST 2020
  * @generated */
 public class KnowledgeEntry_Type extends Annotation_Type {
-    /**
-     * @generated
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = KnowledgeEntry.typeIndexID;
-    /**
-     * @generated
-     * @modifiable
-     */
-    @SuppressWarnings("hiding")
-    public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-
-    /**
-     * @generated
-     */
-    final Feature casFeat_uri;
-    /**
-     * @generated
-     */
-    final int casFeatCode_uri;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getUri(int addr) {
+  /** @generated */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = KnowledgeEntry.typeIndexID;
+  /** @generated 
+     @modifiable */
+  @SuppressWarnings ("hiding")
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
+ 
+  /** @generated */
+  final Feature casFeat_uri;
+  /** @generated */
+  final int     casFeatCode_uri;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getUri(int addr) {
         if (featOkTst && casFeat_uri == null)
       jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
     return ll_cas.ll_getStringValue(addr, casFeatCode_uri);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setUri(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setUri(int addr, String v) {
         if (featOkTst && casFeat_uri == null)
       jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
     ll_cas.ll_setStringValue(addr, casFeatCode_uri, v);}
     
   
  
-    /**
-     * @generated
-     */
-    final Feature casFeat_source;
-    /**
-     * @generated
-     */
-    final int casFeatCode_source;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public String getSource(int addr) {
+  /** @generated */
+  final Feature casFeat_source;
+  /** @generated */
+  final int     casFeatCode_source;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getSource(int addr) {
         if (featOkTst && casFeat_source == null)
       jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
     return ll_cas.ll_getStringValue(addr, casFeatCode_source);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setSource(int addr, String v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setSource(int addr, String v) {
         if (featOkTst && casFeat_source == null)
       jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
     ll_cas.ll_setStringValue(addr, casFeatCode_source, v);}
@@ -90,14 +72,12 @@ public class KnowledgeEntry_Type extends Annotation_Type {
 
 
 
-    /**
-     * initialize variables to correspond with Cas Type and Features
-     *
-     * @param jcas    JCas
-     * @param casType Type
-     * @generated
-     */
-    public KnowledgeEntry_Type(JCas jcas, Type casType) {
+  /** initialize variables to correspond with Cas Type and Features
+	 * @generated
+	 * @param jcas JCas
+	 * @param casType Type 
+	 */
+  public KnowledgeEntry_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

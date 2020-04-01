@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Jun 27 16:21:19 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,46 +11,35 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
+ * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
  * @generated */
 public class Coreference_Type extends Annotation_Type {
-    /**
-     * @generated
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = Coreference.typeIndexID;
-    /**
-     * @generated
-     * @modifiable
-     */
-    @SuppressWarnings("hiding")
-    public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.Coreference");
-
-    /**
-     * @generated
-     */
-    final Feature casFeat_link;
-    /**
-     * @generated
-     */
-    final int casFeatCode_link;
-
-    /**
-     * @param addr low level Feature Structure reference
-     * @return the feature value
-     * @generated
-     */
-    public int getLink(int addr) {
+  /** @generated */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = Coreference.typeIndexID;
+  /** @generated 
+     @modifiable */
+  @SuppressWarnings ("hiding")
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.Coreference");
+ 
+  /** @generated */
+  final Feature casFeat_link;
+  /** @generated */
+  final int     casFeatCode_link;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getLink(int addr) {
         if (featOkTst && casFeat_link == null)
       jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
     return ll_cas.ll_getRefValue(addr, casFeatCode_link);
   }
-    /**
-     * @param addr low level Feature Structure reference
-     * @param v    value to set
-     * @generated
-     */
-    public void setLink(int addr, int v) {
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setLink(int addr, int v) {
         if (featOkTst && casFeat_link == null)
       jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
     ll_cas.ll_setRefValue(addr, casFeatCode_link, v);}
@@ -59,14 +48,12 @@ public class Coreference_Type extends Annotation_Type {
 
 
 
-    /**
-     * initialize variables to correspond with Cas Type and Features
-     *
-     * @param jcas    JCas
-     * @param casType Type
-     * @generated
-     */
-    public Coreference_Type(JCas jcas, Type casType) {
+  /** initialize variables to correspond with Cas Type and Features
+	 * @generated
+	 * @param jcas JCas
+	 * @param casType Type 
+	 */
+  public Coreference_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

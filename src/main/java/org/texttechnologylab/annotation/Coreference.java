@@ -1,9 +1,9 @@
 
 
-/* First created by JCasGen Thu Jun 27 16:21:19 CEST 2019 */
+/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
 package org.texttechnologylab.annotation;
 
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
@@ -11,65 +11,54 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Sep 04 14:11:41 CEST 2019
- * XML source: /home/stud_homes/s3676959/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Coreference extends Annotation {
-    /**
-     * @generated
-     * @ordered
-     */
-    @SuppressWarnings("hiding")
-    public final static int typeIndexID = JCasRegistry.register(Coreference.class);
-    /**
-     * @generated
-     * @ordered
-     */
-    @SuppressWarnings("hiding")
-    public final static int type = typeIndexID;
-
-    /**
-     * @return index of the type
-     * @generated
-     */
-    @Override
-    public int getTypeIndexID() {return typeIndexID;}
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = JCasRegistry.register(Coreference.class);
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int type = typeIndexID;
+  /** @generated
+   * @return index of the type  
+   */
+  @Override
+  public              int getTypeIndexID() {return typeIndexID;}
  
-    /**
-     * Never called.  Disable default constructor
-     *
-     * @generated
-     */
-    protected Coreference() {/* intentionally empty block */}
+  /** Never called.  Disable default constructor
+   * @generated */
+  protected Coreference() {/* intentionally empty block */}
     
-    /**
-     * Internal - constructor used by generator
-     *
-     * @param addr low level Feature Structure reference
-     * @param type the type of this Feature Structure
-     * @generated
-     */
-    public Coreference(int addr, TOP_Type type) {
+  /** Internal - constructor used by generator 
+   * @generated
+   * @param addr low level Feature Structure reference
+   * @param type the type of this Feature Structure 
+   */
+  public Coreference(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
-    /**
-     * @param jcas JCas to which this Feature Structure belongs
-     * @generated
-     */
-    public Coreference(JCas jcas) {
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
+   */
+  public Coreference(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
-    /**
-     * @param jcas  JCas to which this Feature Structure belongs
-     * @param begin offset to the begin spot in the SofA
-     * @param end   offset to the end spot in the SofA
-     * @generated
-     */
-    public Coreference(JCas jcas, int begin, int end) {
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs
+   * @param begin offset to the begin spot in the SofA
+   * @param end offset to the end spot in the SofA 
+  */  
+  public Coreference(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -78,35 +67,32 @@ public class Coreference extends Annotation {
 
   /** 
    * <!-- begin-user-doc -->
-     * Write your own initialization here
-     * <!-- end-user-doc -->
-     *
+   * Write your own initialization here
+   * <!-- end-user-doc -->
+   *
    * @generated modifiable 
    */
-    private void readObject() {/*default - does nothing empty block */}
+  private void readObject() {/*default - does nothing empty block */}
+     
+ 
+    
+  //*--------------*
+  //* Feature: link
 
-
-    //*--------------*
-    //* Feature: link
-
-    /**
-     * getter for link - gets
-     *
-     * @return value of the feature
-     * @generated
-     */
-    public Coreference getLink() {
+  /** getter for link - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Coreference getLink() {
     if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
       jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
     return (Coreference)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link)));}
     
-    /**
-     * setter for link - sets
-     *
-     * @param v value to set into the feature
-     * @generated
-     */
-    public void setLink(Coreference v) {
+  /** setter for link - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setLink(Coreference v) {
     if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
       jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
     jcasType.ll_cas.ll_setRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link, jcasType.ll_cas.ll_getFSRef(v));}    

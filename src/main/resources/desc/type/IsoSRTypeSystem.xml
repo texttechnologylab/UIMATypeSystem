@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>IsoSRTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <imports>
+    <import location="IsoBaseTypeSystem.xml"/>
+  </imports>
+<types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.semaf.semafsr.SrLink</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.semaf.isobase.Link</supertypeName>
+      </typeDescription>
+
+  </types>
+</typeSystemDescription>

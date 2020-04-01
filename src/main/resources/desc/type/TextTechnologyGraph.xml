@@ -13,11 +13,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Graph</name>
+            <name>org.texttechnologylab.annotation.type.Graph</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
 
             <features>
 
@@ -29,7 +29,7 @@
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
-                    <elementType>org.texttechnologielab.annotation.type.Node</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.Node</elementType>
 
                 </featureDescription>
 
@@ -41,7 +41,7 @@
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
-                    <elementType>org.texttechnologielab.annotation.type.Edge</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.Edge</elementType>
 
                 </featureDescription>
 
@@ -51,11 +51,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.AnnotationNode</name>
+            <name>org.texttechnologylab.annotation.type.AnnotationNode</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
 
             <features>
 
@@ -85,11 +85,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Node</name>
+            <name>org.texttechnologylab.annotation.type.Node</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.GraphBase</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.GraphBase</supertypeName>
 
             <features>
 
@@ -99,7 +99,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Attribute</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Attribute</rangeTypeName>
 
                 </featureDescription>
 
@@ -109,11 +109,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Edge</name>
+            <name>org.texttechnologylab.annotation.type.Edge</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.GraphBase</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.GraphBase</supertypeName>
 
             <features>
 
@@ -123,7 +123,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Node</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Node</rangeTypeName>
 
                 </featureDescription>
 
@@ -133,7 +133,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Node</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Node</rangeTypeName>
 
                 </featureDescription>
 
@@ -143,7 +143,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Attribute</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Attribute</rangeTypeName>
 
                 </featureDescription>
 
@@ -163,21 +163,21 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Attribute</name>
+            <name>org.texttechnologylab.annotation.type.Attribute</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.GraphBase</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.GraphBase</supertypeName>
 
         </typeDescription>
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Weight</name>
+            <name>org.texttechnologylab.annotation.type.Weight</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Attribute</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Attribute</supertypeName>
 
             <features>
 
@@ -197,11 +197,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Color</name>
+            <name>org.texttechnologylab.annotation.type.Color</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Attribute</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Attribute</supertypeName>
 
             <features>
 
@@ -221,11 +221,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Hyperedge</name>
+            <name>org.texttechnologylab.annotation.type.Hyperedge</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.GraphBase</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.GraphBase</supertypeName>
 
             <features>
 
@@ -237,7 +237,7 @@
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
-                    <elementType>org.texttechnologielab.annotation.type.Endpoint</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.Endpoint</elementType>
 
                 </featureDescription>
 
@@ -247,11 +247,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Endpoint</name>
+            <name>org.texttechnologylab.annotation.type.Endpoint</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.GraphBase</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.GraphBase</supertypeName>
 
             <features>
 
@@ -261,7 +261,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Node</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Node</rangeTypeName>
 
                 </featureDescription>
 
@@ -271,7 +271,7 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.GraphBase</name>
+            <name>org.texttechnologylab.annotation.type.GraphBase</name>
 
             <description/>
 
@@ -335,11 +335,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.TextElement</name>
+            <name>org.texttechnologylab.annotation.type.TextElement</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Attribute</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Attribute</supertypeName>
 
             <features>
 
@@ -359,11 +359,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.RelationDescription</name>
+            <name>org.texttechnologylab.annotation.type.RelationDescription</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Attribute</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Attribute</supertypeName>
 
             <features>
 
@@ -393,7 +393,7 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.RelationSet</name>
+            <name>org.texttechnologylab.annotation.type.RelationSet</name>
 
             <description/>
 
@@ -409,7 +409,7 @@
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
-                    <elementType>org.texttechnologielab.annotation.type.RelationDescription</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.RelationDescription</elementType>
 
                     <multipleReferencesAllowed>false</multipleReferencesAllowed>
 
@@ -421,11 +421,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Fingerprint</name>
+            <name>org.texttechnologylab.annotation.type.Fingerprint</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
 
             <features>
 
@@ -465,11 +465,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.Comment</name>
+            <name>org.texttechnologylab.annotation.type.Comment</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.AnnotationNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.AnnotationNode</supertypeName>
 
             <features>
 
@@ -489,11 +489,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.TreeNode</name>
+            <name>org.texttechnologylab.annotation.type.TreeNode</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.Node</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.Node</supertypeName>
 
             <features>
 
@@ -505,7 +505,7 @@
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
-                    <elementType>org.texttechnologielab.annotation.type.Node</elementType>
+                    <elementType>org.texttechnologylab.annotation.type.Node</elementType>
 
                 </featureDescription>
 
@@ -515,7 +515,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologielab.annotation.type.Node</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.Node</rangeTypeName>
 
                 </featureDescription>
 
@@ -525,11 +525,11 @@
 
         <typeDescription>
 
-            <name>org.texttechnologielab.annotation.type.TreeAnnotationNode</name>
+            <name>org.texttechnologylab.annotation.type.TreeAnnotationNode</name>
 
             <description/>
 
-            <supertypeName>org.texttechnologielab.annotation.type.TreeNode</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.type.TreeNode</supertypeName>
 
             <features>
 
