@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Mar 24 14:57:32 CET 2020 */
+/* First created by JCasGen Wed Apr 01 14:40:03 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:56:51 CEST 2020
+ * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
@@ -121,25 +121,25 @@ public class GeoNamesEntity extends Annotation {
    
     
   //*--------------*
-  //* Feature: subclasses
+  //* Feature: subclass
 
-  /** getter for subclasses - gets 
+  /** getter for subclass - gets 
    * @generated
    * @return value of the feature 
    */
-  public String getSubclasses() {
-    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclasses == null)
-      jcasType.jcas.throwFeatMissing("subclasses", "org.texttechnologylab.annotation.GeoNamesEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclasses);}
+  public String getSubclass() {
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclass == null)
+      jcasType.jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclass);}
     
-  /** setter for subclasses - sets  
+  /** setter for subclass - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSubclasses(String v) {
-    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclasses == null)
-      jcasType.jcas.throwFeatMissing("subclasses", "org.texttechnologylab.annotation.GeoNamesEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclasses, v);}    
+  public void setSubclass(String v) {
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclass == null)
+      jcasType.jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclass, v);}    
   }
 
     

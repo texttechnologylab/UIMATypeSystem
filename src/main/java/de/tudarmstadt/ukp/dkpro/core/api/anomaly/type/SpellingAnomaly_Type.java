@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:56:51 CEST 2020
+ * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
  * @generated */
 public class SpellingAnomaly_Type extends Anomaly_Type {
   /** @generated */

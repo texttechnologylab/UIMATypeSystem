@@ -16,7 +16,7 @@ import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:53:21 CEST 2020
+ * Updated by JCasGen Wed Apr 01 13:38:52 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
  * @generated */
 public class SpatialEntity extends Entity {

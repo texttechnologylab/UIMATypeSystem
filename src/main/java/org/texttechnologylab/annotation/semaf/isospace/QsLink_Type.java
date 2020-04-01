@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:53:21 CEST 2020
+ * Updated by JCasGen Wed Apr 01 13:38:52 CEST 2020
  * @generated */
 public class QsLink_Type extends Link_Type {
   /** @generated */

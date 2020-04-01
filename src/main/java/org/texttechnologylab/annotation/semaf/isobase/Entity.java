@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:53:21 CEST 2020
+ * Updated by JCasGen Wed Apr 01 13:38:51 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
  * @generated */
 public class Entity extends Annotation {

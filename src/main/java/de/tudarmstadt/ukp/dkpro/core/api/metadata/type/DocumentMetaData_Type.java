@@ -41,7 +41,7 @@ systems.</p>
 
 <p>In addition to the features given here, there is a <i>language</i> feature inherited from UIMA's DocumentAnnotation. DKPro Core components expect a two letter ISO
 639-1 language code there.</p>
- * Updated by JCasGen Wed Apr 01 09:57:20 CEST 2020
+ * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
  * @generated */
 public class DocumentMetaData_Type extends DocumentAnnotation_Type {
   /** @generated */

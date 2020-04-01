@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 24 14:57:32 CET 2020 */
+/* First created by JCasGen Wed Apr 01 14:40:03 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:56:51 CEST 2020
+ * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
  * @generated */
 public class GeoNamesEntity_Type extends Annotation_Type {
   /** @generated */
@@ -71,26 +71,26 @@ public class GeoNamesEntity_Type extends Annotation_Type {
   
  
   /** @generated */
-  final Feature casFeat_subclasses;
+  final Feature casFeat_subclass;
   /** @generated */
-  final int     casFeatCode_subclasses;
+  final int     casFeatCode_subclass;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public String getSubclasses(int addr) {
-        if (featOkTst && casFeat_subclasses == null)
-      jcas.throwFeatMissing("subclasses", "org.texttechnologylab.annotation.GeoNamesEntity");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_subclasses);
+  public String getSubclass(int addr) {
+        if (featOkTst && casFeat_subclass == null)
+      jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_subclass);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setSubclasses(int addr, String v) {
-        if (featOkTst && casFeat_subclasses == null)
-      jcas.throwFeatMissing("subclasses", "org.texttechnologylab.annotation.GeoNamesEntity");
-    ll_cas.ll_setStringValue(addr, casFeatCode_subclasses, v);}
+  public void setSubclass(int addr, String v) {
+        if (featOkTst && casFeat_subclass == null)
+      jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    ll_cas.ll_setStringValue(addr, casFeatCode_subclass, v);}
     
   
 
@@ -114,8 +114,8 @@ public class GeoNamesEntity_Type extends Annotation_Type {
     casFeatCode_mainclass  = (null == casFeat_mainclass) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_mainclass).getCode();
 
  
-    casFeat_subclasses = jcas.getRequiredFeatureDE(casType, "subclasses", "uima.cas.String", featOkTst);
-    casFeatCode_subclasses  = (null == casFeat_subclasses) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_subclasses).getCode();
+    casFeat_subclass = jcas.getRequiredFeatureDE(casType, "subclass", "uima.cas.String", featOkTst);
+    casFeatCode_subclass  = (null == casFeat_subclass) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_subclass).getCode();
 
   }
 }

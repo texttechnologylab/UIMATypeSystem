@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isotimeml.TimeX3_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:53:21 CEST 2020
+ * Updated by JCasGen Wed Apr 01 13:38:53 CEST 2020
  * @generated */
 public class Time_Type extends TimeX3_Type {
   /** @generated */

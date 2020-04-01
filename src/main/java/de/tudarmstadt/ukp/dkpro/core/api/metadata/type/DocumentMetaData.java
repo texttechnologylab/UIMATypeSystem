@@ -41,8 +41,8 @@ systems.</p>
 
 <p>In addition to the features given here, there is a <i>language</i> feature inherited from UIMA's DocumentAnnotation. DKPro Core components expect a two letter ISO
 639-1 language code there.</p>
- * Updated by JCasGen Wed Apr 01 09:57:20 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
+ * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class DocumentMetaData extends DocumentAnnotation {
   /** @generated
