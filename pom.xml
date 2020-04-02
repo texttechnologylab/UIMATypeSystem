@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>1.8.1</version>
+    <version>1.8.2</version>
 
     <repositories>
         <repository>
@@ -17,43 +17,53 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <dkpro.core.version>1.12.0</dkpro.core.version>
     </properties>
+
+
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.dkpro.core</groupId>
+      <artifactId>dkpro-core-asl</artifactId>
+      <version>${dkpro.core.version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.uima</groupId>
             <artifactId>uimaj-core</artifactId>
-            <version>2.10.3</version>
+            <version>2.10.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.uima</groupId>
             <artifactId>uimafit-core</artifactId>
-            <version>2.3.0</version>
+            <version>2.4.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.uima</groupId>
             <artifactId>uimaj-json</artifactId>
-            <version>2.10.3</version>
+            <version>2.10.4</version>
         </dependency>
        <dependency>
-           <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-           <artifactId>de.tudarmstadt.ukp.dkpro.core.api.metadata-asl</artifactId>
-           <version>1.8.0</version>
+           <groupId>org.dkpro.core</groupId>
+           <artifactId>dkpro-core-api-metadata-asl</artifactId>
        </dependency>
        <dependency>
-           <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-           <artifactId>de.tudarmstadt.ukp.dkpro.core.api.ner-asl</artifactId>
-           <version>1.8.0</version>
+           <groupId>org.dkpro.core</groupId>
+           <artifactId>dkpro-core-api-ner-asl</artifactId>
        </dependency>
 		<dependency>
-		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.anomaly-asl</artifactId>
-		    <version>1.8.0</version>
-		</dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-anomaly-asl</artifactId>
+        </dependency>
 		<dependency>
-		    <groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
-		    <artifactId>de.tudarmstadt.ukp.dkpro.core.api.segmentation-asl</artifactId>
-		    <version>1.8.0</version>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-segmentation-asl</artifactId>
 		</dependency>
     </dependencies>
 
