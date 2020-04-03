@@ -4,10 +4,11 @@
     <description/>
     <version>1.0</version>
     <vendor/>
+
     <imports>
-        <import name="desc.type.LexicalUnits"/>
-    </imports>
-    <types>
+    <import name="desc.type.LexicalUnits_customized"/>
+  </imports>
+  <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.OCRBlock</name>
             <description/>

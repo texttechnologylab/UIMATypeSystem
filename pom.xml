@@ -34,36 +34,40 @@
 </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.uima</groupId>
-            <artifactId>uimaj-core</artifactId>
-            <version>2.10.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.uima</groupId>
-            <artifactId>uimafit-core</artifactId>
-            <version>2.4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.uima</groupId>
-            <artifactId>uimaj-json</artifactId>
-            <version>2.10.4</version>
-        </dependency>
-       <dependency>
-           <groupId>org.dkpro.core</groupId>
-           <artifactId>dkpro-core-api-metadata-asl</artifactId>
-       </dependency>
-       <dependency>
-           <groupId>org.dkpro.core</groupId>
-           <artifactId>dkpro-core-api-ner-asl</artifactId>
-       </dependency>
 		<dependency>
-		    <groupId>org.dkpro.core</groupId>
-		    <artifactId>dkpro-core-api-anomaly-asl</artifactId>
-        </dependency>
+		    <groupId>org.apache.uima</groupId>
+		    <artifactId>uimaj-core</artifactId>
+		    <version>2.10.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.uima</groupId>
+		    <artifactId>uimafit-core</artifactId>
+		    <version>2.4.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.uima</groupId>
+		    <artifactId>uimaj-json</artifactId>
+		    <version>2.10.4</version>
+		</dependency>
 		<dependency>
 		    <groupId>org.dkpro.core</groupId>
 		    <artifactId>dkpro-core-api-segmentation-asl</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-metadata-asl</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-ner-asl</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-anomaly-asl</artifactId>
+		      </dependency>
+		<dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-syntax-asl</artifactId>
 		</dependency>
     </dependencies>
 
