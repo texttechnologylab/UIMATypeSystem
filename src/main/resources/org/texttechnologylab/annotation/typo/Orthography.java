@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Apr 22 18:06:03 CEST 2020
+ * Updated by JCasGen Wed Apr 22 22:07:17 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Orthography extends Annotation {

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Apr 22 17:56:17 CEST 2020 */
+/* First created by JCasGen Wed Apr 22 22:07:17 CEST 2020 */
 package org.texttechnologylab.annotation.type.concept;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 22 18:06:03 CEST 2020
+ * Updated by JCasGen Wed Apr 22 22:07:17 CEST 2020
  * @generated */
 public class Communication_Type extends AbstractNamedEntity_Type {
   /** @generated */
