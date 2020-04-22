@@ -76,7 +76,12 @@
                     <description/>
                     <rangeTypeName>uima.cas.Boolean</rangeTypeName>
                 </featureDescription>
-            </features>
+            <featureDescription>
+          <name>specific</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
         </typeDescription>
 
 
