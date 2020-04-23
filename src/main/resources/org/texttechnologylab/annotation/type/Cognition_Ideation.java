@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** 
- * Updated by JCasGen Wed Apr 22 22:07:17 CEST 2020
+ * Updated by JCasGen Thu Apr 23 08:52:23 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Cognition_Ideation extends NamedEntity {

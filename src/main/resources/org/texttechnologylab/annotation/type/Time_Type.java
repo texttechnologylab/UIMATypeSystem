@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 22 22:07:17 CEST 2020
+ * Updated by JCasGen Thu Apr 23 08:52:23 CEST 2020
  * @generated */
 public class Time_Type extends NamedEntity_Type {
   /** @generated */
