@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:07 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:52 CEST 2020 */
 package org.texttechnologylab.annotation.context.type;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.node.type.Context_Type;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:07 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:54:52 CEST 2020
  * @generated */
 public class PersonContext_Type extends Context_Type {
   /** @generated */

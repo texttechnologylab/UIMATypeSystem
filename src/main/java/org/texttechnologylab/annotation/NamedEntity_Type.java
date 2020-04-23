@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:33:59 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
+ * Updated by JCasGen Thu Apr 23 10:28:08 CEST 2020
  * @generated */
 public class NamedEntity_Type extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity_Type {
   /** @generated */
@@ -68,6 +68,30 @@ public class NamedEntity_Type extends de.tudarmstadt.ukp.dkpro.core.api.ner.type
     ll_cas.ll_setBooleanValue(addr, casFeatCode_metonym, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_specific;
+  /** @generated */
+  final int     casFeatCode_specific;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public boolean getSpecific(int addr) {
+        if (featOkTst && casFeat_specific == null)
+      jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.NamedEntity");
+    return ll_cas.ll_getBooleanValue(addr, casFeatCode_specific);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setSpecific(int addr, boolean v) {
+        if (featOkTst && casFeat_specific == null)
+      jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.NamedEntity");
+    ll_cas.ll_setBooleanValue(addr, casFeatCode_specific, v);}
+    
+  
 
 
 
@@ -87,6 +111,10 @@ public class NamedEntity_Type extends de.tudarmstadt.ukp.dkpro.core.api.ner.type
  
     casFeat_metonym = jcas.getRequiredFeatureDE(casType, "metonym", "uima.cas.Boolean", featOkTst);
     casFeatCode_metonym  = (null == casFeat_metonym) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_metonym).getCode();
+
+ 
+    casFeat_specific = jcas.getRequiredFeatureDE(casType, "specific", "uima.cas.Boolean", featOkTst);
+    casFeatCode_specific  = (null == casFeat_specific) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_specific).getCode();
 
   }
 }

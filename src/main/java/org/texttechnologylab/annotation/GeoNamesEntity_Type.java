@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Apr 01 14:40:03 CEST 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:27 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 17:34:51 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:54:27 CEST 2020
  * @generated */
 public class GeoNamesEntity_Type extends Annotation_Type {
   /** @generated */

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 24 15:23:35 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:56:03 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Tue Mar 24 15:55:32 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:56:03 CEST 2020
  * @generated */
 public class EventPath_Type extends Location_Type {
   /** @generated */

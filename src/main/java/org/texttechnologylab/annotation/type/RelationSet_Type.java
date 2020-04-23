@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:03:02 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:14 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:55:43 CEST 2020
  * @generated */
 public class RelationSet_Type extends AnnotationBase_Type {
   /** @generated */

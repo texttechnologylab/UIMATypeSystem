@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:04 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:48 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:57:15 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:54:48 CEST 2020
  * @generated */
 public class TextTechnologyEntity_Type extends Node_Type {
   /** @generated */
@@ -102,7 +102,7 @@ public class TextTechnologyEntity_Type extends Node_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
-  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
+	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
   }
    
   /** @generated

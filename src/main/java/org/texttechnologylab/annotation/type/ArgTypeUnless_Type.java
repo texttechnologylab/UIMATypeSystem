@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:13:50 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:33 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:13:50 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:54:34 CEST 2020
  * @generated */
 public class ArgTypeUnless_Type extends ArgType_Type {
   /** @generated */
@@ -54,7 +54,7 @@ public class ArgTypeUnless_Type extends ArgType_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_counterRebuttal), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_counterRebuttal), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_counterRebuttal), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_counterRebuttal), i);
   }
    
   /** @generated
@@ -105,7 +105,7 @@ public class ArgTypeUnless_Type extends ArgType_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_rebuttal), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_rebuttal), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_rebuttal), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_rebuttal), i);
   }
    
   /** @generated

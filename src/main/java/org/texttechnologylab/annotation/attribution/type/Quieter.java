@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:13:54 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:37 CEST 2020 */
 package org.texttechnologylab.annotation.attribution.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.Attribution;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:13:54 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:54:37 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAttribution.xml
  * @generated */
 public class Quieter extends Attribution {

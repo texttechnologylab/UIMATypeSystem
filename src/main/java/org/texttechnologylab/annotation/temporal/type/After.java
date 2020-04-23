@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:14:59 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:55:39 CEST 2020 */
 package org.texttechnologylab.annotation.temporal.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.Temporal;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:59 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:55:39 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTemporal.xml
  * @generated */
 public class After extends Temporal {

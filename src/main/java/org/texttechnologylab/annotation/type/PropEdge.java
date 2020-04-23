@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:14:45 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:55:24 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:45 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:55:24 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyPropAnno.xml
  * @generated */
 public class PropEdge extends Edge {

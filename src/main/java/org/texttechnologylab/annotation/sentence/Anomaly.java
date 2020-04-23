@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:03:24 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:27 CEST 2020 */
 package org.texttechnologylab.annotation.sentence;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 17:34:52 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:54:27 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly {

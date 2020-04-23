@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:16 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:58 CEST 2020 */
 package org.texttechnologylab.iaa;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:57:01 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:54:58 CEST 2020
  * @generated */
 public class AgreementContainer_Type extends Annotation_Type {
   /** @generated */
@@ -103,7 +103,7 @@ public class AgreementContainer_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryNames), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_categoryNames), i);
-  return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryNames), i);
+	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryNames), i);
   }
    
   /** @generated
@@ -154,7 +154,7 @@ public class AgreementContainer_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryAgreementValues), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_categoryAgreementValues), i);
-  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryAgreementValues), i);
+	return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryAgreementValues), i);
   }
    
   /** @generated
@@ -205,7 +205,7 @@ public class AgreementContainer_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getLongArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryCounts), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_categoryCounts), i);
-  return ll_cas.ll_getLongArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryCounts), i);
+	return ll_cas.ll_getLongArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categoryCounts), i);
   }
    
   /** @generated
@@ -256,7 +256,7 @@ public class AgreementContainer_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categorySpecificAgreementValues), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_categorySpecificAgreementValues), i);
-  return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categorySpecificAgreementValues), i);
+	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_categorySpecificAgreementValues), i);
   }
    
   /** @generated

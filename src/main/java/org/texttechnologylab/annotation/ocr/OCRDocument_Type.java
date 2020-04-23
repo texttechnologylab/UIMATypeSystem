@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:29 CET 2020 */
+/* First created by JCasGen Fri Apr 03 13:32:41 CEST 2020 */
 package org.texttechnologylab.annotation.ocr;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:29 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:55:15 CEST 2020
  * @generated */
 public class OCRDocument_Type extends Annotation_Type {
   /** @generated */

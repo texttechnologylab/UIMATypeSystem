@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:38 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:55:21 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.type.AnnotationNode_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:55:21 CEST 2020
  * @generated */
 public class Orientation_Type extends AnnotationNode_Type {
   /** @generated */

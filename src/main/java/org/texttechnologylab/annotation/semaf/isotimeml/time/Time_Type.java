@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 24 16:00:31 CET 2020 */
+/* First created by JCasGen Tue Apr 07 19:23:28 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isotimeml.time;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isotimeml.TimeX3_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 13:38:53 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
  * @generated */
 public class Time_Type extends TimeX3_Type {
   /** @generated */

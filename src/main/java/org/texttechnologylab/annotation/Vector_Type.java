@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:56 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:55:34 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** Vector in a room
- * Updated by JCasGen Fri Mar 20 09:14:56 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:55:34 CEST 2020
  * @generated */
 public class Vector_Type extends AnnotationBase_Type {
   /** @generated */

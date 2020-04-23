@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:13:54 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:37 CEST 2020 */
 package org.texttechnologylab.annotation.attribution.type;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.Attribution_Type;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:13:54 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:54:37 CEST 2020
  * @generated */
 public class Louder_Type extends Attribution_Type {
   /** @generated */

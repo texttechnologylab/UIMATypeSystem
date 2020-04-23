@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
+/* First created by JCasGen Wed Apr 22 22:07:17 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
+ * Updated by JCasGen Thu Apr 23 10:28:08 CEST 2020
  * @generated */
 public class Vehicle_Type extends Artifact_Type {
   /** @generated */

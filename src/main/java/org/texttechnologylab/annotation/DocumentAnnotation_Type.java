@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:14:01 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:45 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 09:57:20 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:54:45 CEST 2020
  * @generated */
 public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   /** @generated */
@@ -151,7 +151,7 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
-  return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
+	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
   }
    
   /** @generated

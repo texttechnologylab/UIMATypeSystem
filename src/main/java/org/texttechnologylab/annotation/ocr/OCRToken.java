@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:14:29 CET 2020 */
+/* First created by JCasGen Fri Apr 03 13:32:41 CEST 2020 */
 package org.texttechnologylab.annotation.ocr;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,7 +12,7 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:14:29 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:55:15 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOCR.xml
  * @generated */
 public class OCRToken extends Token {

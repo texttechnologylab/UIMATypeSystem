@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Mar 24 16:00:31 CET 2020 */
+/* First created by JCasGen Tue Apr 07 19:23:28 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isotimeml.time;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.semaf.isotimeml.TimeX3;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 13:38:53 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
  * @generated */
 public class Date extends TimeX3 {

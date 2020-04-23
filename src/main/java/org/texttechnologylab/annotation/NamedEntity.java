@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:15:06 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:33:59 CEST 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:15:08 CET 2020
+ * Updated by JCasGen Thu Apr 23 10:28:08 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity {
@@ -117,6 +117,28 @@ public class NamedEntity extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.Name
     if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_metonym == null)
       jcasType.jcas.throwFeatMissing("metonym", "org.texttechnologylab.annotation.NamedEntity");
     jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_metonym, v);}    
+   
+    
+  //*--------------*
+  //* Feature: specific
+
+  /** getter for specific - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public boolean getSpecific() {
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_specific == null)
+      jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.NamedEntity");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_specific);}
+    
+  /** setter for specific - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSpecific(boolean v) {
+    if (NamedEntity_Type.featOkTst && ((NamedEntity_Type)jcasType).casFeat_specific == null)
+      jcasType.jcas.throwFeatMissing("specific", "org.texttechnologylab.annotation.NamedEntity");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((NamedEntity_Type)jcasType).casFeatCode_specific, v);}    
   }
 
     

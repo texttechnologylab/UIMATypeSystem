@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Mar 20 09:13:50 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:33 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Fri Mar 20 09:13:50 CET 2020
+ * Updated by JCasGen Thu Apr 23 09:54:34 CEST 2020
  * @generated */
 public class ArgEdgeLeft_Type extends ArgEdge_Type {
   /** @generated */

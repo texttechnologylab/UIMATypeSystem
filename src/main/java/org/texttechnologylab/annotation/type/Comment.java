@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Mar 20 09:03:02 CET 2020 */
+/* First created by JCasGen Thu Apr 23 09:54:13 CEST 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 10:15:13 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOrientation.xml
+ * Updated by JCasGen Thu Apr 23 09:55:43 CEST 2020
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTimeAnno.xml
  * @generated */
 public class Comment extends AnnotationNode {
   /** @generated

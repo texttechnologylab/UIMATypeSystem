@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 24 15:23:34 CET 2020 */
+/* First created by JCasGen Mon Apr 06 13:25:05 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.IsoSpatial;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Wed Apr 01 13:38:51 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
  * @generated */
 public class Vec3_Type extends AnnotationBase_Type {
   /** @generated */

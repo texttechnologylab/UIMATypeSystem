@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Mar 24 15:23:19 CET 2020 */
+/* First created by JCasGen Mon Apr 06 13:25:05 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Wed Apr 01 13:38:51 CEST 2020
+ * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
  * @generated */
 public class Location extends SpatialEntity {
