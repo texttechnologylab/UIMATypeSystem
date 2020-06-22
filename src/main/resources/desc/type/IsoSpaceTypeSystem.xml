@@ -99,6 +99,11 @@
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute</elementType>
         </featureDescription>
+      <featureDescription>
+          <name>cardinality</name>
+          <description/>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
   <typeDescription>
@@ -194,7 +199,12 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
-         </features>
+         <featureDescription>
+          <name>motion_goal</name>
+          <description/>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>org.texttechnologylab.annotation.semaf.isospace.NonMotionEvent</name>
@@ -267,6 +277,11 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
+      <featureDescription>
+          <name>reference_pt_str</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -338,7 +353,13 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
-        </features>
+        <featureDescription>
+          <name>bounds</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
+      </features>
     </typeDescription>
 
   </types>
