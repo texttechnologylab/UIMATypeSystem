@@ -72,33 +72,6 @@
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
-        
-        <featureDescription>
-          <name>object_id</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>position</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>rotation</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>scale</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>object_feature</name>
-          <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute</elementType>
-        </featureDescription>
       <featureDescription>
           <name>cardinality</name>
           <description/>
