@@ -44,5 +44,39 @@
         </featureDescription>
       </features>
     </typeDescription>
-    </types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.semaf.isospace.SRelation</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.semaf.isobase.Signal</supertypeName>
+      <features>
+        <featureDescription>
+          <name>relation_type</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>cluster</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>value</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.semaf.isospace.MRelation</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.semaf.isobase.Signal</supertypeName>
+      <features>
+        <featureDescription>
+          <name>value</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
 </typeSystemDescription>

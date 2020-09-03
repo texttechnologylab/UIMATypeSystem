@@ -72,32 +72,10 @@
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
-        
-        <featureDescription>
-          <name>object_id</name>
+      <featureDescription>
+          <name>cardinality</name>
           <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>position</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>rotation</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>scale</name>
-          <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>object_feature</name>
-          <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute</elementType>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -194,7 +172,12 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
-         </features>
+         <featureDescription>
+          <name>motion_goal</name>
+          <description/>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>org.texttechnologylab.annotation.semaf.isospace.NonMotionEvent</name>
@@ -267,6 +250,11 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
+      <featureDescription>
+          <name>reference_pt_str</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -338,7 +326,13 @@
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isobase.Entity</rangeTypeName>
         </featureDescription>
-        </features>
+        <featureDescription>
+          <name>bounds</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
+      </features>
     </typeDescription>
 
   </types>
