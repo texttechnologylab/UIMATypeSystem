@@ -12,8 +12,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class OLink extends Link {
   /** @generated
@@ -129,6 +129,28 @@ public class OLink extends Link {
     if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_reference_pt == null)
       jcasType.jcas.throwFeatMissing("reference_pt", "org.texttechnologylab.annotation.semaf.isospace.OLink");
     jcasType.ll_cas.ll_setRefValue(addr, ((OLink_Type)jcasType).casFeatCode_reference_pt, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: reference_pt_str
+
+  /** getter for reference_pt_str - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getReference_pt_str() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_reference_pt_str == null)
+      jcasType.jcas.throwFeatMissing("reference_pt_str", "org.texttechnologylab.annotation.semaf.isospace.OLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OLink_Type)jcasType).casFeatCode_reference_pt_str);}
+    
+  /** setter for reference_pt_str - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setReference_pt_str(String v) {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_reference_pt_str == null)
+      jcasType.jcas.throwFeatMissing("reference_pt_str", "org.texttechnologylab.annotation.semaf.isospace.OLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OLink_Type)jcasType).casFeatCode_reference_pt_str, v);}    
   }
 
     

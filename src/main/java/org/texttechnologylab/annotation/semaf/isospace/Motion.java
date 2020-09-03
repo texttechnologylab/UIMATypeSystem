@@ -12,8 +12,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class Motion extends Event {
   /** @generated
@@ -163,6 +163,28 @@ public class Motion extends Event {
     if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_manner == null)
       jcasType.jcas.throwFeatMissing("manner", "org.texttechnologylab.annotation.semaf.isospace.Motion");
     jcasType.ll_cas.ll_setRefValue(addr, ((Motion_Type)jcasType).casFeatCode_manner, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: motion_goal
+
+  /** getter for motion_goal - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public SpatialEntity getMotion_goal() {
+    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_goal == null)
+      jcasType.jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_goal)));}
+    
+  /** setter for motion_goal - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMotion_goal(SpatialEntity v) {
+    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_goal == null)
+      jcasType.jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_goal, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

@@ -7,12 +7,15 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.cas.FSList;
+import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3;
+import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class Entity extends Annotation {
   /** @generated
@@ -118,6 +121,116 @@ public class Entity extends Annotation {
     if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_mod == null)
       jcasType.jcas.throwFeatMissing("mod", "org.texttechnologylab.annotation.semaf.isobase.Entity");
     jcasType.ll_cas.ll_setStringValue(addr, ((Entity_Type)jcasType).casFeatCode_mod, v);}    
+   
+    
+  //*--------------*
+  //* Feature: object_id
+
+  /** getter for object_id - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getObject_id() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_id == null)
+      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Entity_Type)jcasType).casFeatCode_object_id);}
+    
+  /** setter for object_id - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setObject_id(String v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_id == null)
+      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Entity_Type)jcasType).casFeatCode_object_id, v);}    
+   
+    
+  //*--------------*
+  //* Feature: position
+
+  /** getter for position - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Vec3 getPosition() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_position == null)
+      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_position)));}
+    
+  /** setter for position - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setPosition(Vec3 v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_position == null)
+      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_position, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: rotation
+
+  /** getter for rotation - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Vec4 getRotation() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec4)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_rotation)));}
+    
+  /** setter for rotation - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setRotation(Vec4 v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_rotation, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: scale
+
+  /** getter for scale - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Vec3 getScale() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_scale)));}
+    
+  /** setter for scale - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setScale(Vec3 v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_scale, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: object_feature
+
+  /** getter for object_feature - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSList getObject_feature() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature == null)
+      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature)));}
+    
+  /** setter for object_feature - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setObject_feature(FSList v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature == null)
+      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

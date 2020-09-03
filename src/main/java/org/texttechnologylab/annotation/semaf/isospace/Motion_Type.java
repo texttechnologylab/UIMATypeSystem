@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Event_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
  * @generated */
 public class Motion_Type extends Event_Type {
   /** @generated */
@@ -117,6 +117,30 @@ public class Motion_Type extends Event_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_manner, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_motion_goal;
+  /** @generated */
+  final int     casFeatCode_motion_goal;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getMotion_goal(int addr) {
+        if (featOkTst && casFeat_motion_goal == null)
+      jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_motion_goal);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setMotion_goal(int addr, int v) {
+        if (featOkTst && casFeat_motion_goal == null)
+      jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
+    ll_cas.ll_setRefValue(addr, casFeatCode_motion_goal, v);}
+    
+  
 
 
 
@@ -144,6 +168,10 @@ public class Motion_Type extends Event_Type {
  
     casFeat_manner = jcas.getRequiredFeatureDE(casType, "manner", "org.texttechnologylab.annotation.semaf.isobase.Entity", featOkTst);
     casFeatCode_manner  = (null == casFeat_manner) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_manner).getCode();
+
+ 
+    casFeat_motion_goal = jcas.getRequiredFeatureDE(casType, "motion_goal", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity", featOkTst);
+    casFeatCode_motion_goal  = (null == casFeat_motion_goal) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_motion_goal).getCode();
 
   }
 }

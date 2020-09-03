@@ -14,8 +14,8 @@ import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class SpatialEntity extends Entity {
   /** @generated
@@ -322,113 +322,25 @@ public class SpatialEntity extends Entity {
    
     
   //*--------------*
-  //* Feature: object_id
+  //* Feature: cardinality
 
-  /** getter for object_id - gets 
+  /** getter for cardinality - gets 
    * @generated
    * @return value of the feature 
    */
-  public String getObject_id() {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_object_id == null)
-      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_object_id);}
+  public double getCardinality() {
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_cardinality == null)
+      jcasType.jcas.throwFeatMissing("cardinality", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_cardinality);}
     
-  /** setter for object_id - sets  
+  /** setter for cardinality - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setObject_id(String v) {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_object_id == null)
-      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_object_id, v);}    
-   
-    
-  //*--------------*
-  //* Feature: position
-
-  /** getter for position - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public Vec3 getPosition() {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_position == null)
-      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_position)));}
-    
-  /** setter for position - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setPosition(Vec3 v) {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_position == null)
-      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_position, jcasType.ll_cas.ll_getFSRef(v));}    
-   
-    
-  //*--------------*
-  //* Feature: rotation
-
-  /** getter for rotation - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public Vec4 getRotation() {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_rotation == null)
-      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    return (Vec4)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_rotation)));}
-    
-  /** setter for rotation - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setRotation(Vec4 v) {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_rotation == null)
-      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_rotation, jcasType.ll_cas.ll_getFSRef(v));}    
-   
-    
-  //*--------------*
-  //* Feature: scale
-
-  /** getter for scale - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public Vec3 getScale() {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scale == null)
-      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scale)));}
-    
-  /** setter for scale - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setScale(Vec3 v) {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scale == null)
-      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scale, jcasType.ll_cas.ll_getFSRef(v));}    
-   
-    
-  //*--------------*
-  //* Feature: object_feature
-
-  /** getter for object_feature - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public FSList getObject_feature() {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_object_feature == null)
-      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_object_feature)));}
-    
-  /** setter for object_feature - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setObject_feature(FSList v) {
-    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_object_feature == null)
-      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_object_feature, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setCardinality(double v) {
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_cardinality == null)
+      jcasType.jcas.throwFeatMissing("cardinality", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_cardinality, v);}    
   }
 
     

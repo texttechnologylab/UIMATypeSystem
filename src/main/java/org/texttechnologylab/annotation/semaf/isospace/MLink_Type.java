@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
  * @generated */
 public class MLink_Type extends Link_Type {
   /** @generated */
@@ -93,6 +93,30 @@ public class MLink_Type extends Link_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_end_point2, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_bounds;
+  /** @generated */
+  final int     casFeatCode_bounds;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getBounds(int addr) {
+        if (featOkTst && casFeat_bounds == null)
+      jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_bounds);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setBounds(int addr, int v) {
+        if (featOkTst && casFeat_bounds == null)
+      jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    ll_cas.ll_setRefValue(addr, casFeatCode_bounds, v);}
+    
+  
 
 
 
@@ -116,6 +140,10 @@ public class MLink_Type extends Link_Type {
  
     casFeat_end_point2 = jcas.getRequiredFeatureDE(casType, "end_point2", "org.texttechnologylab.annotation.semaf.isobase.Entity", featOkTst);
     casFeatCode_end_point2  = (null == casFeat_end_point2) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_end_point2).getCode();
+
+ 
+    casFeat_bounds = jcas.getRequiredFeatureDE(casType, "bounds", "uima.cas.FSList", featOkTst);
+    casFeatCode_bounds  = (null == casFeat_bounds) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_bounds).getCode();
 
   }
 }

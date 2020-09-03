@@ -8,12 +8,13 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.semaf.isobase.Entity;
+import org.apache.uima.jcas.cas.FSList;
 import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class MLink extends Link {
   /** @generated
@@ -129,6 +130,28 @@ public class MLink extends Link {
     if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_end_point2 == null)
       jcasType.jcas.throwFeatMissing("end_point2", "org.texttechnologylab.annotation.semaf.isospace.MLink");
     jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_end_point2, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: bounds
+
+  /** getter for bounds - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSList getBounds() {
+    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds == null)
+      jcasType.jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds)));}
+    
+  /** setter for bounds - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setBounds(FSList v) {
+    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds == null)
+      jcasType.jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

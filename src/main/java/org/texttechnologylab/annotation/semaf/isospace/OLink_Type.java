@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
  * @generated */
 public class OLink_Type extends Link_Type {
   /** @generated */
@@ -93,6 +93,30 @@ public class OLink_Type extends Link_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_reference_pt, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_reference_pt_str;
+  /** @generated */
+  final int     casFeatCode_reference_pt_str;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getReference_pt_str(int addr) {
+        if (featOkTst && casFeat_reference_pt_str == null)
+      jcas.throwFeatMissing("reference_pt_str", "org.texttechnologylab.annotation.semaf.isospace.OLink");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_reference_pt_str);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setReference_pt_str(int addr, String v) {
+        if (featOkTst && casFeat_reference_pt_str == null)
+      jcas.throwFeatMissing("reference_pt_str", "org.texttechnologylab.annotation.semaf.isospace.OLink");
+    ll_cas.ll_setStringValue(addr, casFeatCode_reference_pt_str, v);}
+    
+  
 
 
 
@@ -116,6 +140,10 @@ public class OLink_Type extends Link_Type {
  
     casFeat_reference_pt = jcas.getRequiredFeatureDE(casType, "reference_pt", "org.texttechnologylab.annotation.semaf.isobase.Entity", featOkTst);
     casFeatCode_reference_pt  = (null == casFeat_reference_pt) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_reference_pt).getCode();
+
+ 
+    casFeat_reference_pt_str = jcas.getRequiredFeatureDE(casType, "reference_pt_str", "uima.cas.String", featOkTst);
+    casFeatCode_reference_pt_str  = (null == casFeat_reference_pt_str) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_reference_pt_str).getCode();
 
   }
 }

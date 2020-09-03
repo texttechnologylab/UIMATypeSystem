@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Signal_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
+ * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
  * @generated */
 public class MotionSignal_Type extends Signal_Type {
   /** @generated */
