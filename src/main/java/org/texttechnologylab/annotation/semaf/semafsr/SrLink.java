@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Apr 23 09:56:09 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:49:10 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.semafsr;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:09 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoSRTypeSystem.xml
+ * Updated by JCasGen Thu Sep 10 17:49:10 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSRTypeSystem.xml
  * @generated */
 public class SrLink extends Link {
   /** @generated

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Apr 06 13:25:05 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:48:48 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
  * @generated */
 public class Entity_Type extends Annotation_Type {
   /** @generated */

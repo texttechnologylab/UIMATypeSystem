@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Apr 06 13:25:05 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:48:48 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
+ * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
  * @generated */
 public class Link extends AnnotationBase {
   /** @generated

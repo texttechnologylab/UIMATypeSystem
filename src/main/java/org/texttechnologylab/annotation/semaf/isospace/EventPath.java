@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Apr 23 09:56:03 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:48:56 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.FSList;
 
 
 /** 
- * Updated by JCasGen Thu Sep 03 10:03:40 CEST 2020
+ * Updated by JCasGen Thu Sep 10 17:48:56 CEST 2020
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class EventPath extends Location {

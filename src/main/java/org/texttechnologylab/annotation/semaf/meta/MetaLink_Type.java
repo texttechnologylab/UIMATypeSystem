@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Apr 23 09:55:58 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:49:24 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.meta;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** ( COREFERENCE | SUBCOREFERENCE | SPLITCOREFERENCE )
- * Updated by JCasGen Thu Apr 23 09:55:58 CEST 2020
+ * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
  * @generated */
 public class MetaLink_Type extends Link_Type {
   /** @generated */

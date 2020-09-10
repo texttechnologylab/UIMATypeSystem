@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Sep 10 17:48:48 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:48:56 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,15 +11,15 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Thu Sep 10 17:48:56 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
-public class MotionSignal extends Signal {
+public class MRelation extends Signal {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(MotionSignal.class);
+  public final static int typeIndexID = JCasRegistry.register(MRelation.class);
   /** @generated
    * @ordered 
    */
@@ -33,14 +33,14 @@ public class MotionSignal extends Signal {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected MotionSignal() {/* intentionally empty block */}
+  protected MRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public MotionSignal(int addr, TOP_Type type) {
+  public MRelation(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -48,7 +48,7 @@ public class MotionSignal extends Signal {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public MotionSignal(JCas jcas) {
+  public MRelation(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -58,7 +58,7 @@ public class MotionSignal extends Signal {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public MotionSignal(JCas jcas, int begin, int end) {
+  public MRelation(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -77,25 +77,25 @@ public class MotionSignal extends Signal {
  
     
   //*--------------*
-  //* Feature: motion_signal_type
+  //* Feature: value
 
-  /** getter for motion_signal_type - gets ( MANNER | PATH )
+  /** getter for value - gets 
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_signal_type() {
-    if (MotionSignal_Type.featOkTst && ((MotionSignal_Type)jcasType).casFeat_motion_signal_type == null)
-      jcasType.jcas.throwFeatMissing("motion_signal_type", "org.texttechnologylab.annotation.semaf.isospace.MotionSignal");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((MotionSignal_Type)jcasType).casFeatCode_motion_signal_type);}
+  public String getValue() {
+    if (MRelation_Type.featOkTst && ((MRelation_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.MRelation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MRelation_Type)jcasType).casFeatCode_value);}
     
-  /** setter for motion_signal_type - sets ( MANNER | PATH ) 
+  /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMotion_signal_type(String v) {
-    if (MotionSignal_Type.featOkTst && ((MotionSignal_Type)jcasType).casFeat_motion_signal_type == null)
-      jcasType.jcas.throwFeatMissing("motion_signal_type", "org.texttechnologylab.annotation.semaf.isospace.MotionSignal");
-    jcasType.ll_cas.ll_setStringValue(addr, ((MotionSignal_Type)jcasType).casFeatCode_motion_signal_type, v);}    
+  public void setValue(String v) {
+    if (MRelation_Type.featOkTst && ((MRelation_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.MRelation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MRelation_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

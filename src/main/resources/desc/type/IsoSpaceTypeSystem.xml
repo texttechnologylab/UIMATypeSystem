@@ -329,7 +329,7 @@
         <featureDescription>
           <name>bounds</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
       </features>

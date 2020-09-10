@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Sep 10 17:48:48 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:48:56 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas;
@@ -11,16 +11,16 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Signal_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Thu Sep 10 17:48:56 CEST 2020
  * @generated */
-public class Measure_Type extends Signal_Type {
+public class MRelation_Type extends Signal_Type {
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Measure.typeIndexID;
+  public final static int typeIndexID = MRelation.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.semaf.isospace.Measure");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.semaf.isospace.MRelation");
  
   /** @generated */
   final Feature casFeat_value;
@@ -32,7 +32,7 @@ public class Measure_Type extends Signal_Type {
    */ 
   public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.Measure");
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.MRelation");
     return ll_cas.ll_getStringValue(addr, casFeatCode_value);
   }
   /** @generated
@@ -41,32 +41,8 @@ public class Measure_Type extends Signal_Type {
    */    
   public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.Measure");
+      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.MRelation");
     ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
-    
-  
- 
-  /** @generated */
-  final Feature casFeat_unit;
-  /** @generated */
-  final int     casFeatCode_unit;
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @return the feature value 
-   */ 
-  public String getUnit(int addr) {
-        if (featOkTst && casFeat_unit == null)
-      jcas.throwFeatMissing("unit", "org.texttechnologylab.annotation.semaf.isospace.Measure");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_unit);
-  }
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @param v value to set 
-   */    
-  public void setUnit(int addr, String v) {
-        if (featOkTst && casFeat_unit == null)
-      jcas.throwFeatMissing("unit", "org.texttechnologylab.annotation.semaf.isospace.Measure");
-    ll_cas.ll_setStringValue(addr, casFeatCode_unit, v);}
     
   
 
@@ -77,17 +53,13 @@ public class Measure_Type extends Signal_Type {
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
-  public Measure_Type(JCas jcas, Type casType) {
+  public MRelation_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
     casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
     casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
-
- 
-    casFeat_unit = jcas.getRequiredFeatureDE(casType, "unit", "uima.cas.String", featOkTst);
-    casFeatCode_unit  = (null == casFeat_unit) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_unit).getCode();
 
   }
 }

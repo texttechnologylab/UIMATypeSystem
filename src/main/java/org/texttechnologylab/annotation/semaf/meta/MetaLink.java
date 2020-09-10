@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Apr 23 09:55:58 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:49:24 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.meta;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** ( COREFERENCE | SUBCOREFERENCE | SPLITCOREFERENCE )
- * Updated by JCasGen Thu Apr 23 09:55:58 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
  * @generated */
 public class MetaLink extends Link {
   /** @generated

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Apr 07 19:23:28 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:49:15 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isotimeml;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isobase.Signal_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
+ * Updated by JCasGen Thu Sep 10 17:49:16 CEST 2020
  * @generated */
 public class TimeSignal_Type extends Signal_Type {
   /** @generated */

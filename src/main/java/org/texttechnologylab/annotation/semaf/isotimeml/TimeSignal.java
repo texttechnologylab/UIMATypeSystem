@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Apr 07 19:23:28 CEST 2020 */
+/* First created by JCasGen Thu Sep 10 17:49:15 CEST 2020 */
 package org.texttechnologylab.annotation.semaf.isotimeml;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Thu Apr 23 09:56:12 CEST 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
+ * Updated by JCasGen Thu Sep 10 17:49:16 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoTimeMLTypeSystem.xml
  * @generated */
 public class TimeSignal extends Signal {
   /** @generated
