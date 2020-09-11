@@ -14,8 +14,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class MoveLink extends Link {
   /** @generated
@@ -131,6 +131,50 @@ public class MoveLink extends Link {
     if (MoveLink_Type.featOkTst && ((MoveLink_Type)jcasType).casFeat_mid_point == null)
       jcasType.jcas.throwFeatMissing("mid_point", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
     jcasType.ll_cas.ll_setRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: mid_point_array
+
+  /** getter for mid_point_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getMid_point_array() {
+    if (MoveLink_Type.featOkTst && ((MoveLink_Type)jcasType).casFeat_mid_point_array == null)
+      jcasType.jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array)));}
+    
+  /** setter for mid_point_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMid_point_array(FSArray v) {
+    if (MoveLink_Type.featOkTst && ((MoveLink_Type)jcasType).casFeat_mid_point_array == null)
+      jcasType.jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    jcasType.ll_cas.ll_setRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for mid_point_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public Entity getMid_point_array(int i) {
+    if (MoveLink_Type.featOkTst && ((MoveLink_Type)jcasType).casFeat_mid_point_array == null)
+      jcasType.jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array), i);
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array), i)));}
+
+  /** indexed setter for mid_point_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setMid_point_array(int i, Entity v) { 
+    if (MoveLink_Type.featOkTst && ((MoveLink_Type)jcasType).casFeat_mid_point_array == null)
+      jcasType.jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MoveLink_Type)jcasType).casFeatCode_mid_point_array), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*

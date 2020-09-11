@@ -14,8 +14,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class Path extends Location {
   /** @generated
@@ -143,6 +143,50 @@ public class Path extends Location {
     if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midIDs == null)
       jcasType.jcas.throwFeatMissing("midIDs", "org.texttechnologylab.annotation.semaf.isospace.Path");
     jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_midIDs, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: midID_array
+
+  /** getter for midID_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getMidID_array() {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array)));}
+    
+  /** setter for midID_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMidID_array(FSArray v) {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for midID_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public SpatialEntity getMidID_array(int i) {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i);
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i)));}
+
+  /** indexed setter for midID_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setMidID_array(int i, SpatialEntity v) { 
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

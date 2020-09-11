@@ -15,8 +15,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class SpatialEntity extends Entity {
   /** @generated
@@ -320,6 +320,50 @@ public class SpatialEntity extends Entity {
     if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scopes == null)
       jcasType.jcas.throwFeatMissing("scopes", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
     jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: scopes_array
+
+  /** getter for scopes_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getScopes_array() {
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array)));}
+    
+  /** setter for scopes_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setScopes_array(FSArray v) {
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for scopes_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public Entity getScopes_array(int i) {
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array), i);
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array), i)));}
+
+  /** indexed setter for scopes_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setScopes_array(int i, Entity v) { 
+    if (SpatialEntity_Type.featOkTst && ((SpatialEntity_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpatialEntity_Type)jcasType).casFeatCode_scopes_array), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*

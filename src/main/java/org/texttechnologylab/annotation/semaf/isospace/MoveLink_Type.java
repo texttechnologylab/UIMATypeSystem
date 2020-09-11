@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class MoveLink_Type extends Link_Type {
   /** @generated */
@@ -93,6 +93,57 @@ public class MoveLink_Type extends Link_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_mid_point, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_mid_point_array;
+  /** @generated */
+  final int     casFeatCode_mid_point_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getMid_point_array(int addr) {
+        if (featOkTst && casFeat_mid_point_array == null)
+      jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setMid_point_array(int addr, int v) {
+        if (featOkTst && casFeat_mid_point_array == null)
+      jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    ll_cas.ll_setRefValue(addr, casFeatCode_mid_point_array, v);}
+    
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getMid_point_array(int addr, int i) {
+        if (featOkTst && casFeat_mid_point_array == null)
+      jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setMid_point_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_mid_point_array == null)
+      jcas.throwFeatMissing("mid_point_array", "org.texttechnologylab.annotation.semaf.isospace.MoveLink");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_mid_point_array), i, v);
+  }
+ 
  
   /** @generated */
   final Feature casFeat_path_id;
@@ -212,6 +263,10 @@ public class MoveLink_Type extends Link_Type {
  
     casFeat_mid_point = jcas.getRequiredFeatureDE(casType, "mid_point", "uima.cas.FSList", featOkTst);
     casFeatCode_mid_point  = (null == casFeat_mid_point) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_mid_point).getCode();
+
+ 
+    casFeat_mid_point_array = jcas.getRequiredFeatureDE(casType, "mid_point_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_mid_point_array  = (null == casFeat_mid_point_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_mid_point_array).getCode();
 
  
     casFeat_path_id = jcas.getRequiredFeatureDE(casType, "path_id", "org.texttechnologylab.annotation.semaf.isospace.Path", featOkTst);

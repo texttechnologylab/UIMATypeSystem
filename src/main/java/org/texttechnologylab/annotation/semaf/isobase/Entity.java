@@ -16,8 +16,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoMetaTypeSystem.xml
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class Entity extends Annotation {
   /** @generated
@@ -233,6 +233,50 @@ public class Entity extends Annotation {
     if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature == null)
       jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isobase.Entity");
     jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: object_feature_array
+
+  /** getter for object_feature_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getObject_feature_array() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array)));}
+    
+  /** setter for object_feature_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setObject_feature_array(FSArray v) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for object_feature_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public ObjectAttribute getObject_feature_array(int i) {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i);
+    return (ObjectAttribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i)));}
+
+  /** indexed setter for object_feature_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setObject_feature_array(int i, ObjectAttribute v) { 
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

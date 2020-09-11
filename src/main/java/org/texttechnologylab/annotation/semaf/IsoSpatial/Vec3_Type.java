@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class Vec3_Type extends AnnotationBase_Type {
   /** @generated */

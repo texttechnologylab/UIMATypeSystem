@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Entity_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class SpatialEntity_Type extends Entity_Type {
   /** @generated */
@@ -287,6 +287,57 @@ public class SpatialEntity_Type extends Entity_Type {
   
  
   /** @generated */
+  final Feature casFeat_scopes_array;
+  /** @generated */
+  final int     casFeatCode_scopes_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getScopes_array(int addr) {
+        if (featOkTst && casFeat_scopes_array == null)
+      jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setScopes_array(int addr, int v) {
+        if (featOkTst && casFeat_scopes_array == null)
+      jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    ll_cas.ll_setRefValue(addr, casFeatCode_scopes_array, v);}
+    
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getScopes_array(int addr, int i) {
+        if (featOkTst && casFeat_scopes_array == null)
+      jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setScopes_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_scopes_array == null)
+      jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i, v);
+  }
+ 
+ 
+  /** @generated */
   final Feature casFeat_cardinality;
   /** @generated */
   final int     casFeatCode_cardinality;
@@ -364,6 +415,10 @@ public class SpatialEntity_Type extends Entity_Type {
  
     casFeat_scopes = jcas.getRequiredFeatureDE(casType, "scopes", "uima.cas.FSList", featOkTst);
     casFeatCode_scopes  = (null == casFeat_scopes) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_scopes).getCode();
+
+ 
+    casFeat_scopes_array = jcas.getRequiredFeatureDE(casType, "scopes_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_scopes_array  = (null == casFeat_scopes_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_scopes_array).getCode();
 
  
     casFeat_cardinality = jcas.getRequiredFeatureDE(casType, "cardinality", "uima.cas.Double", featOkTst);

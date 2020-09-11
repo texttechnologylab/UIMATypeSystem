@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class MLink_Type extends Link_Type {
   /** @generated */
@@ -116,18 +116,42 @@ public class MLink_Type extends Link_Type {
       jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
     ll_cas.ll_setRefValue(addr, casFeatCode_bounds, v);}
     
+  
+ 
+  /** @generated */
+  final Feature casFeat_bounds_array;
+  /** @generated */
+  final int     casFeatCode_bounds_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getBounds_array(int addr) {
+        if (featOkTst && casFeat_bounds_array == null)
+      jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setBounds_array(int addr, int v) {
+        if (featOkTst && casFeat_bounds_array == null)
+      jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+    ll_cas.ll_setRefValue(addr, casFeatCode_bounds_array, v);}
+    
    /** @generated
    * @param addr low level Feature Structure reference
    * @param i index of item in the array
    * @return value at index i in the array 
    */
-  public int getBounds(int addr, int i) {
-        if (featOkTst && casFeat_bounds == null)
-      jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+  public int getBounds_array(int addr, int i) {
+        if (featOkTst && casFeat_bounds_array == null)
+      jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
     if (lowLevelTypeChecks)
-      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i);
-  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i);
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i);
   }
    
   /** @generated
@@ -135,13 +159,13 @@ public class MLink_Type extends Link_Type {
    * @param i index of item in the array
    * @param v value to set
    */ 
-  public void setBounds(int addr, int i, int v) {
-        if (featOkTst && casFeat_bounds == null)
-      jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
+  public void setBounds_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_bounds_array == null)
+      jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
     if (lowLevelTypeChecks)
-      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i, v, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i);
-    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds), i, v);
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_bounds_array), i, v);
   }
  
 
@@ -169,8 +193,12 @@ public class MLink_Type extends Link_Type {
     casFeatCode_end_point2  = (null == casFeat_end_point2) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_end_point2).getCode();
 
  
-    casFeat_bounds = jcas.getRequiredFeatureDE(casType, "bounds", "uima.cas.FSArray", featOkTst);
+    casFeat_bounds = jcas.getRequiredFeatureDE(casType, "bounds", "uima.cas.FSList", featOkTst);
     casFeatCode_bounds  = (null == casFeat_bounds) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_bounds).getCode();
+
+ 
+    casFeat_bounds_array = jcas.getRequiredFeatureDE(casType, "bounds_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_bounds_array  = (null == casFeat_bounds_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_bounds_array).getCode();
 
   }
 }

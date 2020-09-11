@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:48:56 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class EventPath_Type extends Location_Type {
   /** @generated */
@@ -94,6 +94,57 @@ public class EventPath_Type extends Location_Type {
   
  
   /** @generated */
+  final Feature casFeat_midID_array;
+  /** @generated */
+  final int     casFeatCode_midID_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getMidID_array(int addr) {
+        if (featOkTst && casFeat_midID_array == null)
+      jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_midID_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setMidID_array(int addr, int v) {
+        if (featOkTst && casFeat_midID_array == null)
+      jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    ll_cas.ll_setRefValue(addr, casFeatCode_midID_array, v);}
+    
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getMidID_array(int addr, int i) {
+        if (featOkTst && casFeat_midID_array == null)
+      jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setMidID_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_midID_array == null)
+      jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i, v);
+  }
+ 
+ 
+  /** @generated */
   final Feature casFeat_endID;
   /** @generated */
   final int     casFeatCode_endID;
@@ -140,6 +191,57 @@ public class EventPath_Type extends Location_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_spatial_relator, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_spatial_relator_array;
+  /** @generated */
+  final int     casFeatCode_spatial_relator_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getSpatial_relator_array(int addr) {
+        if (featOkTst && casFeat_spatial_relator_array == null)
+      jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setSpatial_relator_array(int addr, int v) {
+        if (featOkTst && casFeat_spatial_relator_array == null)
+      jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    ll_cas.ll_setRefValue(addr, casFeatCode_spatial_relator_array, v);}
+    
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getSpatial_relator_array(int addr, int i) {
+        if (featOkTst && casFeat_spatial_relator_array == null)
+      jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setSpatial_relator_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_spatial_relator_array == null)
+      jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_spatial_relator_array), i, v);
+  }
+ 
 
 
 
@@ -165,12 +267,20 @@ public class EventPath_Type extends Location_Type {
     casFeatCode_midIDs  = (null == casFeat_midIDs) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_midIDs).getCode();
 
  
+    casFeat_midID_array = jcas.getRequiredFeatureDE(casType, "midID_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_midID_array  = (null == casFeat_midID_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_midID_array).getCode();
+
+ 
     casFeat_endID = jcas.getRequiredFeatureDE(casType, "endID", "org.texttechnologylab.annotation.semaf.isospace.SpatialEntity", featOkTst);
     casFeatCode_endID  = (null == casFeat_endID) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_endID).getCode();
 
  
     casFeat_spatial_relator = jcas.getRequiredFeatureDE(casType, "spatial_relator", "uima.cas.FSList", featOkTst);
     casFeatCode_spatial_relator  = (null == casFeat_spatial_relator) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_spatial_relator).getCode();
+
+ 
+    casFeat_spatial_relator_array = jcas.getRequiredFeatureDE(casType, "spatial_relator_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_spatial_relator_array  = (null == casFeat_spatial_relator_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_spatial_relator_array).getCode();
 
   }
 }

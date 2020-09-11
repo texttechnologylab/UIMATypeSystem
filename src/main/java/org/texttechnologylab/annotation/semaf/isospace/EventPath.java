@@ -10,8 +10,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.cas.FSList;
 
 
+import org.apache.uima.jcas.cas.FSArray;
+
+
 /** 
- * Updated by JCasGen Thu Sep 10 17:48:56 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceV2TypeSystem.xml
  * @generated */
 public class EventPath extends Location {
@@ -143,6 +146,50 @@ public class EventPath extends Location {
    
     
   //*--------------*
+  //* Feature: midID_array
+
+  /** getter for midID_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getMidID_array() {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array)));}
+    
+  /** setter for midID_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMidID_array(FSArray v) {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for midID_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public SpatialEntity getMidID_array(int i) {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array), i);
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array), i)));}
+
+  /** indexed setter for midID_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setMidID_array(int i, SpatialEntity v) { 
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_midID_array), i, jcasType.ll_cas.ll_getFSRef(v));}
+   
+    
+  //*--------------*
   //* Feature: endID
 
   /** getter for endID - gets 
@@ -184,6 +231,50 @@ public class EventPath extends Location {
     if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_spatial_relator == null)
       jcasType.jcas.throwFeatMissing("spatial_relator", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
     jcasType.ll_cas.ll_setRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: spatial_relator_array
+
+  /** getter for spatial_relator_array - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public FSArray getSpatial_relator_array() {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_spatial_relator_array == null)
+      jcasType.jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array)));}
+    
+  /** setter for spatial_relator_array - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSpatial_relator_array(FSArray v) {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_spatial_relator_array == null)
+      jcasType.jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for spatial_relator_array - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public SpatialSignal getSpatial_relator_array(int i) {
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_spatial_relator_array == null)
+      jcasType.jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array), i);
+    return (SpatialSignal)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array), i)));}
+
+  /** indexed setter for spatial_relator_array - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setSpatial_relator_array(int i, SpatialSignal v) { 
+    if (EventPath_Type.featOkTst && ((EventPath_Type)jcasType).casFeat_spatial_relator_array == null)
+      jcasType.jcas.throwFeatMissing("spatial_relator_array", "org.texttechnologylab.annotation.semaf.isospace.EventPath");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((EventPath_Type)jcasType).casFeatCode_spatial_relator_array), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

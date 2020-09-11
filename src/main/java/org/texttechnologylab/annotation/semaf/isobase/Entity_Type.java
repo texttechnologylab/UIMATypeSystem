@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Thu Sep 10 17:49:24 CEST 2020
+ * Updated by JCasGen Fri Sep 11 18:39:49 CEST 2020
  * @generated */
 public class Entity_Type extends Annotation_Type {
   /** @generated */
@@ -189,6 +189,57 @@ public class Entity_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_object_feature, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_object_feature_array;
+  /** @generated */
+  final int     casFeatCode_object_feature_array;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getObject_feature_array(int addr) {
+        if (featOkTst && casFeat_object_feature_array == null)
+      jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setObject_feature_array(int addr, int v) {
+        if (featOkTst && casFeat_object_feature_array == null)
+      jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    ll_cas.ll_setRefValue(addr, casFeatCode_object_feature_array, v);}
+    
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getObject_feature_array(int addr, int i) {
+        if (featOkTst && casFeat_object_feature_array == null)
+      jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setObject_feature_array(int addr, int i, int v) {
+        if (featOkTst && casFeat_object_feature_array == null)
+      jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_object_feature_array), i, v);
+  }
+ 
 
 
 
@@ -228,6 +279,10 @@ public class Entity_Type extends Annotation_Type {
  
     casFeat_object_feature = jcas.getRequiredFeatureDE(casType, "object_feature", "uima.cas.FSList", featOkTst);
     casFeatCode_object_feature  = (null == casFeat_object_feature) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_object_feature).getCode();
+
+ 
+    casFeat_object_feature_array = jcas.getRequiredFeatureDE(casType, "object_feature_array", "uima.cas.FSArray", featOkTst);
+    casFeatCode_object_feature_array  = (null == casFeat_object_feature_array) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_object_feature_array).getCode();
 
   }
 }
