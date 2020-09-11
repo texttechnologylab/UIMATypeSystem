@@ -51,6 +51,12 @@
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute</elementType>
         </featureDescription>
+        <featureDescription>
+          <name>object_feature_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute</elementType>
+        </featureDescription>
         </features>
     </typeDescription>
     
@@ -130,6 +136,12 @@
           <name>scopes</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>scopes_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
         

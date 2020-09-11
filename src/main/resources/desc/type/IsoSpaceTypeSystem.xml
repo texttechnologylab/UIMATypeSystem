@@ -72,6 +72,12 @@
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
+        <featureDescription>
+          <name>scopes_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
       <featureDescription>
           <name>cardinality</name>
           <description/>
@@ -142,6 +148,12 @@
           <name>midIDs</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>midID_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</elementType>
         </featureDescription>
       </features>
@@ -279,6 +291,12 @@
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
         </featureDescription>
         <featureDescription>
+          <name>mid_point_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
+        <featureDescription>
           <name>path_id</name>
           <description/>
           <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.Path</rangeTypeName>
@@ -328,6 +346,12 @@
         </featureDescription>
         <featureDescription>
           <name>bounds</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>bounds_array</name>
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isobase.Entity</elementType>
