@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri May 08 17:53:12 CEST 2020 */
+/* First created by JCasGen Thu Nov 05 17:32:33 CET 2020 */
 package org.texttechnologylab.annotation.administration;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 
 
 /** 
- * Updated by JCasGen Fri May 08 18:51:10 CEST 2020
+ * Updated by JCasGen Thu Nov 05 17:34:07 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class FinishAnnotation extends DocumentMetaData {

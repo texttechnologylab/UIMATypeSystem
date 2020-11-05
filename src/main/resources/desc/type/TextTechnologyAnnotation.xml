@@ -7,7 +7,8 @@
     <imports>
         <import name="desc.type.Anomalies"/>
         <import name="desc.type.metadata_customized"/>
-    </imports>
+    <import name="desc.type.Semantics"/>
+  </imports>
     <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.knowledge.KnowledgeEntry</name>
@@ -145,6 +146,18 @@
           <name>reference</name>
           <description/>
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>org.texttechnologylab.annotation.SemanticSource</name>
+      <description/>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</supertypeName>
+    <features>
+        <featureDescription>
+          <name>source</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>

@@ -82,6 +82,10 @@
 		    <groupId>org.dkpro.core</groupId>
 		    <artifactId>dkpro-core-api-syntax-asl</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>org.dkpro.core</groupId>
+		    <artifactId>dkpro-core-api-semantics-asl</artifactId>
+		</dependency>
     </dependencies>
 
 </project>
