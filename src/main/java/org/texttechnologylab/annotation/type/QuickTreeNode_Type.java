@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:07 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:08 CET 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:07 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:08 CET 2020
  * @generated */
 public class QuickTreeNode_Type extends TreeAnnotationNode_Type {
   /** @generated */

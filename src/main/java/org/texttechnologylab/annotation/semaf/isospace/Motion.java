@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Nov 05 17:32:23 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,8 +12,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:40 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoSpaceTypeSystem.xml
+ * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
  * @generated */
 public class Motion extends Event {
   /** @generated

@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Nov 05 17:34:04 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:47 CET 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:34:04 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:50 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyArgAnno.xml
  * @generated */
 public class ArgTypeAnd extends ArgType {

@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Nov 05 17:32:46 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:38:52 CET 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:46 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Reproduction extends NamedEntity {

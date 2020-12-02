@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:55 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:55 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:03 CET 2020
  * @generated */
 public class TimeEdge_Type extends Edge_Type {
   /** @generated */

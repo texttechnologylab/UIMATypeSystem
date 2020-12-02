@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:55 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:43 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.type.AnnotationNode_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:55 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:43 CET 2020
  * @generated */
 public class Color_Type extends AnnotationNode_Type {
   /** @generated */

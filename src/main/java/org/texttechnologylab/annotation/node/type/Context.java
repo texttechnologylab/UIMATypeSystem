@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Nov 05 17:33:42 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:22 CET 2020 */
 package org.texttechnologylab.annotation.node.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:42 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:22 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyGeoVizContext.xml
  * @generated */
 public class Context extends Node {

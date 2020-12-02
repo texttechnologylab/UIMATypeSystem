@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:42 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:22 CET 2020 */
 package org.texttechnologylab.annotation.node.type;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.type.Node_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:42 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:22 CET 2020
  * @generated */
 public class RelationContext_Type extends Node_Type {
   /** @generated */

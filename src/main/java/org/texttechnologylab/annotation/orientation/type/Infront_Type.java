@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:15 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:11 CET 2020 */
 package org.texttechnologylab.annotation.orientation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.OrientationEdge_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:15 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:11 CET 2020
  * @generated */
 public class Infront_Type extends OrientationEdge_Type {
   /** @generated */

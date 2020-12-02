@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:31 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:45 CET 2020 */
 package org.texttechnologylab.annotation.attribution.type;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.Attribution_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:59 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:45 CET 2020
  * @generated */
 public class Bigger_Type extends Attribution_Type {
   /** @generated */

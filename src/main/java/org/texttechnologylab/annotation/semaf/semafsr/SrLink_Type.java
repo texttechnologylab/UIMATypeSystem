@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:23 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
 package org.texttechnologylab.annotation.semaf.semafsr;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:23 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
  * @generated */
 public class SrLink_Type extends Link_Type {
   /** @generated */

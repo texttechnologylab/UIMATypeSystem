@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:46 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:38:52 CET 2020 */
 package org.texttechnologylab.annotation.type.concept;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:46 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
  * @generated */
 public class Motive_Type extends AbstractNamedEntity_Type {
   /** @generated */

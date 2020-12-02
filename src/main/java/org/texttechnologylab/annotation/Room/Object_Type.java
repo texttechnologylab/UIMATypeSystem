@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:03 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:06 CET 2020 */
 package org.texttechnologylab.annotation.Room;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Thu Nov 05 17:33:03 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:06 CET 2020
  * @generated */
 public class Object_Type extends Annotation_Type {
   /** @generated */

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:33:52 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:27 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:33:52 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:32 CET 2020
  * @generated */
 public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   /** @generated */
@@ -71,26 +71,26 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   
  
   /** @generated */
-  final Feature casFeat_year;
+  final Feature casFeat_dateDay;
   /** @generated */
-  final int     casFeatCode_year;
+  final int     casFeatCode_dateDay;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getYear(int addr) {
-        if (featOkTst && casFeat_year == null)
-      jcas.throwFeatMissing("year", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return ll_cas.ll_getIntValue(addr, casFeatCode_year);
+  public int getDateDay(int addr) {
+        if (featOkTst && casFeat_dateDay == null)
+      jcas.throwFeatMissing("dateDay", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_dateDay);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setYear(int addr, int v) {
-        if (featOkTst && casFeat_year == null)
-      jcas.throwFeatMissing("year", "org.texttechnologylab.annotation.DocumentAnnotation");
-    ll_cas.ll_setIntValue(addr, casFeatCode_year, v);}
+  public void setDateDay(int addr, int v) {
+        if (featOkTst && casFeat_dateDay == null)
+      jcas.throwFeatMissing("dateDay", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setIntValue(addr, casFeatCode_dateDay, v);}
     
   
  
@@ -119,55 +119,100 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   
  
   /** @generated */
-  final Feature casFeat_metadata;
+  final Feature casFeat_dataMonth;
   /** @generated */
-  final int     casFeatCode_metadata;
+  final int     casFeatCode_dataMonth;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getMetadata(int addr) {
-        if (featOkTst && casFeat_metadata == null)
-      jcas.throwFeatMissing("metadata", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_metadata);
+  public int getDataMonth(int addr) {
+        if (featOkTst && casFeat_dataMonth == null)
+      jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_dataMonth);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setMetadata(int addr, int v) {
-        if (featOkTst && casFeat_metadata == null)
-      jcas.throwFeatMissing("metadata", "org.texttechnologylab.annotation.DocumentAnnotation");
-    ll_cas.ll_setRefValue(addr, casFeatCode_metadata, v);}
+  public void setDataMonth(int addr, int v) {
+        if (featOkTst && casFeat_dataMonth == null)
+      jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setIntValue(addr, casFeatCode_dataMonth, v);}
     
-   /** @generated
-   * @param addr low level Feature Structure reference
-   * @param i index of item in the array
-   * @return value at index i in the array 
-   */
-  public String getMetadata(int addr, int i) {
-        if (featOkTst && casFeat_metadata == null)
-      jcas.throwFeatMissing("metadata", "org.texttechnologylab.annotation.DocumentAnnotation");
-    if (lowLevelTypeChecks)
-      return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
-	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
-  }
-   
+  
+ 
+  /** @generated */
+  final Feature casFeat_dataYear;
+  /** @generated */
+  final int     casFeatCode_dataYear;
   /** @generated
    * @param addr low level Feature Structure reference
-   * @param i index of item in the array
-   * @param v value to set
+   * @return the feature value 
    */ 
-  public void setMetadata(int addr, int i, String v) {
-        if (featOkTst && casFeat_metadata == null)
-      jcas.throwFeatMissing("metadata", "org.texttechnologylab.annotation.DocumentAnnotation");
-    if (lowLevelTypeChecks)
-      ll_cas.ll_setStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i, v, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i);
-    ll_cas.ll_setStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_metadata), i, v);
+  public int getDataYear(int addr) {
+        if (featOkTst && casFeat_dataYear == null)
+      jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_dataYear);
   }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setDataYear(int addr, int v) {
+        if (featOkTst && casFeat_dataYear == null)
+      jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setIntValue(addr, casFeatCode_dataYear, v);}
+    
+  
  
+  /** @generated */
+  final Feature casFeat_timestamp;
+  /** @generated */
+  final int     casFeatCode_timestamp;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public long getTimestamp(int addr) {
+        if (featOkTst && casFeat_timestamp == null)
+      jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getLongValue(addr, casFeatCode_timestamp);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setTimestamp(int addr, long v) {
+        if (featOkTst && casFeat_timestamp == null)
+      jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setLongValue(addr, casFeatCode_timestamp, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_place;
+  /** @generated */
+  final int     casFeatCode_place;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getPlace(int addr) {
+        if (featOkTst && casFeat_place == null)
+      jcas.throwFeatMissing("place", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_place);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setPlace(int addr, String v) {
+        if (featOkTst && casFeat_place == null)
+      jcas.throwFeatMissing("place", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setStringValue(addr, casFeatCode_place, v);}
+    
+  
 
 
 
@@ -189,16 +234,28 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
     casFeatCode_publisher  = (null == casFeat_publisher) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_publisher).getCode();
 
  
-    casFeat_year = jcas.getRequiredFeatureDE(casType, "year", "uima.cas.Integer", featOkTst);
-    casFeatCode_year  = (null == casFeat_year) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_year).getCode();
+    casFeat_dateDay = jcas.getRequiredFeatureDE(casType, "dateDay", "uima.cas.Integer", featOkTst);
+    casFeatCode_dateDay  = (null == casFeat_dateDay) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dateDay).getCode();
 
  
     casFeat_subtitle = jcas.getRequiredFeatureDE(casType, "subtitle", "uima.cas.String", featOkTst);
     casFeatCode_subtitle  = (null == casFeat_subtitle) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_subtitle).getCode();
 
  
-    casFeat_metadata = jcas.getRequiredFeatureDE(casType, "metadata", "uima.cas.StringArray", featOkTst);
-    casFeatCode_metadata  = (null == casFeat_metadata) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_metadata).getCode();
+    casFeat_dataMonth = jcas.getRequiredFeatureDE(casType, "dataMonth", "uima.cas.Integer", featOkTst);
+    casFeatCode_dataMonth  = (null == casFeat_dataMonth) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dataMonth).getCode();
+
+ 
+    casFeat_dataYear = jcas.getRequiredFeatureDE(casType, "dataYear", "uima.cas.Integer", featOkTst);
+    casFeatCode_dataYear  = (null == casFeat_dataYear) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dataYear).getCode();
+
+ 
+    casFeat_timestamp = jcas.getRequiredFeatureDE(casType, "timestamp", "uima.cas.Long", featOkTst);
+    casFeatCode_timestamp  = (null == casFeat_timestamp) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_timestamp).getCode();
+
+ 
+    casFeat_place = jcas.getRequiredFeatureDE(casType, "place", "uima.cas.String", featOkTst);
+    casFeatCode_place  = (null == casFeat_place) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_place).getCode();
 
   }
 }

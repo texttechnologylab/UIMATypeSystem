@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:23 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Signal_Type;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:23 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
  * @generated */
 public class SRelation_Type extends Signal_Type {
   /** @generated */

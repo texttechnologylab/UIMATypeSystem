@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:46 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:38:52 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:46 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
  * @generated */
 public class NamedEntity_Type extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity_Type {
   /** @generated */

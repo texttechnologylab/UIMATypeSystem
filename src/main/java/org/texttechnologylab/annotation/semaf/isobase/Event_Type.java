@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Nov 05 17:32:23 CET 2020 */
+/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Nov 05 17:32:40 CET 2020
+ * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
  * @generated */
 public class Event_Type extends Entity_Type {
   /** @generated */
@@ -390,7 +390,7 @@ public class Event_Type extends Entity_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
-  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
+	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_scopes_array), i);
   }
    
   /** @generated
