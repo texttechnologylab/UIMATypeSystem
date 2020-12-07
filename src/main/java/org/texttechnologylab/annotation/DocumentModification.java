@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:32 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
+ * Updated by JCasGen Mon Dec 07 11:37:36 CET 2020
+ * XML source: /home/stud_homes/baumartz/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
 public class DocumentModification extends AnnotationBase {
   /** @generated
