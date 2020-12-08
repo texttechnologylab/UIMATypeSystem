@@ -11,7 +11,7 @@ import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 
 
 /** 
- * Updated by JCasGen Tue Dec 08 10:56:54 CET 2020
+ * Updated by JCasGen Tue Dec 08 11:00:36 CET 2020
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
 public class DocumentAnnotation extends DocumentMetaData {

@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Tue Dec 08 10:56:54 CET 2020
+ * Updated by JCasGen Tue Dec 08 11:00:36 CET 2020
  * @generated */
 public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   /** @generated */
