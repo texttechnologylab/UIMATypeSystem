@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:32 CET 2020
+ * Updated by JCasGen Tue Dec 08 10:56:54 CET 2020
  * @generated */
 public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   /** @generated */
@@ -119,50 +119,50 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
   
  
   /** @generated */
-  final Feature casFeat_dataMonth;
+  final Feature casFeat_dateMonth;
   /** @generated */
-  final int     casFeatCode_dataMonth;
+  final int     casFeatCode_dateMonth;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getDataMonth(int addr) {
-        if (featOkTst && casFeat_dataMonth == null)
-      jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return ll_cas.ll_getIntValue(addr, casFeatCode_dataMonth);
+  public int getDateMonth(int addr) {
+        if (featOkTst && casFeat_dateMonth == null)
+      jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_dateMonth);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setDataMonth(int addr, int v) {
-        if (featOkTst && casFeat_dataMonth == null)
-      jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
-    ll_cas.ll_setIntValue(addr, casFeatCode_dataMonth, v);}
+  public void setDateMonth(int addr, int v) {
+        if (featOkTst && casFeat_dateMonth == null)
+      jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setIntValue(addr, casFeatCode_dateMonth, v);}
     
   
  
   /** @generated */
-  final Feature casFeat_dataYear;
+  final Feature casFeat_dateYear;
   /** @generated */
-  final int     casFeatCode_dataYear;
+  final int     casFeatCode_dateYear;
   /** @generated
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getDataYear(int addr) {
-        if (featOkTst && casFeat_dataYear == null)
-      jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return ll_cas.ll_getIntValue(addr, casFeatCode_dataYear);
+  public int getDateYear(int addr) {
+        if (featOkTst && casFeat_dateYear == null)
+      jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_dateYear);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setDataYear(int addr, int v) {
-        if (featOkTst && casFeat_dataYear == null)
-      jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
-    ll_cas.ll_setIntValue(addr, casFeatCode_dataYear, v);}
+  public void setDateYear(int addr, int v) {
+        if (featOkTst && casFeat_dateYear == null)
+      jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    ll_cas.ll_setIntValue(addr, casFeatCode_dateYear, v);}
     
   
  
@@ -242,12 +242,12 @@ public class DocumentAnnotation_Type extends DocumentMetaData_Type {
     casFeatCode_subtitle  = (null == casFeat_subtitle) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_subtitle).getCode();
 
  
-    casFeat_dataMonth = jcas.getRequiredFeatureDE(casType, "dataMonth", "uima.cas.Integer", featOkTst);
-    casFeatCode_dataMonth  = (null == casFeat_dataMonth) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dataMonth).getCode();
+    casFeat_dateMonth = jcas.getRequiredFeatureDE(casType, "dateMonth", "uima.cas.Integer", featOkTst);
+    casFeatCode_dateMonth  = (null == casFeat_dateMonth) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dateMonth).getCode();
 
  
-    casFeat_dataYear = jcas.getRequiredFeatureDE(casType, "dataYear", "uima.cas.Integer", featOkTst);
-    casFeatCode_dataYear  = (null == casFeat_dataYear) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dataYear).getCode();
+    casFeat_dateYear = jcas.getRequiredFeatureDE(casType, "dateYear", "uima.cas.Integer", featOkTst);
+    casFeatCode_dateYear  = (null == casFeat_dateYear) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dateYear).getCode();
 
  
     casFeat_timestamp = jcas.getRequiredFeatureDE(casType, "timestamp", "uima.cas.Long", featOkTst);
