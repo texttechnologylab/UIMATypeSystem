@@ -1,20 +1,20 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:27 CET 2020 */
+/* First created by JCasGen Mon Dec 14 10:59:18 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
+import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:32 CET 2020
+ * Updated by JCasGen Mon Dec 14 10:59:19 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
-public class DocumentAnnotation extends DocumentMetaData {
+public class DocumentAnnotation extends AnnotationBase {
   /** @generated
    * @ordered 
    */
@@ -52,18 +52,6 @@ public class DocumentAnnotation extends DocumentMetaData {
     super(jcas);
     readObject();   
   } 
-
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
-   * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
-  public DocumentAnnotation(JCas jcas, int begin, int end) {
-    super(jcas);
-    setBegin(begin);
-    setEnd(end);
-    readObject();
-  }   
 
   /** 
    * <!-- begin-user-doc -->

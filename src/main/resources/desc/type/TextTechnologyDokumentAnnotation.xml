@@ -4,14 +4,11 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <imports>
-        <import name="desc.type.metadata_customized"/>
-    </imports>
     <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.DocumentAnnotation</name>
             <description/>
-            <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData</supertypeName>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
             <features>
                 <featureDescription>
                     <name>author</name>
