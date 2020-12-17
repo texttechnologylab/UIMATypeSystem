@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Dec 14 10:59:18 CET 2020 */
+/* First created by JCasGen Thu Dec 17 12:26:07 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Mon Dec 14 10:59:19 CET 2020
+ * Updated by JCasGen Thu Dec 17 12:26:07 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
 public class DocumentAnnotation extends AnnotationBase {
@@ -153,47 +153,47 @@ public class DocumentAnnotation extends AnnotationBase {
    
     
   //*--------------*
-  //* Feature: dataMonth
+  //* Feature: dateMonth
 
-  /** getter for dataMonth - gets 
+  /** getter for dateMonth - gets 
    * @generated
    * @return value of the feature 
    */
-  public int getDataMonth() {
-    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dataMonth == null)
-      jcasType.jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dataMonth);}
+  public int getDateMonth() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateMonth == null)
+      jcasType.jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateMonth);}
     
-  /** setter for dataMonth - sets  
+  /** setter for dateMonth - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setDataMonth(int v) {
-    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dataMonth == null)
-      jcasType.jcas.throwFeatMissing("dataMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
-    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dataMonth, v);}    
+  public void setDateMonth(int v) {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateMonth == null)
+      jcasType.jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateMonth, v);}    
    
     
   //*--------------*
-  //* Feature: dataYear
+  //* Feature: dateYear
 
-  /** getter for dataYear - gets 
+  /** getter for dateYear - gets 
    * @generated
    * @return value of the feature 
    */
-  public int getDataYear() {
-    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dataYear == null)
-      jcasType.jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dataYear);}
+  public int getDateYear() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateYear == null)
+      jcasType.jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateYear);}
     
-  /** setter for dataYear - sets  
+  /** setter for dateYear - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setDataYear(int v) {
-    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dataYear == null)
-      jcasType.jcas.throwFeatMissing("dataYear", "org.texttechnologylab.annotation.DocumentAnnotation");
-    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dataYear, v);}    
+  public void setDateYear(int v) {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateYear == null)
+      jcasType.jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateYear, v);}    
    
     
   //*--------------*

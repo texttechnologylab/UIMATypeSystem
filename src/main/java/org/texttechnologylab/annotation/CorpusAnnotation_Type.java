@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Dec 08 11:00:27 CET 2020 */
+/* First created by JCasGen Thu Dec 17 12:26:07 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Tue Dec 08 11:00:27 CET 2020
+ * Updated by JCasGen Thu Dec 17 12:26:07 CET 2020
  * @generated */
 public class CorpusAnnotation_Type extends AnnotationBase_Type {
   /** @generated */

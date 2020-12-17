@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Dec 14 10:59:18 CET 2020 */
+/* First created by JCasGen Thu Dec 17 12:26:07 CET 2020 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Mon Dec 14 10:59:20 CET 2020
+ * Updated by JCasGen Thu Dec 17 12:26:07 CET 2020
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
 public class DocumentModification extends AnnotationBase {
