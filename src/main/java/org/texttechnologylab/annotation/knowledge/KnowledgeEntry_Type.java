@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Jan 12 15:18:26 CET 2021 */
+/* First created by JCasGen Tue Jan 12 18:42:49 CET 2021 */
 package org.texttechnologylab.annotation.knowledge;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Jan 12 15:20:39 CET 2021
+ * Updated by JCasGen Tue Jan 12 18:42:49 CET 2021
  * @generated */
 public class KnowledgeEntry_Type extends Annotation_Type {
   /** @generated */
