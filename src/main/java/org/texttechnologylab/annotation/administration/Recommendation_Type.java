@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Jan 12 18:42:49 CET 2021 */
+/* First created by JCasGen Tue Jan 12 18:59:27 CET 2021 */
 package org.texttechnologylab.annotation.administration;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Tue Jan 12 18:42:49 CET 2021
+ * Updated by JCasGen Tue Jan 12 18:59:27 CET 2021
  * @generated */
 public class Recommendation_Type extends AnnotationBase_Type {
   /** @generated */

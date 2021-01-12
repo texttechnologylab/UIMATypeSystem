@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Jan 12 15:20:39 CET 2021 */
+/* First created by JCasGen Tue Jan 12 18:59:27 CET 2021 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Jan 12 15:20:39 CET 2021
+ * Updated by JCasGen Tue Jan 12 18:59:27 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class Unknown extends Annotation {
