@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Tue Jan 12 18:59:27 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Fri Jan 22 17:54:52 CET 2021
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly {
   /** @generated
