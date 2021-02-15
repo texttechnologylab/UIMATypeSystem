@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Feb 15 13:21:45 CET 2021 */
+/* First created by JCasGen Mon Feb 15 16:49:38 CET 2021 */
 package org.texttechnologylab.annotation.score;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Mon Feb 15 13:21:45 CET 2021
+ * Updated by JCasGen Mon Feb 15 16:49:38 CET 2021
  * @generated */
 public class TextScoreEntry_Type extends AnnotationBase_Type {
   /** @generated */
@@ -21,30 +21,6 @@ public class TextScoreEntry_Type extends AnnotationBase_Type {
      @modifiable */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.score.TextScoreEntry");
- 
-  /** @generated */
-  final Feature casFeat_key;
-  /** @generated */
-  final int     casFeatCode_key;
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @return the feature value 
-   */ 
-  public String getKey(int addr) {
-        if (featOkTst && casFeat_key == null)
-      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_key);
-  }
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @param v value to set 
-   */    
-  public void setKey(int addr, String v) {
-        if (featOkTst && casFeat_key == null)
-      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
-    ll_cas.ll_setStringValue(addr, casFeatCode_key, v);}
-    
-  
  
   /** @generated */
   final Feature casFeat_value;
@@ -67,6 +43,30 @@ public class TextScoreEntry_Type extends AnnotationBase_Type {
         if (featOkTst && casFeat_value == null)
       jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.score.TextScoreEntry");
     ll_cas.ll_setDoubleValue(addr, casFeatCode_value, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_key;
+  /** @generated */
+  final int     casFeatCode_key;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getKey(int addr) {
+        if (featOkTst && casFeat_key == null)
+      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_key);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setKey(int addr, String v) {
+        if (featOkTst && casFeat_key == null)
+      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    ll_cas.ll_setStringValue(addr, casFeatCode_key, v);}
     
   
  
@@ -106,12 +106,12 @@ public class TextScoreEntry_Type extends AnnotationBase_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_key = jcas.getRequiredFeatureDE(casType, "key", "uima.cas.String", featOkTst);
-    casFeatCode_key  = (null == casFeat_key) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_key).getCode();
-
- 
     casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.Double", featOkTst);
     casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
+
+ 
+    casFeat_key = jcas.getRequiredFeatureDE(casType, "key", "uima.cas.String", featOkTst);
+    casFeatCode_key  = (null == casFeat_key) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_key).getCode();
 
  
     casFeat_label = jcas.getRequiredFeatureDE(casType, "label", "uima.cas.String", featOkTst);

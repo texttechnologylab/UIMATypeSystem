@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Feb 15 13:21:45 CET 2021 */
+/* First created by JCasGen Mon Feb 15 16:49:38 CET 2021 */
 package org.texttechnologylab.annotation.score;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Mon Feb 15 13:21:45 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextScore.xml
+ * Updated by JCasGen Mon Feb 15 16:49:38 CET 2021
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTextScore.xml
  * @generated */
 public class TextScoreEntry extends AnnotationBase {
   /** @generated
@@ -65,28 +65,6 @@ public class TextScoreEntry extends AnnotationBase {
  
     
   //*--------------*
-  //* Feature: key
-
-  /** getter for key - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public String getKey() {
-    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
-      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key);}
-    
-  /** setter for key - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setKey(String v) {
-    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
-      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key, v);}    
-   
-    
-  //*--------------*
   //* Feature: value
 
   /** getter for value - gets 
@@ -106,6 +84,28 @@ public class TextScoreEntry extends AnnotationBase {
     if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_value == null)
       jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.score.TextScoreEntry");
     jcasType.ll_cas.ll_setDoubleValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_value, v);}    
+   
+    
+  //*--------------*
+  //* Feature: key
+
+  /** getter for key - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getKey() {
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key);}
+    
+  /** setter for key - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setKey(String v) {
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key, v);}    
    
     
   //*--------------*
