@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Jan 12 18:59:27 CET 2021 */
+/* First created by JCasGen Tue Feb 16 16:51:34 CET 2021 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,8 +11,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense;
 
 
 /** 
- * Updated by JCasGen Fri Jan 22 17:54:52 CET 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SemanticSource extends WordSense {
   /** @generated
@@ -96,50 +96,6 @@ public class SemanticSource extends WordSense {
     if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_source == null)
       jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.SemanticSource");
     jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_source, v);}    
-   
-    
-  //*--------------*
-  //* Feature: searchResult
-
-  /** getter for searchResult - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public String getSearchResult() {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_searchResult == null)
-      jcasType.jcas.throwFeatMissing("searchResult", "org.texttechnologylab.annotation.SemanticSource");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_searchResult);}
-    
-  /** setter for searchResult - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setSearchResult(String v) {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_searchResult == null)
-      jcasType.jcas.throwFeatMissing("searchResult", "org.texttechnologylab.annotation.SemanticSource");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_searchResult, v);}    
-   
-    
-  //*--------------*
-  //* Feature: comment
-
-  /** getter for comment - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public String getComment() {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.SemanticSource");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_comment);}
-    
-  /** setter for comment - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setComment(String v) {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.SemanticSource");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_comment, v);}    
   }
 
     

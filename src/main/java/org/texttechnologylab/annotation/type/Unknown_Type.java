@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Jan 12 18:59:27 CET 2021 */
+/* First created by JCasGen Tue Feb 16 16:51:35 CET 2021 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jan 22 17:54:52 CET 2021
+ * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
  * @generated */
 public class Unknown_Type extends Annotation_Type {
   /** @generated */

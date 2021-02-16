@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Jan 12 18:59:27 CET 2021 */
+/* First created by JCasGen Tue Feb 16 16:51:35 CET 2021 */
 package org.texttechnologylab.annotation.sentence;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Jan 22 17:54:52 CET 2021
+ * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
  * @generated */
 public class Anomaly_Type extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly_Type {
   /** @generated */
