@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Feb 16 16:52:01 CET 2021 */
+/* First created by JCasGen Tue Feb 16 17:37:06 CET 2021 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
+ * Updated by JCasGen Tue Feb 16 17:37:06 CET 2021
  * @generated */
 public class SubcatMatch_Type extends AnnotationBase_Type {
   /** @generated */
@@ -92,7 +92,34 @@ public class SubcatMatch_Type extends AnnotationBase_Type {
       jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
     ll_cas.ll_setRefValue(addr, casFeatCode_elements, v);}
     
-  
+   /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @return value at index i in the array 
+   */
+  public int getElements(int addr, int i) {
+        if (featOkTst && casFeat_elements == null)
+      jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+  }
+   
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param i index of item in the array
+   * @param v value to set
+   */ 
+  public void setElements(int addr, int i, int v) {
+        if (featOkTst && casFeat_elements == null)
+      jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, v);
+  }
+ 
 
 
 
@@ -114,7 +141,7 @@ public class SubcatMatch_Type extends AnnotationBase_Type {
     casFeatCode_context  = (null == casFeat_context) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_context).getCode();
 
  
-    casFeat_elements = jcas.getRequiredFeatureDE(casType, "elements", "uima.cas.FSList", featOkTst);
+    casFeat_elements = jcas.getRequiredFeatureDE(casType, "elements", "uima.cas.FSArray", featOkTst);
     casFeatCode_elements  = (null == casFeat_elements) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_elements).getCode();
 
   }

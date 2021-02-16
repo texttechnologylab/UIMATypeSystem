@@ -206,7 +206,7 @@
         <featureDescription>
           <name>elements</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.SemanticSource</elementType>
           <multipleReferencesAllowed>false</multipleReferencesAllowed>
         </featureDescription>

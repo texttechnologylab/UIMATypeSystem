@@ -1,18 +1,18 @@
 
 
-/* First created by JCasGen Tue Feb 16 16:52:01 CET 2021 */
+/* First created by JCasGen Tue Feb 16 17:37:06 CET 2021 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.cas.FSList;
+import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
+ * Updated by JCasGen Tue Feb 16 17:37:06 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SubcatMatch extends AnnotationBase {
@@ -116,19 +116,41 @@ public class SubcatMatch extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSList getElements() {
+  public FSArray getElements() {
     if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements)));}
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements)));}
     
   /** setter for elements - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setElements(FSList v) {
+  public void setElements(FSArray v) {
     if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
       jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
     jcasType.ll_cas.ll_setRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for elements - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public SemanticSource getElements(int i) {
+    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i);
+    return (SemanticSource)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i)));}
+
+  /** indexed setter for elements - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setElements(int i, SemanticSource v) { 
+    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

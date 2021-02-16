@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Feb 16 17:25:32 CET 2021 */
+/* First created by JCasGen Tue Feb 16 17:36:28 CET 2021 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense_Type;
 
 /** 
- * Updated by JCasGen Tue Feb 16 17:25:33 CET 2021
+ * Updated by JCasGen Tue Feb 16 17:36:28 CET 2021
  * @generated */
 public class SemanticSource_Type extends WordSense_Type {
   /** @generated */
