@@ -13,7 +13,7 @@
         <featureDescription>
           <name>elements</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.score.TextScoreEntry</elementType>
         </featureDescription>
         <featureDescription>

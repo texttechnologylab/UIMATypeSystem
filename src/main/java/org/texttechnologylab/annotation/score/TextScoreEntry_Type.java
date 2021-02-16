@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Feb 15 16:49:38 CET 2021 */
+/* First created by JCasGen Tue Feb 16 09:03:37 CET 2021 */
 package org.texttechnologylab.annotation.score;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Mon Feb 15 16:49:38 CET 2021
+ * Updated by JCasGen Tue Feb 16 09:03:37 CET 2021
  * @generated */
 public class TextScoreEntry_Type extends AnnotationBase_Type {
   /** @generated */

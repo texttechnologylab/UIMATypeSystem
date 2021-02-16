@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Feb 15 16:49:38 CET 2021 */
+/* First created by JCasGen Tue Feb 16 09:03:37 CET 2021 */
 package org.texttechnologylab.annotation.score;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Mon Feb 15 16:49:38 CET 2021
+ * Updated by JCasGen Tue Feb 16 09:03:37 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTextScore.xml
  * @generated */
 public class TextScoreEntry extends AnnotationBase {
