@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:19 CET 2020 */
+/* First created by JCasGen Fri Feb 19 11:47:55 CET 2021 */
 package org.texttechnologylab.iaa;
 
 import org.apache.uima.jcas.JCas; 
@@ -14,7 +14,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:19 CET 2020
+ * Updated by JCasGen Fri Feb 19 11:48:25 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
  * @generated */
 public class AgreementContainer extends Annotation {

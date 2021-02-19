@@ -62,5 +62,27 @@
         </featureDescription>
       </features>
     </typeDescription>
+  <typeDescription>
+      <name>org.texttechnologylab.iaa.AgreementValue</name>
+      <description/>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>agreementValue</name>
+          <description/>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>agreementLabel</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>agreementUnits</name>
+          <description/>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
   </types>
 </typeSystemDescription>
