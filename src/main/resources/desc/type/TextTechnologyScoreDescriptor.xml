@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>TextTechnologyScoreDescriptor</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.score.ScoreAnnotation</name>
+      <description/>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>reference</name>
+          <description/>
+          <rangeTypeName>uima.cas.TOP</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>value</name>
+          <description/>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>origin</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
