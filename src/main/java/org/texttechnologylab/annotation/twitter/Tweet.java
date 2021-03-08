@@ -1,18 +1,18 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:01 CET 2020 */
+/* First created by JCasGen Mon Mar 08 18:13:26 CET 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.cas.StringList;
+import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:01 CET 2020
+ * Updated by JCasGen Mon Mar 08 18:13:26 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTwitter.xml
  * @generated */
 public class Tweet extends Annotation {
@@ -78,25 +78,25 @@ public class Tweet extends Annotation {
  
     
   //*--------------*
-  //* Feature: user
+  //* Feature: userName
 
-  /** getter for user - gets 
+  /** getter for userName - gets 
    * @generated
    * @return value of the feature 
    */
-  public String getUser() {
-    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.twitter.Tweet");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_user);}
+  public String getUserName() {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_userName == null)
+      jcasType.jcas.throwFeatMissing("userName", "org.texttechnologylab.annotation.twitter.Tweet");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_userName);}
     
-  /** setter for user - sets  
+  /** setter for userName - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setUser(String v) {
-    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.twitter.Tweet");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_user, v);}    
+  public void setUserName(String v) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_userName == null)
+      jcasType.jcas.throwFeatMissing("userName", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_userName, v);}    
    
     
   //*--------------*
@@ -150,19 +150,19 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getRetweet() {
+  public long getRetweet() {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_retweet == null)
       jcasType.jcas.throwFeatMissing("retweet", "org.texttechnologylab.annotation.twitter.Tweet");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((Tweet_Type)jcasType).casFeatCode_retweet);}
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_retweet);}
     
   /** setter for retweet - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setRetweet(int v) {
+  public void setRetweet(long v) {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_retweet == null)
       jcasType.jcas.throwFeatMissing("retweet", "org.texttechnologylab.annotation.twitter.Tweet");
-    jcasType.ll_cas.ll_setIntValue(addr, ((Tweet_Type)jcasType).casFeatCode_retweet, v);}    
+    jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_retweet, v);}    
    
     
   //*--------------*
@@ -216,19 +216,41 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringList getHashTags() {
+  public StringArray getHashTags() {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_hashTags == null)
       jcasType.jcas.throwFeatMissing("hashTags", "org.texttechnologylab.annotation.twitter.Tweet");
-    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags)));}
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags)));}
     
   /** setter for hashTags - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setHashTags(StringList v) {
+  public void setHashTags(StringArray v) {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_hashTags == null)
       jcasType.jcas.throwFeatMissing("hashTags", "org.texttechnologylab.annotation.twitter.Tweet");
     jcasType.ll_cas.ll_setRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for hashTags - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public String getHashTags(int i) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_hashTags == null)
+      jcasType.jcas.throwFeatMissing("hashTags", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags), i);}
+
+  /** indexed setter for hashTags - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setHashTags(int i, String v) { 
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_hashTags == null)
+      jcasType.jcas.throwFeatMissing("hashTags", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_hashTags), i, v);}
    
     
   //*--------------*
@@ -238,19 +260,63 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringList getUrls() {
+  public StringArray getUrls() {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_urls == null)
       jcasType.jcas.throwFeatMissing("urls", "org.texttechnologylab.annotation.twitter.Tweet");
-    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls)));}
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls)));}
     
   /** setter for urls - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setUrls(StringList v) {
+  public void setUrls(StringArray v) {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_urls == null)
       jcasType.jcas.throwFeatMissing("urls", "org.texttechnologylab.annotation.twitter.Tweet");
     jcasType.ll_cas.ll_setRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for urls - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public String getUrls(int i) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_urls == null)
+      jcasType.jcas.throwFeatMissing("urls", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls), i);}
+
+  /** indexed setter for urls - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setUrls(int i, String v) { 
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_urls == null)
+      jcasType.jcas.throwFeatMissing("urls", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Tweet_Type)jcasType).casFeatCode_urls), i, v);}
+   
+    
+  //*--------------*
+  //* Feature: userId
+
+  /** getter for userId - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public long getUserId() {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_userId == null)
+      jcasType.jcas.throwFeatMissing("userId", "org.texttechnologylab.annotation.twitter.Tweet");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_userId);}
+    
+  /** setter for userId - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setUserId(long v) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_userId == null)
+      jcasType.jcas.throwFeatMissing("userId", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_userId, v);}    
   }
 
     

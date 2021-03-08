@@ -11,7 +11,7 @@
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
-          <name>user</name>
+          <name>userName</name>
           <description/>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
@@ -28,7 +28,7 @@
         <featureDescription>
           <name>retweet</name>
           <description/>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>twitterID</name>
@@ -43,13 +43,18 @@
         <featureDescription>
           <name>hashTags</name>
           <description/>
-          <rangeTypeName>uima.cas.StringList</rangeTypeName>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
           <multipleReferencesAllowed>true</multipleReferencesAllowed>
         </featureDescription>
         <featureDescription>
           <name>urls</name>
           <description/>
-          <rangeTypeName>uima.cas.StringList</rangeTypeName>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>userId</name>
+          <description/>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
