@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Mar 08 18:13:26 CET 2021 */
+/* First created by JCasGen Mon Mar 08 18:30:18 CET 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Mon Mar 08 18:13:26 CET 2021
+ * Updated by JCasGen Mon Mar 08 18:30:18 CET 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTwitter.xml
  * @generated */
 public class Tweet extends Annotation {

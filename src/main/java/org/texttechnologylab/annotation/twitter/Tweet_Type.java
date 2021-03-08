@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Mar 08 18:13:26 CET 2021 */
+/* First created by JCasGen Mon Mar 08 18:30:18 CET 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon Mar 08 18:13:26 CET 2021
+ * Updated by JCasGen Mon Mar 08 18:30:18 CET 2021
  * @generated */
 public class Tweet_Type extends Annotation_Type {
   /** @generated */
