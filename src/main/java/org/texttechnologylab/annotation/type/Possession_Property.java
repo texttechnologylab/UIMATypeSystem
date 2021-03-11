@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTypes.xml
  * @generated */
 public class Possession_Property extends NamedEntity {
   /** @generated

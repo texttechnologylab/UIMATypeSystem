@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
  * @generated */
 public class Vehicle_Type extends Artifact_Type {
   /** @generated */

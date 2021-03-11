@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.AbstractNamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
  * @generated */
 public class Motive_Type extends AbstractNamedEntity_Type {
   /** @generated */

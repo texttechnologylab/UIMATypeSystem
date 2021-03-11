@@ -1,15 +1,15 @@
 
-/* First created by JCasGen Wed Dec 02 18:38:52 CET 2020 */
+/* First created by JCasGen Thu Mar 11 14:17:21 CET 2021 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
-import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity_Type;
+import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
  * @generated */
 public class Habitat_Type extends NamedEntity_Type {
   /** @generated */
