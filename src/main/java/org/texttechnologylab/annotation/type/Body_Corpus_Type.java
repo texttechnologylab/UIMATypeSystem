@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
  * @generated */
 public class Body_Corpus_Type extends NamedEntity_Type {
   /** @generated */

@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:38:52 CET 2020
+ * Updated by JCasGen Thu Mar 11 14:17:21 CET 2021
  * @generated */
 public class NamedEntity_Type extends de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity_Type {
   /** @generated */

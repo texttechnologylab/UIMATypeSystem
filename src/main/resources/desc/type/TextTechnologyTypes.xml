@@ -22,7 +22,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.type.Habitat</name>
             <description/>
-            <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.type.Other</name>
