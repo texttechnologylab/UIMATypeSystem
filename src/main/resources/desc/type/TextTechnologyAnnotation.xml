@@ -246,5 +246,10 @@
         </featureDescription>
       </features>
     </typeDescription>
+  <typeDescription>
+      <name>org.texttechnologylab.annotation.AnnotationBracket</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
   </types>
 </typeSystemDescription>
