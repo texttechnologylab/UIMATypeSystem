@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Dec 02 18:39:08 CET 2020 */
+/* First created by JCasGen Thu Mar 25 09:35:20 CET 2021 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas;
@@ -10,14 +10,14 @@ import org.apache.uima.cas.Type;
 /** 
  * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
  * @generated */
-public class QuickTreeNode_Type extends TreeAnnotationNode_Type {
+public class QuickTreeMultiSpanNode_Type extends QuickTreeNode_Type {
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = QuickTreeNode.typeIndexID;
+  public final static int typeIndexID = QuickTreeMultiSpanNode.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.type.QuickTreeNode");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.type.QuickTreeMultiSpanNode");
 
 
 
@@ -26,7 +26,7 @@ public class QuickTreeNode_Type extends TreeAnnotationNode_Type {
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
-  public QuickTreeNode_Type(JCas jcas, Type casType) {
+  public QuickTreeMultiSpanNode_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

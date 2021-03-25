@@ -89,6 +89,11 @@
             <supertypeName>org.texttechnologylab.annotation.type.TreeAnnotationNode</supertypeName>
 
         </typeDescription>
-    </types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.type.QuickTreeMultiSpanNode</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.type.QuickTreeNode</supertypeName>
+    </typeDescription>
+  </types>
 
 </typeSystemDescription>

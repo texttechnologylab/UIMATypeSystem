@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:50 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyArgAnno.xml
+ * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
  * @generated */
 public class Endpoint extends GraphBase {
   /** @generated
