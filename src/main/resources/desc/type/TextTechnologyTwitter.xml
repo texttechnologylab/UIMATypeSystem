@@ -57,6 +57,16 @@
           <description/>
           <rangeTypeName>uima.cas.Long</rangeTypeName>
         </featureDescription>
+      <featureDescription>
+          <name>repliedTo</name>
+          <description/>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>quoted</name>
+          <description/>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
   </types>

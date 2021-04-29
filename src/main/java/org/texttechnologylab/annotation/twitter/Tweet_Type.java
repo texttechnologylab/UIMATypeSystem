@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Mar 08 18:30:18 CET 2021 */
+/* First created by JCasGen Thu Apr 29 09:48:17 CEST 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon Mar 08 18:30:18 CET 2021
+ * Updated by JCasGen Thu Apr 29 09:48:17 CEST 2021
  * @generated */
 public class Tweet_Type extends Annotation_Type {
   /** @generated */
@@ -291,6 +291,54 @@ public class Tweet_Type extends Annotation_Type {
     ll_cas.ll_setLongValue(addr, casFeatCode_userId, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_repliedTo;
+  /** @generated */
+  final int     casFeatCode_repliedTo;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public long getRepliedTo(int addr) {
+        if (featOkTst && casFeat_repliedTo == null)
+      jcas.throwFeatMissing("repliedTo", "org.texttechnologylab.annotation.twitter.Tweet");
+    return ll_cas.ll_getLongValue(addr, casFeatCode_repliedTo);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setRepliedTo(int addr, long v) {
+        if (featOkTst && casFeat_repliedTo == null)
+      jcas.throwFeatMissing("repliedTo", "org.texttechnologylab.annotation.twitter.Tweet");
+    ll_cas.ll_setLongValue(addr, casFeatCode_repliedTo, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_quoted;
+  /** @generated */
+  final int     casFeatCode_quoted;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public long getQuoted(int addr) {
+        if (featOkTst && casFeat_quoted == null)
+      jcas.throwFeatMissing("quoted", "org.texttechnologylab.annotation.twitter.Tweet");
+    return ll_cas.ll_getLongValue(addr, casFeatCode_quoted);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setQuoted(int addr, long v) {
+        if (featOkTst && casFeat_quoted == null)
+      jcas.throwFeatMissing("quoted", "org.texttechnologylab.annotation.twitter.Tweet");
+    ll_cas.ll_setLongValue(addr, casFeatCode_quoted, v);}
+    
+  
 
 
 
@@ -338,6 +386,14 @@ public class Tweet_Type extends Annotation_Type {
  
     casFeat_userId = jcas.getRequiredFeatureDE(casType, "userId", "uima.cas.Long", featOkTst);
     casFeatCode_userId  = (null == casFeat_userId) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_userId).getCode();
+
+ 
+    casFeat_repliedTo = jcas.getRequiredFeatureDE(casType, "repliedTo", "uima.cas.Long", featOkTst);
+    casFeatCode_repliedTo  = (null == casFeat_repliedTo) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_repliedTo).getCode();
+
+ 
+    casFeat_quoted = jcas.getRequiredFeatureDE(casType, "quoted", "uima.cas.Long", featOkTst);
+    casFeatCode_quoted  = (null == casFeat_quoted) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_quoted).getCode();
 
   }
 }

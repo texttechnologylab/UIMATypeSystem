@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>1.8.9.5</version>
+    <version>1.8.9.6</version>
 
     <repositories>
         <repository>

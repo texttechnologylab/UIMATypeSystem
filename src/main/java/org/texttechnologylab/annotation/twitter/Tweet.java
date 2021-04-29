@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Mar 08 18:30:18 CET 2021 */
+/* First created by JCasGen Thu Apr 29 09:48:17 CEST 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Mon Mar 08 18:30:18 CET 2021
+ * Updated by JCasGen Thu Apr 29 09:48:17 CEST 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTwitter.xml
  * @generated */
 public class Tweet extends Annotation {
@@ -317,6 +317,50 @@ public class Tweet extends Annotation {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_userId == null)
       jcasType.jcas.throwFeatMissing("userId", "org.texttechnologylab.annotation.twitter.Tweet");
     jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_userId, v);}    
+   
+    
+  //*--------------*
+  //* Feature: repliedTo
+
+  /** getter for repliedTo - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public long getRepliedTo() {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_repliedTo == null)
+      jcasType.jcas.throwFeatMissing("repliedTo", "org.texttechnologylab.annotation.twitter.Tweet");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_repliedTo);}
+    
+  /** setter for repliedTo - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setRepliedTo(long v) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_repliedTo == null)
+      jcasType.jcas.throwFeatMissing("repliedTo", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_repliedTo, v);}    
+   
+    
+  //*--------------*
+  //* Feature: quoted
+
+  /** getter for quoted - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public long getQuoted() {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_quoted == null)
+      jcasType.jcas.throwFeatMissing("quoted", "org.texttechnologylab.annotation.twitter.Tweet");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_quoted);}
+    
+  /** setter for quoted - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setQuoted(long v) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_quoted == null)
+      jcasType.jcas.throwFeatMissing("quoted", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_quoted, v);}    
   }
 
     
