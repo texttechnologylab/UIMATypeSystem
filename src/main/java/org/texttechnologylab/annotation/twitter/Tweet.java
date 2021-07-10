@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Thu Apr 29 09:48:17 CEST 2021 */
+/* First created by JCasGen Sat Jul 10 16:00:58 CEST 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Apr 29 09:48:17 CEST 2021
+ * Updated by JCasGen Sat Jul 10 16:00:58 CEST 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTwitter.xml
  * @generated */
 public class Tweet extends Annotation {
@@ -361,6 +361,28 @@ public class Tweet extends Annotation {
     if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_quoted == null)
       jcasType.jcas.throwFeatMissing("quoted", "org.texttechnologylab.annotation.twitter.Tweet");
     jcasType.ll_cas.ll_setLongValue(addr, ((Tweet_Type)jcasType).casFeatCode_quoted, v);}    
+   
+    
+  //*--------------*
+  //* Feature: originalText
+
+  /** getter for originalText - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getOriginalText() {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_originalText == null)
+      jcasType.jcas.throwFeatMissing("originalText", "org.texttechnologylab.annotation.twitter.Tweet");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_originalText);}
+    
+  /** setter for originalText - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setOriginalText(String v) {
+    if (Tweet_Type.featOkTst && ((Tweet_Type)jcasType).casFeat_originalText == null)
+      jcasType.jcas.throwFeatMissing("originalText", "org.texttechnologylab.annotation.twitter.Tweet");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Tweet_Type)jcasType).casFeatCode_originalText, v);}    
   }
 
     

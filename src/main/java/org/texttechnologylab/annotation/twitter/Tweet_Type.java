@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Apr 29 09:48:17 CEST 2021 */
+/* First created by JCasGen Sat Jul 10 16:00:58 CEST 2021 */
 package org.texttechnologylab.annotation.twitter;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Thu Apr 29 09:48:17 CEST 2021
+ * Updated by JCasGen Sat Jul 10 16:00:58 CEST 2021
  * @generated */
 public class Tweet_Type extends Annotation_Type {
   /** @generated */
@@ -339,6 +339,30 @@ public class Tweet_Type extends Annotation_Type {
     ll_cas.ll_setLongValue(addr, casFeatCode_quoted, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_originalText;
+  /** @generated */
+  final int     casFeatCode_originalText;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getOriginalText(int addr) {
+        if (featOkTst && casFeat_originalText == null)
+      jcas.throwFeatMissing("originalText", "org.texttechnologylab.annotation.twitter.Tweet");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_originalText);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setOriginalText(int addr, String v) {
+        if (featOkTst && casFeat_originalText == null)
+      jcas.throwFeatMissing("originalText", "org.texttechnologylab.annotation.twitter.Tweet");
+    ll_cas.ll_setStringValue(addr, casFeatCode_originalText, v);}
+    
+  
 
 
 
@@ -394,6 +418,10 @@ public class Tweet_Type extends Annotation_Type {
  
     casFeat_quoted = jcas.getRequiredFeatureDE(casType, "quoted", "uima.cas.Long", featOkTst);
     casFeatCode_quoted  = (null == casFeat_quoted) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_quoted).getCode();
+
+ 
+    casFeat_originalText = jcas.getRequiredFeatureDE(casType, "originalText", "uima.cas.String", featOkTst);
+    casFeatCode_originalText  = (null == casFeat_originalText) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_originalText).getCode();
 
   }
 }
