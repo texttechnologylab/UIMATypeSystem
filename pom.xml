@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>1.8.9.7</version>
+    <version>1.8.9.8</version>
 
     <repositories>
      	<repository>
@@ -90,7 +90,7 @@
 		    <groupId>org.dkpro.core</groupId>
 		    <artifactId>dkpro-core-api-semantics-asl</artifactId>
 		</dependency>
-    	<dependency>	
+    	<dependency>
 	    	<groupId>com.github.texttechnologylab.textimager-uima</groupId>
 	    	<artifactId>textimager-uima-types</artifactId>
 	    	<version>0.3.0.2</version>
