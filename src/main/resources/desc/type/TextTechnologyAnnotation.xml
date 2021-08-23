@@ -246,6 +246,38 @@
         </featureDescription>
       </features>
     </typeDescription>
+    <typeDescription>
+        <name>org.texttechnologylab.annotation.AnnotatorMetaData</name>
+        <description/>
+        <supertypeName>uima.cas.AnnotationBase</supertypeName>
+        <features>
+            <featureDescription>
+                <name>reference</name>
+                <description/>
+                <rangeTypeName>uima.cas.TOP</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>name</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>version</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelName</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelVersion</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
+    </typeDescription>
   <typeDescription>
       <name>org.texttechnologylab.annotation.AnnotationBracket</name>
       <description/>
