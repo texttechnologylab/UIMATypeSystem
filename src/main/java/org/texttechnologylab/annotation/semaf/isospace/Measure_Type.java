@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
+/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Signal_Type;
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
+ * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
  * @generated */
 public class Measure_Type extends Signal_Type {
   /** @generated */

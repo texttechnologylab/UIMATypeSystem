@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
+/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,8 +12,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
  * @generated */
 public class OLink extends Link {
   /** @generated
