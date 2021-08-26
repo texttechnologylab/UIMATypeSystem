@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>WikidataNewspaper</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <imports>
+        <import name="desc.type.TextTechnologyTypes"/>
+    </imports>
+        <types>
+<typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1002697</name>
+            <description>periodical</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1006612</name>
+            <description>federal law</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1058914</name>
+            <description>software company</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q107307154</name>
+            <description>virtual place</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q10876391</name>
+            <description>Wikipedia language edition</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q11033</name>
+            <description>mass media</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1224870</name>
+            <description>virtual library</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1293664</name>
+            <description>open content</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1320047</name>
+            <description>book publisher</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1329436</name>
+            <description>consumer organization</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1391125</name>
+            <description>specialized database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q14350</name>
+            <description>radio station</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q14827288</name>
+            <description>Wikimedia project</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1493934</name>
+            <description>mobile phone contract</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1519799</name>
+            <description>ministry of health</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1523279</name>
+            <description>ministry of Kultus</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q15265344</name>
+            <description>broadcaster</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1529128</name>
+            <description>postal service</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q15416</name>
+            <description>television program</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q15633582</name>
+            <description>MediaWiki website</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q157031</name>
+            <description>foundation</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q16024164</name>
+            <description>medical journal</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1616075</name>
+            <description>television station</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q163740</name>
+            <description>nonprofit organization</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1666024</name>
+            <description>Mieterverein</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q16917</name>
+            <description>hospital</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q17232649</name>
+            <description>news website</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1789476</name>
+            <description>bibliographic database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1802122</name>
+            <description>German state agency</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q18043413</name>
+            <description>supermarket chain</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q18388277</name>
+            <description>technology company</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q186165</name>
+            <description>web portal</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1916557</name>
+            <description>medical database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1941618</name>
+            <description>mobile network operator</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q19541</name>
+            <description>search engine</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q19967801</name>
+            <description>online service</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q2085381</name>
+            <description>publisher</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q208674</name>
+            <description>portmanteau</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q2305295</name>
+            <description>weekly newspaper</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q2324556</name>
+            <description>state media</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q235557</name>
+            <description>file format</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q2401749</name>
+            <description>telecommunication company</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q2462003</name>
+            <description>instant messaging client</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q261428</name>
+            <description>discount store</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q26430975</name>
+            <description>Microsoft Windows component</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q28051323</name>
+            <description>video-conferencing software</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q31855</name>
+            <description>research institute</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q35127</name>
+            <description>website</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q4117139</name>
+            <description>biological database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q41298</name>
+            <description>magazine</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q4182287</name>
+            <description>search engine</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q422062</name>
+            <description>Aktiengesellschaft</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q43229</name>
+            <description>organization</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q474157</name>
+            <description>collaborative software</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q4830453</name>
+            <description>business</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+Disconnected from the target VM, address: '127.0.0.1:53147', transport: 'socket'
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q50433915</name>
+            <description>education program</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q5227240</name>
+            <description>data library</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q5292</name>
+            <description>encyclopedia</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q561068</name>
+            <description>specialty channel</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q5633421</name>
+            <description>scientific journal</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q56679069</name>
+            <description>legal information system</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q615699</name>
+            <description>Internet encyclopedia</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q685935</name>
+            <description>trade magazine</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q6918183</name>
+            <description>motor club</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q7094076</name>
+            <description>online database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q737498</name>
+            <description>academic journal</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q7397</name>
+            <description>software</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q773668</name>
+            <description>open-access journal</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q779239</name>
+            <description>international broadcaster</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q783794</name>
+            <description>company</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q8513</name>
+            <description>database</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q891723</name>
+            <description>public company</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q896375</name>
+            <description>Federal Ministry in Germany</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+
+    
+  
+  </types>
+</typeSystemDescription>
