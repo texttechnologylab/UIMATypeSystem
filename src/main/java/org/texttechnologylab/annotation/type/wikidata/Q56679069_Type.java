@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Aug 26 14:20:37 CEST 2021 */
+/* First created by JCasGen Fri Aug 27 14:14:37 CEST 2021 */
 package org.texttechnologylab.annotation.type.wikidata;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** legal information system
- * Updated by JCasGen Thu Aug 26 14:20:37 CEST 2021
+ * Updated by JCasGen Fri Aug 27 14:14:37 CEST 2021
  * @generated */
 public class Q56679069_Type extends NamedEntity_Type {
   /** @generated */

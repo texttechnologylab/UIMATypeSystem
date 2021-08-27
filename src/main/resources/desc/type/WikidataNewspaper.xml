@@ -282,8 +282,7 @@
             <name>org.texttechnologylab.annotation.type.wikidata.Q4830453</name>
             <description>business</description>
             <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
-Disconnected from the target VM, address: '127.0.0.1:53147', transport: 'socket'
-        </typeDescription>
+    </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.type.wikidata.Q50433915</name>
             <description>education program</description>
@@ -374,7 +373,21 @@ Disconnected from the target VM, address: '127.0.0.1:53147', transport: 'socket'
             <description>Federal Ministry in Germany</description>
             <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
         </typeDescription>
-
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1365560</name>
+            <description>university of applied sciences</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q3918</name>
+            <description>university</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q3220391</name>
+            <description>social networking service</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
     
   
   </types>
