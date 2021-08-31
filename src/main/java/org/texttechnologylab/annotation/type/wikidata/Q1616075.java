@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Aug 27 14:14:37 CEST 2021 */
+/* First created by JCasGen Tue Aug 31 09:57:36 CEST 2021 */
 package org.texttechnologylab.annotation.type.wikidata;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** television station
- * Updated by JCasGen Fri Aug 27 14:14:37 CEST 2021
+ * Updated by JCasGen Tue Aug 31 09:57:36 CEST 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/WikidataNewspaper.xml
  * @generated */
 public class Q1616075 extends NamedEntity {

@@ -388,7 +388,16 @@
             <description>social networking service</description>
             <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
         </typeDescription>
-    
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q1006365</name>
+            <description>federal ministry</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.wikidata.Q4462013</name>
+            <description>translator</description>
+            <supertypeName>org.texttechnologylab.annotation.NamedEntity</supertypeName>
+        </typeDescription>    
   
   </types>
 </typeSystemDescription>
