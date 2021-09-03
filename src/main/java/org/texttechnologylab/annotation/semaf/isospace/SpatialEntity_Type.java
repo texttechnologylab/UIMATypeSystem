@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
+/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Entity_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
+ * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
  * @generated */
 public class SpatialEntity_Type extends Entity_Type {
   /** @generated */

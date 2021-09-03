@@ -1,7 +1,7 @@
 
-/* First created by JCasGen Wed Dec 02 18:39:57 CET 2020 */
+/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
 package org.texttechnologylab.annotation.semaf.isobase;
-
+//Vorhersage der Topicen in verschiedenen Sprachen. Mehler & Hemati letztes zitieren.
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.cas.impl.TypeImpl;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:57 CET 2020
+ * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
  * @generated */
 public class Entity_Type extends Annotation_Type {
   /** @generated */
