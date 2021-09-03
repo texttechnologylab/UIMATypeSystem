@@ -150,6 +150,28 @@
       </features>
     </typeDescription>
   <typeDescription>
+      <name>org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation</name>
+      <description/>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>reference</name>
+          <description/>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>accepted</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>rejected</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
       <name>org.texttechnologylab.annotation.SemanticSource</name>
       <description/>
       <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</supertypeName>
