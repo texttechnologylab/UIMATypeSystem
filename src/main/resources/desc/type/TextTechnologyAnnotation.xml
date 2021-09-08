@@ -157,7 +157,7 @@
         <featureDescription>
           <name>reference</name>
           <description/>
-          <rangeTypeName>uima.tcas.TOP</rangeTypeName>
+          <rangeTypeName>uima.cas.TOP</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>accepted</name>

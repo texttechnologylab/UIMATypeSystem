@@ -13,7 +13,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Sep 08 11:26:06 CEST 2021
+ * Updated by JCasGen Wed Sep 08 11:48:35 CEST 2021
  * XML source: /home/daniel/data/hiwi/git/myyyvothrr/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class ActiveLearnerRecommendation extends AnnotationBase {
