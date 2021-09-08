@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 08 11:48:35 CEST 2021
+ * Updated by JCasGen Wed Sep 08 12:02:21 CEST 2021
  * @generated */
 public class ActiveLearnerRecommendation_Type extends AnnotationBase_Type {
   /** @generated */
@@ -154,7 +154,7 @@ public class ActiveLearnerRecommendation_Type extends AnnotationBase_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_reference = jcas.getRequiredFeatureDE(casType, "reference", "uima.cas.TOP", featOkTst);
+    casFeat_reference = jcas.getRequiredFeatureDE(casType, "reference", "uima.tcas.Annotation", featOkTst);
     casFeatCode_reference  = (null == casFeat_reference) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_reference).getCode();
 
  
