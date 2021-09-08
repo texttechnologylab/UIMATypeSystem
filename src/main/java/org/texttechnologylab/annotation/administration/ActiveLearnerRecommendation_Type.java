@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Wed Sep 08 11:26:07 CEST 2021
+ * Updated by JCasGen Wed Sep 08 11:48:35 CEST 2021
  * @generated */
 public class ActiveLearnerRecommendation_Type extends AnnotationBase_Type {
   /** @generated */
