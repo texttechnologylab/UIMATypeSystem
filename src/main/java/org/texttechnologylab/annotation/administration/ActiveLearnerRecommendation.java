@@ -13,7 +13,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Wed Sep 08 11:48:35 CEST 2021
+ * Updated by JCasGen Wed Sep 08 12:02:21 CEST 2021
  * XML source: /home/daniel/data/hiwi/git/myyyvothrr/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class ActiveLearnerRecommendation extends AnnotationBase {
@@ -73,16 +73,16 @@ public class ActiveLearnerRecommendation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() {
+  public Annotation getReference() {
     if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference)));}
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setReference(TOP v) {
+  public void setReference(Annotation v) {
     if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
     jcasType.ll_cas.ll_setRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
