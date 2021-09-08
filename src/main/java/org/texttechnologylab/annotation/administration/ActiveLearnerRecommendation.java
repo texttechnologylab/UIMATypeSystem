@@ -7,12 +7,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Sep 03 13:52:05 CEST 2021
+ * Updated by JCasGen Wed Sep 08 11:26:06 CEST 2021
  * XML source: /home/daniel/data/hiwi/git/myyyvothrr/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class ActiveLearnerRecommendation extends AnnotationBase {
@@ -72,16 +73,16 @@ public class ActiveLearnerRecommendation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getReference() {
+  public TOP getReference() {
     if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
-    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference)));}
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setReference(Annotation v) {
+  public void setReference(TOP v) {
     if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
     jcasType.ll_cas.ll_setRefValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
@@ -110,6 +111,48 @@ public class ActiveLearnerRecommendation extends AnnotationBase {
    
     
   //*--------------*
+  //* Feature: annotationSameCount
+
+  /** getter for annotationSameCount - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public int getAnnotationSameCount() {
+    if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_annotationSameCount == null)
+      jcasType.jcas.throwFeatMissing("annotationSameCount", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_annotationSameCount);}
+    
+  /** setter for annotationSameCount - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setAnnotationSameCount(int v) {
+    if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_annotationSameCount == null)
+      jcasType.jcas.throwFeatMissing("annotationSameCount", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_annotationSameCount, v);}    
+   
+    
+  //*--------------*
+  //* Feature: annotationTotalCount
+
+  /** getter for annotationTotalCount - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public int getAnnotationTotalCount() {
+    if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_annotationTotalCount == null)
+      jcasType.jcas.throwFeatMissing("annotationTotalCount", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_annotationTotalCount);}
+    
+  /** setter for annotationTotalCount - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setAnnotationTotalCount(int v) {
+    if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_annotationTotalCount == null)
+      jcasType.jcas.throwFeatMissing("annotationTotalCount", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_annotationTotalCount, v);}    
+    //*--------------*
   //* Feature: accepted
 
   /** getter for accepted - gets 
@@ -129,6 +172,8 @@ public class ActiveLearnerRecommendation extends AnnotationBase {
     if (ActiveLearnerRecommendation_Type.featOkTst && ((ActiveLearnerRecommendation_Type)jcasType).casFeat_accepted == null)
       jcasType.jcas.throwFeatMissing("accepted", "org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation");
     jcasType.ll_cas.ll_setBooleanValue(addr, ((ActiveLearnerRecommendation_Type)jcasType).casFeatCode_accepted, v);}    
-  }
+   
+    
+}
 
     
