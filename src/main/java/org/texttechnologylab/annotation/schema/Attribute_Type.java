@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Oct 01 11:53:58 CEST 2021 */
+/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri Oct 01 11:53:58 CEST 2021
+ * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
  * @generated */
 public class Attribute_Type extends AnnotationBase_Type {
   /** @generated */

@@ -105,7 +105,7 @@
         <featureDescription>
           <name>value</name>
           <description/>
-          <rangeTypeName>uima.cas.TOP</rangeTypeName>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>

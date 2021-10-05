@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Oct 01 11:53:58 CEST 2021 */
+/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.FSList;
 
 
 /** 
- * Updated by JCasGen Fri Oct 01 11:53:58 CEST 2021
+ * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml
  * @generated */
 public class Relation extends Attribute {

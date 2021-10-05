@@ -1,18 +1,17 @@
 
 
-/* First created by JCasGen Fri Oct 01 11:53:58 CEST 2021 */
+/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Oct 01 11:53:58 CEST 2021
+ * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml
  * @generated */
 public class AnnotationAttribute extends AnnotationBase {
@@ -94,19 +93,19 @@ public class AnnotationAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getValue() {
+  public String getValue() {
     if (AnnotationAttribute_Type.featOkTst && ((AnnotationAttribute_Type)jcasType).casFeat_value == null)
       jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.schema.AnnotationAttribute");
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationAttribute_Type)jcasType).casFeatCode_value)));}
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotationAttribute_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setValue(TOP v) {
+  public void setValue(String v) {
     if (AnnotationAttribute_Type.featOkTst && ((AnnotationAttribute_Type)jcasType).casFeat_value == null)
       jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.schema.AnnotationAttribute");
-    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationAttribute_Type)jcasType).casFeatCode_value, jcasType.ll_cas.ll_getFSRef(v));}    
+    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotationAttribute_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

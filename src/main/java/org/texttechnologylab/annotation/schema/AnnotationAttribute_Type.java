@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Oct 01 11:53:58 CEST 2021 */
+/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri Oct 01 11:53:58 CEST 2021
+ * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
  * @generated */
 public class AnnotationAttribute_Type extends AnnotationBase_Type {
   /** @generated */
@@ -54,19 +54,19 @@ public class AnnotationAttribute_Type extends AnnotationBase_Type {
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getValue(int addr) {
+  public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
       jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.schema.AnnotationAttribute");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_value);
+    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setValue(int addr, int v) {
+  public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
       jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.schema.AnnotationAttribute");
-    ll_cas.ll_setRefValue(addr, casFeatCode_value, v);}
+    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
     
   
 
@@ -86,7 +86,7 @@ public class AnnotationAttribute_Type extends AnnotationBase_Type {
     casFeatCode_key  = (null == casFeat_key) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_key).getCode();
 
  
-    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.TOP", featOkTst);
+    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
     casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
   }
