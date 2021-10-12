@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
+ * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
  * @generated */
 public class Signal_Type extends Entity_Type {
   /** @generated */

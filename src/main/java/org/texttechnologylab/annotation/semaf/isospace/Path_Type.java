@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
+ * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
  * @generated */
 public class Path_Type extends Location_Type {
   /** @generated */
@@ -126,7 +126,7 @@ public class Path_Type extends Location_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_midID_array), i);
   }
    
   /** @generated

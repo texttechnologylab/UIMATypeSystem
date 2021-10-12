@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.texttechnologylab.annotation.semaf.isobase.Link_Type;
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
+ * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
  * @generated */
 public class OLink_Type extends Link_Type {
   /** @generated */

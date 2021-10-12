@@ -11,8 +11,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:33:08 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
  * @generated */
 public class Measure extends Signal {
   /** @generated
