@@ -1,6 +1,6 @@
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+/* First created by JCasGen Fri Apr 01 18:16:00 CEST 2022 */
+package org.texttechnologylab.annotation.administration.activelearner;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -10,14 +10,14 @@ import org.apache.uima.cas.Type;
 /** 
  * Updated by JCasGen Fri Apr 01 18:16:00 CEST 2022
  * @generated */
-public class Attribute_Type extends GraphBase_Type {
+public class Reject_Type extends Decision_Type {
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Attribute.typeIndexID;
+  public final static int typeIndexID = Reject.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.type.Attribute");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.administration.activelearner.Reject");
 
 
 
@@ -26,7 +26,7 @@ public class Attribute_Type extends GraphBase_Type {
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
-  public Attribute_Type(JCas jcas, Type casType) {
+  public Reject_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 

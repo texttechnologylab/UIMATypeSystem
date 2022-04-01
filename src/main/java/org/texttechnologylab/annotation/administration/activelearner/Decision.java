@@ -1,24 +1,25 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+/* First created by JCasGen Fri Apr 01 18:16:00 CEST 2022 */
+package org.texttechnologylab.annotation.administration.activelearner;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.texttechnologylab.annotation.type.Fingerprint;
 
 
 /** 
  * Updated by JCasGen Fri Apr 01 18:16:00 CEST 2022
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
-public class Node extends GraphBase {
+public class Decision extends Fingerprint {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Node.class);
+  public final static int typeIndexID = JCasRegistry.register(Decision.class);
   /** @generated
    * @ordered 
    */
@@ -32,14 +33,14 @@ public class Node extends GraphBase {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Node() {/* intentionally empty block */}
+  protected Decision() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Node(int addr, TOP_Type type) {
+  public Decision(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -47,7 +48,7 @@ public class Node extends GraphBase {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public Node(JCas jcas) {
+  public Decision(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -64,25 +65,25 @@ public class Node extends GraphBase {
  
     
   //*--------------*
-  //* Feature: attribute
+  //* Feature: comment
 
-  /** getter for attribute - gets 
+  /** getter for comment - gets 
    * @generated
    * @return value of the feature 
    */
-  public Attribute getAttribute() {
-    if (Node_Type.featOkTst && ((Node_Type)jcasType).casFeat_attribute == null)
-      jcasType.jcas.throwFeatMissing("attribute", "org.texttechnologylab.annotation.type.Node");
-    return (Attribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Node_Type)jcasType).casFeatCode_attribute)));}
+  public String getComment() {
+    if (Decision_Type.featOkTst && ((Decision_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.activelearner.Decision");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Decision_Type)jcasType).casFeatCode_comment);}
     
-  /** setter for attribute - sets  
+  /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setAttribute(Attribute v) {
-    if (Node_Type.featOkTst && ((Node_Type)jcasType).casFeat_attribute == null)
-      jcasType.jcas.throwFeatMissing("attribute", "org.texttechnologylab.annotation.type.Node");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Node_Type)jcasType).casFeatCode_attribute, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setComment(String v) {
+    if (Decision_Type.featOkTst && ((Decision_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.activelearner.Decision");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Decision_Type)jcasType).casFeatCode_comment, v);}    
   }
 
     
