@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
+ * Updated by JCasGen Fri Apr 01 18:13:29 CEST 2022
  * @generated */
 public class Attribute_Type extends GraphBase_Type {
   /** @generated */

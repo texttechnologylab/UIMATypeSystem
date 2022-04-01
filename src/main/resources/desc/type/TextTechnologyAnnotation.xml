@@ -8,6 +8,7 @@
         <import name="desc.type.Anomalies"/>
         <import name="desc.type.metadata_customized"/>
     <import name="desc.type.Semantics"/>
+  <import name="desc.type.TextTechnologyGraph"/>
   </imports>
     <types>
         <typeDescription>
@@ -150,38 +151,6 @@
       </features>
     </typeDescription>
   <typeDescription>
-      <name>org.texttechnologylab.annotation.administration.ActiveLearnerRecommendation</name>
-      <description/>
-      <supertypeName>uima.cas.AnnotationBase</supertypeName>
-      <features>
-        <featureDescription>
-          <name>reference</name>
-          <description/>
-          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>accepted</name>
-          <description/>
-          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>rejected</name>
-          <description/>
-          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>annotationSameCount</name>
-          <description/>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>annotationTotalCount</name>
-          <description/>
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
-  <typeDescription>
       <name>org.texttechnologylab.annotation.SemanticSource</name>
       <description/>
       <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</supertypeName>
@@ -314,6 +283,28 @@
       <name>org.texttechnologylab.annotation.AnnotationBracket</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>org.texttechnologylab.annotation.administration.activelearner.Decision</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.type.Fingerprint</supertypeName>
+      <features>
+        <featureDescription>
+          <name>comment</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.administration.activelearner.Accept</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.administration.activelearner.Decision</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.administration.activelearner.Reject</name>
+      <description/>
+      <supertypeName>org.texttechnologylab.annotation.administration.activelearner.Decision</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>

@@ -11,8 +11,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 
 
 /** 
- * Updated by JCasGen Tue Feb 16 16:52:01 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Fri Apr 01 18:13:29 CEST 2022
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class FinishAnnotation extends DocumentMetaData {
   /** @generated
