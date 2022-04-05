@@ -306,5 +306,22 @@
       <description/>
       <supertypeName>org.texttechnologylab.annotation.administration.activelearner.Decision</supertypeName>
     </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.administration.activelearner.Recommendation</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.AnnotationComment</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>hash</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>score</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
   </types>
 </typeSystemDescription>
