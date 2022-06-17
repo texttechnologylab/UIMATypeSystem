@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Fri Jun 17 14:38:29 CEST 2022
+ * Updated by JCasGen Fri Jun 17 16:34:15 CEST 2022
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class Hyperedge extends GraphBase {

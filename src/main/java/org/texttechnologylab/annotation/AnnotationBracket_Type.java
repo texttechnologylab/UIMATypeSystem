@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jun 17 14:38:28 CEST 2022
+ * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
  * @generated */
 public class AnnotationBracket_Type extends Annotation_Type {
   /** @generated */

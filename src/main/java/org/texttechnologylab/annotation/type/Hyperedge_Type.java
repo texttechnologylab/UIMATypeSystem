@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Jun 17 14:38:29 CEST 2022
+ * Updated by JCasGen Fri Jun 17 16:34:15 CEST 2022
  * @generated */
 public class Hyperedge_Type extends GraphBase_Type {
   /** @generated */

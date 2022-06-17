@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Jun 17 14:38:28 CEST 2022
+ * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
  * @generated */
 public class Comment_Type extends AnnotationNode_Type {
   /** @generated */
