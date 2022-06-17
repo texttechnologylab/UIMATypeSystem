@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Apr 01 18:16:00 CEST 2022
+ * Updated by JCasGen Fri Jun 17 14:38:28 CEST 2022
  * @generated */
 public class Color_Type extends Attribute_Type {
   /** @generated */
