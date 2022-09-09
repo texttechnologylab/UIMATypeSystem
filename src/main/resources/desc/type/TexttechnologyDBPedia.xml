@@ -6,7 +6,7 @@
     <vendor/>
 <types>
     <typeDescription>
-      <name>org.texttechnologylab.annotation.type.DBPediaObject</name>
+      <name>org.texttechnologylab.annotation.type.dbpedia.DBPediaObject</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
@@ -29,13 +29,13 @@
           <name>types</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.type.DBPediaType</elementType>
+          <elementType>org.texttechnologylab.annotation.type.dbpedia.DBPediaType</elementType>
           <multipleReferencesAllowed>false</multipleReferencesAllowed>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.annotation.type.DBPediaType</name>
+      <name>org.texttechnologylab.annotation.type.dbpedia.DBPediaType</name>
       <description/>
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
       <features>
