@@ -279,6 +279,33 @@
             </featureDescription>
         </features>
     </typeDescription>
+    <typeDescription>
+            <name>org.texttechnologylab.annotation.SpacyAnnotatorMetaData</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.AnnotatorMetaData</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>spacyVersion</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>modelLang</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>modelSpacyVersion</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>modelSpacyGitVersion</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
   <typeDescription>
       <name>org.texttechnologylab.annotation.AnnotationBracket</name>
       <description/>
