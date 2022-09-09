@@ -8,7 +8,7 @@ The collection of all UIMA TypeSystemDescriptors for the pipelines UIMA pipeline
 ## Easy to use with ![JitPack](https://jitpack.io/)
 
 ### Maven
-```
+```xml
 <repositories>
  <repository>
   <id>jitpack.io</id>
