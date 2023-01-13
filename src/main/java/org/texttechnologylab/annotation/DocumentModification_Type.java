@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri Jan 13 15:18:14 CET 2023
+ * Updated by JCasGen Fri Jan 13 17:09:39 CET 2023
  * @generated */
 public class DocumentModification_Type extends AnnotationBase_Type {
   /** @generated */

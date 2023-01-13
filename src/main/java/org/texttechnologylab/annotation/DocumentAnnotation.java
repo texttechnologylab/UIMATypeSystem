@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Jan 13 15:18:14 CET 2023
+ * Updated by JCasGen Fri Jan 13 17:09:39 CET 2023
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
  * @generated */
 public class DocumentAnnotation extends AnnotationBase {
