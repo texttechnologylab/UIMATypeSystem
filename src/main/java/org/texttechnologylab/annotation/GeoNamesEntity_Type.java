@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jan 20 19:10:46 CET 2023
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * @generated */
 public class GeoNamesEntity_Type extends Annotation_Type {
   /** @generated */

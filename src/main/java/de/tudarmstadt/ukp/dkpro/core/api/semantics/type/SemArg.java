@@ -15,7 +15,7 @@ predicates. Semantic arguments are characterized by their semantic role, e.g. Ag
 Experiencer, Topic. The semantic role of an argument is related to its semantic type
 (for communication verbs, the Agent can be a person or an organization, but
 typically not food).
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SemArg extends Annotation {

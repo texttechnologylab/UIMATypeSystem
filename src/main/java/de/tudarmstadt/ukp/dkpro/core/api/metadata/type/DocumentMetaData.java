@@ -41,7 +41,7 @@ systems.</p>
 
 <p>In addition to the features given here, there is a <i>language</i> feature inherited from UIMA's DocumentAnnotation. DKPro Core components expect a two letter ISO
 639-1 language code there.</p>
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class DocumentMetaData extends DocumentAnnotation {
@@ -220,9 +220,9 @@ public class DocumentMetaData extends DocumentAnnotation {
   //* Feature: isLastSegment
 
   /** getter for isLastSegment - gets CAS de-multipliers need to know whether a CAS is the
-						last multiplied segment.
-						Thus CAS multipliers should set this field to true for the last CAS
-						they produce.
+            last multiplied segment.
+            Thus CAS multipliers should set this field to true for the last CAS
+            they produce.
    * @generated
    * @return value of the feature 
    */
@@ -232,9 +232,9 @@ public class DocumentMetaData extends DocumentAnnotation {
     return jcasType.ll_cas.ll_getBooleanValue(addr, ((DocumentMetaData_Type)jcasType).casFeatCode_isLastSegment);}
     
   /** setter for isLastSegment - sets CAS de-multipliers need to know whether a CAS is the
-						last multiplied segment.
-						Thus CAS multipliers should set this field to true for the last CAS
-						they produce. 
+            last multiplied segment.
+            Thus CAS multipliers should set this field to true for the last CAS
+            they produce. 
    * @generated
    * @param v value to set into the feature 
    */

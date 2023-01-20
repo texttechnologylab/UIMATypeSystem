@@ -1,0 +1,112 @@
+
+
+/* First created by JCasGen Fri Jan 20 19:11:52 CET 2023 */
+package org.texttechnologylab.annotation;
+
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+import org.apache.uima.jcas.cas.TOP_Type;
+
+import org.apache.uima.jcas.cas.ByteArray;
+import org.apache.uima.jcas.cas.AnnotationBase;
+
+
+/** 
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * @generated */
+public class SharedData extends AnnotationBase {
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = JCasRegistry.register(SharedData.class);
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int type = typeIndexID;
+  /** @generated
+   * @return index of the type  
+   */
+  @Override
+  public              int getTypeIndexID() {return typeIndexID;}
+ 
+  /** Never called.  Disable default constructor
+   * @generated */
+  protected SharedData() {/* intentionally empty block */}
+    
+  /** Internal - constructor used by generator 
+   * @generated
+   * @param addr low level Feature Structure reference
+   * @param type the type of this Feature Structure 
+   */
+  public SharedData(int addr, TOP_Type type) {
+    super(addr, type);
+    readObject();
+  }
+  
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
+   */
+  public SharedData(JCas jcas) {
+    super(jcas);
+    readObject();   
+  } 
+
+  /** 
+   * <!-- begin-user-doc -->
+   * Write your own initialization here
+   * <!-- end-user-doc -->
+   *
+   * @generated modifiable 
+   */
+  private void readObject() {/*default - does nothing empty block */}
+     
+ 
+    
+  //*--------------*
+  //* Feature: value
+
+  /** getter for value - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public ByteArray getValue() {
+    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
+    return (ByteArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value)));}
+    
+  /** setter for value - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setValue(ByteArray v) {
+    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value, jcasType.ll_cas.ll_getFSRef(v));}    
+    
+  /** indexed getter for value - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public byte getValue(int i) {
+    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);
+    return jcasType.ll_cas.ll_getByteArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);}
+
+  /** indexed setter for value - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setValue(int i, byte v) { 
+    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);
+    jcasType.ll_cas.ll_setByteArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i, v);}
+  }
+
+    

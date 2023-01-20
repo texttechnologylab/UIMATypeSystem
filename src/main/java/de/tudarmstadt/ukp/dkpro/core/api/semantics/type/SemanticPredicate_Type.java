@@ -19,7 +19,7 @@ e.g. event nouns, such as "suggestion" (with arguments what and by whom), or
 relational adjectives, such as "proud" (with arguments who and of what).
 
 @deprecated use SemPred instead
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * @generated */
 public class SemanticPredicate_Type extends Annotation_Type {
   /** @generated */
@@ -87,7 +87,7 @@ public class SemanticPredicate_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_arguments), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_arguments), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_arguments), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_arguments), i);
   }
    
   /** @generated

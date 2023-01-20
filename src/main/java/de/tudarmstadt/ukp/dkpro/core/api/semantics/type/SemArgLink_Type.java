@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 /** The SemArgLink type is used to attach SemPred annotations to their respective SemArg annotations while giving each link a role.
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * @generated */
 public class SemArgLink_Type extends TOP_Type {
   /** @generated */
