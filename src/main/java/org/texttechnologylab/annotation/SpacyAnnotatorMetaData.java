@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Thu Apr 14 13:32:49 CEST 2022
- * XML source: /home/stud_homes/baumartz/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Fri Jan 20 19:10:46 CET 2023
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SpacyAnnotatorMetaData extends AnnotatorMetaData {
   /** @generated

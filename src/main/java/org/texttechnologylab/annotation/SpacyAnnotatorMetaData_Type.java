@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Apr 14 13:32:49 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:10:46 CET 2023
  * @generated */
 public class SpacyAnnotatorMetaData_Type extends AnnotatorMetaData_Type {
   /** @generated */
