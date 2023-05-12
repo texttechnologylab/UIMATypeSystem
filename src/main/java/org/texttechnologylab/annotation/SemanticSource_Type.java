@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense_Type;
 
 /** 
- * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
+ * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
  * @generated */
 public class SemanticSource_Type extends WordSense_Type {
   /** @generated */

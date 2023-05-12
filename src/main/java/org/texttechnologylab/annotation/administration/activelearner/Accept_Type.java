@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
+ * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
  * @generated */
 public class Accept_Type extends Decision_Type {
   /** @generated */

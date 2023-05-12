@@ -358,7 +358,7 @@
         <featureDescription>
           <name>value</name>
           <description/>
-          <rangeTypeName>uima.cas.ByteArray</rangeTypeName>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>

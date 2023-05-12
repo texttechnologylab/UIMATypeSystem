@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
+ * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
  * @generated */
 public class SharedData_Type extends AnnotationBase_Type {
   /** @generated */
@@ -30,48 +30,21 @@ public class SharedData_Type extends AnnotationBase_Type {
    * @param addr low level Feature Structure reference
    * @return the feature value 
    */ 
-  public int getValue(int addr) {
+  public String getValue(int addr) {
         if (featOkTst && casFeat_value == null)
       jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_value);
+    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
   }
   /** @generated
    * @param addr low level Feature Structure reference
    * @param v value to set 
    */    
-  public void setValue(int addr, int v) {
+  public void setValue(int addr, String v) {
         if (featOkTst && casFeat_value == null)
       jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    ll_cas.ll_setRefValue(addr, casFeatCode_value, v);}
+    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
     
-   /** @generated
-   * @param addr low level Feature Structure reference
-   * @param i index of item in the array
-   * @return value at index i in the array 
-   */
-  public byte getValue(int addr, int i) {
-        if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    if (lowLevelTypeChecks)
-      return ll_cas.ll_getByteArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_value), i, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_value), i);
-	return ll_cas.ll_getByteArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_value), i);
-  }
-   
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @param i index of item in the array
-   * @param v value to set
-   */ 
-  public void setValue(int addr, int i, byte v) {
-        if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    if (lowLevelTypeChecks)
-      ll_cas.ll_setByteArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_value), i, v, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_value), i);
-    ll_cas.ll_setByteArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_value), i, v);
-  }
- 
+  
 
 
 
@@ -85,7 +58,7 @@ public class SharedData_Type extends AnnotationBase_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.ByteArray", featOkTst);
+    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
     casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
   }

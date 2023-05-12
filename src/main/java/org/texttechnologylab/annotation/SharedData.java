@@ -12,7 +12,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
+ * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SharedData extends AnnotationBase {
@@ -72,41 +72,19 @@ public class SharedData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public ByteArray getValue() {
+  public String getValue() {
     if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
       jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    return (ByteArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value)));}
+    return jcasType.ll_cas.ll_getStringValue(addr, ((SharedData_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setValue(ByteArray v) {
+  public void setValue(String v) {
     if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
       jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value, jcasType.ll_cas.ll_getFSRef(v));}    
-    
-  /** indexed getter for value - gets an indexed value - 
-   * @generated
-   * @param i index in the array to get
-   * @return value of the element at index i 
-   */
-  public byte getValue(int i) {
-    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);
-    return jcasType.ll_cas.ll_getByteArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);}
-
-  /** indexed setter for value - sets an indexed value - 
-   * @generated
-   * @param i index in the array to set
-   * @param v value to set into the array 
-   */
-  public void setValue(int i, byte v) { 
-    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i);
-    jcasType.ll_cas.ll_setByteArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SharedData_Type)jcasType).casFeatCode_value), i, v);}
+    jcasType.ll_cas.ll_setStringValue(addr, ((SharedData_Type)jcasType).casFeatCode_value, v);}    
   }
 
     
