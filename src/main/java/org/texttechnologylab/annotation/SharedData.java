@@ -1,19 +1,18 @@
 
 
-/* First created by JCasGen Fri Jan 20 19:11:52 CET 2023 */
+/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.cas.ByteArray;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class SharedData extends AnnotationBase {
   /** @generated

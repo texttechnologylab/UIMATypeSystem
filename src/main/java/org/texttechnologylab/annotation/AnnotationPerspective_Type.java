@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jun 17 16:34:15 CEST 2022 */
+/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
+ * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
  * @generated */
 public class AnnotationPerspective_Type extends AnnotationBase_Type {
   /** @generated */
