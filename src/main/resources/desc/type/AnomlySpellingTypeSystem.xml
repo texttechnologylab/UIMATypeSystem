@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+      
+  <name>TextTechnologyAnomalySpelling</name>
+      
+  <description/>
+      
+  <version>1.0</version>
+      
+  <vendor/>
+
+    <imports>
+        <import name="desc.type.Anomalies"/>
+    </imports>
+    
+  <types>
+        
+    <typeDescription>
+            
+      <name>org.texttechnologylab.annotation.AnomlySpelling</name>
+            
+      <description/>
+            
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly</supertypeName>
+            
+      <features>
+                
+        <featureDescription>
+                    
+          <name>SpellingType</name>
+                    
+          <description>Output Type of the Spelling like wrong, skipped or unkown</description>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+                
+        <featureDescription>
+                    
+          <name>ModelName</name>
+                    
+          <description>The name of the Model</description>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+              
+      </features>
+          
+    </typeDescription>
+  </types>
+  
+</typeSystemDescription>
