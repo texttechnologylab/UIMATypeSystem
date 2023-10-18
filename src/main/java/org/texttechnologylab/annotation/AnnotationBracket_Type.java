@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Tue Mar 16 11:38:05 CET 2021 */
+/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
  * @generated */
 public class AnnotationBracket_Type extends Annotation_Type {
   /** @generated */

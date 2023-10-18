@@ -14,7 +14,7 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 nouns, verbs or adjectives. Semantic field information is present e.g. in WordNet as
 lexicographer file names. Previously, this kind of semantic information has also
 been called supersenses or semantic types.
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
+ * Updated by JCasGen Fri Jan 20 19:11:52 CET 2023
  * @generated */
 public class SemanticField_Type extends Annotation_Type {
   /** @generated */

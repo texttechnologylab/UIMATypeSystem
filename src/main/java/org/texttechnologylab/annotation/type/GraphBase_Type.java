@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.AnnotationBase_Type;
 
 /** 
- * Updated by JCasGen Fri Jun 17 16:34:15 CEST 2022
+ * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
  * @generated */
 public class GraphBase_Type extends AnnotationBase_Type {
   /** @generated */

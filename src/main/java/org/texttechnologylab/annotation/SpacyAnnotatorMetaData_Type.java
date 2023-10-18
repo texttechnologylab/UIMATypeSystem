@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Thu Apr 14 13:32:49 CEST 2022 */
+/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Thu Apr 14 13:32:49 CEST 2022
+ * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
  * @generated */
 public class SpacyAnnotatorMetaData_Type extends AnnotatorMetaData_Type {
   /** @generated */

@@ -106,5 +106,17 @@
         </featureDescription>
       </features>
     </typeDescription>
+  <typeDescription>
+      <name>org.texttechnologylab.annotation.TextAbstract</name>
+      <description/>
+      <supertypeName>uima.cas.AnnotationBase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>value</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
   </types>
 </typeSystemDescription>

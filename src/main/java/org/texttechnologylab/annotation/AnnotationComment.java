@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Mon Mar 01 15:55:48 CET 2021 */
+/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
 package org.texttechnologylab.annotation;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,8 +12,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Jun 17 16:34:14 CEST 2022
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
  * @generated */
 public class AnnotationComment extends AnnotationBase {
   /** @generated
