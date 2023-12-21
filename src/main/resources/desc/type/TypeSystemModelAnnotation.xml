@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+        
+  
+  <name>TextTechnologyModels</name>
+        
+  
+  <description/>
+        
+  
+  <version>1.0</version>
+        
+  
+  <vendor/>
+        
+  
+  <imports>
+                
+    
+    <import name="desc.type.TypeSystemModelMeta"/>
+            
+  
+  </imports>
+        
+  
+  <types>
+      
+  
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.annotation.ModelAnnotation</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+      
+      <features>
+                
+        <featureDescription>
+                  	
+          <name>ModelReference</name>
+                  	
+          <description>Reference to the Model</description>
+                  	
+          <rangeTypeName>org.texttechnologylab.annotation.MetaData</rangeTypeName>
+                  
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.Embedding</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.annotation.ModelAnnotation</supertypeName>
+                        
+      
+      <features>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>embedding</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.FloatArray</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.Classification</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.annotation.ModelAnnotation</supertypeName>
+                        
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.Topic</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.uima.type.Classification</supertypeName>
+                        
+      
+      <features>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>topic</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>score</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.Sentiment</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.uima.type.Classification</supertypeName>
+                        
+      
+      <features>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>sentiment</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>subjectivity</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.CategorizedSentiment</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.uima.type.Sentiment</supertypeName>
+                        
+      
+      <features>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>pos</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>neu</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>neg</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+                
+    
+    <typeDescription>
+                        
+      
+      <name>org.texttechnologylab.uima.type.StarSentiment</name>
+                        
+      
+      <description/>
+                        
+      
+      <supertypeName>org.texttechnologylab.uima.type.Sentiment</supertypeName>
+                        
+      
+      <features>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>OneStar</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>TwoStars</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>ThreeStars</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>FourStars</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                                
+        
+        <featureDescription>
+                                        
+          
+          <name>FiveStars</name>
+                                        
+          
+          <description/>
+                                        
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                    
+        
+        </featureDescription>
+                            
+      
+      </features>
+                    
+    
+    </typeDescription>
+            
+  
+  </types>
+    
+
+</typeSystemDescription>
