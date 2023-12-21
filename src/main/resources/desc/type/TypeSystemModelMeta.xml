@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+      
+  <name>TextTechnologyModels</name>
+      
+  <description/>
+      
+  <version>1.0</version>
+      
+  <vendor/>
+      
+  <imports>
+            
+    <import name="desc.type.TextTechnologyDokumentAnnotation"/>
+            
+    <import name="desc.type.TextTechnologyAnnotation"/>
+        
+  </imports>
+      
+  <types>
+  	<typeDescription>
+                  
+      <name>org.texttechnologylab.annotation.MetaData</name>
+                  
+      <description/>
+                  
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+                  
+      <features>
+      
+      	<featureDescription>
+                              
+          <name>Lang</name>
+                              
+          <description>Language of the method or the Model</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                        
+        <featureDescription>
+                              
+          <name>Source</name>
+                              
+          <description>Link of the used resource</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                    
+      </features>
+              
+    </typeDescription>
+            
+    <typeDescription>
+                  
+      <name>org.texttechnologylab.annotation.model.MetaData</name>
+                  
+      <description/>
+                  
+      <supertypeName>org.texttechnologylab.annotation.MetaData</supertypeName>
+                  
+      <features>
+                        
+        <featureDescription>
+                              
+          <name>ModelVersion</name>
+                              
+          <description>Version of the Model</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                        
+        <featureDescription>
+                              
+          <name>ModelName</name>
+                              
+          <description>Name of the Model</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                                
+      </features>
+              
+    </typeDescription>
+            
+    <typeDescription>
+                  
+      <name>org.texttechnologylab.annotation.model.SpacyMetaData</name>
+                  
+      <description/>
+                  
+      <supertypeName>org.texttechnologylab.annotation.model.MetaData</supertypeName>
+                  
+      <features>
+                        
+        <featureDescription>
+                              
+          <name>SpacyVersion</name>
+                              
+          <description>Spacy Libary Version</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                        
+        <featureDescription>
+                              
+          <name>ModelSpacyGitVersion</name>
+                              
+          <description>Explicit Spacy git version</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                    
+      </features>
+              
+    </typeDescription>
+            
+    <typeDescription>
+                  
+      <name>org.texttechnologylab.annotation.model.HuggingfaceMetaData</name>
+                  
+      <description/>
+                  
+      <supertypeName>org.texttechnologylab.annotation.model.MetaData</supertypeName>
+                  
+      <features>
+                        
+        <featureDescription>
+                              
+          <name>HuggingfaceVersion</name>
+                              
+          <description>Transformer Library Version</description>
+                              
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                          
+        </featureDescription>
+                        
+        <featureDescription>
+                              
+          <name>DependeciesVersion</name>
+                              
+          <description>Dependency Library Version e.g. Pytorch...</description>
+                              
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                          
+        </featureDescription>
+                    
+      </features>
+              
+    </typeDescription>
+        
+  </types>
+  
+</typeSystemDescription>
