@@ -1,135 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-          
+            
+  
   
   
   <name>TextTechnologyAnnotation</name>
-          
+            
+  
   
   
   <description/>
-          
+            
+  
   
   
   <version>1.0</version>
-          
+            
+  
   
   
   <vendor/>
-          
+            
+  
   
   
   <types>
-                    
+                        
+    
     
     
     <typeDescription>
-                          
+                                
+      
       
       
       <name>org.texttechnologylab.annotation.type.AudioToken</name>
-                          
+                                
+      
       
       
       <description/>
-                          
+                                
+      
       
       
       <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
-                          
+                                
       
       
                 
     
     
-    </typeDescription>
-                
     
-    
-    <typeDescription>
-                  
-      
-      <name>org.texttechnologylab.annotation.type.AudioSentence</name>
-                  
-      
-      <description/>
-                  
-      
-      <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
-                
-    
-    </typeDescription>
-            
-    
-    <typeDescription>
-                  
-      
-      <name>org.texttechnologylab.annotation.type.MultimediaElement</name>
-                  
-      
-      <description/>
-                  
-      
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-                
       <features>
-                                    
-        
-        
+                
         <featureDescription>
-                              
-          
-          <name>timeStart</name>
-                              
-          
+                    
+          <name>value</name>
+                    
           <description/>
-                              
-          
-          <rangeTypeName>uima.cas.Float</rangeTypeName>
-                            
-        
-        </featureDescription>
-                        
-        
-        <featureDescription>
-                              
-          
-          <name>timeEnd</name>
-                              
-          
-          <description/>
-                              
-          
-          <rangeTypeName>uima.cas.Float</rangeTypeName>
-                            
-        
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
               
       </features>
-          
     </typeDescription>
-      
+                    
+    
+    
+    
     <typeDescription>
-            
-      <name>org.texttechnologylab.annotation.type.VideoToken</name>
-            
+                        
+      
+      
+      <name>org.texttechnologylab.annotation.type.AudioSentence</name>
+                        
+      
+      
       <description/>
-            
+                        
+      
+      
       <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
-          
+                      
+    
+    
     </typeDescription>
+                
+    
+    
+    <typeDescription>
+                        
+      
+      
+      <name>org.texttechnologylab.annotation.type.MultimediaElement</name>
+                        
+      
+      
+      <description/>
+                        
+      
+      
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+                      
+      
+      <features>
+                                            
         
-    <typeDescription>
-            
-      <name>org.texttechnologylab.annotation.type.Frame</name>
-            
-      <description/>
-            
-      <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
+        
+        
+        <featureDescription>
+                                        
           
-    </typeDescription>
-  </types>
+          
+          <name>timeStart</name>
+                                        
+          
+          
+          <description/>
+                                        
+          
+          
+          <rangeTypeName>uima.cas.Float</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                                
+        
+        
+        <featureDescription>
+                                        
+          
+          
+          <name>timeEnd</name>
+                                        
+          
+          
+          <description/>
+                                        
+          
+          
+          <rangeTypeName>uima.cas.Float</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                      
       
+      </features>
+                
+    
+    </typeDescription>
+          
+    
+    <typeDescription>
+                  
+      
+      <name>org.texttechnologylab.annotation.type.VideoToken</name>
+                  
+      
+      <description/>
+                  
+      
+      <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
+                
+    
+    </typeDescription>
+            
+    
+    <typeDescription>
+                  
+      
+      <name>org.texttechnologylab.annotation.type.Frame</name>
+                  
+      
+      <description/>
+                  
+      
+      <supertypeName>org.texttechnologylab.annotation.type.MultimediaElement</supertypeName>
+                
+    
+    </typeDescription>
+      
+  </types>
+        
+
 
 
 </typeSystemDescription>

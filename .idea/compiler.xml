@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UIMATypeSystem" />
         <module name="typesystem" />
+        <module name="UIMATypeSystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="typesystem" target="1.8" />
       <module name="UIMATypeSystem" target="1.8" />
     </bytecodeTargetLevel>
   </component>

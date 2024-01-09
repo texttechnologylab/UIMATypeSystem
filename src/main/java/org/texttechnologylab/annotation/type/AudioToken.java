@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Tue Jan 09 16:57:39 CET 2024 */
+/* First created by JCasGen Tue Jan 09 18:13:21 CET 2024 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Tue Jan 09 16:57:39 CET 2024
+ * Updated by JCasGen Tue Jan 09 18:13:21 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
 public class AudioToken extends MultimediaElement {
@@ -73,6 +73,28 @@ public class AudioToken extends MultimediaElement {
    */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+ 
+    
+  //*--------------*
+  //* Feature: value
+
+  /** getter for value - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getValue() {
+    if (AudioToken_Type.featOkTst && ((AudioToken_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.AudioToken");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AudioToken_Type)jcasType).casFeatCode_value);}
+    
+  /** setter for value - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setValue(String v) {
+    if (AudioToken_Type.featOkTst && ((AudioToken_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.AudioToken");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AudioToken_Type)jcasType).casFeatCode_value, v);}    
+  }
 
     
