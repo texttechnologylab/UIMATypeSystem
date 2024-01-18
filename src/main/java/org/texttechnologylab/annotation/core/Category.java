@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Generic category type
- * Updated by JCasGen Wed Jan 10 11:59:30 CET 2024
+ * Updated by JCasGen Thu Jan 18 16:13:36 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/Core.xml
  * @generated */
 public class Category extends Annotation {

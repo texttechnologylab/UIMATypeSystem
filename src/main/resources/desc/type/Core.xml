@@ -4,6 +4,9 @@
     <description>UIMA types for the CORE project</description>
     <version>1.0</version>
     <vendor>Text Technology Lab</vendor>
+  <imports>
+    <import name="desc.type.LexicalUnits_customized"/>
+  </imports>
   <types>
     <typeDescription>
       <name>org.texttechnologylab.annotation.core.Category</name>
@@ -26,6 +29,45 @@
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.core.Question</name>
+      <description>Generic Question type</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>key</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>description</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.core.Answer</name>
+      <description>Generic Answer type</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>key</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>description</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.core.URLToken</name>
+      <description>Generic URL Token</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>

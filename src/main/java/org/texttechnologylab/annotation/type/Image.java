@@ -1,24 +1,25 @@
 
 
-/* First created by JCasGen Tue Jan 09 18:13:21 CET 2024 */
+/* First created by JCasGen Thu Jan 18 16:08:21 CET 2024 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
+import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
+ * Updated by JCasGen Thu Jan 18 16:08:21 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
-public class AudioToken extends MultimediaElement {
+public class Image extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(AudioToken.class);
+  public final static int typeIndexID = JCasRegistry.register(Image.class);
   /** @generated
    * @ordered 
    */
@@ -32,14 +33,14 @@ public class AudioToken extends MultimediaElement {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected AudioToken() {/* intentionally empty block */}
+  protected Image() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AudioToken(int addr, TOP_Type type) {
+  public Image(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -47,7 +48,7 @@ public class AudioToken extends MultimediaElement {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public AudioToken(JCas jcas) {
+  public Image(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -57,7 +58,7 @@ public class AudioToken extends MultimediaElement {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public AudioToken(JCas jcas, int begin, int end) {
+  public Image(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -76,6 +77,28 @@ public class AudioToken extends MultimediaElement {
  
     
   //*--------------*
+  //* Feature: mimeType
+
+  /** getter for mimeType - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getMimeType() {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_mimeType == null)
+      jcasType.jcas.throwFeatMissing("mimeType", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Image_Type)jcasType).casFeatCode_mimeType);}
+    
+  /** setter for mimeType - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMimeType(String v) {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_mimeType == null)
+      jcasType.jcas.throwFeatMissing("mimeType", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Image_Type)jcasType).casFeatCode_mimeType, v);}    
+   
+    
+  //*--------------*
   //* Feature: value
 
   /** getter for value - gets 
@@ -83,18 +106,18 @@ public class AudioToken extends MultimediaElement {
    * @return value of the feature 
    */
   public String getValue() {
-    if (AudioToken_Type.featOkTst && ((AudioToken_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.AudioToken");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AudioToken_Type)jcasType).casFeatCode_value);}
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Image_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (AudioToken_Type.featOkTst && ((AudioToken_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.AudioToken");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AudioToken_Type)jcasType).casFeatCode_value, v);}    
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Image_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

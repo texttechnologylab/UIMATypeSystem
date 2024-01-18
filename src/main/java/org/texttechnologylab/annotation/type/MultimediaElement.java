@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Jan 09 18:13:21 CET 2024
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
+ * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
 public class MultimediaElement extends Annotation {
   /** @generated

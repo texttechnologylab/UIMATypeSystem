@@ -1,3 +1,6 @@
+
+
+/* First created by JCasGen Thu Jan 18 16:06:48 CET 2024 */
 package org.texttechnologylab.annotation.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,12 +13,12 @@ import org.apache.uima.jcas.cas.TOP_Type;
  * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
-public class AudioSentence extends MultimediaElement {
+public class VideoToken extends MultimediaElement {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(AudioSentence.class);
+  public final static int typeIndexID = JCasRegistry.register(VideoToken.class);
   /** @generated
    * @ordered 
    */
@@ -29,14 +32,14 @@ public class AudioSentence extends MultimediaElement {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected AudioSentence() {/* intentionally empty block */}
+  protected VideoToken() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AudioSentence(int addr, TOP_Type type) {
+  public VideoToken(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
@@ -44,7 +47,7 @@ public class AudioSentence extends MultimediaElement {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public AudioSentence(JCas jcas) {
+  public VideoToken(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -54,7 +57,7 @@ public class AudioSentence extends MultimediaElement {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public AudioSentence(JCas jcas, int begin, int end) {
+  public VideoToken(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);

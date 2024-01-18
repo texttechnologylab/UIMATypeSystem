@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Jan 10 11:59:30 CET 2024 */
+/* First created by JCasGen Thu Jan 18 16:06:27 CET 2024 */
 package org.texttechnologylab.annotation.core;
 
 import org.apache.uima.jcas.JCas;
@@ -10,17 +10,17 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** Generic category type
+/** Generic Answer type
  * Updated by JCasGen Thu Jan 18 16:13:36 CET 2024
  * @generated */
-public class Category_Type extends Annotation_Type {
+public class Answer_Type extends Annotation_Type {
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = Category.typeIndexID;
+  public final static int typeIndexID = Answer.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.core.Category");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.texttechnologylab.annotation.core.Answer");
  
   /** @generated */
   final Feature casFeat_key;
@@ -32,7 +32,7 @@ public class Category_Type extends Annotation_Type {
    */ 
   public String getKey(int addr) {
         if (featOkTst && casFeat_key == null)
-      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.core.Category");
+      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.core.Answer");
     return ll_cas.ll_getStringValue(addr, casFeatCode_key);
   }
   /** @generated
@@ -41,32 +41,8 @@ public class Category_Type extends Annotation_Type {
    */    
   public void setKey(int addr, String v) {
         if (featOkTst && casFeat_key == null)
-      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.core.Category");
+      jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.core.Answer");
     ll_cas.ll_setStringValue(addr, casFeatCode_key, v);}
-    
-  
- 
-  /** @generated */
-  final Feature casFeat_value;
-  /** @generated */
-  final int     casFeatCode_value;
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @return the feature value 
-   */ 
-  public String getValue(int addr) {
-        if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.core.Category");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_value);
-  }
-  /** @generated
-   * @param addr low level Feature Structure reference
-   * @param v value to set 
-   */    
-  public void setValue(int addr, String v) {
-        if (featOkTst && casFeat_value == null)
-      jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.core.Category");
-    ll_cas.ll_setStringValue(addr, casFeatCode_value, v);}
     
   
  
@@ -80,7 +56,7 @@ public class Category_Type extends Annotation_Type {
    */ 
   public String getDescription(int addr) {
         if (featOkTst && casFeat_description == null)
-      jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.core.Category");
+      jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.core.Answer");
     return ll_cas.ll_getStringValue(addr, casFeatCode_description);
   }
   /** @generated
@@ -89,7 +65,7 @@ public class Category_Type extends Annotation_Type {
    */    
   public void setDescription(int addr, String v) {
         if (featOkTst && casFeat_description == null)
-      jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.core.Category");
+      jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.core.Answer");
     ll_cas.ll_setStringValue(addr, casFeatCode_description, v);}
     
   
@@ -101,17 +77,13 @@ public class Category_Type extends Annotation_Type {
 	 * @param jcas JCas
 	 * @param casType Type 
 	 */
-  public Category_Type(JCas jcas, Type casType) {
+  public Answer_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
     casFeat_key = jcas.getRequiredFeatureDE(casType, "key", "uima.cas.String", featOkTst);
     casFeatCode_key  = (null == casFeat_key) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_key).getCode();
-
- 
-    casFeat_value = jcas.getRequiredFeatureDE(casType, "value", "uima.cas.String", featOkTst);
-    casFeatCode_value  = (null == casFeat_value) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_value).getCode();
 
  
     casFeat_description = jcas.getRequiredFeatureDE(casType, "description", "uima.cas.String", featOkTst);

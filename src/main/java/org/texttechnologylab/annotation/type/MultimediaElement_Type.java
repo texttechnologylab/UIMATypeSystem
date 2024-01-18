@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Jan 09 18:13:21 CET 2024
+ * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
  * @generated */
 public class MultimediaElement_Type extends Annotation_Type {
   /** @generated */
