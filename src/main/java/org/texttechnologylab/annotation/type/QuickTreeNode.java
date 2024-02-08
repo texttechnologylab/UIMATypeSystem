@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
+ * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
  * @generated */
 public class QuickTreeNode extends TreeAnnotationNode {

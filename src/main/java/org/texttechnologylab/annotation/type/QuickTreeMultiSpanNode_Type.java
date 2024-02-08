@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
+ * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
  * @generated */
 public class QuickTreeMultiSpanNode_Type extends QuickTreeNode_Type {
   /** @generated */

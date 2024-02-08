@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Mar 25 09:35:20 CET 2021
+ * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
  * @generated */
 public class QuickAnnoUnit extends Annotation {
@@ -75,50 +75,6 @@ public class QuickAnnoUnit extends Annotation {
   private void readObject() {/*default - does nothing empty block */}
      
  
-    
-  //*--------------*
-  //* Feature: begin
-
-  /** getter for begin - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public int getBegin() {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_begin);}
-    
-  /** setter for begin - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setBegin(int v) {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    jcasType.ll_cas.ll_setIntValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_begin, v);}    
-   
-    
-  //*--------------*
-  //* Feature: end
-
-  /** getter for end - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public int getEnd() {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_end);}
-    
-  /** setter for end - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setEnd(int v) {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    jcasType.ll_cas.ll_setIntValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_end, v);}    
-   
     
   //*--------------*
   //* Feature: combined

@@ -28,26 +28,6 @@
 
                 <featureDescription>
 
-                    <name>begin</name>
-
-                    <description/>
-
-                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
-
-                </featureDescription>
-
-                <featureDescription>
-
-                    <name>end</name>
-
-                    <description/>
-
-                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
-
-                </featureDescription>
-
-                <featureDescription>
-
                     <name>combined</name>
 
                     <description/>
