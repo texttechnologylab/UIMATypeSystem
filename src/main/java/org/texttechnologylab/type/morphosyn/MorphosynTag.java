@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Feb 09 15:32:41 CET 2024
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/MorphosynTag.xml
+ * Updated by JCasGen Sat Feb 24 15:32:58 CET 2024
+ * XML source: /home/daniel/data/hiwi/git/myyyvothrr/UIMATypeSystem/src/main/resources/desc/type/MorphosynTag.xml
  * @generated */
 public class MorphosynTag extends Annotation {
   /** @generated
