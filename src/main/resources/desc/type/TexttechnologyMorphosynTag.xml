@@ -18,1492 +18,1244 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.ADN</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNIRR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.adn.ADNIRR</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.ADN</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNIRR.ADNIRRKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.adn.adnirr.ADNIRRKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNIRR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.adn.ADNIRR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNREAL</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.adn.ADNREAL</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.ADN</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNREAL.ADNREALKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.adn.adnreal.ADNREALKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.ADN.ADNREAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.adn.ADNREAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.CNJ</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJBACKG</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJBACKG</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJBACKG.CNJBACKGKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjbackg.CNJBACKGKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJBACKG</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJBACKG</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL.CNJCAUSALJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal.CNJCAUSALJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL.CNJCAUSALKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal.CNJCAUSALKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL1.CNJCAUSAL1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal1.CNJCAUSAL1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL1.CNJCAUSAL1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal1.CNJCAUSAL1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL2.CNJCAUSAL2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal2.CNJCAUSAL2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL3.CNJCAUSAL3DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal3.CNJCAUSAL3DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL4</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL4</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL4.CNJCAUSAL4DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal4.CNJCAUSAL4DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL4</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL4</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL5</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL5</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL5.CNJCAUSAL5DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal5.CNJCAUSAL5DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCAUSAL5</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL5</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONC</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCONC</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONC.CNJCONCDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjconc.CNJCONCDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCONC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONC.CNJCONCEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjconc.CNJCONCEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCONC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONCCOND</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCONCCOND</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONCCOND.CNJCONCCONDEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjconccond.CNJCONCCONDEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCONCCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCONCCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND.CNJCONDJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond.CNJCONDJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND1.CNJCOND1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond1.CNJCOND1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND1.CNJCOND1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond1.CNJCOND1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND2.CNJCOND2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond2.CNJCOND2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND2.CNJCOND2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond2.CNJCOND2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND3.CNJCOND3EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond3.CNJCOND3EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND4</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND4</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND4.CNJCOND4DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond4.CNJCOND4DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND4</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND4</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND4.CNJCOND4EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond4.CNJCOND4EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND4</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND4</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND5</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND5</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND5.CNJCOND5EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcond5.CNJCOND5EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOND5</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOND5</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1.CNJCOORA1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1.CNJCOORA1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1.CNJCOORA1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1.CNJCOORA1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1.CNJCOORA1JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1.CNJCOORA1JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1.CNJCOORA1KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1.CNJCOORA1KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA2.CNJCOORA2JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora2.CNJCOORA2JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA2.CNJCOORA2KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora2.CNJCOORA2KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORA2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORC</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORC</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORC.CNJCOORCDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoorc.CNJCOORCDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORC.CNJCOORCEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoorc.CNJCOORCEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD1.CNJCOORD1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoord1.CNJCOORD1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD1.CNJCOORD1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoord1.CNJCOORD1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD2.CNJCOORD2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoord2.CNJCOORD2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD2.CNJCOORD2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoord2.CNJCOORD2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD3.CNJCOORD3DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoord3.CNJCOORD3DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJCOORD3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORD3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP.CNJPURPEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjpurp.CNJPURPEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP1.CNJPURP1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjpurp1.CNJPURP1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP2.CNJPURP2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjpurp2.CNJPURP2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJPURP2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM.CNJSIMDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjsim.CNJSIMDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM.CNJSIMEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjsim.CNJSIMEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM2.CNJSIM2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjsim2.CNJSIM2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM2.CNJSIM2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjsim2.CNJSIM2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJSIM2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJSIM2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP1.CNJTEMP1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjtemp1.CNJTEMP1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP2.CNJTEMP2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjtemp2.CNJTEMP2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CNJ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP3.CNJTEMP3EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cnj.cnjtemp3.CNJTEMP3EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CNJ.CNJTEMP3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.COND3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.COND3</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.COND3.COND3DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.cond3.COND3DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.COND3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.COND3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONJECT</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.CONJECT</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONJECT.CONJECTKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conject.CONJECTKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONJECT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONJECT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.CONV</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT.CONVANTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convant.CONVANTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT1.CONVANT1KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convant1.CONVANT1KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT2.CONVANT2KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convant2.CONVANT2KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVANT2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVANT2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVBACKG</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVBACKG</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVBACKG.CONVBACKGKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convbackg.CONVBACKGKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVBACKG</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVBACKG</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCAUSAL</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCAUSAL</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCAUSAL.CONVCAUSALKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcausal.CONVCAUSALKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCAUSAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCAUSAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCON</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCON</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCON.CONVCONKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcon.CONVCONKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCON</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCON</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONC</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCONC</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONC.CONVCONCJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convconc.CONVCONCJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCONC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONC.CONVCONCKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convconc.CONVCONCKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCONC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONCCOND</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCONCCOND</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONCCOND.CONVCONCCONDKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convconccond.CONVCONCCONDKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCONCCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCONCCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND.CONVCONDKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcond.CONVCONDKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND1.CONVCOND1JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcond1.CONVCOND1JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND2.CONVCOND2JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcond2.CONVCOND2JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOND2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOND2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOOR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOOR</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOOR.CONVCOORJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcoor.CONVCOORJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOOR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOOR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOORA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORA.CONVCOORAKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcoora.CONVCOORAKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORA</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOORA</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORD</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOORD</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORD.CONVCOORDKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convcoord.CONVCOORDKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVCOORD</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVCOORD</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVMAN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVMAN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVMAN.CONVMANJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convman.CONVMANJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVMAN</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVMAN</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVMAN.CONVMANKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convman.CONVMANKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVMAN</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVMAN</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVNEG</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVNEG</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVNEG.CONVNEGJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convneg.CONVNEGJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVNEG</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVNEG</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPOST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVPOST</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPOST.CONVPOSTKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convpost.CONVPOSTKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPOST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVPOST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP1.CONVPURP1KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convpurp1.CONVPURP1KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP2.CONVPURP2KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convpurp2.CONVPURP2KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP3.CONVPURP3KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convpurp3.CONVPURP3KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVPURP3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVPURP3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVSIM</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.CONVSIM</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.CONV</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVSIM.CONVSIMJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convsim.CONVSIMJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVSIM</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVSIM</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVSIM.CONVSIMKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.conv.convsim.CONVSIMKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.CONV.CONVSIM</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.conv.CONVSIM</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DECL</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.DECL</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DECL.DECLKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.decl.DECLKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.DECL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.DECL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DEDUCT</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.DEDUCT</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DEDUCT.DEDUCTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.deduct.DEDUCTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.DEDUCT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.DEDUCT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DIR_INFER</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.DIR_INFER</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.DIR_INFER.DIR_INFERJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.dir_infer.DIR_INFERJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.DIR_INFER</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.DIR_INFER</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.EPIST</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST.EPISTEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.epist.EPISTEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.EPIST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST.EPISTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.epist.EPISTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.EPIST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST.EPISTPST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.epist.EPISTPST</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.EPIST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST.EPISTPST.EPISTPSTEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.epist.epistpst.EPISTPSTEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.EPIST.EPISTPST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.epist.EPISTPST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EXPECT</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.EXPECT</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.EXPECT.EXPECTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.expect.EXPECTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.EXPECT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.EXPECT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.FOC</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.FOC</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.FOC.FOCJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.foc.FOCJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.FOC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.FOC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.FOC.FOCKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.foc.FOCKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.FOC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.FOC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.GER</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.GER</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.GER.GEREN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.ger.GEREN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.GER</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.GER</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.HORT</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.HORT</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.HORT.HORTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.hort.HORTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.HORT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.HORT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.HORT.HORTKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.hort.HORTKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.HORT</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.HORT</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IMPOSS</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.IMPOSS</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IMPOSS.IMPOSSKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.imposs.IMPOSSKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.IMPOSS</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.IMPOSS</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.INF</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.INF</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.INF.INFDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.inf.INFDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.INF</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.INF</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.INF.INFEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.inf.INFEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.INF</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.INF</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.IRR</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR.IRRDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.irr.IRRDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.IRR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.IRR1</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR1.IRR1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.irr1.IRR1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.IRR1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.IRR2</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR2.IRR2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.irr2.IRR2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.IRR2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.IRR2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.KONJ1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.KONJ1</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.KONJ1.KONJ1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.konj1.KONJ1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.KONJ1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.KONJ1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.NECESS1</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1.NECESS1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess1.NECESS1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1.NECESS1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess1.NECESS1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1.NECESS1JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess1.NECESS1JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1.NECESS1KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess1.NECESS1KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.NECESS2</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2.NECESS2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess2.NECESS2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2.NECESS2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess2.NECESS2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2.NECESS2JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess2.NECESS2JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2.NECESS2KO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.necess2.NECESS2KO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NECESS2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.NEG</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGEPIST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.neg.NEGEPIST</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NEG</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGEPIST.NEGEPISTJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.neg.negepist.NEGEPISTJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGEPIST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.neg.NEGEPIST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGMOD</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.neg.NEGMOD</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NEG</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGMOD.NEGMODKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.neg.negmod.NEGMODKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NEG.NEGMOD</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.neg.NEGMOD</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.NMZ</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZCOND</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.NMZCOND</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NMZ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZCOND.NMZCONDJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzcond.NMZCONDJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZCOND.NMZCONDKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzcond.NMZCONDKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZCOND</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZCOND</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZIRR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.NMZIRR</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NMZ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZIRR.NMZIRRJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzirr.NMZIRRJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZIRR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZIRR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZIRR.NMZIRRKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzirr.NMZIRRKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZIRR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZIRR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZREAL</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.NMZREAL</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NMZ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZREAL.NMZREALJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzreal.NMZREALJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZREAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZREAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZREAL.NMZREALKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmzreal.NMZREALKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZREAL</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZREAL</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZTEMP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.NMZTEMP</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.NMZ</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZTEMP.NMZTEMPJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmztemp.NMZTEMPJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZTEMP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZTEMP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZTEMP.NMZTEMPKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.nmz.nmztemp.NMZTEMPKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.NMZ.NMZTEMP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.nmz.NMZTEMP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.POSSIB</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBIRR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBIRR</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBIRR.POSSIBIRRDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.possibirr.POSSIBIRRDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBIRR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBIRR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBPST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBPST</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.POSSIB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBPST.POSSIBPSTEN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.possib.possibpst.POSSIBPSTEN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.POSSIB.POSSIBPST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.possib.POSSIBPST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL1.PPCAUSAL1JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcausal1.PPCAUSAL1JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL2.PPCAUSAL2JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcausal2.PPCAUSAL2JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL3</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL3.PPCAUSAL3JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcausal3.PPCAUSAL3JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCAUSAL3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCAUSAL3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCOND1</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND1.PPCOND1JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcond1.PPCOND1JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCOND1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCOND2</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND2.PPCOND2JA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcond2.PPCOND2JA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOND2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCOND2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCOORA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORA.PPCOORAJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcoora.PPCOORAJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORA</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCOORA</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORD</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPCOORD</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORD.PPCOORDJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.ppcoord.PPCOORDJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPCOORD</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPCOORD</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPPURP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.PPPURP</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPPURP.PPPURPJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp.pppurp.PPPURPJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP.PPPURP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.pp.PPPURP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP1</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP1</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP1.PP1DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp1.PP1DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP1.PP1EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp1.PP1EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP1</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP1</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP2</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP2</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP2.PP2DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp2.PP2DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP2.PP2EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp2.PP2EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP2</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP2</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP3</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP3</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP3.PP3DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp3.PP3DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP3.PP3EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp3.PP3EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP3</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP3</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP4</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP4</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP4.PP4DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp4.PP4DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP4</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP4</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP4.PP4EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp4.PP4EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP4</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP4</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP5</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP5</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP5.PP5DE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp5.PP5DE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP5</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP5</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP5.PP5EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp5.PP5EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP5</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP5</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP6</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PP6</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PP6.PP6EN</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pp6.PP6EN</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PP6</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PP6</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PROB</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PROB</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PROB.PROBKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.prob.PROBKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PROB</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PROB</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PST</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.PST</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.PST.PSTKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.pst.PSTKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.PST</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.PST</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.RETR</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.RETR</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.RETR.RETRKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.retr.RETRKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.RETR</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.RETR</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.SPEC</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.SPEC</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.SPEC.SPECJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.spec.SPECJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.SPEC</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.SPEC</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.SUP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.SUP</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.SUP.SUPDE</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.sup.SUPDE</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.SUP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.SUP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.TOP</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.TOP</name>
       <description/>
       <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag</supertypeName>
-      <features/>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.TOP.TOPJA</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.top.TOPJA</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.TOP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.TOP</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>org.texttechnologylab.type.morphosyn.MorphosynTag.TOP.TOPKO</name>
+      <name>org.texttechnologylab.type.morphosyn.tag.top.TOPKO</name>
       <description/>
-      <supertypeName>org.texttechnologylab.type.morphosyn.MorphosynTag.TOP</supertypeName>
-      <features/>
+      <supertypeName>org.texttechnologylab.type.morphosyn.tag.TOP</supertypeName>
     </typeDescription>
   </types>
 </typeSystemDescription>
