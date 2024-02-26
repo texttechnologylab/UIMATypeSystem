@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Feb 09 15:32:41 CET 2024 */
+/* First created by JCasGen Mon Feb 26 11:41:31 CET 2024 */
 package org.texttechnologylab.type.morphosyn;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Sat Feb 24 15:32:58 CET 2024
+ * Updated by JCasGen Mon Feb 26 11:41:31 CET 2024
  * @generated */
 public class MorphosynTag_Type extends Annotation_Type {
   /** @generated */

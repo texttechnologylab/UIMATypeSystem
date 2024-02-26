@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Sat Feb 24 15:32:58 CET 2024 */
+/* First created by JCasGen Mon Feb 26 11:41:31 CET 2024 */
 package org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.type.morphosyn.MorphosynTag.NECESS2_Type;
 
 /** 
- * Updated by JCasGen Sat Feb 24 15:32:58 CET 2024
+ * Updated by JCasGen Mon Feb 26 11:41:31 CET 2024
  * @generated */
 public class NECESS2DE_Type extends NECESS2_Type {
   /** @generated */
