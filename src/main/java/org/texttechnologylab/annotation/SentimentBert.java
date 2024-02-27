@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Tue Jun 13 14:28:41 CEST 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Jun 13 14:28:42 CEST 2023
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologySentimentBert.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SentimentBert extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.SentimentBert";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,41 @@ public class SentimentBert extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_sentiment = "sentiment";
+  public final static String _FeatName_probabilityPositive = "probabilityPositive";
+  public final static String _FeatName_probabilityNeutral = "probabilityNeutral";
+  public final static String _FeatName_probabilityNegative = "probabilityNegative";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_sentiment = TypeSystemImpl.createCallSite(SentimentBert.class, "sentiment");
+  private final static MethodHandle _FH_sentiment = _FC_sentiment.dynamicInvoker();
+  private final static CallSite _FC_probabilityPositive = TypeSystemImpl.createCallSite(SentimentBert.class, "probabilityPositive");
+  private final static MethodHandle _FH_probabilityPositive = _FC_probabilityPositive.dynamicInvoker();
+  private final static CallSite _FC_probabilityNeutral = TypeSystemImpl.createCallSite(SentimentBert.class, "probabilityNeutral");
+  private final static MethodHandle _FH_probabilityNeutral = _FC_probabilityNeutral.dynamicInvoker();
+  private final static CallSite _FC_probabilityNegative = TypeSystemImpl.createCallSite(SentimentBert.class, "probabilityNegative");
+  private final static MethodHandle _FH_probabilityNegative = _FC_probabilityNegative.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SentimentBert() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SentimentBert(int addr, TOP_Type type) {
-    super(addr, type);
+  public SentimentBert(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +92,7 @@ public class SentimentBert extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +124,18 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentiment() {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_sentiment == null)
-      jcasType.jcas.throwFeatMissing("sentiment", "org.texttechnologylab.annotation.SentimentBert");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_sentiment);}
+  public int getSentiment() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_sentiment));
+  }
     
   /** setter for sentiment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentiment(int v) {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_sentiment == null)
-      jcasType.jcas.throwFeatMissing("sentiment", "org.texttechnologylab.annotation.SentimentBert");
-    jcasType.ll_cas.ll_setIntValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_sentiment, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_sentiment), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +145,18 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityPositive() {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityPositive == null)
-      jcasType.jcas.throwFeatMissing("probabilityPositive", "org.texttechnologylab.annotation.SentimentBert");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityPositive);}
+  public double getProbabilityPositive() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityPositive));
+  }
     
   /** setter for probabilityPositive - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setProbabilityPositive(double v) {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityPositive == null)
-      jcasType.jcas.throwFeatMissing("probabilityPositive", "org.texttechnologylab.annotation.SentimentBert");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityPositive, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_probabilityPositive), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +166,18 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityNeutral() {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityNeutral == null)
-      jcasType.jcas.throwFeatMissing("probabilityNeutral", "org.texttechnologylab.annotation.SentimentBert");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityNeutral);}
+  public double getProbabilityNeutral() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNeutral));
+  }
     
   /** setter for probabilityNeutral - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setProbabilityNeutral(double v) {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityNeutral == null)
-      jcasType.jcas.throwFeatMissing("probabilityNeutral", "org.texttechnologylab.annotation.SentimentBert");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityNeutral, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_probabilityNeutral), v);
+  }    
+    
    
     
   //*--------------*
@@ -149,19 +187,18 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityNegative() {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityNegative == null)
-      jcasType.jcas.throwFeatMissing("probabilityNegative", "org.texttechnologylab.annotation.SentimentBert");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityNegative);}
+  public double getProbabilityNegative() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNegative));
+  }
     
   /** setter for probabilityNegative - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setProbabilityNegative(double v) {
-    if (SentimentBert_Type.featOkTst && ((SentimentBert_Type)jcasType).casFeat_probabilityNegative == null)
-      jcasType.jcas.throwFeatMissing("probabilityNegative", "org.texttechnologylab.annotation.SentimentBert");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((SentimentBert_Type)jcasType).casFeatCode_probabilityNegative, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_probabilityNegative), v);
+  }    
+    
   }
 
     

@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:13 CET 2020 */
-package org.texttechnologylab.annotation.ocr;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.ocr;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:13 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOCR.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRPage extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.OCRPage";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,47 @@ public class OCRPage extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_width = "width";
+  public final static String _FeatName_height = "height";
+  public final static String _FeatName_resolution = "resolution";
+  public final static String _FeatName_pageId = "pageId";
+  public final static String _FeatName_pageNumber = "pageNumber";
+  public final static String _FeatName_uri = "uri";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_width = TypeSystemImpl.createCallSite(OCRPage.class, "width");
+  private final static MethodHandle _FH_width = _FC_width.dynamicInvoker();
+  private final static CallSite _FC_height = TypeSystemImpl.createCallSite(OCRPage.class, "height");
+  private final static MethodHandle _FH_height = _FC_height.dynamicInvoker();
+  private final static CallSite _FC_resolution = TypeSystemImpl.createCallSite(OCRPage.class, "resolution");
+  private final static MethodHandle _FH_resolution = _FC_resolution.dynamicInvoker();
+  private final static CallSite _FC_pageId = TypeSystemImpl.createCallSite(OCRPage.class, "pageId");
+  private final static MethodHandle _FH_pageId = _FC_pageId.dynamicInvoker();
+  private final static CallSite _FC_pageNumber = TypeSystemImpl.createCallSite(OCRPage.class, "pageNumber");
+  private final static MethodHandle _FH_pageNumber = _FC_pageNumber.dynamicInvoker();
+  private final static CallSite _FC_uri = TypeSystemImpl.createCallSite(OCRPage.class, "uri");
+  private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected OCRPage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public OCRPage(int addr, TOP_Type type) {
-    super(addr, type);
+  public OCRPage(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +98,7 @@ public class OCRPage extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +130,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_width == null)
-      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_width);}
+  public int getWidth() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_width));
+  }
     
   /** setter for width - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWidth(int v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_width == null)
-      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_width, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_width), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +151,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_height == null)
-      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_height);}
+  public int getHeight() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_height));
+  }
     
   /** setter for height - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHeight(int v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_height == null)
-      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_height, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +172,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getResolution() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_resolution == null)
-      jcasType.jcas.throwFeatMissing("resolution", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_resolution);}
+  public int getResolution() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));
+  }
     
   /** setter for resolution - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setResolution(int v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_resolution == null)
-      jcasType.jcas.throwFeatMissing("resolution", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_resolution, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_resolution), v);
+  }    
+    
    
     
   //*--------------*
@@ -149,19 +193,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageId() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_pageId == null)
-      jcasType.jcas.throwFeatMissing("pageId", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((OCRPage_Type)jcasType).casFeatCode_pageId);}
+  public String getPageId() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_pageId));
+  }
     
   /** setter for pageId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPageId(String v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_pageId == null)
-      jcasType.jcas.throwFeatMissing("pageId", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setStringValue(addr, ((OCRPage_Type)jcasType).casFeatCode_pageId, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_pageId), v);
+  }    
+    
    
     
   //*--------------*
@@ -171,19 +214,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPageNumber() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_pageNumber == null)
-      jcasType.jcas.throwFeatMissing("pageNumber", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_pageNumber);}
+  public int getPageNumber() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_pageNumber));
+  }
     
   /** setter for pageNumber - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPageNumber(int v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_pageNumber == null)
-      jcasType.jcas.throwFeatMissing("pageNumber", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setIntValue(addr, ((OCRPage_Type)jcasType).casFeatCode_pageNumber, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_pageNumber), v);
+  }    
+    
    
     
   //*--------------*
@@ -193,19 +235,18 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.ocr.OCRPage");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((OCRPage_Type)jcasType).casFeatCode_uri);}
+  public String getUri() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
+  }
     
   /** setter for uri - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
-    if (OCRPage_Type.featOkTst && ((OCRPage_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.ocr.OCRPage");
-    jcasType.ll_cas.ll_setStringValue(addr, ((OCRPage_Type)jcasType).casFeatCode_uri, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
+  }    
+    
   }
 
     

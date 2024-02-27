@@ -1,20 +1,37 @@
 
 
-/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
-package org.texttechnologylab.annotation.schema;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.schema;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSList;
+import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationRelation extends AnnotationAttribute {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.schema.AnnotationRelation";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +48,32 @@ public class AnnotationRelation extends AnnotationAttribute {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_attributes = "attributes";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_attributes = TypeSystemImpl.createCallSite(AnnotationRelation.class, "attributes");
+  private final static MethodHandle _FH_attributes = _FC_attributes.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected AnnotationRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public AnnotationRelation(int addr, TOP_Type type) {
-    super(addr, type);
+  public AnnotationRelation(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +84,7 @@ public class AnnotationRelation extends AnnotationAttribute {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +104,19 @@ public class AnnotationRelation extends AnnotationAttribute {
    * @generated
    * @return value of the feature 
    */
-  public FSList getAttributes() {
-    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_attributes == null)
-      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationRelation");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_attributes)));}
+  @SuppressWarnings("unchecked")
+  public FSList<TOP> getAttributes() { 
+    return (FSList<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));
+  }
     
   /** setter for attributes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setAttributes(FSList v) {
-    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_attributes == null)
-      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationRelation");
-    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_attributes, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setAttributes(FSList<TOP> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attributes), v);
+  }    
+    
   }
 
     

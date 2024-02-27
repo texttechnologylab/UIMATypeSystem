@@ -1,19 +1,32 @@
 
 
-/* First created by JCasGen Fri Apr 01 18:16:00 CEST 2022 */
-package org.texttechnologylab.annotation.administration.activelearner;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.administration.activelearner;
+ 
+
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Reject extends Decision {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.administration.activelearner.Reject";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +43,29 @@ public class Reject extends Decision {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+
+
+  /* Feature Adjusted Offsets */
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Reject() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Reject(int addr, TOP_Type type) {
-    super(addr, type);
+  public Reject(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +76,7 @@ public class Reject extends Decision {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->

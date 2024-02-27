@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:22 CET 2020 */
-package org.texttechnologylab.annotation.node.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.node.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FloatArray;
 import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:22 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyGeoVizContext.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class IndividualVis extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.node.type.IndividualVis";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,56 @@ public class IndividualVis extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_geonamesID = "geonamesID";
+  public final static String _FeatName_markerPoint = "markerPoint";
+  public final static String _FeatName_areaSize = "areaSize";
+  public final static String _FeatName_geoJson = "geoJson";
+  public final static String _FeatName_displayName = "displayName";
+  public final static String _FeatName_image = "image";
+  public final static String _FeatName_URI = "URI";
+  public final static String _FeatName_ofClass = "ofClass";
+  public final static String _FeatName_wikiDataID = "wikiDataID";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_geonamesID = TypeSystemImpl.createCallSite(IndividualVis.class, "geonamesID");
+  private final static MethodHandle _FH_geonamesID = _FC_geonamesID.dynamicInvoker();
+  private final static CallSite _FC_markerPoint = TypeSystemImpl.createCallSite(IndividualVis.class, "markerPoint");
+  private final static MethodHandle _FH_markerPoint = _FC_markerPoint.dynamicInvoker();
+  private final static CallSite _FC_areaSize = TypeSystemImpl.createCallSite(IndividualVis.class, "areaSize");
+  private final static MethodHandle _FH_areaSize = _FC_areaSize.dynamicInvoker();
+  private final static CallSite _FC_geoJson = TypeSystemImpl.createCallSite(IndividualVis.class, "geoJson");
+  private final static MethodHandle _FH_geoJson = _FC_geoJson.dynamicInvoker();
+  private final static CallSite _FC_displayName = TypeSystemImpl.createCallSite(IndividualVis.class, "displayName");
+  private final static MethodHandle _FH_displayName = _FC_displayName.dynamicInvoker();
+  private final static CallSite _FC_image = TypeSystemImpl.createCallSite(IndividualVis.class, "image");
+  private final static MethodHandle _FH_image = _FC_image.dynamicInvoker();
+  private final static CallSite _FC_URI = TypeSystemImpl.createCallSite(IndividualVis.class, "URI");
+  private final static MethodHandle _FH_URI = _FC_URI.dynamicInvoker();
+  private final static CallSite _FC_ofClass = TypeSystemImpl.createCallSite(IndividualVis.class, "ofClass");
+  private final static MethodHandle _FH_ofClass = _FC_ofClass.dynamicInvoker();
+  private final static CallSite _FC_wikiDataID = TypeSystemImpl.createCallSite(IndividualVis.class, "wikiDataID");
+  private final static MethodHandle _FH_wikiDataID = _FC_wikiDataID.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected IndividualVis() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public IndividualVis(int addr, TOP_Type type) {
-    super(addr, type);
+  public IndividualVis(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +108,7 @@ public class IndividualVis extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +128,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getGeonamesID() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_geonamesID == null)
-      jcasType.jcas.throwFeatMissing("geonamesID", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_geonamesID);}
+  public int getGeonamesID() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_geonamesID));
+  }
     
   /** setter for geonamesID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGeonamesID(int v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_geonamesID == null)
-      jcasType.jcas.throwFeatMissing("geonamesID", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setIntValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_geonamesID, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_geonamesID), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +149,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getMarkerPoint() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_markerPoint == null)
-      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return (FloatArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint)));}
+  public FloatArray getMarkerPoint() { 
+    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)));
+  }
     
   /** setter for markerPoint - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMarkerPoint(FloatArray v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_markerPoint == null)
-      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_markerPoint), v);
+  }    
+    
     
   /** indexed getter for markerPoint - gets an indexed value - 
    * @generated
@@ -114,21 +168,17 @@ public class IndividualVis extends Node {
    * @return value of the element at index i 
    */
   public float getMarkerPoint(int i) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_markerPoint == null)
-      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint), i);
-    return jcasType.ll_cas.ll_getFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint), i);}
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).get(i);
+  } 
 
   /** indexed setter for markerPoint - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setMarkerPoint(int i, float v) { 
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_markerPoint == null)
-      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint), i);
-    jcasType.ll_cas.ll_setFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_markerPoint), i, v);}
+  public void setMarkerPoint(int i, float v) {
+    ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -138,19 +188,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getAreaSize() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_areaSize == null)
-      jcasType.jcas.throwFeatMissing("areaSize", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_areaSize);}
+  public String getAreaSize() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_areaSize));
+  }
     
   /** setter for areaSize - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAreaSize(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_areaSize == null)
-      jcasType.jcas.throwFeatMissing("areaSize", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_areaSize, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_areaSize), v);
+  }    
+    
    
     
   //*--------------*
@@ -160,19 +209,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getGeoJson() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_geoJson == null)
-      jcasType.jcas.throwFeatMissing("geoJson", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_geoJson);}
+  public String getGeoJson() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));
+  }
     
   /** setter for geoJson - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGeoJson(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_geoJson == null)
-      jcasType.jcas.throwFeatMissing("geoJson", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_geoJson, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_geoJson), v);
+  }    
+    
    
     
   //*--------------*
@@ -182,19 +230,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_displayName == null)
-      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_displayName);}
+  public String getDisplayName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
+  }
     
   /** setter for displayName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDisplayName(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_displayName == null)
-      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_displayName, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_displayName), v);
+  }    
+    
    
     
   //*--------------*
@@ -204,19 +251,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getImage() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_image == null)
-      jcasType.jcas.throwFeatMissing("image", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_image);}
+  public String getImage() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_image));
+  }
     
   /** setter for image - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setImage(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_image == null)
-      jcasType.jcas.throwFeatMissing("image", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_image, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_image), v);
+  }    
+    
    
     
   //*--------------*
@@ -226,19 +272,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getURI() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_URI == null)
-      jcasType.jcas.throwFeatMissing("URI", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_URI);}
+  public String getURI() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_URI));
+  }
     
   /** setter for URI - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setURI(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_URI == null)
-      jcasType.jcas.throwFeatMissing("URI", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_URI, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_URI), v);
+  }    
+    
    
     
   //*--------------*
@@ -248,19 +293,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getOfClass() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_ofClass == null)
-      jcasType.jcas.throwFeatMissing("ofClass", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_ofClass);}
+  public String getOfClass() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_ofClass));
+  }
     
   /** setter for ofClass - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOfClass(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_ofClass == null)
-      jcasType.jcas.throwFeatMissing("ofClass", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_ofClass, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_ofClass), v);
+  }    
+    
    
     
   //*--------------*
@@ -270,19 +314,18 @@ public class IndividualVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getWikiDataID() {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_wikiDataID == null)
-      jcasType.jcas.throwFeatMissing("wikiDataID", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_wikiDataID);}
+  public String getWikiDataID() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));
+  }
     
   /** setter for wikiDataID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikiDataID(String v) {
-    if (IndividualVis_Type.featOkTst && ((IndividualVis_Type)jcasType).casFeat_wikiDataID == null)
-      jcasType.jcas.throwFeatMissing("wikiDataID", "org.texttechnologylab.annotation.node.type.IndividualVis");
-    jcasType.ll_cas.ll_setStringValue(addr, ((IndividualVis_Type)jcasType).casFeatCode_wikiDataID, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_wikiDataID), v);
+  }    
+    
   }
 
     

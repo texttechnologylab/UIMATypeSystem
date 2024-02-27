@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotatorMetaData extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.AnnotatorMetaData";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,44 @@ public class AnnotatorMetaData extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_reference = "reference";
+  public final static String _FeatName_name = "name";
+  public final static String _FeatName_version = "version";
+  public final static String _FeatName_modelName = "modelName";
+  public final static String _FeatName_modelVersion = "modelVersion";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(AnnotatorMetaData.class, "reference");
+  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
+  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(AnnotatorMetaData.class, "name");
+  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
+  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(AnnotatorMetaData.class, "version");
+  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
+  private final static CallSite _FC_modelName = TypeSystemImpl.createCallSite(AnnotatorMetaData.class, "modelName");
+  private final static MethodHandle _FH_modelName = _FC_modelName.dynamicInvoker();
+  private final static CallSite _FC_modelVersion = TypeSystemImpl.createCallSite(AnnotatorMetaData.class, "modelVersion");
+  private final static MethodHandle _FH_modelVersion = _FC_modelVersion.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected AnnotatorMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public AnnotatorMetaData(int addr, TOP_Type type) {
-    super(addr, type);
+  public AnnotatorMetaData(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +96,7 @@ public class AnnotatorMetaData extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +116,18 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_reference)));}
+  public TOP getReference() { 
+    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+  }
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(TOP v) {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +137,18 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_name == null)
-      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_name);}
+  public String getName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
+  }
     
   /** setter for name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_name == null)
-      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_name, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
+  }    
+    
    
     
   //*--------------*
@@ -116,19 +158,18 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_version == null)
-      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_version);}
+  public String getVersion() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
+  }
     
   /** setter for version - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVersion(String v) {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_version == null)
-      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_version, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
+  }    
+    
    
     
   //*--------------*
@@ -138,19 +179,18 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_modelName == null)
-      jcasType.jcas.throwFeatMissing("modelName", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_modelName);}
+  public String getModelName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_modelName));
+  }
     
   /** setter for modelName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModelName(String v) {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_modelName == null)
-      jcasType.jcas.throwFeatMissing("modelName", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_modelName, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_modelName), v);
+  }    
+    
    
     
   //*--------------*
@@ -160,19 +200,18 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getModelVersion() {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_modelVersion == null)
-      jcasType.jcas.throwFeatMissing("modelVersion", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_modelVersion);}
+  public String getModelVersion() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_modelVersion));
+  }
     
   /** setter for modelVersion - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModelVersion(String v) {
-    if (AnnotatorMetaData_Type.featOkTst && ((AnnotatorMetaData_Type)jcasType).casFeat_modelVersion == null)
-      jcasType.jcas.throwFeatMissing("modelVersion", "org.texttechnologylab.annotation.AnnotatorMetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotatorMetaData_Type)jcasType).casFeatCode_modelVersion, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_modelVersion), v);
+  }    
+    
   }
 
     

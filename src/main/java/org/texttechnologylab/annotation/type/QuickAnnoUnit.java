@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:08 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class QuickAnnoUnit extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.QuickAnnoUnit";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class QuickAnnoUnit extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_combined = "combined";
+  public final static String _FeatName_pos = "pos";
+  public final static String _FeatName_origin = "origin";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_combined = TypeSystemImpl.createCallSite(QuickAnnoUnit.class, "combined");
+  private final static MethodHandle _FH_combined = _FC_combined.dynamicInvoker();
+  private final static CallSite _FC_pos = TypeSystemImpl.createCallSite(QuickAnnoUnit.class, "pos");
+  private final static MethodHandle _FH_pos = _FC_pos.dynamicInvoker();
+  private final static CallSite _FC_origin = TypeSystemImpl.createCallSite(QuickAnnoUnit.class, "origin");
+  private final static MethodHandle _FH_origin = _FC_origin.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected QuickAnnoUnit() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public QuickAnnoUnit(int addr, TOP_Type type) {
-    super(addr, type);
+  public QuickAnnoUnit(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class QuickAnnoUnit extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +121,18 @@ public class QuickAnnoUnit extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getCombined() {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_combined == null)
-      jcasType.jcas.throwFeatMissing("combined", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_combined);}
+  public boolean getCombined() { 
+    return _getBooleanValueNc(wrapGetIntCatchException(_FH_combined));
+  }
     
   /** setter for combined - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCombined(boolean v) {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_combined == null)
-      jcasType.jcas.throwFeatMissing("combined", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_combined, v);}    
+    _setBooleanValueNfc(wrapGetIntCatchException(_FH_combined), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +142,18 @@ public class QuickAnnoUnit extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_pos == null)
-      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_pos);}
+  public String getPos() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
+  }
     
   /** setter for pos - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPos(String v) {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_pos == null)
-      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    jcasType.ll_cas.ll_setStringValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_pos, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +163,18 @@ public class QuickAnnoUnit extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getOrigin() {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_origin)));}
+  public Annotation getOrigin() { 
+    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_origin)));
+  }
     
   /** setter for origin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOrigin(Annotation v) {
-    if (QuickAnnoUnit_Type.featOkTst && ((QuickAnnoUnit_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.type.QuickAnnoUnit");
-    jcasType.ll_cas.ll_setRefValue(addr, ((QuickAnnoUnit_Type)jcasType).casFeatCode_origin, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_origin), v);
+  }    
+    
   }
 
     

@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:06 CET 2020 */
-package org.texttechnologylab.annotation.Room;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.Room;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Attribute of an object (color, texture, srl, ...)
- * Updated by JCasGen Wed Dec 02 18:39:06 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyRoom.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ObjectAttribute extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.Room.ObjectAttribute";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class ObjectAttribute extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_key = "key";
+  public final static String _FeatName_value = "value";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_key = TypeSystemImpl.createCallSite(ObjectAttribute.class, "key");
+  private final static MethodHandle _FH_key = _FC_key.dynamicInvoker();
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ObjectAttribute.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected ObjectAttribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public ObjectAttribute(int addr, TOP_Type type) {
-    super(addr, type);
+  public ObjectAttribute(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class ObjectAttribute extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class ObjectAttribute extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getKey() {
-    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_key == null)
-      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.Room.ObjectAttribute");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_key);}
+  public String getKey() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_key));
+  }
     
   /** setter for key - sets name of the attribute 
    * @generated
    * @param v value to set into the feature 
    */
   public void setKey(String v) {
-    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_key == null)
-      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.Room.ObjectAttribute");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_key, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_key), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class ObjectAttribute extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.Room.ObjectAttribute");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets value of the attribute 
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.Room.ObjectAttribute");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
   }
 
     

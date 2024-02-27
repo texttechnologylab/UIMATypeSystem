@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpatialSignal extends Signal {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class SpatialSignal extends Signal {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_cluster = "cluster";
+  public final static String _FeatName_semantic_type = "semantic_type";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_cluster = TypeSystemImpl.createCallSite(SpatialSignal.class, "cluster");
+  private final static MethodHandle _FH_cluster = _FC_cluster.dynamicInvoker();
+  private final static CallSite _FC_semantic_type = TypeSystemImpl.createCallSite(SpatialSignal.class, "semantic_type");
+  private final static MethodHandle _FH_semantic_type = _FC_semantic_type.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SpatialSignal() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SpatialSignal(int addr, TOP_Type type) {
-    super(addr, type);
+  public SpatialSignal(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class SpatialSignal extends Signal {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class SpatialSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getCluster() {
-    if (SpatialSignal_Type.featOkTst && ((SpatialSignal_Type)jcasType).casFeat_cluster == null)
-      jcasType.jcas.throwFeatMissing("cluster", "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SpatialSignal_Type)jcasType).casFeatCode_cluster);}
+  public String getCluster() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));
+  }
     
   /** setter for cluster - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCluster(String v) {
-    if (SpatialSignal_Type.featOkTst && ((SpatialSignal_Type)jcasType).casFeat_cluster == null)
-      jcasType.jcas.throwFeatMissing("cluster", "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SpatialSignal_Type)jcasType).casFeatCode_cluster, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_cluster), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class SpatialSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getSemantic_type() {
-    if (SpatialSignal_Type.featOkTst && ((SpatialSignal_Type)jcasType).casFeat_semantic_type == null)
-      jcasType.jcas.throwFeatMissing("semantic_type", "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SpatialSignal_Type)jcasType).casFeatCode_semantic_type);}
+  public String getSemantic_type() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_semantic_type));
+  }
     
   /** setter for semantic_type - sets ( DIRECTIONAL | TOPOLOGICAL | DIR_TOP ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSemantic_type(String v) {
-    if (SpatialSignal_Type.featOkTst && ((SpatialSignal_Type)jcasType).casFeat_semantic_type == null)
-      jcasType.jcas.throwFeatMissing("semantic_type", "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SpatialSignal_Type)jcasType).casFeatCode_semantic_type, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_semantic_type), v);
+  }    
+    
   }
 
     

@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Fingerprint extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Fingerprint";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class Fingerprint extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_user = "user";
+  public final static String _FeatName_create = "create";
+  public final static String _FeatName_reference = "reference";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_user = TypeSystemImpl.createCallSite(Fingerprint.class, "user");
+  private final static MethodHandle _FH_user = _FC_user.dynamicInvoker();
+  private final static CallSite _FC_create = TypeSystemImpl.createCallSite(Fingerprint.class, "create");
+  private final static MethodHandle _FH_create = _FC_create.dynamicInvoker();
+  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(Fingerprint.class, "reference");
+  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Fingerprint() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Fingerprint(int addr, TOP_Type type) {
-    super(addr, type);
+  public Fingerprint(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class Fingerprint extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +109,18 @@ public class Fingerprint extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.type.Fingerprint");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_user);}
+  public String getUser() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
+  }
     
   /** setter for user - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUser(String v) {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.type.Fingerprint");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_user, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +130,18 @@ public class Fingerprint extends Node {
    * @generated
    * @return value of the feature 
    */
-  public long getCreate() {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_create == null)
-      jcasType.jcas.throwFeatMissing("create", "org.texttechnologylab.annotation.type.Fingerprint");
-    return jcasType.ll_cas.ll_getLongValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_create);}
+  public long getCreate() { 
+    return _getLongValueNc(wrapGetIntCatchException(_FH_create));
+  }
     
   /** setter for create - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCreate(long v) {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_create == null)
-      jcasType.jcas.throwFeatMissing("create", "org.texttechnologylab.annotation.type.Fingerprint");
-    jcasType.ll_cas.ll_setLongValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_create, v);}    
+    _setLongValueNfc(wrapGetIntCatchException(_FH_create), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,19 +151,18 @@ public class Fingerprint extends Node {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.Fingerprint");
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_reference)));}
+  public TOP getReference() { 
+    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+  }
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(TOP v) {
-    if (Fingerprint_Type.featOkTst && ((Fingerprint_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.Fingerprint");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Fingerprint_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
+  }    
+    
   }
 
     

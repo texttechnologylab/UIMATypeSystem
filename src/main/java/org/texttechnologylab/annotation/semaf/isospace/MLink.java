@@ -1,11 +1,20 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Entity;
 import org.apache.uima.jcas.cas.FSList;
@@ -14,10 +23,17 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MLink extends Link {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.MLink";
+  
   /** @generated
    * @ordered 
    */
@@ -34,17 +50,44 @@ public class MLink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_val = "val";
+  public final static String _FeatName_end_point1 = "end_point1";
+  public final static String _FeatName_end_point2 = "end_point2";
+  public final static String _FeatName_bounds = "bounds";
+  public final static String _FeatName_bounds_array = "bounds_array";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_val = TypeSystemImpl.createCallSite(MLink.class, "val");
+  private final static MethodHandle _FH_val = _FC_val.dynamicInvoker();
+  private final static CallSite _FC_end_point1 = TypeSystemImpl.createCallSite(MLink.class, "end_point1");
+  private final static MethodHandle _FH_end_point1 = _FC_end_point1.dynamicInvoker();
+  private final static CallSite _FC_end_point2 = TypeSystemImpl.createCallSite(MLink.class, "end_point2");
+  private final static MethodHandle _FH_end_point2 = _FC_end_point2.dynamicInvoker();
+  private final static CallSite _FC_bounds = TypeSystemImpl.createCallSite(MLink.class, "bounds");
+  private final static MethodHandle _FH_bounds = _FC_bounds.dynamicInvoker();
+  private final static CallSite _FC_bounds_array = TypeSystemImpl.createCallSite(MLink.class, "bounds_array");
+  private final static MethodHandle _FH_bounds_array = _FC_bounds_array.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected MLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public MLink(int addr, TOP_Type type) {
-    super(addr, type);
+  public MLink(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -55,6 +98,7 @@ public class MLink extends Link {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -74,19 +118,18 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Measure getVal() {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_val == null)
-      jcasType.jcas.throwFeatMissing("val", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    return (Measure)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_val)));}
+  public Measure getVal() { 
+    return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_val)));
+  }
     
   /** setter for val - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVal(Measure v) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_val == null)
-      jcasType.jcas.throwFeatMissing("val", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_val, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_val), v);
+  }    
+    
    
     
   //*--------------*
@@ -96,19 +139,18 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getEnd_point1() {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_end_point1 == null)
-      jcasType.jcas.throwFeatMissing("end_point1", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_end_point1)));}
+  public Entity getEnd_point1() { 
+    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point1)));
+  }
     
   /** setter for end_point1 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd_point1(Entity v) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_end_point1 == null)
-      jcasType.jcas.throwFeatMissing("end_point1", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_end_point1, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_end_point1), v);
+  }    
+    
    
     
   //*--------------*
@@ -118,19 +160,18 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getEnd_point2() {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_end_point2 == null)
-      jcasType.jcas.throwFeatMissing("end_point2", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_end_point2)));}
+  public Entity getEnd_point2() { 
+    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point2)));
+  }
     
   /** setter for end_point2 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd_point2(Entity v) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_end_point2 == null)
-      jcasType.jcas.throwFeatMissing("end_point2", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_end_point2, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_end_point2), v);
+  }    
+    
    
     
   //*--------------*
@@ -140,19 +181,19 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public FSList getBounds() {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds == null)
-      jcasType.jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds)));}
+  @SuppressWarnings("unchecked")
+  public FSList<Entity> getBounds() { 
+    return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds)));
+  }
     
   /** setter for bounds - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setBounds(FSList v) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds == null)
-      jcasType.jcas.throwFeatMissing("bounds", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setBounds(FSList<Entity> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_bounds), v);
+  }    
+    
    
     
   //*--------------*
@@ -162,41 +203,39 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getBounds_array() {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds_array == null)
-      jcasType.jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<Entity> getBounds_array() { 
+    return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)));
+  }
     
   /** setter for bounds_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setBounds_array(FSArray v) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds_array == null)
-      jcasType.jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.ll_cas.ll_setRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setBounds_array(FSArray<Entity> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_bounds_array), v);
+  }    
+    
     
   /** indexed getter for bounds_array - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public Entity getBounds_array(int i) {
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds_array == null)
-      jcasType.jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array), i);
-    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array), i)));}
+     return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).get(i));
+  } 
 
   /** indexed setter for bounds_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setBounds_array(int i, Entity v) { 
-    if (MLink_Type.featOkTst && ((MLink_Type)jcasType).casFeat_bounds_array == null)
-      jcasType.jcas.throwFeatMissing("bounds_array", "org.texttechnologylab.annotation.semaf.isospace.MLink");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MLink_Type)jcasType).casFeatCode_bounds_array), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setBounds_array(int i, Entity v) {
+    ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).set(i, v);
+  }  
   }
 
     

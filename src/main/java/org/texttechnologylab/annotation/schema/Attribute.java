@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Tue Oct 05 17:20:02 CEST 2021 */
-package org.texttechnologylab.annotation.schema;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.schema;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Oct 05 17:20:02 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Attribute extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.schema.Attribute";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,41 @@ public class Attribute extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_name = "name";
+  public final static String _FeatName_description = "description";
+  public final static String _FeatName_range = "range";
+  public final static String _FeatName_mandatory = "mandatory";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(Attribute.class, "name");
+  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
+  private final static CallSite _FC_description = TypeSystemImpl.createCallSite(Attribute.class, "description");
+  private final static MethodHandle _FH_description = _FC_description.dynamicInvoker();
+  private final static CallSite _FC_range = TypeSystemImpl.createCallSite(Attribute.class, "range");
+  private final static MethodHandle _FH_range = _FC_range.dynamicInvoker();
+  private final static CallSite _FC_mandatory = TypeSystemImpl.createCallSite(Attribute.class, "mandatory");
+  private final static MethodHandle _FH_mandatory = _FC_mandatory.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Attribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Attribute(int addr, TOP_Type type) {
-    super(addr, type);
+  public Attribute(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +93,7 @@ public class Attribute extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +113,18 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_name == null)
-      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.schema.Attribute");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Attribute_Type)jcasType).casFeatCode_name);}
+  public String getName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
+  }
     
   /** setter for name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_name == null)
-      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.schema.Attribute");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Attribute_Type)jcasType).casFeatCode_name, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +134,18 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_description == null)
-      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.schema.Attribute");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Attribute_Type)jcasType).casFeatCode_description);}
+  public String getDescription() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
+  }
     
   /** setter for description - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDescription(String v) {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_description == null)
-      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.schema.Attribute");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Attribute_Type)jcasType).casFeatCode_description, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_description), v);
+  }    
+    
    
     
   //*--------------*
@@ -116,19 +155,18 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getRange() {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_range == null)
-      jcasType.jcas.throwFeatMissing("range", "org.texttechnologylab.annotation.schema.Attribute");
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Attribute_Type)jcasType).casFeatCode_range)));}
+  public TOP getRange() { 
+    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_range)));
+  }
     
   /** setter for range - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRange(TOP v) {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_range == null)
-      jcasType.jcas.throwFeatMissing("range", "org.texttechnologylab.annotation.schema.Attribute");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Attribute_Type)jcasType).casFeatCode_range, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_range), v);
+  }    
+    
    
     
   //*--------------*
@@ -138,19 +176,18 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public boolean getMandatory() {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_mandatory == null)
-      jcasType.jcas.throwFeatMissing("mandatory", "org.texttechnologylab.annotation.schema.Attribute");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Attribute_Type)jcasType).casFeatCode_mandatory);}
+  public boolean getMandatory() { 
+    return _getBooleanValueNc(wrapGetIntCatchException(_FH_mandatory));
+  }
     
   /** setter for mandatory - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMandatory(boolean v) {
-    if (Attribute_Type.featOkTst && ((Attribute_Type)jcasType).casFeat_mandatory == null)
-      jcasType.jcas.throwFeatMissing("mandatory", "org.texttechnologylab.annotation.schema.Attribute");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((Attribute_Type)jcasType).casFeatCode_mandatory, v);}    
+    _setBooleanValueNfc(wrapGetIntCatchException(_FH_mandatory), v);
+  }    
+    
   }
 
     

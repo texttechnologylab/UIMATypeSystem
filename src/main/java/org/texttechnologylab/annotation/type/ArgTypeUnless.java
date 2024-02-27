@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:48 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:50 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyArgAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgTypeUnless extends ArgType {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.ArgTypeUnless";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class ArgTypeUnless extends ArgType {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_counterRebuttal = "counterRebuttal";
+  public final static String _FeatName_rebuttal = "rebuttal";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_counterRebuttal = TypeSystemImpl.createCallSite(ArgTypeUnless.class, "counterRebuttal");
+  private final static MethodHandle _FH_counterRebuttal = _FC_counterRebuttal.dynamicInvoker();
+  private final static CallSite _FC_rebuttal = TypeSystemImpl.createCallSite(ArgTypeUnless.class, "rebuttal");
+  private final static MethodHandle _FH_rebuttal = _FC_rebuttal.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected ArgTypeUnless() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public ArgTypeUnless(int addr, TOP_Type type) {
-    super(addr, type);
+  public ArgTypeUnless(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class ArgTypeUnless extends ArgType {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,41 +106,39 @@ public class ArgTypeUnless extends ArgType {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getCounterRebuttal() {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_counterRebuttal == null)
-      jcasType.jcas.throwFeatMissing("counterRebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<ArgTextSegment> getCounterRebuttal() { 
+    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)));
+  }
     
   /** setter for counterRebuttal - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setCounterRebuttal(FSArray v) {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_counterRebuttal == null)
-      jcasType.jcas.throwFeatMissing("counterRebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.ll_cas.ll_setRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setCounterRebuttal(FSArray<ArgTextSegment> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_counterRebuttal), v);
+  }    
+    
     
   /** indexed getter for counterRebuttal - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public ArgTextSegment getCounterRebuttal(int i) {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_counterRebuttal == null)
-      jcasType.jcas.throwFeatMissing("counterRebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal), i);
-    return (ArgTextSegment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal), i)));}
+     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).get(i));
+  } 
 
   /** indexed setter for counterRebuttal - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCounterRebuttal(int i, ArgTextSegment v) { 
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_counterRebuttal == null)
-      jcasType.jcas.throwFeatMissing("counterRebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_counterRebuttal), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setCounterRebuttal(int i, ArgTextSegment v) {
+    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -115,41 +148,39 @@ public class ArgTypeUnless extends ArgType {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getRebuttal() {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_rebuttal == null)
-      jcasType.jcas.throwFeatMissing("rebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<ArgTextSegment> getRebuttal() { 
+    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)));
+  }
     
   /** setter for rebuttal - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setRebuttal(FSArray v) {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_rebuttal == null)
-      jcasType.jcas.throwFeatMissing("rebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.ll_cas.ll_setRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setRebuttal(FSArray<ArgTextSegment> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rebuttal), v);
+  }    
+    
     
   /** indexed getter for rebuttal - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public ArgTextSegment getRebuttal(int i) {
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_rebuttal == null)
-      jcasType.jcas.throwFeatMissing("rebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal), i);
-    return (ArgTextSegment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal), i)));}
+     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).get(i));
+  } 
 
   /** indexed setter for rebuttal - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setRebuttal(int i, ArgTextSegment v) { 
-    if (ArgTypeUnless_Type.featOkTst && ((ArgTypeUnless_Type)jcasType).casFeat_rebuttal == null)
-      jcasType.jcas.throwFeatMissing("rebuttal", "org.texttechnologylab.annotation.type.ArgTypeUnless");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeUnless_Type)jcasType).casFeatCode_rebuttal), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setRebuttal(int i, ArgTextSegment v) {
+    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).set(i, v);
+  }  
   }
 
     

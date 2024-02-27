@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Thu Dec 21 13:46:41 CET 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Dec 21 13:46:41 CET 2023
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/src/main/resources/desc/type/TypeSystemModelAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ModelAnnotation extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.ModelAnnotation";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class ModelAnnotation extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_ModelReference = "ModelReference";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_ModelReference = TypeSystemImpl.createCallSite(ModelAnnotation.class, "ModelReference");
+  private final static MethodHandle _FH_ModelReference = _FC_ModelReference.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected ModelAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public ModelAnnotation(int addr, TOP_Type type) {
-    super(addr, type);
+  public ModelAnnotation(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class ModelAnnotation extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +115,18 @@ public class ModelAnnotation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModelReference() {
-    if (ModelAnnotation_Type.featOkTst && ((ModelAnnotation_Type)jcasType).casFeat_ModelReference == null)
-      jcasType.jcas.throwFeatMissing("ModelReference", "org.texttechnologylab.annotation.ModelAnnotation");
-    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ModelAnnotation_Type)jcasType).casFeatCode_ModelReference)));}
+  public MetaData getModelReference() { 
+    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ModelReference)));
+  }
     
   /** setter for ModelReference - sets Reference to the Model 
    * @generated
    * @param v value to set into the feature 
    */
   public void setModelReference(MetaData v) {
-    if (ModelAnnotation_Type.featOkTst && ((ModelAnnotation_Type)jcasType).casFeat_ModelReference == null)
-      jcasType.jcas.throwFeatMissing("ModelReference", "org.texttechnologylab.annotation.ModelAnnotation");
-    jcasType.ll_cas.ll_setRefValue(addr, ((ModelAnnotation_Type)jcasType).casFeatCode_ModelReference, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_ModelReference), v);
+  }    
+    
   }
 
     

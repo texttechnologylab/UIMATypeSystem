@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Thu Dec 21 13:46:41 CET 2023 */
-package org.texttechnologylab.uima.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.uima.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Thu Dec 21 13:46:41 CET 2023
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/src/main/resources/desc/type/TypeSystemModelAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Sentiment extends Classification {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.uima.type.Sentiment";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,35 @@ public class Sentiment extends Classification {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_sentiment = "sentiment";
+  public final static String _FeatName_subjectivity = "subjectivity";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_sentiment = TypeSystemImpl.createCallSite(Sentiment.class, "sentiment");
+  private final static MethodHandle _FH_sentiment = _FC_sentiment.dynamicInvoker();
+  private final static CallSite _FC_subjectivity = TypeSystemImpl.createCallSite(Sentiment.class, "subjectivity");
+  private final static MethodHandle _FH_subjectivity = _FC_subjectivity.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Sentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Sentiment(int addr, TOP_Type type) {
-    super(addr, type);
+  public Sentiment(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +85,7 @@ public class Sentiment extends Classification {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -82,19 +117,18 @@ public class Sentiment extends Classification {
    * @generated
    * @return value of the feature 
    */
-  public double getSentiment() {
-    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_sentiment == null)
-      jcasType.jcas.throwFeatMissing("sentiment", "org.texttechnologylab.uima.type.Sentiment");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_sentiment);}
+  public double getSentiment() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_sentiment));
+  }
     
   /** setter for sentiment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentiment(double v) {
-    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_sentiment == null)
-      jcasType.jcas.throwFeatMissing("sentiment", "org.texttechnologylab.uima.type.Sentiment");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_sentiment, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_sentiment), v);
+  }    
+    
    
     
   //*--------------*
@@ -104,19 +138,18 @@ public class Sentiment extends Classification {
    * @generated
    * @return value of the feature 
    */
-  public double getSubjectivity() {
-    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_subjectivity == null)
-      jcasType.jcas.throwFeatMissing("subjectivity", "org.texttechnologylab.uima.type.Sentiment");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_subjectivity);}
+  public double getSubjectivity() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_subjectivity));
+  }
     
   /** setter for subjectivity - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubjectivity(double v) {
-    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_subjectivity == null)
-      jcasType.jcas.throwFeatMissing("subjectivity", "org.texttechnologylab.uima.type.Sentiment");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_subjectivity, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_subjectivity), v);
+  }    
+    
   }
 
     

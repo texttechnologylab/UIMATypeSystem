@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Entity;
 import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Motion extends Event {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Motion";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,44 @@ public class Motion extends Event {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_motion_type = "motion_type";
+  public final static String _FeatName_motion_class = "motion_class";
+  public final static String _FeatName_motion_sense = "motion_sense";
+  public final static String _FeatName_manner = "manner";
+  public final static String _FeatName_motion_goal = "motion_goal";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_motion_type = TypeSystemImpl.createCallSite(Motion.class, "motion_type");
+  private final static MethodHandle _FH_motion_type = _FC_motion_type.dynamicInvoker();
+  private final static CallSite _FC_motion_class = TypeSystemImpl.createCallSite(Motion.class, "motion_class");
+  private final static MethodHandle _FH_motion_class = _FC_motion_class.dynamicInvoker();
+  private final static CallSite _FC_motion_sense = TypeSystemImpl.createCallSite(Motion.class, "motion_sense");
+  private final static MethodHandle _FH_motion_sense = _FC_motion_sense.dynamicInvoker();
+  private final static CallSite _FC_manner = TypeSystemImpl.createCallSite(Motion.class, "manner");
+  private final static MethodHandle _FH_manner = _FC_manner.dynamicInvoker();
+  private final static CallSite _FC_motion_goal = TypeSystemImpl.createCallSite(Motion.class, "motion_goal");
+  private final static MethodHandle _FH_motion_goal = _FC_motion_goal.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Motion() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Motion(int addr, TOP_Type type) {
-    super(addr, type);
+  public Motion(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +96,7 @@ public class Motion extends Event {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -84,19 +128,18 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_type() {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_type == null)
-      jcasType.jcas.throwFeatMissing("motion_type", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_type);}
+  public String getMotion_type() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_type));
+  }
     
   /** setter for motion_type - sets ( MANNER | PATH | COMPOUND ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMotion_type(String v) {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_type == null)
-      jcasType.jcas.throwFeatMissing("motion_type", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_type, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_motion_type), v);
+  }    
+    
    
     
   //*--------------*
@@ -106,19 +149,18 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_class() {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_class == null)
-      jcasType.jcas.throwFeatMissing("motion_class", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_class);}
+  public String getMotion_class() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_class));
+  }
     
   /** setter for motion_class - sets ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMotion_class(String v) {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_class == null)
-      jcasType.jcas.throwFeatMissing("motion_class", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_class, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_motion_class), v);
+  }    
+    
    
     
   //*--------------*
@@ -128,19 +170,18 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_sense() {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_sense == null)
-      jcasType.jcas.throwFeatMissing("motion_sense", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_sense);}
+  public String getMotion_sense() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_sense));
+  }
     
   /** setter for motion_sense - sets ( LITERAL | FICTIVE | INTRINSIC_CHANGE ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMotion_sense(String v) {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_sense == null)
-      jcasType.jcas.throwFeatMissing("motion_sense", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_sense, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_motion_sense), v);
+  }    
+    
    
     
   //*--------------*
@@ -150,19 +191,18 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public Entity getManner() {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_manner == null)
-      jcasType.jcas.throwFeatMissing("manner", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Motion_Type)jcasType).casFeatCode_manner)));}
+  public Entity getManner() { 
+    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_manner)));
+  }
     
   /** setter for manner - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setManner(Entity v) {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_manner == null)
-      jcasType.jcas.throwFeatMissing("manner", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Motion_Type)jcasType).casFeatCode_manner, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_manner), v);
+  }    
+    
    
     
   //*--------------*
@@ -172,19 +212,18 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getMotion_goal() {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_goal == null)
-      jcasType.jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_goal)));}
+  public SpatialEntity getMotion_goal() { 
+    return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motion_goal)));
+  }
     
   /** setter for motion_goal - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMotion_goal(SpatialEntity v) {
-    if (Motion_Type.featOkTst && ((Motion_Type)jcasType).casFeat_motion_goal == null)
-      jcasType.jcas.throwFeatMissing("motion_goal", "org.texttechnologylab.annotation.semaf.isospace.Motion");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Motion_Type)jcasType).casFeatCode_motion_goal, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_motion_goal), v);
+  }    
+    
   }
 
     

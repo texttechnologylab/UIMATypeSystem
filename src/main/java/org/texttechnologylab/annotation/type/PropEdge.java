@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:09 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:09 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyPropAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropEdge extends Edge {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.PropEdge";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,38 @@ public class PropEdge extends Edge {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_mode = "mode";
+  public final static String _FeatName_graphSource = "graphSource";
+  public final static String _FeatName_graphTarget = "graphTarget";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_mode = TypeSystemImpl.createCallSite(PropEdge.class, "mode");
+  private final static MethodHandle _FH_mode = _FC_mode.dynamicInvoker();
+  private final static CallSite _FC_graphSource = TypeSystemImpl.createCallSite(PropEdge.class, "graphSource");
+  private final static MethodHandle _FH_graphSource = _FC_graphSource.dynamicInvoker();
+  private final static CallSite _FC_graphTarget = TypeSystemImpl.createCallSite(PropEdge.class, "graphTarget");
+  private final static MethodHandle _FH_graphTarget = _FC_graphTarget.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected PropEdge() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public PropEdge(int addr, TOP_Type type) {
-    super(addr, type);
+  public PropEdge(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +88,7 @@ public class PropEdge extends Edge {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -70,19 +108,18 @@ public class PropEdge extends Edge {
    * @generated
    * @return value of the feature 
    */
-  public String getMode() {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_mode == null)
-      jcasType.jcas.throwFeatMissing("mode", "org.texttechnologylab.annotation.type.PropEdge");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_mode);}
+  public String getMode() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_mode));
+  }
     
   /** setter for mode - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMode(String v) {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_mode == null)
-      jcasType.jcas.throwFeatMissing("mode", "org.texttechnologylab.annotation.type.PropEdge");
-    jcasType.ll_cas.ll_setStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_mode, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_mode), v);
+  }    
+    
    
     
   //*--------------*
@@ -92,19 +129,18 @@ public class PropEdge extends Edge {
    * @generated
    * @return value of the feature 
    */
-  public String getGraphSource() {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_graphSource == null)
-      jcasType.jcas.throwFeatMissing("graphSource", "org.texttechnologylab.annotation.type.PropEdge");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_graphSource);}
+  public String getGraphSource() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_graphSource));
+  }
     
   /** setter for graphSource - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGraphSource(String v) {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_graphSource == null)
-      jcasType.jcas.throwFeatMissing("graphSource", "org.texttechnologylab.annotation.type.PropEdge");
-    jcasType.ll_cas.ll_setStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_graphSource, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_graphSource), v);
+  }    
+    
    
     
   //*--------------*
@@ -114,19 +150,18 @@ public class PropEdge extends Edge {
    * @generated
    * @return value of the feature 
    */
-  public String getGraphTarget() {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_graphTarget == null)
-      jcasType.jcas.throwFeatMissing("graphTarget", "org.texttechnologylab.annotation.type.PropEdge");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_graphTarget);}
+  public String getGraphTarget() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_graphTarget));
+  }
     
   /** setter for graphTarget - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGraphTarget(String v) {
-    if (PropEdge_Type.featOkTst && ((PropEdge_Type)jcasType).casFeat_graphTarget == null)
-      jcasType.jcas.throwFeatMissing("graphTarget", "org.texttechnologylab.annotation.type.PropEdge");
-    jcasType.ll_cas.ll_setStringValue(addr, ((PropEdge_Type)jcasType).casFeatCode_graphTarget, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_graphTarget), v);
+  }    
+    
   }
 
     

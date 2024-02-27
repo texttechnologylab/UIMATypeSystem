@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:24 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:24 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyEntity.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextTechnologyEntity extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.TextTechnologyEntity";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,47 @@ public class TextTechnologyEntity extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_value = "value";
+  public final static String _FeatName_subvalue = "subvalue";
+  public final static String _FeatName_knowledgeEntries = "knowledgeEntries";
+  public final static String _FeatName_begin = "begin";
+  public final static String _FeatName_end = "end";
+  public final static String _FeatName_pos = "pos";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+  private final static CallSite _FC_subvalue = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "subvalue");
+  private final static MethodHandle _FH_subvalue = _FC_subvalue.dynamicInvoker();
+  private final static CallSite _FC_knowledgeEntries = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "knowledgeEntries");
+  private final static MethodHandle _FH_knowledgeEntries = _FC_knowledgeEntries.dynamicInvoker();
+  private final static CallSite _FC_begin = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "begin");
+  private final static MethodHandle _FH_begin = _FC_begin.dynamicInvoker();
+  private final static CallSite _FC_end = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "end");
+  private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
+  private final static CallSite _FC_pos = TypeSystemImpl.createCallSite(TextTechnologyEntity.class, "pos");
+  private final static MethodHandle _FH_pos = _FC_pos.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TextTechnologyEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TextTechnologyEntity(int addr, TOP_Type type) {
-    super(addr, type);
+  public TextTechnologyEntity(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +98,7 @@ public class TextTechnologyEntity extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +118,18 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +139,18 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_subvalue);}
+  public String getSubvalue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
+  }
     
   /** setter for subvalue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubvalue(String v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_subvalue, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_subvalue), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,41 +160,39 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getKnowledgeEntries() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<KnowledgeEntry> getKnowledgeEntries() { 
+    return (FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));
+  }
     
   /** setter for knowledgeEntries - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setKnowledgeEntries(FSArray v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setKnowledgeEntries(FSArray<KnowledgeEntry> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_knowledgeEntries), v);
+  }    
+    
     
   /** indexed getter for knowledgeEntries - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public KnowledgeEntry getKnowledgeEntries(int i) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries), i);
-    return (KnowledgeEntry)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries), i)));}
+     return (KnowledgeEntry)(((FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i));
+  } 
 
   /** indexed setter for knowledgeEntries - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setKnowledgeEntries(int i, KnowledgeEntry v) { 
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_knowledgeEntries), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setKnowledgeEntries(int i, KnowledgeEntry v) {
+    ((FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -159,19 +202,18 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getBegin() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_begin);}
+  public String getBegin() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
+  }
     
   /** setter for begin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBegin(String v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_begin, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_begin), v);
+  }    
+    
    
     
   //*--------------*
@@ -181,19 +223,18 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_end);}
+  public String getEnd() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
+  }
     
   /** setter for end - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd(String v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_end, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_end), v);
+  }    
+    
    
     
   //*--------------*
@@ -203,19 +244,18 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_pos == null)
-      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_pos);}
+  public String getPos() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
+  }
     
   /** setter for pos - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPos(String v) {
-    if (TextTechnologyEntity_Type.featOkTst && ((TextTechnologyEntity_Type)jcasType).casFeat_pos == null)
-      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.type.TextTechnologyEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextTechnologyEntity_Type)jcasType).casFeatCode_pos, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
+  }    
+    
   }
 
     

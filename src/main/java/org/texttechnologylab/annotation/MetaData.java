@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Thu Dec 21 13:46:41 CET 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Dec 21 13:46:46 CET 2023
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/src/main/resources/desc/type/TypeSystemModelMeta.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.MetaData";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class MetaData extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_Lang = "Lang";
+  public final static String _FeatName_Source = "Source";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_Lang = TypeSystemImpl.createCallSite(MetaData.class, "Lang");
+  private final static MethodHandle _FH_Lang = _FC_Lang.dynamicInvoker();
+  private final static CallSite _FC_Source = TypeSystemImpl.createCallSite(MetaData.class, "Source");
+  private final static MethodHandle _FH_Source = _FC_Source.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public MetaData(int addr, TOP_Type type) {
-    super(addr, type);
+  public MetaData(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class MetaData extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class MetaData extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLang() {
-    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_Lang == null)
-      jcasType.jcas.throwFeatMissing("Lang", "org.texttechnologylab.annotation.MetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_Lang);}
+  public String getLang() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_Lang));
+  }
     
   /** setter for Lang - sets Language of the method or the Model 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLang(String v) {
-    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_Lang == null)
-      jcasType.jcas.throwFeatMissing("Lang", "org.texttechnologylab.annotation.MetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_Lang, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_Lang), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class MetaData extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() {
-    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_Source == null)
-      jcasType.jcas.throwFeatMissing("Source", "org.texttechnologylab.annotation.MetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_Source);}
+  public String getSource() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_Source));
+  }
     
   /** setter for Source - sets Link of the used resource 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(String v) {
-    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_Source == null)
-      jcasType.jcas.throwFeatMissing("Source", "org.texttechnologylab.annotation.MetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_Source, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_Source), v);
+  }    
+    
   }
 
     

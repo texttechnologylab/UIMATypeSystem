@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Thu Dec 21 13:46:41 CET 2023 */
-package org.texttechnologylab.annotation.model;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.model;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 
- * Updated by JCasGen Thu Dec 21 13:46:46 CET 2023
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/src/main/resources/desc/type/TypeSystemModelMeta.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class HuggingfaceMetaData extends MetaData {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.model.HuggingfaceMetaData";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class HuggingfaceMetaData extends MetaData {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_HuggingfaceVersion = "HuggingfaceVersion";
+  public final static String _FeatName_DependeciesVersion = "DependeciesVersion";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_HuggingfaceVersion = TypeSystemImpl.createCallSite(HuggingfaceMetaData.class, "HuggingfaceVersion");
+  private final static MethodHandle _FH_HuggingfaceVersion = _FC_HuggingfaceVersion.dynamicInvoker();
+  private final static CallSite _FC_DependeciesVersion = TypeSystemImpl.createCallSite(HuggingfaceMetaData.class, "DependeciesVersion");
+  private final static MethodHandle _FH_DependeciesVersion = _FC_DependeciesVersion.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected HuggingfaceMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public HuggingfaceMetaData(int addr, TOP_Type type) {
-    super(addr, type);
+  public HuggingfaceMetaData(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class HuggingfaceMetaData extends MetaData {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class HuggingfaceMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getHuggingfaceVersion() {
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_HuggingfaceVersion == null)
-      jcasType.jcas.throwFeatMissing("HuggingfaceVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_HuggingfaceVersion);}
+  public String getHuggingfaceVersion() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_HuggingfaceVersion));
+  }
     
   /** setter for HuggingfaceVersion - sets Transformer Library Version 
    * @generated
    * @param v value to set into the feature 
    */
   public void setHuggingfaceVersion(String v) {
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_HuggingfaceVersion == null)
-      jcasType.jcas.throwFeatMissing("HuggingfaceVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_HuggingfaceVersion, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_HuggingfaceVersion), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class HuggingfaceMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getDependeciesVersion() {
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
-      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion)));}
+  public StringArray getDependeciesVersion() { 
+    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)));
+  }
     
   /** setter for DependeciesVersion - sets Dependency Library Version e.g. Pytorch... 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDependeciesVersion(StringArray v) {
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
-      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    jcasType.ll_cas.ll_setRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_DependeciesVersion), v);
+  }    
+    
     
   /** indexed getter for DependeciesVersion - gets an indexed value - Dependency Library Version e.g. Pytorch...
    * @generated
@@ -125,21 +158,17 @@ public class HuggingfaceMetaData extends MetaData {
    * @return value of the element at index i 
    */
   public String getDependeciesVersion(int i) {
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
-      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);
-    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);}
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).get(i);
+  } 
 
   /** indexed setter for DependeciesVersion - sets an indexed value - Dependency Library Version e.g. Pytorch...
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setDependeciesVersion(int i, String v) { 
-    if (HuggingfaceMetaData_Type.featOkTst && ((HuggingfaceMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
-      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.HuggingfaceMetaData");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);
-    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((HuggingfaceMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i, v);}
+  public void setDependeciesVersion(int i, String v) {
+    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).set(i, v);
+  }  
   }
 
     

@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubcatMatch extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.SubcatMatch";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,38 @@ public class SubcatMatch extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_status = "status";
+  public final static String _FeatName_context = "context";
+  public final static String _FeatName_elements = "elements";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_status = TypeSystemImpl.createCallSite(SubcatMatch.class, "status");
+  private final static MethodHandle _FH_status = _FC_status.dynamicInvoker();
+  private final static CallSite _FC_context = TypeSystemImpl.createCallSite(SubcatMatch.class, "context");
+  private final static MethodHandle _FH_context = _FC_context.dynamicInvoker();
+  private final static CallSite _FC_elements = TypeSystemImpl.createCallSite(SubcatMatch.class, "elements");
+  private final static MethodHandle _FH_elements = _FC_elements.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SubcatMatch() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SubcatMatch(int addr, TOP_Type type) {
-    super(addr, type);
+  public SubcatMatch(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +90,7 @@ public class SubcatMatch extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +110,18 @@ public class SubcatMatch extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getStatus() {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_status == null)
-      jcasType.jcas.throwFeatMissing("status", "org.texttechnologylab.annotation.SubcatMatch");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_status);}
+  public String getStatus() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_status));
+  }
     
   /** setter for status - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setStatus(String v) {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_status == null)
-      jcasType.jcas.throwFeatMissing("status", "org.texttechnologylab.annotation.SubcatMatch");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_status, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_status), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +131,18 @@ public class SubcatMatch extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getContext() {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_context == null)
-      jcasType.jcas.throwFeatMissing("context", "org.texttechnologylab.annotation.SubcatMatch");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_context);}
+  public String getContext() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_context));
+  }
     
   /** setter for context - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContext(String v) {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_context == null)
-      jcasType.jcas.throwFeatMissing("context", "org.texttechnologylab.annotation.SubcatMatch");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_context, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_context), v);
+  }    
+    
    
     
   //*--------------*
@@ -116,41 +152,39 @@ public class SubcatMatch extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getElements() {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<SemanticSource> getElements() { 
+    return (FSArray<SemanticSource>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));
+  }
     
   /** setter for elements - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setElements(FSArray v) {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
-    jcasType.ll_cas.ll_setRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setElements(FSArray<SemanticSource> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
+  }    
+    
     
   /** indexed getter for elements - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public SemanticSource getElements(int i) {
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i);
-    return (SemanticSource)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i)));}
+     return (SemanticSource)(((FSArray<SemanticSource>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));
+  } 
 
   /** indexed setter for elements - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setElements(int i, SemanticSource v) { 
-    if (SubcatMatch_Type.featOkTst && ((SubcatMatch_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.SubcatMatch");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubcatMatch_Type)jcasType).casFeatCode_elements), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setElements(int i, SemanticSource v) {
+    ((FSArray<SemanticSource>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).set(i, v);
+  }  
   }
 
     

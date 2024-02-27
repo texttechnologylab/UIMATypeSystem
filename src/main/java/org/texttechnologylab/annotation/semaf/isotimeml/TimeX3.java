@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isotimeml;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isotimeml;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Entity;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TimeX3 extends Entity {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,41 @@ public class TimeX3 extends Entity {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_function_in_document = "function_in_document";
+  public final static String _FeatName_temporal_function = "temporal_function";
+  public final static String _FeatName_value = "value";
+  public final static String _FeatName_anchor_time_id = "anchor_time_id";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_function_in_document = TypeSystemImpl.createCallSite(TimeX3.class, "function_in_document");
+  private final static MethodHandle _FH_function_in_document = _FC_function_in_document.dynamicInvoker();
+  private final static CallSite _FC_temporal_function = TypeSystemImpl.createCallSite(TimeX3.class, "temporal_function");
+  private final static MethodHandle _FH_temporal_function = _FC_temporal_function.dynamicInvoker();
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TimeX3.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+  private final static CallSite _FC_anchor_time_id = TypeSystemImpl.createCallSite(TimeX3.class, "anchor_time_id");
+  private final static MethodHandle _FH_anchor_time_id = _FC_anchor_time_id.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TimeX3() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TimeX3(int addr, TOP_Type type) {
-    super(addr, type);
+  public TimeX3(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +92,7 @@ public class TimeX3 extends Entity {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +124,18 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getFunction_in_document() {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_function_in_document == null)
-      jcasType.jcas.throwFeatMissing("function_in_document", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeX3_Type)jcasType).casFeatCode_function_in_document);}
+  public String getFunction_in_document() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_function_in_document));
+  }
     
   /** setter for function_in_document - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFunction_in_document(String v) {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_function_in_document == null)
-      jcasType.jcas.throwFeatMissing("function_in_document", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeX3_Type)jcasType).casFeatCode_function_in_document, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_function_in_document), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +145,18 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getTemporal_function() {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_temporal_function == null)
-      jcasType.jcas.throwFeatMissing("temporal_function", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((TimeX3_Type)jcasType).casFeatCode_temporal_function);}
+  public boolean getTemporal_function() { 
+    return _getBooleanValueNc(wrapGetIntCatchException(_FH_temporal_function));
+  }
     
   /** setter for temporal_function - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTemporal_function(boolean v) {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_temporal_function == null)
-      jcasType.jcas.throwFeatMissing("temporal_function", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((TimeX3_Type)jcasType).casFeatCode_temporal_function, v);}    
+    _setBooleanValueNfc(wrapGetIntCatchException(_FH_temporal_function), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +166,18 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeX3_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeX3_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
    
     
   //*--------------*
@@ -149,19 +187,18 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public TimeX3 getAnchor_time_id() {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_anchor_time_id == null)
-      jcasType.jcas.throwFeatMissing("anchor_time_id", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    return (TimeX3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TimeX3_Type)jcasType).casFeatCode_anchor_time_id)));}
+  public TimeX3 getAnchor_time_id() { 
+    return (TimeX3)(_getFeatureValueNc(wrapGetIntCatchException(_FH_anchor_time_id)));
+  }
     
   /** setter for anchor_time_id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAnchor_time_id(TimeX3 v) {
-    if (TimeX3_Type.featOkTst && ((TimeX3_Type)jcasType).casFeat_anchor_time_id == null)
-      jcasType.jcas.throwFeatMissing("anchor_time_id", "org.texttechnologylab.annotation.semaf.isotimeml.TimeX3");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TimeX3_Type)jcasType).casFeatCode_anchor_time_id, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_anchor_time_id), v);
+  }    
+    
   }
 
     

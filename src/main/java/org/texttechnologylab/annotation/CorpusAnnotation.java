@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Thu Dec 17 12:26:07 CET 2020 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Jan 13 17:09:39 CET 2023
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyDokumentAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CorpusAnnotation extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.CorpusAnnotation";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,44 @@ public class CorpusAnnotation extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_license = "license";
+  public final static String _FeatName_corpusUrl = "corpusUrl";
+  public final static String _FeatName_corpusName = "corpusName";
+  public final static String _FeatName_author = "author";
+  public final static String _FeatName_comment = "comment";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_license = TypeSystemImpl.createCallSite(CorpusAnnotation.class, "license");
+  private final static MethodHandle _FH_license = _FC_license.dynamicInvoker();
+  private final static CallSite _FC_corpusUrl = TypeSystemImpl.createCallSite(CorpusAnnotation.class, "corpusUrl");
+  private final static MethodHandle _FH_corpusUrl = _FC_corpusUrl.dynamicInvoker();
+  private final static CallSite _FC_corpusName = TypeSystemImpl.createCallSite(CorpusAnnotation.class, "corpusName");
+  private final static MethodHandle _FH_corpusName = _FC_corpusName.dynamicInvoker();
+  private final static CallSite _FC_author = TypeSystemImpl.createCallSite(CorpusAnnotation.class, "author");
+  private final static MethodHandle _FH_author = _FC_author.dynamicInvoker();
+  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(CorpusAnnotation.class, "comment");
+  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected CorpusAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public CorpusAnnotation(int addr, TOP_Type type) {
-    super(addr, type);
+  public CorpusAnnotation(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +95,7 @@ public class CorpusAnnotation extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +115,18 @@ public class CorpusAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLicense() {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_license == null)
-      jcasType.jcas.throwFeatMissing("license", "org.texttechnologylab.annotation.CorpusAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_license);}
+  public String getLicense() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_license));
+  }
     
   /** setter for license - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLicense(String v) {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_license == null)
-      jcasType.jcas.throwFeatMissing("license", "org.texttechnologylab.annotation.CorpusAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_license, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_license), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +136,18 @@ public class CorpusAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getCorpusUrl() {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_corpusUrl == null)
-      jcasType.jcas.throwFeatMissing("corpusUrl", "org.texttechnologylab.annotation.CorpusAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_corpusUrl);}
+  public String getCorpusUrl() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_corpusUrl));
+  }
     
   /** setter for corpusUrl - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCorpusUrl(String v) {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_corpusUrl == null)
-      jcasType.jcas.throwFeatMissing("corpusUrl", "org.texttechnologylab.annotation.CorpusAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_corpusUrl, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_corpusUrl), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,19 +157,18 @@ public class CorpusAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getCorpusName() {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_corpusName == null)
-      jcasType.jcas.throwFeatMissing("corpusName", "org.texttechnologylab.annotation.CorpusAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_corpusName);}
+  public String getCorpusName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_corpusName));
+  }
     
   /** setter for corpusName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCorpusName(String v) {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_corpusName == null)
-      jcasType.jcas.throwFeatMissing("corpusName", "org.texttechnologylab.annotation.CorpusAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_corpusName, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_corpusName), v);
+  }    
+    
    
     
   //*--------------*
@@ -137,19 +178,18 @@ public class CorpusAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getAuthor() {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_author == null)
-      jcasType.jcas.throwFeatMissing("author", "org.texttechnologylab.annotation.CorpusAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_author);}
+  public String getAuthor() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_author));
+  }
     
   /** setter for author - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAuthor(String v) {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_author == null)
-      jcasType.jcas.throwFeatMissing("author", "org.texttechnologylab.annotation.CorpusAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_author, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_author), v);
+  }    
+    
    
     
   //*--------------*
@@ -159,19 +199,18 @@ public class CorpusAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.CorpusAnnotation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_comment);}
+  public String getComment() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
+  }
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    if (CorpusAnnotation_Type.featOkTst && ((CorpusAnnotation_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.CorpusAnnotation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((CorpusAnnotation_Type)jcasType).casFeatCode_comment, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
+  }    
+    
   }
 
     

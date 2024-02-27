@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:14 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:14 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyNamedEntity.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TexttechnologyNamedEntity extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,47 @@ public class TexttechnologyNamedEntity extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_subvalue = "subvalue";
+  public final static String _FeatName_belongsTo = "belongsTo";
+  public final static String _FeatName_value = "value";
+  public final static String _FeatName_knowledgeEntries = "knowledgeEntries";
+  public final static String _FeatName_wikipediaID = "wikipediaID";
+  public final static String _FeatName_wikidataID = "wikidataID";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_subvalue = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "subvalue");
+  private final static MethodHandle _FH_subvalue = _FC_subvalue.dynamicInvoker();
+  private final static CallSite _FC_belongsTo = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "belongsTo");
+  private final static MethodHandle _FH_belongsTo = _FC_belongsTo.dynamicInvoker();
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+  private final static CallSite _FC_knowledgeEntries = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "knowledgeEntries");
+  private final static MethodHandle _FH_knowledgeEntries = _FC_knowledgeEntries.dynamicInvoker();
+  private final static CallSite _FC_wikipediaID = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "wikipediaID");
+  private final static MethodHandle _FH_wikipediaID = _FC_wikipediaID.dynamicInvoker();
+  private final static CallSite _FC_wikidataID = TypeSystemImpl.createCallSite(TexttechnologyNamedEntity.class, "wikidataID");
+  private final static MethodHandle _FH_wikidataID = _FC_wikidataID.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TexttechnologyNamedEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TexttechnologyNamedEntity(int addr, TOP_Type type) {
-    super(addr, type);
+  public TexttechnologyNamedEntity(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +99,7 @@ public class TexttechnologyNamedEntity extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -84,19 +131,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_subvalue);}
+  public String getSubvalue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
+  }
     
   /** setter for subvalue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubvalue(String v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_subvalue, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_subvalue), v);
+  }    
+    
    
     
   //*--------------*
@@ -106,19 +152,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TexttechnologyNamedEntity getBelongsTo() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_belongsTo == null)
-      jcasType.jcas.throwFeatMissing("belongsTo", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return (TexttechnologyNamedEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_belongsTo)));}
+  public TexttechnologyNamedEntity getBelongsTo() { 
+    return (TexttechnologyNamedEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_belongsTo)));
+  }
     
   /** setter for belongsTo - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBelongsTo(TexttechnologyNamedEntity v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_belongsTo == null)
-      jcasType.jcas.throwFeatMissing("belongsTo", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_belongsTo, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_belongsTo), v);
+  }    
+    
    
     
   //*--------------*
@@ -128,19 +173,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
    
     
   //*--------------*
@@ -150,19 +194,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getKnowledgeEntries() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries)));}
+  public StringArray getKnowledgeEntries() { 
+    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));
+  }
     
   /** setter for knowledgeEntries - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setKnowledgeEntries(StringArray v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_knowledgeEntries), v);
+  }    
+    
     
   /** indexed getter for knowledgeEntries - gets an indexed value - 
    * @generated
@@ -170,21 +213,17 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @return value of the element at index i 
    */
   public String getKnowledgeEntries(int i) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries), i);
-    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries), i);}
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i);
+  } 
 
   /** indexed setter for knowledgeEntries - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setKnowledgeEntries(int i, String v) { 
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_knowledgeEntries == null)
-      jcasType.jcas.throwFeatMissing("knowledgeEntries", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries), i);
-    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_knowledgeEntries), i, v);}
+  public void setKnowledgeEntries(int i, String v) {
+    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -194,19 +233,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getWikipediaID() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_wikipediaID == null)
-      jcasType.jcas.throwFeatMissing("wikipediaID", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_wikipediaID);}
+  public String getWikipediaID() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_wikipediaID));
+  }
     
   /** setter for wikipediaID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikipediaID(String v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_wikipediaID == null)
-      jcasType.jcas.throwFeatMissing("wikipediaID", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_wikipediaID, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_wikipediaID), v);
+  }    
+    
    
     
   //*--------------*
@@ -216,19 +254,18 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getWikidataID() {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_wikidataID == null)
-      jcasType.jcas.throwFeatMissing("wikidataID", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_wikidataID);}
+  public String getWikidataID() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_wikidataID));
+  }
     
   /** setter for wikidataID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikidataID(String v) {
-    if (TexttechnologyNamedEntity_Type.featOkTst && ((TexttechnologyNamedEntity_Type)jcasType).casFeat_wikidataID == null)
-      jcasType.jcas.throwFeatMissing("wikidataID", "org.texttechnologylab.annotation.type.TexttechnologyNamedEntity");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TexttechnologyNamedEntity_Type)jcasType).casFeatCode_wikidataID, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_wikidataID), v);
+  }    
+    
   }
 
     

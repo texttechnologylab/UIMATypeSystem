@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SharedData extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.SharedData";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class SharedData extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_value = "value";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(SharedData.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SharedData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SharedData(int addr, TOP_Type type) {
-    super(addr, type);
+  public SharedData(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class SharedData extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +103,18 @@ public class SharedData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SharedData_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (SharedData_Type.featOkTst && ((SharedData_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.SharedData");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SharedData_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
   }
 
     

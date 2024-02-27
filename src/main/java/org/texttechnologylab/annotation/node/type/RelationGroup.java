@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:22 CET 2020 */
-package org.texttechnologylab.annotation.node.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.node.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:22 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyGeoVizContext.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationGroup extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.node.type.RelationGroup";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class RelationGroup extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_relation = "relation";
+  public final static String _FeatName_locationID = "locationID";
+  public final static String _FeatName_sentence = "sentence";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_relation = TypeSystemImpl.createCallSite(RelationGroup.class, "relation");
+  private final static MethodHandle _FH_relation = _FC_relation.dynamicInvoker();
+  private final static CallSite _FC_locationID = TypeSystemImpl.createCallSite(RelationGroup.class, "locationID");
+  private final static MethodHandle _FH_locationID = _FC_locationID.dynamicInvoker();
+  private final static CallSite _FC_sentence = TypeSystemImpl.createCallSite(RelationGroup.class, "sentence");
+  private final static MethodHandle _FH_sentence = _FC_sentence.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected RelationGroup() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public RelationGroup(int addr, TOP_Type type) {
-    super(addr, type);
+  public RelationGroup(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class RelationGroup extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +109,18 @@ public class RelationGroup extends Node {
    * @generated
    * @return value of the feature 
    */
-  public RelationContext getRelation() {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_relation == null)
-      jcasType.jcas.throwFeatMissing("relation", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    return (RelationContext)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_relation)));}
+  public RelationContext getRelation() { 
+    return (RelationContext)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relation)));
+  }
     
   /** setter for relation - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRelation(RelationContext v) {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_relation == null)
-      jcasType.jcas.throwFeatMissing("relation", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    jcasType.ll_cas.ll_setRefValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_relation, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_relation), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +130,18 @@ public class RelationGroup extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getLocationID() {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_locationID == null)
-      jcasType.jcas.throwFeatMissing("locationID", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_locationID);}
+  public int getLocationID() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_locationID));
+  }
     
   /** setter for locationID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLocationID(int v) {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_locationID == null)
-      jcasType.jcas.throwFeatMissing("locationID", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    jcasType.ll_cas.ll_setIntValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_locationID, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_locationID), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,19 +151,18 @@ public class RelationGroup extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getSentence() {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_sentence == null)
-      jcasType.jcas.throwFeatMissing("sentence", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_sentence);}
+  public int getSentence() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_sentence));
+  }
     
   /** setter for sentence - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentence(int v) {
-    if (RelationGroup_Type.featOkTst && ((RelationGroup_Type)jcasType).casFeat_sentence == null)
-      jcasType.jcas.throwFeatMissing("sentence", "org.texttechnologylab.annotation.node.type.RelationGroup");
-    jcasType.ll_cas.ll_setIntValue(addr, ((RelationGroup_Type)jcasType).casFeatCode_sentence, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_sentence), v);
+  }    
+    
   }
 
     

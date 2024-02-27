@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isotimeml;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isotimeml;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SLink extends Link {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isotimeml.SLink";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class SLink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_origin = "origin";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_origin = TypeSystemImpl.createCallSite(SLink.class, "origin");
+  private final static MethodHandle _FH_origin = _FC_origin.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SLink(int addr, TOP_Type type) {
-    super(addr, type);
+  public SLink(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class SLink extends Link {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +103,18 @@ public class SLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getOrigin() {
-    if (SLink_Type.featOkTst && ((SLink_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.semaf.isotimeml.SLink");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SLink_Type)jcasType).casFeatCode_origin);}
+  public String getOrigin() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_origin));
+  }
     
   /** setter for origin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOrigin(String v) {
-    if (SLink_Type.featOkTst && ((SLink_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.semaf.isotimeml.SLink");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SLink_Type)jcasType).casFeatCode_origin, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_origin), v);
+  }    
+    
   }
 
     

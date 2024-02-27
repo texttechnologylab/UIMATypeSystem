@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Tue Feb 16 09:03:37 CET 2021 */
-package org.texttechnologylab.annotation.score;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.score;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 16 09:03:37 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTextScore.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextScore extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.score.TextScore";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,38 @@ public class TextScore extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_elements = "elements";
+  public final static String _FeatName_documentURI = "documentURI";
+  public final static String _FeatName_documentName = "documentName";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_elements = TypeSystemImpl.createCallSite(TextScore.class, "elements");
+  private final static MethodHandle _FH_elements = _FC_elements.dynamicInvoker();
+  private final static CallSite _FC_documentURI = TypeSystemImpl.createCallSite(TextScore.class, "documentURI");
+  private final static MethodHandle _FH_documentURI = _FC_documentURI.dynamicInvoker();
+  private final static CallSite _FC_documentName = TypeSystemImpl.createCallSite(TextScore.class, "documentName");
+  private final static MethodHandle _FH_documentName = _FC_documentName.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TextScore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TextScore(int addr, TOP_Type type) {
-    super(addr, type);
+  public TextScore(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +90,7 @@ public class TextScore extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,41 +110,39 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getElements() {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.score.TextScore");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<TextScoreEntry> getElements() { 
+    return (FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));
+  }
     
   /** setter for elements - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setElements(FSArray v) {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.score.TextScore");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setElements(FSArray<TextScoreEntry> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
+  }    
+    
     
   /** indexed getter for elements - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public TextScoreEntry getElements(int i) {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.score.TextScore");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements), i);
-    return (TextScoreEntry)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements), i)));}
+     return (TextScoreEntry)(((FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));
+  } 
 
   /** indexed setter for elements - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setElements(int i, TextScoreEntry v) { 
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "org.texttechnologylab.annotation.score.TextScore");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TextScore_Type)jcasType).casFeatCode_elements), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setElements(int i, TextScoreEntry v) {
+    ((FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -116,19 +152,18 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentURI() {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_documentURI == null)
-      jcasType.jcas.throwFeatMissing("documentURI", "org.texttechnologylab.annotation.score.TextScore");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScore_Type)jcasType).casFeatCode_documentURI);}
+  public String getDocumentURI() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_documentURI));
+  }
     
   /** setter for documentURI - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDocumentURI(String v) {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_documentURI == null)
-      jcasType.jcas.throwFeatMissing("documentURI", "org.texttechnologylab.annotation.score.TextScore");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextScore_Type)jcasType).casFeatCode_documentURI, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_documentURI), v);
+  }    
+    
    
     
   //*--------------*
@@ -138,19 +173,18 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentName() {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_documentName == null)
-      jcasType.jcas.throwFeatMissing("documentName", "org.texttechnologylab.annotation.score.TextScore");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScore_Type)jcasType).casFeatCode_documentName);}
+  public String getDocumentName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));
+  }
     
   /** setter for documentName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDocumentName(String v) {
-    if (TextScore_Type.featOkTst && ((TextScore_Type)jcasType).casFeat_documentName == null)
-      jcasType.jcas.throwFeatMissing("documentName", "org.texttechnologylab.annotation.score.TextScore");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TextScore_Type)jcasType).casFeatCode_documentName, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_documentName), v);
+  }    
+    
   }
 
     

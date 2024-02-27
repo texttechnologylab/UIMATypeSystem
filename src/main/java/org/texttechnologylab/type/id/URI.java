@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Jan 31 15:16:49 CET 2024 */
-package org.texttechnologylab.type.id;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.type.id;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Jan 31 15:16:49 CET 2024
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyUrl.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class URI extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.type.id.URI";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,53 @@ public class URI extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_scheme = "scheme";
+  public final static String _FeatName_user = "user";
+  public final static String _FeatName_password = "password";
+  public final static String _FeatName_host = "host";
+  public final static String _FeatName_port = "port";
+  public final static String _FeatName_path = "path";
+  public final static String _FeatName_query = "query";
+  public final static String _FeatName_fragment = "fragment";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_scheme = TypeSystemImpl.createCallSite(URI.class, "scheme");
+  private final static MethodHandle _FH_scheme = _FC_scheme.dynamicInvoker();
+  private final static CallSite _FC_user = TypeSystemImpl.createCallSite(URI.class, "user");
+  private final static MethodHandle _FH_user = _FC_user.dynamicInvoker();
+  private final static CallSite _FC_password = TypeSystemImpl.createCallSite(URI.class, "password");
+  private final static MethodHandle _FH_password = _FC_password.dynamicInvoker();
+  private final static CallSite _FC_host = TypeSystemImpl.createCallSite(URI.class, "host");
+  private final static MethodHandle _FH_host = _FC_host.dynamicInvoker();
+  private final static CallSite _FC_port = TypeSystemImpl.createCallSite(URI.class, "port");
+  private final static MethodHandle _FH_port = _FC_port.dynamicInvoker();
+  private final static CallSite _FC_path = TypeSystemImpl.createCallSite(URI.class, "path");
+  private final static MethodHandle _FH_path = _FC_path.dynamicInvoker();
+  private final static CallSite _FC_query = TypeSystemImpl.createCallSite(URI.class, "query");
+  private final static MethodHandle _FH_query = _FC_query.dynamicInvoker();
+  private final static CallSite _FC_fragment = TypeSystemImpl.createCallSite(URI.class, "fragment");
+  private final static MethodHandle _FH_fragment = _FC_fragment.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected URI() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public URI(int addr, TOP_Type type) {
-    super(addr, type);
+  public URI(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +104,7 @@ public class URI extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +136,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getScheme() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_scheme == null)
-      jcasType.jcas.throwFeatMissing("scheme", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_scheme);}
+  public String getScheme() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_scheme));
+  }
     
   /** setter for scheme - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScheme(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_scheme == null)
-      jcasType.jcas.throwFeatMissing("scheme", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_scheme, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_scheme), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +157,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_user);}
+  public String getUser() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
+  }
     
   /** setter for user - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUser(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_user == null)
-      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_user, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +178,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPassword() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_password == null)
-      jcasType.jcas.throwFeatMissing("password", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_password);}
+  public String getPassword() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_password));
+  }
     
   /** setter for password - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPassword(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_password == null)
-      jcasType.jcas.throwFeatMissing("password", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_password, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_password), v);
+  }    
+    
    
     
   //*--------------*
@@ -149,19 +199,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getHost() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_host == null)
-      jcasType.jcas.throwFeatMissing("host", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_host);}
+  public String getHost() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_host));
+  }
     
   /** setter for host - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHost(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_host == null)
-      jcasType.jcas.throwFeatMissing("host", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_host, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_host), v);
+  }    
+    
    
     
   //*--------------*
@@ -171,19 +220,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPort() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_port == null)
-      jcasType.jcas.throwFeatMissing("port", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((URI_Type)jcasType).casFeatCode_port);}
+  public int getPort() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_port));
+  }
     
   /** setter for port - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPort(int v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_port == null)
-      jcasType.jcas.throwFeatMissing("port", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setIntValue(addr, ((URI_Type)jcasType).casFeatCode_port, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_port), v);
+  }    
+    
    
     
   //*--------------*
@@ -193,19 +241,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPath() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_path == null)
-      jcasType.jcas.throwFeatMissing("path", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_path);}
+  public String getPath() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_path));
+  }
     
   /** setter for path - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPath(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_path == null)
-      jcasType.jcas.throwFeatMissing("path", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_path, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_path), v);
+  }    
+    
    
     
   //*--------------*
@@ -215,19 +262,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getQuery() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_query == null)
-      jcasType.jcas.throwFeatMissing("query", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_query);}
+  public String getQuery() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_query));
+  }
     
   /** setter for query - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setQuery(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_query == null)
-      jcasType.jcas.throwFeatMissing("query", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_query, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_query), v);
+  }    
+    
    
     
   //*--------------*
@@ -237,19 +283,18 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFragment() {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_fragment == null)
-      jcasType.jcas.throwFeatMissing("fragment", "org.texttechnologylab.type.id.URI");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((URI_Type)jcasType).casFeatCode_fragment);}
+  public String getFragment() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_fragment));
+  }
     
   /** setter for fragment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFragment(String v) {
-    if (URI_Type.featOkTst && ((URI_Type)jcasType).casFeat_fragment == null)
-      jcasType.jcas.throwFeatMissing("fragment", "org.texttechnologylab.type.id.URI");
-    jcasType.ll_cas.ll_setStringValue(addr, ((URI_Type)jcasType).casFeatCode_fragment, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_fragment), v);
+  }    
+    
   }
 
     

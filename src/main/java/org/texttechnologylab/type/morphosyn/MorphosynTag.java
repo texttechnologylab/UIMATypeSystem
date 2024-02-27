@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Feb 26 14:11:21 CET 2024 */
-package org.texttechnologylab.type.morphosyn;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.type.morphosyn;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Mon Feb 26 14:11:21 CET 2024
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TexttechnologyMorphosynTag.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MorphosynTag extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.type.morphosyn.MorphosynTag";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class MorphosynTag extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_value = "value";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(MorphosynTag.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected MorphosynTag() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public MorphosynTag(int addr, TOP_Type type) {
-    super(addr, type);
+  public MorphosynTag(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class MorphosynTag extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +115,18 @@ public class MorphosynTag extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (MorphosynTag_Type.featOkTst && ((MorphosynTag_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.type.morphosyn.MorphosynTag");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((MorphosynTag_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (MorphosynTag_Type.featOkTst && ((MorphosynTag_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.type.morphosyn.MorphosynTag");
-    jcasType.ll_cas.ll_setStringValue(addr, ((MorphosynTag_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
   }
 
     

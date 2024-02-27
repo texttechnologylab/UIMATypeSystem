@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Graph extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Graph";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class Graph extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_nodes = "nodes";
+  public final static String _FeatName_edges = "edges";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_nodes = TypeSystemImpl.createCallSite(Graph.class, "nodes");
+  private final static MethodHandle _FH_nodes = _FC_nodes.dynamicInvoker();
+  private final static CallSite _FC_edges = TypeSystemImpl.createCallSite(Graph.class, "edges");
+  private final static MethodHandle _FH_edges = _FC_edges.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Graph() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Graph(int addr, TOP_Type type) {
-    super(addr, type);
+  public Graph(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class Graph extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,41 +106,39 @@ public class Graph extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getNodes() {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.Graph");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<Node> getNodes() { 
+    return (FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));
+  }
     
   /** setter for nodes - sets Set of Nodes 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setNodes(FSArray v) {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setNodes(FSArray<Node> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nodes), v);
+  }    
+    
     
   /** indexed getter for nodes - gets an indexed value - Set of Nodes
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public Node getNodes(int i) {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes), i);
-    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes), i)));}
+     return (Node)(((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));
+  } 
 
   /** indexed setter for nodes - sets an indexed value - Set of Nodes
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setNodes(int i, Node v) { 
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_nodes), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setNodes(int i, Node v) {
+    ((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -115,41 +148,39 @@ public class Graph extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getEdges() {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.Graph");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<Edge> getEdges() { 
+    return (FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));
+  }
     
   /** setter for edges - sets set of edges 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setEdges(FSArray v) {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setEdges(FSArray<Edge> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_edges), v);
+  }    
+    
     
   /** indexed getter for edges - gets an indexed value - set of edges
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public Edge getEdges(int i) {
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges), i);
-    return (Edge)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges), i)));}
+     return (Edge)(((FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));
+  } 
 
   /** indexed setter for edges - sets an indexed value - set of edges
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setEdges(int i, Edge v) { 
-    if (Graph_Type.featOkTst && ((Graph_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.Graph");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Graph_Type)jcasType).casFeatCode_edges), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setEdges(int i, Edge v) {
+    ((FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
+  }  
   }
 
     

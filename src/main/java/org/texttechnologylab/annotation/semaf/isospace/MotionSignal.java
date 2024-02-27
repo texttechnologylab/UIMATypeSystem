@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MotionSignal extends Signal {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.MotionSignal";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class MotionSignal extends Signal {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_motion_signal_type = "motion_signal_type";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_motion_signal_type = TypeSystemImpl.createCallSite(MotionSignal.class, "motion_signal_type");
+  private final static MethodHandle _FH_motion_signal_type = _FC_motion_signal_type.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected MotionSignal() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public MotionSignal(int addr, TOP_Type type) {
-    super(addr, type);
+  public MotionSignal(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class MotionSignal extends Signal {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +115,18 @@ public class MotionSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_signal_type() {
-    if (MotionSignal_Type.featOkTst && ((MotionSignal_Type)jcasType).casFeat_motion_signal_type == null)
-      jcasType.jcas.throwFeatMissing("motion_signal_type", "org.texttechnologylab.annotation.semaf.isospace.MotionSignal");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((MotionSignal_Type)jcasType).casFeatCode_motion_signal_type);}
+  public String getMotion_signal_type() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_signal_type));
+  }
     
   /** setter for motion_signal_type - sets ( MANNER | PATH ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMotion_signal_type(String v) {
-    if (MotionSignal_Type.featOkTst && ((MotionSignal_Type)jcasType).casFeat_motion_signal_type == null)
-      jcasType.jcas.throwFeatMissing("motion_signal_type", "org.texttechnologylab.annotation.semaf.isospace.MotionSignal");
-    jcasType.ll_cas.ll_setStringValue(addr, ((MotionSignal_Type)jcasType).casFeatCode_motion_signal_type, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_motion_signal_type), v);
+  }    
+    
   }
 
     

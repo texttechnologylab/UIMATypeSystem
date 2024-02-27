@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isotimeml;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isotimeml;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TLink extends Link {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isotimeml.TLink";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class TLink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_syntax = "syntax";
+  public final static String _FeatName_origin = "origin";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_syntax = TypeSystemImpl.createCallSite(TLink.class, "syntax");
+  private final static MethodHandle _FH_syntax = _FC_syntax.dynamicInvoker();
+  private final static CallSite _FC_origin = TypeSystemImpl.createCallSite(TLink.class, "origin");
+  private final static MethodHandle _FH_origin = _FC_origin.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TLink(int addr, TOP_Type type) {
-    super(addr, type);
+  public TLink(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class TLink extends Link {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +106,18 @@ public class TLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getSyntax() {
-    if (TLink_Type.featOkTst && ((TLink_Type)jcasType).casFeat_syntax == null)
-      jcasType.jcas.throwFeatMissing("syntax", "org.texttechnologylab.annotation.semaf.isotimeml.TLink");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TLink_Type)jcasType).casFeatCode_syntax);}
+  public String getSyntax() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_syntax));
+  }
     
   /** setter for syntax - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSyntax(String v) {
-    if (TLink_Type.featOkTst && ((TLink_Type)jcasType).casFeat_syntax == null)
-      jcasType.jcas.throwFeatMissing("syntax", "org.texttechnologylab.annotation.semaf.isotimeml.TLink");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TLink_Type)jcasType).casFeatCode_syntax, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_syntax), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +127,18 @@ public class TLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getOrigin() {
-    if (TLink_Type.featOkTst && ((TLink_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.semaf.isotimeml.TLink");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TLink_Type)jcasType).casFeatCode_origin);}
+  public String getOrigin() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_origin));
+  }
     
   /** setter for origin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOrigin(String v) {
-    if (TLink_Type.featOkTst && ((TLink_Type)jcasType).casFeat_origin == null)
-      jcasType.jcas.throwFeatMissing("origin", "org.texttechnologylab.annotation.semaf.isotimeml.TLink");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TLink_Type)jcasType).casFeatCode_origin, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_origin), v);
+  }    
+    
   }
 
     

@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Comment extends AnnotationNode {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Comment";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class Comment extends AnnotationNode {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_reference = "reference";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(Comment.class, "reference");
+  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Comment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Comment(int addr, TOP_Type type) {
-    super(addr, type);
+  public Comment(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class Comment extends AnnotationNode {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +103,18 @@ public class Comment extends AnnotationNode {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationBase getReference() {
-    if (Comment_Type.featOkTst && ((Comment_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.Comment");
-    return (AnnotationBase)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Comment_Type)jcasType).casFeatCode_reference)));}
+  public AnnotationBase getReference() { 
+    return (AnnotationBase)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+  }
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(AnnotationBase v) {
-    if (Comment_Type.featOkTst && ((Comment_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.Comment");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Comment_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
+  }    
+    
   }
 
     

@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationSet extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.RelationSet";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,32 @@ public class RelationSet extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_relations = "relations";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_relations = TypeSystemImpl.createCallSite(RelationSet.class, "relations");
+  private final static MethodHandle _FH_relations = _FC_relations.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected RelationSet() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public RelationSet(int addr, TOP_Type type) {
-    super(addr, type);
+  public RelationSet(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +84,7 @@ public class RelationSet extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,41 +104,39 @@ public class RelationSet extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getRelations() {
-    if (RelationSet_Type.featOkTst && ((RelationSet_Type)jcasType).casFeat_relations == null)
-      jcasType.jcas.throwFeatMissing("relations", "org.texttechnologylab.annotation.type.RelationSet");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<RelationDescription> getRelations() { 
+    return (FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)));
+  }
     
   /** setter for relations - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setRelations(FSArray v) {
-    if (RelationSet_Type.featOkTst && ((RelationSet_Type)jcasType).casFeat_relations == null)
-      jcasType.jcas.throwFeatMissing("relations", "org.texttechnologylab.annotation.type.RelationSet");
-    jcasType.ll_cas.ll_setRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setRelations(FSArray<RelationDescription> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_relations), v);
+  }    
+    
     
   /** indexed getter for relations - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public RelationDescription getRelations(int i) {
-    if (RelationSet_Type.featOkTst && ((RelationSet_Type)jcasType).casFeat_relations == null)
-      jcasType.jcas.throwFeatMissing("relations", "org.texttechnologylab.annotation.type.RelationSet");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations), i);
-    return (RelationDescription)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations), i)));}
+     return (RelationDescription)(((FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).get(i));
+  } 
 
   /** indexed setter for relations - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setRelations(int i, RelationDescription v) { 
-    if (RelationSet_Type.featOkTst && ((RelationSet_Type)jcasType).casFeat_relations == null)
-      jcasType.jcas.throwFeatMissing("relations", "org.texttechnologylab.annotation.type.RelationSet");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RelationSet_Type)jcasType).casFeatCode_relations), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setRelations(int i, RelationDescription v) {
+    ((FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).set(i, v);
+  }  
   }
 
     

@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Tue Sep 19 23:19:40 CEST 2023 */
-package org.texttechnologylab.annotation;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense;
 
 
 /** 
- * Updated by JCasGen Tue Sep 19 23:20:11 CEST 2023
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SemanticSource extends WordSense {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.SemanticSource";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class SemanticSource extends WordSense {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_source = "source";
+  public final static String _FeatName_searchResult = "searchResult";
+  public final static String _FeatName_comment = "comment";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_source = TypeSystemImpl.createCallSite(SemanticSource.class, "source");
+  private final static MethodHandle _FH_source = _FC_source.dynamicInvoker();
+  private final static CallSite _FC_searchResult = TypeSystemImpl.createCallSite(SemanticSource.class, "searchResult");
+  private final static MethodHandle _FH_searchResult = _FC_searchResult.dynamicInvoker();
+  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(SemanticSource.class, "comment");
+  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SemanticSource() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SemanticSource(int addr, TOP_Type type) {
-    super(addr, type);
+  public SemanticSource(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class SemanticSource extends WordSense {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +121,18 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_source == null)
-      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.SemanticSource");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_source);}
+  public String getSource() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_source));
+  }
     
   /** setter for source - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(String v) {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_source == null)
-      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.SemanticSource");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_source, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_source), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +142,18 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getSearchResult() {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_searchResult == null)
-      jcasType.jcas.throwFeatMissing("searchResult", "org.texttechnologylab.annotation.SemanticSource");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_searchResult);}
+  public String getSearchResult() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_searchResult));
+  }
     
   /** setter for searchResult - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSearchResult(String v) {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_searchResult == null)
-      jcasType.jcas.throwFeatMissing("searchResult", "org.texttechnologylab.annotation.SemanticSource");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_searchResult, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_searchResult), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +163,18 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.SemanticSource");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_comment);}
+  public String getComment() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
+  }
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    if (SemanticSource_Type.featOkTst && ((SemanticSource_Type)jcasType).casFeat_comment == null)
-      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.SemanticSource");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SemanticSource_Type)jcasType).casFeatCode_comment, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
+  }    
+    
   }
 
     

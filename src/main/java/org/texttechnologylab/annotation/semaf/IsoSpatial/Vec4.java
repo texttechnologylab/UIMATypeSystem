@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.IsoSpatial;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.IsoSpatial;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Vec4 extends Vec3 {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,32 @@ public class Vec4 extends Vec3 {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_w = "w";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_w = TypeSystemImpl.createCallSite(Vec4.class, "w");
+  private final static MethodHandle _FH_w = _FC_w.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Vec4() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Vec4(int addr, TOP_Type type) {
-    super(addr, type);
+  public Vec4(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +82,7 @@ public class Vec4 extends Vec3 {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -70,19 +102,18 @@ public class Vec4 extends Vec3 {
    * @generated
    * @return value of the feature 
    */
-  public double getW() {
-    if (Vec4_Type.featOkTst && ((Vec4_Type)jcasType).casFeat_w == null)
-      jcasType.jcas.throwFeatMissing("w", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Vec4_Type)jcasType).casFeatCode_w);}
+  public double getW() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_w));
+  }
     
   /** setter for w - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setW(double v) {
-    if (Vec4_Type.featOkTst && ((Vec4_Type)jcasType).casFeat_w == null)
-      jcasType.jcas.throwFeatMissing("w", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Vec4_Type)jcasType).casFeatCode_w, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_w), v);
+  }    
+    
   }
 
     

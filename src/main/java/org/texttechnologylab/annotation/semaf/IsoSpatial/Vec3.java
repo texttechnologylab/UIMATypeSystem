@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.IsoSpatial;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.IsoSpatial;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Vec3 extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class Vec3 extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_x = "x";
+  public final static String _FeatName_y = "y";
+  public final static String _FeatName_z = "z";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_x = TypeSystemImpl.createCallSite(Vec3.class, "x");
+  private final static MethodHandle _FH_x = _FC_x.dynamicInvoker();
+  private final static CallSite _FC_y = TypeSystemImpl.createCallSite(Vec3.class, "y");
+  private final static MethodHandle _FH_y = _FC_y.dynamicInvoker();
+  private final static CallSite _FC_z = TypeSystemImpl.createCallSite(Vec3.class, "z");
+  private final static MethodHandle _FH_z = _FC_z.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Vec3() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Vec3(int addr, TOP_Type type) {
-    super(addr, type);
+  public Vec3(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class Vec3 extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +109,18 @@ public class Vec3 extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getX() {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_x);}
+  public double getX() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_x));
+  }
     
   /** setter for x - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setX(double v) {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_x, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_x), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +130,18 @@ public class Vec3 extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getY() {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_y);}
+  public double getY() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_y));
+  }
     
   /** setter for y - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setY(double v) {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_y, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_y), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,19 +151,18 @@ public class Vec3 extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getZ() {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_z == null)
-      jcasType.jcas.throwFeatMissing("z", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_z);}
+  public double getZ() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_z));
+  }
     
   /** setter for z - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setZ(double v) {
-    if (Vec3_Type.featOkTst && ((Vec3_Type)jcasType).casFeat_z == null)
-      jcasType.jcas.throwFeatMissing("z", "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Vec3_Type)jcasType).casFeatCode_z, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_z), v);
+  }    
+    
   }
 
     

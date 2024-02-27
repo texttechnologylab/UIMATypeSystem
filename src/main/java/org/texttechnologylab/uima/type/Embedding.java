@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Thu Dec 21 13:46:41 CET 2023 */
-package org.texttechnologylab.uima.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.uima.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.ModelAnnotation;
 import org.apache.uima.jcas.cas.FloatArray;
 
 
 /** 
- * Updated by JCasGen Thu Dec 21 13:46:41 CET 2023
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/src/main/resources/desc/type/TypeSystemModelAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Embedding extends ModelAnnotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.uima.type.Embedding";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,32 @@ public class Embedding extends ModelAnnotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_embedding = "embedding";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_embedding = TypeSystemImpl.createCallSite(Embedding.class, "embedding");
+  private final static MethodHandle _FH_embedding = _FC_embedding.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Embedding() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Embedding(int addr, TOP_Type type) {
-    super(addr, type);
+  public Embedding(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +84,7 @@ public class Embedding extends ModelAnnotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -84,19 +116,18 @@ public class Embedding extends ModelAnnotation {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getEmbedding() {
-    if (Embedding_Type.featOkTst && ((Embedding_Type)jcasType).casFeat_embedding == null)
-      jcasType.jcas.throwFeatMissing("embedding", "org.texttechnologylab.uima.type.Embedding");
-    return (FloatArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding)));}
+  public FloatArray getEmbedding() { 
+    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)));
+  }
     
   /** setter for embedding - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEmbedding(FloatArray v) {
-    if (Embedding_Type.featOkTst && ((Embedding_Type)jcasType).casFeat_embedding == null)
-      jcasType.jcas.throwFeatMissing("embedding", "org.texttechnologylab.uima.type.Embedding");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_embedding), v);
+  }    
+    
     
   /** indexed getter for embedding - gets an indexed value - 
    * @generated
@@ -104,21 +135,17 @@ public class Embedding extends ModelAnnotation {
    * @return value of the element at index i 
    */
   public float getEmbedding(int i) {
-    if (Embedding_Type.featOkTst && ((Embedding_Type)jcasType).casFeat_embedding == null)
-      jcasType.jcas.throwFeatMissing("embedding", "org.texttechnologylab.uima.type.Embedding");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding), i);
-    return jcasType.ll_cas.ll_getFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding), i);}
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).get(i);
+  } 
 
   /** indexed setter for embedding - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setEmbedding(int i, float v) { 
-    if (Embedding_Type.featOkTst && ((Embedding_Type)jcasType).casFeat_embedding == null)
-      jcasType.jcas.throwFeatMissing("embedding", "org.texttechnologylab.uima.type.Embedding");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding), i);
-    jcasType.ll_cas.ll_setFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Embedding_Type)jcasType).casFeatCode_embedding), i, v);}
+  public void setEmbedding(int i, float v) {
+    ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).set(i, v);
+  }  
   }
 
     

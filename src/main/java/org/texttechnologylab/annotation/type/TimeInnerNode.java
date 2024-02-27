@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:03 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyTimeAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TimeInnerNode extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.TimeInnerNode";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,65 @@ public class TimeInnerNode extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_xPos = "xPos";
+  public final static String _FeatName_depth = "depth";
+  public final static String _FeatName_value = "value";
+  public final static String _FeatName_subvalue = "subvalue";
+  public final static String _FeatName_begin = "begin";
+  public final static String _FeatName_end = "end";
+  public final static String _FeatName_label = "label";
+  public final static String _FeatName_nodes = "nodes";
+  public final static String _FeatName_edges = "edges";
+  public final static String _FeatName_x = "x";
+  public final static String _FeatName_y = "y";
+  public final static String _FeatName_additionalvalue = "additionalvalue";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_xPos = TypeSystemImpl.createCallSite(TimeInnerNode.class, "xPos");
+  private final static MethodHandle _FH_xPos = _FC_xPos.dynamicInvoker();
+  private final static CallSite _FC_depth = TypeSystemImpl.createCallSite(TimeInnerNode.class, "depth");
+  private final static MethodHandle _FH_depth = _FC_depth.dynamicInvoker();
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TimeInnerNode.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+  private final static CallSite _FC_subvalue = TypeSystemImpl.createCallSite(TimeInnerNode.class, "subvalue");
+  private final static MethodHandle _FH_subvalue = _FC_subvalue.dynamicInvoker();
+  private final static CallSite _FC_begin = TypeSystemImpl.createCallSite(TimeInnerNode.class, "begin");
+  private final static MethodHandle _FH_begin = _FC_begin.dynamicInvoker();
+  private final static CallSite _FC_end = TypeSystemImpl.createCallSite(TimeInnerNode.class, "end");
+  private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
+  private final static CallSite _FC_label = TypeSystemImpl.createCallSite(TimeInnerNode.class, "label");
+  private final static MethodHandle _FH_label = _FC_label.dynamicInvoker();
+  private final static CallSite _FC_nodes = TypeSystemImpl.createCallSite(TimeInnerNode.class, "nodes");
+  private final static MethodHandle _FH_nodes = _FC_nodes.dynamicInvoker();
+  private final static CallSite _FC_edges = TypeSystemImpl.createCallSite(TimeInnerNode.class, "edges");
+  private final static MethodHandle _FH_edges = _FC_edges.dynamicInvoker();
+  private final static CallSite _FC_x = TypeSystemImpl.createCallSite(TimeInnerNode.class, "x");
+  private final static MethodHandle _FH_x = _FC_x.dynamicInvoker();
+  private final static CallSite _FC_y = TypeSystemImpl.createCallSite(TimeInnerNode.class, "y");
+  private final static MethodHandle _FH_y = _FC_y.dynamicInvoker();
+  private final static CallSite _FC_additionalvalue = TypeSystemImpl.createCallSite(TimeInnerNode.class, "additionalvalue");
+  private final static MethodHandle _FH_additionalvalue = _FC_additionalvalue.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TimeInnerNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TimeInnerNode(int addr, TOP_Type type) {
-    super(addr, type);
+  public TimeInnerNode(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +117,7 @@ public class TimeInnerNode extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +137,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getXPos() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_xPos == null)
-      jcasType.jcas.throwFeatMissing("xPos", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_xPos);}
+  public int getXPos() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_xPos));
+  }
     
   /** setter for xPos - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setXPos(int v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_xPos == null)
-      jcasType.jcas.throwFeatMissing("xPos", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_xPos, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_xPos), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +158,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getDepth() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_depth == null)
-      jcasType.jcas.throwFeatMissing("depth", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_depth);}
+  public int getDepth() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_depth));
+  }
     
   /** setter for depth - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDepth(int v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_depth == null)
-      jcasType.jcas.throwFeatMissing("depth", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_depth, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_depth), v);
+  }    
+    
    
     
   //*--------------*
@@ -116,19 +179,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
    
     
   //*--------------*
@@ -138,19 +200,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_subvalue);}
+  public String getSubvalue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
+  }
     
   /** setter for subvalue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubvalue(String v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_subvalue == null)
-      jcasType.jcas.throwFeatMissing("subvalue", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_subvalue, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_subvalue), v);
+  }    
+    
    
     
   //*--------------*
@@ -160,19 +221,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getBegin() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_begin);}
+  public int getBegin() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_begin));
+  }
     
   /** setter for begin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBegin(int v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_begin, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_begin), v);
+  }    
+    
    
     
   //*--------------*
@@ -182,19 +242,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_end);}
+  public String getEnd() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
+  }
     
   /** setter for end - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd(String v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_end, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_end), v);
+  }    
+    
    
     
   //*--------------*
@@ -204,19 +263,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_label == null)
-      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_label);}
+  public String getLabel() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_label));
+  }
     
   /** setter for label - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_label == null)
-      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_label, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
+  }    
+    
    
     
   //*--------------*
@@ -226,41 +284,39 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getNodes() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<TOP> getNodes() { 
+    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));
+  }
     
   /** setter for nodes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setNodes(FSArray v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setNodes(FSArray<TOP> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nodes), v);
+  }    
+    
     
   /** indexed getter for nodes - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public TOP getNodes(int i) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes), i);
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes), i)));}
+     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));
+  } 
 
   /** indexed setter for nodes - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setNodes(int i, TOP v) { 
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_nodes == null)
-      jcasType.jcas.throwFeatMissing("nodes", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_nodes), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setNodes(int i, TOP v) {
+    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -270,41 +326,39 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getEdges() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges)));}
+  @SuppressWarnings("unchecked")
+  public FSArray<TOP> getEdges() { 
+    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));
+  }
     
   /** setter for edges - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setEdges(FSArray v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setEdges(FSArray<TOP> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_edges), v);
+  }    
+    
     
   /** indexed getter for edges - gets an indexed value - 
    * @generated
    * @param i index in the array to get
    * @return value of the element at index i 
    */
+  @SuppressWarnings("unchecked")
   public TOP getEdges(int i) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges), i);
-    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges), i)));}
+     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));
+  } 
 
   /** indexed setter for edges - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setEdges(int i, TOP v) { 
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_edges == null)
-      jcasType.jcas.throwFeatMissing("edges", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_edges), i, jcasType.ll_cas.ll_getFSRef(v));}
+  @SuppressWarnings("unchecked")
+    public void setEdges(int i, TOP v) {
+    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
+  }  
    
     
   //*--------------*
@@ -314,19 +368,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getX() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_x);}
+  public int getX() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_x));
+  }
     
   /** setter for x - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setX(int v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_x, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_x), v);
+  }    
+    
    
     
   //*--------------*
@@ -336,19 +389,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getY() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_y);}
+  public int getY() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_y));
+  }
     
   /** setter for y - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setY(int v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setIntValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_y, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_y), v);
+  }    
+    
    
     
   //*--------------*
@@ -358,19 +410,18 @@ public class TimeInnerNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getAdditionalvalue() {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_additionalvalue == null)
-      jcasType.jcas.throwFeatMissing("additionalvalue", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_additionalvalue);}
+  public String getAdditionalvalue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_additionalvalue));
+  }
     
   /** setter for additionalvalue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAdditionalvalue(String v) {
-    if (TimeInnerNode_Type.featOkTst && ((TimeInnerNode_Type)jcasType).casFeat_additionalvalue == null)
-      jcasType.jcas.throwFeatMissing("additionalvalue", "org.texttechnologylab.annotation.type.TimeInnerNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((TimeInnerNode_Type)jcasType).casFeatCode_additionalvalue, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_additionalvalue), v);
+  }    
+    
   }
 
     

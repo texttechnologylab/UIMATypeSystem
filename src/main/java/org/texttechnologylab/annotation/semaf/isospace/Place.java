@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:33:08 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Tue Oct 12 19:32:08 CEST 2021
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/IsoBaseTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Place extends Location {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Place";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,44 @@ public class Place extends Location {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_country = "country";
+  public final static String _FeatName_state = "state";
+  public final static String _FeatName_ctv = "ctv";
+  public final static String _FeatName_continent = "continent";
+  public final static String _FeatName_county = "county";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_country = TypeSystemImpl.createCallSite(Place.class, "country");
+  private final static MethodHandle _FH_country = _FC_country.dynamicInvoker();
+  private final static CallSite _FC_state = TypeSystemImpl.createCallSite(Place.class, "state");
+  private final static MethodHandle _FH_state = _FC_state.dynamicInvoker();
+  private final static CallSite _FC_ctv = TypeSystemImpl.createCallSite(Place.class, "ctv");
+  private final static MethodHandle _FH_ctv = _FC_ctv.dynamicInvoker();
+  private final static CallSite _FC_continent = TypeSystemImpl.createCallSite(Place.class, "continent");
+  private final static MethodHandle _FH_continent = _FC_continent.dynamicInvoker();
+  private final static CallSite _FC_county = TypeSystemImpl.createCallSite(Place.class, "county");
+  private final static MethodHandle _FH_county = _FC_county.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Place() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Place(int addr, TOP_Type type) {
-    super(addr, type);
+  public Place(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +94,7 @@ public class Place extends Location {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -82,19 +126,18 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCountry() {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_country == null)
-      jcasType.jcas.throwFeatMissing("country", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Place_Type)jcasType).casFeatCode_country);}
+  public String getCountry() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_country));
+  }
     
   /** setter for country - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCountry(String v) {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_country == null)
-      jcasType.jcas.throwFeatMissing("country", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Place_Type)jcasType).casFeatCode_country, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_country), v);
+  }    
+    
    
     
   //*--------------*
@@ -104,19 +147,18 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getState() {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_state == null)
-      jcasType.jcas.throwFeatMissing("state", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Place_Type)jcasType).casFeatCode_state);}
+  public String getState() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_state));
+  }
     
   /** setter for state - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setState(String v) {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_state == null)
-      jcasType.jcas.throwFeatMissing("state", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Place_Type)jcasType).casFeatCode_state, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_state), v);
+  }    
+    
    
     
   //*--------------*
@@ -126,19 +168,18 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCtv() {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_ctv == null)
-      jcasType.jcas.throwFeatMissing("ctv", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Place_Type)jcasType).casFeatCode_ctv);}
+  public String getCtv() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_ctv));
+  }
     
   /** setter for ctv - sets ( CITY | TOWN | VILLAGE ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCtv(String v) {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_ctv == null)
-      jcasType.jcas.throwFeatMissing("ctv", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Place_Type)jcasType).casFeatCode_ctv, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_ctv), v);
+  }    
+    
    
     
   //*--------------*
@@ -148,19 +189,18 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getContinent() {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_continent == null)
-      jcasType.jcas.throwFeatMissing("continent", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Place_Type)jcasType).casFeatCode_continent);}
+  public String getContinent() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_continent));
+  }
     
   /** setter for continent - sets ( AF | AN | AI | AU | GO | LA | NA | PA | SA ) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setContinent(String v) {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_continent == null)
-      jcasType.jcas.throwFeatMissing("continent", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Place_Type)jcasType).casFeatCode_continent, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_continent), v);
+  }    
+    
    
     
   //*--------------*
@@ -170,19 +210,18 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCounty() {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_county == null)
-      jcasType.jcas.throwFeatMissing("county", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Place_Type)jcasType).casFeatCode_county);}
+  public String getCounty() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_county));
+  }
     
   /** setter for county - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCounty(String v) {
-    if (Place_Type.featOkTst && ((Place_Type)jcasType).casFeat_county == null)
-      jcasType.jcas.throwFeatMissing("county", "org.texttechnologylab.annotation.semaf.isospace.Place");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Place_Type)jcasType).casFeatCode_county, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_county), v);
+  }    
+    
   }
 
     

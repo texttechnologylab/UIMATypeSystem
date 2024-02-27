@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:09 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:09 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyPropAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropRootNode extends PropNode {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.PropRootNode";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class PropRootNode extends PropNode {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_arguments = "arguments";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_arguments = TypeSystemImpl.createCallSite(PropRootNode.class, "arguments");
+  private final static MethodHandle _FH_arguments = _FC_arguments.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected PropRootNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public PropRootNode(int addr, TOP_Type type) {
-    super(addr, type);
+  public PropRootNode(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class PropRootNode extends PropNode {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +103,18 @@ public class PropRootNode extends PropNode {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getArguments() {
-    if (PropRootNode_Type.featOkTst && ((PropRootNode_Type)jcasType).casFeat_arguments == null)
-      jcasType.jcas.throwFeatMissing("arguments", "org.texttechnologylab.annotation.type.PropRootNode");
-    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments)));}
+  public StringArray getArguments() { 
+    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)));
+  }
     
   /** setter for arguments - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setArguments(StringArray v) {
-    if (PropRootNode_Type.featOkTst && ((PropRootNode_Type)jcasType).casFeat_arguments == null)
-      jcasType.jcas.throwFeatMissing("arguments", "org.texttechnologylab.annotation.type.PropRootNode");
-    jcasType.ll_cas.ll_setRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_arguments), v);
+  }    
+    
     
   /** indexed getter for arguments - gets an indexed value - 
    * @generated
@@ -91,21 +122,17 @@ public class PropRootNode extends PropNode {
    * @return value of the element at index i 
    */
   public String getArguments(int i) {
-    if (PropRootNode_Type.featOkTst && ((PropRootNode_Type)jcasType).casFeat_arguments == null)
-      jcasType.jcas.throwFeatMissing("arguments", "org.texttechnologylab.annotation.type.PropRootNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments), i);
-    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments), i);}
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)))).get(i);
+  } 
 
   /** indexed setter for arguments - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setArguments(int i, String v) { 
-    if (PropRootNode_Type.featOkTst && ((PropRootNode_Type)jcasType).casFeat_arguments == null)
-      jcasType.jcas.throwFeatMissing("arguments", "org.texttechnologylab.annotation.type.PropRootNode");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments), i);
-    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((PropRootNode_Type)jcasType).casFeatCode_arguments), i, v);}
+  public void setArguments(int i, String v) {
+    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)))).set(i, v);
+  }  
   }
 
     

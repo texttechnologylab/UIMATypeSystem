@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:03 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Thu Feb 08 19:39:47 CET 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyQuickAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Weight extends Attribute {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Weight";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,32 @@ public class Weight extends Attribute {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_value = "value";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Weight.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Weight() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Weight(int addr, TOP_Type type) {
-    super(addr, type);
+  public Weight(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +82,7 @@ public class Weight extends Attribute {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -70,19 +102,18 @@ public class Weight extends Attribute {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() {
-    if (Weight_Type.featOkTst && ((Weight_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Weight");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Weight_Type)jcasType).casFeatCode_value);}
+  public double getValue() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(double v) {
-    if (Weight_Type.featOkTst && ((Weight_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.Weight");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Weight_Type)jcasType).casFeatCode_value, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
   }
 
     

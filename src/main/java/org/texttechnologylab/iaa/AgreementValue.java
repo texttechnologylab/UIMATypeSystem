@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Fri Feb 19 11:48:25 CET 2021 */
-package org.texttechnologylab.iaa;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.iaa;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Fri Feb 19 11:48:25 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AgreementValue extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.iaa.AgreementValue";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class AgreementValue extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_agreementValue = "agreementValue";
+  public final static String _FeatName_agreementLabel = "agreementLabel";
+  public final static String _FeatName_agreementUnits = "agreementUnits";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_agreementValue = TypeSystemImpl.createCallSite(AgreementValue.class, "agreementValue");
+  private final static MethodHandle _FH_agreementValue = _FC_agreementValue.dynamicInvoker();
+  private final static CallSite _FC_agreementLabel = TypeSystemImpl.createCallSite(AgreementValue.class, "agreementLabel");
+  private final static MethodHandle _FH_agreementLabel = _FC_agreementLabel.dynamicInvoker();
+  private final static CallSite _FC_agreementUnits = TypeSystemImpl.createCallSite(AgreementValue.class, "agreementUnits");
+  private final static MethodHandle _FH_agreementUnits = _FC_agreementUnits.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected AgreementValue() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public AgreementValue(int addr, TOP_Type type) {
-    super(addr, type);
+  public AgreementValue(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class AgreementValue extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +109,18 @@ public class AgreementValue extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getAgreementValue() {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementValue == null)
-      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.AgreementValue");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementValue);}
+  public double getAgreementValue() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_agreementValue));
+  }
     
   /** setter for agreementValue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementValue(double v) {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementValue == null)
-      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.AgreementValue");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementValue, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_agreementValue), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +130,18 @@ public class AgreementValue extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getAgreementLabel() {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementLabel == null)
-      jcasType.jcas.throwFeatMissing("agreementLabel", "org.texttechnologylab.iaa.AgreementValue");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementLabel);}
+  public String getAgreementLabel() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_agreementLabel));
+  }
     
   /** setter for agreementLabel - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementLabel(String v) {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementLabel == null)
-      jcasType.jcas.throwFeatMissing("agreementLabel", "org.texttechnologylab.iaa.AgreementValue");
-    jcasType.ll_cas.ll_setStringValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementLabel, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_agreementLabel), v);
+  }    
+    
    
     
   //*--------------*
@@ -115,19 +151,18 @@ public class AgreementValue extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getAgreementUnits() {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementUnits == null)
-      jcasType.jcas.throwFeatMissing("agreementUnits", "org.texttechnologylab.iaa.AgreementValue");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementUnits);}
+  public int getAgreementUnits() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_agreementUnits));
+  }
     
   /** setter for agreementUnits - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementUnits(int v) {
-    if (AgreementValue_Type.featOkTst && ((AgreementValue_Type)jcasType).casFeat_agreementUnits == null)
-      jcasType.jcas.throwFeatMissing("agreementUnits", "org.texttechnologylab.iaa.AgreementValue");
-    jcasType.ll_cas.ll_setIntValue(addr, ((AgreementValue_Type)jcasType).casFeatCode_agreementUnits, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_agreementUnits), v);
+  }    
+    
   }
 
     

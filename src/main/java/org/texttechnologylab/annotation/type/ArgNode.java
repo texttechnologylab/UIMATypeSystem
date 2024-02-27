@@ -1,19 +1,35 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:47 CET 2020 */
-package org.texttechnologylab.annotation.type;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:50 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyArgAnno.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgNode extends Node {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.ArgNode";
+  
   /** @generated
    * @ordered 
    */
@@ -30,17 +46,56 @@ public class ArgNode extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_graphId = "graphId";
+  public final static String _FeatName_nodeId = "nodeId";
+  public final static String _FeatName_text = "text";
+  public final static String _FeatName_x = "x";
+  public final static String _FeatName_y = "y";
+  public final static String _FeatName_reference = "reference";
+  public final static String _FeatName_begin = "begin";
+  public final static String _FeatName_end = "end";
+  public final static String _FeatName_color = "color";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_graphId = TypeSystemImpl.createCallSite(ArgNode.class, "graphId");
+  private final static MethodHandle _FH_graphId = _FC_graphId.dynamicInvoker();
+  private final static CallSite _FC_nodeId = TypeSystemImpl.createCallSite(ArgNode.class, "nodeId");
+  private final static MethodHandle _FH_nodeId = _FC_nodeId.dynamicInvoker();
+  private final static CallSite _FC_text = TypeSystemImpl.createCallSite(ArgNode.class, "text");
+  private final static MethodHandle _FH_text = _FC_text.dynamicInvoker();
+  private final static CallSite _FC_x = TypeSystemImpl.createCallSite(ArgNode.class, "x");
+  private final static MethodHandle _FH_x = _FC_x.dynamicInvoker();
+  private final static CallSite _FC_y = TypeSystemImpl.createCallSite(ArgNode.class, "y");
+  private final static MethodHandle _FH_y = _FC_y.dynamicInvoker();
+  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(ArgNode.class, "reference");
+  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
+  private final static CallSite _FC_begin = TypeSystemImpl.createCallSite(ArgNode.class, "begin");
+  private final static MethodHandle _FH_begin = _FC_begin.dynamicInvoker();
+  private final static CallSite _FC_end = TypeSystemImpl.createCallSite(ArgNode.class, "end");
+  private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
+  private final static CallSite _FC_color = TypeSystemImpl.createCallSite(ArgNode.class, "color");
+  private final static MethodHandle _FH_color = _FC_color.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected ArgNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public ArgNode(int addr, TOP_Type type) {
-    super(addr, type);
+  public ArgNode(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -51,6 +106,7 @@ public class ArgNode extends Node {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -70,19 +126,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getGraphId() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_graphId == null)
-      jcasType.jcas.throwFeatMissing("graphId", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_graphId);}
+  public String getGraphId() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_graphId));
+  }
     
   /** setter for graphId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGraphId(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_graphId == null)
-      jcasType.jcas.throwFeatMissing("graphId", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_graphId, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_graphId), v);
+  }    
+    
    
     
   //*--------------*
@@ -92,19 +147,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getNodeId() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_nodeId == null)
-      jcasType.jcas.throwFeatMissing("nodeId", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_nodeId);}
+  public String getNodeId() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_nodeId));
+  }
     
   /** setter for nodeId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNodeId(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_nodeId == null)
-      jcasType.jcas.throwFeatMissing("nodeId", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_nodeId, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_nodeId), v);
+  }    
+    
    
     
   //*--------------*
@@ -114,19 +168,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getText() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_text == null)
-      jcasType.jcas.throwFeatMissing("text", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_text);}
+  public String getText() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_text));
+  }
     
   /** setter for text - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setText(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_text == null)
-      jcasType.jcas.throwFeatMissing("text", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_text, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_text), v);
+  }    
+    
    
     
   //*--------------*
@@ -136,19 +189,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getX() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_x);}
+  public String getX() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_x));
+  }
     
   /** setter for x - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setX(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_x == null)
-      jcasType.jcas.throwFeatMissing("x", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_x, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_x), v);
+  }    
+    
    
     
   //*--------------*
@@ -158,19 +210,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getY() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_y);}
+  public String getY() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_y));
+  }
     
   /** setter for y - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setY(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_y == null)
-      jcasType.jcas.throwFeatMissing("y", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_y, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_y), v);
+  }    
+    
    
     
   //*--------------*
@@ -180,19 +231,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getReference() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_reference);}
+  public String getReference() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
+  }
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_reference == null)
-      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_reference, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_reference), v);
+  }    
+    
    
     
   //*--------------*
@@ -202,19 +252,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getBegin() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_begin);}
+  public String getBegin() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
+  }
     
   /** setter for begin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBegin(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_begin == null)
-      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_begin, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_begin), v);
+  }    
+    
    
     
   //*--------------*
@@ -224,19 +273,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_end);}
+  public String getEnd() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
+  }
     
   /** setter for end - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_end == null)
-      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_end, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_end), v);
+  }    
+    
    
     
   //*--------------*
@@ -246,19 +294,18 @@ public class ArgNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getColor() {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_color == null)
-      jcasType.jcas.throwFeatMissing("color", "org.texttechnologylab.annotation.type.ArgNode");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_color);}
+  public String getColor() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_color));
+  }
     
   /** setter for color - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setColor(String v) {
-    if (ArgNode_Type.featOkTst && ((ArgNode_Type)jcasType).casFeat_color == null)
-      jcasType.jcas.throwFeatMissing("color", "org.texttechnologylab.annotation.type.ArgNode");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ArgNode_Type)jcasType).casFeatCode_color, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_color), v);
+  }    
+    
   }
 
     

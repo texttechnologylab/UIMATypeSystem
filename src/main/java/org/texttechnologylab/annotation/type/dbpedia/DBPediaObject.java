@@ -1,21 +1,37 @@
 
 
-/* First created by JCasGen Fri Sep 09 12:40:27 CEST 2022 */
-package org.texttechnologylab.annotation.type.dbpedia;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.type.dbpedia;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Sep 09 12:40:27 CEST 2022
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TexttechnologyDBPedia.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DBPediaObject extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +48,41 @@ public class DBPediaObject extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_similarityScore = "similarityScore";
+  public final static String _FeatName_percentageOfSecondRank = "percentageOfSecondRank";
+  public final static String _FeatName_uri = "uri";
+  public final static String _FeatName_types = "types";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_similarityScore = TypeSystemImpl.createCallSite(DBPediaObject.class, "similarityScore");
+  private final static MethodHandle _FH_similarityScore = _FC_similarityScore.dynamicInvoker();
+  private final static CallSite _FC_percentageOfSecondRank = TypeSystemImpl.createCallSite(DBPediaObject.class, "percentageOfSecondRank");
+  private final static MethodHandle _FH_percentageOfSecondRank = _FC_percentageOfSecondRank.dynamicInvoker();
+  private final static CallSite _FC_uri = TypeSystemImpl.createCallSite(DBPediaObject.class, "uri");
+  private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
+  private final static CallSite _FC_types = TypeSystemImpl.createCallSite(DBPediaObject.class, "types");
+  private final static MethodHandle _FH_types = _FC_types.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected DBPediaObject() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public DBPediaObject(int addr, TOP_Type type) {
-    super(addr, type);
+  public DBPediaObject(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +93,7 @@ public class DBPediaObject extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -84,19 +125,18 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSimilarityScore() {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_similarityScore == null)
-      jcasType.jcas.throwFeatMissing("similarityScore", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_similarityScore);}
+  public double getSimilarityScore() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_similarityScore));
+  }
     
   /** setter for similarityScore - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSimilarityScore(double v) {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_similarityScore == null)
-      jcasType.jcas.throwFeatMissing("similarityScore", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_similarityScore, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_similarityScore), v);
+  }    
+    
    
     
   //*--------------*
@@ -106,19 +146,18 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getPercentageOfSecondRank() {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_percentageOfSecondRank == null)
-      jcasType.jcas.throwFeatMissing("percentageOfSecondRank", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_percentageOfSecondRank);}
+  public double getPercentageOfSecondRank() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_percentageOfSecondRank));
+  }
     
   /** setter for percentageOfSecondRank - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPercentageOfSecondRank(double v) {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_percentageOfSecondRank == null)
-      jcasType.jcas.throwFeatMissing("percentageOfSecondRank", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_percentageOfSecondRank, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_percentageOfSecondRank), v);
+  }    
+    
    
     
   //*--------------*
@@ -128,19 +167,18 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_uri);}
+  public String getUri() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
+  }
     
   /** setter for uri - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    jcasType.ll_cas.ll_setStringValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_uri, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
+  }    
+    
    
     
   //*--------------*
@@ -150,19 +188,19 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSList getTypes() {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_types == null)
-      jcasType.jcas.throwFeatMissing("types", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_types)));}
+  @SuppressWarnings("unchecked")
+  public FSList<DBPediaType> getTypes() { 
+    return (FSList<DBPediaType>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_types)));
+  }
     
   /** setter for types - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTypes(FSList v) {
-    if (DBPediaObject_Type.featOkTst && ((DBPediaObject_Type)jcasType).casFeat_types == null)
-      jcasType.jcas.throwFeatMissing("types", "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject");
-    jcasType.ll_cas.ll_setRefValue(addr, ((DBPediaObject_Type)jcasType).casFeatCode_types, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setTypes(FSList<DBPediaType> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_types), v);
+  }    
+    
   }
 
     

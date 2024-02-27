@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:06 CET 2020 */
-package org.texttechnologylab.annotation.Room;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.Room;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** A link in the time chain
- * Updated by JCasGen Wed Dec 02 18:39:06 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyRoom.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TimeChain extends AnnotationBase {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.Room.TimeChain";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class TimeChain extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_next = "next";
+  public final static String _FeatName_prev = "prev";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_next = TypeSystemImpl.createCallSite(TimeChain.class, "next");
+  private final static MethodHandle _FH_next = _FC_next.dynamicInvoker();
+  private final static CallSite _FC_prev = TypeSystemImpl.createCallSite(TimeChain.class, "prev");
+  private final static MethodHandle _FH_prev = _FC_prev.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected TimeChain() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public TimeChain(int addr, TOP_Type type) {
-    super(addr, type);
+  public TimeChain(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class TimeChain extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +106,18 @@ public class TimeChain extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TimeChain getNext() {
-    if (TimeChain_Type.featOkTst && ((TimeChain_Type)jcasType).casFeat_next == null)
-      jcasType.jcas.throwFeatMissing("next", "org.texttechnologylab.annotation.Room.TimeChain");
-    return (TimeChain)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TimeChain_Type)jcasType).casFeatCode_next)));}
+  public TimeChain getNext() { 
+    return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_next)));
+  }
     
   /** setter for next - sets Next chain element 
    * @generated
    * @param v value to set into the feature 
    */
   public void setNext(TimeChain v) {
-    if (TimeChain_Type.featOkTst && ((TimeChain_Type)jcasType).casFeat_next == null)
-      jcasType.jcas.throwFeatMissing("next", "org.texttechnologylab.annotation.Room.TimeChain");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TimeChain_Type)jcasType).casFeatCode_next, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_next), v);
+  }    
+    
    
     
   //*--------------*
@@ -93,19 +127,18 @@ public class TimeChain extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TimeChain getPrev() {
-    if (TimeChain_Type.featOkTst && ((TimeChain_Type)jcasType).casFeat_prev == null)
-      jcasType.jcas.throwFeatMissing("prev", "org.texttechnologylab.annotation.Room.TimeChain");
-    return (TimeChain)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TimeChain_Type)jcasType).casFeatCode_prev)));}
+  public TimeChain getPrev() { 
+    return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prev)));
+  }
     
   /** setter for prev - sets Previous chain element 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPrev(TimeChain v) {
-    if (TimeChain_Type.featOkTst && ((TimeChain_Type)jcasType).casFeat_prev == null)
-      jcasType.jcas.throwFeatMissing("prev", "org.texttechnologylab.annotation.Room.TimeChain");
-    jcasType.ll_cas.ll_setRefValue(addr, ((TimeChain_Type)jcasType).casFeatCode_prev, jcasType.ll_cas.ll_getFSRef(v));}    
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_prev), v);
+  }    
+    
   }
 
     

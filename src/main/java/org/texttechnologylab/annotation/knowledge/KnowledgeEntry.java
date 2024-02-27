@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Tue Feb 16 16:51:35 CET 2021 */
-package org.texttechnologylab.annotation.knowledge;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.knowledge;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri May 12 16:52:40 CEST 2023
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyAnnotation.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KnowledgeEntry extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.knowledge.KnowledgeEntry";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class KnowledgeEntry extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_uri = "uri";
+  public final static String _FeatName_source = "source";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_uri = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "uri");
+  private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
+  private final static CallSite _FC_source = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "source");
+  private final static MethodHandle _FH_source = _FC_source.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected KnowledgeEntry() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public KnowledgeEntry(int addr, TOP_Type type) {
-    super(addr, type);
+  public KnowledgeEntry(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class KnowledgeEntry extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class KnowledgeEntry extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() {
-    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_uri);}
+  public String getUri() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
+  }
     
   /** setter for uri - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
-    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_uri == null)
-      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_uri, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class KnowledgeEntry extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() {
-    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
-      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source);}
+  public String getSource() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_source));
+  }
     
   /** setter for source - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(String v) {
-    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
-      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.knowledge.KnowledgeEntry");
-    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_source), v);
+  }    
+    
   }
 
     

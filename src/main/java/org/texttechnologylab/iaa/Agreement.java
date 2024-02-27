@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Fri Feb 19 11:47:55 CET 2021 */
-package org.texttechnologylab.iaa;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.iaa;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Feb 19 11:48:25 CET 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyInterAnnotatorAgreement.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Agreement extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.iaa.Agreement";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,35 @@ public class Agreement extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_agreementValue = "agreementValue";
+  public final static String _FeatName_agreementMeasure = "agreementMeasure";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_agreementValue = TypeSystemImpl.createCallSite(Agreement.class, "agreementValue");
+  private final static MethodHandle _FH_agreementValue = _FC_agreementValue.dynamicInvoker();
+  private final static CallSite _FC_agreementMeasure = TypeSystemImpl.createCallSite(Agreement.class, "agreementMeasure");
+  private final static MethodHandle _FH_agreementMeasure = _FC_agreementMeasure.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Agreement() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Agreement(int addr, TOP_Type type) {
-    super(addr, type);
+  public Agreement(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +86,7 @@ public class Agreement extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +118,18 @@ public class Agreement extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getAgreementValue() {
-    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementValue == null)
-      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementValue);}
+  public double getAgreementValue() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_agreementValue));
+  }
     
   /** setter for agreementValue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementValue(double v) {
-    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementValue == null)
-      jcasType.jcas.throwFeatMissing("agreementValue", "org.texttechnologylab.iaa.Agreement");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementValue, v);}    
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_agreementValue), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +139,18 @@ public class Agreement extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAgreementMeasure() {
-    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementMeasure == null)
-      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementMeasure);}
+  public String getAgreementMeasure() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_agreementMeasure));
+  }
     
   /** setter for agreementMeasure - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementMeasure(String v) {
-    if (Agreement_Type.featOkTst && ((Agreement_Type)jcasType).casFeat_agreementMeasure == null)
-      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.Agreement");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Agreement_Type)jcasType).casFeatCode_agreementMeasure, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_agreementMeasure), v);
+  }    
+    
   }
 
     

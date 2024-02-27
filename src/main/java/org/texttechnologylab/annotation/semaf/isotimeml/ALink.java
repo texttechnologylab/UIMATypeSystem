@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isotimeml;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isotimeml;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ALink extends Link {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isotimeml.ALink";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class ALink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_syntax = "syntax";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_syntax = TypeSystemImpl.createCallSite(ALink.class, "syntax");
+  private final static MethodHandle _FH_syntax = _FC_syntax.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected ALink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public ALink(int addr, TOP_Type type) {
-    super(addr, type);
+  public ALink(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class ALink extends Link {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -71,19 +103,18 @@ public class ALink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getSyntax() {
-    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_syntax == null)
-      jcasType.jcas.throwFeatMissing("syntax", "org.texttechnologylab.annotation.semaf.isotimeml.ALink");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((ALink_Type)jcasType).casFeatCode_syntax);}
+  public String getSyntax() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_syntax));
+  }
     
   /** setter for syntax - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSyntax(String v) {
-    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_syntax == null)
-      jcasType.jcas.throwFeatMissing("syntax", "org.texttechnologylab.annotation.semaf.isotimeml.ALink");
-    jcasType.ll_cas.ll_setStringValue(addr, ((ALink_Type)jcasType).casFeatCode_syntax, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_syntax), v);
+  }    
+    
   }
 
     

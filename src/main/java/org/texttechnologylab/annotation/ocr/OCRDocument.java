@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Wed Dec 02 18:39:13 CET 2020 */
-package org.texttechnologylab.annotation.ocr;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.ocr;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:13 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyOCR.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRDocument extends Annotation {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.OCRDocument";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,32 @@ public class OCRDocument extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_documentname = "documentname";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_documentname = TypeSystemImpl.createCallSite(OCRDocument.class, "documentname");
+  private final static MethodHandle _FH_documentname = _FC_documentname.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected OCRDocument() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public OCRDocument(int addr, TOP_Type type) {
-    super(addr, type);
+  public OCRDocument(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +83,7 @@ public class OCRDocument extends Annotation {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +115,18 @@ public class OCRDocument extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentname() {
-    if (OCRDocument_Type.featOkTst && ((OCRDocument_Type)jcasType).casFeat_documentname == null)
-      jcasType.jcas.throwFeatMissing("documentname", "org.texttechnologylab.annotation.ocr.OCRDocument");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((OCRDocument_Type)jcasType).casFeatCode_documentname);}
+  public String getDocumentname() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_documentname));
+  }
     
   /** setter for documentname - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDocumentname(String v) {
-    if (OCRDocument_Type.featOkTst && ((OCRDocument_Type)jcasType).casFeat_documentname == null)
-      jcasType.jcas.throwFeatMissing("documentname", "org.texttechnologylab.annotation.ocr.OCRDocument");
-    jcasType.ll_cas.ll_setStringValue(addr, ((OCRDocument_Type)jcasType).casFeatCode_documentname, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_documentname), v);
+  }    
+    
   }
 
     

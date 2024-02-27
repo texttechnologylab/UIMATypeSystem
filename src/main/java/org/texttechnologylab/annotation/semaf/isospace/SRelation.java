@@ -1,20 +1,36 @@
 
 
-/* First created by JCasGen Mon Aug 23 15:20:30 CEST 2021 */
-package org.texttechnologylab.annotation.semaf.isospace;
+   
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
 
+package org.texttechnologylab.annotation.semaf.isospace;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Mon Aug 23 15:20:30 CEST 2021
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/IsoMergeTypeSystem.xml
+ * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SRelation extends Signal {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.SRelation";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +47,38 @@ public class SRelation extends Signal {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_relation_type = "relation_type";
+  public final static String _FeatName_cluster = "cluster";
+  public final static String _FeatName_value = "value";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_relation_type = TypeSystemImpl.createCallSite(SRelation.class, "relation_type");
+  private final static MethodHandle _FH_relation_type = _FC_relation_type.dynamicInvoker();
+  private final static CallSite _FC_cluster = TypeSystemImpl.createCallSite(SRelation.class, "cluster");
+  private final static MethodHandle _FH_cluster = _FC_cluster.dynamicInvoker();
+  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(SRelation.class, "value");
+  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected SRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public SRelation(int addr, TOP_Type type) {
-    super(addr, type);
+  public SRelation(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +89,7 @@ public class SRelation extends Signal {
     super(jcas);
     readObject();   
   } 
+
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -83,19 +121,18 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getRelation_type() {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_relation_type == null)
-      jcasType.jcas.throwFeatMissing("relation_type", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_relation_type);}
+  public String getRelation_type() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_relation_type));
+  }
     
   /** setter for relation_type - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRelation_type(String v) {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_relation_type == null)
-      jcasType.jcas.throwFeatMissing("relation_type", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_relation_type, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_relation_type), v);
+  }    
+    
    
     
   //*--------------*
@@ -105,19 +142,18 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getCluster() {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_cluster == null)
-      jcasType.jcas.throwFeatMissing("cluster", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_cluster);}
+  public String getCluster() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));
+  }
     
   /** setter for cluster - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCluster(String v) {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_cluster == null)
-      jcasType.jcas.throwFeatMissing("cluster", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_cluster, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_cluster), v);
+  }    
+    
    
     
   //*--------------*
@@ -127,19 +163,18 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_value);}
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+  }
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    if (SRelation_Type.featOkTst && ((SRelation_Type)jcasType).casFeat_value == null)
-      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.isospace.SRelation");
-    jcasType.ll_cas.ll_setStringValue(addr, ((SRelation_Type)jcasType).casFeatCode_value, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }    
+    
   }
 
     
