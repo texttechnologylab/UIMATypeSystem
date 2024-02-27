@@ -41,15 +41,15 @@
                         src/main/java/
                     </outputDirectory>
                 </configuration>
-                <executions>
-                    <execution>
-                        <!--call it in the generate-source phase -->
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        &lt;!&ndash;call it in the generate-source phase &ndash;&gt;-->
+<!--                        <phase>generate-sources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
             </plugin>
 
             <plugin>
@@ -97,6 +97,13 @@
             <artifactId>uimaj-json</artifactId>
             <version>${uima.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.uima/uimaj-tools -->
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimaj-tools</artifactId>
+            <version>${uima.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-segmentation-asl</artifactId>
