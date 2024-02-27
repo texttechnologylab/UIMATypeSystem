@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:02:41 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 27 21:41:37 CET 2024 */
 
 package org.texttechnologylab.type.morphosyn.tag.epist;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.type.morphosyn.tag.EPIST;
 
 
 /** 
- * Updated by JCasGen Tue Feb 27 21:02:41 CET 2024
+ * Updated by JCasGen Tue Feb 27 21:41:37 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EPISTJA extends EPIST {
