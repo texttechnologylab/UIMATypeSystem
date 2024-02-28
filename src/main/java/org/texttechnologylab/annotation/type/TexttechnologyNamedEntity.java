@@ -12,8 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:14 CET 2020
- * XML source: /home/gabrami/Projects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyNamedEntity.xml
+ * Updated by JCasGen Wed Feb 28 11:02:48 CET 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyNamedEntity.xml
  * @generated */
 public class TexttechnologyNamedEntity extends Annotation {
   /** @generated

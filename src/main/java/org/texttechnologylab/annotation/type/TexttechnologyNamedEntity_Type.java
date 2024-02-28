@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 02 18:39:14 CET 2020
+ * Updated by JCasGen Wed Feb 28 11:02:48 CET 2024
  * @generated */
 public class TexttechnologyNamedEntity_Type extends Annotation_Type {
   /** @generated */
@@ -127,7 +127,7 @@ public class TexttechnologyNamedEntity_Type extends Annotation_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
-	return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
+  return ll_cas.ll_getStringArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_knowledgeEntries), i);
   }
    
   /** @generated

@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** 
- * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
+ * Updated by JCasGen Wed Feb 28 11:04:58 CET 2024
  * @generated */
 public class VideoToken_Type extends MultimediaElement_Type {
   /** @generated */

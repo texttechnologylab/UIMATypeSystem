@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Thu Jan 18 16:13:28 CET 2024
+ * Updated by JCasGen Wed Feb 28 11:04:58 CET 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
 public class Frame extends MultimediaElement {
