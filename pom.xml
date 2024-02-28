@@ -108,15 +108,15 @@
                         src/main/java/
                     </outputDirectory>
                 </configuration>
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        &lt;!&ndash;call it in the generate-source phase &ndash;&gt;-->
-<!--                        <phase>generate-sources</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
+                <executions>
+                    <execution>
+                        <!--call it in the generate-source phase -->
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
