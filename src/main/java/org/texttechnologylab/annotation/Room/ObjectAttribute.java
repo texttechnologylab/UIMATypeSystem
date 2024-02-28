@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 21:27:09 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 21:43:09 CET 2024 */
 
 package org.texttechnologylab.annotation.Room;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Attribute of an object (color, texture, srl, ...)
- * Updated by JCasGen Wed Feb 28 21:27:09 CET 2024
+ * Updated by JCasGen Wed Feb 28 21:43:09 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ObjectAttribute extends Annotation {
