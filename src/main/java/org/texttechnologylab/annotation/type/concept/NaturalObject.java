@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 22:02:33 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 22:04:56 CET 2024 */
 
 package org.texttechnologylab.annotation.type.concept;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.annotation.AbstractNamedEntity;
 
 
 /** 
- * Updated by JCasGen Wed Feb 28 22:02:33 CET 2024
+ * Updated by JCasGen Wed Feb 28 22:04:56 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class NaturalObject extends AbstractNamedEntity {
