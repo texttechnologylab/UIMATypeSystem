@@ -162,7 +162,7 @@
 
                     <description/>
 
-                    <rangeTypeName>org.texttechnologylab.annotation.ModelAnnotation</rangeTypeName>
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
 
                 </featureDescription>
 

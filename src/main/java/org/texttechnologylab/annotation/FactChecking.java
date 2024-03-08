@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Mar 07 11:48:13 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Fri Mar 08 16:58:04 CET 2024 */
 
 package org.texttechnologylab.annotation;
  
@@ -16,11 +16,12 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
+import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Does the assertion confirm the statement
- * Updated by JCasGen Thu Mar 07 11:48:13 CET 2024
+ * Updated by JCasGen Fri Mar 08 16:58:04 CET 2024
  * XML source: /home/bagci/projects/UIMATypesystem-uima-3/target/jcasgen/typesystem.xml
  * @generated */
 public class FactChecking extends Annotation {
@@ -187,15 +188,15 @@ public class FactChecking extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public ModelAnnotation getModel() { 
-    return (ModelAnnotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
+  public MetaData getModel() { 
+    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
   }
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setModel(ModelAnnotation v) {
+  public void setModel(MetaData v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
   }    
     
