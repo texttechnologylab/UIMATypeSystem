@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 22:23:28 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Sun Mar 10 21:31:12 CET 2024 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -16,7 +16,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Wed Feb 28 22:23:28 CET 2024
+ * Updated by JCasGen Sun Mar 10 21:31:12 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropTextNode extends PropNode {
