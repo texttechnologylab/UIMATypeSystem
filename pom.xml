@@ -139,11 +139,11 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.maven-download-plugin</groupId>
-            <artifactId>maven-download-plugin</artifactId>
-            <version>1.8.1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.maven-download-plugin</groupId>-->
+<!--            <artifactId>maven-download-plugin</artifactId>-->
+<!--            <version>1.8.1</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.apache.uima</groupId>

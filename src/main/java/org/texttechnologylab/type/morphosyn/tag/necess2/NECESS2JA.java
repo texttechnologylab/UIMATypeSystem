@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Feb 28 22:23:28 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Sun Mar 10 21:31:13 CET 2024 */
 
 package org.texttechnologylab.type.morphosyn.tag.necess2;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.type.morphosyn.tag.NECESS2;
 
 
 /** 
- * Updated by JCasGen Wed Feb 28 22:23:28 CET 2024
+ * Updated by JCasGen Sun Mar 10 21:31:13 CET 2024
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class NECESS2JA extends NECESS2 {

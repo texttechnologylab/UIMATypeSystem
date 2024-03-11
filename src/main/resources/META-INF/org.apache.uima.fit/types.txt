@@ -1,1 +1,3 @@
 classpath*:desc/type/*.xml
+classpath*:desc/type/duui/*.xml
+classpath*:desc/type/textimager/*.xml
