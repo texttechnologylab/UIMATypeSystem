@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyDokumentAnnotation"/>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+        <import name="desc.type.TypeSystemModelAnnotation"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Claim</name>
+            <description>
+                One Claim for different facts
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>value</name>
+
+                    <description>Information of Claim</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Facts</name>
+
+                    <description>Set of Fact</description>
+
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+
+                    <elementType>org.texttechnologylab.annotation.Fact</elementType>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Fact</name>
+            <description>
+                One Fact for different claims
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>value</name>
+
+                    <description>Information for  the fact</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Claims</name>
+
+                    <description>Set of Claims</description>
+
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+
+                    <elementType>org.texttechnologylab.annotation.Claim</elementType>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+
+            <name>org.texttechnologylab.annotation.model.FactCheckingMetaData</name>
+
+            <description/>
+
+            <supertypeName>org.texttechnologylab.annotation.model.MetaData</supertypeName>
+
+            <features>
+
+                <featureDescription>
+
+                    <name>Source</name>
+
+                    <description>URL</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>DependeciesVersion</name>
+
+                    <description>Dependency Library Version e.g. Pytorch...</description>
+
+                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+
+                </featureDescription>
+
+            </features>
+
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.FactChecking</name>
+            <description>
+                Does the assertion confirm the statement
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+
+            <features>
+
+                <featureDescription>
+
+                    <name>Fact</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.Fact</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Claim</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.Claim</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>consistency</name>
+
+                    <description/>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+
+            </features>
+        </typeDescription>
+
+    </types>
+</typeSystemDescription>
