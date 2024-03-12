@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Toxic</name>
+            <description>
+                Toxic Output
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>Toxic</name>
+
+                    <description>Probability of Toxic</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>NonToxic</name>
+
+                    <description>Probability of not Toxic</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Hate</name>
+            <description>
+                Hate Output
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>Hate</name>
+
+                    <description>Probability of Hate</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>NonHate</name>
+
+                    <description>Probability of not Hate</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
