@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.SentenceComparison</name>
+            <description>
+                Sentence i and Sentence j which will be compared
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>SentenceI</name>
+
+                    <description>Sentence i which will be compared with Sentence j</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>SentenceJ</name>
+
+                    <description>Sentence j which will be compared with Sentence i</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Complexity</name>
+            <description>
+                Complexity Output
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>Kind</name>
+
+                    <description>Kind of Complexity</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Output</name>
+
+                    <description>Output of Complexity</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>SentenceI</name>
+
+                    <description>Reference to SentenceI</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>SentenceJ</name>
+
+                    <description>Reference to SentenceJ</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
