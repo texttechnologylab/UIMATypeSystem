@@ -19,6 +19,35 @@
     </imports>
     <types>
         <typeDescription>
+
+            <name>org.texttechnologylab.annotation.LanguageModel</name>
+
+            <description/>
+
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+
+            <features>
+
+                <featureDescription>
+                    <name>Language</name>
+                    <description/>
+                    <rangeTypeName>org.texttechnologylab.annotation.Language</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+
+            </features>
+
+        </typeDescription>
+        <typeDescription>
             <name>org.texttechnologylab.annotation.Translation</name>
             <description>
                 Summary of input text
