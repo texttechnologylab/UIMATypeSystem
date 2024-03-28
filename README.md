@@ -17,7 +17,6 @@ The collection of all UIMA TypeSystemDescriptors for the pipelines UIMA pipeline
 </repositories>
 ```
 
-
 # Cite
 If you want to use the project please quote this as follows:
 
