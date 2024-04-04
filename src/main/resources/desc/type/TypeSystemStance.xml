@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.StanceSentence</name>
+            <description>
+                Sentence Input for Stance Detection
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Hypothesis</name>
+            <description>
+
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Stances</name>
+                    <description>Stances</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>org.texttechnologylab.annotation.StanceSentence</elementType>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.StanceBase</name>
+            <description>
+                Base class for Stance Detection
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>Reference</name>
+
+                    <description>Stance Reference</description>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.StanceSentence</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Stance</name>
+            <description>
+                Stance Detection
+            </description>
+            <supertypeName>org.texttechnologylab.annotation.StanceBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>Support</name>
+
+                    <description>Probability of support</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Oppose</name>
+
+                    <description>Probability of oppose</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Neutral</name>
+
+                    <description>Probability of neutral</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.StanceGPT</name>
+            <description>
+                Stance Detection
+            </description>
+            <supertypeName>org.texttechnologylab.annotation.StanceBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>Label</name>
+
+                    <description>Label support, oppose, neutral</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Confidence</name>
+
+                    <description>Confidence value</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Reason</name>
+
+                    <description>Reason for the decision</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
