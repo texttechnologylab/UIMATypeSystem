@@ -21,7 +21,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.EntailmentSentence</name>
             <description>
-                Argument
+
             </description>
             <supertypeName>uima.cas.AnnotationBase</supertypeName>
             <features>
@@ -50,7 +50,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.Entailment</name>
             <description>
-                Argument
+
             </description>
             <supertypeName>uima.cas.AnnotationBase</supertypeName>
             <features>
@@ -84,6 +84,65 @@
 
                 </featureDescription>
 
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.EntailmentGPT</name>
+            <description>
+
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>reference</name>
+
+                    <description>Entailment reference</description>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.EntailmentSentence</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Label</name>
+
+                    <description>Label entailment or contradiction</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Confidence</name>
+
+                    <description>Confidence value</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Reason</name>
+
+                    <description>Reason for the decision</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
 
                 <featureDescription>
 
