@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.EntailmentSentence</name>
+            <description>
+
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>premise</name>
+
+                    <description>premise</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>hypothesis</name>
+
+                    <description>hypothesis</description>
+
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Entailment</name>
+            <description>
+
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>reference</name>
+
+                    <description>Entailment reference</description>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.EntailmentSentence</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>entailment</name>
+
+                    <description>entailment</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>contradiction</name>
+
+                    <description>contradiction</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.EntailmentGPT</name>
+            <description>
+
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>reference</name>
+
+                    <description>Entailment reference</description>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.EntailmentSentence</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Label</name>
+
+                    <description>Label entailment or contradiction</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Confidence</name>
+
+                    <description>Confidence value</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Reason</name>
+
+                    <description>Reason for the decision</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
