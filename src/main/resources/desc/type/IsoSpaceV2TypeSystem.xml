@@ -23,24 +23,24 @@
         <featureDescription>
           <name>startID</name>
           <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.Entity</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>midIDs</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</elementType>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.Entity</elementType>
         </featureDescription>
         <featureDescription>
           <name>midID_array</name>
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</elementType>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.Entity</elementType>
         </featureDescription>
         <featureDescription>
           <name>endID</name>
           <description/>
-          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.SpatialEntity</rangeTypeName>
+          <rangeTypeName>org.texttechnologylab.annotation.semaf.isospace.Entity</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>spatial_relator</name>
@@ -53,6 +53,12 @@
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.semaf.isospace.SpatialSignal</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>spatial_relator_signal_array</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.texttechnologylab.annotation.semaf.isospace.SRelation</elementType>
         </featureDescription>
       </features>
     </typeDescription>
