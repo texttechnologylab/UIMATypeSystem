@@ -1,20 +1,33 @@
 
 
-/* First created by JCasGen Thu May 16 11:15:54 CEST 2024 */
-package org.texttechnologylab.annotation.socialmedia.metadata.youtube;
+   
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:25:22 CEST 2024 */
 
+package org.texttechnologylab.annotation.socialmedia.metadata.youtube;
+ 
+
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.texttechnologylab.annotation.socialmedia.MetaData;
 
 
 /** 
- * Updated by JCasGen Thu May 16 11:15:54 CEST 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologySocialMedia.xml
+ * Updated by JCasGen Thu May 16 17:25:22 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Playlist extends MetaData {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.socialmedia.metadata.youtube.Playlist";
+  
   /** @generated
    * @ordered 
    */
@@ -31,17 +44,29 @@ public class Playlist extends MetaData {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+
+
+  /* Feature Adjusted Offsets */
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Playlist() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public Playlist(int addr, TOP_Type type) {
-    super(addr, type);
+  public Playlist(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -52,6 +77,7 @@ public class Playlist extends MetaData {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->

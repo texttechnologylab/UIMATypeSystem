@@ -40,7 +40,7 @@
       
       
       
-      <name>org.texttechnologylab.annotation.SocialMedia.MetaData</name>
+      <name>org.texttechnologylab.annotation.socialmedia.MetaData</name>
                               
       
       
@@ -91,7 +91,7 @@
     <typeDescription>
       <name>org.texttechnologylab.annotation.socialmedia.metadata.YouTube</name>
       <description/>
-      <supertypeName>org.texttechnologylab.annotation.SocialMedia.MetaData</supertypeName>
+      <supertypeName>org.texttechnologylab.annotation.socialmedia.MetaData</supertypeName>
       <features>
         <featureDescription>
           <name>channelName</name>
@@ -139,7 +139,7 @@
     <typeDescription>
       <name>org.texttechnologylab.annotation.socialmedia.metadata.youtube.Playlist</name>
       <description/>
-      <supertypeName>org.texttechnologylab.annotation.SocialMedia.MetaData</supertypeName>
+      <supertypeName>org.texttechnologylab.annotation.socialmedia.MetaData</supertypeName>
     </typeDescription>
   </types>
           

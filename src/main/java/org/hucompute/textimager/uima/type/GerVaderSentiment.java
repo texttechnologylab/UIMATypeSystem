@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 11:15:15 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:25:22 CEST 2024 */
 
 package org.hucompute.textimager.uima.type;
  
@@ -16,7 +16,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu May 16 11:15:15 CEST 2024
+ * Updated by JCasGen Thu May 16 17:25:22 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GerVaderSentiment extends VaderSentiment {

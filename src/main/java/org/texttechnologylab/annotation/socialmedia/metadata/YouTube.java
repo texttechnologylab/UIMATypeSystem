@@ -1,21 +1,38 @@
 
 
-/* First created by JCasGen Thu May 16 11:15:54 CEST 2024 */
-package org.texttechnologylab.annotation.socialmedia.metadata;
+   
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:25:22 CEST 2024 */
 
+package org.texttechnologylab.annotation.socialmedia.metadata;
+ 
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
 
+
+import org.texttechnologylab.annotation.metadata.youtube.Playlist;
 import org.apache.uima.jcas.cas.FSList;
 import org.texttechnologylab.annotation.socialmedia.MetaData;
 
 
 /** 
- * Updated by JCasGen Thu May 16 11:15:54 CEST 2024
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/src/main/resources/desc/type/TextTechnologySocialMedia.xml
+ * Updated by JCasGen Thu May 16 17:25:22 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class YouTube extends MetaData {
+ 
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static String _TypeName = "org.texttechnologylab.annotation.socialmedia.metadata.YouTube";
+  
   /** @generated
    * @ordered 
    */
@@ -32,17 +49,53 @@ public class YouTube extends MetaData {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
+ 
+  /* *******************
+   *   Feature Offsets *
+   * *******************/ 
+   
+  public final static String _FeatName_channelName = "channelName";
+  public final static String _FeatName_channelURL = "channelURL";
+  public final static String _FeatName_playlist = "playlist";
+  public final static String _FeatName_length = "length";
+  public final static String _FeatName_views = "views";
+  public final static String _FeatName_likes = "likes";
+  public final static String _FeatName_dislikes = "dislikes";
+  public final static String _FeatName_downloadDate = "downloadDate";
+
+
+  /* Feature Adjusted Offsets */
+  private final static CallSite _FC_channelName = TypeSystemImpl.createCallSite(YouTube.class, "channelName");
+  private final static MethodHandle _FH_channelName = _FC_channelName.dynamicInvoker();
+  private final static CallSite _FC_channelURL = TypeSystemImpl.createCallSite(YouTube.class, "channelURL");
+  private final static MethodHandle _FH_channelURL = _FC_channelURL.dynamicInvoker();
+  private final static CallSite _FC_playlist = TypeSystemImpl.createCallSite(YouTube.class, "playlist");
+  private final static MethodHandle _FH_playlist = _FC_playlist.dynamicInvoker();
+  private final static CallSite _FC_length = TypeSystemImpl.createCallSite(YouTube.class, "length");
+  private final static MethodHandle _FH_length = _FC_length.dynamicInvoker();
+  private final static CallSite _FC_views = TypeSystemImpl.createCallSite(YouTube.class, "views");
+  private final static MethodHandle _FH_views = _FC_views.dynamicInvoker();
+  private final static CallSite _FC_likes = TypeSystemImpl.createCallSite(YouTube.class, "likes");
+  private final static MethodHandle _FH_likes = _FC_likes.dynamicInvoker();
+  private final static CallSite _FC_dislikes = TypeSystemImpl.createCallSite(YouTube.class, "dislikes");
+  private final static MethodHandle _FH_dislikes = _FC_dislikes.dynamicInvoker();
+  private final static CallSite _FC_downloadDate = TypeSystemImpl.createCallSite(YouTube.class, "downloadDate");
+  private final static MethodHandle _FH_downloadDate = _FC_downloadDate.dynamicInvoker();
+
+   
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected YouTube() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param addr low level Feature Structure reference
+   * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public YouTube(int addr, TOP_Type type) {
-    super(addr, type);
+  public YouTube(TypeImpl type, CASImpl casImpl) {
+    super(type, casImpl);
     readObject();
   }
   
@@ -53,6 +106,7 @@ public class YouTube extends MetaData {
     super(jcas);
     readObject();   
   } 
+
 
   /** 
    * <!-- begin-user-doc -->
@@ -72,19 +126,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getChannelName() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_channelName == null)
-      jcasType.jcas.throwFeatMissing("channelName", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((YouTube_Type)jcasType).casFeatCode_channelName);}
+  public String getChannelName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_channelName));
+  }
     
   /** setter for channelName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setChannelName(String v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_channelName == null)
-      jcasType.jcas.throwFeatMissing("channelName", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setStringValue(addr, ((YouTube_Type)jcasType).casFeatCode_channelName, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_channelName), v);
+  }    
+    
    
     
   //*--------------*
@@ -94,19 +147,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getChannelURL() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_channelURL == null)
-      jcasType.jcas.throwFeatMissing("channelURL", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((YouTube_Type)jcasType).casFeatCode_channelURL);}
+  public String getChannelURL() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_channelURL));
+  }
     
   /** setter for channelURL - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setChannelURL(String v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_channelURL == null)
-      jcasType.jcas.throwFeatMissing("channelURL", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setStringValue(addr, ((YouTube_Type)jcasType).casFeatCode_channelURL, v);}    
+    _setStringValueNfc(wrapGetIntCatchException(_FH_channelURL), v);
+  }    
+    
    
     
   //*--------------*
@@ -116,19 +168,19 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public FSList getPlaylist() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_playlist == null)
-      jcasType.jcas.throwFeatMissing("playlist", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((YouTube_Type)jcasType).casFeatCode_playlist)));}
+  @SuppressWarnings("unchecked")
+  public FSList<Playlist> getPlaylist() { 
+    return (FSList<Playlist>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_playlist)));
+  }
     
   /** setter for playlist - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setPlaylist(FSList v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_playlist == null)
-      jcasType.jcas.throwFeatMissing("playlist", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setRefValue(addr, ((YouTube_Type)jcasType).casFeatCode_playlist, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setPlaylist(FSList<Playlist> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_playlist), v);
+  }    
+    
    
     
   //*--------------*
@@ -138,19 +190,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getLength() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_length == null)
-      jcasType.jcas.throwFeatMissing("length", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_length);}
+  public int getLength() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_length));
+  }
     
   /** setter for length - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLength(int v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_length == null)
-      jcasType.jcas.throwFeatMissing("length", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_length, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_length), v);
+  }    
+    
    
     
   //*--------------*
@@ -160,19 +211,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getViews() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_views == null)
-      jcasType.jcas.throwFeatMissing("views", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_views);}
+  public int getViews() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_views));
+  }
     
   /** setter for views - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setViews(int v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_views == null)
-      jcasType.jcas.throwFeatMissing("views", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_views, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_views), v);
+  }    
+    
    
     
   //*--------------*
@@ -182,19 +232,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getLikes() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_likes == null)
-      jcasType.jcas.throwFeatMissing("likes", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_likes);}
+  public int getLikes() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_likes));
+  }
     
   /** setter for likes - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLikes(int v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_likes == null)
-      jcasType.jcas.throwFeatMissing("likes", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_likes, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_likes), v);
+  }    
+    
    
     
   //*--------------*
@@ -204,19 +253,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getDislikes() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_dislikes == null)
-      jcasType.jcas.throwFeatMissing("dislikes", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_dislikes);}
+  public int getDislikes() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_dislikes));
+  }
     
   /** setter for dislikes - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDislikes(int v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_dislikes == null)
-      jcasType.jcas.throwFeatMissing("dislikes", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_dislikes, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_dislikes), v);
+  }    
+    
    
     
   //*--------------*
@@ -226,19 +274,18 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getDownloadDate() {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_downloadDate == null)
-      jcasType.jcas.throwFeatMissing("downloadDate", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    return jcasType.ll_cas.ll_getIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_downloadDate);}
+  public int getDownloadDate() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_downloadDate));
+  }
     
   /** setter for downloadDate - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDownloadDate(int v) {
-    if (YouTube_Type.featOkTst && ((YouTube_Type)jcasType).casFeat_downloadDate == null)
-      jcasType.jcas.throwFeatMissing("downloadDate", "org.texttechnologylab.annotation.socialmedia.metadata.YouTube");
-    jcasType.ll_cas.ll_setIntValue(addr, ((YouTube_Type)jcasType).casFeatCode_downloadDate, v);}    
+    _setIntValueNfc(wrapGetIntCatchException(_FH_downloadDate), v);
+  }    
+    
   }
 
     
