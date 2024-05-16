@@ -107,7 +107,7 @@
           <name>playlist</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>org.texttechnologylab.annotation.metadata.youtube.Playlist</elementType>
+            <elementType>org.texttechnologylab.annotation.socialmedia.metadata.youtube.Playlist</elementType>
         </featureDescription>
         <featureDescription>
           <name>length</name>

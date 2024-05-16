@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:25:22 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:29:53 CEST 2024 */
 
 package org.texttechnologylab.annotation.socialmedia.metadata;
  
@@ -16,13 +16,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.texttechnologylab.annotation.metadata.youtube.Playlist;
+import org.texttechnologylab.annotation.socialmedia.metadata.youtube.Playlist;
 import org.apache.uima.jcas.cas.FSList;
 import org.texttechnologylab.annotation.socialmedia.MetaData;
 
 
-/** 
- * Updated by JCasGen Thu May 16 17:25:22 CEST 2024
+/**
+ * Updated by JCasGen Thu May 16 17:29:53 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class YouTube extends MetaData {

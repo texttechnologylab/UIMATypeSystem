@@ -1,27 +1,25 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:25:22 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:29:53 CEST 2024 */
 
 package org.texttechnologylab.annotation;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
+
 
 /** One Claim for different facts
- * Updated by JCasGen Thu May 16 17:25:22 CEST 2024
+ * Updated by JCasGen Thu May 16 17:29:53 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Claim extends Annotation {
