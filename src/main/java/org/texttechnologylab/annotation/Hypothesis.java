@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Apr 04 10:36:25 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 11:15:15 CEST 2024 */
 
 package org.texttechnologylab.annotation;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Apr 04 10:36:25 CEST 2024
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu May 16 11:15:15 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Hypothesis extends Annotation {
  

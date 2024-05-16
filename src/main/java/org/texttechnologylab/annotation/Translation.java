@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Mar 14 10:36:42 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 11:15:15 CEST 2024 */
 
 package org.texttechnologylab.annotation;
  
@@ -20,8 +20,8 @@ import org.texttechnologylab.annotation.model.MetaData;
 
 
 /** Summary of input text
- * Updated by JCasGen Thu Mar 14 10:36:42 CET 2024
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu May 16 11:15:15 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Translation extends Language {
  

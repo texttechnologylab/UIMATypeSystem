@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Mar 28 09:49:48 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 16 11:15:15 CEST 2024 */
 
 package org.texttechnologylab.annotation;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Argument
- * Updated by JCasGen Thu Mar 28 09:49:48 CET 2024
- * XML source: /home/bagci/projects/UIMATypesystem-uima-3/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu May 16 11:15:15 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgumentExtraction extends Annotation {
  
