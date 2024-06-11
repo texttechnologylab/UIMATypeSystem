@@ -1,26 +1,24 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:29:53 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
 
 package org.texttechnologylab.annotation.type;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.apache.uima.jcas.cas.TOP;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
 /**
- * Updated by JCasGen Thu May 16 17:29:53 CEST 2024
+ * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Fingerprint extends Node {

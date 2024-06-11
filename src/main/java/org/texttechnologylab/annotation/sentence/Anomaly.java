@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:29:53 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
 
 package org.texttechnologylab.annotation.sentence;
 
@@ -16,10 +16,8 @@ import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
 
-
-
 /**
- * Updated by JCasGen Thu May 16 17:29:53 CEST 2024
+ * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly {

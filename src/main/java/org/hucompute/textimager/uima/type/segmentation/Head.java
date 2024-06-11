@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 16 17:29:53 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
 
 package org.hucompute.textimager.uima.type.segmentation;
 
@@ -18,7 +18,7 @@ import java.lang.invoke.MethodHandle;
 
 
 /**
- * Updated by JCasGen Thu May 16 17:29:53 CEST 2024
+ * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Head extends Annotation {
