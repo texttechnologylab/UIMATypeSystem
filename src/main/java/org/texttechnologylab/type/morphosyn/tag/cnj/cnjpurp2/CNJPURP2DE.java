@@ -1,22 +1,20 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:05 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.type.morphosyn.tag.cnj.cnjpurp2;
 
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.texttechnologylab.type.morphosyn.tag.cnj.CNJPURP2;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:05 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CNJPURP2DE extends CNJPURP2 {

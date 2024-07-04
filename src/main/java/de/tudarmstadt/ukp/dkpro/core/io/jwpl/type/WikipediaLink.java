@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:18 CEST 2024 */
 
 package de.tudarmstadt.ukp.dkpro.core.io.jwpl.type;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Wikipedia link
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:18 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends Annotation {

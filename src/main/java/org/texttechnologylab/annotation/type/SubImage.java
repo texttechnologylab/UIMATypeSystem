@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -21,11 +21,9 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
- *
- * @generated
- */
+ * @generated */
 public class SubImage extends Annotation {
 
     /**
@@ -164,12 +162,10 @@ public class SubImage extends Annotation {
         return (Coordinate) (((FSArray<Coordinate>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));
     }
 
-    /**
-     * indexed setter for coordinates - sets an indexed value -
-     *
+    /** indexed setter for coordinates - sets an indexed value -
+   * @generated
      * @param i index in the array to set
      * @param v value to set into the array
-     * @generated
      */
     @SuppressWarnings("unchecked")
     public void setCoordinates(int i, Coordinate v) {
@@ -190,16 +186,14 @@ public class SubImage extends Annotation {
         return (Image) (_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
     }
 
-    /**
-     * setter for parent - sets
-     *
-     * @param v value to set into the feature
+    /** setter for parent - sets
      * @generated
-     */
-    public void setParent(Image v) {
-        _setFeatureValueNcWj(wrapGetIntCatchException(_FH_parent), v);
-    }
-
-}
+   * @param v value to set into the feature 
+   */
+  public void setParent(Image v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_parent), v);
+  }    
+    
+  }
 
     

@@ -1,22 +1,20 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.type.morphosyn.tag.adn;
 
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.texttechnologylab.type.morphosyn.tag.ADN;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ADNIRR extends ADN {

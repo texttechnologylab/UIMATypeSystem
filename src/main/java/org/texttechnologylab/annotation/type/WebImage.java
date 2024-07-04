@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,16 +12,14 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
- *
- * @generated
- */
+ * @generated */
 public class WebImage extends Image {
 
     /**
@@ -160,16 +158,14 @@ public class WebImage extends Image {
         return _getIntValueNc(wrapGetIntCatchException(_FH_posY));
     }
 
-    /**
-     * setter for posY - sets
-     *
-     * @param v value to set into the feature
+    /** setter for posY - sets
      * @generated
-     */
-    public void setPosY(int v) {
-        _setIntValueNfc(wrapGetIntCatchException(_FH_posY), v);
-    }
-
-}
+     * @param v value to set into the feature
+   */
+  public void setPosY(int v) {
+    _setIntValueNfc(wrapGetIntCatchException(_FH_posY), v);
+  }    
+    
+  }
 
     

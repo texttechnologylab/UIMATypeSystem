@@ -1,27 +1,25 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.paper;
 
 
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
- *
- * @generated
- */
+ * @generated */
 public class Section extends TextContent {
 
     /**
@@ -187,16 +185,14 @@ public class Section extends TextContent {
         return _getStringValueNc(wrapGetIntCatchException(_FH_index));
     }
 
-    /**
-     * setter for index - sets The index of a section (1, 1.1, 1.1.1, ...)
-     *
-     * @param v value to set into the feature
+    /** setter for index - sets The index of a section (1, 1.1, 1.1.1, ...)
      * @generated
+     * @param v value to set into the feature
      */
     public void setIndex(String v) {
         _setStringValueNfc(wrapGetIntCatchException(_FH_index), v);
-    }
-
-}
+  }    
+    
+  }
 
     

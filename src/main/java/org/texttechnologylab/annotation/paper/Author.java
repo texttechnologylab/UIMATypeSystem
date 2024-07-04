@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -18,11 +18,9 @@ import java.lang.invoke.MethodHandle;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
- *
- * @generated
- */
+ * @generated */
 public class Author extends Annotation {
 
     /**
@@ -194,11 +192,9 @@ public class Author extends Annotation {
         return _getStringValueNc(wrapGetIntCatchException(_FH_value));
     }
 
-    /**
-     * setter for value - sets
-     *
-     * @param v value to set into the feature
+    /** setter for value - sets
      * @generated
+     * @param v value to set into the feature
      */
     public void setValue(String v) {
         _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
@@ -218,11 +214,9 @@ public class Author extends Annotation {
         return _getStringValueNc(wrapGetIntCatchException(_FH_email));
     }
 
-    /**
-     * setter for email - sets
-     *
-     * @param v value to set into the feature
+    /** setter for email - sets
      * @generated
+     * @param v value to set into the feature
      */
     public void setEmail(String v) {
         _setStringValueNfc(wrapGetIntCatchException(_FH_email), v);
@@ -242,16 +236,14 @@ public class Author extends Annotation {
         return _getStringValueNc(wrapGetIntCatchException(_FH_location));
     }
 
-    /**
-     * setter for location - sets
-     *
-     * @param v value to set into the feature
-     * @generated
-     */
-    public void setLocation(String v) {
-        _setStringValueNfc(wrapGetIntCatchException(_FH_location), v);
-    }
-
-}
+    /** setter for location - sets
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setLocation(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_location), v);
+  }    
+    
+  }
 
     
