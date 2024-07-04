@@ -1,24 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
 
 package org.texttechnologylab.annotation.model;
 
 
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.StringArray;
-
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+
+
+import org.apache.uima.jcas.cas.StringArray;
+
 
 /**
- * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FactCheckingMetaData extends MetaData {

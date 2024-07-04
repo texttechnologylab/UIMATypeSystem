@@ -1,26 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sun Jun 09 22:57:23 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
 
 package org.hucompute.textimager.uima.type;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
 
-/** 
- * Updated by JCasGen Sun Jun 09 22:57:23 CEST 2024
- * XML source: /home/daniel/data/hiwi/git/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+/**
+ * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CategorizedSentiment extends Sentiment {
  

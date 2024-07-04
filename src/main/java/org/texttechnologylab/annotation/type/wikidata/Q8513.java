@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:04 CEST 2024 */
 
 package org.texttechnologylab.annotation.type.wikidata;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** database
- * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:09:04 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Q8513 extends NamedEntity {

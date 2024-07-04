@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Jun 11 17:17:54 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:09:05 CEST 2024 */
 
 package org.texttechnologylab.type.morphosyn.tag.cnj.cnjtemp2;
 
@@ -16,7 +16,7 @@ import org.texttechnologylab.type.morphosyn.tag.cnj.CNJTEMP2;
 
 
 /**
- * Updated by JCasGen Tue Jun 11 17:17:54 CEST 2024
+ * Updated by JCasGen Thu Jul 04 15:09:05 CEST 2024
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CNJTEMP2EN extends CNJTEMP2 {

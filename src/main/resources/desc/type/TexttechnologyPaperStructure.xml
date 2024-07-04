@@ -41,7 +41,7 @@
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
         <featureDescription>
-          <name>address</name>
+            <name>location</name>
           <description/>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
@@ -151,20 +151,9 @@
       <supertypeName>org.texttechnologylab.annotation.paper.NonTextContent</supertypeName>
       <features>
         <featureDescription>
-          <name>doi</name>
+            <name>reference</name>
           <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>title</name>
-          <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-        <featureDescription>
-          <name>authors</name>
-          <description/>
-          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
-          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+            <rangeTypeName>uima.cas.TOP</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
@@ -184,6 +173,28 @@
       <name>org.texttechnologylab.annotation.paper.Caption</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
+      <typeDescription>
+          <name>org.texttechnologylab.annotation.paper.Source</name>
+          <description/>
+          <supertypeName>uima.tcas.Annotation</supertypeName>
+          <features>
+              <featureDescription>
+                  <name>doi</name>
+                  <description/>
+                  <rangeTypeName>uima.cas.String</rangeTypeName>
+              </featureDescription>
+              <featureDescription>
+                  <name>title</name>
+                  <description/>
+                  <rangeTypeName>uima.cas.String</rangeTypeName>
+              </featureDescription>
+              <featureDescription>
+                  <name>authors</name>
+                  <description/>
+                  <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+              </featureDescription>
+          </features>
     </typeDescription>
   </types>
 </typeSystemDescription>
