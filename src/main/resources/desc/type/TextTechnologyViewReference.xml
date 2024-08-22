@@ -19,7 +19,7 @@
         <typeDescription>
             <name>org.texttechnologylab.annotation.metadata.ViewReference</name>
             <description>
-                Emotion Output
+                View Reference
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>

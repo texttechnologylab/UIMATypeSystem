@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Aug 22 11:10:20 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Aug 22 11:19:02 CEST 2024 */
 
 package org.texttechnologylab.annotation.metadata;
  
@@ -19,8 +19,8 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Emotion Output
- * Updated by JCasGen Thu Aug 22 11:10:20 CEST 2024
+/** View Reference
+ * Updated by JCasGen Thu Aug 22 11:19:02 CEST 2024
  * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ViewReference extends Annotation {
