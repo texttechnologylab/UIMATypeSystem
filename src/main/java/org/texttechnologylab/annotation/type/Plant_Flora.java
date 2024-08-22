@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sun Mar 10 21:31:12 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -16,9 +16,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.texttechnologylab.annotation.NamedEntity;
 
 
-/** 
- * Updated by JCasGen Sun Mar 10 21:31:12 CET 2024
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Plant_Flora extends NamedEntity {
  

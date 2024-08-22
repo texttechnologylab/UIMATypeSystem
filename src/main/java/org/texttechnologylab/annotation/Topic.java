@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Mar 12 14:36:24 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.annotation;
  
@@ -22,8 +22,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Topic Output
- * Updated by JCasGen Tue Mar 12 14:36:24 CET 2024
- * XML source: /home/bagci/projects/UIMATypesystem-uima-3/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Topic extends Annotation {
  

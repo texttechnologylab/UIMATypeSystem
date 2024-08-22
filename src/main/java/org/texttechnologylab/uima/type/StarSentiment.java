@@ -1,10 +1,10 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sun Mar 10 21:31:13 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
 
 package org.texttechnologylab.uima.type;
- 
+
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -16,11 +16,9 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-
-
-/** 
- * Updated by JCasGen Sun Mar 10 21:31:13 CET 2024
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StarSentiment extends Sentiment {
  
