@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Aug 22 11:10:20 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Thu Aug 22 14:34:19 CEST 2024 */
 
 package org.texttechnologylab.annotation.metadata;
  
@@ -19,8 +19,8 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Emotion Output
- * Updated by JCasGen Thu Aug 22 11:10:20 CEST 2024
+/** View Reference
+ * Updated by JCasGen Thu Aug 22 14:34:19 CEST 2024
  * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ViewReference extends Annotation {
@@ -53,14 +53,20 @@ public class ViewReference extends Annotation {
    * *******************/ 
    
   public final static String _FeatName_SourceViewName = "SourceViewName";
-  public final static String _FeatName_SourceID = "SourceID";
+  public final static String _FeatName_SourceBegin = "SourceBegin";
+  public final static String _FeatName_SourceEnd = "SourceEnd";
+  public final static String _FeatName_SourceType = "SourceType";
 
 
   /* Feature Adjusted Offsets */
   private final static CallSite _FC_SourceViewName = TypeSystemImpl.createCallSite(ViewReference.class, "SourceViewName");
   private final static MethodHandle _FH_SourceViewName = _FC_SourceViewName.dynamicInvoker();
-  private final static CallSite _FC_SourceID = TypeSystemImpl.createCallSite(ViewReference.class, "SourceID");
-  private final static MethodHandle _FH_SourceID = _FC_SourceID.dynamicInvoker();
+  private final static CallSite _FC_SourceBegin = TypeSystemImpl.createCallSite(ViewReference.class, "SourceBegin");
+  private final static MethodHandle _FH_SourceBegin = _FC_SourceBegin.dynamicInvoker();
+  private final static CallSite _FC_SourceEnd = TypeSystemImpl.createCallSite(ViewReference.class, "SourceEnd");
+  private final static MethodHandle _FH_SourceEnd = _FC_SourceEnd.dynamicInvoker();
+  private final static CallSite _FC_SourceType = TypeSystemImpl.createCallSite(ViewReference.class, "SourceType");
+  private final static MethodHandle _FH_SourceType = _FC_SourceType.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -133,22 +139,64 @@ public class ViewReference extends Annotation {
    
     
   //*--------------*
-  //* Feature: SourceID
+  //* Feature: SourceBegin
 
-  /** getter for SourceID - gets ID of the source
+  /** getter for SourceBegin - gets Begin of the source
    * @generated
    * @return value of the feature 
    */
-  public String getSourceID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_SourceID));
+  public int getSourceBegin() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_SourceBegin));
   }
     
-  /** setter for SourceID - sets ID of the source 
+  /** setter for SourceBegin - sets Begin of the source 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSourceID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_SourceID), v);
+  public void setSourceBegin(int v) {
+    _setIntValueNfc(wrapGetIntCatchException(_FH_SourceBegin), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: SourceEnd
+
+  /** getter for SourceEnd - gets End of the source
+   * @generated
+   * @return value of the feature 
+   */
+  public int getSourceEnd() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_SourceEnd));
+  }
+    
+  /** setter for SourceEnd - sets End of the source 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSourceEnd(int v) {
+    _setIntValueNfc(wrapGetIntCatchException(_FH_SourceEnd), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: SourceType
+
+  /** getter for SourceType - gets Type of the source
+   * @generated
+   * @return value of the feature 
+   */
+  public String getSourceType() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_SourceType));
+  }
+    
+  /** setter for SourceType - sets Type of the source 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSourceType(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_SourceType), v);
   }    
     
   }
