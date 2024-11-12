@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.metadata.ViewReference</name>
+            <description>
+                View Reference
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>SourceViewName</name>
+
+                    <description>The name of the view from source</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+
+                <featureDescription>
+
+                    <name>SourceBegin</name>
+
+                    <description>Begin of the source</description>
+
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>SourceEnd</name>
+
+                    <description>End of the source</description>
+
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>SourceType</name>
+
+                    <description>Type of the source</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
