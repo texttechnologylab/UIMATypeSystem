@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>UceDynamicMetadata</name>
+    <description>For UCE, we don't know what kind of data we are importing. Consequently, we need some form of dynamic properties that hold additional data according to the corpus, that is interchangable and usable for filtering for example. This typesystem was created for this.</description>
+    <version>1.0</version>
+    <vendor>Text Technology Lab</vendor>
+  <imports>
+    <import name="desc.type.LexicalUnits_customized"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.uce.Metadata</name>
+      <description>Dynamic metadata triplets, consisting of a key, a value and the type modelling the value.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>key</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>value</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>valueType</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
