@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Jan 08 14:42:01 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jan 09 10:06:28 CET 2025 */
 
 package org.texttechnologylab.annotation.uce;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Dynamic metadata triplets, consisting of a key, a value and the type modelling the value.
- * Updated by JCasGen Wed Jan 08 14:42:01 CET 2025
+ * Updated by JCasGen Thu Jan 09 10:06:28 CET 2025
  * XML source: C:/kevin/projects/duui/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Metadata extends Annotation {
@@ -55,6 +55,7 @@ public class Metadata extends Annotation {
   public final static String _FeatName_key = "key";
   public final static String _FeatName_value = "value";
   public final static String _FeatName_valueType = "valueType";
+  public final static String _FeatName_comment = "comment";
 
 
   /* Feature Adjusted Offsets */
@@ -64,6 +65,8 @@ public class Metadata extends Annotation {
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
   private final static CallSite _FC_valueType = TypeSystemImpl.createCallSite(Metadata.class, "valueType");
   private final static MethodHandle _FH_valueType = _FC_valueType.dynamicInvoker();
+  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(Metadata.class, "comment");
+  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -173,6 +176,27 @@ public class Metadata extends Annotation {
    */
   public void setValueType(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_valueType), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: comment
+
+  /** getter for comment - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getComment() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
+  }
+    
+  /** setter for comment - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setComment(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
   }    
     
   }
