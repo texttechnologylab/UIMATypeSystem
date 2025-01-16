@@ -1,7 +1,10 @@
 
 
-/* First created by JCasGen Thu Jan 16 13:35:57 CET 2025 */
+   
+/* Apache UIMA v3 - First created by JCasGen Thu Jan 16 14:57:32 CET 2025 */
+
 package org.texttechnologylab.type.llm.prompt;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -11,16 +14,17 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.TOP_Type;
+
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** LLM result
- * Updated by JCasGen Thu Jan 16 14:50:33 CET 2025
+ * Updated by JCasGen Thu Jan 16 14:57:32 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Result extends Annotation {
+ 
   /** @generated
    * @ordered 
    */
@@ -64,6 +68,8 @@ public class Result extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
+  @Deprecated
+  @SuppressWarnings ("deprecation")
   protected Result() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
