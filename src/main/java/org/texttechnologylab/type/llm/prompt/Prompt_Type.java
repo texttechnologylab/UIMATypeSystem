@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Thu Jan 16 11:25:03 CET 2025
+ * Updated by JCasGen Thu Jan 16 14:18:16 CET 2025
  * @generated */
 public class Prompt_Type extends Annotation_Type {
   /** @generated */
@@ -72,6 +72,78 @@ public class Prompt_Type extends Annotation_Type {
     ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_messages), i, v);
   }
  
+ 
+  /** @generated */
+  final Feature casFeat_args;
+  /** @generated */
+  final int     casFeatCode_args;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getArgs(int addr) {
+        if (featOkTst && casFeat_args == null)
+      jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_args);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setArgs(int addr, String v) {
+        if (featOkTst && casFeat_args == null)
+      jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    ll_cas.ll_setStringValue(addr, casFeatCode_args, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_version;
+  /** @generated */
+  final int     casFeatCode_version;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getVersion(int addr) {
+        if (featOkTst && casFeat_version == null)
+      jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_version);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setVersion(int addr, String v) {
+        if (featOkTst && casFeat_version == null)
+      jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    ll_cas.ll_setStringValue(addr, casFeatCode_version, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_reference;
+  /** @generated */
+  final int     casFeatCode_reference;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public int getReference(int addr) {
+        if (featOkTst && casFeat_reference == null)
+      jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_reference);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setReference(int addr, int v) {
+        if (featOkTst && casFeat_reference == null)
+      jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    ll_cas.ll_setRefValue(addr, casFeatCode_reference, v);}
+    
+  
 
 
 
@@ -87,6 +159,18 @@ public class Prompt_Type extends Annotation_Type {
  
     casFeat_messages = jcas.getRequiredFeatureDE(casType, "messages", "uima.cas.FSArray", featOkTst);
     casFeatCode_messages  = (null == casFeat_messages) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_messages).getCode();
+
+ 
+    casFeat_args = jcas.getRequiredFeatureDE(casType, "args", "uima.cas.String", featOkTst);
+    casFeatCode_args  = (null == casFeat_args) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_args).getCode();
+
+ 
+    casFeat_version = jcas.getRequiredFeatureDE(casType, "version", "uima.cas.String", featOkTst);
+    casFeatCode_version  = (null == casFeat_version) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_version).getCode();
+
+ 
+    casFeat_reference = jcas.getRequiredFeatureDE(casType, "reference", "uima.cas.TOP", featOkTst);
+    casFeatCode_reference  = (null == casFeat_reference) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_reference).getCode();
 
   }
 }

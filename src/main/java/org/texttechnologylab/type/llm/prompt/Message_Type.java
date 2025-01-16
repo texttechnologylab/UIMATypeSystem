@@ -13,7 +13,7 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 import org.apache.uima.jcas.cas.FSList_Type;
 
 /** List of messages.
- * Updated by JCasGen Thu Jan 16 11:25:03 CET 2025
+ * Updated by JCasGen Thu Jan 16 14:18:16 CET 2025
  * @generated */
 public class Message_Type extends Annotation_Type {
   /** @generated */

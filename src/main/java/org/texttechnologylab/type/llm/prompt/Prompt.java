@@ -8,12 +8,13 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Thu Jan 16 11:25:03 CET 2025
+ * Updated by JCasGen Thu Jan 16 14:18:16 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Prompt extends Annotation {
@@ -120,6 +121,72 @@ public class Prompt extends Annotation {
       jcasType.jcas.throwFeatMissing("messages", "org.texttechnologylab.type.llm.prompt.Prompt");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i);
     jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i, jcasType.ll_cas.ll_getFSRef(v));}
+   
+    
+  //*--------------*
+  //* Feature: args
+
+  /** getter for args - gets Prompt arguments
+   * @generated
+   * @return value of the feature 
+   */
+  public String getArgs() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_args == null)
+      jcasType.jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_args);}
+    
+  /** setter for args - sets Prompt arguments 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setArgs(String v) {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_args == null)
+      jcasType.jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_args, v);}    
+   
+    
+  //*--------------*
+  //* Feature: version
+
+  /** getter for version - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getVersion() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_version);}
+    
+  /** setter for version - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setVersion(String v) {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_version, v);}    
+   
+    
+  //*--------------*
+  //* Feature: reference
+
+  /** getter for reference - gets Reference to another annotation
+   * @generated
+   * @return value of the feature 
+   */
+  public TOP getReference() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_reference)));}
+    
+  /** setter for reference - sets Reference to another annotation 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setReference(TOP v) {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

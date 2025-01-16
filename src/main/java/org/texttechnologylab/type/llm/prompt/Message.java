@@ -14,7 +14,7 @@ import org.apache.uima.jcas.cas.FSList;
 
 
 /** List of messages.
- * Updated by JCasGen Thu Jan 16 11:25:03 CET 2025
+ * Updated by JCasGen Thu Jan 16 14:18:16 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Message extends Annotation {
