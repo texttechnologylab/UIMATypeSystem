@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** List of messages.
- * Updated by JCasGen Thu Jan 16 14:57:32 CET 2025
+ * Updated by JCasGen Thu Feb 13 11:24:40 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Message extends Annotation {
@@ -56,11 +56,21 @@ public class Message extends Annotation {
   public final static String _FeatName_content = "content";
 
 
+  public final static String _FeatName_classModule = "classModule";
+  public final static String _FeatName_className = "className";
+
+
   /* Feature Adjusted Offsets */
   private final static CallSite _FC_role = TypeSystemImpl.createCallSite(Message.class, "role");
   private final static MethodHandle _FH_role = _FC_role.dynamicInvoker();
   private final static CallSite _FC_content = TypeSystemImpl.createCallSite(Message.class, "content");
   private final static MethodHandle _FH_content = _FC_content.dynamicInvoker();
+
+   
+  private final static CallSite _FC_classModule = TypeSystemImpl.createCallSite(Message.class, "classModule");
+  private final static MethodHandle _FH_classModule = _FC_classModule.dynamicInvoker();
+  private final static CallSite _FC_className = TypeSystemImpl.createCallSite(Message.class, "className");
+  private final static MethodHandle _FH_className = _FC_className.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -149,6 +159,48 @@ public class Message extends Annotation {
    */
   public void setContent(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_content), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: classModule
+
+  /** getter for classModule - gets Name of the module of the class to use for constructing the message
+   * @generated
+   * @return value of the feature 
+   */
+  public String getClassModule() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_classModule));
+  }
+    
+  /** setter for classModule - sets Name of the module of the class to use for constructing the message 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setClassModule(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_classModule), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: className
+
+  /** getter for className - gets Name of the class to use for constructing the message
+   * @generated
+   * @return value of the feature 
+   */
+  public String getClassName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_className));
+  }
+    
+  /** setter for className - sets Name of the class to use for constructing the message 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setClassName(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_className), v);
   }    
     
   }

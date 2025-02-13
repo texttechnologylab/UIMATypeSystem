@@ -22,7 +22,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Thu Jan 16 14:57:32 CET 2025
+ * Updated by JCasGen Thu Feb 13 11:24:40 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Prompt extends Annotation {

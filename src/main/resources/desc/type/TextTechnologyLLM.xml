@@ -1,422 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-                      
-  
-  
-  
-  
-  
-  
-  
-  
   <name>TextTechnologyLLM</name>
-                      
-  
-  
-  
-  
-  
-  
-  
-  
   <description>Typesystem for basic LLM prompting.</description>
-                      
-  
-  
-  
-  
-  
-  
-  
-  
   <version>1.0</version>
-                      
-  
-  
-  
-  
-  
-  
-  
-  
   <vendor>Text Technology Lab</vendor>
-                      
-  
-  
-  
-  
-  
-  
-  
-  
   <types>
-                                        
-    
-    
-    
-    
-    
-    
-    
-    
     <typeDescription>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <name>org.texttechnologylab.type.llm.prompt.Prompt</name>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <description>Prompt for a LLM containing a list of "messages".</description>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <supertypeName>uima.tcas.Annotation</supertypeName>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <features>
-                                                                                
-        
-        
-        
-        
-        
-        
-        
-        
         <featureDescription>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <name>messages</name>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <description>The list of messages for this prompt.</description>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                                                            
-          
-          
-          
-          
-          
           <elementType>org.texttechnologylab.type.llm.prompt.Message</elementType>
-                                                                                        
-        
-        
-        
-        
-        
-        
-        
         </featureDescription>
-                                                              
-      
-      
-      
-      
-      
-      
         <featureDescription>
-                    
           <name>args</name>
-                    
           <description>Prompt arguments</description>
-                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
         </featureDescription>
-                
         <featureDescription>
-                    
           <name>version</name>
-                    
           <description/>
-                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
         </featureDescription>
-                
         <featureDescription>
-                    
           <name>reference</name>
-                    
           <description>Reference to another annotation</description>
-                    
           <rangeTypeName>uima.cas.TOP</rangeTypeName>
-                  
         </featureDescription>
       </features>
-                                                          
-    
-    
-    
-    
-    
-    
-    
-    
     </typeDescription>
-                                        
-    
-    
-    
-    
-    
-    
-    
-    
     <typeDescription>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <name>org.texttechnologylab.type.llm.prompt.Message</name>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <description>List of messages.</description>
-                                                            
-      
-      
-      
-      
-      
-      
-      
-      
       <supertypeName>uima.tcas.Annotation</supertypeName>
-                                                          
-    
-      
-      
-      
-      
-      
-      
-      
       <features>
-                                                                        
-        
-        
-        
-        
-        
-        
-        
         <featureDescription>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <name>role</name>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <description>Role, e.g. "system", "user", ...</description>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                                                                                        
-        
-        
-        
-        
-        
-        
-        
         </featureDescription>
-                                                                        
-        
-        
-        
-        
-        
-        
-        
         <featureDescription>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <name>content</name>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <description>Message content.</description>
-                                                                                          
-          
-          
-          
-          
-          
-          
-          
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                                                                                        
-        
-        
-        
-        
-        
-        
-        
         </featureDescription>
-                                                                      
-      
-      
-      
-      
-      
-      
-      
+        <featureDescription>
+          <name>classModule</name>
+          <description>Name of the module of the class to use for constructing the message</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>className</name>
+          <description>Name of the class to use for constructing the message</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
       </features>
-                                              
-    
-    
-    
-    
-    
-    
     </typeDescription>
-                                      
-  
-  
-  
-  
-  
-  
-  
-  
     <typeDescription>
-            
       <name>org.texttechnologylab.type.llm.prompt.Result</name>
-            
-      <description>LLM result</description>
-            
+      <description>LLM result, this allows the explicit selection of content generated by the LLM</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
-            
       <features>
-                
         <featureDescription>
-                    
-          <name>content</name>
-                    
-          <description>Message content</description>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
           <name>meta</name>
-                    
           <description>Additional metadata</description>
-                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
         </featureDescription>
-                
         <featureDescription>
-                    
           <name>prompt</name>
-                    
-          <description/>
-                    
+          <description>Reference to the corresponding prompt</description>
           <rangeTypeName>org.texttechnologylab.type.llm.prompt.Prompt</rangeTypeName>
-                  
         </featureDescription>
-              
+        <featureDescription>
+          <name>message</name>
+          <description>Reference to the corresponding message inside a prompt</description>
+          <rangeTypeName>org.texttechnologylab.type.llm.prompt.Prompt</rangeTypeName>
+        </featureDescription>
       </features>
-          
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.type.llm.prompt.FillableMessage</name>
+      <description>This message is supposed to be filled by an LLM by using the previous messages as input/history.</description>
+      <supertypeName>org.texttechnologylab.type.llm.prompt.Message</supertypeName>
+      <features>
+        <featureDescription>
+          <name>contextName</name>
+          <description>If a contextName is given, the "content" of this message will be added to the model invocation to be used in a template placeholder</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
     </typeDescription>
   </types>
-                  
-
-
-
-
-
-
-
-
 </typeSystemDescription>
