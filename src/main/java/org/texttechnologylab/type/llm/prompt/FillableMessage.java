@@ -19,7 +19,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** This message is supposed to be filled by an LLM by using the previous messages as input/history.
- * Updated by JCasGen Thu Feb 13 11:24:40 CET 2025
+ * Updated by JCasGen Fri Feb 14 15:14:04 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class FillableMessage extends Message {

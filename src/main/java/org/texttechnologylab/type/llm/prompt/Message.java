@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** List of messages.
- * Updated by JCasGen Thu Feb 13 11:24:40 CET 2025
+ * Updated by JCasGen Fri Feb 14 15:14:04 CET 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
  * @generated */
 public class Message extends Annotation {
