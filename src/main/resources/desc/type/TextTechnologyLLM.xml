@@ -78,7 +78,7 @@
         <featureDescription>
           <name>message</name>
           <description>Reference to the corresponding message inside a prompt</description>
-          <rangeTypeName>org.texttechnologylab.type.llm.prompt.Prompt</rangeTypeName>
+          <rangeTypeName>org.texttechnologylab.type.llm.prompt.Message</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
