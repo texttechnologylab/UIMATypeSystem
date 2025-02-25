@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Coordinate extends AnnotationBase {
@@ -138,14 +138,12 @@ public class Coordinate extends AnnotationBase {
     //*--------------*
     //* Feature: y
 
-    /**
-     * getter for y - gets
-     *
-     * @return value of the feature
+    /** getter for y - gets
      * @generated
-     */
-    public int getY() {
-        return _getIntValueNc(wrapGetIntCatchException(_FH_y));
+   * @return value of the feature 
+   */
+  public int getY() { 
+    return _getIntValueNc(wrapGetIntCatchException(_FH_y));
   }
     
   /** setter for y - sets  

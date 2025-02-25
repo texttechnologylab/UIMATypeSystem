@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
 
 package org.texttechnologylab.type.morphosyn.tag.konj1;
 
@@ -16,7 +16,7 @@ import org.texttechnologylab.type.morphosyn.tag.KONJ1;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KONJ1DE extends KONJ1 {

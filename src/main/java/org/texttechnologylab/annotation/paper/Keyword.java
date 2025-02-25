@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Keyword extends Annotation {
@@ -124,14 +124,12 @@ public class Keyword extends Annotation {
     //*--------------*
     //* Feature: value
 
-    /**
-     * getter for value - gets
-     *
-     * @return value of the feature
+    /** getter for value - gets
      * @generated
-     */
-    public String getValue() {
-        return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+     * @return value of the feature
+   */
+  public String getValue() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
     
   /** setter for value - sets  

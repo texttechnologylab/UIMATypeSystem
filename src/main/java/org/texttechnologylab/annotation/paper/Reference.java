@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Reference extends NonTextContent {
@@ -131,10 +131,10 @@ public class Reference extends NonTextContent {
      * @generated
      */
     public TOP getReference() {
-        return (TOP) (_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-    }
-
-    /** setter for reference - sets
+        return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+  }
+    
+  /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
