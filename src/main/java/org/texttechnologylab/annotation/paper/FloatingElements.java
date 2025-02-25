@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FloatingElements extends AnnotationBase {
@@ -121,13 +121,11 @@ public class FloatingElements extends AnnotationBase {
         return (Caption) (_getFeatureValueNc(wrapGetIntCatchException(_FH_caption)));
     }
 
-    /**
-     * setter for caption - sets
-     *
-     * @param v value to set into the feature
+    /** setter for caption - sets
      * @generated
-     */
-    public void setCaption(Caption v) {
+   * @param v value to set into the feature 
+   */
+  public void setCaption(Caption v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_caption), v);
   }    
     

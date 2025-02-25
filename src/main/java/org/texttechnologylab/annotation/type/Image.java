@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Image extends Annotation {
@@ -62,6 +62,7 @@ public class Image extends Annotation {
     public final static String _FeatName_src = "src";
     public final static String _FeatName_width = "width";
     public final static String _FeatName_height = "height";
+    public final static String _FeatName_mimetype = "mimetype";
 
 
     /* Feature Adjusted Offsets */
@@ -71,6 +72,8 @@ public class Image extends Annotation {
     private final static MethodHandle _FH_width = _FC_width.dynamicInvoker();
     private final static CallSite _FC_height = TypeSystemImpl.createCallSite(Image.class, "height");
     private final static MethodHandle _FH_height = _FC_height.dynamicInvoker();
+    private final static CallSite _FC_mimetype = TypeSystemImpl.createCallSite(Image.class, "mimetype");
+    private final static MethodHandle _FH_mimetype = _FC_mimetype.dynamicInvoker();
 
 
     /**
@@ -184,16 +187,38 @@ public class Image extends Annotation {
      * @return value of the feature
      * @generated
      */
-    public Annotation getHeight() {
-        return (Annotation) (_getFeatureValueNc(wrapGetIntCatchException(_FH_height)));
+    public int getHeight() {
+        return _getIntValueNc(wrapGetIntCatchException(_FH_height));
     }
 
-    /** setter for height - sets
+    /**
+     * setter for height - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setHeight(int v) {
+        _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
+    }
+
+
+    //*--------------*
+    //* Feature: mimetype
+
+    /** getter for mimetype - gets
+     * @generated
+   * @return value of the feature 
+     */
+    public String getMimetype() {
+        return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));
+  }
+    
+  /** setter for mimetype - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setHeight(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_height), v);
+  public void setMimetype(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
   }    
     
   }

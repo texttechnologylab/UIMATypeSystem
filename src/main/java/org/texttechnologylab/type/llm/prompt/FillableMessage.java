@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Feb 13 11:24:40 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.type.llm.prompt;
  
@@ -19,8 +19,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** This message is supposed to be filled by an LLM by using the previous messages as input/history.
- * Updated by JCasGen Fri Feb 14 15:14:04 CET 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FillableMessage extends Message {
  

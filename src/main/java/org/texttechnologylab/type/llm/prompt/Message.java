@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jan 16 14:57:32 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.type.llm.prompt;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** List of messages.
- * Updated by JCasGen Fri Feb 14 15:14:04 CET 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Message extends Annotation {
  
@@ -54,8 +54,6 @@ public class Message extends Annotation {
    
   public final static String _FeatName_role = "role";
   public final static String _FeatName_content = "content";
-
-
   public final static String _FeatName_classModule = "classModule";
   public final static String _FeatName_className = "className";
 
@@ -65,8 +63,6 @@ public class Message extends Annotation {
   private final static MethodHandle _FH_role = _FC_role.dynamicInvoker();
   private final static CallSite _FC_content = TypeSystemImpl.createCallSite(Message.class, "content");
   private final static MethodHandle _FH_content = _FC_content.dynamicInvoker();
-
-   
   private final static CallSite _FC_classModule = TypeSystemImpl.createCallSite(Message.class, "classModule");
   private final static MethodHandle _FH_classModule = _FC_classModule.dynamicInvoker();
   private final static CallSite _FC_className = TypeSystemImpl.createCallSite(Message.class, "className");

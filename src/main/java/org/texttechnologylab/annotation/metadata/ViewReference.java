@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Aug 22 14:34:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.metadata;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** View Reference
- * Updated by JCasGen Thu Aug 22 14:34:19 CEST 2024
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ViewReference extends Annotation {
  

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -21,7 +21,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubImage extends Annotation {
@@ -159,7 +159,7 @@ public class SubImage extends Annotation {
      */
     @SuppressWarnings("unchecked")
     public Coordinate getCoordinates(int i) {
-        return (Coordinate) (((FSArray<Coordinate>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));
+        return (Coordinate)(((FSArray<Coordinate>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));
     }
 
     /** indexed setter for coordinates - sets an indexed value -
@@ -176,18 +176,16 @@ public class SubImage extends Annotation {
     //*--------------*
     //* Feature: parent
 
-    /**
-     * getter for parent - gets
-     *
+    /** getter for parent - gets
+     * @generated
      * @return value of the feature
-     * @generated
-     */
-    public Image getParent() {
-        return (Image) (_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
-    }
-
-    /** setter for parent - sets
-     * @generated
+   */
+  public Image getParent() { 
+    return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
+  }
+    
+  /** setter for parent - sets  
+   * @generated
    * @param v value to set into the feature 
    */
   public void setParent(Image v) {

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class URL extends TextContent {
@@ -134,13 +134,11 @@ public class URL extends TextContent {
         return (TOP) (_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
     }
 
-    /**
-     * setter for reference - sets
-     *
-     * @param v value to set into the feature
-     * @generated
-     */
-    public void setReference(TOP v) {
+    /** setter for reference - sets
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setReference(TOP v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
   }    
     

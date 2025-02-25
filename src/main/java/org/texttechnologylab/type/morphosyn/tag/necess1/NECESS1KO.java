@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.type.morphosyn.tag.necess1;
 
@@ -16,7 +16,7 @@ import org.texttechnologylab.type.morphosyn.tag.NECESS1;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class NECESS1KO extends NECESS1 {

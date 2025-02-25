@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Nov 12 09:09:17 CET 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -20,8 +20,8 @@ import org.texttechnologylab.annotation.model.MetaData;
 
 
 /** Sentiment Output
- * Updated by JCasGen Tue Nov 12 09:09:17 CET 2024
- * XML source: /home/bagci/projects/UIMATypesystem-uima-3/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SentimentModel extends SentimentBert {
  

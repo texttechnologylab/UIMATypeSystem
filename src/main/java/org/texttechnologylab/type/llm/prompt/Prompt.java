@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jan 16 14:57:32 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.type.llm.prompt;
  
@@ -22,8 +22,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Fri Feb 14 15:14:04 CET 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/TextTechnologyLLM.xml
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Prompt extends Annotation {
  

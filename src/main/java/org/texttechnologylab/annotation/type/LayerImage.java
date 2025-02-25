@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LayerImage extends WebImage {
@@ -129,11 +129,11 @@ public class LayerImage extends WebImage {
      */
     public int getIndex() {
         return _getIntValueNc(wrapGetIntCatchException(_FH_index));
-    }
-
-    /** setter for index - sets
-     * @generated
-     * @param v value to set into the feature
+  }
+    
+  /** setter for index - sets  
+   * @generated
+   * @param v value to set into the feature 
    */
   public void setIndex(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_index), v);

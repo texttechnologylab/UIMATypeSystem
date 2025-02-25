@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 04 15:15:19 CEST 2024 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 12:41:26 CET 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Thu Jul 04 15:15:19 CEST 2024
+ * Updated by JCasGen Tue Feb 25 12:41:26 CET 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WebImage extends Image {
@@ -156,11 +156,11 @@ public class WebImage extends Image {
      */
     public int getPosY() {
         return _getIntValueNc(wrapGetIntCatchException(_FH_posY));
-    }
-
-    /** setter for posY - sets
-     * @generated
-     * @param v value to set into the feature
+  }
+    
+  /** setter for posY - sets  
+   * @generated
+   * @param v value to set into the feature 
    */
   public void setPosY(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_posY), v);
