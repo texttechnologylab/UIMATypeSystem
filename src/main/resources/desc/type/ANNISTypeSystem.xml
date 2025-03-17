@@ -31,7 +31,6 @@
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-        <typeDescription>
             <name>org.texttechnologylab.annotation.annis.Line</name>
             <description/>
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
