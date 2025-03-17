@@ -26,6 +26,16 @@
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.Inflection</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.InflectionClass</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
             <name>org.texttechnologylab.annotation.annis.InflectionClassLemma</name>
             <description/>
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
