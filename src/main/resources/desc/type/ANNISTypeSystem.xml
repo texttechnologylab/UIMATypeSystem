@@ -6,42 +6,42 @@
     <vendor/>
     <types>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Verse</name>
+            <name>org.texttechnologylab.annotation.annis.Verse</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.PosLemma</name>
+            <name>org.texttechnologylab.annotation.annis.PosLemma</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Rhyme</name>
+            <name>org.texttechnologylab.annotation.annis.Rhyme</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Translation</name>
+            <name>org.texttechnologylab.annotation.annis.Translation</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.InflectionClassLemma</name>
+            <name>org.texttechnologylab.annotation.annis.InflectionClassLemma</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Language</name>
+            <name>org.texttechnologylab.annotation.annis.Language</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Clause</name>
+            <name>org.texttechnologylab.annotation.annis.Clause</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Annotation</name>
+            <name>org.texttechnologylab.annotation.annis.Annotation</name>
             <description/>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -53,9 +53,9 @@
             </features>
         </typeDescription>
         <typeDescription>
-            <name>sorg.texttechnologylab.annotation.annis.Variation</name>
+            <name>org.texttechnologylab.annotation.annis.Variation</name>
             <description/>
-            <supertypeName>sorg.texttechnologylab.annotation.annis.Annotation</supertypeName>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
             <features>
                 <featureDescription>
                     <name>layer</name>
