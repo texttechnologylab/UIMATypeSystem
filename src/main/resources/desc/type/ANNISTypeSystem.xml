@@ -26,6 +26,21 @@
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.Page</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.Chapter</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.SubChapter</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
             <name>org.texttechnologylab.annotation.annis.Inflection</name>
             <description/>
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
