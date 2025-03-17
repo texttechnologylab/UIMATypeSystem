@@ -36,6 +36,11 @@
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
         </typeDescription>
         <typeDescription>
+            <name>org.texttechnologylab.annotation.annis.Writer</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
             <name>org.texttechnologylab.annotation.annis.Clause</name>
             <description/>
             <supertypeName>org.texttechnologylab.annotation.annis.Annotation</supertypeName>
