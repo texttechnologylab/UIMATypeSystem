@@ -43,17 +43,35 @@
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
-                    <name>adm</name>
+                    <name>adm1</name>
                     <description>
-                        Up to four administrative divisions in a StringArray.
-                        Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
-                        additional level between country and fips code. The code '00' stands for general features where
-                        no specific adm1 code is defined.
-                        adm2 is the code for the second administrative division, i.e. a county in the US.
-                        adm3 is the code for third level administrative division.
-                        adm4 is the code for fourth level administrative division.
+                        The code for top level administrative division, most of which are FIPS codes.
+                        ISO codes are used for US, CH, BE and ME.
+                        UK and Greece are using an additional level between country and fips code.
+                        The code '00' stands for general features where no specific adm1 code is defined.
                     </description>
-                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>adm2</name>
+                    <description>
+                        The code for the second level administrative division, i.e. a county in the US.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>adm3</name>
+                    <description>
+                        The code for third level administrative division.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>adm4</name>
+                    <description>
+                        The code for fourth level administrative division.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>latitude</name>
