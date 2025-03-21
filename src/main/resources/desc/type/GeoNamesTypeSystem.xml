@@ -30,10 +30,10 @@
                 <featureDescription>
                     <name>featureCode</name>
                     <description>
-                        Fine-grained feature code, up to ten letters, see:
+                        Fine-grained feature code, see:
                         http://www.geonames.org/export/codes.html
                     </description>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                    <rangeTypeName>GeoNamesFeatureCode</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>countryCode</name>
@@ -45,7 +45,7 @@
                 <featureDescription>
                     <name>adm</name>
                     <description>
-                        Up to four administrative divisions in a StringList.
+                        Up to four administrative divisions in a StringArray.
                         Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
                         additional level between country and fips code. The code '00' stands for general features where
                         no specific adm1 code is defined.
@@ -72,7 +72,8 @@
                 <featureDescription>
                     <name>elevation</name>
                     <description>
-                        Elevation in meters above/below normal as a 16-bit signed integer number, optional.
+                        Elevation in meters above/below normal as a 16-bit signed integer number;
+                        optional, defaults to 0.
                     </description>
                     <rangeTypeName>uima.cas.Short</rangeTypeName>
                 </featureDescription>
@@ -118,6 +119,3344 @@
                 <value>
                     <string>V</string>
                     <description>forest,heath,...</description>
+                </value>
+            </allowedValues>
+        </typeDescription>
+        <typeDescription>
+            <name>GeoNamesFeatureCode</name>
+            <description>A GeoNames feature code.</description>
+            <supertypeName>uima.cas.String</supertypeName>
+            <allowedValues>
+                <value>
+                    <string>ADM1</string>
+                    <description>first-order administrative division; a primary administrative division of a country,
+                        such as a state in the United States
+                    </description>
+                </value>
+                <value>
+                    <string>ADM1H</string>
+                    <description>historical first-order administrative division; a former first-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM2</string>
+                    <description>second-order administrative division; a subdivision of a first-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM2H</string>
+                    <description>historical second-order administrative division; a former second-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM3</string>
+                    <description>third-order administrative division; a subdivision of a second-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM3H</string>
+                    <description>historical third-order administrative division; a former third-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM4</string>
+                    <description>fourth-order administrative division; a subdivision of a third-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM4H</string>
+                    <description>historical fourth-order administrative division; a former fourth-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM5</string>
+                    <description>fifth-order administrative division; a subdivision of a fourth-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADM5H</string>
+                    <description>historical fifth-order administrative division; a former fifth-order administrative
+                        division
+                    </description>
+                </value>
+                <value>
+                    <string>ADMD</string>
+                    <description>administrative division; an administrative division of a country, undifferentiated as
+                        to administrative level
+                    </description>
+                </value>
+                <value>
+                    <string>ADMDH</string>
+                    <description>historical administrative division ; a former administrative division of a political
+                        entity, undifferentiated as to administrative level
+                    </description>
+                </value>
+                <value>
+                    <string>LTER</string>
+                    <description>leased area; a tract of land leased to another country, usually for military
+                        installations
+                    </description>
+                </value>
+                <value>
+                    <string>PCL</string>
+                    <description>political entity</description>
+                </value>
+                <value>
+                    <string>PCLD</string>
+                    <description>dependent political entity</description>
+                </value>
+                <value>
+                    <string>PCLF</string>
+                    <description>freely associated state</description>
+                </value>
+                <value>
+                    <string>PCLH</string>
+                    <description>historical political entity; a former political entity</description>
+                </value>
+                <value>
+                    <string>PCLI</string>
+                    <description>independent political entity</description>
+                </value>
+                <value>
+                    <string>PCLIX</string>
+                    <description>section of independent political entity</description>
+                </value>
+                <value>
+                    <string>PCLS</string>
+                    <description>semi-independent political entity</description>
+                </value>
+                <value>
+                    <string>PRSH</string>
+                    <description>parish; an ecclesiastical district</description>
+                </value>
+                <value>
+                    <string>TERR</string>
+                    <description>territory</description>
+                </value>
+                <value>
+                    <string>ZN</string>
+                    <description>zone</description>
+                </value>
+                <value>
+                    <string>ZNB</string>
+                    <description>buffer zone; a zone recognized as a buffer between two nations in which military
+                        presence is minimal or absent
+                    </description>
+                </value>
+                <value>
+                    <string>AIRS</string>
+                    <description>seaplane landing area; a place on a waterbody where floatplanes land and take off
+                    </description>
+                </value>
+                <value>
+                    <string>ANCH</string>
+                    <description>anchorage; an area where vessels may anchor</description>
+                </value>
+                <value>
+                    <string>BAY</string>
+                    <description>bay; a coastal indentation between two capes or headlands, larger than a cove but
+                        smaller than a gulf
+                    </description>
+                </value>
+                <value>
+                    <string>BAYS</string>
+                    <description>bays; coastal indentations between two capes or headlands, larger than a cove but
+                        smaller than a gulf
+                    </description>
+                </value>
+                <value>
+                    <string>BGHT</string>
+                    <description>bight(s); an open body of water forming a slight recession in a coastline</description>
+                </value>
+                <value>
+                    <string>BNK</string>
+                    <description>bank(s); an elevation, typically located on a shelf, over which the depth of water is
+                        relatively shallow but sufficient for most surface navigation
+                    </description>
+                </value>
+                <value>
+                    <string>BNKR</string>
+                    <description>stream bank; a sloping margin of a stream channel which normally confines the stream to
+                        its channel on land
+                    </description>
+                </value>
+                <value>
+                    <string>BNKX</string>
+                    <description>section of bank</description>
+                </value>
+                <value>
+                    <string>BOG</string>
+                    <description>bog(s); a wetland characterized by peat forming sphagnum moss, sedge, and other
+                        acid-water plants
+                    </description>
+                </value>
+                <value>
+                    <string>CAPG</string>
+                    <description>icecap; a dome-shaped mass of glacial ice covering an area of mountain summits or other
+                        high lands; smaller than an ice sheet
+                    </description>
+                </value>
+                <value>
+                    <string>CHN</string>
+                    <description>channel; the deepest part of a stream, bay, lagoon, or strait, through which the main
+                        current flows
+                    </description>
+                </value>
+                <value>
+                    <string>CHNL</string>
+                    <description>lake channel(s); that part of a lake having water deep enough for navigation between
+                        islands, shoals, etc.
+                    </description>
+                </value>
+                <value>
+                    <string>CHNM</string>
+                    <description>marine channel; that part of a body of water deep enough for navigation through an area
+                        otherwise not suitable
+                    </description>
+                </value>
+                <value>
+                    <string>CHNN</string>
+                    <description>navigation channel; a buoyed channel of sufficient depth for the safe navigation of
+                        vessels
+                    </description>
+                </value>
+                <value>
+                    <string>CNFL</string>
+                    <description>confluence; a place where two or more streams or intermittent streams flow together
+                    </description>
+                </value>
+                <value>
+                    <string>CNL</string>
+                    <description>canal; an artificial watercourse</description>
+                </value>
+                <value>
+                    <string>CNLA</string>
+                    <description>aqueduct; a conduit used to carry water</description>
+                </value>
+                <value>
+                    <string>CNLB</string>
+                    <description>canal bend; a conspicuously curved or bent section of a canal</description>
+                </value>
+                <value>
+                    <string>CNLD</string>
+                    <description>drainage canal; an artificial waterway carrying water away from a wetland or from
+                        drainage ditches
+                    </description>
+                </value>
+                <value>
+                    <string>CNLI</string>
+                    <description>irrigation canal; a canal which serves as a main conduit for irrigation water
+                    </description>
+                </value>
+                <value>
+                    <string>CNLN</string>
+                    <description>navigation canal(s); a watercourse constructed for navigation of vessels</description>
+                </value>
+                <value>
+                    <string>CNLQ</string>
+                    <description>abandoned canal</description>
+                </value>
+                <value>
+                    <string>CNLSB</string>
+                    <description>underground irrigation canal(s); a gently inclined underground tunnel bringing water
+                        for irrigation from aquifers
+                    </description>
+                </value>
+                <value>
+                    <string>CNLX</string>
+                    <description>section of canal</description>
+                </value>
+                <value>
+                    <string>COVE</string>
+                    <description>cove(s); a small coastal indentation, smaller than a bay</description>
+                </value>
+                <value>
+                    <string>CRKT</string>
+                    <description>tidal creek(s); a meandering channel in a coastal wetland subject to bi-directional
+                        tidal currents
+                    </description>
+                </value>
+                <value>
+                    <string>CRNT</string>
+                    <description>current; a horizontal flow of water in a given direction with uniform velocity
+                    </description>
+                </value>
+                <value>
+                    <string>CUTF</string>
+                    <description>cutoff; a channel formed as a result of a stream cutting through a meander neck
+                    </description>
+                </value>
+                <value>
+                    <string>DCK</string>
+                    <description>dock(s); a waterway between two piers, or cut into the land for the berthing of ships
+                    </description>
+                </value>
+                <value>
+                    <string>DCKB</string>
+                    <description>docking basin; a part of a harbor where ships dock</description>
+                </value>
+                <value>
+                    <string>DOMG</string>
+                    <description>icecap dome; a comparatively elevated area on an icecap</description>
+                </value>
+                <value>
+                    <string>DPRG</string>
+                    <description>icecap depression; a comparatively depressed area on an icecap</description>
+                </value>
+                <value>
+                    <string>DTCH</string>
+                    <description>ditch; a small artificial watercourse dug for draining or irrigating the land
+                    </description>
+                </value>
+                <value>
+                    <string>DTCHD</string>
+                    <description>drainage ditch; a ditch which serves to drain the land</description>
+                </value>
+                <value>
+                    <string>DTCHI</string>
+                    <description>irrigation ditch; a ditch which serves to distribute irrigation water</description>
+                </value>
+                <value>
+                    <string>DTCHM</string>
+                    <description>ditch mouth(s); an area where a drainage ditch enters a lagoon, lake or bay
+                    </description>
+                </value>
+                <value>
+                    <string>ESTY</string>
+                    <description>estuary; a funnel-shaped stream mouth or embayment where fresh water mixes with sea
+                        water under tidal influences
+                    </description>
+                </value>
+                <value>
+                    <string>FISH</string>
+                    <description>fishing area; a fishing ground, bank or area where fishermen go to catch fish
+                    </description>
+                </value>
+                <value>
+                    <string>FJD</string>
+                    <description>fjord; a long, narrow, steep-walled, deep-water arm of the sea at high latitudes,
+                        usually along mountainous coasts
+                    </description>
+                </value>
+                <value>
+                    <string>FJDS</string>
+                    <description>fjords; long, narrow, steep-walled, deep-water arms of the sea at high latitudes,
+                        usually along mountainous coasts
+                    </description>
+                </value>
+                <value>
+                    <string>FLLS</string>
+                    <description>waterfall(s); a perpendicular or very steep descent of the water of a stream
+                    </description>
+                </value>
+                <value>
+                    <string>FLLSX</string>
+                    <description>section of waterfall(s)</description>
+                </value>
+                <value>
+                    <string>FLTM</string>
+                    <description>mud flat(s); a relatively level area of mud either between high and low tide lines, or
+                        subject to flooding
+                    </description>
+                </value>
+                <value>
+                    <string>FLTT</string>
+                    <description>tidal flat(s); a large flat area of mud or sand attached to the shore and alternately
+                        covered and uncovered by the tide
+                    </description>
+                </value>
+                <value>
+                    <string>GLCR</string>
+                    <description>glacier(s); a mass of ice, usually at high latitudes or high elevations, with
+                        sufficient thickness to flow away from the source area in lobes, tongues, or masses
+                    </description>
+                </value>
+                <value>
+                    <string>GULF</string>
+                    <description>gulf; a large recess in the coastline, larger than a bay</description>
+                </value>
+                <value>
+                    <string>GYSR</string>
+                    <description>geyser; a type of hot spring with intermittent eruptions of jets of hot water and
+                        steam
+                    </description>
+                </value>
+                <value>
+                    <string>HBR</string>
+                    <description>harbor(s); a haven or space of deep water so sheltered by the adjacent land as to
+                        afford a safe anchorage for ships
+                    </description>
+                </value>
+                <value>
+                    <string>HBRX</string>
+                    <description>section of harbor</description>
+                </value>
+                <value>
+                    <string>INLT</string>
+                    <description>inlet; a narrow waterway extending into the land, or connecting a bay or lagoon with a
+                        larger body of water
+                    </description>
+                </value>
+                <value>
+                    <string>INLTQ</string>
+                    <description>former inlet; an inlet which has been filled in, or blocked by deposits</description>
+                </value>
+                <value>
+                    <string>LBED</string>
+                    <description>lake bed(s); a dried up or drained area of a former lake</description>
+                </value>
+                <value>
+                    <string>LGN</string>
+                    <description>lagoon; a shallow coastal waterbody, completely or partly separated from a larger body
+                        of water by a barrier island, coral reef or other depositional feature
+                    </description>
+                </value>
+                <value>
+                    <string>LGNS</string>
+                    <description>lagoons; shallow coastal waterbodies, completely or partly separated from a larger body
+                        of water by a barrier island, coral reef or other depositional feature
+                    </description>
+                </value>
+                <value>
+                    <string>LGNX</string>
+                    <description>section of lagoon</description>
+                </value>
+                <value>
+                    <string>LK</string>
+                    <description>lake; a large inland body of standing water</description>
+                </value>
+                <value>
+                    <string>LKC</string>
+                    <description>crater lake; a lake in a crater or caldera</description>
+                </value>
+                <value>
+                    <string>LKI</string>
+                    <description>intermittent lake</description>
+                </value>
+                <value>
+                    <string>LKN</string>
+                    <description>salt lake; an inland body of salt water with no outlet</description>
+                </value>
+                <value>
+                    <string>LKNI</string>
+                    <description>intermittent salt lake</description>
+                </value>
+                <value>
+                    <string>LKO</string>
+                    <description>oxbow lake; a crescent-shaped lake commonly found adjacent to meandering streams
+                    </description>
+                </value>
+                <value>
+                    <string>LKOI</string>
+                    <description>intermittent oxbow lake</description>
+                </value>
+                <value>
+                    <string>LKS</string>
+                    <description>lakes; large inland bodies of standing water</description>
+                </value>
+                <value>
+                    <string>LKSB</string>
+                    <description>underground lake; a standing body of water in a cave</description>
+                </value>
+                <value>
+                    <string>LKSC</string>
+                    <description>crater lakes; lakes in a crater or caldera</description>
+                </value>
+                <value>
+                    <string>LKSI</string>
+                    <description>intermittent lakes</description>
+                </value>
+                <value>
+                    <string>LKSN</string>
+                    <description>salt lakes; inland bodies of salt water with no outlet</description>
+                </value>
+                <value>
+                    <string>LKSNI</string>
+                    <description>intermittent salt lakes</description>
+                </value>
+                <value>
+                    <string>LKX</string>
+                    <description>section of lake</description>
+                </value>
+                <value>
+                    <string>MFGN</string>
+                    <description>salt evaporation ponds; diked salt ponds used in the production of solar evaporated
+                        salt
+                    </description>
+                </value>
+                <value>
+                    <string>MGV</string>
+                    <description>mangrove swamp; a tropical tidal mud flat characterized by mangrove vegetation
+                    </description>
+                </value>
+                <value>
+                    <string>MOOR</string>
+                    <description>moor(s); an area of open ground overlaid with wet peaty soils</description>
+                </value>
+                <value>
+                    <string>MRSH</string>
+                    <description>marsh(es); a wetland dominated by grass-like vegetation</description>
+                </value>
+                <value>
+                    <string>MRSHN</string>
+                    <description>salt marsh; a flat area, subject to periodic salt water inundation, dominated by grassy
+                        salt-tolerant plants
+                    </description>
+                </value>
+                <value>
+                    <string>NRWS</string>
+                    <description>narrows; a navigable narrow part of a bay, strait, river, etc.</description>
+                </value>
+                <value>
+                    <string>OCN</string>
+                    <description>ocean; one of the major divisions of the vast expanse of salt water covering part of
+                        the earth
+                    </description>
+                </value>
+                <value>
+                    <string>OVF</string>
+                    <description>overfalls; an area of breaking waves caused by the meeting of currents or by waves
+                        moving against the current
+                    </description>
+                </value>
+                <value>
+                    <string>PND</string>
+                    <description>pond; a small standing waterbody</description>
+                </value>
+                <value>
+                    <string>PNDI</string>
+                    <description>intermittent pond</description>
+                </value>
+                <value>
+                    <string>PNDN</string>
+                    <description>salt pond; a small standing body of salt water often in a marsh or swamp, usually along
+                        a seacoast
+                    </description>
+                </value>
+                <value>
+                    <string>PNDNI</string>
+                    <description>intermittent salt pond(s)</description>
+                </value>
+                <value>
+                    <string>PNDS</string>
+                    <description>ponds; small standing waterbodies</description>
+                </value>
+                <value>
+                    <string>PNDSF</string>
+                    <description>fishponds; ponds or enclosures in which fish are kept or raised</description>
+                </value>
+                <value>
+                    <string>PNDSI</string>
+                    <description>intermittent ponds</description>
+                </value>
+                <value>
+                    <string>PNDSN</string>
+                    <description>salt ponds; small standing bodies of salt water often in a marsh or swamp, usually
+                        along a seacoast
+                    </description>
+                </value>
+                <value>
+                    <string>POOL</string>
+                    <description>pool(s); a small and comparatively still, deep part of a larger body of water such as a
+                        stream or harbor; or a small body of standing water
+                    </description>
+                </value>
+                <value>
+                    <string>POOLI</string>
+                    <description>intermittent pool</description>
+                </value>
+                <value>
+                    <string>RCH</string>
+                    <description>reach; a straight section of a navigable stream or channel between two bends
+                    </description>
+                </value>
+                <value>
+                    <string>RDGG</string>
+                    <description>icecap ridge; a linear elevation on an icecap</description>
+                </value>
+                <value>
+                    <string>RDST</string>
+                    <description>roadstead; an open anchorage affording less protection than a harbor</description>
+                </value>
+                <value>
+                    <string>RF</string>
+                    <description>reef(s); a surface-navigation hazard composed of consolidated material</description>
+                </value>
+                <value>
+                    <string>RFC</string>
+                    <description>coral reef(s); a surface-navigation hazard composed of coral</description>
+                </value>
+                <value>
+                    <string>RFX</string>
+                    <description>section of reef</description>
+                </value>
+                <value>
+                    <string>RPDS</string>
+                    <description>rapids; a turbulent section of a stream associated with a steep, irregular stream bed
+                    </description>
+                </value>
+                <value>
+                    <string>RSV</string>
+                    <description>reservoir(s); an artificial pond or lake</description>
+                </value>
+                <value>
+                    <string>RSVI</string>
+                    <description>intermittent reservoir</description>
+                </value>
+                <value>
+                    <string>RSVT</string>
+                    <description>water tank; a contained pool or tank of water at, below, or above ground level
+                    </description>
+                </value>
+                <value>
+                    <string>RVN</string>
+                    <description>ravine(s); a small, narrow, deep, steep-sided stream channel, smaller than a gorge
+                    </description>
+                </value>
+                <value>
+                    <string>SBKH</string>
+                    <description>sabkha(s); a salt flat or salt encrusted plain subject to periodic inundation from
+                        flooding or high tides
+                    </description>
+                </value>
+                <value>
+                    <string>SD</string>
+                    <description>sound; a long arm of the sea forming a channel between the mainland and an island or
+                        islands; or connecting two larger bodies of water
+                    </description>
+                </value>
+                <value>
+                    <string>SEA</string>
+                    <description>sea; a large body of salt water more or less confined by continuous land or chains of
+                        islands forming a subdivision of an ocean
+                    </description>
+                </value>
+                <value>
+                    <string>SHOL</string>
+                    <description>shoal(s); a surface-navigation hazard composed of unconsolidated material</description>
+                </value>
+                <value>
+                    <string>SILL</string>
+                    <description>sill; the low part of an underwater gap or saddle separating basins, including a
+                        similar feature at the mouth of a fjord
+                    </description>
+                </value>
+                <value>
+                    <string>SPNG</string>
+                    <description>spring(s); a place where ground water flows naturally out of the ground</description>
+                </value>
+                <value>
+                    <string>SPNS</string>
+                    <description>sulphur spring(s); a place where sulphur ground water flows naturally out of the
+                        ground
+                    </description>
+                </value>
+                <value>
+                    <string>SPNT</string>
+                    <description>hot spring(s); a place where hot ground water flows naturally out of the ground
+                    </description>
+                </value>
+                <value>
+                    <string>STM</string>
+                    <description>stream; a body of running water moving to a lower level in a channel on land
+                    </description>
+                </value>
+                <value>
+                    <string>STMA</string>
+                    <description>anabranch; a diverging branch flowing out of a main stream and rejoining it
+                        downstream
+                    </description>
+                </value>
+                <value>
+                    <string>STMB</string>
+                    <description>stream bend; a conspicuously curved or bent segment of a stream</description>
+                </value>
+                <value>
+                    <string>STMC</string>
+                    <description>canalized stream; a stream that has been substantially ditched, diked, or
+                        straightened
+                    </description>
+                </value>
+                <value>
+                    <string>STMD</string>
+                    <description>distributary(-ies); a branch which flows away from the main stream, as in a delta or
+                        irrigation canal
+                    </description>
+                </value>
+                <value>
+                    <string>STMH</string>
+                    <description>headwaters; the source and upper part of a stream, including the upper drainage basin
+                    </description>
+                </value>
+                <value>
+                    <string>STMI</string>
+                    <description>intermittent stream</description>
+                </value>
+                <value>
+                    <string>STMIX</string>
+                    <description>section of intermittent stream</description>
+                </value>
+                <value>
+                    <string>STMM</string>
+                    <description>stream mouth(s); a place where a stream discharges into a lagoon, lake, or the sea
+                    </description>
+                </value>
+                <value>
+                    <string>STMQ</string>
+                    <description>abandoned watercourse; a former stream or distributary no longer carrying flowing
+                        water, but still evident due to lakes, wetland, topographic or vegetation patterns
+                    </description>
+                </value>
+                <value>
+                    <string>STMS</string>
+                    <description>streams; bodies of running water moving to a lower level in a channel on land
+                    </description>
+                </value>
+                <value>
+                    <string>STMSB</string>
+                    <description>lost river; a surface stream that disappears into an underground channel, or dries up
+                        in an arid area
+                    </description>
+                </value>
+                <value>
+                    <string>STMX</string>
+                    <description>section of stream</description>
+                </value>
+                <value>
+                    <string>STRT</string>
+                    <description>strait; a relatively narrow waterway, usually narrower and less extensive than a sound,
+                        connecting two larger bodies of water
+                    </description>
+                </value>
+                <value>
+                    <string>SWMP</string>
+                    <description>swamp; a wetland dominated by tree vegetation</description>
+                </value>
+                <value>
+                    <string>SYSI</string>
+                    <description>irrigation system; a network of ditches and one or more of the following elements:
+                        water supply, reservoir, canal, pump, well, drain, etc.
+                    </description>
+                </value>
+                <value>
+                    <string>TNLC</string>
+                    <description>canal tunnel; a tunnel through which a canal passes</description>
+                </value>
+                <value>
+                    <string>WAD</string>
+                    <description>wadi; a valley or ravine, bounded by relatively steep banks, which in the rainy season
+                        becomes a watercourse; found primarily in North Africa and the Middle East
+                    </description>
+                </value>
+                <value>
+                    <string>WADB</string>
+                    <description>wadi bend; a conspicuously curved or bent segment of a wadi</description>
+                </value>
+                <value>
+                    <string>WADJ</string>
+                    <description>wadi junction; a place where two or more wadies join</description>
+                </value>
+                <value>
+                    <string>WADM</string>
+                    <description>wadi mouth; the lower terminus of a wadi where it widens into an adjoining floodplain,
+                        depression, or waterbody
+                    </description>
+                </value>
+                <value>
+                    <string>WADS</string>
+                    <description>wadies; valleys or ravines, bounded by relatively steep banks, which in the rainy
+                        season become watercourses; found primarily in North Africa and the Middle East
+                    </description>
+                </value>
+                <value>
+                    <string>WADX</string>
+                    <description>section of wadi</description>
+                </value>
+                <value>
+                    <string>WHRL</string>
+                    <description>whirlpool; a turbulent, rotating movement of water in a stream</description>
+                </value>
+                <value>
+                    <string>WLL</string>
+                    <description>well; a cylindrical hole, pit, or tunnel drilled or dug down to a depth from which
+                        water, oil, or gas can be pumped or brought to the surface
+                    </description>
+                </value>
+                <value>
+                    <string>WLLQ</string>
+                    <description>abandoned well</description>
+                </value>
+                <value>
+                    <string>WLLS</string>
+                    <description>wells; cylindrical holes, pits, or tunnels drilled or dug down to a depth from which
+                        water, oil, or gas can be pumped or brought to the surface
+                    </description>
+                </value>
+                <value>
+                    <string>WTLD</string>
+                    <description>wetland; an area subject to inundation, usually characterized by bog, marsh, or swamp
+                        vegetation
+                    </description>
+                </value>
+                <value>
+                    <string>WTLDI</string>
+                    <description>intermittent wetland</description>
+                </value>
+                <value>
+                    <string>WTRC</string>
+                    <description>watercourse; a natural, well-defined channel produced by flowing water, or an
+                        artificial channel designed to carry flowing water
+                    </description>
+                </value>
+                <value>
+                    <string>WTRH</string>
+                    <description>waterhole(s); a natural hole, hollow, or small depression that contains water, used by
+                        man and animals, especially in arid areas
+                    </description>
+                </value>
+                <value>
+                    <string>AGRC</string>
+                    <description>agricultural colony; a tract of land set aside for agricultural settlement
+                    </description>
+                </value>
+                <value>
+                    <string>AMUS</string>
+                    <description>amusement park; Amusement Park are theme parks, adventure parks offering entertainment,
+                        similar to funfairs but with a fix location
+                    </description>
+                </value>
+                <value>
+                    <string>AREA</string>
+                    <description>area; a tract of land without homogeneous character or boundaries</description>
+                </value>
+                <value>
+                    <string>BSND</string>
+                    <description>drainage basin; an area drained by a stream</description>
+                </value>
+                <value>
+                    <string>BSNP</string>
+                    <description>petroleum basin; an area underlain by an oil-rich structural basin</description>
+                </value>
+                <value>
+                    <string>BTL</string>
+                    <description>battlefield; a site of a land battle of historical importance</description>
+                </value>
+                <value>
+                    <string>CLG</string>
+                    <description>clearing; an area in a forest with trees removed</description>
+                </value>
+                <value>
+                    <string>CMN</string>
+                    <description>common; a park or pasture for community use</description>
+                </value>
+                <value>
+                    <string>CNS</string>
+                    <description>concession area; a lease of land by a government for economic development, e.g.,
+                        mining, forestry
+                    </description>
+                </value>
+                <value>
+                    <string>COLF</string>
+                    <description>coalfield; a region in which coal deposits of possible economic value occur
+                    </description>
+                </value>
+                <value>
+                    <string>CONT</string>
+                    <description>continent; continent: Europe, Africa, Asia, North America, South America, Oceania,
+                        Antarctica
+                    </description>
+                </value>
+                <value>
+                    <string>CST</string>
+                    <description>coast; a zone of variable width straddling the shoreline</description>
+                </value>
+                <value>
+                    <string>CTRB</string>
+                    <description>business center; a place where a number of businesses are located</description>
+                </value>
+                <value>
+                    <string>DEVH</string>
+                    <description>housing development; a tract of land on which many houses of similar design are built
+                        according to a development plan
+                    </description>
+                </value>
+                <value>
+                    <string>FLD</string>
+                    <description>field(s); an open as opposed to wooded area</description>
+                </value>
+                <value>
+                    <string>FLDI</string>
+                    <description>irrigated field(s); a tract of level or terraced land which is irrigated</description>
+                </value>
+                <value>
+                    <string>GASF</string>
+                    <description>gasfield; an area containing a subterranean store of natural gas of economic value
+                    </description>
+                </value>
+                <value>
+                    <string>GRAZ</string>
+                    <description>grazing area; an area of grasses and shrubs used for grazing</description>
+                </value>
+                <value>
+                    <string>GVL</string>
+                    <description>gravel area; an area covered with gravel</description>
+                </value>
+                <value>
+                    <string>INDS</string>
+                    <description>industrial area; an area characterized by industrial activity</description>
+                </value>
+                <value>
+                    <string>LAND</string>
+                    <description>arctic land; a tract of land in the Arctic</description>
+                </value>
+                <value>
+                    <string>LCTY</string>
+                    <description>locality; a minor area or place of unspecified or mixed character and indefinite
+                        boundaries
+                    </description>
+                </value>
+                <value>
+                    <string>MILB</string>
+                    <description>military base; a place used by an army or other armed service for storing arms and
+                        supplies, and for accommodating and training troops, a base from which operations can be
+                        initiated
+                    </description>
+                </value>
+                <value>
+                    <string>MNA</string>
+                    <description>mining area; an area of mine sites where minerals and ores are extracted</description>
+                </value>
+                <value>
+                    <string>MVA</string>
+                    <description>maneuver area; a tract of land where military field exercises are carried out
+                    </description>
+                </value>
+                <value>
+                    <string>NVB</string>
+                    <description>naval base; an area used to store supplies, provide barracks for troops and naval
+                        personnel, a port for naval vessels, and from which operations are initiated
+                    </description>
+                </value>
+                <value>
+                    <string>OAS</string>
+                    <description>oasis(-es); an area in a desert made productive by the availability of water
+                    </description>
+                </value>
+                <value>
+                    <string>OILF</string>
+                    <description>oilfield; an area containing a subterranean store of petroleum of economic value
+                    </description>
+                </value>
+                <value>
+                    <string>PEAT</string>
+                    <description>peat cutting area; an area where peat is harvested</description>
+                </value>
+                <value>
+                    <string>PRK</string>
+                    <description>park; an area, often of forested land, maintained as a place of beauty, or for
+                        recreation
+                    </description>
+                </value>
+                <value>
+                    <string>PRT</string>
+                    <description>port; a place provided with terminal and transfer facilities for loading and
+                        discharging waterborne cargo or passengers, usually located in a harbor
+                    </description>
+                </value>
+                <value>
+                    <string>QCKS</string>
+                    <description>quicksand; an area where loose sand with water moving through it may become unstable
+                        when heavy objects are placed at the surface, causing them to sink
+                    </description>
+                </value>
+                <value>
+                    <string>RES</string>
+                    <description>reserve; a tract of public land reserved for future use or restricted as to use
+                    </description>
+                </value>
+                <value>
+                    <string>RESA</string>
+                    <description>agricultural reserve; a tract of land reserved for agricultural reclamation and/or
+                        development
+                    </description>
+                </value>
+                <value>
+                    <string>RESF</string>
+                    <description>forest reserve; a forested area set aside for preservation or controlled use
+                    </description>
+                </value>
+                <value>
+                    <string>RESH</string>
+                    <description>hunting reserve; a tract of land used primarily for hunting</description>
+                </value>
+                <value>
+                    <string>RESN</string>
+                    <description>nature reserve; an area reserved for the maintenance of a natural habitat</description>
+                </value>
+                <value>
+                    <string>RESP</string>
+                    <description>palm tree reserve; an area of palm trees where use is controlled</description>
+                </value>
+                <value>
+                    <string>RESV</string>
+                    <description>reservation; a tract of land set aside for aboriginal, tribal, or native populations
+                    </description>
+                </value>
+                <value>
+                    <string>RESW</string>
+                    <description>wildlife reserve; a tract of public land reserved for the preservation of wildlife
+                    </description>
+                </value>
+                <value>
+                    <string>RGN</string>
+                    <description>region; an area distinguished by one or more observable physical or cultural
+                        characteristics
+                    </description>
+                </value>
+                <value>
+                    <string>RGNE</string>
+                    <description>economic region; a region of a country established for economic development or for
+                        statistical purposes
+                    </description>
+                </value>
+                <value>
+                    <string>RGNH</string>
+                    <description>historical region; a former historic area distinguished by one or more observable
+                        physical or cultural characteristics
+                    </description>
+                </value>
+                <value>
+                    <string>RGNL</string>
+                    <description>lake region; a tract of land distinguished by numerous lakes</description>
+                </value>
+                <value>
+                    <string>RNGA</string>
+                    <description>artillery range; a tract of land used for artillery firing practice</description>
+                </value>
+                <value>
+                    <string>SALT</string>
+                    <description>salt area; a shallow basin or flat where salt accumulates after periodic inundation
+                    </description>
+                </value>
+                <value>
+                    <string>SNOW</string>
+                    <description>snowfield; an area of permanent snow and ice forming the accumulation area of a
+                        glacier
+                    </description>
+                </value>
+                <value>
+                    <string>TRB</string>
+                    <description>tribal area; a tract of land used by nomadic or other tribes</description>
+                </value>
+                <value>
+                    <string>PPL</string>
+                    <description>populated place; a city, town, village, or other agglomeration of buildings where
+                        people live and work
+                    </description>
+                </value>
+                <value>
+                    <string>PPLA</string>
+                    <description>seat of a first-order administrative division; seat of a first-order administrative
+                        division (PPLC takes precedence over PPLA)
+                    </description>
+                </value>
+                <value>
+                    <string>PPLA2</string>
+                    <description>seat of a second-order administrative division</description>
+                </value>
+                <value>
+                    <string>PPLA3</string>
+                    <description>seat of a third-order administrative division</description>
+                </value>
+                <value>
+                    <string>PPLA4</string>
+                    <description>seat of a fourth-order administrative division</description>
+                </value>
+                <value>
+                    <string>PPLA5</string>
+                    <description>seat of a fifth-order administrative division</description>
+                </value>
+                <value>
+                    <string>PPLC</string>
+                    <description>capital of a political entity</description>
+                </value>
+                <value>
+                    <string>PPLCH</string>
+                    <description>historical capital of a political entity; a former capital of a political entity
+                    </description>
+                </value>
+                <value>
+                    <string>PPLF</string>
+                    <description>farm village; a populated place where the population is largely engaged in agricultural
+                        activities
+                    </description>
+                </value>
+                <value>
+                    <string>PPLG</string>
+                    <description>seat of government of a political entity</description>
+                </value>
+                <value>
+                    <string>PPLH</string>
+                    <description>historical populated place; a populated place that no longer exists</description>
+                </value>
+                <value>
+                    <string>PPLL</string>
+                    <description>populated locality; an area similar to a locality but with a small group of dwellings
+                        or other buildings
+                    </description>
+                </value>
+                <value>
+                    <string>PPLQ</string>
+                    <description>abandoned populated place</description>
+                </value>
+                <value>
+                    <string>PPLR</string>
+                    <description>religious populated place; a populated place whose population is largely engaged in
+                        religious occupations
+                    </description>
+                </value>
+                <value>
+                    <string>PPLS</string>
+                    <description>populated places; cities, towns, villages, or other agglomerations of buildings where
+                        people live and work
+                    </description>
+                </value>
+                <value>
+                    <string>PPLW</string>
+                    <description>destroyed populated place; a village, town or city destroyed by a natural disaster, or
+                        by war
+                    </description>
+                </value>
+                <value>
+                    <string>PPLX</string>
+                    <description>section of populated place</description>
+                </value>
+                <value>
+                    <string>STLMT</string>
+                    <description>israeli settlement</description>
+                </value>
+                <value>
+                    <string>CSWY</string>
+                    <description>causeway; a raised roadway across wet ground or shallow water</description>
+                </value>
+                <value>
+                    <string>OILP</string>
+                    <description>oil pipeline; a pipeline used for transporting oil</description>
+                </value>
+                <value>
+                    <string>PRMN</string>
+                    <description>promenade; a place for public walking, usually along a beach front</description>
+                </value>
+                <value>
+                    <string>PTGE</string>
+                    <description>portage; a place where boats, goods, etc., are carried overland between navigable
+                        waters
+                    </description>
+                </value>
+                <value>
+                    <string>RD</string>
+                    <description>road; an open way with improved surface for transportation of animals, people and
+                        vehicles
+                    </description>
+                </value>
+                <value>
+                    <string>RDA</string>
+                    <description>ancient road; the remains of a road used by ancient cultures</description>
+                </value>
+                <value>
+                    <string>RDB</string>
+                    <description>road bend; a conspicuously curved or bent section of a road</description>
+                </value>
+                <value>
+                    <string>RDCUT</string>
+                    <description>road cut; an excavation cut through a hill or ridge for a road</description>
+                </value>
+                <value>
+                    <string>RDJCT</string>
+                    <description>road junction; a place where two or more roads join</description>
+                </value>
+                <value>
+                    <string>RJCT</string>
+                    <description>railroad junction; a place where two or more railroad tracks join</description>
+                </value>
+                <value>
+                    <string>RR</string>
+                    <description>railroad; a permanent twin steel-rail track on which freight and passenger cars move
+                        long distances
+                    </description>
+                </value>
+                <value>
+                    <string>RRQ</string>
+                    <description>abandoned railroad</description>
+                </value>
+                <value>
+                    <string>RTE</string>
+                    <description>caravan route; the route taken by caravans</description>
+                </value>
+                <value>
+                    <string>RYD</string>
+                    <description>railroad yard; a system of tracks used for the making up of trains, and switching and
+                        storing freight cars
+                    </description>
+                </value>
+                <value>
+                    <string>ST</string>
+                    <description>street; a paved urban thoroughfare</description>
+                </value>
+                <value>
+                    <string>STKR</string>
+                    <description>stock route; a route taken by livestock herds</description>
+                </value>
+                <value>
+                    <string>TNL</string>
+                    <description>tunnel; a subterranean passageway for transportation</description>
+                </value>
+                <value>
+                    <string>TNLN</string>
+                    <description>natural tunnel; a cave that is open at both ends</description>
+                </value>
+                <value>
+                    <string>TNLRD</string>
+                    <description>road tunnel; a tunnel through which a road passes</description>
+                </value>
+                <value>
+                    <string>TNLRR</string>
+                    <description>railroad tunnel; a tunnel through which a railroad passes</description>
+                </value>
+                <value>
+                    <string>TNLS</string>
+                    <description>tunnels; subterranean passageways for transportation</description>
+                </value>
+                <value>
+                    <string>TRL</string>
+                    <description>trail; a path, track, or route used by pedestrians, animals, or off-road vehicles
+                    </description>
+                </value>
+                <value>
+                    <string>ADMF</string>
+                    <description>administrative facility; a government building</description>
+                </value>
+                <value>
+                    <string>AGRF</string>
+                    <description>agricultural facility; a building and/or tract of land used for improving agriculture
+                    </description>
+                </value>
+                <value>
+                    <string>AIRB</string>
+                    <description>airbase; an area used to store supplies, provide barracks for air force personnel,
+                        hangars and runways for aircraft, and from which operations are initiated
+                    </description>
+                </value>
+                <value>
+                    <string>AIRF</string>
+                    <description>airfield; a place on land where aircraft land and take off; no facilities provided for
+                        the commercial handling of passengers and cargo
+                    </description>
+                </value>
+                <value>
+                    <string>AIRH</string>
+                    <description>heliport; a place where helicopters land and take off</description>
+                </value>
+                <value>
+                    <string>AIRP</string>
+                    <description>airport; a place where aircraft regularly land and take off, with runways, navigational
+                        aids, and major facilities for the commercial handling of passengers and cargo
+                    </description>
+                </value>
+                <value>
+                    <string>AIRQ</string>
+                    <description>abandoned airfield</description>
+                </value>
+                <value>
+                    <string>AIRT</string>
+                    <description>terminal; airport facilities for the handling of freight and passengers</description>
+                </value>
+                <value>
+                    <string>AMTH</string>
+                    <description>amphitheater; an oval or circular structure with rising tiers of seats about a stage or
+                        open space
+                    </description>
+                </value>
+                <value>
+                    <string>ANS</string>
+                    <description>archaeological/prehistoric site; a place where archeological remains, old structures,
+                        or cultural artifacts are located
+                    </description>
+                </value>
+                <value>
+                    <string>AQC</string>
+                    <description>aquaculture facility; facility or area for the cultivation of aquatic animals and
+                        plants, especially fish, shellfish, and seaweed, in natural or controlled marine or freshwater
+                        environments; underwater agriculture
+                    </description>
+                </value>
+                <value>
+                    <string>ARCH</string>
+                    <description>arch; a natural or man-made structure in the form of an arch</description>
+                </value>
+                <value>
+                    <string>ARCHV</string>
+                    <description>archive; a place or institution where documents are preserved</description>
+                </value>
+                <value>
+                    <string>ART</string>
+                    <description>piece of art; a piece of art, like a sculpture, painting. In contrast to monument
+                        (MNMT) it is not commemorative.
+                    </description>
+                </value>
+                <value>
+                    <string>ASTR</string>
+                    <description>astronomical station; a point on the earth whose position has been determined by
+                        observations of celestial bodies
+                    </description>
+                </value>
+                <value>
+                    <string>ASYL</string>
+                    <description>asylum; a facility where the insane are cared for and protected</description>
+                </value>
+                <value>
+                    <string>ATHF</string>
+                    <description>athletic field; a tract of land used for playing team sports, and athletic track and
+                        field events
+                    </description>
+                </value>
+                <value>
+                    <string>ATM</string>
+                    <description>automatic teller machine; An unattended electronic machine in a public place, connected
+                        to a data system and related equipment and activated by a bank customer to obtain cash
+                        withdrawals and other banking services.
+                    </description>
+                </value>
+                <value>
+                    <string>BANK</string>
+                    <description>bank; A business establishment in which money is kept for saving or commercial purposes
+                        or is invested, supplied for loans, or exchanged.
+                    </description>
+                </value>
+                <value>
+                    <string>BCN</string>
+                    <description>beacon; a fixed artificial navigation mark</description>
+                </value>
+                <value>
+                    <string>BDG</string>
+                    <description>bridge; a structure erected across an obstacle such as a stream, road, etc., in order
+                        to carry roads, railroads, and pedestrians across
+                    </description>
+                </value>
+                <value>
+                    <string>BDGQ</string>
+                    <description>ruined bridge; a destroyed or decayed bridge which is no longer functional
+                    </description>
+                </value>
+                <value>
+                    <string>BLDA</string>
+                    <description>apartment building; a building containing several individual apartments</description>
+                </value>
+                <value>
+                    <string>BLDG</string>
+                    <description>building(s); a structure built for permanent use, as a house, factory, etc.
+                    </description>
+                </value>
+                <value>
+                    <string>BLDO</string>
+                    <description>office building; commercial building where business and/or services are conducted
+                    </description>
+                </value>
+                <value>
+                    <string>BP</string>
+                    <description>boundary marker; a fixture marking a point along a boundary</description>
+                </value>
+                <value>
+                    <string>BRKS</string>
+                    <description>barracks; a building for lodging military personnel</description>
+                </value>
+                <value>
+                    <string>BRKW</string>
+                    <description>breakwater; a structure erected to break the force of waves at the entrance to a harbor
+                        or port
+                    </description>
+                </value>
+                <value>
+                    <string>BSTN</string>
+                    <description>baling station; a facility for baling agricultural products</description>
+                </value>
+                <value>
+                    <string>BTYD</string>
+                    <description>boatyard; a waterside facility for servicing, repairing, and building small vessels
+                    </description>
+                </value>
+                <value>
+                    <string>BUR</string>
+                    <description>burial cave(s); a cave used for human burials</description>
+                </value>
+                <value>
+                    <string>BUSTN</string>
+                    <description>bus station; a facility comprising ticket office, platforms, etc. for loading and
+                        unloading passengers
+                    </description>
+                </value>
+                <value>
+                    <string>BUSTP</string>
+                    <description>bus stop; a place lacking station facilities</description>
+                </value>
+                <value>
+                    <string>CARN</string>
+                    <description>cairn; a heap of stones erected as a landmark or for other purposes</description>
+                </value>
+                <value>
+                    <string>CAVE</string>
+                    <description>cave(s); an underground passageway or chamber, or cavity on the side of a cliff
+                    </description>
+                </value>
+                <value>
+                    <string>CH</string>
+                    <description>church; a building for public Christian worship</description>
+                </value>
+                <value>
+                    <string>CMP</string>
+                    <description>camp(s); a site occupied by tents, huts, or other shelters for temporary use
+                    </description>
+                </value>
+                <value>
+                    <string>CMPL</string>
+                    <description>logging camp; a camp used by loggers</description>
+                </value>
+                <value>
+                    <string>CMPLA</string>
+                    <description>labor camp; a camp used by migrant or temporary laborers</description>
+                </value>
+                <value>
+                    <string>CMPMN</string>
+                    <description>mining camp; a camp used by miners</description>
+                </value>
+                <value>
+                    <string>CMPO</string>
+                    <description>oil camp; a camp used by oilfield workers</description>
+                </value>
+                <value>
+                    <string>CMPQ</string>
+                    <description>abandoned camp</description>
+                </value>
+                <value>
+                    <string>CMPRF</string>
+                    <description>refugee camp; a camp used by refugees</description>
+                </value>
+                <value>
+                    <string>CMTY</string>
+                    <description>cemetery; a burial place or ground</description>
+                </value>
+                <value>
+                    <string>COMC</string>
+                    <description>communication center; a facility, including buildings, antennae, towers and electronic
+                        equipment for receiving and transmitting information
+                    </description>
+                </value>
+                <value>
+                    <string>CRRL</string>
+                    <description>corral(s); a pen or enclosure for confining or capturing animals</description>
+                </value>
+                <value>
+                    <string>CSNO</string>
+                    <description>casino; a building used for entertainment, especially gambling</description>
+                </value>
+                <value>
+                    <string>CSTL</string>
+                    <description>castle; a large fortified building or set of buildings</description>
+                </value>
+                <value>
+                    <string>CSTM</string>
+                    <description>customs house; a building in a port where customs and duties are paid, and where
+                        vessels are entered and cleared
+                    </description>
+                </value>
+                <value>
+                    <string>CTHSE</string>
+                    <description>courthouse; a building in which courts of law are held</description>
+                </value>
+                <value>
+                    <string>CTRA</string>
+                    <description>atomic center; a facility where atomic research is carried out</description>
+                </value>
+                <value>
+                    <string>CTRCM</string>
+                    <description>community center; a facility for community recreation and other activities
+                    </description>
+                </value>
+                <value>
+                    <string>CTRF</string>
+                    <description>facility center; a place where more than one facility is situated</description>
+                </value>
+                <value>
+                    <string>CTRM</string>
+                    <description>medical center; a complex of health care buildings including two or more of the
+                        following: hospital, medical school, clinic, pharmacy, doctor's offices, etc.
+                    </description>
+                </value>
+                <value>
+                    <string>CTRR</string>
+                    <description>religious center; a facility where more than one religious activity is carried out,
+                        e.g., retreat, school, monastery, worship
+                    </description>
+                </value>
+                <value>
+                    <string>CTRS</string>
+                    <description>space center; a facility for launching, tracking, or controlling satellites and space
+                        vehicles
+                    </description>
+                </value>
+                <value>
+                    <string>CVNT</string>
+                    <description>convent; a building where a community of nuns lives in seclusion</description>
+                </value>
+                <value>
+                    <string>DAM</string>
+                    <description>dam; a barrier constructed across a stream to impound water</description>
+                </value>
+                <value>
+                    <string>DAMQ</string>
+                    <description>ruined dam; a destroyed or decayed dam which is no longer functional</description>
+                </value>
+                <value>
+                    <string>DAMSB</string>
+                    <description>sub-surface dam; a dam put down to bedrock in a sand river</description>
+                </value>
+                <value>
+                    <string>DARY</string>
+                    <description>dairy; a facility for the processing, sale and distribution of milk or milk products
+                    </description>
+                </value>
+                <value>
+                    <string>DCKD</string>
+                    <description>dry dock; a dock providing support for a vessel, and means for removing the water so
+                        that the bottom of the vessel can be exposed
+                    </description>
+                </value>
+                <value>
+                    <string>DCKY</string>
+                    <description>dockyard; a facility for servicing, building, or repairing ships</description>
+                </value>
+                <value>
+                    <string>DIKE</string>
+                    <description>dike; an earth or stone embankment usually constructed for flood or stream control
+                    </description>
+                </value>
+                <value>
+                    <string>DIP</string>
+                    <description>diplomatic facility; office, residence, or facility of a foreign government, which may
+                        include an embassy, consulate, chancery, office of charge d'affaires, or other diplomatic,
+                        economic, military, or cultural mission
+                    </description>
+                </value>
+                <value>
+                    <string>DPOF</string>
+                    <description>fuel depot; an area where fuel is stored</description>
+                </value>
+                <value>
+                    <string>EST</string>
+                    <description>estate(s); a large commercialized agricultural landholding with associated buildings
+                        and other facilities
+                    </description>
+                </value>
+                <value>
+                    <string>ESTO</string>
+                    <description>oil palm plantation; an estate specializing in the cultivation of oil palm trees
+                    </description>
+                </value>
+                <value>
+                    <string>ESTR</string>
+                    <description>rubber plantation; an estate which specializes in growing and tapping rubber trees
+                    </description>
+                </value>
+                <value>
+                    <string>ESTSG</string>
+                    <description>sugar plantation; an estate that specializes in growing sugar cane</description>
+                </value>
+                <value>
+                    <string>ESTT</string>
+                    <description>tea plantation; an estate which specializes in growing tea bushes</description>
+                </value>
+                <value>
+                    <string>ESTX</string>
+                    <description>section of estate</description>
+                </value>
+                <value>
+                    <string>FCL</string>
+                    <description>facility; a building or buildings housing a center, institute, foundation, hospital,
+                        prison, mission, courthouse, etc.
+                    </description>
+                </value>
+                <value>
+                    <string>FNDY</string>
+                    <description>foundry; a building or works where metal casting is carried out</description>
+                </value>
+                <value>
+                    <string>FRM</string>
+                    <description>farm; a tract of land with associated buildings devoted to agriculture</description>
+                </value>
+                <value>
+                    <string>FRMQ</string>
+                    <description>abandoned farm</description>
+                </value>
+                <value>
+                    <string>FRMS</string>
+                    <description>farms; tracts of land with associated buildings devoted to agriculture</description>
+                </value>
+                <value>
+                    <string>FRMT</string>
+                    <description>farmstead; the buildings and adjacent service areas of a farm</description>
+                </value>
+                <value>
+                    <string>FT</string>
+                    <description>fort; a defensive structure or earthworks</description>
+                </value>
+                <value>
+                    <string>FY</string>
+                    <description>ferry; a boat or other floating conveyance and terminal facilities regularly used to
+                        transport people and vehicles across a waterbody
+                    </description>
+                </value>
+                <value>
+                    <string>FYT</string>
+                    <description>ferry terminal; a place where ferries pick-up and discharge passengers, vehicles and or
+                        cargo
+                    </description>
+                </value>
+                <value>
+                    <string>GATE</string>
+                    <description>gate; a controlled access entrance or exit</description>
+                </value>
+                <value>
+                    <string>GDN</string>
+                    <description>garden(s); an enclosure for displaying selected plant or animal life</description>
+                </value>
+                <value>
+                    <string>GHAT</string>
+                    <description>ghat; a set of steps leading to a river, which are of religious significance, and at
+                        their base is usually a platform for bathing
+                    </description>
+                </value>
+                <value>
+                    <string>GHSE</string>
+                    <description>guest house; a house used to provide lodging for paying guests</description>
+                </value>
+                <value>
+                    <string>GOSP</string>
+                    <description>gas-oil separator plant; a facility for separating gas from oil</description>
+                </value>
+                <value>
+                    <string>GOVL</string>
+                    <description>local government office; a facility housing local governmental offices, usually a city,
+                        town, or village hall
+                    </description>
+                </value>
+                <value>
+                    <string>GRVE</string>
+                    <description>grave; a burial site</description>
+                </value>
+                <value>
+                    <string>HERM</string>
+                    <description>hermitage; a secluded residence, usually for religious sects</description>
+                </value>
+                <value>
+                    <string>HLT</string>
+                    <description>halting place; a place where caravans stop for rest</description>
+                </value>
+                <value>
+                    <string>HMSD</string>
+                    <description>homestead; a residence, owner's or manager's, on a sheep or cattle station, woolshed,
+                        outcamp, or Aboriginal outstation, specific to Australia and New Zealand
+                    </description>
+                </value>
+                <value>
+                    <string>HSE</string>
+                    <description>house(s); a building used as a human habitation</description>
+                </value>
+                <value>
+                    <string>HSEC</string>
+                    <description>country house; a large house, mansion, or chateau, on a large estate</description>
+                </value>
+                <value>
+                    <string>HSP</string>
+                    <description>hospital; a building in which sick or injured, especially those confined to bed, are
+                        medically treated
+                    </description>
+                </value>
+                <value>
+                    <string>HSPC</string>
+                    <description>clinic; a medical facility associated with a hospital for outpatients</description>
+                </value>
+                <value>
+                    <string>HSPD</string>
+                    <description>dispensary; a building where medical or dental aid is dispensed</description>
+                </value>
+                <value>
+                    <string>HSPL</string>
+                    <description>leprosarium; an asylum or hospital for lepers</description>
+                </value>
+                <value>
+                    <string>HSTS</string>
+                    <description>historical site; a place of historical importance</description>
+                </value>
+                <value>
+                    <string>HTL</string>
+                    <description>hotel; a building providing lodging and/or meals for the public</description>
+                </value>
+                <value>
+                    <string>HUT</string>
+                    <description>hut; a small primitive house</description>
+                </value>
+                <value>
+                    <string>HUTS</string>
+                    <description>huts; small primitive houses</description>
+                </value>
+                <value>
+                    <string>INSM</string>
+                    <description>military installation; a facility for use of and control by armed forces</description>
+                </value>
+                <value>
+                    <string>ITTR</string>
+                    <description>research institute; a facility where research is carried out</description>
+                </value>
+                <value>
+                    <string>JTY</string>
+                    <description>jetty; a structure built out into the water at a river mouth or harbor entrance to
+                        regulate currents and silting
+                    </description>
+                </value>
+                <value>
+                    <string>LDNG</string>
+                    <description>landing; a place where boats receive or discharge passengers and freight, but lacking
+                        most port facilities
+                    </description>
+                </value>
+                <value>
+                    <string>LEPC</string>
+                    <description>leper colony; a settled area inhabited by lepers in relative isolation</description>
+                </value>
+                <value>
+                    <string>LIBR</string>
+                    <description>library; A place in which information resources such as books are kept for reading,
+                        reference, or lending.
+                    </description>
+                </value>
+                <value>
+                    <string>LNDF</string>
+                    <description>landfill; a place for trash and garbage disposal in which the waste is buried between
+                        layers of earth to build up low-lying land
+                    </description>
+                </value>
+                <value>
+                    <string>LOCK</string>
+                    <description>lock(s); a basin in a waterway with gates at each end by means of which vessels are
+                        passed from one water level to another
+                    </description>
+                </value>
+                <value>
+                    <string>LTHSE</string>
+                    <description>lighthouse; a distinctive structure exhibiting a major navigation light</description>
+                </value>
+                <value>
+                    <string>MALL</string>
+                    <description>mall; A large, often enclosed shopping complex containing various stores, businesses,
+                        and restaurants usually accessible by common passageways.
+                    </description>
+                </value>
+                <value>
+                    <string>MAR</string>
+                    <description>marina; a harbor facility for small boats, yachts, etc.</description>
+                </value>
+                <value>
+                    <string>MFG</string>
+                    <description>factory; one or more buildings where goods are manufactured, processed or fabricated
+                    </description>
+                </value>
+                <value>
+                    <string>MFGB</string>
+                    <description>brewery; one or more buildings where beer is brewed</description>
+                </value>
+                <value>
+                    <string>MFGC</string>
+                    <description>cannery; a building where food items are canned</description>
+                </value>
+                <value>
+                    <string>MFGCU</string>
+                    <description>copper works; a facility for processing copper ore</description>
+                </value>
+                <value>
+                    <string>MFGLM</string>
+                    <description>limekiln; a furnace in which limestone is reduced to lime</description>
+                </value>
+                <value>
+                    <string>MFGM</string>
+                    <description>munitions plant; a factory where ammunition is made</description>
+                </value>
+                <value>
+                    <string>MFGPH</string>
+                    <description>phosphate works; a facility for producing fertilizer</description>
+                </value>
+                <value>
+                    <string>MFGQ</string>
+                    <description>abandoned factory</description>
+                </value>
+                <value>
+                    <string>MFGSG</string>
+                    <description>sugar refinery; a facility for converting raw sugar into refined sugar</description>
+                </value>
+                <value>
+                    <string>MKT</string>
+                    <description>market; a place where goods are bought and sold at regular intervals</description>
+                </value>
+                <value>
+                    <string>ML</string>
+                    <description>mill(s); a building housing machines for transforming, shaping, finishing, grinding, or
+                        extracting products
+                    </description>
+                </value>
+                <value>
+                    <string>MLM</string>
+                    <description>ore treatment plant; a facility for improving the metal content of ore by
+                        concentration
+                    </description>
+                </value>
+                <value>
+                    <string>MLO</string>
+                    <description>olive oil mill; a mill where oil is extracted from olives</description>
+                </value>
+                <value>
+                    <string>MLSG</string>
+                    <description>sugar mill; a facility where sugar cane is processed into raw sugar</description>
+                </value>
+                <value>
+                    <string>MLSGQ</string>
+                    <description>former sugar mill; a sugar mill no longer used as a sugar mill</description>
+                </value>
+                <value>
+                    <string>MLSW</string>
+                    <description>sawmill; a mill where logs or lumber are sawn to specified shapes and sizes
+                    </description>
+                </value>
+                <value>
+                    <string>MLWND</string>
+                    <description>windmill; a mill or water pump powered by wind</description>
+                </value>
+                <value>
+                    <string>MLWTR</string>
+                    <description>water mill; a mill powered by running water</description>
+                </value>
+                <value>
+                    <string>MN</string>
+                    <description>mine(s); a site where mineral ores are extracted from the ground by excavating surface
+                        pits and subterranean passages
+                    </description>
+                </value>
+                <value>
+                    <string>MNAU</string>
+                    <description>gold mine(s); a mine where gold ore, or alluvial gold is extracted</description>
+                </value>
+                <value>
+                    <string>MNC</string>
+                    <description>coal mine(s); a mine where coal is extracted</description>
+                </value>
+                <value>
+                    <string>MNCR</string>
+                    <description>chrome mine(s); a mine where chrome ore is extracted</description>
+                </value>
+                <value>
+                    <string>MNCU</string>
+                    <description>copper mine(s); a mine where copper ore is extracted</description>
+                </value>
+                <value>
+                    <string>MNFE</string>
+                    <description>iron mine(s); a mine where iron ore is extracted</description>
+                </value>
+                <value>
+                    <string>MNMT</string>
+                    <description>monument; a commemorative structure or statue</description>
+                </value>
+                <value>
+                    <string>MNN</string>
+                    <description>salt mine(s); a mine from which salt is extracted</description>
+                </value>
+                <value>
+                    <string>MNQ</string>
+                    <description>abandoned mine</description>
+                </value>
+                <value>
+                    <string>MNQR</string>
+                    <description>quarry(-ies); a surface mine where building stone or gravel and sand, etc. are
+                        extracted
+                    </description>
+                </value>
+                <value>
+                    <string>MOLE</string>
+                    <description>mole; a massive structure of masonry or large stones serving as a pier or breakwater
+                    </description>
+                </value>
+                <value>
+                    <string>MSQE</string>
+                    <description>mosque; a building for public Islamic worship</description>
+                </value>
+                <value>
+                    <string>MSSN</string>
+                    <description>mission; a place characterized by dwellings, school, church, hospital and other
+                        facilities operated by a religious group for the purpose of providing charitable services and to
+                        propagate religion
+                    </description>
+                </value>
+                <value>
+                    <string>MSSNQ</string>
+                    <description>abandoned mission</description>
+                </value>
+                <value>
+                    <string>MSTY</string>
+                    <description>monastery; a building and grounds where a community of monks lives in seclusion
+                    </description>
+                </value>
+                <value>
+                    <string>MTRO</string>
+                    <description>metro station; metro station (Underground, Tube, or Metro)</description>
+                </value>
+                <value>
+                    <string>MUS</string>
+                    <description>museum; a building where objects of permanent interest in one or more of the arts and
+                        sciences are preserved and exhibited
+                    </description>
+                </value>
+                <value>
+                    <string>NOV</string>
+                    <description>novitiate; a religious house or school where novices are trained</description>
+                </value>
+                <value>
+                    <string>NSY</string>
+                    <description>nursery(-ies); a place where plants are propagated for transplanting or grafting
+                    </description>
+                </value>
+                <value>
+                    <string>OBPT</string>
+                    <description>observation point; a wildlife or scenic observation point</description>
+                </value>
+                <value>
+                    <string>OBS</string>
+                    <description>observatory; a facility equipped for observation of atmospheric or space phenomena
+                    </description>
+                </value>
+                <value>
+                    <string>OBSR</string>
+                    <description>radio observatory; a facility equipped with an array of antennae for receiving radio
+                        waves from space
+                    </description>
+                </value>
+                <value>
+                    <string>OILJ</string>
+                    <description>oil pipeline junction; a section of an oil pipeline where two or more pipes join
+                        together
+                    </description>
+                </value>
+                <value>
+                    <string>OILQ</string>
+                    <description>abandoned oil well</description>
+                </value>
+                <value>
+                    <string>OILR</string>
+                    <description>oil refinery; a facility for converting crude oil into refined petroleum products
+                    </description>
+                </value>
+                <value>
+                    <string>OILT</string>
+                    <description>tank farm; a tract of land occupied by large, cylindrical, metal tanks in which oil or
+                        liquid petrochemicals are stored
+                    </description>
+                </value>
+                <value>
+                    <string>OILW</string>
+                    <description>oil well; a well from which oil may be pumped</description>
+                </value>
+                <value>
+                    <string>OPRA</string>
+                    <description>opera house; A theater designed chiefly for the performance of operas.</description>
+                </value>
+                <value>
+                    <string>PAL</string>
+                    <description>palace; a large stately house, often a royal or presidential residence</description>
+                </value>
+                <value>
+                    <string>PGDA</string>
+                    <description>pagoda; a tower-like storied structure, usually a Buddhist shrine</description>
+                </value>
+                <value>
+                    <string>PIER</string>
+                    <description>pier; a structure built out into navigable water on piles providing berthing for ships
+                        and recreation
+                    </description>
+                </value>
+                <value>
+                    <string>PKLT</string>
+                    <description>parking lot; an area used for parking vehicles</description>
+                </value>
+                <value>
+                    <string>PMPO</string>
+                    <description>oil pumping station; a facility for pumping oil through a pipeline</description>
+                </value>
+                <value>
+                    <string>PMPW</string>
+                    <description>water pumping station; a facility for pumping water from a major well or through a
+                        pipeline
+                    </description>
+                </value>
+                <value>
+                    <string>PO</string>
+                    <description>post office; a public building in which mail is received, sorted and distributed
+                    </description>
+                </value>
+                <value>
+                    <string>PP</string>
+                    <description>police post; a building in which police are stationed</description>
+                </value>
+                <value>
+                    <string>PPQ</string>
+                    <description>abandoned police post</description>
+                </value>
+                <value>
+                    <string>PRKGT</string>
+                    <description>park gate; a controlled access to a park</description>
+                </value>
+                <value>
+                    <string>PRKHQ</string>
+                    <description>park headquarters; a park administrative facility</description>
+                </value>
+                <value>
+                    <string>PRN</string>
+                    <description>prison; a facility for confining prisoners</description>
+                </value>
+                <value>
+                    <string>PRNJ</string>
+                    <description>reformatory; a facility for confining, training, and reforming young law offenders
+                    </description>
+                </value>
+                <value>
+                    <string>PRNQ</string>
+                    <description>abandoned prison</description>
+                </value>
+                <value>
+                    <string>PS</string>
+                    <description>power station; a facility for generating electric power</description>
+                </value>
+                <value>
+                    <string>PSH</string>
+                    <description>hydroelectric power station; a building where electricity is generated from water
+                        power
+                    </description>
+                </value>
+                <value>
+                    <string>PSN</string>
+                    <description>nuclear power station; nuclear power station</description>
+                </value>
+                <value>
+                    <string>PSTB</string>
+                    <description>border post; a post or station at an international boundary for the regulation of
+                        movement of people and goods
+                    </description>
+                </value>
+                <value>
+                    <string>PSTC</string>
+                    <description>customs post; a building at an international boundary where customs and duties are paid
+                        on goods
+                    </description>
+                </value>
+                <value>
+                    <string>PSTP</string>
+                    <description>patrol post; a post from which patrols are sent out</description>
+                </value>
+                <value>
+                    <string>PYR</string>
+                    <description>pyramid; an ancient massive structure of square ground plan with four triangular faces
+                        meeting at a point and used for enclosing tombs
+                    </description>
+                </value>
+                <value>
+                    <string>PYRS</string>
+                    <description>pyramids; ancient massive structures of square ground plan with four triangular faces
+                        meeting at a point and used for enclosing tombs
+                    </description>
+                </value>
+                <value>
+                    <string>QUAY</string>
+                    <description>quay; a structure of solid construction along a shore or bank which provides berthing
+                        for ships and which generally provides cargo handling facilities
+                    </description>
+                </value>
+                <value>
+                    <string>RDCR</string>
+                    <description>traffic circle; a road junction formed around a central circle about which traffic
+                        moves in one direction only
+                    </description>
+                </value>
+                <value>
+                    <string>RDIN</string>
+                    <description>intersection; a junction of two or more highways by a system of separate levels that
+                        permit traffic to pass from one to another without the crossing of traffic streams
+                    </description>
+                </value>
+                <value>
+                    <string>RECG</string>
+                    <description>golf course; a recreation field where golf is played</description>
+                </value>
+                <value>
+                    <string>RECR</string>
+                    <description>racetrack; a track where races are held</description>
+                </value>
+                <value>
+                    <string>REST</string>
+                    <description>restaurant; A place where meals are served to the public</description>
+                </value>
+                <value>
+                    <string>RET</string>
+                    <description>store; a building where goods and/or services are offered for sale</description>
+                </value>
+                <value>
+                    <string>RHSE</string>
+                    <description>resthouse; a structure maintained for the rest and shelter of travelers</description>
+                </value>
+                <value>
+                    <string>RKRY</string>
+                    <description>rookery; a breeding place of a colony of birds or seals</description>
+                </value>
+                <value>
+                    <string>RLG</string>
+                    <description>religious site; an ancient site of significant religious importance</description>
+                </value>
+                <value>
+                    <string>RLGR</string>
+                    <description>retreat; a place of temporary seclusion, especially for religious groups</description>
+                </value>
+                <value>
+                    <string>RNCH</string>
+                    <description>ranch(es); a large farm specializing in extensive grazing of livestock</description>
+                </value>
+                <value>
+                    <string>RSD</string>
+                    <description>railroad siding; a short track parallel to and joining the main track</description>
+                </value>
+                <value>
+                    <string>RSGNL</string>
+                    <description>railroad signal; a signal at the entrance of a particular section of track governing
+                        the movement of trains
+                    </description>
+                </value>
+                <value>
+                    <string>RSRT</string>
+                    <description>resort; a specialized facility for vacation, health, or participation sports
+                        activities
+                    </description>
+                </value>
+                <value>
+                    <string>RSTN</string>
+                    <description>railroad station; a facility comprising ticket office, platforms, etc. for loading and
+                        unloading train passengers and freight
+                    </description>
+                </value>
+                <value>
+                    <string>RSTNQ</string>
+                    <description>abandoned railroad station</description>
+                </value>
+                <value>
+                    <string>RSTP</string>
+                    <description>railroad stop; a place lacking station facilities where trains stop to pick up and
+                        unload passengers and freight
+                    </description>
+                </value>
+                <value>
+                    <string>RSTPQ</string>
+                    <description>abandoned railroad stop</description>
+                </value>
+                <value>
+                    <string>RUIN</string>
+                    <description>ruin(s); a destroyed or decayed structure which is no longer functional</description>
+                </value>
+                <value>
+                    <string>SCH</string>
+                    <description>school; building(s) where instruction in one or more branches of knowledge takes
+                        place
+                    </description>
+                </value>
+                <value>
+                    <string>SCHA</string>
+                    <description>agricultural school; a school with a curriculum focused on agriculture</description>
+                </value>
+                <value>
+                    <string>SCHC</string>
+                    <description>college; the grounds and buildings of an institution of higher learning</description>
+                </value>
+                <value>
+                    <string>SCHL</string>
+                    <description>language school; Language Schools &amp; Institutions</description>
+                </value>
+                <value>
+                    <string>SCHM</string>
+                    <description>military school; a school at which military science forms the core of the curriculum
+                    </description>
+                </value>
+                <value>
+                    <string>SCHN</string>
+                    <description>maritime school; a school at which maritime sciences form the core of the curriculum
+                    </description>
+                </value>
+                <value>
+                    <string>SCHT</string>
+                    <description>technical school; post-secondary school with a specifically technical or vocational
+                        curriculum
+                    </description>
+                </value>
+                <value>
+                    <string>SECP</string>
+                    <description>State Exam Prep Centre; state exam preparation centres</description>
+                </value>
+                <value>
+                    <string>SHPF</string>
+                    <description>sheepfold; a fence or wall enclosure for sheep and other small herd animals
+                    </description>
+                </value>
+                <value>
+                    <string>SHRN</string>
+                    <description>shrine; a structure or place memorializing a person or religious concept</description>
+                </value>
+                <value>
+                    <string>SHSE</string>
+                    <description>storehouse; a building for storing goods, especially provisions</description>
+                </value>
+                <value>
+                    <string>SLCE</string>
+                    <description>sluice; a conduit or passage for carrying off surplus water from a waterbody, usually
+                        regulated by means of a sluice gate
+                    </description>
+                </value>
+                <value>
+                    <string>SNTR</string>
+                    <description>sanatorium; a facility where victims of physical or mental disorders are treated
+                    </description>
+                </value>
+                <value>
+                    <string>SPA</string>
+                    <description>spa; a resort area usually developed around a medicinal spring</description>
+                </value>
+                <value>
+                    <string>SPLY</string>
+                    <description>spillway; a passage or outlet through which surplus water flows over, around or through
+                        a dam
+                    </description>
+                </value>
+                <value>
+                    <string>SQR</string>
+                    <description>square; a broad, open, public area near the center of a town or city</description>
+                </value>
+                <value>
+                    <string>STBL</string>
+                    <description>stable; a building for the shelter and feeding of farm animals, especially horses
+                    </description>
+                </value>
+                <value>
+                    <string>STDM</string>
+                    <description>stadium; a structure with an enclosure for athletic games with tiers of seats for
+                        spectators
+                    </description>
+                </value>
+                <value>
+                    <string>STNB</string>
+                    <description>scientific research base; a scientific facility used as a base from which research is
+                        carried out or monitored
+                    </description>
+                </value>
+                <value>
+                    <string>STNC</string>
+                    <description>coast guard station; a facility from which the coast is guarded by armed vessels
+                    </description>
+                </value>
+                <value>
+                    <string>STNE</string>
+                    <description>experiment station; a facility for carrying out experiments</description>
+                </value>
+                <value>
+                    <string>STNF</string>
+                    <description>forest station; a collection of buildings and facilities for carrying out forest
+                        management
+                    </description>
+                </value>
+                <value>
+                    <string>STNI</string>
+                    <description>inspection station; a station at which vehicles, goods, and people are inspected
+                    </description>
+                </value>
+                <value>
+                    <string>STNM</string>
+                    <description>meteorological station; a station at which weather elements are recorded</description>
+                </value>
+                <value>
+                    <string>STNR</string>
+                    <description>radio station; a facility for producing and transmitting information by radio waves
+                    </description>
+                </value>
+                <value>
+                    <string>STNS</string>
+                    <description>satellite station; a facility for tracking and communicating with orbiting satellites
+                    </description>
+                </value>
+                <value>
+                    <string>STNW</string>
+                    <description>whaling station; a facility for butchering whales and processing train oil
+                    </description>
+                </value>
+                <value>
+                    <string>STPS</string>
+                    <description>steps; stones or slabs placed for ease in ascending or descending a steep slope
+                    </description>
+                </value>
+                <value>
+                    <string>SWT</string>
+                    <description>sewage treatment plant; facility for the processing of sewage and/or wastewater
+                    </description>
+                </value>
+                <value>
+                    <string>SYG</string>
+                    <description>synagogue; a place for Jewish worship and religious instruction</description>
+                </value>
+                <value>
+                    <string>THTR</string>
+                    <description>theater; A building, room, or outdoor structure for the presentation of plays, films,
+                        or other dramatic performances
+                    </description>
+                </value>
+                <value>
+                    <string>TMB</string>
+                    <description>tomb(s); a structure for interring bodies</description>
+                </value>
+                <value>
+                    <string>TMPL</string>
+                    <description>temple(s); an edifice dedicated to religious worship</description>
+                </value>
+                <value>
+                    <string>TNKD</string>
+                    <description>cattle dipping tank; a small artificial pond used for immersing cattle in chemically
+                        treated water for disease control
+                    </description>
+                </value>
+                <value>
+                    <string>TOLL</string>
+                    <description>toll gate/barrier; highway toll collection station</description>
+                </value>
+                <value>
+                    <string>TOWR</string>
+                    <description>tower; a high conspicuous structure, typically much higher than its diameter
+                    </description>
+                </value>
+                <value>
+                    <string>TRAM</string>
+                    <description>tram; rail vehicle along urban streets (also known as streetcar or trolley)
+                    </description>
+                </value>
+                <value>
+                    <string>TRANT</string>
+                    <description>transit terminal; facilities for the handling of vehicular freight and passengers
+                    </description>
+                </value>
+                <value>
+                    <string>TRIG</string>
+                    <description>triangulation station; a point on the earth whose position has been determined by
+                        triangulation
+                    </description>
+                </value>
+                <value>
+                    <string>TRMO</string>
+                    <description>oil pipeline terminal; a tank farm or loading facility at the end of an oil pipeline
+                    </description>
+                </value>
+                <value>
+                    <string>TWO</string>
+                    <description>temp work office; Temporary Work Offices</description>
+                </value>
+                <value>
+                    <string>UNIP</string>
+                    <description>university prep school; University Preparation Schools &amp; Institutions</description>
+                </value>
+                <value>
+                    <string>UNIV</string>
+                    <description>university; An institution for higher learning with teaching and research facilities
+                        constituting a graduate school and professional schools that award master's degrees and
+                        doctorates and an undergraduate division that awards bachelor's degrees.
+                    </description>
+                </value>
+                <value>
+                    <string>USGE</string>
+                    <description>united states government establishment; a facility operated by the United States
+                        Government in Panama
+                    </description>
+                </value>
+                <value>
+                    <string>VETF</string>
+                    <description>veterinary facility; a building or camp at which veterinary services are available
+                    </description>
+                </value>
+                <value>
+                    <string>WALL</string>
+                    <description>wall; a thick masonry structure, usually enclosing a field or building, or forming the
+                        side of a structure
+                    </description>
+                </value>
+                <value>
+                    <string>WALLA</string>
+                    <description>ancient wall; the remains of a linear defensive stone structure</description>
+                </value>
+                <value>
+                    <string>WEIR</string>
+                    <description>weir(s); a small dam in a stream, designed to raise the water level or to divert stream
+                        flow through a desired channel
+                    </description>
+                </value>
+                <value>
+                    <string>WHRF</string>
+                    <description>wharf(-ves); a structure of open rather than solid construction along a shore or a bank
+                        which provides berthing for ships and cargo-handling facilities
+                    </description>
+                </value>
+                <value>
+                    <string>WRCK</string>
+                    <description>wreck; the site of the remains of a wrecked vessel</description>
+                </value>
+                <value>
+                    <string>WTRW</string>
+                    <description>waterworks; a facility for supplying potable water through a water source and a system
+                        of pumps and filtration beds
+                    </description>
+                </value>
+                <value>
+                    <string>ZNF</string>
+                    <description>free trade zone; an area, usually a section of a port, where goods may be received and
+                        shipped free of customs duty and of most customs regulations
+                    </description>
+                </value>
+                <value>
+                    <string>ZOO</string>
+                    <description>zoo; a zoological garden or park where wild animals are kept for exhibition
+                    </description>
+                </value>
+                <value>
+                    <string>ASPH</string>
+                    <description>asphalt lake; a small basin containing naturally occurring asphalt</description>
+                </value>
+                <value>
+                    <string>ATOL</string>
+                    <description>atoll(s); a ring-shaped coral reef which has closely spaced islands on it encircling a
+                        lagoon
+                    </description>
+                </value>
+                <value>
+                    <string>BAR</string>
+                    <description>bar; a shallow ridge or mound of coarse unconsolidated material in a stream channel, at
+                        the mouth of a stream, estuary, or lagoon and in the wave-break zone along coasts
+                    </description>
+                </value>
+                <value>
+                    <string>BCH</string>
+                    <description>beach; a shore zone of coarse unconsolidated sediment that extends from the low-water
+                        line to the highest reach of storm waves
+                    </description>
+                </value>
+                <value>
+                    <string>BCHS</string>
+                    <description>beaches; a shore zone of coarse unconsolidated sediment that extends from the low-water
+                        line to the highest reach of storm waves
+                    </description>
+                </value>
+                <value>
+                    <string>BDLD</string>
+                    <description>badlands; an area characterized by a maze of very closely spaced, deep, narrow,
+                        steep-sided ravines, and sharp crests and pinnacles
+                    </description>
+                </value>
+                <value>
+                    <string>BLDR</string>
+                    <description>boulder field; a high altitude or high latitude bare, flat area covered with large
+                        angular rocks
+                    </description>
+                </value>
+                <value>
+                    <string>BLHL</string>
+                    <description>blowhole(s); a hole in coastal rock through which sea water is forced by a rising tide
+                        or waves and spurted through an outlet into the air
+                    </description>
+                </value>
+                <value>
+                    <string>BLOW</string>
+                    <description>blowout(s); a small depression in sandy terrain, caused by wind erosion</description>
+                </value>
+                <value>
+                    <string>BNCH</string>
+                    <description>bench; a long, narrow bedrock platform bounded by steeper slopes above and below,
+                        usually overlooking a waterbody
+                    </description>
+                </value>
+                <value>
+                    <string>BUTE</string>
+                    <description>butte(s); a small, isolated, usually flat-topped hill with steep sides</description>
+                </value>
+                <value>
+                    <string>CAPE</string>
+                    <description>cape; a land area, more prominent than a point, projecting into the sea and marking a
+                        notable change in coastal direction
+                    </description>
+                </value>
+                <value>
+                    <string>CFT</string>
+                    <description>cleft(s); a deep narrow slot, notch, or groove in a coastal cliff</description>
+                </value>
+                <value>
+                    <string>CLDA</string>
+                    <description>caldera; a depression measuring kilometers across formed by the collapse of a volcanic
+                        mountain
+                    </description>
+                </value>
+                <value>
+                    <string>CLF</string>
+                    <description>cliff(s); a high, steep to perpendicular slope overlooking a waterbody or lower area
+                    </description>
+                </value>
+                <value>
+                    <string>CNYN</string>
+                    <description>canyon; a deep, narrow valley with steep sides cutting into a plateau or mountainous
+                        area
+                    </description>
+                </value>
+                <value>
+                    <string>CONE</string>
+                    <description>cone(s); a conical landform composed of mud or volcanic material</description>
+                </value>
+                <value>
+                    <string>CRDR</string>
+                    <description>corridor; a strip or area of land having significance as an access way</description>
+                </value>
+                <value>
+                    <string>CRQ</string>
+                    <description>cirque; a bowl-like hollow partially surrounded by cliffs or steep slopes at the head
+                        of a glaciated valley
+                    </description>
+                </value>
+                <value>
+                    <string>CRQS</string>
+                    <description>cirques; bowl-like hollows partially surrounded by cliffs or steep slopes at the head
+                        of a glaciated valley
+                    </description>
+                </value>
+                <value>
+                    <string>CRTR</string>
+                    <description>crater(s); a generally circular saucer or bowl-shaped depression caused by volcanic or
+                        meteorite explosive action
+                    </description>
+                </value>
+                <value>
+                    <string>CUET</string>
+                    <description>cuesta(s); an asymmetric ridge formed on tilted strata</description>
+                </value>
+                <value>
+                    <string>DLTA</string>
+                    <description>delta; a flat plain formed by alluvial deposits at the mouth of a stream</description>
+                </value>
+                <value>
+                    <string>DPR</string>
+                    <description>depression(s); a low area surrounded by higher land and usually characterized by
+                        interior drainage
+                    </description>
+                </value>
+                <value>
+                    <string>DSRT</string>
+                    <description>desert; a large area with little or no vegetation due to extreme environmental
+                        conditions
+                    </description>
+                </value>
+                <value>
+                    <string>DUNE</string>
+                    <description>dune(s); a wave form, ridge or star shape feature composed of sand</description>
+                </value>
+                <value>
+                    <string>DVD</string>
+                    <description>divide; a line separating adjacent drainage basins</description>
+                </value>
+                <value>
+                    <string>ERG</string>
+                    <description>sandy desert; an extensive tract of shifting sand and sand dunes</description>
+                </value>
+                <value>
+                    <string>FAN</string>
+                    <description>fan(s); a fan-shaped wedge of coarse alluvium with apex merging with a mountain stream
+                        bed and the fan spreading out at a low angle slope onto an adjacent plain
+                    </description>
+                </value>
+                <value>
+                    <string>FORD</string>
+                    <description>ford; a shallow part of a stream which can be crossed on foot or by land vehicle
+                    </description>
+                </value>
+                <value>
+                    <string>FSR</string>
+                    <description>fissure; a crack associated with volcanism</description>
+                </value>
+                <value>
+                    <string>GAP</string>
+                    <description>gap; a low place in a ridge, not used for transportation</description>
+                </value>
+                <value>
+                    <string>GRGE</string>
+                    <description>gorge(s); a short, narrow, steep-sided section of a stream valley</description>
+                </value>
+                <value>
+                    <string>HDLD</string>
+                    <description>headland; a high projection of land extending into a large body of water beyond the
+                        line of the coast
+                    </description>
+                </value>
+                <value>
+                    <string>HLL</string>
+                    <description>hill; a rounded elevation of limited extent rising above the surrounding land with
+                        local relief of less than 300m
+                    </description>
+                </value>
+                <value>
+                    <string>HLLS</string>
+                    <description>hills; rounded elevations of limited extent rising above the surrounding land with
+                        local relief of less than 300m
+                    </description>
+                </value>
+                <value>
+                    <string>HMCK</string>
+                    <description>hammock(s); a patch of ground, distinct from and slightly above the surrounding plain
+                        or wetland. Often occurs in groups
+                    </description>
+                </value>
+                <value>
+                    <string>HMDA</string>
+                    <description>rock desert; a relatively sand-free, high bedrock plateau in a hot desert, with or
+                        without a gravel veneer
+                    </description>
+                </value>
+                <value>
+                    <string>INTF</string>
+                    <description>interfluve; a relatively undissected upland between adjacent stream valleys
+                    </description>
+                </value>
+                <value>
+                    <string>ISL</string>
+                    <description>island; a tract of land, smaller than a continent, surrounded by water at high water
+                    </description>
+                </value>
+                <value>
+                    <string>ISLET</string>
+                    <description>islet; small island, bigger than rock, smaller than island.</description>
+                </value>
+                <value>
+                    <string>ISLF</string>
+                    <description>artificial island; an island created by landfill or diking and filling in a wetland,
+                        bay, or lagoon
+                    </description>
+                </value>
+                <value>
+                    <string>ISLM</string>
+                    <description>mangrove island; a mangrove swamp surrounded by a waterbody</description>
+                </value>
+                <value>
+                    <string>ISLS</string>
+                    <description>islands; tracts of land, smaller than a continent, surrounded by water at high water
+                    </description>
+                </value>
+                <value>
+                    <string>ISLT</string>
+                    <description>land-tied island; a coastal island connected to the mainland by barrier beaches, levees
+                        or dikes
+                    </description>
+                </value>
+                <value>
+                    <string>ISLX</string>
+                    <description>section of island</description>
+                </value>
+                <value>
+                    <string>ISTH</string>
+                    <description>isthmus; a narrow strip of land connecting two larger land masses and bordered by
+                        water
+                    </description>
+                </value>
+                <value>
+                    <string>KRST</string>
+                    <description>karst area; a distinctive landscape developed on soluble rock such as limestone
+                        characterized by sinkholes, caves, disappearing streams, and underground drainage
+                    </description>
+                </value>
+                <value>
+                    <string>LAVA</string>
+                    <description>lava area; an area of solidified lava</description>
+                </value>
+                <value>
+                    <string>LEV</string>
+                    <description>levee; a natural low embankment bordering a distributary or meandering stream; often
+                        built up artificially to control floods
+                    </description>
+                </value>
+                <value>
+                    <string>MESA</string>
+                    <description>mesa(s); a flat-topped, isolated elevation with steep slopes on all sides, less
+                        extensive than a plateau
+                    </description>
+                </value>
+                <value>
+                    <string>MND</string>
+                    <description>mound(s); a low, isolated, rounded hill</description>
+                </value>
+                <value>
+                    <string>MRN</string>
+                    <description>moraine; a mound, ridge, or other accumulation of glacial till</description>
+                </value>
+                <value>
+                    <string>MT</string>
+                    <description>mountain; an elevation standing high above the surrounding area with small summit area,
+                        steep slopes and local relief of 300m or more
+                    </description>
+                </value>
+                <value>
+                    <string>MTS</string>
+                    <description>mountains; a mountain range or a group of mountains or high ridges</description>
+                </value>
+                <value>
+                    <string>NKM</string>
+                    <description>meander neck; a narrow strip of land between the two limbs of a meander loop at its
+                        narrowest point
+                    </description>
+                </value>
+                <value>
+                    <string>NTK</string>
+                    <description>nunatak; a rock or mountain peak protruding through glacial ice</description>
+                </value>
+                <value>
+                    <string>NTKS</string>
+                    <description>nunataks; rocks or mountain peaks protruding through glacial ice</description>
+                </value>
+                <value>
+                    <string>PAN</string>
+                    <description>pan; a near-level shallow, natural depression or basin, usually containing an
+                        intermittent lake, pond, or pool
+                    </description>
+                </value>
+                <value>
+                    <string>PANS</string>
+                    <description>pans; a near-level shallow, natural depression or basin, usually containing an
+                        intermittent lake, pond, or pool
+                    </description>
+                </value>
+                <value>
+                    <string>PASS</string>
+                    <description>pass; a break in a mountain range or other high obstruction, used for transportation
+                        from one side to the other [See also gap]
+                    </description>
+                </value>
+                <value>
+                    <string>PEN</string>
+                    <description>peninsula; an elongate area of land projecting into a body of water and nearly
+                        surrounded by water
+                    </description>
+                </value>
+                <value>
+                    <string>PENX</string>
+                    <description>section of peninsula</description>
+                </value>
+                <value>
+                    <string>PK</string>
+                    <description>peak; a pointed elevation atop a mountain, ridge, or other hypsographic feature
+                    </description>
+                </value>
+                <value>
+                    <string>PKS</string>
+                    <description>peaks; pointed elevations atop a mountain, ridge, or other hypsographic features
+                    </description>
+                </value>
+                <value>
+                    <string>PLAT</string>
+                    <description>plateau; an elevated plain with steep slopes on one or more sides, and often with
+                        incised streams
+                    </description>
+                </value>
+                <value>
+                    <string>PLATX</string>
+                    <description>section of plateau</description>
+                </value>
+                <value>
+                    <string>PLDR</string>
+                    <description>polder; an area reclaimed from the sea by diking and draining</description>
+                </value>
+                <value>
+                    <string>PLN</string>
+                    <description>plain(s); an extensive area of comparatively level to gently undulating land, lacking
+                        surface irregularities, and usually adjacent to a higher area
+                    </description>
+                </value>
+                <value>
+                    <string>PLNX</string>
+                    <description>section of plain</description>
+                </value>
+                <value>
+                    <string>PROM</string>
+                    <description>promontory(-ies); a bluff or prominent hill overlooking or projecting into a lowland
+                    </description>
+                </value>
+                <value>
+                    <string>PT</string>
+                    <description>point; a tapering piece of land projecting into a body of water, less prominent than a
+                        cape
+                    </description>
+                </value>
+                <value>
+                    <string>PTS</string>
+                    <description>points; tapering pieces of land projecting into a body of water, less prominent than a
+                        cape
+                    </description>
+                </value>
+                <value>
+                    <string>RDGB</string>
+                    <description>beach ridge; a ridge of sand just inland and parallel to the beach, usually in series
+                    </description>
+                </value>
+                <value>
+                    <string>RDGE</string>
+                    <description>ridge(s); a long narrow elevation with steep sides, and a more or less continuous
+                        crest
+                    </description>
+                </value>
+                <value>
+                    <string>REG</string>
+                    <description>stony desert; a desert plain characterized by a surface veneer of gravel and stones
+                    </description>
+                </value>
+                <value>
+                    <string>RK</string>
+                    <description>rock; a conspicuous, isolated rocky mass</description>
+                </value>
+                <value>
+                    <string>RKFL</string>
+                    <description>rockfall; an irregular mass of fallen rock at the base of a cliff or steep slope
+                    </description>
+                </value>
+                <value>
+                    <string>RKS</string>
+                    <description>rocks; conspicuous, isolated rocky masses</description>
+                </value>
+                <value>
+                    <string>SAND</string>
+                    <description>sand area; a tract of land covered with sand</description>
+                </value>
+                <value>
+                    <string>SBED</string>
+                    <description>dry stream bed; a channel formerly containing the water of a stream</description>
+                </value>
+                <value>
+                    <string>SCRP</string>
+                    <description>escarpment; a long line of cliffs or steep slopes separating level surfaces above and
+                        below
+                    </description>
+                </value>
+                <value>
+                    <string>SDL</string>
+                    <description>saddle; a broad, open pass crossing a ridge or between hills or mountains</description>
+                </value>
+                <value>
+                    <string>SHOR</string>
+                    <description>shore; a narrow zone bordering a waterbody which covers and uncovers at high and low
+                        water, respectively
+                    </description>
+                </value>
+                <value>
+                    <string>SINK</string>
+                    <description>sinkhole; a small crater-shape depression in a karst area</description>
+                </value>
+                <value>
+                    <string>SLID</string>
+                    <description>slide; a mound of earth material, at the base of a slope and the associated scoured
+                        area
+                    </description>
+                </value>
+                <value>
+                    <string>SLP</string>
+                    <description>slope(s); a surface with a relatively uniform slope angle</description>
+                </value>
+                <value>
+                    <string>SPIT</string>
+                    <description>spit; a narrow, straight or curved continuation of a beach into a waterbody
+                    </description>
+                </value>
+                <value>
+                    <string>SPUR</string>
+                    <description>spur(s); a subordinate ridge projecting outward from a hill, mountain or other
+                        elevation
+                    </description>
+                </value>
+                <value>
+                    <string>TAL</string>
+                    <description>talus slope; a steep concave slope formed by an accumulation of loose rock fragments at
+                        the base of a cliff or steep slope
+                    </description>
+                </value>
+                <value>
+                    <string>TRGD</string>
+                    <description>interdune trough(s); a long wind-swept trough between parallel longitudinal dunes
+                    </description>
+                </value>
+                <value>
+                    <string>TRR</string>
+                    <description>terrace; a long, narrow alluvial platform bounded by steeper slopes above and below,
+                        usually overlooking a waterbody
+                    </description>
+                </value>
+                <value>
+                    <string>UPLD</string>
+                    <description>upland; an extensive interior region of high land with low to moderate surface relief
+                    </description>
+                </value>
+                <value>
+                    <string>VAL</string>
+                    <description>valley; an elongated depression usually traversed by a stream</description>
+                </value>
+                <value>
+                    <string>VALG</string>
+                    <description>hanging valley; a valley the floor of which is notably higher than the valley or shore
+                        to which it leads; most common in areas that have been glaciated
+                    </description>
+                </value>
+                <value>
+                    <string>VALS</string>
+                    <description>valleys; elongated depressions usually traversed by a stream</description>
+                </value>
+                <value>
+                    <string>VALX</string>
+                    <description>section of valley</description>
+                </value>
+                <value>
+                    <string>VLC</string>
+                    <description>volcano; a conical elevation composed of volcanic materials with a crater at the top
+                    </description>
+                </value>
+                <value>
+                    <string>APNU</string>
+                    <description>apron; a gentle slope, with a generally smooth surface, particularly found around
+                        groups of islands and seamounts
+                    </description>
+                </value>
+                <value>
+                    <string>ARCU</string>
+                    <description>arch; a low bulge around the southeastern end of the island of Hawaii</description>
+                </value>
+                <value>
+                    <string>ARRU</string>
+                    <description>arrugado; an area of subdued corrugations off Baja California</description>
+                </value>
+                <value>
+                    <string>BDLU</string>
+                    <description>borderland; a region adjacent to a continent, normally occupied by or bordering a
+                        shelf, that is highly irregular with depths well in excess of those typical of a shelf
+                    </description>
+                </value>
+                <value>
+                    <string>BKSU</string>
+                    <description>banks; elevations, typically located on a shelf, over which the depth of water is
+                        relatively shallow but sufficient for safe surface navigation
+                    </description>
+                </value>
+                <value>
+                    <string>BNKU</string>
+                    <description>bank; an elevation, typically located on a shelf, over which the depth of water is
+                        relatively shallow but sufficient for safe surface navigation
+                    </description>
+                </value>
+                <value>
+                    <string>BSNU</string>
+                    <description>basin; a depression more or less equidimensional in plan and of variable extent
+                    </description>
+                </value>
+                <value>
+                    <string>CDAU</string>
+                    <description>cordillera; an entire mountain system including the subordinate ranges, interior
+                        plateaus, and basins
+                    </description>
+                </value>
+                <value>
+                    <string>CNSU</string>
+                    <description>canyons; relatively narrow, deep depressions with steep sides, the bottom of which
+                        generally has a continuous slope
+                    </description>
+                </value>
+                <value>
+                    <string>CNYU</string>
+                    <description>canyon; a relatively narrow, deep depression with steep sides, the bottom of which
+                        generally has a continuous slope
+                    </description>
+                </value>
+                <value>
+                    <string>CRSU</string>
+                    <description>continental rise; a gentle slope rising from oceanic depths towards the foot of a
+                        continental slope
+                    </description>
+                </value>
+                <value>
+                    <string>DEPU</string>
+                    <description>deep; a localized deep area within the confines of a larger feature, such as a trough,
+                        basin or trench
+                    </description>
+                </value>
+                <value>
+                    <string>EDGU</string>
+                    <description>shelf edge; a line along which there is a marked increase of slope at the outer margin
+                        of a continental shelf or island shelf
+                    </description>
+                </value>
+                <value>
+                    <string>ESCU</string>
+                    <description>escarpment (or scarp); an elongated and comparatively steep slope separating flat or
+                        gently sloping areas
+                    </description>
+                </value>
+                <value>
+                    <string>FANU</string>
+                    <description>fan; a relatively smooth feature normally sloping away from the lower termination of a
+                        canyon or canyon system
+                    </description>
+                </value>
+                <value>
+                    <string>FLTU</string>
+                    <description>flat; a small level or nearly level area</description>
+                </value>
+                <value>
+                    <string>FRZU</string>
+                    <description>fracture zone; an extensive linear zone of irregular topography of the sea floor,
+                        characterized by steep-sided or asymmetrical ridges, troughs, or escarpments
+                    </description>
+                </value>
+                <value>
+                    <string>FURU</string>
+                    <description>furrow; a closed, linear, narrow, shallow depression</description>
+                </value>
+                <value>
+                    <string>GAPU</string>
+                    <description>gap; a narrow break in a ridge or rise</description>
+                </value>
+                <value>
+                    <string>GLYU</string>
+                    <description>gully; a small valley-like feature</description>
+                </value>
+                <value>
+                    <string>HLLU</string>
+                    <description>hill; an elevation rising generally less than 500 meters</description>
+                </value>
+                <value>
+                    <string>HLSU</string>
+                    <description>hills; elevations rising generally less than 500 meters</description>
+                </value>
+                <value>
+                    <string>HOLU</string>
+                    <description>hole; a small depression of the sea floor</description>
+                </value>
+                <value>
+                    <string>KNLU</string>
+                    <description>knoll; an elevation rising generally more than 500 meters and less than 1,000 meters
+                        and of limited extent across the summit
+                    </description>
+                </value>
+                <value>
+                    <string>KNSU</string>
+                    <description>knolls; elevations rising generally more than 500 meters and less than 1,000 meters and
+                        of limited extent across the summits
+                    </description>
+                </value>
+                <value>
+                    <string>LDGU</string>
+                    <description>ledge; a rocky projection or outcrop, commonly linear and near shore</description>
+                </value>
+                <value>
+                    <string>LEVU</string>
+                    <description>levee; an embankment bordering a canyon, valley, or seachannel</description>
+                </value>
+                <value>
+                    <string>MESU</string>
+                    <description>mesa; an isolated, extensive, flat-topped elevation on the shelf, with relatively steep
+                        sides
+                    </description>
+                </value>
+                <value>
+                    <string>MNDU</string>
+                    <description>mound; a low, isolated, rounded hill</description>
+                </value>
+                <value>
+                    <string>MOTU</string>
+                    <description>moat; an annular depression that may not be continuous, located at the base of many
+                        seamounts, islands, and other isolated elevations
+                    </description>
+                </value>
+                <value>
+                    <string>MTU</string>
+                    <description>mountain; a well-delineated subdivision of a large and complex positive feature
+                    </description>
+                </value>
+                <value>
+                    <string>PKSU</string>
+                    <description>peaks; prominent elevations, part of a larger feature, either pointed or of very
+                        limited extent across the summit
+                    </description>
+                </value>
+                <value>
+                    <string>PKU</string>
+                    <description>peak; a prominent elevation, part of a larger feature, either pointed or of very
+                        limited extent across the summit
+                    </description>
+                </value>
+                <value>
+                    <string>PLNU</string>
+                    <description>plain; a flat, gently sloping or nearly level region</description>
+                </value>
+                <value>
+                    <string>PLTU</string>
+                    <description>plateau; a comparatively flat-topped feature of considerable extent, dropping off
+                        abruptly on one or more sides
+                    </description>
+                </value>
+                <value>
+                    <string>PNLU</string>
+                    <description>pinnacle; a high tower or spire-shaped pillar of rock or coral, alone or cresting a
+                        summit
+                    </description>
+                </value>
+                <value>
+                    <string>PRVU</string>
+                    <description>province; a region identifiable by a group of similar physiographic features whose
+                        characteristics are markedly in contrast with surrounding areas
+                    </description>
+                </value>
+                <value>
+                    <string>RDGU</string>
+                    <description>ridge; a long narrow elevation with steep sides</description>
+                </value>
+                <value>
+                    <string>RDSU</string>
+                    <description>ridges; long narrow elevations with steep sides</description>
+                </value>
+                <value>
+                    <string>RFSU</string>
+                    <description>reefs; surface-navigation hazards composed of consolidated material</description>
+                </value>
+                <value>
+                    <string>RFU</string>
+                    <description>reef; a surface-navigation hazard composed of consolidated material</description>
+                </value>
+                <value>
+                    <string>RISU</string>
+                    <description>rise; a broad elevation that rises gently, and generally smoothly, from the sea floor
+                    </description>
+                </value>
+                <value>
+                    <string>SCNU</string>
+                    <description>seachannel; a continuously sloping, elongated depression commonly found in fans or
+                        plains and customarily bordered by levees on one or two sides
+                    </description>
+                </value>
+                <value>
+                    <string>SCSU</string>
+                    <description>seachannels; continuously sloping, elongated depressions commonly found in fans or
+                        plains and customarily bordered by levees on one or two sides
+                    </description>
+                </value>
+                <value>
+                    <string>SDLU</string>
+                    <description>saddle; a low part, resembling in shape a saddle, in a ridge or between contiguous
+                        seamounts
+                    </description>
+                </value>
+                <value>
+                    <string>SHFU</string>
+                    <description>shelf; a zone adjacent to a continent (or around an island) that extends from the low
+                        water line to a depth at which there is usually a marked increase of slope towards oceanic
+                        depths
+                    </description>
+                </value>
+                <value>
+                    <string>SHLU</string>
+                    <description>shoal; a surface-navigation hazard composed of unconsolidated material</description>
+                </value>
+                <value>
+                    <string>SHSU</string>
+                    <description>shoals; hazards to surface navigation composed of unconsolidated material</description>
+                </value>
+                <value>
+                    <string>SHVU</string>
+                    <description>shelf valley; a valley on the shelf, generally the shoreward extension of a canyon
+                    </description>
+                </value>
+                <value>
+                    <string>SILU</string>
+                    <description>sill; the low part of a gap or saddle separating basins</description>
+                </value>
+                <value>
+                    <string>SLPU</string>
+                    <description>slope; the slope seaward from the shelf edge to the beginning of a continental rise or
+                        the point where there is a general reduction in slope
+                    </description>
+                </value>
+                <value>
+                    <string>SMSU</string>
+                    <description>seamounts; elevations rising generally more than 1,000 meters and of limited extent
+                        across the summit
+                    </description>
+                </value>
+                <value>
+                    <string>SMU</string>
+                    <description>seamount; an elevation rising generally more than 1,000 meters and of limited extent
+                        across the summit
+                    </description>
+                </value>
+                <value>
+                    <string>SPRU</string>
+                    <description>spur; a subordinate elevation, ridge, or rise projecting outward from a larger
+                        feature
+                    </description>
+                </value>
+                <value>
+                    <string>TERU</string>
+                    <description>terrace; a relatively flat horizontal or gently inclined surface, sometimes long and
+                        narrow, which is bounded by a steeper ascending slope on one side and by a steep descending
+                        slope on the opposite side
+                    </description>
+                </value>
+                <value>
+                    <string>TMSU</string>
+                    <description>tablemounts (or guyots); seamounts having a comparatively smooth, flat top
+                    </description>
+                </value>
+                <value>
+                    <string>TMTU</string>
+                    <description>tablemount (or guyot); a seamount having a comparatively smooth, flat top</description>
+                </value>
+                <value>
+                    <string>TNGU</string>
+                    <description>tongue; an elongate (tongue-like) extension of a flat sea floor into an adjacent higher
+                        feature
+                    </description>
+                </value>
+                <value>
+                    <string>TRGU</string>
+                    <description>trough; a long depression of the sea floor characteristically flat bottomed and steep
+                        sided, and normally shallower than a trench
+                    </description>
+                </value>
+                <value>
+                    <string>TRNU</string>
+                    <description>trench; a long, narrow, characteristically very deep and asymmetrical depression of the
+                        sea floor, with relatively steep sides
+                    </description>
+                </value>
+                <value>
+                    <string>VALU</string>
+                    <description>valley; a relatively shallow, wide depression, the bottom of which usually has a
+                        continuous gradient
+                    </description>
+                </value>
+                <value>
+                    <string>VLSU</string>
+                    <description>valleys; a relatively shallow, wide depression, the bottom of which usually has a
+                        continuous gradient
+                    </description>
+                </value>
+                <value>
+                    <string>BUSH</string>
+                    <description>bush(es); a small clump of conspicuous bushes in an otherwise bare area</description>
+                </value>
+                <value>
+                    <string>CULT</string>
+                    <description>cultivated area; an area under cultivation</description>
+                </value>
+                <value>
+                    <string>FRST</string>
+                    <description>forest(s); an area dominated by tree vegetation</description>
+                </value>
+                <value>
+                    <string>FRSTF</string>
+                    <description>fossilized forest; a forest fossilized by geologic processes and now exposed at the
+                        earth's surface
+                    </description>
+                </value>
+                <value>
+                    <string>GROVE</string>
+                    <description>grove; a small wooded area or collection of trees growing closely together, occurring
+                        naturally or deliberately planted
+                    </description>
+                </value>
+                <value>
+                    <string>GRSLD</string>
+                    <description>grassland; an area dominated by grass vegetation</description>
+                </value>
+                <value>
+                    <string>GRVC</string>
+                    <description>coconut grove; a planting of coconut trees</description>
+                </value>
+                <value>
+                    <string>GRVO</string>
+                    <description>olive grove; a planting of olive trees</description>
+                </value>
+                <value>
+                    <string>GRVP</string>
+                    <description>palm grove; a planting of palm trees</description>
+                </value>
+                <value>
+                    <string>GRVPN</string>
+                    <description>pine grove; a planting of pine trees</description>
+                </value>
+                <value>
+                    <string>HTH</string>
+                    <description>heath; an upland moor or sandy area dominated by low shrubby vegetation including
+                        heather
+                    </description>
+                </value>
+                <value>
+                    <string>MDW</string>
+                    <description>meadow; a small, poorly drained area dominated by grassy vegetation</description>
+                </value>
+                <value>
+                    <string>OCH</string>
+                    <description>orchard(s); a planting of fruit or nut trees</description>
+                </value>
+                <value>
+                    <string>SCRB</string>
+                    <description>scrubland; an area of low trees, bushes, and shrubs stunted by some environmental
+                        limitation
+                    </description>
+                </value>
+                <value>
+                    <string>TREE</string>
+                    <description>tree(s); a conspicuous tree used as a landmark</description>
+                </value>
+                <value>
+                    <string>TUND</string>
+                    <description>tundra; a marshy, treeless, high latitude plain, dominated by mosses, lichens, and low
+                        shrub vegetation under permafrost conditions
+                    </description>
+                </value>
+                <value>
+                    <string>VIN</string>
+                    <description>vineyard; a planting of grapevines</description>
+                </value>
+                <value>
+                    <string>VINS</string>
+                    <description>vineyards; plantings of grapevines</description>
+                </value>
+                <value>
+                    <string>ll</string>
+                    <description>not available</description>
                 </value>
             </allowedValues>
         </typeDescription>

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Mar 20 18:17:20 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Mar 21 14:51:22 CET 2025 */
 
 package org.texttechnologylab.annotation.geonames;
  
@@ -21,7 +21,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** GeoNames annotation base type.
- * Updated by JCasGen Thu Mar 20 18:17:20 CET 2025
+ * Updated by JCasGen Fri Mar 21 14:51:22 CET 2025
  * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
@@ -199,7 +199,7 @@ public class GeoNamesEntity extends Annotation {
   //*--------------*
   //* Feature: featureCode
 
-  /** getter for featureCode - gets Fine-grained feature code, up to ten letters, see:
+  /** getter for featureCode - gets Fine-grained feature code, see:
                         http://www.geonames.org/export/codes.html
    * @generated
    * @return value of the feature 
@@ -208,7 +208,7 @@ public class GeoNamesEntity extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_featureCode));
   }
     
-  /** setter for featureCode - sets Fine-grained feature code, up to ten letters, see:
+  /** setter for featureCode - sets Fine-grained feature code, see:
                         http://www.geonames.org/export/codes.html 
    * @generated
    * @param v value to set into the feature 
@@ -348,7 +348,8 @@ public class GeoNamesEntity extends Annotation {
   //*--------------*
   //* Feature: elevation
 
-  /** getter for elevation - gets Elevation in meters above/below normal as a 16-bit signed integer number, optional.
+  /** getter for elevation - gets Elevation in meters above/below normal as a 16-bit signed integer number;
+                        optional, defaults to 0.
    * @generated
    * @return value of the feature 
    */
@@ -356,7 +357,8 @@ public class GeoNamesEntity extends Annotation {
     return _getShortValueNc(wrapGetIntCatchException(_FH_elevation));
   }
     
-  /** setter for elevation - sets Elevation in meters above/below normal as a 16-bit signed integer number, optional. 
+  /** setter for elevation - sets Elevation in meters above/below normal as a 16-bit signed integer number;
+                        optional, defaults to 0. 
    * @generated
    * @param v value to set into the feature 
    */
