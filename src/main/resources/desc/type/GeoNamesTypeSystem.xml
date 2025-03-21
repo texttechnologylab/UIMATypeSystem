@@ -95,6 +95,14 @@
                     </description>
                     <rangeTypeName>uima.cas.Short</rangeTypeName>
                 </featureDescription>
+                <featureDescription>
+                    <name>referenceAnnotation</name>
+                    <description>
+                        The annotation this GeoName annotation is in reference to. By default, this should be a
+                        'de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location' annotation.
+                    </description>
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>

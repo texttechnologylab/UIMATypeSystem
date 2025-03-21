@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Mar 21 14:51:22 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Mar 21 17:01:50 CET 2025 */
 
 package org.texttechnologylab.annotation.geonames;
  
@@ -16,12 +16,11 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** GeoNames annotation base type.
- * Updated by JCasGen Fri Mar 21 14:51:22 CET 2025
+ * Updated by JCasGen Fri Mar 21 17:01:50 CET 2025
  * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
@@ -58,10 +57,14 @@ public class GeoNamesEntity extends Annotation {
   public final static String _FeatName_featureClass = "featureClass";
   public final static String _FeatName_featureCode = "featureCode";
   public final static String _FeatName_countryCode = "countryCode";
-  public final static String _FeatName_adm = "adm";
+  public final static String _FeatName_adm1 = "adm1";
+  public final static String _FeatName_adm2 = "adm2";
+  public final static String _FeatName_adm3 = "adm3";
+  public final static String _FeatName_adm4 = "adm4";
   public final static String _FeatName_latitude = "latitude";
   public final static String _FeatName_longitude = "longitude";
   public final static String _FeatName_elevation = "elevation";
+  public final static String _FeatName_referenceAnnotation = "referenceAnnotation";
 
 
   /* Feature Adjusted Offsets */
@@ -75,14 +78,22 @@ public class GeoNamesEntity extends Annotation {
   private final static MethodHandle _FH_featureCode = _FC_featureCode.dynamicInvoker();
   private final static CallSite _FC_countryCode = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "countryCode");
   private final static MethodHandle _FH_countryCode = _FC_countryCode.dynamicInvoker();
-  private final static CallSite _FC_adm = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "adm");
-  private final static MethodHandle _FH_adm = _FC_adm.dynamicInvoker();
+  private final static CallSite _FC_adm1 = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "adm1");
+  private final static MethodHandle _FH_adm1 = _FC_adm1.dynamicInvoker();
+  private final static CallSite _FC_adm2 = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "adm2");
+  private final static MethodHandle _FH_adm2 = _FC_adm2.dynamicInvoker();
+  private final static CallSite _FC_adm3 = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "adm3");
+  private final static MethodHandle _FH_adm3 = _FC_adm3.dynamicInvoker();
+  private final static CallSite _FC_adm4 = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "adm4");
+  private final static MethodHandle _FH_adm4 = _FC_adm4.dynamicInvoker();
   private final static CallSite _FC_latitude = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "latitude");
   private final static MethodHandle _FH_latitude = _FC_latitude.dynamicInvoker();
   private final static CallSite _FC_longitude = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "longitude");
   private final static MethodHandle _FH_longitude = _FC_longitude.dynamicInvoker();
   private final static CallSite _FC_elevation = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "elevation");
   private final static MethodHandle _FH_elevation = _FC_elevation.dynamicInvoker();
+  private final static CallSite _FC_referenceAnnotation = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "referenceAnnotation");
+  private final static MethodHandle _FH_referenceAnnotation = _FC_referenceAnnotation.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -241,66 +252,93 @@ public class GeoNamesEntity extends Annotation {
    
     
   //*--------------*
-  //* Feature: adm
+  //* Feature: adm1
 
-  /** getter for adm - gets Up to four administrative divisions in a StringList.
-                        Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
-                        additional level between country and fips code. The code '00' stands for general features where
-                        no specific adm1 code is defined.
-                        adm2 is the code for the second administrative division, i.e. a county in the US.
-                        adm3 is the code for third level administrative division.
-                        adm4 is the code for fourth level administrative division.
+  /** getter for adm1 - gets The code for top level administrative division, most of which are FIPS codes.
+                        ISO codes are used for US, CH, BE and ME.
+                        UK and Greece are using an additional level between country and fips code.
+                        The code '00' stands for general features where no specific adm1 code is defined.
    * @generated
    * @return value of the feature 
    */
-  public StringArray getAdm() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_adm)));
+  public String getAdm1() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_adm1));
   }
     
-  /** setter for adm - sets Up to four administrative divisions in a StringList.
-                        Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
-                        additional level between country and fips code. The code '00' stands for general features where
-                        no specific adm1 code is defined.
-                        adm2 is the code for the second administrative division, i.e. a county in the US.
-                        adm3 is the code for third level administrative division.
-                        adm4 is the code for fourth level administrative division. 
+  /** setter for adm1 - sets The code for top level administrative division, most of which are FIPS codes.
+                        ISO codes are used for US, CH, BE and ME.
+                        UK and Greece are using an additional level between country and fips code.
+                        The code '00' stands for general features where no specific adm1 code is defined. 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setAdm(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_adm), v);
+  public void setAdm1(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_adm1), v);
   }    
     
+   
     
-  /** indexed getter for adm - gets an indexed value - Up to four administrative divisions in a StringList.
-                        Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
-                        additional level between country and fips code. The code '00' stands for general features where
-                        no specific adm1 code is defined.
-                        adm2 is the code for the second administrative division, i.e. a county in the US.
-                        adm3 is the code for third level administrative division.
-                        adm4 is the code for fourth level administrative division.
-   * @generated
-   * @param i index in the array to get
-   * @return value of the element at index i 
-   */
-  public String getAdm(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_adm)))).get(i);
-  } 
+  //*--------------*
+  //* Feature: adm2
 
-  /** indexed setter for adm - sets an indexed value - Up to four administrative divisions in a StringList.
-                        Most adm1 are FIPS codes. ISO codes are used for US, CH, BE and ME. UK and Greece are using an
-                        additional level between country and fips code. The code '00' stands for general features where
-                        no specific adm1 code is defined.
-                        adm2 is the code for the second administrative division, i.e. a county in the US.
-                        adm3 is the code for third level administrative division.
-                        adm4 is the code for fourth level administrative division.
+  /** getter for adm2 - gets The code for the second level administrative division, i.e. a county in the US.
    * @generated
-   * @param i index in the array to set
-   * @param v value to set into the array 
+   * @return value of the feature 
    */
-  public void setAdm(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_adm)))).set(i, v);
-  }  
+  public String getAdm2() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_adm2));
+  }
+    
+  /** setter for adm2 - sets The code for the second level administrative division, i.e. a county in the US. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setAdm2(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_adm2), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: adm3
+
+  /** getter for adm3 - gets The code for third level administrative division.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getAdm3() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_adm3));
+  }
+    
+  /** setter for adm3 - sets The code for third level administrative division. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setAdm3(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_adm3), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: adm4
+
+  /** getter for adm4 - gets The code for fourth level administrative division.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getAdm4() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_adm4));
+  }
+    
+  /** setter for adm4 - sets The code for fourth level administrative division. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setAdm4(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_adm4), v);
+  }    
+    
    
     
   //*--------------*
@@ -364,6 +402,29 @@ public class GeoNamesEntity extends Annotation {
    */
   public void setElevation(short v) {
     _setShortValueNfc(wrapGetIntCatchException(_FH_elevation), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: referenceAnnotation
+
+  /** getter for referenceAnnotation - gets The annotation this GeoName annotation is in reference to. By default, this should be a
+                        'de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location' annotation.
+   * @generated
+   * @return value of the feature 
+   */
+  public Annotation getReferenceAnnotation() { 
+    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_referenceAnnotation)));
+  }
+    
+  /** setter for referenceAnnotation - sets The annotation this GeoName annotation is in reference to. By default, this should be a
+                        'de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location' annotation. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setReferenceAnnotation(Annotation v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_referenceAnnotation), v);
   }    
     
   }
