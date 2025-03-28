@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Mar 28 14:29:39 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Mar 28 17:23:12 CET 2025 */
 
 package org.texttechnologylab.annotation.negation;
  
@@ -22,7 +22,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Mar 28 14:29:39 CET 2025
+ * Updated by JCasGen Fri Mar 28 17:23:12 CET 2025
  * XML source: /home/staff_homes/lehammer/Documents/work/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CompleteNegation extends Annotation {
@@ -59,6 +59,7 @@ public class CompleteNegation extends Annotation {
   public final static String _FeatName_event = "event";
   public final static String _FeatName_focus = "focus";
   public final static String _FeatName_scope = "scope";
+  public final static String _FeatName_xscope = "xscope";
 
 
   /* Feature Adjusted Offsets */
@@ -72,6 +73,8 @@ public class CompleteNegation extends Annotation {
   private final static MethodHandle _FH_focus = _FC_focus.dynamicInvoker();
   private final static CallSite _FC_scope = TypeSystemImpl.createCallSite(CompleteNegation.class, "scope");
   private final static MethodHandle _FH_scope = _FC_scope.dynamicInvoker();
+  private final static CallSite _FC_xscope = TypeSystemImpl.createCallSite(CompleteNegation.class, "xscope");
+  private final static MethodHandle _FH_xscope = _FC_xscope.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -287,6 +290,48 @@ public class CompleteNegation extends Annotation {
   @SuppressWarnings("unchecked")
     public void setScope(int i, Token v) {
     ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)))).set(i, v);
+  }  
+   
+    
+  //*--------------*
+  //* Feature: xscope
+
+  /** getter for xscope - gets Part affected by the negation cue, but outside of sentence (expanded context)
+   * @generated
+   * @return value of the feature 
+   */
+  @SuppressWarnings("unchecked")
+  public FSArray<Token> getXscope() { 
+    return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)));
+  }
+    
+  /** setter for xscope - sets Part affected by the negation cue, but outside of sentence (expanded context) 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setXscope(FSArray<Token> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_xscope), v);
+  }    
+    
+    
+  /** indexed getter for xscope - gets an indexed value - Part affected by the negation cue, but outside of sentence (expanded context)
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  @SuppressWarnings("unchecked")
+  public Token getXscope(int i) {
+     return (Token)(((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).get(i));
+  } 
+
+  /** indexed setter for xscope - sets an indexed value - Part affected by the negation cue, but outside of sentence (expanded context)
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  @SuppressWarnings("unchecked")
+    public void setXscope(int i, Token v) {
+    ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).set(i, v);
   }  
   }
 

@@ -38,6 +38,12 @@
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
                     <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
                 </featureDescription>
+                <featureDescription>
+                    <name>xscope</name>
+                    <description>Part affected by the negation cue, but outside of sentence (expanded context)</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
+                </featureDescription>
             </features>
         </typeDescription>
     </types>
