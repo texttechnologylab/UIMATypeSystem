@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>NegationTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.negation.CompleteNegation</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>negType</name>
+                    <description>Syntactic|Lexical|Morphological</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>cue</name>
+                    <description>Cue is a lexical item that modifies the truth value of the propositions that is within its scope </description>
+                    <rangeTypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>event</name>
+                    <description>Event that is directly negated by the negation cue, usually a verb, a noun, or an adjective</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
+                </featureDescription>
+                <featureDescription>
+                    <name>focus</name>
+                    <description>Part of the scope that is most prominently or explicitly negated</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
+                </featureDescription>
+                <featureDescription>
+                    <name>scope</name>
+                    <description>Part of the sentence affected by the negation cue</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
+                </featureDescription>
+                <featureDescription>
+                    <name>xscope</name>
+                    <description>Part affected by the negation cue, but outside of sentence (expanded context)</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</elementType>
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
