@@ -26,7 +26,7 @@
         <featureDescription>
           <name>valueType</name>
           <description/>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
+          <rangeTypeName>org.texttechnologylab.annotation.uce.MetadataValueType</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>comment</name>
@@ -34,6 +34,37 @@
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
       </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.uce.MetadataValueType</name>
+      <description>An ENUM description of the valueType field of the respective uce.Metadata typesystem.</description>
+      <supertypeName>uima.cas.String</supertypeName>
+      <allowedValues>
+        <value>
+          <string>STRING</string>
+          <description>Text, variable fields, ...</description>
+        </value>
+        <value>
+          <string>NUMBER</string>
+          <description>Integers, Floats, Doubles...</description>
+        </value>
+        <value>
+          <string>JSON</string>
+          <description>Raw JSON String, containing unlimited fields, lists and objects.</description>
+        </value>
+        <value>
+          <string>DATE</string>
+          <description>YYYY/MM/DD or DDDD.MM.YYYY</description>
+        </value>
+        <value>
+          <string>URL</string>
+          <description>A link to an external resource.</description>
+        </value>
+        <value>
+          <string>ENUM</string>
+          <description>Category, Type, Dropdown lists...</description>
+        </value>
+      </allowedValues>
     </typeDescription>
   </types>
 </typeSystemDescription>
