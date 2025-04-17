@@ -3,19 +3,15 @@
 
     <name>TypeSystemBertTopic</name>
 
-    <description/>
+    <description>Type system for representing topics and their associated metadata in BERTopic-based topic models.</description>
 
     <version>1.0</version>
 
     <vendor/>
 
     <imports>
-
         <import name="desc.type.TextTechnologyAnnotation"/>
-
         <import name="desc.type.TypeSystemModelMeta"/>
-
-
     </imports>
     <types>
 
@@ -26,7 +22,7 @@
             <name>org.texttechnologylab.annotation.BertTopic</name>
 
 
-            <description/>
+            <description>Type system for representing topics in BERTopic-based models</description>
 
 
             <supertypeName>uima.tcas.Annotation</supertypeName>
@@ -38,7 +34,7 @@
 
                     <name>Topics</name>
 
-                    <description>Set of Topic with key and Value</description>
+                    <description>Set of topics with labels and probabilities</description>
 
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 
@@ -50,7 +46,7 @@
 
                     <name>model</name>
 
-                    <description/>
+                    <description>Metadata about the BERTopic model, such as its name, source and version</description>
 
                     <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
 
@@ -65,7 +61,7 @@
 
             <name>org.texttechnologylab.annotation.TopicValue</name>
 
-            <description/>
+            <description>Represents a topic instance with a value/label and associated probability</description>
 
             <supertypeName>uima.cas.AnnotationBase</supertypeName>
 
@@ -75,7 +71,7 @@
 
                     <name>value</name>
 
-                    <description/>
+                    <description>Topic label for the topic instance</description>
 
                     <rangeTypeName>uima.cas.String</rangeTypeName>
 
@@ -85,7 +81,7 @@
 
                     <name>probability</name>
 
-                    <description/>
+                    <description>The probability associated with the topic instance</description>
 
                     <rangeTypeName>uima.cas.Double</rangeTypeName>
 
