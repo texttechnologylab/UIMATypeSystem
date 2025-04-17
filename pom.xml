@@ -97,7 +97,8 @@
                 <configuration>
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>
-                        <include>src/main/resources/desc/**/*</include>
+                        <!--                        <include>src/main/resources/desc/**/*</include>-->
+                        <include>src/main/resources/desc/type/TextTechnologyParliamentaryTypeSystem.xml</include>
                     </typeSystemIncludes>
                     <outputDirectory>
                         src/main/java/
