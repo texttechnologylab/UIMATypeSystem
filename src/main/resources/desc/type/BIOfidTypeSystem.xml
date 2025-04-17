@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>GeoNamesTypeSystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.Taxon</name>
+            <description/>
+            <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>value</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.Taxon</name>
+            <description></description>
+            <supertypeName>org.texttechnologylab.annotation.biofid.Taxon</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Version</name>
+                    <description>gnfinder version.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>Language</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>Cardinality</name>
+                    <description>
+                        Cardinality depicts number of elements in a name.
+                        0 - Cannot determine cardinality,
+                        1 - Uninomial,
+                        2 - Binomial,
+                        3 - Trinomial.
+                    </description>
+                    <rangeTypeName>uima.cas.Short</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>OddsLog10</name>
+                    <description>Log10 of the odds (probability) that name detection was correct.</description>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.biofid.Taxon</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Id</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>MatchedCanonical</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>CurrentCanonical</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>VerifMatchType</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>VerifSortScore</name>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>VerifEditDistance</name>
+                    <rangeTypeName>uima.cas.Short</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>VerifMatchedName</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gazetteer.Taxon</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.biofid.Taxon</supertypeName>
+        </typeDescription>
+    </types>
+</typeSystemDescription>

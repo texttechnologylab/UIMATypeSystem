@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>UnifiedTopic</name>
+    <description>Type system supporting all topic models (supervised and unsupervised)</description>
+    <version>1.0</version>
+    <vendor/>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.UnifiedTopic</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Topics</name>
+                    <description>Set of topic labels</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>org.texttechnologylab.annotation.TopicValueBase</elementType>
+                </featureDescription>
+                <featureDescription>
+                    <name>metadata</name>
+                    <description>Metadata for the model and data</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.TopicValueBase</name>
+            <description/>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>value</name>
+                    <description>Topic Label</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>words</name>
+                    <description>Set of words with probabilities</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>org.texttechnologylab.annotation.TopicWord</elementType>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.TopicValueBaseWithScore</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.TopicValueBase</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>score</name>
+                    <description>Probability of the topic label</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.TopicWord</name>
+            <description>Word that contributes to a topic in unsupervised models</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>word</name>
+                    <description>The word associated with a topic</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>probability</name>
+                    <description>Probability of the word belonging to a topic</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>topic</name>
+                    <description>The topic associated with the word</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.TopicValueBase</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.MetaData</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Lang</name>
+                    <description>Language of the method or the Model</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>Source</name>
+                    <description>Link of the used resource</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.model.MetaData</name>
+            <description/>
+            <supertypeName>org.texttechnologylab.annotation.MetaData</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>ModelVersion</name>
+                    <description>Version of the Model</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>ModelName</name>
+                    <description>Name of the Model</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+
+        </typeDescription>
+
+    </types>
+</typeSystemDescription>
