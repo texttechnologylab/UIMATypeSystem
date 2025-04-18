@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -16,7 +16,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Caption extends Annotation {
@@ -102,13 +102,13 @@ public class Caption extends Annotation {
         setBegin(begin);
         setEnd(end);
         readObject();
-    }
+  }
 
     /**
      * <!-- begin-user-doc -->
-     * Write your own initialization here
-     * <!-- end-user-doc -->
-   *
+   * Write your own initialization here
+   * <!-- end-user-doc -->
+     *
      * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}

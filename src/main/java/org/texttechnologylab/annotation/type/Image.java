@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Image extends Annotation {
@@ -175,28 +175,27 @@ public class Image extends Annotation {
      */
     public void setWidth(int v) {
         _setIntValueNfc(wrapGetIntCatchException(_FH_width), v);
-    }
+  }
 
 
-    //*--------------*
-    //* Feature: height
 
-    /**
-     * getter for height - gets
-     *
-     * @return value of the feature
+  //*--------------*
+  //* Feature: height
+
+    /** getter for height - gets
      * @generated
+     * @return value of the feature
      */
     public int getHeight() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_height));
-  }
+    }
 
-  /** setter for height - sets
+    /** setter for height - sets
    * @generated
    * @param v value to set into the feature
-   */
-  public void setHeight(int v) {
-      _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
+     */
+    public void setHeight(int v) {
+        _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
   }
 
 
@@ -204,15 +203,15 @@ public class Image extends Annotation {
   //*--------------*
   //* Feature: mimetype
 
-    /** getter for mimetype - gets
+  /** getter for mimetype - gets
    * @generated
-     * @return value of the feature
-     */
+   * @return value of the feature
+   */
   public String getMimetype() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));
   }
 
-    /** setter for mimetype - sets
+  /** setter for mimetype - sets
    * @generated
    * @param v value to set into the feature
    */

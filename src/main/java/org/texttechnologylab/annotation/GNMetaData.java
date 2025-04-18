@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GNMetaData extends MetaData {
@@ -130,9 +130,11 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: date
 
-    /** getter for date - gets
-     * @generated
+    /**
+     * getter for date - gets
+     *
      * @return value of the feature
+     * @generated
      */
     public String getDate() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_date));
@@ -149,15 +151,15 @@ public class GNMetaData extends MetaData {
 
 
   //*--------------*
-  //* Feature: version
+    //* Feature: version
 
     /** getter for version - gets
      * @generated
      * @return value of the feature
      */
-    public String getVersion() {
+  public String getVersion() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-    }
+  }
 
     /** setter for version - sets
      * @generated
@@ -170,11 +172,13 @@ public class GNMetaData extends MetaData {
 
 
   //*--------------*
-  //* Feature: withAllMatches
+    //* Feature: withAllMatches
 
-    /** getter for withAllMatches - gets
-     * @generated
+    /**
+     * getter for withAllMatches - gets
+     *
      * @return value of the feature
+     * @generated
      */
     public boolean getWithAllMatches() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAllMatches));
@@ -182,116 +186,111 @@ public class GNMetaData extends MetaData {
 
     /** setter for withAllMatches - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWithAllMatches(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAllMatches), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: withAmbiguousNames
+    //*--------------*
+    //* Feature: withAmbiguousNames
 
     /** getter for withAmbiguousNames - gets
      * @generated
      * @return value of the feature
-     */
-    public boolean getWithAmbiguousNames() {
+   */
+  public boolean getWithAmbiguousNames() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAmbiguousNames));
-    }
+  }
 
     /** setter for withAmbiguousNames - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWithAmbiguousNames(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAmbiguousNames), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: withBayes
+    //*--------------*
+    //* Feature: withBayes
 
     /** getter for withBayes - gets
      * @generated
      * @return value of the feature
-     */
-    public boolean getWithBayes() {
+   */
+  public boolean getWithBayes() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withBayes));
-    }
+  }
 
     /** setter for withBayes - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWithBayes(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withBayes), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: wihUniqueNames
+    //*--------------*
+    //* Feature: wihUniqueNames
 
     /** getter for wihUniqueNames - gets
      * @generated
      * @return value of the feature
-     */
-    public boolean getWihUniqueNames() {
+   */
+  public boolean getWihUniqueNames() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_wihUniqueNames));
-    }
+  }
 
     /** setter for wihUniqueNames - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWihUniqueNames(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_wihUniqueNames), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: withOddsAdjustment
+    //*--------------*
+    //* Feature: withOddsAdjustment
 
     /** getter for withOddsAdjustment - gets
      * @generated
      * @return value of the feature
-     */
-    public boolean getWithOddsAdjustment() {
+   */
+  public boolean getWithOddsAdjustment() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withOddsAdjustment));
-    }
+  }
 
     /** setter for withOddsAdjustment - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWithOddsAdjustment(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withOddsAdjustment), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: withSources
+    //*--------------*
+    //* Feature: withSources
 
     /** getter for withSources - gets
      * @generated
      * @return value of the feature
-     */
-    public String getWithSources() {
+   */
+  public String getWithSources() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_withSources));
-    }
+  }
 
     /** setter for withSources - sets
      * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature
    */
   public void setWithSources(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_withSources), v);
   }
 
-}
+  }
 

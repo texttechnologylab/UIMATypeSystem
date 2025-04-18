@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FloatingElements extends AnnotationBase {
@@ -111,12 +111,14 @@ public class FloatingElements extends AnnotationBase {
     //*--------------*
     //* Feature: caption
 
-    /** getter for caption - gets
-   * @generated
-   * @return value of the feature
-   */
-  public Caption getCaption() {
-      return (Caption)(_getFeatureValueNc(wrapGetIntCatchException(_FH_caption)));
+    /**
+     * getter for caption - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public Caption getCaption() {
+        return (Caption) (_getFeatureValueNc(wrapGetIntCatchException(_FH_caption)));
   }
 
   /** setter for caption - sets
