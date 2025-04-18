@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropNode extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.PropNode";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(PropNode.class);
@@ -45,9 +45,9 @@ public class PropNode extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_graphId = "graphId";
   public final static String _FeatName_nodeId = "nodeId";
@@ -93,56 +93,55 @@ public class PropNode extends Node {
   private final static MethodHandle _FH_color = _FC_color.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected PropNode() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public PropNode(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public PropNode(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: graphId
 
-  /** getter for graphId - gets
+    /** getter for graphId - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getGraphId() {
+    public String getGraphId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_graphId));
   }
 
-  /** setter for graphId - sets
+    /** setter for graphId - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGraphId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_graphId), v);
@@ -153,17 +152,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: nodeId
 
-  /** getter for nodeId - gets
+    /** getter for nodeId - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getNodeId() {
+    public String getNodeId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_nodeId));
   }
 
-  /** setter for nodeId - sets
+    /** setter for nodeId - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNodeId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_nodeId), v);
@@ -174,17 +173,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: lemma
 
-  /** getter for lemma - gets
+    /** getter for lemma - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getLemma() {
+    public String getLemma() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_lemma));
   }
 
-  /** setter for lemma - sets
+    /** setter for lemma - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLemma(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_lemma), v);
@@ -195,17 +194,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: pos
 
-  /** getter for pos - gets
+    /** getter for pos - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getPos() {
+    public String getPos() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
   }
 
-  /** setter for pos - sets
+    /** setter for pos - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPos(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
@@ -216,17 +215,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: text
 
-  /** getter for text - gets
+    /** getter for text - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getText() {
+    public String getText() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_text));
   }
 
-  /** setter for text - sets
+    /** setter for text - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setText(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_text), v);
@@ -237,17 +236,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: x
 
-  /** getter for x - gets
+    /** getter for x - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getX() {
+    public String getX() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_x));
   }
 
-  /** setter for x - sets
+    /** setter for x - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setX(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_x), v);
@@ -258,17 +257,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: y
 
-  /** getter for y - gets
+    /** getter for y - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getY() {
+    public String getY() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_y));
   }
 
-  /** setter for y - sets
+    /** setter for y - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setY(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_y), v);
@@ -279,17 +278,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: reference
 
-  /** getter for reference - gets
+    /** getter for reference - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getReference() {
+    public String getReference() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
   }
 
-  /** setter for reference - sets
+    /** setter for reference - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setReference(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_reference), v);
@@ -300,17 +299,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: x2
 
-  /** getter for x2 - gets
+    /** getter for x2 - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getX2() {
+    public String getX2() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_x2));
   }
 
-  /** setter for x2 - sets
+    /** setter for x2 - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setX2(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_x2), v);
@@ -321,17 +320,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: y2
 
-  /** getter for y2 - gets
+    /** getter for y2 - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getY2() {
+    public String getY2() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_y2));
   }
 
-  /** setter for y2 - sets
+    /** setter for y2 - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setY2(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_y2), v);
@@ -342,17 +341,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: begin
 
-  /** getter for begin - gets
+    /** getter for begin - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getBegin() {
+    public String getBegin() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
   }
 
-  /** setter for begin - sets
+    /** setter for begin - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBegin(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_begin), v);
@@ -363,17 +362,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: end
 
-  /** getter for end - gets
+    /** getter for end - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getEnd() {
+    public String getEnd() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_end));
   }
 
-  /** setter for end - sets
+    /** setter for end - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEnd(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_end), v);
@@ -384,17 +383,17 @@ public class PropNode extends Node {
   //*--------------*
   //* Feature: color
 
-  /** getter for color - gets
+    /** getter for color - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getColor() {
+    public String getColor() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_color));
   }
 
-  /** setter for color - sets
+    /** setter for color - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setColor(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_color), v);

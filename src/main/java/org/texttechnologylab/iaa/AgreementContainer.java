@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.iaa;
 
@@ -23,19 +23,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AgreementContainer extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.iaa.AgreementContainer";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AgreementContainer.class);
@@ -51,9 +51,9 @@ public class AgreementContainer extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_overallAgreementValue = "overallAgreementValue";
   public final static String _FeatName_agreementMeasure = "agreementMeasure";
@@ -78,28 +78,28 @@ public class AgreementContainer extends Annotation {
   private final static MethodHandle _FH_categorySpecificAgreementValues = _FC_categorySpecificAgreementValues.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected AgreementContainer() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public AgreementContainer(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public AgreementContainer(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -107,7 +107,7 @@ public class AgreementContainer extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public AgreementContainer(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -115,18 +115,17 @@ public class AgreementContainer extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: overallAgreementValue
 
   /** getter for overallAgreementValue - gets The overall agreement for the entire document.
@@ -137,9 +136,9 @@ public class AgreementContainer extends Annotation {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_overallAgreementValue));
   }
 
-  /** setter for overallAgreementValue - sets The overall agreement for the entire document.
+    /** setter for overallAgreementValue - sets The overall agreement for the entire document.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setOverallAgreementValue(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_overallAgreementValue), v);
@@ -158,9 +157,9 @@ public class AgreementContainer extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_agreementMeasure));
   }
 
-  /** setter for agreementMeasure - sets The agreement measure used to compute the values.
+    /** setter for agreementMeasure - sets The agreement measure used to compute the values.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setAgreementMeasure(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_agreementMeasure), v);
@@ -179,9 +178,9 @@ public class AgreementContainer extends Annotation {
     return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)));
   }
 
-  /** setter for categoryNames - sets The categories as an array of Strings.
+    /** setter for categoryNames - sets The categories as an array of Strings.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCategoryNames(StringArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryNames), v);
@@ -218,9 +217,9 @@ public class AgreementContainer extends Annotation {
     return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)));
   }
 
-  /** setter for categoryAgreementValues - sets An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.
+    /** setter for categoryAgreementValues - sets An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCategoryAgreementValues(DoubleArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryAgreementValues), v);
@@ -257,9 +256,9 @@ public class AgreementContainer extends Annotation {
     return (LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)));
   }
 
-  /** setter for categoryCounts - sets The count of items of each category for all annotators as an array of Longs.
+    /** setter for categoryCounts - sets The count of items of each category for all annotators as an array of Longs.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCategoryCounts(LongArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryCounts), v);
@@ -296,9 +295,9 @@ public class AgreementContainer extends Annotation {
     return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)));
   }
 
-  /** setter for categorySpecificAgreementValues - sets @deprecated
+    /** setter for categorySpecificAgreementValues - sets @deprecated
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCategorySpecificAgreementValues(StringArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categorySpecificAgreementValues), v);

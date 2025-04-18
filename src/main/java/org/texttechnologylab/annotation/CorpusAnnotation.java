@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CorpusAnnotation extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.CorpusAnnotation";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(CorpusAnnotation.class);
@@ -48,9 +48,9 @@ public class CorpusAnnotation extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_license = "license";
   public final static String _FeatName_corpusUrl = "corpusUrl";
@@ -72,56 +72,55 @@ public class CorpusAnnotation extends AnnotationBase {
   private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected CorpusAnnotation() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public CorpusAnnotation(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public CorpusAnnotation(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: license
 
-  /** getter for license - gets
+    /** getter for license - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getLicense() {
+    public String getLicense() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_license));
   }
 
-  /** setter for license - sets
+    /** setter for license - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLicense(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_license), v);
@@ -132,17 +131,17 @@ public class CorpusAnnotation extends AnnotationBase {
   //*--------------*
   //* Feature: corpusUrl
 
-  /** getter for corpusUrl - gets
+    /** getter for corpusUrl - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getCorpusUrl() {
+    public String getCorpusUrl() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_corpusUrl));
   }
 
-  /** setter for corpusUrl - sets
+    /** setter for corpusUrl - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCorpusUrl(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_corpusUrl), v);
@@ -153,17 +152,17 @@ public class CorpusAnnotation extends AnnotationBase {
   //*--------------*
   //* Feature: corpusName
 
-  /** getter for corpusName - gets
+    /** getter for corpusName - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getCorpusName() {
+    public String getCorpusName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_corpusName));
   }
 
-  /** setter for corpusName - sets
+    /** setter for corpusName - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCorpusName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_corpusName), v);
@@ -174,17 +173,17 @@ public class CorpusAnnotation extends AnnotationBase {
   //*--------------*
   //* Feature: author
 
-  /** getter for author - gets
+    /** getter for author - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getAuthor() {
+    public String getAuthor() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_author));
   }
 
-  /** setter for author - sets
+    /** setter for author - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setAuthor(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_author), v);
@@ -195,17 +194,17 @@ public class CorpusAnnotation extends AnnotationBase {
   //*--------------*
   //* Feature: comment
 
-  /** getter for comment - gets
+    /** getter for comment - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getComment() {
+    public String getComment() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
   }
 
-  /** setter for comment - sets
+    /** setter for comment - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setComment(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);

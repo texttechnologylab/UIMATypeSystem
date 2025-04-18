@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.score;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextScore extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.score.TextScore";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(TextScore.class);
@@ -49,9 +49,9 @@ public class TextScore extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_elements = "elements";
   public final static String _FeatName_documentURI = "documentURI";
@@ -67,77 +67,76 @@ public class TextScore extends AnnotationBase {
   private final static MethodHandle _FH_documentName = _FC_documentName.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected TextScore() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public TextScore(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public TextScore(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: elements
 
-  /** getter for elements - gets
+    /** getter for elements - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<TextScoreEntry> getElements() {
     return (FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));
   }
 
-  /** setter for elements - sets
+    /** setter for elements - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setElements(FSArray<TextScoreEntry> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
   }
 
 
-  /** indexed getter for elements - gets an indexed value -
+    /** indexed getter for elements - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public TextScoreEntry getElements(int i) {
      return (TextScoreEntry)(((FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));
   }
 
-  /** indexed setter for elements - sets an indexed value -
+    /** indexed setter for elements - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setElements(int i, TextScoreEntry v) {
@@ -148,17 +147,17 @@ public class TextScore extends AnnotationBase {
   //*--------------*
   //* Feature: documentURI
 
-  /** getter for documentURI - gets
+    /** getter for documentURI - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getDocumentURI() {
+    public String getDocumentURI() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_documentURI));
   }
 
-  /** setter for documentURI - sets
+    /** setter for documentURI - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setDocumentURI(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_documentURI), v);
@@ -169,17 +168,17 @@ public class TextScore extends AnnotationBase {
   //*--------------*
   //* Feature: documentName
 
-  /** getter for documentName - gets
+    /** getter for documentName - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getDocumentName() {
+    public String getDocumentName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));
   }
 
-  /** setter for documentName - sets
+    /** setter for documentName - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setDocumentName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_documentName), v);

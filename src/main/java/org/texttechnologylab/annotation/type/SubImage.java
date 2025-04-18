@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -21,7 +21,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubImage extends Annotation {
@@ -164,12 +164,12 @@ public class SubImage extends Annotation {
 
     /** indexed setter for coordinates - sets an indexed value -
    * @generated
-     * @param i index in the array to set
-     * @param v value to set into the array
-     */
-    @SuppressWarnings("unchecked")
+   * @param i index in the array to set
+   * @param v value to set into the array
+   */
+  @SuppressWarnings("unchecked")
     public void setCoordinates(int i, Coordinate v) {
-    ((FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
+      ((FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
   }
 
 
@@ -181,7 +181,7 @@ public class SubImage extends Annotation {
    * @return value of the feature
    */
   public Image getParent() {
-    return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
+      return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
   }
 
   /** setter for parent - sets

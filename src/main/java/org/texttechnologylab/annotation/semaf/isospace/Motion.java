@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
 
@@ -21,19 +21,19 @@ import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Motion extends Event {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Motion";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Motion.class);
@@ -49,9 +49,9 @@ public class Motion extends Event {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_motion_type = "motion_type";
   public final static String _FeatName_motion_class = "motion_class";
@@ -73,28 +73,28 @@ public class Motion extends Event {
   private final static MethodHandle _FH_motion_goal = _FC_motion_goal.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Motion() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Motion(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Motion(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -102,7 +102,7 @@ public class Motion extends Event {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Motion(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -110,18 +110,17 @@ public class Motion extends Event {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: motion_type
 
   /** getter for motion_type - gets ( MANNER | PATH | COMPOUND )
@@ -132,9 +131,9 @@ public class Motion extends Event {
     return _getStringValueNc(wrapGetIntCatchException(_FH_motion_type));
   }
 
-  /** setter for motion_type - sets ( MANNER | PATH | COMPOUND )
+    /** setter for motion_type - sets ( MANNER | PATH | COMPOUND )
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMotion_type(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_motion_type), v);
@@ -153,9 +152,9 @@ public class Motion extends Event {
     return _getStringValueNc(wrapGetIntCatchException(_FH_motion_class));
   }
 
-  /** setter for motion_class - sets ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY )
+    /** setter for motion_class - sets ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY )
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMotion_class(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_motion_class), v);
@@ -174,9 +173,9 @@ public class Motion extends Event {
     return _getStringValueNc(wrapGetIntCatchException(_FH_motion_sense));
   }
 
-  /** setter for motion_sense - sets ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
+    /** setter for motion_sense - sets ( LITERAL | FICTIVE | INTRINSIC_CHANGE )
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMotion_sense(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_motion_sense), v);
@@ -187,17 +186,17 @@ public class Motion extends Event {
   //*--------------*
   //* Feature: manner
 
-  /** getter for manner - gets
+    /** getter for manner - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Entity getManner() {
+    public Entity getManner() {
     return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_manner)));
   }
 
-  /** setter for manner - sets
+    /** setter for manner - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setManner(Entity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_manner), v);
@@ -208,17 +207,17 @@ public class Motion extends Event {
   //*--------------*
   //* Feature: motion_goal
 
-  /** getter for motion_goal - gets
+    /** getter for motion_goal - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public SpatialEntity getMotion_goal() {
+    public SpatialEntity getMotion_goal() {
     return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motion_goal)));
   }
 
-  /** setter for motion_goal - sets
+    /** setter for motion_goal - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMotion_goal(SpatialEntity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_motion_goal), v);

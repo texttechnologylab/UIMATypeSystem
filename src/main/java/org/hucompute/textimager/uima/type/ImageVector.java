@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.hucompute.textimager.uima.type;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ImageVector extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.hucompute.textimager.uima.type.ImageVector";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(ImageVector.class);
@@ -49,9 +49,9 @@ public class ImageVector extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_embedding = "embedding";
   public final static String _FeatName_value = "value";
@@ -64,28 +64,28 @@ public class ImageVector extends Annotation {
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected ImageVector() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public ImageVector(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public ImageVector(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -93,7 +93,7 @@ public class ImageVector extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public ImageVector(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -101,50 +101,49 @@ public class ImageVector extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: embedding
 
-  /** getter for embedding - gets
+    /** getter for embedding - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public DoubleArray getEmbedding() {
+    public DoubleArray getEmbedding() {
     return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)));
   }
 
-  /** setter for embedding - sets
+    /** setter for embedding - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEmbedding(DoubleArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_embedding), v);
   }
 
 
-  /** indexed getter for embedding - gets an indexed value -
+    /** indexed getter for embedding - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   public double getEmbedding(int i) {
      return ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).get(i);
   }
 
-  /** indexed setter for embedding - sets an indexed value -
+    /** indexed setter for embedding - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   public void setEmbedding(int i, double v) {
     ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).set(i, v);
@@ -154,17 +153,17 @@ public class ImageVector extends Annotation {
   //*--------------*
   //* Feature: value
 
-  /** getter for value - gets
+    /** getter for value - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getValue() {
+    public String getValue() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets
+    /** setter for value - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);

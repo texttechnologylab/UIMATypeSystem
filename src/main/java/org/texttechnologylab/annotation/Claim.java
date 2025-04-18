@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** One Claim for different facts
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Claim extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.Claim";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Claim.class);
@@ -49,9 +49,9 @@ public class Claim extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_value = "value";
   public final static String _FeatName_Facts = "Facts";
@@ -64,28 +64,28 @@ public class Claim extends Annotation {
   private final static MethodHandle _FH_Facts = _FC_Facts.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Claim() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Claim(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Claim(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -93,7 +93,7 @@ public class Claim extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Claim(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -101,18 +101,17 @@ public class Claim extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: value
 
   /** getter for value - gets Information of Claim
@@ -123,9 +122,9 @@ public class Claim extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets Information of Claim
+    /** setter for value - sets Information of Claim
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
@@ -145,9 +144,9 @@ public class Claim extends Annotation {
     return (FSArray<Fact>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)));
   }
 
-  /** setter for Facts - sets Set of Fact
+    /** setter for Facts - sets Set of Fact
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFacts(FSArray<Fact> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Facts), v);

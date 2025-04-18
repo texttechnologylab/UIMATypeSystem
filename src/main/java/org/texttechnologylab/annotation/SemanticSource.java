@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -20,7 +20,7 @@ import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SemanticSource extends WordSense {
@@ -95,7 +95,7 @@ public class SemanticSource extends WordSense {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public SemanticSource(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -111,7 +111,6 @@ public class SemanticSource extends WordSense {
    * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-
 
 
   //*--------------*

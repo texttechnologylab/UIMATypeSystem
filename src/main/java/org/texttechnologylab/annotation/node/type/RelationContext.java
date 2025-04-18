@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.node.type;
 
@@ -20,19 +20,19 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationContext extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.node.type.RelationContext";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(RelationContext.class);
@@ -48,9 +48,9 @@ public class RelationContext extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_relatesTo = "relatesTo";
   public final static String _FeatName_ReferencedID = "ReferencedID";
@@ -69,56 +69,55 @@ public class RelationContext extends Node {
   private final static MethodHandle _FH_wikiDataID = _FC_wikiDataID.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected RelationContext() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public RelationContext(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public RelationContext(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: relatesTo
 
-  /** getter for relatesTo - gets
+    /** getter for relatesTo - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getRelatesTo() {
+    public String getRelatesTo() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_relatesTo));
   }
 
-  /** setter for relatesTo - sets
+    /** setter for relatesTo - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setRelatesTo(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_relatesTo), v);
@@ -129,17 +128,17 @@ public class RelationContext extends Node {
   //*--------------*
   //* Feature: ReferencedID
 
-  /** getter for ReferencedID - gets
+    /** getter for ReferencedID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getReferencedID() {
+    public int getReferencedID() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_ReferencedID));
   }
 
-  /** setter for ReferencedID - sets
+    /** setter for ReferencedID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setReferencedID(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_ReferencedID), v);
@@ -150,17 +149,17 @@ public class RelationContext extends Node {
   //*--------------*
   //* Feature: displayName
 
-  /** getter for displayName - gets
+    /** getter for displayName - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getDisplayName() {
+    public String getDisplayName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
   }
 
-  /** setter for displayName - sets
+    /** setter for displayName - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setDisplayName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_displayName), v);
@@ -171,17 +170,17 @@ public class RelationContext extends Node {
   //*--------------*
   //* Feature: wikiDataID
 
-  /** getter for wikiDataID - gets
+    /** getter for wikiDataID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getWikiDataID() {
+    public String getWikiDataID() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));
   }
 
-  /** setter for wikiDataID - sets
+    /** setter for wikiDataID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setWikiDataID(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_wikiDataID), v);

@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -21,7 +21,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Source extends Annotation {
@@ -186,15 +186,15 @@ public class Source extends Annotation {
      * @generated
      */
     public StringArray getAuthors() {
-        return (StringArray) (_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)));
-    }
+        return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)));
+  }
 
     /** setter for authors - sets
      * @generated
      * @param v value to set into the feature
-     */
+   */
   public void setAuthors(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_authors), v);
+      _setFeatureValueNcWj(wrapGetIntCatchException(_FH_authors), v);
   }
 
 
@@ -204,7 +204,7 @@ public class Source extends Annotation {
    * @return value of the element at index i
    */
   public String getAuthors(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).get(i);
+     return ((StringArray) (_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).get(i);
   }
 
   /** indexed setter for authors - sets an indexed value -

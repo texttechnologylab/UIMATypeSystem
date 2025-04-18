@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
 
@@ -16,22 +16,20 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-
-
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Block extends StructuralElement {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Block";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Block.class);
@@ -47,9 +45,9 @@ public class Block extends StructuralElement {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_blockType = "blockType";
   public final static String _FeatName_blockName = "blockName";
@@ -62,28 +60,28 @@ public class Block extends StructuralElement {
   private final static MethodHandle _FH_blockName = _FC_blockName.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Block() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Block(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Block(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -91,7 +89,7 @@ public class Block extends StructuralElement {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Block(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -99,31 +97,30 @@ public class Block extends StructuralElement {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: blockType
 
-  /** getter for blockType - gets
+    /** getter for blockType - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getBlockType() {
+    public String getBlockType() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_blockType));
   }
 
-  /** setter for blockType - sets
+    /** setter for blockType - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBlockType(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_blockType), v);
@@ -134,17 +131,17 @@ public class Block extends StructuralElement {
   //*--------------*
   //* Feature: blockName
 
-  /** getter for blockName - gets
+    /** getter for blockName - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getBlockName() {
+    public String getBlockName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_blockName));
   }
 
-  /** setter for blockName - sets
+    /** setter for blockName - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBlockName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_blockName), v);

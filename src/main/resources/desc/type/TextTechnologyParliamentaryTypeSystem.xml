@@ -25,6 +25,21 @@
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
+                <featureDescription>
+                    <name>title</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>role</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>party</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
@@ -32,6 +47,11 @@
             <description/>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
+                <featureDescription>
+                    <name>date</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Long</rangeTypeName>
+                </featureDescription>
                 <featureDescription>
                     <name>speaker</name>
                     <description/>

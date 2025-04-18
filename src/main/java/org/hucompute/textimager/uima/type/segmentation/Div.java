@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.hucompute.textimager.uima.type.segmentation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Div extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.hucompute.textimager.uima.type.segmentation.Div";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Div.class);
@@ -48,9 +48,9 @@ public class Div extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_typ = "typ";
   public final static String _FeatName_id = "id";
@@ -72,28 +72,28 @@ public class Div extends Annotation {
   private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Div() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Div(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Div(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -101,7 +101,7 @@ public class Div extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Div(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -109,31 +109,30 @@ public class Div extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: typ
 
-  /** getter for typ - gets
+    /** getter for typ - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getTyp() {
+    public String getTyp() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_typ));
   }
 
-  /** setter for typ - sets
+    /** setter for typ - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTyp(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_typ), v);
@@ -144,17 +143,17 @@ public class Div extends Annotation {
   //*--------------*
   //* Feature: id
 
-  /** getter for id - gets
+    /** getter for id - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getId() {
+    public String getId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_id));
   }
 
-  /** setter for id - sets
+    /** setter for id - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_id), v);
@@ -165,17 +164,17 @@ public class Div extends Annotation {
   //*--------------*
   //* Feature: section
 
-  /** getter for section - gets
+    /** getter for section - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getSection() {
+    public String getSection() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_section));
   }
 
-  /** setter for section - sets
+    /** setter for section - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSection(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_section), v);
@@ -186,17 +185,17 @@ public class Div extends Annotation {
   //*--------------*
   //* Feature: user
 
-  /** getter for user - gets
+    /** getter for user - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getUser() {
+    public String getUser() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_user));
   }
 
-  /** setter for user - sets
+    /** setter for user - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUser(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
@@ -207,17 +206,17 @@ public class Div extends Annotation {
   //*--------------*
   //* Feature: timestamp
 
-  /** getter for timestamp - gets
+    /** getter for timestamp - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getTimestamp() {
+    public String getTimestamp() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));
   }
 
-  /** setter for timestamp - sets
+    /** setter for timestamp - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTimestamp(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_timestamp), v);

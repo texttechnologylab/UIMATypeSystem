@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isobase;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Link extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isobase.Link";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Link.class);
@@ -48,9 +48,9 @@ public class Link extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_comment = "comment";
   public final static String _FeatName_figure = "figure";
@@ -72,56 +72,55 @@ public class Link extends AnnotationBase {
   private final static MethodHandle _FH_rel_type = _FC_rel_type.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Link() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Link(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Link(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: comment
 
-  /** getter for comment - gets
+    /** getter for comment - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getComment() {
+    public String getComment() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
   }
 
-  /** setter for comment - sets
+    /** setter for comment - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setComment(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
@@ -132,17 +131,17 @@ public class Link extends AnnotationBase {
   //*--------------*
   //* Feature: figure
 
-  /** getter for figure - gets
+    /** getter for figure - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Entity getFigure() {
+    public Entity getFigure() {
     return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_figure)));
   }
 
-  /** setter for figure - sets
+    /** setter for figure - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFigure(Entity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_figure), v);
@@ -153,17 +152,17 @@ public class Link extends AnnotationBase {
   //*--------------*
   //* Feature: ground
 
-  /** getter for ground - gets
+    /** getter for ground - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Entity getGround() {
+    public Entity getGround() {
     return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ground)));
   }
 
-  /** setter for ground - sets
+    /** setter for ground - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGround(Entity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_ground), v);
@@ -174,17 +173,17 @@ public class Link extends AnnotationBase {
   //*--------------*
   //* Feature: trigger
 
-  /** getter for trigger - gets
+    /** getter for trigger - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Entity getTrigger() {
+    public Entity getTrigger() {
     return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));
   }
 
-  /** setter for trigger - sets
+    /** setter for trigger - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTrigger(Entity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_trigger), v);
@@ -195,17 +194,17 @@ public class Link extends AnnotationBase {
   //*--------------*
   //* Feature: rel_type
 
-  /** getter for rel_type - gets
+    /** getter for rel_type - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getRel_type() {
+    public String getRel_type() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_rel_type));
   }
 
-  /** setter for rel_type - sets
+    /** setter for rel_type - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setRel_type(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_rel_type), v);

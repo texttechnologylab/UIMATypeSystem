@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.node.type;
 
@@ -20,19 +20,19 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationGroup extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.node.type.RelationGroup";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(RelationGroup.class);
@@ -48,9 +48,9 @@ public class RelationGroup extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_relation = "relation";
   public final static String _FeatName_locationID = "locationID";
@@ -66,56 +66,55 @@ public class RelationGroup extends Node {
   private final static MethodHandle _FH_sentence = _FC_sentence.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected RelationGroup() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public RelationGroup(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public RelationGroup(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: relation
 
-  /** getter for relation - gets
+    /** getter for relation - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public RelationContext getRelation() {
+    public RelationContext getRelation() {
     return (RelationContext)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relation)));
   }
 
-  /** setter for relation - sets
+    /** setter for relation - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setRelation(RelationContext v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_relation), v);
@@ -126,17 +125,17 @@ public class RelationGroup extends Node {
   //*--------------*
   //* Feature: locationID
 
-  /** getter for locationID - gets
+    /** getter for locationID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getLocationID() {
+    public int getLocationID() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_locationID));
   }
 
-  /** setter for locationID - sets
+    /** setter for locationID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLocationID(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_locationID), v);
@@ -147,17 +146,17 @@ public class RelationGroup extends Node {
   //*--------------*
   //* Feature: sentence
 
-  /** getter for sentence - gets
+    /** getter for sentence - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getSentence() {
+    public int getSentence() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_sentence));
   }
 
-  /** setter for sentence - sets
+    /** setter for sentence - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSentence(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_sentence), v);

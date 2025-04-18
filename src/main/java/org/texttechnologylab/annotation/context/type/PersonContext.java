@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.context.type;
 
@@ -20,19 +20,19 @@ import org.texttechnologylab.annotation.node.type.Context;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PersonContext extends Context {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.context.type.PersonContext";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(PersonContext.class);
@@ -48,9 +48,9 @@ public class PersonContext extends Context {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_birthDate = "birthDate";
   public final static String _FeatName_Name = "Name";
@@ -75,56 +75,55 @@ public class PersonContext extends Context {
   private final static MethodHandle _FH_fieldOfWork = _FC_fieldOfWork.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected PersonContext() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public PersonContext(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public PersonContext(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: birthDate
 
-  /** getter for birthDate - gets
+    /** getter for birthDate - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getBirthDate() {
+    public String getBirthDate() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_birthDate));
   }
 
-  /** setter for birthDate - sets
+    /** setter for birthDate - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBirthDate(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_birthDate), v);
@@ -135,17 +134,17 @@ public class PersonContext extends Context {
   //*--------------*
   //* Feature: Name
 
-  /** getter for Name - gets
+    /** getter for Name - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getName() {
+    public String getName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_Name));
   }
 
-  /** setter for Name - sets
+    /** setter for Name - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_Name), v);
@@ -156,17 +155,17 @@ public class PersonContext extends Context {
   //*--------------*
   //* Feature: contextInf
 
-  /** getter for contextInf - gets
+    /** getter for contextInf - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getContextInf() {
+    public String getContextInf() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));
   }
 
-  /** setter for contextInf - sets
+    /** setter for contextInf - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setContextInf(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_contextInf), v);
@@ -177,17 +176,17 @@ public class PersonContext extends Context {
   //*--------------*
   //* Feature: gender
 
-  /** getter for gender - gets
+    /** getter for gender - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getGender() {
+    public String getGender() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_gender));
   }
 
-  /** setter for gender - sets
+    /** setter for gender - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGender(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_gender), v);
@@ -198,17 +197,17 @@ public class PersonContext extends Context {
   //*--------------*
   //* Feature: birthPlace
 
-  /** getter for birthPlace - gets
+    /** getter for birthPlace - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getBirthPlace() {
+    public String getBirthPlace() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_birthPlace));
   }
 
-  /** setter for birthPlace - sets
+    /** setter for birthPlace - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBirthPlace(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_birthPlace), v);
@@ -219,17 +218,17 @@ public class PersonContext extends Context {
   //*--------------*
   //* Feature: fieldOfWork
 
-  /** getter for fieldOfWork - gets
+    /** getter for fieldOfWork - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getFieldOfWork() {
+    public String getFieldOfWork() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_fieldOfWork));
   }
 
-  /** setter for fieldOfWork - sets
+    /** setter for fieldOfWork - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFieldOfWork(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_fieldOfWork), v);

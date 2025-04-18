@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DocumentModification extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.DocumentModification";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(DocumentModification.class);
@@ -48,9 +48,9 @@ public class DocumentModification extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_user = "user";
   public final static String _FeatName_timestamp = "timestamp";
@@ -66,56 +66,55 @@ public class DocumentModification extends AnnotationBase {
   private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected DocumentModification() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public DocumentModification(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public DocumentModification(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: user
 
-  /** getter for user - gets
+    /** getter for user - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getUser() {
+    public String getUser() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_user));
   }
 
-  /** setter for user - sets
+    /** setter for user - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUser(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
@@ -126,17 +125,17 @@ public class DocumentModification extends AnnotationBase {
   //*--------------*
   //* Feature: timestamp
 
-  /** getter for timestamp - gets
+    /** getter for timestamp - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public long getTimestamp() {
+    public long getTimestamp() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));
   }
 
-  /** setter for timestamp - sets
+    /** setter for timestamp - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTimestamp(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
@@ -147,17 +146,17 @@ public class DocumentModification extends AnnotationBase {
   //*--------------*
   //* Feature: comment
 
-  /** getter for comment - gets
+    /** getter for comment - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getComment() {
+    public String getComment() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
   }
 
-  /** setter for comment - sets
+    /** setter for comment - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setComment(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);

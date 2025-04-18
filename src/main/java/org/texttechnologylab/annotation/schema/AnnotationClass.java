@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.schema;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationClass extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.schema.AnnotationClass";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AnnotationClass.class);
@@ -49,9 +49,9 @@ public class AnnotationClass extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_name = "name";
   public final static String _FeatName_description = "description";
@@ -67,56 +67,55 @@ public class AnnotationClass extends AnnotationBase {
   private final static MethodHandle _FH_attributes = _FC_attributes.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected AnnotationClass() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public AnnotationClass(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public AnnotationClass(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: name
 
-  /** getter for name - gets
+    /** getter for name - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getName() {
+    public String getName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_name));
   }
 
-  /** setter for name - sets
+    /** setter for name - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
@@ -127,17 +126,17 @@ public class AnnotationClass extends AnnotationBase {
   //*--------------*
   //* Feature: description
 
-  /** getter for description - gets
+    /** getter for description - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getDescription() {
+    public String getDescription() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_description));
   }
 
-  /** setter for description - sets
+    /** setter for description - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setDescription(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_description), v);
@@ -148,18 +147,18 @@ public class AnnotationClass extends AnnotationBase {
   //*--------------*
   //* Feature: attributes
 
-  /** getter for attributes - gets
+    /** getter for attributes - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSList<Attribute> getAttributes() {
     return (FSList<Attribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));
   }
 
-  /** setter for attributes - sets
+    /** setter for attributes - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setAttributes(FSList<Attribute> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attributes), v);

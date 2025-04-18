@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Graph extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.Graph";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Graph.class);
@@ -48,9 +48,9 @@ public class Graph extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_nodes = "nodes";
   public final static String _FeatName_edges = "edges";
@@ -63,43 +63,42 @@ public class Graph extends Node {
   private final static MethodHandle _FH_edges = _FC_edges.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Graph() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Graph(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Graph(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: nodes
 
   /** getter for nodes - gets Set of Nodes
@@ -111,9 +110,9 @@ public class Graph extends Node {
     return (FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));
   }
 
-  /** setter for nodes - sets Set of Nodes
+    /** setter for nodes - sets Set of Nodes
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNodes(FSArray<Node> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nodes), v);
@@ -153,9 +152,9 @@ public class Graph extends Node {
     return (FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));
   }
 
-  /** setter for edges - sets set of edges
+    /** setter for edges - sets set of edges
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEdges(FSArray<Edge> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_edges), v);

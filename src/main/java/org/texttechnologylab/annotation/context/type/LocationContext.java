@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.context.type;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.cas.FloatArray;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LocationContext extends Context {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.context.type.LocationContext";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(LocationContext.class);
@@ -49,9 +49,9 @@ public class LocationContext extends Context {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_markerPoint = "markerPoint";
   public final static String _FeatName_geoJson = "geoJson";
@@ -82,75 +82,74 @@ public class LocationContext extends Context {
   private final static MethodHandle _FH_areaSize = _FC_areaSize.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected LocationContext() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public LocationContext(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public LocationContext(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: markerPoint
 
-  /** getter for markerPoint - gets
+    /** getter for markerPoint - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public FloatArray getMarkerPoint() {
+    public FloatArray getMarkerPoint() {
     return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)));
   }
 
-  /** setter for markerPoint - sets
+    /** setter for markerPoint - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMarkerPoint(FloatArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_markerPoint), v);
   }
 
 
-  /** indexed getter for markerPoint - gets an indexed value -
+    /** indexed getter for markerPoint - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   public float getMarkerPoint(int i) {
      return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).get(i);
   }
 
-  /** indexed setter for markerPoint - sets an indexed value -
+    /** indexed setter for markerPoint - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   public void setMarkerPoint(int i, float v) {
     ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).set(i, v);
@@ -160,17 +159,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: geoJson
 
-  /** getter for geoJson - gets
+    /** getter for geoJson - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getGeoJson() {
+    public String getGeoJson() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));
   }
 
-  /** setter for geoJson - sets
+    /** setter for geoJson - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGeoJson(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_geoJson), v);
@@ -181,36 +180,36 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: latLngs
 
-  /** getter for latLngs - gets
+    /** getter for latLngs - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public FloatArray getLatLngs() {
+    public FloatArray getLatLngs() {
     return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)));
   }
 
-  /** setter for latLngs - sets
+    /** setter for latLngs - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLatLngs(FloatArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_latLngs), v);
   }
 
 
-  /** indexed getter for latLngs - gets an indexed value -
+    /** indexed getter for latLngs - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   public float getLatLngs(int i) {
      return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).get(i);
   }
 
-  /** indexed setter for latLngs - sets an indexed value -
+    /** indexed setter for latLngs - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   public void setLatLngs(int i, float v) {
     ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).set(i, v);
@@ -220,17 +219,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: contextInf
 
-  /** getter for contextInf - gets
+    /** getter for contextInf - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getContextInf() {
+    public String getContextInf() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));
   }
 
-  /** setter for contextInf - sets
+    /** setter for contextInf - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setContextInf(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_contextInf), v);
@@ -241,17 +240,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: country
 
-  /** getter for country - gets
+    /** getter for country - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getCountry() {
+    public String getCountry() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_country));
   }
 
-  /** setter for country - sets
+    /** setter for country - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCountry(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_country), v);
@@ -262,17 +261,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: numberOfCitizen
 
-  /** getter for numberOfCitizen - gets
+    /** getter for numberOfCitizen - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getNumberOfCitizen() {
+    public double getNumberOfCitizen() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_numberOfCitizen));
   }
 
-  /** setter for numberOfCitizen - sets
+    /** setter for numberOfCitizen - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNumberOfCitizen(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_numberOfCitizen), v);
@@ -283,17 +282,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: geoNamesID
 
-  /** getter for geoNamesID - gets
+    /** getter for geoNamesID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getGeoNamesID() {
+    public int getGeoNamesID() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_geoNamesID));
   }
 
-  /** setter for geoNamesID - sets
+    /** setter for geoNamesID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGeoNamesID(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_geoNamesID), v);
@@ -304,17 +303,17 @@ public class LocationContext extends Context {
   //*--------------*
   //* Feature: areaSize
 
-  /** getter for areaSize - gets
+    /** getter for areaSize - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getAreaSize() {
+    public String getAreaSize() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_areaSize));
   }
 
-  /** setter for areaSize - sets
+    /** setter for areaSize - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setAreaSize(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_areaSize), v);

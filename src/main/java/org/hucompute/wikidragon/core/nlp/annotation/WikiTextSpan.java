@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.hucompute.wikidragon.core.nlp.annotation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikiTextSpan extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.hucompute.wikidragon.core.nlp.annotation.WikiTextSpan";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(WikiTextSpan.class);
@@ -48,9 +48,9 @@ public class WikiTextSpan extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_uid = "uid";
 
@@ -60,28 +60,28 @@ public class WikiTextSpan extends Annotation {
   private final static MethodHandle _FH_uid = _FC_uid.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected WikiTextSpan() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public WikiTextSpan(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public WikiTextSpan(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -89,7 +89,7 @@ public class WikiTextSpan extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public WikiTextSpan(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -97,31 +97,30 @@ public class WikiTextSpan extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: uid
 
-  /** getter for uid - gets
+    /** getter for uid - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getUid() {
+    public String getUid() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_uid));
   }
 
-  /** setter for uid - sets
+    /** setter for uid - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUid(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_uid), v);

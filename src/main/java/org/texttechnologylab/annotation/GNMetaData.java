@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -16,22 +16,20 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-
-
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GNMetaData extends MetaData {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.GNMetaData";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(GNMetaData.class);
@@ -47,9 +45,9 @@ public class GNMetaData extends MetaData {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_date = "date";
   public final static String _FeatName_version = "version";
@@ -80,28 +78,28 @@ public class GNMetaData extends MetaData {
   private final static MethodHandle _FH_withSources = _FC_withSources.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected GNMetaData() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public GNMetaData(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public GNMetaData(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -132,17 +130,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: date
 
-  /** getter for date - gets
-   * @generated
-   * @return value of the feature
-   */
-  public String getDate() {
+    /** getter for date - gets
+     * @generated
+     * @return value of the feature
+     */
+    public String getDate() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_date));
-  }
+    }
 
-  /** setter for date - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for date - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setDate(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_date), v);
@@ -153,17 +151,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: version
 
-  /** getter for version - gets
-   * @generated
-   * @return value of the feature
-   */
-  public String getVersion() {
+    /** getter for version - gets
+     * @generated
+     * @return value of the feature
+     */
+    public String getVersion() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+    }
 
-  /** setter for version - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for version - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setVersion(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
@@ -174,17 +172,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: withAllMatches
 
-  /** getter for withAllMatches - gets
-   * @generated
-   * @return value of the feature
-   */
-  public boolean getWithAllMatches() {
+    /** getter for withAllMatches - gets
+     * @generated
+     * @return value of the feature
+     */
+    public boolean getWithAllMatches() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAllMatches));
-  }
+    }
 
-  /** setter for withAllMatches - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for withAllMatches - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWithAllMatches(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAllMatches), v);
@@ -195,17 +193,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: withAmbiguousNames
 
-  /** getter for withAmbiguousNames - gets
-   * @generated
-   * @return value of the feature
-   */
-  public boolean getWithAmbiguousNames() {
+    /** getter for withAmbiguousNames - gets
+     * @generated
+     * @return value of the feature
+     */
+    public boolean getWithAmbiguousNames() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAmbiguousNames));
-  }
+    }
 
-  /** setter for withAmbiguousNames - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for withAmbiguousNames - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWithAmbiguousNames(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAmbiguousNames), v);
@@ -216,17 +214,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: withBayes
 
-  /** getter for withBayes - gets
-   * @generated
-   * @return value of the feature
-   */
-  public boolean getWithBayes() {
+    /** getter for withBayes - gets
+     * @generated
+     * @return value of the feature
+     */
+    public boolean getWithBayes() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withBayes));
-  }
+    }
 
-  /** setter for withBayes - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for withBayes - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWithBayes(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withBayes), v);
@@ -237,17 +235,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: wihUniqueNames
 
-  /** getter for wihUniqueNames - gets
-   * @generated
-   * @return value of the feature
-   */
-  public boolean getWihUniqueNames() {
+    /** getter for wihUniqueNames - gets
+     * @generated
+     * @return value of the feature
+     */
+    public boolean getWihUniqueNames() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_wihUniqueNames));
-  }
+    }
 
-  /** setter for wihUniqueNames - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for wihUniqueNames - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWihUniqueNames(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_wihUniqueNames), v);
@@ -258,17 +256,17 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: withOddsAdjustment
 
-  /** getter for withOddsAdjustment - gets
-   * @generated
-   * @return value of the feature
-   */
-  public boolean getWithOddsAdjustment() {
+    /** getter for withOddsAdjustment - gets
+     * @generated
+     * @return value of the feature
+     */
+    public boolean getWithOddsAdjustment() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_withOddsAdjustment));
-  }
+    }
 
-  /** setter for withOddsAdjustment - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for withOddsAdjustment - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWithOddsAdjustment(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_withOddsAdjustment), v);
@@ -279,21 +277,21 @@ public class GNMetaData extends MetaData {
   //*--------------*
   //* Feature: withSources
 
-  /** getter for withSources - gets
-   * @generated
-   * @return value of the feature
-   */
-  public String getWithSources() {
+    /** getter for withSources - gets
+     * @generated
+     * @return value of the feature
+     */
+    public String getWithSources() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_withSources));
-  }
+    }
 
-  /** setter for withSources - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for withSources - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setWithSources(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_withSources), v);
   }
 
-  }
+}
 

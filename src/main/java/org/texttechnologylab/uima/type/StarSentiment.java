@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.uima.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StarSentiment extends Sentiment {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.uima.type.StarSentiment";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(StarSentiment.class);
@@ -45,9 +45,9 @@ public class StarSentiment extends Sentiment {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_OneStar = "OneStar";
   public final static String _FeatName_TwoStars = "TwoStars";
@@ -69,28 +69,28 @@ public class StarSentiment extends Sentiment {
   private final static MethodHandle _FH_FiveStars = _FC_FiveStars.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected StarSentiment() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public StarSentiment(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public StarSentiment(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -98,7 +98,7 @@ public class StarSentiment extends Sentiment {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public StarSentiment(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -106,31 +106,30 @@ public class StarSentiment extends Sentiment {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: OneStar
 
-  /** getter for OneStar - gets
+    /** getter for OneStar - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getOneStar() {
+    public double getOneStar() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_OneStar));
   }
 
-  /** setter for OneStar - sets
+    /** setter for OneStar - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setOneStar(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_OneStar), v);
@@ -141,17 +140,17 @@ public class StarSentiment extends Sentiment {
   //*--------------*
   //* Feature: TwoStars
 
-  /** getter for TwoStars - gets
+    /** getter for TwoStars - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getTwoStars() {
+    public double getTwoStars() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_TwoStars));
   }
 
-  /** setter for TwoStars - sets
+    /** setter for TwoStars - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTwoStars(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_TwoStars), v);
@@ -162,17 +161,17 @@ public class StarSentiment extends Sentiment {
   //*--------------*
   //* Feature: ThreeStars
 
-  /** getter for ThreeStars - gets
+    /** getter for ThreeStars - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getThreeStars() {
+    public double getThreeStars() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_ThreeStars));
   }
 
-  /** setter for ThreeStars - sets
+    /** setter for ThreeStars - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setThreeStars(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_ThreeStars), v);
@@ -183,17 +182,17 @@ public class StarSentiment extends Sentiment {
   //*--------------*
   //* Feature: FourStars
 
-  /** getter for FourStars - gets
+    /** getter for FourStars - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getFourStars() {
+    public double getFourStars() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_FourStars));
   }
 
-  /** setter for FourStars - sets
+    /** setter for FourStars - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFourStars(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_FourStars), v);
@@ -204,17 +203,17 @@ public class StarSentiment extends Sentiment {
   //*--------------*
   //* Feature: FiveStars
 
-  /** getter for FiveStars - gets
+    /** getter for FiveStars - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getFiveStars() {
+    public double getFiveStars() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_FiveStars));
   }
 
-  /** setter for FiveStars - sets
+    /** setter for FiveStars - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFiveStars(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_FiveStars), v);

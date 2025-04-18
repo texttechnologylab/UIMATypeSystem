@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.hucompute.textimager.uima.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VaderSentiment extends Sentiment {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.hucompute.textimager.uima.type.VaderSentiment";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(VaderSentiment.class);
@@ -45,9 +45,9 @@ public class VaderSentiment extends Sentiment {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_pos = "pos";
   public final static String _FeatName_neu = "neu";
@@ -63,28 +63,28 @@ public class VaderSentiment extends Sentiment {
   private final static MethodHandle _FH_neg = _FC_neg.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected VaderSentiment() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public VaderSentiment(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public VaderSentiment(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -92,7 +92,7 @@ public class VaderSentiment extends Sentiment {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public VaderSentiment(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -100,31 +100,30 @@ public class VaderSentiment extends Sentiment {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: pos
 
-  /** getter for pos - gets
+    /** getter for pos - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getPos() {
+    public double getPos() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_pos));
   }
 
-  /** setter for pos - sets
+    /** setter for pos - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPos(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_pos), v);
@@ -135,17 +134,17 @@ public class VaderSentiment extends Sentiment {
   //*--------------*
   //* Feature: neu
 
-  /** getter for neu - gets
+    /** getter for neu - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getNeu() {
+    public double getNeu() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_neu));
   }
 
-  /** setter for neu - sets
+    /** setter for neu - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNeu(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_neu), v);
@@ -156,17 +155,17 @@ public class VaderSentiment extends Sentiment {
   //*--------------*
   //* Feature: neg
 
-  /** getter for neg - gets
+    /** getter for neg - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getNeg() {
+    public double getNeg() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_neg));
   }
 
-  /** setter for neg - sets
+    /** setter for neg - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNeg(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_neg), v);

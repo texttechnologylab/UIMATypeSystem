@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.uima.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Topic extends Classification {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.uima.type.Topic";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Topic.class);
@@ -45,9 +45,9 @@ public class Topic extends Classification {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_topic = "topic";
   public final static String _FeatName_score = "score";
@@ -60,28 +60,28 @@ public class Topic extends Classification {
   private final static MethodHandle _FH_score = _FC_score.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Topic() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Topic(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Topic(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -89,7 +89,7 @@ public class Topic extends Classification {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Topic(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -97,31 +97,30 @@ public class Topic extends Classification {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: topic
 
-  /** getter for topic - gets
+    /** getter for topic - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getTopic() {
+    public String getTopic() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_topic));
   }
 
-  /** setter for topic - sets
+    /** setter for topic - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTopic(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_topic), v);
@@ -132,17 +131,17 @@ public class Topic extends Classification {
   //*--------------*
   //* Feature: score
 
-  /** getter for score - gets
+    /** getter for score - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getScore() {
+    public double getScore() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));
   }
 
-  /** setter for score - sets
+    /** setter for score - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setScore(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_score), v);

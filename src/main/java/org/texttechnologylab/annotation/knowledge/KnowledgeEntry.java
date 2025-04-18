@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.knowledge;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KnowledgeEntry extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.knowledge.KnowledgeEntry";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(KnowledgeEntry.class);
@@ -48,9 +48,9 @@ public class KnowledgeEntry extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_uri = "uri";
   public final static String _FeatName_source = "source";
@@ -63,28 +63,28 @@ public class KnowledgeEntry extends Annotation {
   private final static MethodHandle _FH_source = _FC_source.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected KnowledgeEntry() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public KnowledgeEntry(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public KnowledgeEntry(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -92,7 +92,7 @@ public class KnowledgeEntry extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public KnowledgeEntry(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -100,31 +100,30 @@ public class KnowledgeEntry extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: uri
 
-  /** getter for uri - gets
+    /** getter for uri - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getUri() {
+    public String getUri() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
   }
 
-  /** setter for uri - sets
+    /** setter for uri - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUri(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
@@ -135,17 +134,17 @@ public class KnowledgeEntry extends Annotation {
   //*--------------*
   //* Feature: source
 
-  /** getter for source - gets
+    /** getter for source - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getSource() {
+    public String getSource() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_source));
   }
 
-  /** setter for source - sets
+    /** setter for source - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSource(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_source), v);

@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type.dbpedia;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DBPediaType extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.dbpedia.DBPediaType";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(DBPediaType.class);
@@ -48,9 +48,9 @@ public class DBPediaType extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_value = "value";
   public final static String _FeatName_uri = "uri";
@@ -63,56 +63,55 @@ public class DBPediaType extends AnnotationBase {
   private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected DBPediaType() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public DBPediaType(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public DBPediaType(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: value
 
-  /** getter for value - gets
+    /** getter for value - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getValue() {
+    public String getValue() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets
+    /** setter for value - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
@@ -123,17 +122,17 @@ public class DBPediaType extends AnnotationBase {
   //*--------------*
   //* Feature: uri
 
-  /** getter for uri - gets
+    /** getter for uri - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getUri() {
+    public String getUri() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
   }
 
-  /** setter for uri - sets
+    /** setter for uri - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUri(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);

@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.Room;
 
@@ -22,19 +22,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Object extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.Room.Object";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Object.class);
@@ -50,9 +50,9 @@ public class Object extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_name = "name";
   public final static String _FeatName_fatherObject = "fatherObject";
@@ -89,28 +89,28 @@ public class Object extends Annotation {
   private final static MethodHandle _FH_objectFeature = _FC_objectFeature.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Object() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Object(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Object(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -118,7 +118,7 @@ public class Object extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Object(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -126,18 +126,17 @@ public class Object extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: name
 
   /** getter for name - gets Name of the object (group).
@@ -148,9 +147,9 @@ public class Object extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_name));
   }
 
-  /** setter for name - sets Name of the object (group).
+    /** setter for name - sets Name of the object (group).
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
@@ -169,9 +168,9 @@ public class Object extends Annotation {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_fatherObject)));
   }
 
-  /** setter for fatherObject - sets FatherObject in the hierarchy.
+    /** setter for fatherObject - sets FatherObject in the hierarchy.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFatherObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_fatherObject), v);
@@ -190,9 +189,9 @@ public class Object extends Annotation {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nextTimeObject)));
   }
 
-  /** setter for nextTimeObject - sets Reference to the same object the next time step.
+    /** setter for nextTimeObject - sets Reference to the same object the next time step.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNextTimeObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nextTimeObject), v);
@@ -211,9 +210,9 @@ public class Object extends Annotation {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prevTimeObject)));
   }
 
-  /** setter for prevTimeObject - sets Reference to the same object the previous time step.
+    /** setter for prevTimeObject - sets Reference to the same object the previous time step.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPrevTimeObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_prevTimeObject), v);
@@ -232,9 +231,9 @@ public class Object extends Annotation {
     return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_timeReference)));
   }
 
-  /** setter for timeReference - sets Reference to time location.
+    /** setter for timeReference - sets Reference to time location.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTimeReference(TimeChain v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_timeReference), v);
@@ -253,9 +252,9 @@ public class Object extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_shapeNetID));
   }
 
-  /** setter for shapeNetID - sets ShapeNetID of the object.
+    /** setter for shapeNetID - sets ShapeNetID of the object.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setShapeNetID(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_shapeNetID), v);
@@ -274,9 +273,9 @@ public class Object extends Annotation {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_scale));
   }
 
-  /** setter for scale - sets Scale of the object.
+    /** setter for scale - sets Scale of the object.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setScale(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_scale), v);
@@ -295,9 +294,9 @@ public class Object extends Annotation {
     return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_location)));
   }
 
-  /** setter for location - sets 3D Location Vector.
+    /** setter for location - sets 3D Location Vector.
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLocation(Vector v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_location), v);
@@ -316,9 +315,9 @@ public class Object extends Annotation {
     return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));
   }
 
-  /** setter for rotation - sets 4D Rotation Quaternion
+    /** setter for rotation - sets 4D Rotation Quaternion
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setRotation(Vector v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rotation), v);
@@ -338,9 +337,9 @@ public class Object extends Annotation {
     return (FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)));
   }
 
-  /** setter for objectFeature - sets All feature of the object
+    /** setter for objectFeature - sets All feature of the object
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setObjectFeature(FSArray<ObjectAttribute> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_objectFeature), v);

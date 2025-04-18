@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.Room;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Attribute of an object (color, texture, srl, ...)
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ObjectAttribute extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.Room.ObjectAttribute";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(ObjectAttribute.class);
@@ -48,9 +48,9 @@ public class ObjectAttribute extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_key = "key";
   public final static String _FeatName_value = "value";
@@ -63,28 +63,28 @@ public class ObjectAttribute extends Annotation {
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected ObjectAttribute() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public ObjectAttribute(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public ObjectAttribute(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -92,7 +92,7 @@ public class ObjectAttribute extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public ObjectAttribute(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -100,18 +100,17 @@ public class ObjectAttribute extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: key
 
   /** getter for key - gets name of the attribute
@@ -122,9 +121,9 @@ public class ObjectAttribute extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_key));
   }
 
-  /** setter for key - sets name of the attribute
+    /** setter for key - sets name of the attribute
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setKey(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_key), v);
@@ -143,9 +142,9 @@ public class ObjectAttribute extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets value of the attribute
+    /** setter for value - sets value of the attribute
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);

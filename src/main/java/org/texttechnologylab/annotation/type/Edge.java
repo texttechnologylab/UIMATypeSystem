@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Edge extends GraphBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.Edge";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Edge.class);
@@ -45,9 +45,9 @@ public class Edge extends GraphBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_source = "source";
   public final static String _FeatName_target = "target";
@@ -66,56 +66,55 @@ public class Edge extends GraphBase {
   private final static MethodHandle _FH_edgetype = _FC_edgetype.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Edge() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Edge(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Edge(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: source
 
-  /** getter for source - gets
+    /** getter for source - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Node getSource() {
+    public Node getSource() {
     return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));
   }
 
-  /** setter for source - sets
+    /** setter for source - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSource(Node v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_source), v);
@@ -126,17 +125,17 @@ public class Edge extends GraphBase {
   //*--------------*
   //* Feature: target
 
-  /** getter for target - gets
+    /** getter for target - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Node getTarget() {
+    public Node getTarget() {
     return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_target)));
   }
 
-  /** setter for target - sets
+    /** setter for target - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTarget(Node v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_target), v);
@@ -147,17 +146,17 @@ public class Edge extends GraphBase {
   //*--------------*
   //* Feature: attribute
 
-  /** getter for attribute - gets
+    /** getter for attribute - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Attribute getAttribute() {
+    public Attribute getAttribute() {
     return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attribute)));
   }
 
-  /** setter for attribute - sets
+    /** setter for attribute - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setAttribute(Attribute v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attribute), v);
@@ -168,17 +167,17 @@ public class Edge extends GraphBase {
   //*--------------*
   //* Feature: edgetype
 
-  /** getter for edgetype - gets
+    /** getter for edgetype - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getEdgetype() {
+    public String getEdgetype() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_edgetype));
   }
 
-  /** setter for edgetype - sets
+    /** setter for edgetype - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEdgetype(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_edgetype), v);

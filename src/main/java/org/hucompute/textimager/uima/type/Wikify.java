@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.hucompute.textimager.uima.type;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Wikify extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.hucompute.textimager.uima.type.Wikify";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Wikify.class);
@@ -49,9 +49,9 @@ public class Wikify extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_title = "title";
   public final static String _FeatName_link = "link";
@@ -67,28 +67,28 @@ public class Wikify extends Annotation {
   private final static MethodHandle _FH_elements = _FC_elements.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Wikify() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Wikify(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Wikify(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -96,7 +96,7 @@ public class Wikify extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Wikify(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -104,18 +104,17 @@ public class Wikify extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: title
 
   /** getter for title - gets start and end of the objects
@@ -126,9 +125,9 @@ public class Wikify extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_title));
   }
 
-  /** setter for title - sets start and end of the objects
+    /** setter for title - sets start and end of the objects
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTitle(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
@@ -147,9 +146,9 @@ public class Wikify extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_link));
   }
 
-  /** setter for link - sets start and end of the objects
+    /** setter for link - sets start and end of the objects
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setLink(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_link), v);
@@ -160,38 +159,38 @@ public class Wikify extends Annotation {
   //*--------------*
   //* Feature: elements
 
-  /** getter for elements - gets
+    /** getter for elements - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<Annotation> getElements() {
     return (FSArray<Annotation>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));
   }
 
-  /** setter for elements - sets
+    /** setter for elements - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setElements(FSArray<Annotation> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
   }
 
 
-  /** indexed getter for elements - gets an indexed value -
+    /** indexed getter for elements - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public Annotation getElements(int i) {
      return (Annotation)(((FSArray<Annotation>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));
   }
 
-  /** indexed setter for elements - sets an indexed value -
+    /** indexed setter for elements - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setElements(int i, Annotation v) {

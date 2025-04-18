@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Coordinate extends AnnotationBase {
@@ -124,27 +124,24 @@ public class Coordinate extends AnnotationBase {
         return _getIntValueNc(wrapGetIntCatchException(_FH_x));
     }
 
-    /**
-     * setter for x - sets
-     *
-     * @param v value to set into the feature
+    /** setter for x - sets
      * @generated
-     */
-    public void setX(int v) {
-        _setIntValueNfc(wrapGetIntCatchException(_FH_x), v);
+     * @param v value to set into the feature
+   */
+  public void setX(int v) {
+      _setIntValueNfc(wrapGetIntCatchException(_FH_x), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: y
+    //*--------------*
+    //* Feature: y
 
   /** getter for y - gets
    * @generated
    * @return value of the feature
    */
   public int getY() {
-    return _getIntValueNc(wrapGetIntCatchException(_FH_y));
+      return _getIntValueNc(wrapGetIntCatchException(_FH_y));
   }
 
   /** setter for y - sets

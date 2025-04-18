@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.core;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Generic category type
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Category extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.core.Category";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Category.class);
@@ -48,9 +48,9 @@ public class Category extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_key = "key";
   public final static String _FeatName_value = "value";
@@ -66,28 +66,28 @@ public class Category extends Annotation {
   private final static MethodHandle _FH_description = _FC_description.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Category() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Category(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Category(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -95,7 +95,7 @@ public class Category extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Category(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -103,31 +103,30 @@ public class Category extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: key
 
-  /** getter for key - gets
+    /** getter for key - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getKey() {
+    public String getKey() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_key));
   }
 
-  /** setter for key - sets
+    /** setter for key - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setKey(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_key), v);
@@ -138,17 +137,17 @@ public class Category extends Annotation {
   //*--------------*
   //* Feature: value
 
-  /** getter for value - gets
+    /** getter for value - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getValue() {
+    public String getValue() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets
+    /** setter for value - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
@@ -159,17 +158,17 @@ public class Category extends Annotation {
   //*--------------*
   //* Feature: description
 
-  /** getter for description - gets
+    /** getter for description - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getDescription() {
+    public String getDescription() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_description));
   }
 
-  /** setter for description - sets
+    /** setter for description - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setDescription(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_description), v);

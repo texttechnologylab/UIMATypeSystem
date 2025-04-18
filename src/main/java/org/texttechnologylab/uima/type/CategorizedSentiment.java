@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.uima.type;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CategorizedSentiment extends Sentiment {
@@ -92,7 +92,7 @@ public class CategorizedSentiment extends Sentiment {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public CategorizedSentiment(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -108,7 +108,6 @@ public class CategorizedSentiment extends Sentiment {
    * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-
 
 
   //*--------------*

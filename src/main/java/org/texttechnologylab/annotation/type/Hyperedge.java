@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Hyperedge extends GraphBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.Hyperedge";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Hyperedge.class);
@@ -48,9 +48,9 @@ public class Hyperedge extends GraphBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_endpoints = "endpoints";
 
@@ -60,77 +60,76 @@ public class Hyperedge extends GraphBase {
   private final static MethodHandle _FH_endpoints = _FC_endpoints.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Hyperedge() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Hyperedge(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Hyperedge(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: endpoints
 
-  /** getter for endpoints - gets
+    /** getter for endpoints - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<Endpoint> getEndpoints() {
     return (FSArray<Endpoint>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endpoints)));
   }
 
-  /** setter for endpoints - sets
+    /** setter for endpoints - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEndpoints(FSArray<Endpoint> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_endpoints), v);
   }
 
 
-  /** indexed getter for endpoints - gets an indexed value -
+    /** indexed getter for endpoints - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public Endpoint getEndpoints(int i) {
      return (Endpoint)(((FSArray<Endpoint>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endpoints)))).get(i));
   }
 
-  /** indexed setter for endpoints - sets an indexed value -
+    /** indexed setter for endpoints - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setEndpoints(int i, Endpoint v) {

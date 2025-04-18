@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationNode extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.AnnotationNode";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AnnotationNode.class);
@@ -45,9 +45,9 @@ public class AnnotationNode extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_begin = "begin";
   public final static String _FeatName_end = "end";
@@ -60,56 +60,55 @@ public class AnnotationNode extends Node {
   private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected AnnotationNode() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public AnnotationNode(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public AnnotationNode(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: begin
 
-  /** getter for begin - gets
+    /** getter for begin - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getBegin() {
+    public int getBegin() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_begin));
   }
 
-  /** setter for begin - sets
+    /** setter for begin - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setBegin(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_begin), v);
@@ -120,17 +119,17 @@ public class AnnotationNode extends Node {
   //*--------------*
   //* Feature: end
 
-  /** getter for end - gets
+    /** getter for end - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public int getEnd() {
+    public int getEnd() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_end));
   }
 
-  /** setter for end - sets
+    /** setter for end - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEnd(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_end), v);

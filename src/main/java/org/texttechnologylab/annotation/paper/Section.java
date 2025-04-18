@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Section extends TextContent {
@@ -161,27 +161,24 @@ public class Section extends TextContent {
         return _getStringValueNc(wrapGetIntCatchException(_FH_label));
     }
 
-    /**
-     * setter for label - sets The heading of a section
-     *
-     * @param v value to set into the feature
+    /** setter for label - sets The heading of a section
      * @generated
-     */
-    public void setLabel(String v) {
-        _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
+   * @param v value to set into the feature
+   */
+  public void setLabel(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
   }
 
 
-
-  //*--------------*
-  //* Feature: index
+    //*--------------*
+    //* Feature: index
 
   /** getter for index - gets The index of a section (1, 1.1, 1.1.1, ...)
    * @generated
    * @return value of the feature
    */
   public String getIndex() {
-    return _getStringValueNc(wrapGetIntCatchException(_FH_index));
+      return _getStringValueNc(wrapGetIntCatchException(_FH_index));
   }
 
   /** setter for index - sets The index of a section (1, 1.1, 1.1.1, ...)

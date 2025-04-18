@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -22,19 +22,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Type system for representing topics in BERTopic-based models
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class BertTopic extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.BertTopic";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(BertTopic.class);
@@ -50,9 +50,9 @@ public class BertTopic extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_Topics = "Topics";
   public final static String _FeatName_model = "model";
@@ -65,28 +65,28 @@ public class BertTopic extends Annotation {
   private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected BertTopic() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public BertTopic(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public BertTopic(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -94,7 +94,7 @@ public class BertTopic extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public BertTopic(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -102,23 +102,22 @@ public class BertTopic extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: Topics
 
     /** getter for Topics - gets Set of topics with labels and probabilities
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<TopicValue> getTopics() {
@@ -127,7 +126,7 @@ public class BertTopic extends Annotation {
 
     /** setter for Topics - sets Set of topics with labels and probabilities
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTopics(FSArray<TopicValue> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Topics), v);
@@ -137,7 +136,7 @@ public class BertTopic extends Annotation {
     /** indexed getter for Topics - gets an indexed value - Set of topics with labels and probabilities
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public TopicValue getTopics(int i) {
@@ -147,7 +146,7 @@ public class BertTopic extends Annotation {
     /** indexed setter for Topics - sets an indexed value - Set of topics with labels and probabilities
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setTopics(int i, TopicValue v) {
@@ -160,15 +159,15 @@ public class BertTopic extends Annotation {
 
     /** getter for model - gets Metadata about the BERTopic model, such as its name, source and version
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public MetaData getModel() {
+    public MetaData getModel() {
     return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
   }
 
     /** setter for model - sets Metadata about the BERTopic model, such as its name, source and version
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setModel(MetaData v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);

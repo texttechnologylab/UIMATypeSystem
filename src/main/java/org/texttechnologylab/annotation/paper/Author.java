@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Author extends Annotation {
@@ -200,10 +200,11 @@ public class Author extends Annotation {
      */
     public void setValue(String v) {
         _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-    }
+  }
 
 
-    //*--------------*
+
+  //*--------------*
     //* Feature: email
 
     /** getter for email - gets
@@ -219,7 +220,7 @@ public class Author extends Annotation {
    * @param v value to set into the feature
    */
   public void setEmail(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_email), v);
+      _setStringValueNfc(wrapGetIntCatchException(_FH_email), v);
   }
 
 
@@ -227,15 +228,15 @@ public class Author extends Annotation {
   //*--------------*
   //* Feature: location
 
-  /** getter for location - gets
+    /** getter for location - gets
    * @generated
-   * @return value of the feature
-   */
+     * @return value of the feature
+     */
   public String getLocation() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_location));
   }
 
-  /** setter for location - sets
+    /** setter for location - sets
    * @generated
    * @param v value to set into the feature
    */

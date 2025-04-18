@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.negation;
 
@@ -22,19 +22,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CompleteNegation extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.negation.CompleteNegation";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(CompleteNegation.class);
@@ -50,9 +50,9 @@ public class CompleteNegation extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_negType = "negType";
   public final static String _FeatName_cue = "cue";
@@ -77,28 +77,28 @@ public class CompleteNegation extends Annotation {
   private final static MethodHandle _FH_xscope = _FC_xscope.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected CompleteNegation() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public CompleteNegation(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public CompleteNegation(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -106,7 +106,7 @@ public class CompleteNegation extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public CompleteNegation(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -114,18 +114,17 @@ public class CompleteNegation extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: negType
 
   /** getter for negType - gets Syntactic|Lexical|Morphological
@@ -136,9 +135,9 @@ public class CompleteNegation extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_negType));
   }
 
-  /** setter for negType - sets Syntactic|Lexical|Morphological
+    /** setter for negType - sets Syntactic|Lexical|Morphological
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNegType(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_negType), v);
@@ -157,9 +156,9 @@ public class CompleteNegation extends Annotation {
     return (Token)(_getFeatureValueNc(wrapGetIntCatchException(_FH_cue)));
   }
 
-  /** setter for cue - sets Cue is a lexical item that modifies the truth value of the propositions that is within its scope
+    /** setter for cue - sets Cue is a lexical item that modifies the truth value of the propositions that is within its scope
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCue(Token v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_cue), v);
@@ -179,9 +178,9 @@ public class CompleteNegation extends Annotation {
     return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)));
   }
 
-  /** setter for event - sets Event that is directly negated by the negation cue, usually a verb, a noun, or an adjective
+    /** setter for event - sets Event that is directly negated by the negation cue, usually a verb, a noun, or an adjective
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEvent(FSArray<Token> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_event), v);
@@ -221,9 +220,9 @@ public class CompleteNegation extends Annotation {
     return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)));
   }
 
-  /** setter for focus - sets Part of the scope that is most prominently or explicitly negated
+    /** setter for focus - sets Part of the scope that is most prominently or explicitly negated
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setFocus(FSArray<Token> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_focus), v);
@@ -263,9 +262,9 @@ public class CompleteNegation extends Annotation {
     return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)));
   }
 
-  /** setter for scope - sets Part of the sentence affected by the negation cue
+    /** setter for scope - sets Part of the sentence affected by the negation cue
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setScope(FSArray<Token> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scope), v);
@@ -305,9 +304,9 @@ public class CompleteNegation extends Annotation {
     return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)));
   }
 
-  /** setter for xscope - sets Part affected by the negation cue, but outside of sentence (expanded context)
+    /** setter for xscope - sets Part affected by the negation cue, but outside of sentence (expanded context)
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setXscope(FSArray<Token> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_xscope), v);

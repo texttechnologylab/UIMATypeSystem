@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
 
@@ -20,19 +20,19 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpatialSignal extends Signal {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.SpatialSignal";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(SpatialSignal.class);
@@ -48,9 +48,9 @@ public class SpatialSignal extends Signal {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_cluster = "cluster";
   public final static String _FeatName_semantic_type = "semantic_type";
@@ -63,28 +63,28 @@ public class SpatialSignal extends Signal {
   private final static MethodHandle _FH_semantic_type = _FC_semantic_type.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected SpatialSignal() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public SpatialSignal(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public SpatialSignal(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -92,7 +92,7 @@ public class SpatialSignal extends Signal {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public SpatialSignal(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -100,31 +100,30 @@ public class SpatialSignal extends Signal {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: cluster
 
-  /** getter for cluster - gets
+    /** getter for cluster - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getCluster() {
+    public String getCluster() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));
   }
 
-  /** setter for cluster - sets
+    /** setter for cluster - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCluster(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_cluster), v);
@@ -143,9 +142,9 @@ public class SpatialSignal extends Signal {
     return _getStringValueNc(wrapGetIntCatchException(_FH_semantic_type));
   }
 
-  /** setter for semantic_type - sets ( DIRECTIONAL | TOPOLOGICAL | DIR_TOP )
+    /** setter for semantic_type - sets ( DIRECTIONAL | TOPOLOGICAL | DIR_TOP )
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSemantic_type(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_semantic_type), v);

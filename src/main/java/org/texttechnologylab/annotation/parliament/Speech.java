@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.parliament;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speech extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.parliament.Speech";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Speech.class);
@@ -48,40 +48,43 @@ public class Speech extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
+    public final static String _FeatName_date = "date";
   public final static String _FeatName_speaker = "speaker";
 
 
   /* Feature Adjusted Offsets */
+  private final static CallSite _FC_date = TypeSystemImpl.createCallSite(Speech.class, "date");
+    private final static MethodHandle _FH_date = _FC_date.dynamicInvoker();
   private final static CallSite _FC_speaker = TypeSystemImpl.createCallSite(Speech.class, "speaker");
   private final static MethodHandle _FH_speaker = _FC_speaker.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Speech() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Speech(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Speech(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -89,7 +92,7 @@ public class Speech extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Speech(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -97,19 +100,43 @@ public class Speech extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
+    //*--------------*
+    //* Feature: date
+
+    /**
+     * getter for date - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public long getDate() {
+        return _getLongValueNc(wrapGetIntCatchException(_FH_date));
+    }
+
+    /**
+     * setter for date - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setDate(long v) {
+        _setLongValueNfc(wrapGetIntCatchException(_FH_date), v);
+    }
+
+
 
   //*--------------*
-  //* Feature: speaker
+    //* Feature: speaker
 
   /** getter for speaker - gets
    * @generated
@@ -119,9 +146,9 @@ public class Speech extends Annotation {
     return (Speaker)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speaker)));
   }
 
-  /** setter for speaker - sets
-   * @generated
-   * @param v value to set into the feature
+    /** setter for speaker - sets
+     * @generated
+     * @param v value to set into the feature
    */
   public void setSpeaker(Speaker v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_speaker), v);

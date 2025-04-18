@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EventPath extends Location {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.EventPath";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(EventPath.class);
@@ -49,9 +49,9 @@ public class EventPath extends Location {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_trigger = "trigger";
   public final static String _FeatName_startID = "startID";
@@ -79,28 +79,28 @@ public class EventPath extends Location {
   private final static MethodHandle _FH_spatial_relator_array = _FC_spatial_relator_array.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected EventPath() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public EventPath(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public EventPath(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -108,7 +108,7 @@ public class EventPath extends Location {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public EventPath(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -116,31 +116,30 @@ public class EventPath extends Location {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: trigger
 
-  /** getter for trigger - gets
+    /** getter for trigger - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public Motion getTrigger() {
+    public Motion getTrigger() {
     return (Motion)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));
   }
 
-  /** setter for trigger - sets
+    /** setter for trigger - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setTrigger(Motion v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_trigger), v);
@@ -151,17 +150,17 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: startID
 
-  /** getter for startID - gets
+    /** getter for startID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public SpatialEntity getStartID() {
+    public SpatialEntity getStartID() {
     return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_startID)));
   }
 
-  /** setter for startID - sets
+    /** setter for startID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setStartID(SpatialEntity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_startID), v);
@@ -172,18 +171,18 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: midIDs
 
-  /** getter for midIDs - gets
+    /** getter for midIDs - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSList<SpatialEntity> getMidIDs() {
     return (FSList<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midIDs)));
   }
 
-  /** setter for midIDs - sets
+    /** setter for midIDs - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMidIDs(FSList<SpatialEntity> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midIDs), v);
@@ -194,38 +193,38 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: midID_array
 
-  /** getter for midID_array - gets
+    /** getter for midID_array - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<SpatialEntity> getMidID_array() {
     return (FSArray<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)));
   }
 
-  /** setter for midID_array - sets
+    /** setter for midID_array - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMidID_array(FSArray<SpatialEntity> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midID_array), v);
   }
 
 
-  /** indexed getter for midID_array - gets an indexed value -
+    /** indexed getter for midID_array - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public SpatialEntity getMidID_array(int i) {
      return (SpatialEntity)(((FSArray<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).get(i));
   }
 
-  /** indexed setter for midID_array - sets an indexed value -
+    /** indexed setter for midID_array - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setMidID_array(int i, SpatialEntity v) {
@@ -236,17 +235,17 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: endID
 
-  /** getter for endID - gets
+    /** getter for endID - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public SpatialEntity getEndID() {
+    public SpatialEntity getEndID() {
     return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endID)));
   }
 
-  /** setter for endID - sets
+    /** setter for endID - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setEndID(SpatialEntity v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_endID), v);
@@ -257,18 +256,18 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: spatial_relator
 
-  /** getter for spatial_relator - gets
+    /** getter for spatial_relator - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSList<SpatialSignal> getSpatial_relator() {
     return (FSList<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator)));
   }
 
-  /** setter for spatial_relator - sets
+    /** setter for spatial_relator - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSpatial_relator(FSList<SpatialSignal> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_spatial_relator), v);
@@ -279,38 +278,38 @@ public class EventPath extends Location {
   //*--------------*
   //* Feature: spatial_relator_array
 
-  /** getter for spatial_relator_array - gets
+    /** getter for spatial_relator_array - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
   @SuppressWarnings("unchecked")
   public FSArray<SpatialSignal> getSpatial_relator_array() {
     return (FSArray<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)));
   }
 
-  /** setter for spatial_relator_array - sets
+    /** setter for spatial_relator_array - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSpatial_relator_array(FSArray<SpatialSignal> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_spatial_relator_array), v);
   }
 
 
-  /** indexed getter for spatial_relator_array - gets an indexed value -
+    /** indexed getter for spatial_relator_array - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i
+     * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public SpatialSignal getSpatial_relator_array(int i) {
      return (SpatialSignal)(((FSArray<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)))).get(i));
   }
 
-  /** indexed setter for spatial_relator_array - sets an indexed value -
+    /** indexed setter for spatial_relator_array - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array
+     * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setSpatial_relator_array(int i, SpatialSignal v) {

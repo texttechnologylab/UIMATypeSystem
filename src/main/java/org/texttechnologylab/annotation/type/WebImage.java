@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WebImage extends Image {
@@ -134,19 +134,16 @@ public class WebImage extends Image {
         return _getIntValueNc(wrapGetIntCatchException(_FH_posX));
     }
 
-    /**
-     * setter for posX - sets
-     *
-     * @param v value to set into the feature
+    /** setter for posX - sets
      * @generated
-     */
-    public void setPosX(int v) {
-        _setIntValueNfc(wrapGetIntCatchException(_FH_posX), v);
+     * @param v value to set into the feature
+   */
+  public void setPosX(int v) {
+      _setIntValueNfc(wrapGetIntCatchException(_FH_posX), v);
   }
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: posY
 
   /** getter for posY - gets
@@ -154,7 +151,7 @@ public class WebImage extends Image {
    * @return value of the feature
    */
   public int getPosY() {
-    return _getIntValueNc(wrapGetIntCatchException(_FH_posY));
+      return _getIntValueNc(wrapGetIntCatchException(_FH_posY));
   }
 
   /** setter for posY - sets

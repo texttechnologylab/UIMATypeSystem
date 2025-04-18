@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -21,19 +21,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Hate Output
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Hate extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.Hate";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Hate.class);
@@ -49,9 +49,9 @@ public class Hate extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_Hate = "Hate";
   public final static String _FeatName_NonHate = "NonHate";
@@ -67,28 +67,28 @@ public class Hate extends Annotation {
   private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Hate() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Hate(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Hate(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -96,7 +96,7 @@ public class Hate extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public Hate(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -104,18 +104,17 @@ public class Hate extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: Hate
 
   /** getter for Hate - gets Probability of Hate
@@ -126,9 +125,9 @@ public class Hate extends Annotation {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_Hate));
   }
 
-  /** setter for Hate - sets Probability of Hate
+    /** setter for Hate - sets Probability of Hate
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setHate(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_Hate), v);
@@ -147,9 +146,9 @@ public class Hate extends Annotation {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_NonHate));
   }
 
-  /** setter for NonHate - sets Probability of not Hate
+    /** setter for NonHate - sets Probability of not Hate
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setNonHate(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_NonHate), v);
@@ -160,17 +159,17 @@ public class Hate extends Annotation {
   //*--------------*
   //* Feature: model
 
-  /** getter for model - gets
+    /** getter for model - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public MetaData getModel() {
+    public MetaData getModel() {
     return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
   }
 
-  /** setter for model - sets
+    /** setter for model - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setModel(MetaData v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);

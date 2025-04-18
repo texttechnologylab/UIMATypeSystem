@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AbstractNamedEntity extends Annotation {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.AbstractNamedEntity";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AbstractNamedEntity.class);
@@ -48,9 +48,9 @@ public class AbstractNamedEntity extends Annotation {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_value = "value";
   public final static String _FeatName_specific = "specific";
@@ -69,28 +69,28 @@ public class AbstractNamedEntity extends Annotation {
   private final static MethodHandle _FH_metonym = _FC_metonym.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected AbstractNamedEntity() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public AbstractNamedEntity(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public AbstractNamedEntity(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -98,7 +98,7 @@ public class AbstractNamedEntity extends Annotation {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public AbstractNamedEntity(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -106,31 +106,30 @@ public class AbstractNamedEntity extends Annotation {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: value
 
-  /** getter for value - gets
+    /** getter for value - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getValue() {
+    public String getValue() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
-  /** setter for value - sets
+    /** setter for value - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
@@ -141,17 +140,17 @@ public class AbstractNamedEntity extends Annotation {
   //*--------------*
   //* Feature: specific
 
-  /** getter for specific - gets
+    /** getter for specific - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public boolean getSpecific() {
+    public boolean getSpecific() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_specific));
   }
 
-  /** setter for specific - sets
+    /** setter for specific - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSpecific(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_specific), v);
@@ -162,17 +161,17 @@ public class AbstractNamedEntity extends Annotation {
   //*--------------*
   //* Feature: metaphor
 
-  /** getter for metaphor - gets
+    /** getter for metaphor - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public boolean getMetaphor() {
+    public boolean getMetaphor() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_metaphor));
   }
 
-  /** setter for metaphor - sets
+    /** setter for metaphor - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMetaphor(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_metaphor), v);
@@ -183,17 +182,17 @@ public class AbstractNamedEntity extends Annotation {
   //*--------------*
   //* Feature: metonym
 
-  /** getter for metonym - gets
+    /** getter for metonym - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public boolean getMetonym() {
+    public boolean getMetonym() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_metonym));
   }
 
-  /** setter for metonym - sets
+    /** setter for metonym - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMetonym(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_metonym), v);

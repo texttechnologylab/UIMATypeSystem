@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -17,19 +17,19 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KnowledgeEntry extends Node {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.KnowledgeEntry";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(KnowledgeEntry.class);
@@ -45,9 +45,9 @@ public class KnowledgeEntry extends Node {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_identifier = "identifier";
   public final static String _FeatName_source = "source";
@@ -66,56 +66,55 @@ public class KnowledgeEntry extends Node {
   private final static MethodHandle _FH_parentEntity = _FC_parentEntity.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected KnowledgeEntry() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public KnowledgeEntry(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public KnowledgeEntry(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: identifier
 
-  /** getter for identifier - gets
+    /** getter for identifier - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getIdentifier() {
+    public String getIdentifier() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_identifier));
   }
 
-  /** setter for identifier - sets
+    /** setter for identifier - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setIdentifier(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_identifier), v);
@@ -126,17 +125,17 @@ public class KnowledgeEntry extends Node {
   //*--------------*
   //* Feature: source
 
-  /** getter for source - gets
+    /** getter for source - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getSource() {
+    public String getSource() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_source));
   }
 
-  /** setter for source - sets
+    /** setter for source - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSource(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_source), v);
@@ -147,17 +146,17 @@ public class KnowledgeEntry extends Node {
   //*--------------*
   //* Feature: reference
 
-  /** getter for reference - gets
+    /** getter for reference - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getReference() {
+    public String getReference() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
   }
 
-  /** setter for reference - sets
+    /** setter for reference - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setReference(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_reference), v);
@@ -168,17 +167,17 @@ public class KnowledgeEntry extends Node {
   //*--------------*
   //* Feature: parentEntity
 
-  /** getter for parentEntity - gets
+    /** getter for parentEntity - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getParentEntity() {
+    public String getParentEntity() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_parentEntity));
   }
 
-  /** setter for parentEntity - sets
+    /** setter for parentEntity - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setParentEntity(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_parentEntity), v);

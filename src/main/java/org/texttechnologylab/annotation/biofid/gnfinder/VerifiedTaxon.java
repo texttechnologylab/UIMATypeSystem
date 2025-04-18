@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
@@ -20,19 +20,19 @@ import org.texttechnologylab.annotation.biofid.Taxon;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VerifiedTaxon extends Taxon {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(VerifiedTaxon.class);
@@ -48,9 +48,9 @@ public class VerifiedTaxon extends Taxon {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_Id = "Id";
   public final static String _FeatName_MatchedCanonical = "MatchedCanonical";
@@ -78,28 +78,28 @@ public class VerifiedTaxon extends Taxon {
   private final static MethodHandle _FH_VerifMatchedName = _FC_VerifMatchedName.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected VerifiedTaxon() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public VerifiedTaxon(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public VerifiedTaxon(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
@@ -107,7 +107,7 @@ public class VerifiedTaxon extends Taxon {
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA
-  */
+   */
   public VerifiedTaxon(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
@@ -115,31 +115,30 @@ public class VerifiedTaxon extends Taxon {
     readObject();
   }
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: Id
 
-  /** getter for Id - gets
+    /** getter for Id - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getId() {
+    public String getId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_Id));
   }
 
-  /** setter for Id - sets
+    /** setter for Id - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_Id), v);
@@ -150,17 +149,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: MatchedCanonical
 
-  /** getter for MatchedCanonical - gets
+    /** getter for MatchedCanonical - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getMatchedCanonical() {
+    public String getMatchedCanonical() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_MatchedCanonical));
   }
 
-  /** setter for MatchedCanonical - sets
+    /** setter for MatchedCanonical - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setMatchedCanonical(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_MatchedCanonical), v);
@@ -171,17 +170,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: CurrentCanonical
 
-  /** getter for CurrentCanonical - gets
+    /** getter for CurrentCanonical - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getCurrentCanonical() {
+    public String getCurrentCanonical() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_CurrentCanonical));
   }
 
-  /** setter for CurrentCanonical - sets
+    /** setter for CurrentCanonical - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setCurrentCanonical(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_CurrentCanonical), v);
@@ -192,17 +191,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: VerifMatchType
 
-  /** getter for VerifMatchType - gets
+    /** getter for VerifMatchType - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getVerifMatchType() {
+    public String getVerifMatchType() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_VerifMatchType));
   }
 
-  /** setter for VerifMatchType - sets
+    /** setter for VerifMatchType - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setVerifMatchType(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_VerifMatchType), v);
@@ -213,17 +212,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: VerifSortScore
 
-  /** getter for VerifSortScore - gets
+    /** getter for VerifSortScore - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public float getVerifSortScore() {
+    public float getVerifSortScore() {
     return _getFloatValueNc(wrapGetIntCatchException(_FH_VerifSortScore));
   }
 
-  /** setter for VerifSortScore - sets
+    /** setter for VerifSortScore - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setVerifSortScore(float v) {
     _setFloatValueNfc(wrapGetIntCatchException(_FH_VerifSortScore), v);
@@ -234,17 +233,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: VerifEditDistance
 
-  /** getter for VerifEditDistance - gets
+    /** getter for VerifEditDistance - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public short getVerifEditDistance() {
+    public short getVerifEditDistance() {
     return _getShortValueNc(wrapGetIntCatchException(_FH_VerifEditDistance));
   }
 
-  /** setter for VerifEditDistance - sets
+    /** setter for VerifEditDistance - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setVerifEditDistance(short v) {
     _setShortValueNfc(wrapGetIntCatchException(_FH_VerifEditDistance), v);
@@ -255,17 +254,17 @@ public class VerifiedTaxon extends Taxon {
   //*--------------*
   //* Feature: VerifMatchedName
 
-  /** getter for VerifMatchedName - gets
+    /** getter for VerifMatchedName - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public String getVerifMatchedName() {
+    public String getVerifMatchedName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_VerifMatchedName));
   }
 
-  /** setter for VerifMatchedName - sets
+    /** setter for VerifMatchedName - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setVerifMatchedName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_VerifMatchedName), v);

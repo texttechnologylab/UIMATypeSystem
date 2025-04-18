@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends AnnotationBase {
@@ -111,12 +111,12 @@ public class Speaker extends AnnotationBase {
     //*--------------*
     //* Feature: value
 
-  /** getter for value - gets
+    /** getter for value - gets
    * @generated
    * @return value of the feature
    */
-  public String getValue() {
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
+    public String getValue() {
+        return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
 
   /** setter for value - sets

@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.IsoSpatial;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Vec3 extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Vec3.class);
@@ -48,9 +48,9 @@ public class Vec3 extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_x = "x";
   public final static String _FeatName_y = "y";
@@ -66,56 +66,55 @@ public class Vec3 extends AnnotationBase {
   private final static MethodHandle _FH_z = _FC_z.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Vec3() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public Vec3(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public Vec3(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: x
 
-  /** getter for x - gets
+    /** getter for x - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getX() {
+    public double getX() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_x));
   }
 
-  /** setter for x - sets
+    /** setter for x - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setX(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_x), v);
@@ -126,17 +125,17 @@ public class Vec3 extends AnnotationBase {
   //*--------------*
   //* Feature: y
 
-  /** getter for y - gets
+    /** getter for y - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getY() {
+    public double getY() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_y));
   }
 
-  /** setter for y - sets
+    /** setter for y - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setY(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_y), v);
@@ -147,17 +146,17 @@ public class Vec3 extends AnnotationBase {
   //*--------------*
   //* Feature: z
 
-  /** getter for z - gets
+    /** getter for z - gets
    * @generated
-   * @return value of the feature
+     * @return value of the feature
    */
-  public double getZ() {
+    public double getZ() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_z));
   }
 
-  /** setter for z - sets
+    /** setter for z - sets
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setZ(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_z), v);

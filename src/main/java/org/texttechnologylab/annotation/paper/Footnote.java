@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Footnote extends TextContent {
@@ -125,14 +125,14 @@ public class Footnote extends TextContent {
     //* Feature: reference
 
     /** getter for reference - gets Reference to object in text
-     * @generated
-     * @return value of the feature
-   */
-  public TOP getReference() {
-    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-  }
+   * @generated
+   * @return value of the feature
+     */
+    public TOP getReference() {
+        return (TOP) (_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+    }
 
-  /** setter for reference - sets Reference to object in text
+    /** setter for reference - sets Reference to object in text
    * @generated
    * @param v value to set into the feature
    */

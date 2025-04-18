@@ -1,7 +1,7 @@
 
 
 
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:31:39 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -20,19 +20,19 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * Updated by JCasGen Fri Apr 18 23:31:39 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnomalySpellingMeta extends AnnotationBase {
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.AnomalySpellingMeta";
 
-  /** @generated
-   * @ordered
+    /** @generated
+     * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(AnomalySpellingMeta.class);
@@ -48,9 +48,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
   public              int getTypeIndexID() {return typeIndexID;}
 
 
-  /* *******************
+    /* *******************
    *   Feature Offsets *
-   * *******************/
+     * *******************/
 
   public final static String _FeatName_ModelName = "ModelName";
   public final static String _FeatName_GoodQuality = "GoodQuality";
@@ -99,43 +99,42 @@ public class AnomalySpellingMeta extends AnnotationBase {
   private final static MethodHandle _FH_PercentUnknownWithoutSkipped = _FC_PercentUnknownWithoutSkipped.dynamicInvoker();
 
 
-  /** Never called.  Disable default constructor
+    /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected AnomalySpellingMeta() {/* intentionally empty block */}
 
-  /** Internal - constructor used by generator
+    /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure
+     * @param type the type of this Feature Structure
    */
   public AnomalySpellingMeta(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
 
-  /** @generated
-   * @param jcas JCas to which this Feature Structure belongs
+    /** @generated
+     * @param jcas JCas to which this Feature Structure belongs
    */
   public AnomalySpellingMeta(JCas jcas) {
     super(jcas);
-    readObject();
+      readObject();
   }
 
 
-  /**
+    /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable
+     * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
 
 
-
-  //*--------------*
+    //*--------------*
   //* Feature: ModelName
 
   /** getter for ModelName - gets The name of the Model
@@ -146,9 +145,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));
   }
 
-  /** setter for ModelName - sets The name of the Model
+    /** setter for ModelName - sets The name of the Model
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setModelName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_ModelName), v);
@@ -167,9 +166,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_GoodQuality));
   }
 
-  /** setter for GoodQuality - sets Quality of Document without skipped and unknown Words
+    /** setter for GoodQuality - sets Quality of Document without skipped and unknown Words
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setGoodQuality(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_GoodQuality), v);
@@ -188,9 +187,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_UnknownQuality));
   }
 
-  /** setter for UnknownQuality - sets Quality of Document without skipped Words
+    /** setter for UnknownQuality - sets Quality of Document without skipped Words
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUnknownQuality(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_UnknownQuality), v);
@@ -209,9 +208,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_Quality));
   }
 
-  /** setter for Quality - sets Quality of Document
+    /** setter for Quality - sets Quality of Document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setQuality(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_Quality), v);
@@ -230,9 +229,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getIntValueNc(wrapGetIntCatchException(_FH_RightWords));
   }
 
-  /** setter for RightWords - sets Number of correct words in the Document
+    /** setter for RightWords - sets Number of correct words in the Document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setRightWords(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_RightWords), v);
@@ -251,9 +250,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getIntValueNc(wrapGetIntCatchException(_FH_WrongWords));
   }
 
-  /** setter for WrongWords - sets Number of wrong words in the Document
+    /** setter for WrongWords - sets Number of wrong words in the Document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setWrongWords(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_WrongWords), v);
@@ -272,9 +271,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getIntValueNc(wrapGetIntCatchException(_FH_UnknownWords));
   }
 
-  /** setter for UnknownWords - sets Number of unknown words in the Document
+    /** setter for UnknownWords - sets Number of unknown words in the Document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setUnknownWords(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_UnknownWords), v);
@@ -293,9 +292,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getIntValueNc(wrapGetIntCatchException(_FH_SkippedWords));
   }
 
-  /** setter for SkippedWords - sets Number of Skipped words in the Document
+    /** setter for SkippedWords - sets Number of Skipped words in the Document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setSkippedWords(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_SkippedWords), v);
@@ -314,9 +313,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentRight));
   }
 
-  /** setter for PercentRight - sets Percentage of correct words in the document without skipped words
+    /** setter for PercentRight - sets Percentage of correct words in the document without skipped words
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentRight(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentRight), v);
@@ -335,9 +334,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentWrong));
   }
 
-  /** setter for PercentWrong - sets Percentage of wrong words in the document without skipped words
+    /** setter for PercentWrong - sets Percentage of wrong words in the document without skipped words
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentWrong(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentWrong), v);
@@ -356,9 +355,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentUnknown));
   }
 
-  /** setter for PercentUnknown - sets Percentage of unknown words in the document without skipped words
+    /** setter for PercentUnknown - sets Percentage of unknown words in the document without skipped words
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentUnknown(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentUnknown), v);
@@ -377,9 +376,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentRightWithoutSkipped));
   }
 
-  /** setter for PercentRightWithoutSkipped - sets Percentage of correct words in the document
+    /** setter for PercentRightWithoutSkipped - sets Percentage of correct words in the document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentRightWithoutSkipped(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentRightWithoutSkipped), v);
@@ -398,9 +397,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentWrongWithoutSkipped));
   }
 
-  /** setter for PercentWrongWithoutSkipped - sets Percentage of wrong words in the document
+    /** setter for PercentWrongWithoutSkipped - sets Percentage of wrong words in the document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentWrongWithoutSkipped(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentWrongWithoutSkipped), v);
@@ -419,9 +418,9 @@ public class AnomalySpellingMeta extends AnnotationBase {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_PercentUnknownWithoutSkipped));
   }
 
-  /** setter for PercentUnknownWithoutSkipped - sets Percentage of unknown words in the document
+    /** setter for PercentUnknownWithoutSkipped - sets Percentage of unknown words in the document
    * @generated
-   * @param v value to set into the feature
+     * @param v value to set into the feature
    */
   public void setPercentUnknownWithoutSkipped(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_PercentUnknownWithoutSkipped), v);
