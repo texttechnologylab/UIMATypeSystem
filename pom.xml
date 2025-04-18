@@ -27,7 +27,7 @@
             <id>mehler</id>
             <name>Prof. Dr. Alexander Mehler</name>
             <email>mehler@em.uni-frankfurt.de</email>
-            <url>https://www.texttechnologylab.org/team/alexander-abrami/</url>
+            <url>https://www.texttechnologylab.org/team/alexander-mehler/</url>
             <organization>Goethe University Frankfurt / Texttechnology Lab</organization>
             <organizationUrl>https://www.texttechnologylab.org</organizationUrl>
             <roles>
@@ -97,8 +97,8 @@
                 <configuration>
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>
-                        <!--                        <include>src/main/resources/desc/**/*</include>-->
-                        <include>src/main/resources/desc/type/TextTechnologyParliamentaryTypeSystem.xml</include>
+                                                <include>src/main/resources/desc/**/*</include>
+<!--                        <include>src/main/resources/desc/type/TextTechnologyParliamentaryTypeSystem.xml</include>-->
                     </typeSystemIncludes>
                     <outputDirectory>
                         src/main/java/
