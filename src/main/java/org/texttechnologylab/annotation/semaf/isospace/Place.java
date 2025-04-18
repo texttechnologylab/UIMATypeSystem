@@ -1,10 +1,10 @@
 
 
-
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
+   
+/* Apache UIMA v3 - First created by JCasGen Sat Apr 19 00:21:17 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
-
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -12,43 +12,45 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
-/**
- * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
+
+
+/** 
+ * Updated by JCasGen Sat Apr 19 00:21:17 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Place extends Location {
-
-    /** @generated
-     * @ordered
+ 
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Place";
-
-    /** @generated
-     * @ordered
+  
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Place.class);
   /** @generated
-   * @ordered
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type
+   * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
-
-
-    /* *******************
+ 
+ 
+  /* *******************
    *   Feature Offsets *
-     * *******************/
-
+   * *******************/ 
+   
   public final static String _FeatName_country = "country";
   public final static String _FeatName_state = "state";
   public final static String _FeatName_ctv = "ctv";
@@ -68,156 +70,158 @@ public class Place extends Location {
   private final static CallSite _FC_county = TypeSystemImpl.createCallSite(Place.class, "county");
   private final static MethodHandle _FH_county = _FC_county.dynamicInvoker();
 
-
-    /** Never called.  Disable default constructor
+   
+  /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Place() {/* intentionally empty block */}
-
-    /** Internal - constructor used by generator
+    
+  /** Internal - constructor used by generator 
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-     * @param type the type of this Feature Structure
+   * @param type the type of this Feature Structure 
    */
   public Place(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-
-    /** @generated
-     * @param jcas JCas to which this Feature Structure belongs
+  
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
    */
   public Place(JCas jcas) {
     super(jcas);
-      readObject();
-  }
+    readObject();   
+  } 
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA
-   */
+   * @param end offset to the end spot in the SofA 
+  */  
   public Place(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }
+  }   
 
-    /**
+  /** 
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-     * @generated modifiable
+   * @generated modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
-
-
-    //*--------------*
+     
+ 
+    
+  //*--------------*
   //* Feature: country
 
-    /** getter for country - gets
+  /** getter for country - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getCountry() {
+  public String getCountry() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_country));
   }
-
-    /** setter for country - sets
+    
+  /** setter for country - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setCountry(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_country), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: state
 
-    /** getter for state - gets
+  /** getter for state - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getState() {
+  public String getState() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_state));
   }
-
-    /** setter for state - sets
+    
+  /** setter for state - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setState(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_state), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: ctv
 
   /** getter for ctv - gets ( CITY | TOWN | VILLAGE )
    * @generated
-   * @return value of the feature
+   * @return value of the feature 
    */
-  public String getCtv() {
+  public String getCtv() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_ctv));
   }
-
-    /** setter for ctv - sets ( CITY | TOWN | VILLAGE )
+    
+  /** setter for ctv - sets ( CITY | TOWN | VILLAGE ) 
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setCtv(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_ctv), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: continent
 
   /** getter for continent - gets ( AF | AN | AI | AU | GO | LA | NA | PA | SA )
    * @generated
-   * @return value of the feature
+   * @return value of the feature 
    */
-  public String getContinent() {
+  public String getContinent() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_continent));
   }
-
-    /** setter for continent - sets ( AF | AN | AI | AU | GO | LA | NA | PA | SA )
+    
+  /** setter for continent - sets ( AF | AN | AI | AU | GO | LA | NA | PA | SA ) 
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setContinent(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_continent), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: county
 
-    /** getter for county - gets
+  /** getter for county - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getCounty() {
+  public String getCounty() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_county));
   }
-
-    /** setter for county - sets
+    
+  /** setter for county - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setCounty(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_county), v);
+  }    
+    
   }
 
-  }
-
+    

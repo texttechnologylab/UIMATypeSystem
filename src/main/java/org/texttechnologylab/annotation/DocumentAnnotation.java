@@ -1,10 +1,10 @@
 
 
-
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
+   
+/* Apache UIMA v3 - First created by JCasGen Sat Apr 19 00:21:17 CEST 2025 */
 
 package org.texttechnologylab.annotation;
-
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -12,46 +12,46 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
-/**
- * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
+/** 
+ * Updated by JCasGen Sat Apr 19 00:21:17 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DocumentAnnotation extends AnnotationBase {
-
-    /** @generated
-     * @ordered
+ 
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.DocumentAnnotation";
-
-    /** @generated
-     * @ordered
+  
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(DocumentAnnotation.class);
   /** @generated
-   * @ordered
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type
+   * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
-
-
-    /* *******************
+ 
+ 
+  /* *******************
    *   Feature Offsets *
-     * *******************/
-
+   * *******************/ 
+   
   public final static String _FeatName_author = "author";
   public final static String _FeatName_publisher = "publisher";
   public final static String _FeatName_dateDay = "dateDay";
@@ -80,207 +80,209 @@ public class DocumentAnnotation extends AnnotationBase {
   private final static CallSite _FC_place = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "place");
   private final static MethodHandle _FH_place = _FC_place.dynamicInvoker();
 
-
-    /** Never called.  Disable default constructor
+   
+  /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected DocumentAnnotation() {/* intentionally empty block */}
-
-    /** Internal - constructor used by generator
+    
+  /** Internal - constructor used by generator 
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-     * @param type the type of this Feature Structure
+   * @param type the type of this Feature Structure 
    */
   public DocumentAnnotation(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-
-    /** @generated
-     * @param jcas JCas to which this Feature Structure belongs
+  
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
    */
   public DocumentAnnotation(JCas jcas) {
     super(jcas);
-      readObject();
-  }
+    readObject();   
+  } 
 
 
-    /**
+  /** 
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-     * @generated modifiable
+   * @generated modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
-
-
-    //*--------------*
+     
+ 
+    
+  //*--------------*
   //* Feature: author
 
-    /** getter for author - gets
+  /** getter for author - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getAuthor() {
+  public String getAuthor() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_author));
   }
-
-    /** setter for author - sets
+    
+  /** setter for author - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setAuthor(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_author), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: publisher
 
-    /** getter for publisher - gets
+  /** getter for publisher - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getPublisher() {
+  public String getPublisher() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_publisher));
   }
-
-    /** setter for publisher - sets
+    
+  /** setter for publisher - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setPublisher(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_publisher), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: dateDay
 
-    /** getter for dateDay - gets
+  /** getter for dateDay - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public int getDateDay() {
+  public int getDateDay() { 
     return _getIntValueNc(wrapGetIntCatchException(_FH_dateDay));
   }
-
-    /** setter for dateDay - sets
+    
+  /** setter for dateDay - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setDateDay(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_dateDay), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: subtitle
 
-    /** getter for subtitle - gets
+  /** getter for subtitle - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getSubtitle() {
+  public String getSubtitle() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_subtitle));
   }
-
-    /** setter for subtitle - sets
+    
+  /** setter for subtitle - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setSubtitle(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_subtitle), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: dateMonth
 
-    /** getter for dateMonth - gets
+  /** getter for dateMonth - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public int getDateMonth() {
+  public int getDateMonth() { 
     return _getIntValueNc(wrapGetIntCatchException(_FH_dateMonth));
   }
-
-    /** setter for dateMonth - sets
+    
+  /** setter for dateMonth - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setDateMonth(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_dateMonth), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: dateYear
 
-    /** getter for dateYear - gets
+  /** getter for dateYear - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public int getDateYear() {
+  public int getDateYear() { 
     return _getIntValueNc(wrapGetIntCatchException(_FH_dateYear));
   }
-
-    /** setter for dateYear - sets
+    
+  /** setter for dateYear - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setDateYear(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_dateYear), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: timestamp
 
-    /** getter for timestamp - gets
+  /** getter for timestamp - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public long getTimestamp() {
+  public long getTimestamp() { 
     return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));
   }
-
-    /** setter for timestamp - sets
+    
+  /** setter for timestamp - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setTimestamp(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }
-
-
-
+  }    
+    
+   
+    
   //*--------------*
   //* Feature: place
 
-    /** getter for place - gets
+  /** getter for place - gets 
    * @generated
-     * @return value of the feature
+   * @return value of the feature 
    */
-    public String getPlace() {
+  public String getPlace() { 
     return _getStringValueNc(wrapGetIntCatchException(_FH_place));
   }
-
-    /** setter for place - sets
+    
+  /** setter for place - sets  
    * @generated
-     * @param v value to set into the feature
+   * @param v value to set into the feature 
    */
   public void setPlace(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_place), v);
+  }    
+    
   }
 
-  }
-
+    

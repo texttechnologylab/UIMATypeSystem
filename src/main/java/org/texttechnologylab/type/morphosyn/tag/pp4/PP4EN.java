@@ -1,103 +1,105 @@
 
 
-
-/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 23:59:27 CEST 2025 */
+   
+/* Apache UIMA v3 - First created by JCasGen Sat Apr 19 00:21:17 CEST 2025 */
 
 package org.texttechnologylab.type.morphosyn.tag.pp4;
+ 
 
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
 import org.texttechnologylab.type.morphosyn.tag.PP4;
 
 
-/**
- * Updated by JCasGen Fri Apr 18 23:59:27 CEST 2025
+/** 
+ * Updated by JCasGen Sat Apr 19 00:21:17 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PP4EN extends PP4 {
-
-    /** @generated
-     * @ordered
+ 
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.type.morphosyn.tag.pp4.PP4EN";
-
-    /** @generated
-     * @ordered
+  
+  /** @generated
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(PP4EN.class);
   /** @generated
-   * @ordered
+   * @ordered 
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type
+   * @return index of the type  
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
-
-
-    /* *******************
+ 
+ 
+  /* *******************
    *   Feature Offsets *
-     * *******************/
-
+   * *******************/ 
+   
 
 
   /* Feature Adjusted Offsets */
 
-
-    /** Never called.  Disable default constructor
+   
+  /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected PP4EN() {/* intentionally empty block */}
-
-    /** Internal - constructor used by generator
+    
+  /** Internal - constructor used by generator 
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-     * @param type the type of this Feature Structure
+   * @param type the type of this Feature Structure 
    */
   public PP4EN(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-
-    /** @generated
-     * @param jcas JCas to which this Feature Structure belongs
+  
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
    */
   public PP4EN(JCas jcas) {
     super(jcas);
-      readObject();
-  }
+    readObject();   
+  } 
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA
-   */
+   * @param end offset to the end spot in the SofA 
+  */  
   public PP4EN(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }
+  }   
 
-    /**
+  /** 
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-     * @generated modifiable
+   * @generated modifiable 
    */
   private void readObject() {/*default - does nothing empty block */}
-
+     
 }
 
+    
