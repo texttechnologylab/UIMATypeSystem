@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Mar 21 17:01:50 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.geonames;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** GeoNames annotation base type.
- * Updated by JCasGen Fri Mar 21 17:01:50 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
  

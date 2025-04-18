@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,13 +12,13 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LayerImage extends WebImage {
 
@@ -119,24 +119,23 @@ public class LayerImage extends WebImage {
 
 
     //*--------------*
-    //* Feature: index
+  //* Feature: index
 
-    /** getter for index - gets
-     * @generated
-     * @return value of the feature
+  /** getter for index - gets
+   * @generated
+   * @return value of the feature
    */
-  public int getIndex() { 
+  public int getIndex() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_index));
   }
-    
-  /** setter for index - sets  
+
+  /** setter for index - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setIndex(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_index), v);
-  }    
-    
   }
 
-    
+  }
+

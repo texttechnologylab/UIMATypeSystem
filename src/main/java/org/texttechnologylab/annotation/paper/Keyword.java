@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Keyword extends Annotation {
 
@@ -122,24 +122,23 @@ public class Keyword extends Annotation {
 
 
     //*--------------*
-    //* Feature: value
+  //* Feature: value
 
-    /** getter for value - gets
-     * @generated
-     * @return value of the feature
+  /** getter for value - gets
+   * @generated
+   * @return value of the feature
    */
-  public String getValue() { 
+  public String getValue() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
-    
-  /** setter for value - sets  
+
+  /** setter for value - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setValue(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
   }
 
-    
+  }
+

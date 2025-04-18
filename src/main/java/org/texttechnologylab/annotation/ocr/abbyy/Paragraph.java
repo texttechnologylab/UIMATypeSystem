@@ -1,10 +1,10 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Apr 15 18:59:23 CEST 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
+
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -12,45 +12,45 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
 
 
-/** 
- * Updated by JCasGen Tue Apr 15 18:59:23 CEST 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Paragraph {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Paragraph";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Paragraph.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_leftIndent = "leftIndent";
   public final static String _FeatName_rightIndent = "rightIndent";
   public final static String _FeatName_startIndent = "startIndent";
@@ -70,158 +70,157 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   private final static CallSite _FC_alignment = TypeSystemImpl.createCallSite(Paragraph.class, "alignment");
   private final static MethodHandle _FH_alignment = _FC_alignment.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Paragraph() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public Paragraph(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public Paragraph(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public Paragraph(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: leftIndent
 
-  /** getter for leftIndent - gets 
+  /** getter for leftIndent - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getLeftIndent() { 
+  public int getLeftIndent() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_leftIndent));
   }
-    
-  /** setter for leftIndent - sets  
+
+  /** setter for leftIndent - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLeftIndent(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_leftIndent), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: rightIndent
 
-  /** getter for rightIndent - gets 
+  /** getter for rightIndent - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getRightIndent() { 
+  public int getRightIndent() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_rightIndent));
   }
-    
-  /** setter for rightIndent - sets  
+
+  /** setter for rightIndent - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setRightIndent(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_rightIndent), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: startIndent
 
-  /** getter for startIndent - gets 
+  /** getter for startIndent - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getStartIndent() { 
+  public int getStartIndent() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_startIndent));
   }
-    
-  /** setter for startIndent - sets  
+
+  /** setter for startIndent - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setStartIndent(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_startIndent), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: lineSpacing
 
-  /** getter for lineSpacing - gets 
+  /** getter for lineSpacing - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getLineSpacing() { 
+  public int getLineSpacing() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_lineSpacing));
   }
-    
-  /** setter for lineSpacing - sets  
+
+  /** setter for lineSpacing - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLineSpacing(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_lineSpacing), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: alignment
 
-  /** getter for alignment - gets 
+  /** getter for alignment - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getAlignment() { 
+  public String getAlignment() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_alignment));
   }
-    
-  /** setter for alignment - sets  
+
+  /** setter for alignment - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setAlignment(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_alignment), v);
-  }    
-    
   }
 
-    
+  }
+

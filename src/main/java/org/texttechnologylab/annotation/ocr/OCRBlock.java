@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,38 +20,38 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRBlock extends Annotation {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.ocr.OCRBlock";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(OCRBlock.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_top = "top";
   public final static String _FeatName_bottom = "bottom";
   public final static String _FeatName_left = "left";
@@ -77,200 +77,199 @@ public class OCRBlock extends Annotation {
   private final static CallSite _FC_valid = TypeSystemImpl.createCallSite(OCRBlock.class, "valid");
   private final static MethodHandle _FH_valid = _FC_valid.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected OCRBlock() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public OCRBlock(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public OCRBlock(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public OCRBlock(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: top
 
-  /** getter for top - gets 
+  /** getter for top - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getTop() { 
+  public int getTop() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_top));
   }
-    
-  /** setter for top - sets  
+
+  /** setter for top - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setTop(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_top), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: bottom
 
-  /** getter for bottom - gets 
+  /** getter for bottom - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getBottom() { 
+  public int getBottom() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));
   }
-    
-  /** setter for bottom - sets  
+
+  /** setter for bottom - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setBottom(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_bottom), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: left
 
-  /** getter for left - gets 
+  /** getter for left - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getLeft() { 
+  public int getLeft() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_left));
   }
-    
-  /** setter for left - sets  
+
+  /** setter for left - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLeft(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_left), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: right
 
-  /** getter for right - gets 
+  /** getter for right - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getRight() { 
+  public int getRight() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_right));
   }
-    
-  /** setter for right - sets  
+
+  /** setter for right - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setRight(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_right), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: blockType
 
-  /** getter for blockType - gets 
+  /** getter for blockType - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getBlockType() { 
+  public String getBlockType() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_blockType));
   }
-    
-  /** setter for blockType - sets  
+
+  /** setter for blockType - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setBlockType(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_blockType), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: blockName
 
-  /** getter for blockName - gets 
+  /** getter for blockName - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getBlockName() { 
+  public String getBlockName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_blockName));
   }
-    
-  /** setter for blockName - sets  
+
+  /** setter for blockName - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setBlockName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_blockName), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: valid
 
-  /** getter for valid - gets 
+  /** getter for valid - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public boolean getValid() { 
+  public boolean getValid() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_valid));
   }
-    
-  /** setter for valid - sets  
+
+  /** setter for valid - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setValid(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_valid), v);
-  }    
-    
   }
 
-    
+  }
+

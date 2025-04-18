@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Author extends Annotation {
 
@@ -206,45 +206,42 @@ public class Author extends Annotation {
     //*--------------*
     //* Feature: email
 
-    /**
-     * getter for email - gets
-     *
+    /** getter for email - gets
+     * @generated
      * @return value of the feature
-     * @generated
-     */
-    public String getEmail() {
-        return _getStringValueNc(wrapGetIntCatchException(_FH_email));
-    }
+   */
+  public String getEmail() {
+    return _getStringValueNc(wrapGetIntCatchException(_FH_email));
+  }
 
-    /** setter for email - sets
-     * @generated
-     * @param v value to set into the feature
+  /** setter for email - sets
+   * @generated
+   * @param v value to set into the feature
    */
   public void setEmail(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_email), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: location
 
-  /** getter for location - gets 
+  /** getter for location - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getLocation() { 
+  public String getLocation() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_location));
   }
-    
-  /** setter for location - sets  
+
+  /** setter for location - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLocation(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_location), v);
-  }    
-    
   }
 
-    
+  }
+

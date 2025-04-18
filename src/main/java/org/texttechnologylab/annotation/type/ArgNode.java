@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,43 +12,43 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgNode extends Node {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.ArgNode";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(ArgNode.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_graphId = "graphId";
   public final static String _FeatName_nodeId = "nodeId";
   public final static String _FeatName_text = "text";
@@ -80,230 +80,229 @@ public class ArgNode extends Node {
   private final static CallSite _FC_color = TypeSystemImpl.createCallSite(ArgNode.class, "color");
   private final static MethodHandle _FH_color = _FC_color.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected ArgNode() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public ArgNode(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public ArgNode(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: graphId
 
-  /** getter for graphId - gets 
+  /** getter for graphId - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getGraphId() { 
+  public String getGraphId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_graphId));
   }
-    
-  /** setter for graphId - sets  
+
+  /** setter for graphId - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setGraphId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_graphId), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: nodeId
 
-  /** getter for nodeId - gets 
+  /** getter for nodeId - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getNodeId() { 
+  public String getNodeId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_nodeId));
   }
-    
-  /** setter for nodeId - sets  
+
+  /** setter for nodeId - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setNodeId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_nodeId), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: text
 
-  /** getter for text - gets 
+  /** getter for text - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getText() { 
+  public String getText() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_text));
   }
-    
-  /** setter for text - sets  
+
+  /** setter for text - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setText(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_text), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: x
 
-  /** getter for x - gets 
+  /** getter for x - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getX() { 
+  public String getX() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_x));
   }
-    
-  /** setter for x - sets  
+
+  /** setter for x - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setX(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_x), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: y
 
-  /** getter for y - gets 
+  /** getter for y - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getY() { 
+  public String getY() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_y));
   }
-    
-  /** setter for y - sets  
+
+  /** setter for y - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setY(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_y), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: reference
 
-  /** getter for reference - gets 
+  /** getter for reference - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getReference() { 
+  public String getReference() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
   }
-    
-  /** setter for reference - sets  
+
+  /** setter for reference - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setReference(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: begin
 
-  /** getter for begin - gets 
+  /** getter for begin - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getBegin() { 
+  public String getBegin() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
   }
-    
-  /** setter for begin - sets  
+
+  /** setter for begin - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setBegin(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_begin), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: end
 
-  /** getter for end - gets 
+  /** getter for end - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getEnd() { 
+  public String getEnd() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_end));
   }
-    
-  /** setter for end - sets  
+
+  /** setter for end - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setEnd(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_end), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: color
 
-  /** getter for color - gets 
+  /** getter for color - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getColor() { 
+  public String getColor() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_color));
   }
-    
-  /** setter for color - sets  
+
+  /** setter for color - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setColor(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_color), v);
-  }    
-    
   }
 
-    
+  }
+

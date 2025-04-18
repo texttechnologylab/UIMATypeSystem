@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.node.type;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,38 +20,38 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntityVis extends Node {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.node.type.EntityVis";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(EntityVis.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_geonamesID = "geonamesID";
   public final static String _FeatName_geoJson = "geoJson";
   public final static String _FeatName_displayName = "displayName";
@@ -74,167 +74,166 @@ public class EntityVis extends Node {
   private final static CallSite _FC_wikiDataID = TypeSystemImpl.createCallSite(EntityVis.class, "wikiDataID");
   private final static MethodHandle _FH_wikiDataID = _FC_wikiDataID.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected EntityVis() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public EntityVis(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public EntityVis(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: geonamesID
 
-  /** getter for geonamesID - gets 
+  /** getter for geonamesID - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getGeonamesID() { 
+  public int getGeonamesID() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_geonamesID));
   }
-    
-  /** setter for geonamesID - sets  
+
+  /** setter for geonamesID - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setGeonamesID(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_geonamesID), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: geoJson
 
-  /** getter for geoJson - gets 
+  /** getter for geoJson - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getGeoJson() { 
+  public String getGeoJson() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));
   }
-    
-  /** setter for geoJson - sets  
+
+  /** setter for geoJson - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setGeoJson(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_geoJson), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: displayName
 
-  /** getter for displayName - gets 
+  /** getter for displayName - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getDisplayName() { 
+  public String getDisplayName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
   }
-    
-  /** setter for displayName - sets  
+
+  /** setter for displayName - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setDisplayName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_displayName), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: ofClass
 
-  /** getter for ofClass - gets 
+  /** getter for ofClass - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getOfClass() { 
+  public String getOfClass() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_ofClass));
   }
-    
-  /** setter for ofClass - sets  
+
+  /** setter for ofClass - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setOfClass(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_ofClass), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: image
 
-  /** getter for image - gets 
+  /** getter for image - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getImage() { 
+  public String getImage() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_image));
   }
-    
-  /** setter for image - sets  
+
+  /** setter for image - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setImage(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_image), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: wikiDataID
 
-  /** getter for wikiDataID - gets 
+  /** getter for wikiDataID - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getWikiDataID() { 
+  public String getWikiDataID() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));
   }
-    
-  /** setter for wikiDataID - sets  
+
+  /** setter for wikiDataID - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setWikiDataID(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_wikiDataID), v);
-  }    
-    
   }
 
-    
+  }
+

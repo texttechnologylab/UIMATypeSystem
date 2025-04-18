@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,38 +20,38 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GraphBase extends AnnotationBase {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.GraphBase";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(GraphBase.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_Id = "Id";
   public final static String _FeatName_label = "label";
   public final static String _FeatName_create = "create";
@@ -71,146 +71,145 @@ public class GraphBase extends AnnotationBase {
   private final static CallSite _FC_user = TypeSystemImpl.createCallSite(GraphBase.class, "user");
   private final static MethodHandle _FH_user = _FC_user.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected GraphBase() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public GraphBase(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public GraphBase(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: Id
 
-  /** getter for Id - gets 
+  /** getter for Id - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getId() { 
+  public String getId() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_Id));
   }
-    
-  /** setter for Id - sets  
+
+  /** setter for Id - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setId(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_Id), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: label
 
-  /** getter for label - gets 
+  /** getter for label - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getLabel() { 
+  public String getLabel() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_label));
   }
-    
-  /** setter for label - sets  
+
+  /** setter for label - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLabel(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: create
 
-  /** getter for create - gets 
+  /** getter for create - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getCreate() { 
+  public long getCreate() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_create));
   }
-    
-  /** setter for create - sets  
+
+  /** setter for create - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setCreate(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_create), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: modified
 
-  /** getter for modified - gets 
+  /** getter for modified - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getModified() { 
+  public long getModified() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_modified));
   }
-    
-  /** setter for modified - sets  
+
+  /** setter for modified - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setModified(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_modified), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: user
 
-  /** getter for user - gets 
+  /** getter for user - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getUser() { 
+  public String getUser() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_user));
   }
-    
-  /** setter for user - sets  
+
+  /** setter for user - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setUser(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
-  }    
-    
   }
 
-    
+  }
+

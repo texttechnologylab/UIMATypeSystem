@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.Room;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -22,38 +22,38 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Object extends Annotation {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.Room.Object";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Object.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_name = "name";
   public final static String _FeatName_fatherObject = "fatherObject";
   public final static String _FeatName_nextTimeObject = "nextTimeObject";
@@ -88,284 +88,283 @@ public class Object extends Annotation {
   private final static CallSite _FC_objectFeature = TypeSystemImpl.createCallSite(Object.class, "objectFeature");
   private final static MethodHandle _FH_objectFeature = _FC_objectFeature.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Object() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public Object(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public Object(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public Object(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: name
 
   /** getter for name - gets Name of the object (group).
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getName() { 
+  public String getName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_name));
   }
-    
-  /** setter for name - sets Name of the object (group). 
+
+  /** setter for name - sets Name of the object (group).
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: fatherObject
 
   /** getter for fatherObject - gets FatherObject in the hierarchy.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Object getFatherObject() { 
+  public Object getFatherObject() {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_fatherObject)));
   }
-    
-  /** setter for fatherObject - sets FatherObject in the hierarchy. 
+
+  /** setter for fatherObject - sets FatherObject in the hierarchy.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setFatherObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_fatherObject), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: nextTimeObject
 
   /** getter for nextTimeObject - gets Reference to the same object the next time step.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Object getNextTimeObject() { 
+  public Object getNextTimeObject() {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nextTimeObject)));
   }
-    
-  /** setter for nextTimeObject - sets Reference to the same object the next time step. 
+
+  /** setter for nextTimeObject - sets Reference to the same object the next time step.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setNextTimeObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nextTimeObject), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: prevTimeObject
 
   /** getter for prevTimeObject - gets Reference to the same object the previous time step.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Object getPrevTimeObject() { 
+  public Object getPrevTimeObject() {
     return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prevTimeObject)));
   }
-    
-  /** setter for prevTimeObject - sets Reference to the same object the previous time step. 
+
+  /** setter for prevTimeObject - sets Reference to the same object the previous time step.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setPrevTimeObject(Object v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_prevTimeObject), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: timeReference
 
   /** getter for timeReference - gets Reference to time location.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public TimeChain getTimeReference() { 
+  public TimeChain getTimeReference() {
     return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_timeReference)));
   }
-    
-  /** setter for timeReference - sets Reference to time location. 
+
+  /** setter for timeReference - sets Reference to time location.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setTimeReference(TimeChain v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_timeReference), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: shapeNetID
 
   /** getter for shapeNetID - gets ShapeNetID of the object.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getShapeNetID() { 
+  public String getShapeNetID() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_shapeNetID));
   }
-    
-  /** setter for shapeNetID - sets ShapeNetID of the object. 
+
+  /** setter for shapeNetID - sets ShapeNetID of the object.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setShapeNetID(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_shapeNetID), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: scale
 
   /** getter for scale - gets Scale of the object.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public double getScale() { 
+  public double getScale() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_scale));
   }
-    
-  /** setter for scale - sets Scale of the object. 
+
+  /** setter for scale - sets Scale of the object.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setScale(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_scale), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: location
 
   /** getter for location - gets 3D Location Vector.
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Vector getLocation() { 
+  public Vector getLocation() {
     return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_location)));
   }
-    
-  /** setter for location - sets 3D Location Vector. 
+
+  /** setter for location - sets 3D Location Vector.
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLocation(Vector v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_location), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: rotation
 
   /** getter for rotation - gets 4D Rotation Quaternion
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Vector getRotation() { 
+  public Vector getRotation() {
     return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));
   }
-    
-  /** setter for rotation - sets 4D Rotation Quaternion 
+
+  /** setter for rotation - sets 4D Rotation Quaternion
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setRotation(Vector v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rotation), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: objectFeature
 
   /** getter for objectFeature - gets All feature of the object
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
   @SuppressWarnings("unchecked")
-  public FSArray<ObjectAttribute> getObjectFeature() { 
+  public FSArray<ObjectAttribute> getObjectFeature() {
     return (FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)));
   }
-    
-  /** setter for objectFeature - sets All feature of the object 
+
+  /** setter for objectFeature - sets All feature of the object
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setObjectFeature(FSArray<ObjectAttribute> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_objectFeature), v);
-  }    
-    
-    
+  }
+
+
   /** indexed getter for objectFeature - gets an indexed value - All feature of the object
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i 
+   * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public ObjectAttribute getObjectFeature(int i) {
      return (ObjectAttribute)(((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).get(i));
-  } 
+  }
 
   /** indexed setter for objectFeature - sets an indexed value - All feature of the object
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array 
+   * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setObjectFeature(int i, ObjectAttribute v) {
     ((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).set(i, v);
-  }  
+  }
   }
 
-    

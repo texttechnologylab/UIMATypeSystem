@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubImage extends Annotation {
 
@@ -169,29 +169,28 @@ public class SubImage extends Annotation {
      */
     @SuppressWarnings("unchecked")
     public void setCoordinates(int i, Coordinate v) {
-        ((FSArray<Coordinate>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
-  }  
-   
-    
+    ((FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
+  }
+
+
   //*--------------*
   //* Feature: parent
 
-  /** getter for parent - gets 
+  /** getter for parent - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Image getParent() { 
+  public Image getParent() {
     return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
   }
-    
-  /** setter for parent - sets  
+
+  /** setter for parent - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setParent(Image v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_parent), v);
-  }    
-    
   }
 
-    
+  }
+

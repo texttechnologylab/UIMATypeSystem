@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isobase;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -22,38 +22,38 @@ import org.texttechnologylab.annotation.semaf.isospace.Measure;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Event extends Entity {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isobase.Event";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Event.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_event_class = "event_class";
   public final static String _FeatName_polarity = "polarity";
   public final static String _FeatName_mood = "mood";
@@ -109,432 +109,431 @@ public class Event extends Entity {
   private final static CallSite _FC_event_type = TypeSystemImpl.createCallSite(Event.class, "event_type");
   private final static MethodHandle _FH_event_type = _FC_event_type.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Event() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public Event(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public Event(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public Event(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: event_class
 
-  /** getter for event_class - gets 
+  /** getter for event_class - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getEvent_class() { 
+  public String getEvent_class() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_event_class));
   }
-    
-  /** setter for event_class - sets  
+
+  /** setter for event_class - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setEvent_class(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_event_class), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: polarity
 
-  /** getter for polarity - gets 
+  /** getter for polarity - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getPolarity() { 
+  public String getPolarity() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));
   }
-    
-  /** setter for polarity - sets  
+
+  /** setter for polarity - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setPolarity(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_polarity), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: mood
 
-  /** getter for mood - gets 
+  /** getter for mood - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getMood() { 
+  public String getMood() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_mood));
   }
-    
-  /** setter for mood - sets  
+
+  /** setter for mood - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setMood(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_mood), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: pos
 
-  /** getter for pos - gets 
+  /** getter for pos - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getPos() { 
+  public String getPos() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
   }
-    
-  /** setter for pos - sets  
+
+  /** setter for pos - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setPos(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: tense
 
-  /** getter for tense - gets 
+  /** getter for tense - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getTense() { 
+  public String getTense() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_tense));
   }
-    
-  /** setter for tense - sets  
+
+  /** setter for tense - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setTense(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_tense), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: aspect
 
-  /** getter for aspect - gets 
+  /** getter for aspect - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getAspect() { 
+  public String getAspect() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));
   }
-    
-  /** setter for aspect - sets  
+
+  /** setter for aspect - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setAspect(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_aspect), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: vform
 
-  /** getter for vform - gets 
+  /** getter for vform - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getVform() { 
+  public String getVform() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_vform));
   }
-    
-  /** setter for vform - sets  
+
+  /** setter for vform - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setVform(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_vform), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: domain
 
-  /** getter for domain - gets 
+  /** getter for domain - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getDomain() { 
+  public String getDomain() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_domain));
   }
-    
-  /** setter for domain - sets  
+
+  /** setter for domain - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setDomain(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_domain), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: lat
 
-  /** getter for lat - gets 
+  /** getter for lat - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getLat() { 
+  public String getLat() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_lat));
   }
-    
-  /** setter for lat - sets  
+
+  /** setter for lat - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLat(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_lat), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: long
 
-  /** getter for long - gets 
+  /** getter for long - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getLong() { 
+  public String getLong() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_long));
   }
-    
-  /** setter for long - sets  
+
+  /** setter for long - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLong(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_long), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: elevation
 
-  /** getter for elevation - gets 
+  /** getter for elevation - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public Measure getElevation() { 
+  public Measure getElevation() {
     return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));
   }
-    
-  /** setter for elevation - sets  
+
+  /** setter for elevation - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setElevation(Measure v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elevation), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: countable
 
-  /** getter for countable - gets 
+  /** getter for countable - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public boolean getCountable() { 
+  public boolean getCountable() {
     return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));
   }
-    
-  /** setter for countable - sets  
+
+  /** setter for countable - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setCountable(boolean v) {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_countable), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: gquant
 
-  /** getter for gquant - gets 
+  /** getter for gquant - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getGquant() { 
+  public String getGquant() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));
   }
-    
-  /** setter for gquant - sets  
+
+  /** setter for gquant - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setGquant(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_gquant), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: scopes
 
-  /** getter for scopes - gets 
+  /** getter for scopes - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
   @SuppressWarnings("unchecked")
-  public FSList<Entity> getScopes() { 
+  public FSList<Entity> getScopes() {
     return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));
   }
-    
-  /** setter for scopes - sets  
+
+  /** setter for scopes - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setScopes(FSList<Entity> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: scopes_array
 
-  /** getter for scopes_array - gets 
+  /** getter for scopes_array - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
   @SuppressWarnings("unchecked")
-  public FSArray<Entity> getScopes_array() { 
+  public FSArray<Entity> getScopes_array() {
     return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));
   }
-    
-  /** setter for scopes_array - sets  
+
+  /** setter for scopes_array - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setScopes_array(FSArray<Entity> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes_array), v);
-  }    
-    
-    
-  /** indexed getter for scopes_array - gets an indexed value - 
+  }
+
+
+  /** indexed getter for scopes_array - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i 
+   * @return value of the element at index i
    */
   @SuppressWarnings("unchecked")
   public Entity getScopes_array(int i) {
      return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));
-  } 
+  }
 
-  /** indexed setter for scopes_array - sets an indexed value - 
+  /** indexed setter for scopes_array - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array 
+   * @param v value to set into the array
    */
   @SuppressWarnings("unchecked")
     public void setScopes_array(int i, Entity v) {
     ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
-  }  
-   
-    
+  }
+
+
   //*--------------*
   //* Feature: event_frame
 
-  /** getter for event_frame - gets 
+  /** getter for event_frame - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getEvent_frame() { 
+  public String getEvent_frame() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_event_frame));
   }
-    
-  /** setter for event_frame - sets  
+
+  /** setter for event_frame - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setEvent_frame(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_event_frame), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: event_type
 
-  /** getter for event_type - gets 
+  /** getter for event_type - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getEvent_type() { 
+  public String getEvent_type() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_event_type));
   }
-    
-  /** setter for event_type - sets  
+
+  /** setter for event_type - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setEvent_type(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_event_type), v);
-  }    
-    
   }
 
-    
+  }
+

@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Image extends Annotation {
 
@@ -194,31 +194,31 @@ public class Image extends Annotation {
     /** setter for height - sets
      * @generated
      * @param v value to set into the feature
-     */
-    public void setHeight(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
-    }
-
-
-    //*--------------*
-    //* Feature: mimetype
-
-  /** getter for mimetype - gets 
-   * @generated
-   * @return value of the feature 
    */
-  public String getMimetype() { 
+  public void setHeight(int v) {
+    _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
+  }
+
+
+
+  //*--------------*
+  //* Feature: mimetype
+
+  /** getter for mimetype - gets
+   * @generated
+   * @return value of the feature
+   */
+  public String getMimetype() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));
   }
-    
-  /** setter for mimetype - sets  
+
+  /** setter for mimetype - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setMimetype(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
-  }    
-    
   }
 
-    
+  }
+

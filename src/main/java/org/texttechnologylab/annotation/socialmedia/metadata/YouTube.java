@@ -1,10 +1,10 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.socialmedia.metadata;
- 
+
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -22,38 +22,38 @@ import org.texttechnologylab.annotation.socialmedia.MetaData;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class YouTube extends MetaData {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.socialmedia.metadata.YouTube";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(YouTube.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_channelName = "channelName";
   public final static String _FeatName_channelURL = "channelURL";
   public final static String _FeatName_playlist = "playlist";
@@ -82,210 +82,209 @@ public class YouTube extends MetaData {
   private final static CallSite _FC_downloadDate = TypeSystemImpl.createCallSite(YouTube.class, "downloadDate");
   private final static MethodHandle _FH_downloadDate = _FC_downloadDate.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected YouTube() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public YouTube(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public YouTube(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: channelName
 
-  /** getter for channelName - gets 
+  /** getter for channelName - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getChannelName() { 
+  public String getChannelName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_channelName));
   }
-    
-  /** setter for channelName - sets  
+
+  /** setter for channelName - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setChannelName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_channelName), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: channelURL
 
-  /** getter for channelURL - gets 
+  /** getter for channelURL - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getChannelURL() { 
+  public String getChannelURL() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_channelURL));
   }
-    
-  /** setter for channelURL - sets  
+
+  /** setter for channelURL - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setChannelURL(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_channelURL), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: playlist
 
-  /** getter for playlist - gets 
+  /** getter for playlist - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
   @SuppressWarnings("unchecked")
-  public FSList<Playlist> getPlaylist() { 
+  public FSList<Playlist> getPlaylist() {
     return (FSList<Playlist>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_playlist)));
   }
-    
-  /** setter for playlist - sets  
+
+  /** setter for playlist - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setPlaylist(FSList<Playlist> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_playlist), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: length
 
-  /** getter for length - gets 
+  /** getter for length - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getLength() { 
+  public int getLength() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_length));
   }
-    
-  /** setter for length - sets  
+
+  /** setter for length - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLength(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_length), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: views
 
-  /** getter for views - gets 
+  /** getter for views - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getViews() { 
+  public int getViews() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_views));
   }
-    
-  /** setter for views - sets  
+
+  /** setter for views - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setViews(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_views), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: likes
 
-  /** getter for likes - gets 
+  /** getter for likes - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getLikes() { 
+  public int getLikes() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_likes));
   }
-    
-  /** setter for likes - sets  
+
+  /** setter for likes - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLikes(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_likes), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: dislikes
 
-  /** getter for dislikes - gets 
+  /** getter for dislikes - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getDislikes() { 
+  public int getDislikes() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_dislikes));
   }
-    
-  /** setter for dislikes - sets  
+
+  /** setter for dislikes - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setDislikes(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_dislikes), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: downloadDate
 
-  /** getter for downloadDate - gets 
+  /** getter for downloadDate - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public int getDownloadDate() { 
+  public int getDownloadDate() {
     return _getIntValueNc(wrapGetIntCatchException(_FH_downloadDate));
   }
-    
-  /** setter for downloadDate - sets  
+
+  /** setter for downloadDate - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setDownloadDate(int v) {
     _setIntValueNfc(wrapGetIntCatchException(_FH_downloadDate), v);
-  }    
-    
   }
 
-    
+  }
+

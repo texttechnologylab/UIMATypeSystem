@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.type.dbpedia;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -21,38 +21,38 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DBPediaObject extends Annotation {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.type.dbpedia.DBPediaObject";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(DBPediaObject.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_similarityScore = "similarityScore";
   public final static String _FeatName_percentageOfSecondRank = "percentageOfSecondRank";
   public final static String _FeatName_uri = "uri";
@@ -69,138 +69,137 @@ public class DBPediaObject extends Annotation {
   private final static CallSite _FC_types = TypeSystemImpl.createCallSite(DBPediaObject.class, "types");
   private final static MethodHandle _FH_types = _FC_types.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected DBPediaObject() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public DBPediaObject(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public DBPediaObject(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public DBPediaObject(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: similarityScore
 
-  /** getter for similarityScore - gets 
+  /** getter for similarityScore - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public double getSimilarityScore() { 
+  public double getSimilarityScore() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_similarityScore));
   }
-    
-  /** setter for similarityScore - sets  
+
+  /** setter for similarityScore - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setSimilarityScore(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_similarityScore), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: percentageOfSecondRank
 
-  /** getter for percentageOfSecondRank - gets 
+  /** getter for percentageOfSecondRank - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public double getPercentageOfSecondRank() { 
+  public double getPercentageOfSecondRank() {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_percentageOfSecondRank));
   }
-    
-  /** setter for percentageOfSecondRank - sets  
+
+  /** setter for percentageOfSecondRank - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setPercentageOfSecondRank(double v) {
     _setDoubleValueNfc(wrapGetIntCatchException(_FH_percentageOfSecondRank), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: uri
 
-  /** getter for uri - gets 
+  /** getter for uri - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getUri() { 
+  public String getUri() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
   }
-    
-  /** setter for uri - sets  
+
+  /** setter for uri - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setUri(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: types
 
-  /** getter for types - gets 
+  /** getter for types - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
   @SuppressWarnings("unchecked")
-  public FSList<DBPediaType> getTypes() { 
+  public FSList<DBPediaType> getTypes() {
     return (FSList<DBPediaType>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_types)));
   }
-    
-  /** setter for types - sets  
+
+  /** setter for types - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setTypes(FSList<DBPediaType> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_types), v);
-  }    
-    
   }
 
-    
+  }
+

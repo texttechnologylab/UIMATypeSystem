@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation;
 
@@ -12,43 +12,43 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpacyAnnotatorMetaData extends AnnotatorMetaData {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.SpacyAnnotatorMetaData";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(SpacyAnnotatorMetaData.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_spacyVersion = "spacyVersion";
   public final static String _FeatName_modelLang = "modelLang";
   public final static String _FeatName_modelSpacyVersion = "modelSpacyVersion";
@@ -65,125 +65,124 @@ public class SpacyAnnotatorMetaData extends AnnotatorMetaData {
   private final static CallSite _FC_modelSpacyGitVersion = TypeSystemImpl.createCallSite(SpacyAnnotatorMetaData.class, "modelSpacyGitVersion");
   private final static MethodHandle _FH_modelSpacyGitVersion = _FC_modelSpacyGitVersion.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected SpacyAnnotatorMetaData() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public SpacyAnnotatorMetaData(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public SpacyAnnotatorMetaData(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: spacyVersion
 
-  /** getter for spacyVersion - gets 
+  /** getter for spacyVersion - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getSpacyVersion() { 
+  public String getSpacyVersion() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_spacyVersion));
   }
-    
-  /** setter for spacyVersion - sets  
+
+  /** setter for spacyVersion - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setSpacyVersion(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_spacyVersion), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: modelLang
 
-  /** getter for modelLang - gets 
+  /** getter for modelLang - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getModelLang() { 
+  public String getModelLang() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_modelLang));
   }
-    
-  /** setter for modelLang - sets  
+
+  /** setter for modelLang - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setModelLang(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_modelLang), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: modelSpacyVersion
 
-  /** getter for modelSpacyVersion - gets 
+  /** getter for modelSpacyVersion - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getModelSpacyVersion() { 
+  public String getModelSpacyVersion() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_modelSpacyVersion));
   }
-    
-  /** setter for modelSpacyVersion - sets  
+
+  /** setter for modelSpacyVersion - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setModelSpacyVersion(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_modelSpacyVersion), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: modelSpacyGitVersion
 
-  /** getter for modelSpacyGitVersion - gets 
+  /** getter for modelSpacyGitVersion - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getModelSpacyGitVersion() { 
+  public String getModelSpacyGitVersion() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_modelSpacyGitVersion));
   }
-    
-  /** setter for modelSpacyGitVersion - sets  
+
+  /** setter for modelSpacyGitVersion - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setModelSpacyGitVersion(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_modelSpacyGitVersion), v);
-  }    
-    
   }
 
-    
+  }
+

@@ -1,7 +1,7 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.paper;
 
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Footnote extends TextContent {
 
@@ -124,24 +124,21 @@ public class Footnote extends TextContent {
     //*--------------*
     //* Feature: reference
 
-    /**
-     * getter for reference - gets Reference to object in text
-     *
-     * @return value of the feature
+    /** getter for reference - gets Reference to object in text
      * @generated
-     */
-    public TOP getReference() {
-        return (TOP) (_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
+     * @return value of the feature
+   */
+  public TOP getReference() {
+    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
   }
-    
-  /** setter for reference - sets Reference to object in text 
+
+  /** setter for reference - sets Reference to object in text
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setReference(TOP v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
   }
 
-    
+  }
+

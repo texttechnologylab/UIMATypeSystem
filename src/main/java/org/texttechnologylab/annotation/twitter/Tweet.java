@@ -1,10 +1,10 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 25 13:16:03 CET 2025 */
+
+/* Apache UIMA v3 - First created by JCasGen Fri Apr 18 04:00:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.twitter;
- 
+
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -12,7 +12,7 @@ import java.lang.invoke.MethodHandle;
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
@@ -21,38 +21,38 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /**
- * Updated by JCasGen Tue Feb 25 13:16:03 CET 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Apr 18 04:00:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Tweet extends Annotation {
- 
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static String _TypeName = "org.texttechnologylab.annotation.twitter.Tweet";
-  
+
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int typeIndexID = JCasRegistry.register(Tweet.class);
   /** @generated
-   * @ordered 
+   * @ordered
    */
   @SuppressWarnings ("hiding")
   public final static int type = typeIndexID;
   /** @generated
-   * @return index of the type  
+   * @return index of the type
    */
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
- 
- 
+
+
   /* *******************
    *   Feature Offsets *
-   * *******************/ 
-   
+   * *******************/
+
   public final static String _FeatName_userName = "userName";
   public final static String _FeatName_create = "create";
   public final static String _FeatName_language = "language";
@@ -93,341 +93,340 @@ public class Tweet extends Annotation {
   private final static CallSite _FC_originalText = TypeSystemImpl.createCallSite(Tweet.class, "originalText");
   private final static MethodHandle _FH_originalText = _FC_originalText.dynamicInvoker();
 
-   
+
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
   protected Tweet() {/* intentionally empty block */}
-    
-  /** Internal - constructor used by generator 
+
+  /** Internal - constructor used by generator
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
-   * @param type the type of this Feature Structure 
+   * @param type the type of this Feature Structure
    */
   public Tweet(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
-  
+
   /** @generated
-   * @param jcas JCas to which this Feature Structure belongs 
+   * @param jcas JCas to which this Feature Structure belongs
    */
   public Tweet(JCas jcas) {
     super(jcas);
-    readObject();   
-  } 
+    readObject();
+  }
 
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
    * @param begin offset to the begin spot in the SofA
-   * @param end offset to the end spot in the SofA 
-  */  
+   * @param end offset to the end spot in the SofA
+  */
   public Tweet(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
     readObject();
-  }   
+  }
 
-  /** 
+  /**
    * <!-- begin-user-doc -->
    * Write your own initialization here
    * <!-- end-user-doc -->
    *
-   * @generated modifiable 
+   * @generated modifiable
    */
   private void readObject() {/*default - does nothing empty block */}
-     
- 
-    
+
+
+
   //*--------------*
   //* Feature: userName
 
-  /** getter for userName - gets 
+  /** getter for userName - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getUserName() { 
+  public String getUserName() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_userName));
   }
-    
-  /** setter for userName - sets  
+
+  /** setter for userName - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setUserName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_userName), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: create
 
-  /** getter for create - gets 
+  /** getter for create - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getCreate() { 
+  public long getCreate() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_create));
   }
-    
-  /** setter for create - sets  
+
+  /** setter for create - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setCreate(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_create), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: language
 
-  /** getter for language - gets 
+  /** getter for language - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getLanguage() { 
+  public String getLanguage() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_language));
   }
-    
-  /** setter for language - sets  
+
+  /** setter for language - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setLanguage(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_language), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: retweet
 
-  /** getter for retweet - gets 
+  /** getter for retweet - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getRetweet() { 
+  public long getRetweet() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_retweet));
   }
-    
-  /** setter for retweet - sets  
+
+  /** setter for retweet - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setRetweet(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_retweet), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: twitterID
 
-  /** getter for twitterID - gets 
+  /** getter for twitterID - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getTwitterID() { 
+  public long getTwitterID() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_twitterID));
   }
-    
-  /** setter for twitterID - sets  
+
+  /** setter for twitterID - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setTwitterID(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_twitterID), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: geo
 
-  /** getter for geo - gets 
+  /** getter for geo - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getGeo() { 
+  public String getGeo() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_geo));
   }
-    
-  /** setter for geo - sets  
+
+  /** setter for geo - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setGeo(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_geo), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: hashTags
 
-  /** getter for hashTags - gets 
+  /** getter for hashTags - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public StringArray getHashTags() { 
+  public StringArray getHashTags() {
     return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)));
   }
-    
-  /** setter for hashTags - sets  
+
+  /** setter for hashTags - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setHashTags(StringArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_hashTags), v);
-  }    
-    
-    
-  /** indexed getter for hashTags - gets an indexed value - 
+  }
+
+
+  /** indexed getter for hashTags - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i 
+   * @return value of the element at index i
    */
   public String getHashTags(int i) {
      return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)))).get(i);
-  } 
+  }
 
-  /** indexed setter for hashTags - sets an indexed value - 
+  /** indexed setter for hashTags - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array 
+   * @param v value to set into the array
    */
   public void setHashTags(int i, String v) {
     ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)))).set(i, v);
-  }  
-   
-    
+  }
+
+
   //*--------------*
   //* Feature: urls
 
-  /** getter for urls - gets 
+  /** getter for urls - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public StringArray getUrls() { 
+  public StringArray getUrls() {
     return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)));
   }
-    
-  /** setter for urls - sets  
+
+  /** setter for urls - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setUrls(StringArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_urls), v);
-  }    
-    
-    
-  /** indexed getter for urls - gets an indexed value - 
+  }
+
+
+  /** indexed getter for urls - gets an indexed value -
    * @generated
    * @param i index in the array to get
-   * @return value of the element at index i 
+   * @return value of the element at index i
    */
   public String getUrls(int i) {
      return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)))).get(i);
-  } 
+  }
 
-  /** indexed setter for urls - sets an indexed value - 
+  /** indexed setter for urls - sets an indexed value -
    * @generated
    * @param i index in the array to set
-   * @param v value to set into the array 
+   * @param v value to set into the array
    */
   public void setUrls(int i, String v) {
     ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)))).set(i, v);
-  }  
-   
-    
+  }
+
+
   //*--------------*
   //* Feature: userId
 
-  /** getter for userId - gets 
+  /** getter for userId - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getUserId() { 
+  public long getUserId() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_userId));
   }
-    
-  /** setter for userId - sets  
+
+  /** setter for userId - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setUserId(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_userId), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: repliedTo
 
-  /** getter for repliedTo - gets 
+  /** getter for repliedTo - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getRepliedTo() { 
+  public long getRepliedTo() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_repliedTo));
   }
-    
-  /** setter for repliedTo - sets  
+
+  /** setter for repliedTo - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setRepliedTo(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_repliedTo), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: quoted
 
-  /** getter for quoted - gets 
+  /** getter for quoted - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public long getQuoted() { 
+  public long getQuoted() {
     return _getLongValueNc(wrapGetIntCatchException(_FH_quoted));
   }
-    
-  /** setter for quoted - sets  
+
+  /** setter for quoted - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setQuoted(long v) {
     _setLongValueNfc(wrapGetIntCatchException(_FH_quoted), v);
-  }    
-    
-   
-    
+  }
+
+
+
   //*--------------*
   //* Feature: originalText
 
-  /** getter for originalText - gets 
+  /** getter for originalText - gets
    * @generated
-   * @return value of the feature 
+   * @return value of the feature
    */
-  public String getOriginalText() { 
+  public String getOriginalText() {
     return _getStringValueNc(wrapGetIntCatchException(_FH_originalText));
   }
-    
-  /** setter for originalText - sets  
+
+  /** setter for originalText - sets
    * @generated
-   * @param v value to set into the feature 
+   * @param v value to set into the feature
    */
   public void setOriginalText(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_originalText), v);
-  }    
-    
   }
 
-    
+  }
+
