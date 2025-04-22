@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Sat Apr 19 00:21:17 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Apr 22 17:11:16 CEST 2025 */
 
 package org.texttechnologylab.annotation.type.concept;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.annotation.AbstractNamedEntity;
 
 
 /** 
- * Updated by JCasGen Sat Apr 19 00:21:17 CEST 2025
+ * Updated by JCasGen Tue Apr 22 17:11:16 CEST 2025
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Communication extends AbstractNamedEntity {
