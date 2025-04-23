@@ -1,76 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>Sentiment</name>
-    <description/>
-    <version>1.0</version>
-    <vendor>TextImager</vendor>
+      
+  <name>Sentiment</name>
+      
+  <description>Collection of types for sentiment analysis results.</description>
+      
+  <version>1.0</version>
+      
+  <vendor>TextImager</vendor>
+    
   <types>
+        
     <typeDescription>
+            
       <name>org.hucompute.textimager.uima.type.Sentiment</name>
+            
       <description/>
+            
       <supertypeName>uima.tcas.Annotation</supertypeName>
+            
       <features>
+                
         <featureDescription>
+                    
           <name>sentiment</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.Double</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>subjectivity</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.Double</rangeTypeName>
+                  
         </featureDescription>
+              
       </features>
+          
     </typeDescription>
-      <typeDescription>
-          <name>org.hucompute.textimager.uima.type.CategorizedSentiment</name>
+          
+    <typeDescription>
+                
+      <name>org.hucompute.textimager.uima.type.CategorizedSentiment</name>
+                
+      <description/>
+                
+      <supertypeName>org.hucompute.textimager.uima.type.Sentiment</supertypeName>
+                
+      <features>
+                      
+        <featureDescription>
+                            
+          <name>pos</name>
+                            
           <description/>
-          <supertypeName>org.hucompute.textimager.uima.type.Sentiment</supertypeName>
-          <features>
-              <featureDescription>
-                  <name>pos</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-              <featureDescription>
-                  <name>neu</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-              <featureDescription>
-                  <name>neg</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-          </features>
-      </typeDescription>
-      <typeDescription>
-          <name>org.hucompute.textimager.uima.type.VaderSentiment</name>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                      
+        <featureDescription>
+                            
+          <name>neu</name>
+                            
           <description/>
-          <supertypeName>org.hucompute.textimager.uima.type.Sentiment</supertypeName>
-          <features>
-              <featureDescription>
-                  <name>pos</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-              <featureDescription>
-                  <name>neu</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-              <featureDescription>
-                  <name>neg</name>
-                  <description/>
-                  <rangeTypeName>uima.cas.Double</rangeTypeName>
-              </featureDescription>
-          </features>
-      </typeDescription>
-      <typeDescription>
-          <name>org.hucompute.textimager.uima.type.GerVaderSentiment</name>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                      
+        <featureDescription>
+                            
+          <name>neg</name>
+                            
           <description/>
-          <supertypeName>org.hucompute.textimager.uima.type.VaderSentiment</supertypeName>
-          <features/>
-      </typeDescription>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                  
+      </features>
+            
+    </typeDescription>
+          
+    <typeDescription>
+                
+      <name>org.hucompute.textimager.uima.type.VaderSentiment</name>
+                
+      <description>Specific type for VADER sentiment results (https://github.com/cjhutto/vaderSentiment)</description>
+                
+      <supertypeName>org.hucompute.textimager.uima.type.Sentiment</supertypeName>
+                
+      <features>
+                      
+        <featureDescription>
+                            
+          <name>pos</name>
+                            
+          <description/>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                      
+        <featureDescription>
+                            
+          <name>neu</name>
+                            
+          <description/>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                      
+        <featureDescription>
+                            
+          <name>neg</name>
+                            
+          <description/>
+                            
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                        
+        </featureDescription>
+                  
+      </features>
+            
+    </typeDescription>
+          
+    <typeDescription>
+                
+      <name>org.hucompute.textimager.uima.type.GerVaderSentiment</name>
+                
+      <description>Subtype of VADER sentiment results, specific for the german adaption (https://github.com/KarstenAMF/GerVADER)</description>
+                
+      <supertypeName>org.hucompute.textimager.uima.type.VaderSentiment</supertypeName>
+                
+    </typeDescription>
+      
   </types>
+  
 </typeSystemDescription>
