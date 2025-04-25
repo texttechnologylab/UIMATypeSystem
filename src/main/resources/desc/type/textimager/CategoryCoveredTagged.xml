@@ -1,36 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>CategoryCoveredTagged</name>
-    <description/>
-    <version>1.0</version>
-  	<vendor>TextImager, Universität Frankfurt</vendor>
+          
+  
+  
+  <name>CategoryCoveredTagged</name>
+          
+  
+  
+  <description>Generic "category" type that can be used for e.g. classification results and other categorical data.</description>
+          
+  
+  
+  <version>1.0</version>
+        	
+  
+  
+  <vendor>TextImager, Universität Frankfurt</vendor>
+        
+  
+  
   <types>
+                
+    
+    
     <typeDescription>
+                        
+      
+      
       <name>org.hucompute.textimager.uima.type.category.CategoryCoveredTagged</name>
-      <description/>
+                        
+      
+      
+      <description>Generic "category" type that can be used for e.g. classification results and other categorical data.</description>
+                        
+      
+      
       <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+      
+      
       <features>
+                                
+        
+        
         <featureDescription>
+                                        
+          
+          
           <name>value</name>
-          <description/>
+                                        
+          
+          
+          <description>String-based value, e.g. a topic name like "politics" or "sports".</description>
+                                        
+          
+          
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                                      
+        
+        
         </featureDescription>
+                                
+        
+        
         <featureDescription>
+                                        
+          
+          
           <name>score</name>
-          <description/>
+                                        
+          
+          
+          <description>Score, probability or confidence value for the category set in the "value" field.</description>
+                                        
+          
+          
           <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                      
+        
+        
         </featureDescription>
+                                
+        
+        
         <featureDescription>
+                                        
+          
+          
           <name>tags</name>
-          <description/>
+                                        
+          
+          
+          <description>Free-form field for tags, has internally often been used to store model name and version.</description>
+                                        
+          
+          
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                                      
+        
+        
         </featureDescription>
-      <featureDescription>
+                              
+        
+        
+        <featureDescription>
+                                        
+          
+          
           <name>ref</name>
-          <description/>
+                                        
+          
+          
+          <description>This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results.</description>
+                                        
+          
+          
           <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                      
+        
+        
         </featureDescription>
+                              
+      
+      
       </features>
+                      
+    
+    
     </typeDescription>
+              
+  
+  
   </types>
+      
+
+
 </typeSystemDescription>

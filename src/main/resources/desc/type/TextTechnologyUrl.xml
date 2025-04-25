@@ -1,61 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>TextTechnologyUrl</name>
-    <description/>
-    <version>1.0</version>
-    <vendor>Text Technology Lab</vendor>
-    <types>
+      
+  <name>TextTechnologyUrl</name>
+      
+  <description>Typesystem to explicitly specify URI/URL parts.</description>
+      
+  <version>1.0</version>
+      
+  <vendor>Text Technology Lab</vendor>
+      
+  <types>
+        
     <typeDescription>
+            
       <name>org.texttechnologylab.type.id.URI</name>
-      <description/>
+            
+      <description>URI (Uniform Resource Identifier) type</description>
+            
       <supertypeName>uima.tcas.Annotation</supertypeName>
+            
       <features>
+                
         <featureDescription>
+                    
           <name>scheme</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>user</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>password</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>host</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>port</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>path</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>query</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+                
         <featureDescription>
+                    
           <name>fragment</name>
+                    
           <description/>
+                    
           <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
         </featureDescription>
+              
       </features>
+          
     </typeDescription>
+        
     <typeDescription>
+            
       <name>org.texttechnologylab.type.id.URL</name>
-      <description/>
+            
+      <description>URL (Uniform Resource Locator) type</description>
+            
       <supertypeName>org.texttechnologylab.type.id.URI</supertypeName>
+          
     </typeDescription>
+      
   </types>
+  
 </typeSystemDescription>
