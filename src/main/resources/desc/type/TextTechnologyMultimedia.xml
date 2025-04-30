@@ -282,6 +282,26 @@
       </typeDescription>
 
       <typeDescription>
+          <name>org.texttechnologylab.annotation.type.SubImageWithCaptions</name>
+          <supertypeName>org.texttechnologylab.annotation.type.SubImage</supertypeName>
+
+          <features>
+              <featureDescription>
+                  <name>captions</name>
+                  <description>Set of image captions</description>
+                  <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                  <elementType>org.texttechnologylab.annotation.Caption</elementType>
+              </featureDescription>
+              <featureDescription>
+                  <name>captionLanguage</name>
+                  <description/>
+                  <rangeTypeName>uima.cas.String</rangeTypeName>
+              </featureDescription>
+          </features>
+      </typeDescription>
+
+
+      <typeDescription>
           <name>org.texttechnologylab.annotation.Caption</name>
           <description/>
           <supertypeName>uima.tcas.Annotation</supertypeName>
@@ -318,6 +338,7 @@
               </featureDescription>
           </features>
       </typeDescription>
+
       <typeDescription>
           <name>org.texttechnologylab.annotation.type.Coordinate</name>
           <description/>

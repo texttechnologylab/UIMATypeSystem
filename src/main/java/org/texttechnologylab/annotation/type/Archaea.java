@@ -1,24 +1,21 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Apr 22 17:11:16 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed Apr 30 10:59:11 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.texttechnologylab.annotation.NamedEntity;
 
 
-/** 
- * Updated by JCasGen Tue Apr 22 17:11:16 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Wed Apr 30 10:59:11 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Archaea extends NamedEntity {
  

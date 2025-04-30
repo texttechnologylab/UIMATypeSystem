@@ -1,27 +1,25 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Apr 22 17:11:16 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed Apr 30 10:59:11 CEST 2025 */
 
 package org.texttechnologylab.annotation.node.type;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.texttechnologylab.annotation.type.Node;
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
-/** 
- * Updated by JCasGen Tue Apr 22 17:11:16 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+/**
+ * Updated by JCasGen Wed Apr 30 10:59:11 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntityVis extends Node {
  
