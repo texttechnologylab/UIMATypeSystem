@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 05 12:47:44 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -23,19 +23,19 @@ import org.apache.uima.jcas.tcas.Annotation;
  * Updated by JCasGen Mon May 05 12:47:44 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
-public class MultimediaElement extends Annotation {
+public class Video extends Annotation {
  
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.MultimediaElement";
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Video";
   
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(MultimediaElement.class);
+  public final static int typeIndexID = JCasRegistry.register(Video.class);
   /** @generated
    * @ordered 
    */
@@ -52,29 +52,32 @@ public class MultimediaElement extends Annotation {
    *   Feature Offsets *
    * *******************/ 
    
-  public final static String _FeatName_timeStart = "timeStart";
-  public final static String _FeatName_timeEnd = "timeEnd";
+  public final static String _FeatName_src = "src";
+  public final static String _FeatName_length = "length";
+  public final static String _FeatName_fps = "fps";
 
 
   /* Feature Adjusted Offsets */
-  private final static CallSite _FC_timeStart = TypeSystemImpl.createCallSite(MultimediaElement.class, "timeStart");
-  private final static MethodHandle _FH_timeStart = _FC_timeStart.dynamicInvoker();
-  private final static CallSite _FC_timeEnd = TypeSystemImpl.createCallSite(MultimediaElement.class, "timeEnd");
-  private final static MethodHandle _FH_timeEnd = _FC_timeEnd.dynamicInvoker();
+  private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Video.class, "src");
+  private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
+  private final static CallSite _FC_length = TypeSystemImpl.createCallSite(Video.class, "length");
+  private final static MethodHandle _FH_length = _FC_length.dynamicInvoker();
+  private final static CallSite _FC_fps = TypeSystemImpl.createCallSite(Video.class, "fps");
+  private final static MethodHandle _FH_fps = _FC_fps.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
-  protected MultimediaElement() {/* intentionally empty block */}
+  protected Video() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public MultimediaElement(TypeImpl type, CASImpl casImpl) {
+  public Video(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
@@ -82,7 +85,7 @@ public class MultimediaElement extends Annotation {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public MultimediaElement(JCas jcas) {
+  public Video(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -93,7 +96,7 @@ public class MultimediaElement extends Annotation {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public MultimediaElement(JCas jcas, int begin, int end) {
+  public Video(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -112,43 +115,64 @@ public class MultimediaElement extends Annotation {
  
     
   //*--------------*
-  //* Feature: timeStart
+  //* Feature: src
 
-  /** getter for timeStart - gets 
+  /** getter for src - gets path to the video or base64 value
    * @generated
    * @return value of the feature 
    */
-  public float getTimeStart() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_timeStart));
+  public String getSrc() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_src));
   }
     
-  /** setter for timeStart - sets  
+  /** setter for src - sets path to the video or base64 value 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTimeStart(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_timeStart), v);
+  public void setSrc(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
   }    
     
    
     
   //*--------------*
-  //* Feature: timeEnd
+  //* Feature: length
 
-  /** getter for timeEnd - gets 
+  /** getter for length - gets Length of the video in seconds
    * @generated
    * @return value of the feature 
    */
-  public float getTimeEnd() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_timeEnd));
+  public double getLength() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_length));
   }
     
-  /** setter for timeEnd - sets  
+  /** setter for length - sets Length of the video in seconds 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTimeEnd(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_timeEnd), v);
+  public void setLength(double v) {
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_length), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: fps
+
+  /** getter for fps - gets Video fps
+   * @generated
+   * @return value of the feature 
+   */
+  public double getFps() { 
+    return _getDoubleValueNc(wrapGetIntCatchException(_FH_fps));
+  }
+    
+  /** setter for fps - sets Video fps 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setFps(double v) {
+    _setDoubleValueNfc(wrapGetIntCatchException(_FH_fps), v);
   }    
     
   }
