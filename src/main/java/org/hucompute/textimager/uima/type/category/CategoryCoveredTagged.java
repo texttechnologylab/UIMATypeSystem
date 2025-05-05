@@ -1,25 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Apr 30 10:59:11 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
 
 package org.hucompute.textimager.uima.type.category;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.tcas.Annotation;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Wed Apr 30 10:59:11 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.tcas.Annotation;
+
+
+/** Generic "category" type that can be used for e.g. classification results and other categorical data.
+ * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CategoryCoveredTagged extends Annotation {
  
@@ -118,7 +120,7 @@ public class CategoryCoveredTagged extends Annotation {
   //*--------------*
   //* Feature: value
 
-  /** getter for value - gets 
+  /** getter for value - gets String-based value, e.g. a topic name like "politics" or "sports".
    * @generated
    * @return value of the feature 
    */
@@ -126,7 +128,7 @@ public class CategoryCoveredTagged extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_value));
   }
     
-  /** setter for value - sets  
+  /** setter for value - sets String-based value, e.g. a topic name like "politics" or "sports". 
    * @generated
    * @param v value to set into the feature 
    */
@@ -139,7 +141,7 @@ public class CategoryCoveredTagged extends Annotation {
   //*--------------*
   //* Feature: score
 
-  /** getter for score - gets 
+  /** getter for score - gets Score, probability or confidence value for the category set in the "value" field.
    * @generated
    * @return value of the feature 
    */
@@ -147,7 +149,7 @@ public class CategoryCoveredTagged extends Annotation {
     return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));
   }
     
-  /** setter for score - sets  
+  /** setter for score - sets Score, probability or confidence value for the category set in the "value" field. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -160,7 +162,7 @@ public class CategoryCoveredTagged extends Annotation {
   //*--------------*
   //* Feature: tags
 
-  /** getter for tags - gets 
+  /** getter for tags - gets Free-form field for tags, has internally often been used to store model name and version.
    * @generated
    * @return value of the feature 
    */
@@ -168,7 +170,7 @@ public class CategoryCoveredTagged extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_tags));
   }
     
-  /** setter for tags - sets  
+  /** setter for tags - sets Free-form field for tags, has internally often been used to store model name and version. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -181,7 +183,7 @@ public class CategoryCoveredTagged extends Annotation {
   //*--------------*
   //* Feature: ref
 
-  /** getter for ref - gets 
+  /** getter for ref - gets This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results.
    * @generated
    * @return value of the feature 
    */
@@ -189,7 +191,7 @@ public class CategoryCoveredTagged extends Annotation {
     return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ref)));
   }
     
-  /** setter for ref - sets  
+  /** setter for ref - sets This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results. 
    * @generated
    * @param v value to set into the feature 
    */

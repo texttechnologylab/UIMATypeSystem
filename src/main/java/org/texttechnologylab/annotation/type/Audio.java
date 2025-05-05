@@ -3,36 +3,39 @@
    
 /* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
 
-package org.texttechnologylab.type.morphosyn.tag.cond3;
+package org.texttechnologylab.annotation.type;
  
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.texttechnologylab.type.morphosyn.tag.COND3;
+import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+/** This represent an audio in base64
+ * Updated by JCasGen Mon May 05 11:13:04 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/src/main/resources/desc/type/TextTechnologyMultimedia.xml
  * @generated */
-public class COND3DE extends COND3 {
+public class Audio extends Annotation {
  
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.morphosyn.tag.cond3.COND3DE";
+  public final static String _TypeName = "org.texttechnologylab.annotation.type.Audio";
   
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(COND3DE.class);
+  public final static int typeIndexID = JCasRegistry.register(Audio.class);
   /** @generated
    * @ordered 
    */
@@ -49,23 +52,26 @@ public class COND3DE extends COND3 {
    *   Feature Offsets *
    * *******************/ 
    
+  public final static String _FeatName_src = "src";
 
 
   /* Feature Adjusted Offsets */
+  private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Audio.class, "src");
+  private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
    * @generated */
   @Deprecated
   @SuppressWarnings ("deprecation")
-  protected COND3DE() {/* intentionally empty block */}
+  protected Audio() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
    * @param casImpl the CAS this Feature Structure belongs to
    * @param type the type of this Feature Structure 
    */
-  public COND3DE(TypeImpl type, CASImpl casImpl) {
+  public Audio(TypeImpl type, CASImpl casImpl) {
     super(type, casImpl);
     readObject();
   }
@@ -73,7 +79,7 @@ public class COND3DE extends COND3 {
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs 
    */
-  public COND3DE(JCas jcas) {
+  public Audio(JCas jcas) {
     super(jcas);
     readObject();   
   } 
@@ -84,7 +90,7 @@ public class COND3DE extends COND3 {
    * @param begin offset to the begin spot in the SofA
    * @param end offset to the end spot in the SofA 
   */  
-  public COND3DE(JCas jcas, int begin, int end) {
+  public Audio(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -100,6 +106,27 @@ public class COND3DE extends COND3 {
    */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+ 
+    
+  //*--------------*
+  //* Feature: src
+
+  /** getter for src - gets file path or base64 value of the audio
+   * @generated
+   * @return value of the feature 
+   */
+  public String getSrc() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_src));
+  }
+    
+  /** setter for src - sets file path or base64 value of the audio 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSrc(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
+  }    
+    
+  }
 
     

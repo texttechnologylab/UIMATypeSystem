@@ -1,25 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Apr 30 10:59:11 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
 
 package org.texttechnologylab.annotation.administration;
-
-
-import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Wed Apr 30 10:59:11 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
+
+
+/** 
+ * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FinishAnnotation extends DocumentMetaData {
  
