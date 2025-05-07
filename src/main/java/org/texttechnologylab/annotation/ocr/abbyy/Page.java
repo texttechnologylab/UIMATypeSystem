@@ -173,7 +173,7 @@ public class Page extends Div {
   //*--------------*
   //* Feature: uri
 
-  /** getter for uri - gets 
+  /** getter for uri - gets URI of this page, i.e. a Visual Library link.
    * @generated
    * @return value of the feature 
    */
@@ -181,7 +181,7 @@ public class Page extends Div {
     return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
   }
     
-  /** setter for uri - sets  
+  /** setter for uri - sets URI of this page, i.e. a Visual Library link. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -194,7 +194,7 @@ public class Page extends Div {
   //*--------------*
   //* Feature: width
 
-  /** getter for width - gets 
+  /** getter for width - gets The image width in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -202,7 +202,7 @@ public class Page extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_width));
   }
     
-  /** setter for width - sets  
+  /** setter for width - sets The image width in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -215,7 +215,7 @@ public class Page extends Div {
   //*--------------*
   //* Feature: height
 
-  /** getter for height - gets 
+  /** getter for height - gets The image height in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -223,7 +223,7 @@ public class Page extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_height));
   }
     
-  /** setter for height - sets  
+  /** setter for height - sets The image height in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -236,7 +236,7 @@ public class Page extends Div {
   //*--------------*
   //* Feature: resolution
 
-  /** getter for resolution - gets 
+  /** getter for resolution - gets The image resolution in pixels per inch.
    * @generated
    * @return value of the feature 
    */
@@ -244,7 +244,7 @@ public class Page extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));
   }
     
-  /** setter for resolution - sets  
+  /** setter for resolution - sets The image resolution in pixels per inch. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -257,7 +257,8 @@ public class Page extends Div {
   //*--------------*
   //* Feature: rotation
 
-  /** getter for rotation - gets 
+  /** getter for rotation - gets The type of rotation applied to original page image before processing (optional).
+                        It can be one of the following values: Normal, RotatedClockwise, RotatedUpsideDown, RotatedCounterclockwise
    * @generated
    * @return value of the feature 
    */
@@ -265,7 +266,8 @@ public class Page extends Div {
     return _getStringValueNc(wrapGetIntCatchException(_FH_rotation));
   }
     
-  /** setter for rotation - sets  
+  /** setter for rotation - sets The type of rotation applied to original page image before processing (optional).
+                        It can be one of the following values: Normal, RotatedClockwise, RotatedUpsideDown, RotatedCounterclockwise 
    * @generated
    * @param v value to set into the feature 
    */

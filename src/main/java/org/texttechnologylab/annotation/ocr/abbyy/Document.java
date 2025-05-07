@@ -21,6 +21,7 @@ import org.apache.uima.jcas.JCasRegistry;
 /** 
  * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+ 
  * @generated */
 public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Document {
  
@@ -125,7 +126,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: documentName
 
-  /** getter for documentName - gets 
+  /** getter for documentName - gets The name of this document in the XML files.
    * @generated
    * @return value of the feature 
    */
@@ -133,7 +134,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));
   }
     
-  /** setter for documentName - sets  
+  /** setter for documentName - sets The name of this document in the XML files. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -146,7 +147,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: version
 
-  /** getter for version - gets 
+  /** getter for version - gets The version of the source XML files.
    * @generated
    * @return value of the feature 
    */
@@ -154,7 +155,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getStringValueNc(wrapGetIntCatchException(_FH_version));
   }
     
-  /** setter for version - sets  
+  /** setter for version - sets The version of the source XML files. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -167,7 +168,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: producer
 
-  /** getter for producer - gets 
+  /** getter for producer - gets The producer of the source XML files.
    * @generated
    * @return value of the feature 
    */
@@ -175,7 +176,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getStringValueNc(wrapGetIntCatchException(_FH_producer));
   }
     
-  /** setter for producer - sets  
+  /** setter for producer - sets The producer of the source XML files. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -188,7 +189,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: pagesCount
 
-  /** getter for pagesCount - gets 
+  /** getter for pagesCount - gets The number of pages in this document (optional).
    * @generated
    * @return value of the feature 
    */
@@ -196,7 +197,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getIntValueNc(wrapGetIntCatchException(_FH_pagesCount));
   }
     
-  /** setter for pagesCount - sets  
+  /** setter for pagesCount - sets The number of pages in this document (optional). 
    * @generated
    * @param v value to set into the feature 
    */
@@ -209,7 +210,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: mainLanguage
 
-  /** getter for mainLanguage - gets 
+  /** getter for mainLanguage - gets The main language of this document.
    * @generated
    * @return value of the feature 
    */
@@ -217,7 +218,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getStringValueNc(wrapGetIntCatchException(_FH_mainLanguage));
   }
     
-  /** setter for mainLanguage - sets  
+  /** setter for mainLanguage - sets The main language of this document. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -230,7 +231,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   //*--------------*
   //* Feature: languages
 
-  /** getter for languages - gets 
+  /** getter for languages - gets All languages used in this document (optional).
    * @generated
    * @return value of the feature 
    */
@@ -238,7 +239,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     return _getStringValueNc(wrapGetIntCatchException(_FH_languages));
   }
     
-  /** setter for languages - sets  
+  /** setter for languages - sets All languages used in this document (optional). 
    * @generated
    * @param v value to set into the feature 
    */

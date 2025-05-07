@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>GeoNamesTypeSystem</name>
+    <name>BIOfidTypeSystem</name>
     <description/>
-    <version>1.0</version>
+    <version>1.2</version>
     <vendor/>
     <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.Taxon</name>
-            <description/>
+            <description>Base-Type for recognized taxonomic entities.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.MetaData</name>
+            <supertypeName>uima.cas.TOP</supertypeName>
             <features>
+                <featureDescription>
+                    <name>date</name>
+                    <description>The date of running a GNfinder query.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>version</name>
+                    <description>The version of GNfinder.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>language</name>
+                    <description>Indicates the language that was used for calculation of Bayes' odds.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>other</name>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+<!--                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.MetaDataStringField</elementType>-->
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
+                </featureDescription>
+                <featureDescription>
+                    <name>references</name>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+<!--                    <elementType>org.texttechnologylab.annotation.biofid.gnfinder.Taxon</elementType>-->
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.MetaDataKeyValue</name>
+            <supertypeName>uima.cas.TOP</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>key</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
                 <featureDescription>
                     <name>value</name>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
@@ -18,23 +59,14 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.gnfinder.Taxon</name>
-            <description></description>
+            <description>Type for gnfinder-recognized taxonomic names that have not been verified.</description>
             <supertypeName>org.texttechnologylab.annotation.biofid.Taxon</supertypeName>
             <features>
                 <featureDescription>
-                    <name>Version</name>
-                    <description>gnfinder version.</description>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>Language</name>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>Cardinality</name>
+                    <name>cardinality</name>
                     <description>
-                        Cardinality depicts number of elements in a name.
-                        0 - Cannot determine cardinality,
+                        Cardinality depicts the number of elements in a name.
+                        0 - Could not determine cardinality,
                         1 - Uninomial,
                         2 - Binomial,
                         3 - Trinomial.
@@ -42,46 +74,240 @@
                     <rangeTypeName>uima.cas.Short</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
-                    <name>OddsLog10</name>
+                    <name>oddsLog10</name>
                     <description>Log10 of the odds (probability) that name detection was correct.</description>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>oddsDetails</name>
+                    <description>A list of OddsDetails that describe how odds were calculated (optional).</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+<!--                    <elementType>org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails</elementType>-->
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails</name>
+            <supertypeName>uima.cas.TOP</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>feature</name>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>odds</name>
                     <rangeTypeName>uima.cas.Float</rangeTypeName>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon</name>
-            <description/>
-            <supertypeName>org.texttechnologylab.annotation.biofid.Taxon</supertypeName>
+            <description>Type for verified gnfinder-recognized taxonomic names.</description>
+            <supertypeName>org.texttechnologylab.annotation.biofid.gnfinder.Taxon</supertypeName>
             <features>
                 <featureDescription>
-                    <name>Id</name>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>MatchedCanonical</name>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>CurrentCanonical</name>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>VerifMatchType</name>
-                    <rangeTypeName>uima.cas.String</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>VerifSortScore</name>
-                    <rangeTypeName>uima.cas.Float</rangeTypeName>
-                </featureDescription>
-                <featureDescription>
-                    <name>VerifEditDistance</name>
+                    <name>dataSourceId</name>
                     <rangeTypeName>uima.cas.Short</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
-                    <name>VerifMatchedName</name>
+                    <name>recordId</name>
+                    <description>
+                        RecordID from a data source. GNFinder tries its to return ID that corresponds to dwc:taxonID of
+                        a DataSource. If such ID is not provided, this ID will be auto-generated. Auto-generated IDs
+                        will have 'gn_' prefix.
+                    </description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
+                <featureDescription>
+                    <name>globalId</name>
+                    <description>
+                        GlobalID that is exposed globally by a DataSource. Such IDs are usually self-resolved, like for
+                        example LSID, pURL, DOI etc.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>localId</name>
+                    <description>
+                        LocalID used by a DataSource internally. If an OutLink field is provided, LocalID serves as a
+                        'dynamic' component of the URL.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>outlink</name>
+                    <description>
+                        Outlink to the record in the DataSource. It consists of a 'stable' URL and an appended 'dynamic'
+                        LocalID
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>sortScore</name>
+                    <description>
+                        SortScore is a numeric representation of the whole score. It can be used to find the BestMatch
+                        overall, as well as the best match for every data-source.
+
+                        SortScore takes data from all other scores, using the priority sequence from highest to lowest:
+                        InfraSpecificRankScore, FuzzyLessScore, CuratedDataScore, AuthorMatchScore, AcceptedNameScore,
+                        ParsingQualityScore. Every highest priority trumps everything below. When the final score value
+                        is calculated, it is used to sort verification or search results.
+
+                        Comparing this score between results of different verifications will not necessarily be
+                        accurate. The score is used for comparison of names from the same result.
+                    </description>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>matchedName</name>
+                    <description>
+                        The name-string from the DataSource that was matched by GNames algorithm.
+                        Often contains the author names.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>matchedCanonicalSimple</name>
+                    <description>
+                        A simplified canonical form without ranks for names lower than species, and with omitted hybrid
+                        signs for named hybrids. Quite often simple canonical is the same as full canonical. Hybrid
+                        signs are preserved for hybrid formulas.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>matchedCanonicalFull</name>
+                    <description>A canonical form of the name that preserves hybrid signs and infraspecific ranks.
+                    </description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>taxonomicStatus</name>
+                    <description>Provides taxonomic status of a name. Can be "Accepted", "Synonym", "N/A".</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.biofid.gnfinder.TaxonomicStatus</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>currentName</name>
+                    <description>The currently accepted name, present if it differs from the matchedName.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>matchType</name>
+                    <description></description>
+                    <rangeTypeName>org.texttechnologylab.annotation.biofid.gnfinder.MatchType</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>editDistance</name>
+                    <description>
+                        The Levenshtein edit distance between canonical form of the input name-string and the matched
+                        canonical form. If match type is EXACT, edit-distance will be 0.
+                    </description>
+                    <rangeTypeName>uima.cas.Short</rangeTypeName>
+                </featureDescription>
             </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.TaxonomicStatus</name>
+            <supertypeName>uima.cas.String</supertypeName>
+            <allowedValues>
+                <value>
+                    <string>N/A</string>
+                </value>
+                <value>
+                    <string>Accepted</string>
+                </value>
+                <value>
+                    <string>Synonym</string>
+                </value>
+            </allowedValues>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.biofid.gnfinder.MatchType</name>
+            <supertypeName>uima.cas.String</supertypeName>
+            <allowedValues>
+                <value>
+                    <string>NoMatch</string>
+                    <description>NoMatch means that matching failed.</description>
+                </value>
+                <value>
+                    <string>PartialExact</string>
+                    <description>
+                        PartialExact used if GNames failed to match full name string. Now the match happened by removing
+                        either middle species epithets, or by choppping the 'tail' words of the input name-string
+                        canonical form.
+                    </description>
+                </value>
+                <value>
+                    <string>PartialFuzzy</string>
+                    <description>
+                        PartialFuzzy is the same as PartialExact, but also the match was not exact. gnfinder never does
+                        fuzzy matches for uninomials, due to high rate of false positives.
+                    </description>
+                </value>
+                <value>
+                    <string>PartialFuzzyRelaxed</string>
+                    <description>
+                        PartialFuzzyRelaxed is the same as PartialFuzzy, but the fuzzy match rules were relaxed. This
+                        brings more false positives, but also more matches.
+                    </description>
+                </value>
+                <value>
+                    <string>Fuzzy</string>
+                    <description>
+                        Fuzzy means that matches were not exact due to similarity of name-strings, OCR or typing errors.
+                        Take these results with more suspition than Exact matches. Fuzzy match is never done on
+                        uninomials due to the high rate of false positives.
+                    </description>
+                </value>
+                <value>
+                    <string>FuzzyRelaxed</string>
+                    <description>
+                        FuzzyRelaxed is the same as Fuzzy, but the fuzzy match rules were relaxed. This brings more
+                        false positives, but also more matches.
+                    </description>
+                </value>
+                <value>
+                    <string>FuzzySpeciesGroup</string>
+                    <description>
+                        FuzzySpeciesGroup means that match happened not with the name, but with either an autonym
+                        (botany)/coordinated name (zoology) of species, or binomial part of a trinomial.
+                    </description>
+                </value>
+                <value>
+                    <string>FuzzySpeciesGroupRelaxed</string>
+                    <description>
+                        FuzzySpeciesGroupRelaxed is the same as FuzzySpeciesGroup, but the fuzzy match rules were
+                        relaxed. This brings more false positives, but also more matches.
+                    </description>
+                </value>
+                <value>
+                    <string>Exact</string>
+                    <description>
+                        Exact means either canonical form, or the whole name-string matched perfectly.
+                    </description>
+                </value>
+                <value>
+                    <string>ExactSpeciesGroup</string>
+                    <description>
+                        ExactSpeciesGroup means that match happened not with the name, but with either an autonym
+                        (botany)/coordinated name (zoology) of species, or binomial part of a trinomial.
+                    </description>
+                </value>
+                <value>
+                    <string>Virus</string>
+                    <description>
+                        Virus names are matched in the database. `Virus` is a wide term and includes a variety of
+                        non-cellular terms (virus, prion, plasmid, vector etc.)
+                    </description>
+                </value>
+                <value>
+                    <string>FacetedSearch</string>
+                    <description>
+                        FacetedSearch is a match made by search procedure. It does not happen during verification.
+                    </description>
+                </value>
+            </allowedValues>
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.gazetteer.Taxon</name>

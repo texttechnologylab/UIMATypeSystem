@@ -122,7 +122,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   //*--------------*
   //* Feature: leftIndent
 
-  /** getter for leftIndent - gets 
+  /** getter for leftIndent - gets The left paragraph indent (optional, default value is 0)
    * @generated
    * @return value of the feature 
    */
@@ -130,7 +130,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
     return _getIntValueNc(wrapGetIntCatchException(_FH_leftIndent));
   }
     
-  /** setter for leftIndent - sets  
+  /** setter for leftIndent - sets The left paragraph indent (optional, default value is 0) 
    * @generated
    * @param v value to set into the feature 
    */
@@ -143,7 +143,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   //*--------------*
   //* Feature: rightIndent
 
-  /** getter for rightIndent - gets 
+  /** getter for rightIndent - gets The right paragraph indent (optional, default value is 0)
    * @generated
    * @return value of the feature 
    */
@@ -151,7 +151,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
     return _getIntValueNc(wrapGetIntCatchException(_FH_rightIndent));
   }
     
-  /** setter for rightIndent - sets  
+  /** setter for rightIndent - sets The right paragraph indent (optional, default value is 0) 
    * @generated
    * @param v value to set into the feature 
    */
@@ -164,7 +164,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   //*--------------*
   //* Feature: startIndent
 
-  /** getter for startIndent - gets 
+  /** getter for startIndent - gets The indent of the first line of the paragraph optional,default value is 0)
    * @generated
    * @return value of the feature 
    */
@@ -172,7 +172,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
     return _getIntValueNc(wrapGetIntCatchException(_FH_startIndent));
   }
     
-  /** setter for startIndent - sets  
+  /** setter for startIndent - sets The indent of the first line of the paragraph optional,default value is 0) 
    * @generated
    * @param v value to set into the feature 
    */
@@ -185,7 +185,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   //*--------------*
   //* Feature: lineSpacing
 
-  /** getter for lineSpacing - gets 
+  /** getter for lineSpacing - gets The spacing between lines (optional, default value is 0)
    * @generated
    * @return value of the feature 
    */
@@ -193,7 +193,7 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
     return _getIntValueNc(wrapGetIntCatchException(_FH_lineSpacing));
   }
     
-  /** setter for lineSpacing - sets  
+  /** setter for lineSpacing - sets The spacing between lines (optional, default value is 0) 
    * @generated
    * @param v value to set into the feature 
    */
@@ -206,7 +206,8 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
   //*--------------*
   //* Feature: alignment
 
-  /** getter for alignment - gets 
+  /** getter for alignment - gets The paragraph alignment (optional, default value is Left).
+                        It can be one of the following values: Left, Center, Right, Justified
    * @generated
    * @return value of the feature 
    */
@@ -214,7 +215,8 @@ public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.ty
     return _getStringValueNc(wrapGetIntCatchException(_FH_alignment));
   }
     
-  /** setter for alignment - sets  
+  /** setter for alignment - sets The paragraph alignment (optional, default value is Left).
+                        It can be one of the following values: Left, Center, Right, Justified 
    * @generated
    * @param v value to set into the feature 
    */

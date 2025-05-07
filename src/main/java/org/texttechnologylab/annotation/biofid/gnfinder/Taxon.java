@@ -16,11 +16,14 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
+import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
  * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+
  * @generated */
 public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
  
@@ -51,21 +54,18 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    *   Feature Offsets *
    * *******************/ 
    
-  public final static String _FeatName_Version = "Version";
-  public final static String _FeatName_Language = "Language";
-  public final static String _FeatName_Cardinality = "Cardinality";
-  public final static String _FeatName_OddsLog10 = "OddsLog10";
+  public final static String _FeatName_cardinality = "cardinality";
+  public final static String _FeatName_oddsLog10 = "oddsLog10";
+  public final static String _FeatName_oddsDetails = "oddsDetails";
 
 
   /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Version = TypeSystemImpl.createCallSite(Taxon.class, "Version");
-  private final static MethodHandle _FH_Version = _FC_Version.dynamicInvoker();
-  private final static CallSite _FC_Language = TypeSystemImpl.createCallSite(Taxon.class, "Language");
-  private final static MethodHandle _FH_Language = _FC_Language.dynamicInvoker();
-  private final static CallSite _FC_Cardinality = TypeSystemImpl.createCallSite(Taxon.class, "Cardinality");
-  private final static MethodHandle _FH_Cardinality = _FC_Cardinality.dynamicInvoker();
-  private final static CallSite _FC_OddsLog10 = TypeSystemImpl.createCallSite(Taxon.class, "OddsLog10");
-  private final static MethodHandle _FH_OddsLog10 = _FC_OddsLog10.dynamicInvoker();
+  private final static CallSite _FC_cardinality = TypeSystemImpl.createCallSite(Taxon.class, "cardinality");
+  private final static MethodHandle _FH_cardinality = _FC_cardinality.dynamicInvoker();
+  private final static CallSite _FC_oddsLog10 = TypeSystemImpl.createCallSite(Taxon.class, "oddsLog10");
+  private final static MethodHandle _FH_oddsLog10 = _FC_oddsLog10.dynamicInvoker();
+  private final static CallSite _FC_oddsDetails = TypeSystemImpl.createCallSite(Taxon.class, "oddsDetails");
+  private final static MethodHandle _FH_oddsDetails = _FC_oddsDetails.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -117,52 +117,10 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
  
     
   //*--------------*
-  //* Feature: Version
+  //* Feature: cardinality
 
-  /** getter for Version - gets gnfinder version.
-   * @generated
-   * @return value of the feature 
-   */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Version));
-  }
-    
-  /** setter for Version - sets gnfinder version. 
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setVersion(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Version), v);
-  }    
-    
-   
-    
-  //*--------------*
-  //* Feature: Language
-
-  /** getter for Language - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public String getLanguage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Language));
-  }
-    
-  /** setter for Language - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setLanguage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Language), v);
-  }    
-    
-   
-    
-  //*--------------*
-  //* Feature: Cardinality
-
-  /** getter for Cardinality - gets Cardinality depicts number of elements in a name.
-                        0 - Cannot determine cardinality,
+  /** getter for cardinality - gets Cardinality depicts the number of elements in a name.
+                        0 - Could not determine cardinality,
                         1 - Uninomial,
                         2 - Binomial,
                         3 - Trinomial.
@@ -170,11 +128,11 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @return value of the feature 
    */
   public short getCardinality() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_Cardinality));
+    return _getShortValueNc(wrapGetIntCatchException(_FH_cardinality));
   }
     
-  /** setter for Cardinality - sets Cardinality depicts number of elements in a name.
-                        0 - Cannot determine cardinality,
+  /** setter for cardinality - sets Cardinality depicts the number of elements in a name.
+                        0 - Could not determine cardinality,
                         1 - Uninomial,
                         2 - Binomial,
                         3 - Trinomial. 
@@ -182,30 +140,72 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @param v value to set into the feature 
    */
   public void setCardinality(short v) {
-    _setShortValueNfc(wrapGetIntCatchException(_FH_Cardinality), v);
+    _setShortValueNfc(wrapGetIntCatchException(_FH_cardinality), v);
   }    
     
    
     
   //*--------------*
-  //* Feature: OddsLog10
+  //* Feature: oddsLog10
 
-  /** getter for OddsLog10 - gets Log10 of the odds (probability) that name detection was correct.
+  /** getter for oddsLog10 - gets Log10 of the odds (probability) that name detection was correct.
    * @generated
    * @return value of the feature 
    */
   public float getOddsLog10() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_OddsLog10));
+    return _getFloatValueNc(wrapGetIntCatchException(_FH_oddsLog10));
   }
     
-  /** setter for OddsLog10 - sets Log10 of the odds (probability) that name detection was correct. 
+  /** setter for oddsLog10 - sets Log10 of the odds (probability) that name detection was correct. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setOddsLog10(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_OddsLog10), v);
+    _setFloatValueNfc(wrapGetIntCatchException(_FH_oddsLog10), v);
   }    
     
+   
+    
+  //*--------------*
+  //* Feature: oddsDetails
+
+  /** getter for oddsDetails - gets A list of OddsDetails that describe how odds were calculated (optional).
+   * @generated
+   * @return value of the feature 
+   */
+  @SuppressWarnings("unchecked")
+  public FSArray<TOP> getOddsDetails() { 
+    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)));
+  }
+    
+  /** setter for oddsDetails - sets A list of OddsDetails that describe how odds were calculated (optional). 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setOddsDetails(FSArray<TOP> v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_oddsDetails), v);
+  }    
+    
+    
+  /** indexed getter for oddsDetails - gets an indexed value - A list of OddsDetails that describe how odds were calculated (optional).
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  @SuppressWarnings("unchecked")
+  public TOP getOddsDetails(int i) {
+     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).get(i));
+  } 
+
+  /** indexed setter for oddsDetails - sets an indexed value - A list of OddsDetails that describe how odds were calculated (optional).
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  @SuppressWarnings("unchecked")
+    public void setOddsDetails(int i, TOP v) {
+    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).set(i, v);
+  }  
   }
 
     

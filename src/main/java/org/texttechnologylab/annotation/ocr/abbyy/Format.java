@@ -2,7 +2,6 @@
 
    
 /* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
-
 package org.texttechnologylab.annotation.ocr.abbyy;
  
 
@@ -138,7 +137,7 @@ public class Format extends Annotation {
   //*--------------*
   //* Feature: lang
 
-  /** getter for lang - gets 
+  /** getter for lang - gets Name of the language.
    * @generated
    * @return value of the feature 
    */
@@ -146,7 +145,7 @@ public class Format extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_lang));
   }
     
-  /** setter for lang - sets  
+  /** setter for lang - sets Name of the language. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -159,7 +158,7 @@ public class Format extends Annotation {
   //*--------------*
   //* Feature: ff
 
-  /** getter for ff - gets 
+  /** getter for ff - gets The name of the font.
    * @generated
    * @return value of the feature 
    */
@@ -167,7 +166,7 @@ public class Format extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_ff));
   }
     
-  /** setter for ff - sets  
+  /** setter for ff - sets The name of the font. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -180,7 +179,7 @@ public class Format extends Annotation {
   //*--------------*
   //* Feature: fs
 
-  /** getter for fs - gets 
+  /** getter for fs - gets The size of the font.
    * @generated
    * @return value of the feature 
    */
@@ -188,7 +187,7 @@ public class Format extends Annotation {
     return _getFloatValueNc(wrapGetIntCatchException(_FH_fs));
   }
     
-  /** setter for fs - sets  
+  /** setter for fs - sets The size of the font. 
    * @generated
    * @param v value to set into the feature 
    */
