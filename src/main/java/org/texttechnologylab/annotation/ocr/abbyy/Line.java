@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 11:41:41 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
  
@@ -18,9 +18,9 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 
-/** 
- * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+/** Line of a paragraph.
+ * Updated by JCasGen Wed May 07 11:41:41 CEST 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Line extends StructuralElement {
  
@@ -113,7 +113,7 @@ public class Line extends StructuralElement {
   //*--------------*
   //* Feature: baseline
 
-  /** getter for baseline - gets 
+  /** getter for baseline - gets The distance from the baseline to the top edge of the page, in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -121,7 +121,7 @@ public class Line extends StructuralElement {
     return _getIntValueNc(wrapGetIntCatchException(_FH_baseline));
   }
     
-  /** setter for baseline - sets  
+  /** setter for baseline - sets The distance from the baseline to the top edge of the page, in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -134,7 +134,7 @@ public class Line extends StructuralElement {
   //*--------------*
   //* Feature: format
 
-  /** getter for format - gets 
+  /** getter for format - gets If present, this line denotes a group of characters with uniform formatting.
    * @generated
    * @return value of the feature 
    */
@@ -142,7 +142,7 @@ public class Line extends StructuralElement {
     return (Format)(_getFeatureValueNc(wrapGetIntCatchException(_FH_format)));
   }
     
-  /** setter for format - sets  
+  /** setter for format - sets If present, this line denotes a group of characters with uniform formatting. 
    * @generated
    * @param v value to set into the feature 
    */
