@@ -404,6 +404,16 @@
           <rangeTypeName>uima.cas.String</rangeTypeName>
                   
         </featureDescription>
+                
+        <featureDescription>
+                    
+          <name>mimetype</name>
+                    
+          <description/>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
               
       </features>
           
@@ -446,6 +456,16 @@
           <description>Video fps</description>
                     
           <rangeTypeName>uima.cas.Double</rangeTypeName>
+                  
+        </featureDescription>
+                
+        <featureDescription>
+                    
+          <name>mimetype</name>
+                    
+          <description/>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
                   
         </featureDescription>
               

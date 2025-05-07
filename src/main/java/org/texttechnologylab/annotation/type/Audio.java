@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** This represent an audio in base64
- * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
+ * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Audio extends Annotation {
@@ -53,11 +53,14 @@ public class Audio extends Annotation {
    * *******************/ 
    
   public final static String _FeatName_src = "src";
+  public final static String _FeatName_mimetype = "mimetype";
 
 
   /* Feature Adjusted Offsets */
   private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Audio.class, "src");
   private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
+  private final static CallSite _FC_mimetype = TypeSystemImpl.createCallSite(Audio.class, "mimetype");
+  private final static MethodHandle _FH_mimetype = _FC_mimetype.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -125,6 +128,27 @@ public class Audio extends Annotation {
    */
   public void setSrc(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: mimetype
+
+  /** getter for mimetype - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getMimetype() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));
+  }
+    
+  /** setter for mimetype - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setMimetype(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
   }    
     
   }

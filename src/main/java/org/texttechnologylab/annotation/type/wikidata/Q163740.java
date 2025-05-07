@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
 
 package org.texttechnologylab.annotation.type.wikidata;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** nonprofit organization
- * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
+ * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Q163740 extends NamedEntity {

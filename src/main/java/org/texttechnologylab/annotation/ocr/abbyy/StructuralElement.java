@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
  
@@ -19,8 +19,8 @@ import org.apache.uima.jcas.JCasRegistry;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div;
 
 
-/** 
- * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
+/** Meta-Type for structural elements with pixel offsets in the ABBYY FineReader schema.
+ * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StructuralElement extends Div {

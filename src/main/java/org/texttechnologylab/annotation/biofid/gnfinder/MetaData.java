@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Apr 23 17:40:09 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Wed Apr 23 17:40:09 CEST 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends TOP {
  
