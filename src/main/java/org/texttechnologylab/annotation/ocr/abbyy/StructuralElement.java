@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 11:41:41 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div;
 
 
-/** 
- * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+/** Meta-Type for structural elements with pixel offsets in the ABBYY FineReader schema.
+ * Updated by JCasGen Wed May 07 11:41:41 CEST 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StructuralElement extends Div {
  
@@ -120,7 +120,7 @@ public class StructuralElement extends Div {
   //*--------------*
   //* Feature: top
 
-  /** getter for top - gets 
+  /** getter for top - gets Coordinate of the top border, in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -128,7 +128,7 @@ public class StructuralElement extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_top));
   }
     
-  /** setter for top - sets  
+  /** setter for top - sets Coordinate of the top border, in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -141,7 +141,7 @@ public class StructuralElement extends Div {
   //*--------------*
   //* Feature: bottom
 
-  /** getter for bottom - gets 
+  /** getter for bottom - gets Coordinate of the bottom border, in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -149,7 +149,7 @@ public class StructuralElement extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));
   }
     
-  /** setter for bottom - sets  
+  /** setter for bottom - sets Coordinate of the bottom border, in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -162,7 +162,7 @@ public class StructuralElement extends Div {
   //*--------------*
   //* Feature: left
 
-  /** getter for left - gets 
+  /** getter for left - gets Coordinate of the left border, in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -170,7 +170,7 @@ public class StructuralElement extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_left));
   }
     
-  /** setter for left - sets  
+  /** setter for left - sets Coordinate of the left border, in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
@@ -183,7 +183,7 @@ public class StructuralElement extends Div {
   //*--------------*
   //* Feature: right
 
-  /** getter for right - gets 
+  /** getter for right - gets Coordinate of the right border, in pixels.
    * @generated
    * @return value of the feature 
    */
@@ -191,7 +191,7 @@ public class StructuralElement extends Div {
     return _getIntValueNc(wrapGetIntCatchException(_FH_right));
   }
     
-  /** setter for right - sets  
+  /** setter for right - sets Coordinate of the right border, in pixels. 
    * @generated
    * @param v value to set into the feature 
    */

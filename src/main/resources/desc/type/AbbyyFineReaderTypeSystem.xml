@@ -9,38 +9,38 @@
     <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.StructuralElement</name>
-            <description/>
+            <description>Meta-Type for structural elements with pixel offsets in the ABBYY FineReader schema.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>top</name>
-                    <description/>
+                    <description>Coordinate of the top border, in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>bottom</name>
-                    <description/>
+                    <description>Coordinate of the bottom border, in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>left</name>
-                    <description/>
+                    <description>Coordinate of the left border, in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>right</name>
-                    <description/>
+                    <description>Coordinate of the right border, in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Block</name>
-            <description/>
+            <description>A recognized block.</description>
             <supertypeName>org.texttechnologylab.annotation.ocr.abbyy.StructuralElement</supertypeName>
 
             <features>
@@ -59,7 +59,7 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.BlockType</name>
-            <description/>
+            <description>The type of a block. It can be one of the following values: Text, Table, Picture, Barcode, Separator, SeparatorsBox, Checkmark, GroupCheckmark</description>
             <supertypeName>uima.cas.String</supertypeName>
 
             <allowedValues>
@@ -91,56 +91,61 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Line</name>
-            <description/>
+            <description>Line of a paragraph.</description>
             <supertypeName>org.texttechnologylab.annotation.ocr.abbyy.StructuralElement</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>baseline</name>
-                    <description/>
+                    <description>The distance from the baseline to the top edge of the page, in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>format</name>
-                    <description/>
+                    <description>
+                        If present, this line denotes a group of characters with uniform formatting.
+                    </description>
                     <rangeTypeName>org.texttechnologylab.annotation.ocr.abbyy.Format</rangeTypeName>
                 </featureDescription>
             </features>
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Paragraph</name>
-            <description/>
+            <description>Paragraph of a recognized text.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Paragraph</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>leftIndent</name>
-                    <description/>
+                    <description>The left paragraph indent (optional, default value is 0)</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>rightIndent</name>
-                    <description/>
+                    <description>The right paragraph indent (optional, default value is 0)</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>startIndent</name>
-                    <description/>
+                    <description>The indent of the first line of the paragraph optional,default value is 0)</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>lineSpacing</name>
-                    <description/>
+                    <description>The spacing between lines (optional, default value is 0)</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>alignment</name>
-                    <description/>
+                    <description>
+                        The paragraph alignment (optional, default value is Left).
+                        It can be one of the following values: Left, Center, Right, Justified
+                    </description>
                     <rangeTypeName>org.texttechnologylab.annotation.ocr.abbyy.ParagraphAlignment</rangeTypeName>
                 </featureDescription>
             </features>
@@ -165,25 +170,25 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Format</name>
-            <description/>
+            <description>Attributes of a line with uniform formatting.</description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>lang</name>
-                    <description/>
+                    <description>Name of the language.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>ff</name>
-                    <description/>
+                    <description>The name of the font.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>fs</name>
-                    <description/>
+                    <description>The size of the font.</description>
                     <rangeTypeName>uima.cas.Float</rangeTypeName>
                 </featureDescription>
 
@@ -232,56 +237,69 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Token</name>
-            <description/>
+            <description>Token type that denotes recognized words.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>subTokenList</name>
-                    <description/>
+                    <description>Present if a linebreak hyphen was recognized, contains the individual words.</description>
                     <rangeTypeName>uima.cas.StringList</rangeTypeName>
                     <multipleReferencesAllowed>false</multipleReferencesAllowed>
                 </featureDescription>
 
                 <featureDescription>
                     <name>isWordFromDictionary</name>
-                    <description/>
+                    <description>Specifies whether the word was found in the ABBYY FineReader dictionary.</description>
                     <rangeTypeName>uima.cas.Boolean</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>isWordNormal</name>
-                    <description/>
+                    <description>
+                        Specifies whether the word was recognized with either a standard or user-defined language,
+                        and that it is not a number or an identifier.
+                    </description>
                     <rangeTypeName>uima.cas.Boolean</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>isWordNumeric</name>
-                    <description/>
+                    <description>Specifies whether the word is a number</description>
                     <rangeTypeName>uima.cas.Boolean</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>containsHyphen</name>
-                    <description/>
+                    <description>Specifies if the word contains a recognized linebreak hyphen.</description>
                     <rangeTypeName>uima.cas.Boolean</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>suspiciousChars</name>
-                    <description/>
+                    <description>The number of characters that were recognized uncertainly.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>minCharConfidence</name>
-                    <description/>
+                    <description>
+                        The minimum character recognition confidence of all characters in this word.
+                        Use with caution, as these numbers are not guaranteed to be positive and, according to the
+                        ABBYY FineReader documentation, the only meaningful use of confidence is to compare different
+                        recognition variants of the same character.
+                    </description>
                     <rangeTypeName>uima.cas.Short</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>meanCharConfidence</name>
-                    <description/>
+                    <description>
+                        The average character recognition confidence of all characters in this word.
+                        Use with caution, as these numbers are not guaranteed to be positive and, according to the
+                        ABBYY FineReader documentation, the only meaningful use of confidence is to compare different
+                        recognition variants of the same character.
+                    </description>
                     <rangeTypeName>uima.cas.Float</rangeTypeName>
                 </featureDescription>
             </features>
@@ -308,27 +326,30 @@
                 </featureDescription>
                 <featureDescription>
                     <name>uri</name>
-                    <description/>
+                    <description>URI of this page, i.e. a Visual Library link.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>width</name>
-                    <description/>
+                    <description>The image width in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>height</name>
-                    <description/>
+                    <description>The image height in pixels.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>resolution</name>
-                    <description/>
+                    <description>The image resolution in pixels per inch.</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
                     <name>rotation</name>
-                    <description/>
+                    <description>
+                        The type of rotation applied to original page image before processing (optional).
+                        It can be one of the following values: Normal, RotatedClockwise, RotatedUpsideDown, RotatedCounterclockwise
+                    </description>
                     <rangeTypeName>org.texttechnologylab.annotation.ocr.abbyy.Orientation</rangeTypeName>
                 </featureDescription>
             </features>
@@ -345,38 +366,43 @@
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.ocr.abbyy.Document</name>
-            <description/>
+            <description>Document metadata.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Document</supertypeName>
 
             <features>
                 <featureDescription>
                     <name>documentName</name>
-                    <description/>
+                    <description>The name of this document in the XML files.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>version</name>
+                    <description>The version of the source XML files.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>producer</name>
+                    <description>The producer of the source XML files.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>pagesCount</name>
+                    <description>The number of pages in this document (optional).</description>
                     <rangeTypeName>uima.cas.Integer</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>mainLanguage</name>
+                    <description>The main language of this document.</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
                 <featureDescription>
                     <name>languages</name>
+                    <description>All languages used in this document (optional).</description>
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
             </features>
