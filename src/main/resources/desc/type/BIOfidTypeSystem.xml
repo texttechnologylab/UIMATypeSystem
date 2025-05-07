@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>GeoNamesTypeSystem</name>
+    <name>BIOfidTypeSystem</name>
     <description/>
-    <version>1.1</version>
+    <version>1.2</version>
     <vendor/>
     <types>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.Taxon</name>
             <description>Base-Type for recognized taxonomic entities.</description>
             <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity</supertypeName>
-<!--            <features>-->
-<!--                <featureDescription>-->
-<!--                    <name>value</name>-->
-<!--                    <rangeTypeName>uima.cas.String</rangeTypeName>-->
-<!--                </featureDescription>-->
-<!--            </features>-->
         </typeDescription>
         <typeDescription>
             <name>org.texttechnologylab.annotation.biofid.gnfinder.MetaData</name>
@@ -39,12 +33,13 @@
                     <name>other</name>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 <!--                    <elementType>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.MetaDataStringField</elementType>-->
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
                 </featureDescription>
                 <featureDescription>
                     <name>references</name>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 <!--                    <elementType>org.texttechnologylab.annotation.biofid.gnfinder.Taxon</elementType>-->
-                    <multipleReferencesAllowed>false</multipleReferencesAllowed>
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
                 </featureDescription>
             </features>
         </typeDescription>
@@ -88,6 +83,7 @@
                     <description>A list of OddsDetails that describe how odds were calculated (optional).</description>
                     <rangeTypeName>uima.cas.FSArray</rangeTypeName>
 <!--                    <elementType>org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails</elementType>-->
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
                 </featureDescription>
             </features>
         </typeDescription>
