@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Apr 30 10:59:11 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
 
 package org.hucompute.textimager.uima.type;
  
@@ -20,9 +20,9 @@ import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/**
- * Updated by JCasGen Wed Apr 30 10:59:11 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** 
+ * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaInformation extends Annotation {
  
