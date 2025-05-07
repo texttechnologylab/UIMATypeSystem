@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
 
 package org.texttechnologylab.type.morphosyn.tag;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.type.morphosyn.MorphosynTag;
 
 
 /** 
- * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
+ * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
  * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RETR extends MorphosynTag {
