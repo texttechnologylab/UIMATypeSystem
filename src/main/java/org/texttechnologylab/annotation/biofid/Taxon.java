@@ -1,17 +1,14 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 05 11:13:03 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 11:27:43 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid;
  
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
@@ -19,9 +16,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
 
 
-/** 
- * Updated by JCasGen Mon May 05 11:13:03 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+/** Base-Type for recognized taxonomic entities.
+ * Updated by JCasGen Wed May 07 11:27:43 CEST 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Taxon extends NamedEntity {
  
@@ -52,12 +49,9 @@ public class Taxon extends NamedEntity {
    *   Feature Offsets *
    * *******************/ 
    
-  public final static String _FeatName_value = "value";
 
 
   /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Taxon.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -106,27 +100,6 @@ public class Taxon extends NamedEntity {
    */
   private void readObject() {/*default - does nothing empty block */}
      
- 
-    
-  //*--------------*
-  //* Feature: value
-
-  /** getter for value - gets 
-   * @generated
-   * @return value of the feature 
-   */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
-    
-  /** setter for value - sets  
-   * @generated
-   * @param v value to set into the feature 
-   */
-  public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
-  }
+}
 
     
