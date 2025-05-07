@@ -1,24 +1,21 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid;
- 
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas; 
-import org.apache.uima.jcas.JCasRegistry;
 
 
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Base-Type for recognized taxonomic entities.
- * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Taxon extends NamedEntity {
  

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
  
@@ -20,9 +20,9 @@ import org.texttechnologylab.annotation.semaf.isobase.Entity;
 import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
-/** 
- * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Motion extends Event {
  

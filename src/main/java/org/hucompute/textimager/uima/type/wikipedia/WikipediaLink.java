@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
 
 package org.hucompute.textimager.uima.type.wikipedia;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.cas.StringArray;
 
 
 /** Wikipedia link
- * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink {
  

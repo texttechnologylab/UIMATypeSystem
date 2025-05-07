@@ -1,29 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 16:38:29 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
 
 package org.texttechnologylab.annotation;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
-import org.texttechnologylab.annotation.model.MetaData;
-import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.jcas.cas.AnnotationBase;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.texttechnologylab.annotation.model.MetaData;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
 /** Complexity Output
- * Updated by JCasGen Wed May 07 16:38:29 CEST 2025
- * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Complexity extends AnnotationBase {
  
