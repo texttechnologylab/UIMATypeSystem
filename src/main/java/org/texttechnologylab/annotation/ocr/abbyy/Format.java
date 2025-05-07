@@ -1,8 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 11:41:41 CEST 2025 */
-
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
 package org.texttechnologylab.annotation.ocr.abbyy;
  
 
@@ -19,9 +18,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Attributes of a line with uniform formatting.
- * Updated by JCasGen Wed May 07 11:41:41 CEST 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** 
+ * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Format extends Annotation {
  

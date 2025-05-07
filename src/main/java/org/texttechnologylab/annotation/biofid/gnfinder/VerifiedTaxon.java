@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 11:27:43 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed May 07 15:57:08 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
  
@@ -18,9 +18,9 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 
-/** Type for verified gnfinder-recognized taxonomic names.
- * Updated by JCasGen Wed May 07 11:27:43 CEST 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** 
+ * Updated by JCasGen Wed May 07 15:57:08 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VerifiedTaxon extends Taxon {
  

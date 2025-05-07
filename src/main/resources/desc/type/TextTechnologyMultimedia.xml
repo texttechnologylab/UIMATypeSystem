@@ -408,6 +408,50 @@
       </features>
           
     </typeDescription>
+        
+    <typeDescription>
+            
+      <name>org.texttechnologylab.annotation.type.Video</name>
+            
+      <description/>
+            
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+            
+      <features>
+                
+        <featureDescription>
+                    
+          <name>src</name>
+                    
+          <description>path to the video or base64 value</description>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+                
+        <featureDescription>
+                    
+          <name>length</name>
+                    
+          <description>Length of the video in seconds</description>
+                    
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                  
+        </featureDescription>
+                
+        <featureDescription>
+                    
+          <name>fps</name>
+                    
+          <description>Video fps</description>
+                    
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                  
+        </featureDescription>
+              
+      </features>
+          
+    </typeDescription>
   </types>
   
 </typeSystemDescription>
