@@ -1,21 +1,24 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon May 12 10:32:10 CEST 2025 */
 
 package org.texttechnologylab.annotation.type.wikidata;
+ 
 
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
+
+
 import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** company
- * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Mon May 12 10:32:10 CEST 2025
+ * XML source: /home/staff_homes/aabusale/LocalUIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Q783794 extends NamedEntity {
  
