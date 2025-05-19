@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemFactChecking</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMSystemPrompt</name>
+            <description>
+                System Prompt for LLM
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>System Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMPrefixPrompt</name>
+            <description>
+               Prefix Prompt for LLM
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>Prefix before the Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMSuffixPrompt</name>
+            <description>
+                Suffix Prompt for LLM
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>Suffix before the Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMPrompt</name>
+            <description>
+                Prompt for LLM with the input text
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>prompt</name>
+
+                    <description>Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>prefix</name>
+
+                    <description>Prefix of the Prompt</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMPrefixPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>suffix</name>
+
+                    <description>Suffix after the Prompt for the LLM</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMSuffixPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>systemPrompt</name>
+
+                    <description>System Prompt for LLM</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMSystemPrompt</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMResult</name>
+            <description>
+                Result of LLM with the input text
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>meta</name>
+
+                    <description>Additional metadata</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>prompt</name>
+
+                    <description>Reference to the corresponding prompt</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>result</name>
+
+                    <description>Result in a json-String Format</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>content</name>
+
+                    <description>Content of result as string</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
