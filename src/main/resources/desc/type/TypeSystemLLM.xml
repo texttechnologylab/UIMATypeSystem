@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemLLM</name>
+
+    <description>
+        Types for processing LLMs (Large Language Model)
+    </description>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMSystemPrompt</name>
+            <description>
+                System Prompt for LLM, it is optional, if not set, already System Prompt in the LLM will be used or No System Prompt will be used
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>System Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMPrefixPrompt</name>
+            <description>
+               Prefix Prompt for LLM. It is optional, if not set, will be placed before the user Prompt. For example adding additional information to the Prompt.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>Prefix before the Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMSuffixPrompt</name>
+            <description>
+                Suffix Prompt for LLM. It is optional, if not set, will be placed after the user Prompt. For example adding additional information to the Prompt.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>message</name>
+
+                    <description>Suffix after the Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMPrompt</name>
+            <description>
+                Prompt for LLM with the input text. The user Prompt is mandatory, if not set, the LLM will not be called.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>prompt</name>
+
+                    <description>Prompt for LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>prefix</name>
+
+                    <description>Prefix of the Prompt</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMPrefixPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>suffix</name>
+
+                    <description>Suffix after the Prompt for the LLM</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMSuffixPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>systemPrompt</name>
+
+                    <description>System Prompt for LLM</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMSystemPrompt</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.type.LLMResult</name>
+            <description>
+                Result of LLM with the reference to the corresponding prompt.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>meta</name>
+
+                    <description>Additional metadata (Parameter). Additionally the duration</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>prompt</name>
+
+                    <description>Reference to the corresponding prompt</description>
+
+                    <rangeTypeName>org.texttechnologylab.type.LLMPrompt</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>result</name>
+
+                    <description>Result in a json-String Format of LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>content</name>
+
+                    <description>Content of result as string extracted from the result.</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
