@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
 
-    <name>TypeSystemFactChecking</name>
+    <name>TypeSystemLLM</name>
 
-    <description/>
+    <description>
+        Types for processing LLMs (Large Language Model)
+    </description>
 
     <version>1.0</version>
 
