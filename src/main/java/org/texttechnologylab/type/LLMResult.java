@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 19 17:06:45 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue May 20 14:02:58 CEST 2025 */
 
 package org.texttechnologylab.type;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Result of LLM with the input text
- * Updated by JCasGen Mon May 19 17:06:45 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** Result of LLM with the reference to the corresponding prompt.
+ * Updated by JCasGen Tue May 20 14:02:58 CEST 2025
+ * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMResult extends Annotation {
  
@@ -120,7 +120,7 @@ public class LLMResult extends Annotation {
   //*--------------*
   //* Feature: meta
 
-  /** getter for meta - gets Additional metadata
+  /** getter for meta - gets Additional metadata (Parameter). Additionally the duration
    * @generated
    * @return value of the feature 
    */
@@ -128,7 +128,7 @@ public class LLMResult extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_meta));
   }
     
-  /** setter for meta - sets Additional metadata 
+  /** setter for meta - sets Additional metadata (Parameter). Additionally the duration 
    * @generated
    * @param v value to set into the feature 
    */
@@ -162,7 +162,7 @@ public class LLMResult extends Annotation {
   //*--------------*
   //* Feature: result
 
-  /** getter for result - gets Result in a json-String Format
+  /** getter for result - gets Result in a json-String Format of LLM
    * @generated
    * @return value of the feature 
    */
@@ -170,7 +170,7 @@ public class LLMResult extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_result));
   }
     
-  /** setter for result - sets Result in a json-String Format 
+  /** setter for result - sets Result in a json-String Format of LLM 
    * @generated
    * @param v value to set into the feature 
    */
@@ -183,7 +183,7 @@ public class LLMResult extends Annotation {
   //*--------------*
   //* Feature: content
 
-  /** getter for content - gets Content of result as string
+  /** getter for content - gets Content of result as string extracted from the result.
    * @generated
    * @return value of the feature 
    */
@@ -191,7 +191,7 @@ public class LLMResult extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_content));
   }
     
-  /** setter for content - sets Content of result as string 
+  /** setter for content - sets Content of result as string extracted from the result. 
    * @generated
    * @param v value to set into the feature 
    */

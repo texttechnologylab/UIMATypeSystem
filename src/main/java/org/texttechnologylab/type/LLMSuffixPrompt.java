@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 19 17:06:45 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue May 20 14:02:58 CEST 2025 */
 
 package org.texttechnologylab.type;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** Suffix Prompt for LLM
- * Updated by JCasGen Mon May 19 17:06:45 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** Suffix Prompt for LLM. It is optional, if not set, will be placed after the user Prompt. For example adding additional information to the Prompt.
+ * Updated by JCasGen Tue May 20 14:02:58 CEST 2025
+ * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMSuffixPrompt extends Annotation {
  
@@ -111,7 +111,7 @@ public class LLMSuffixPrompt extends Annotation {
   //*--------------*
   //* Feature: message
 
-  /** getter for message - gets Suffix before the Prompt for LLM
+  /** getter for message - gets Suffix after the Prompt for LLM
    * @generated
    * @return value of the feature 
    */
@@ -119,7 +119,7 @@ public class LLMSuffixPrompt extends Annotation {
     return _getStringValueNc(wrapGetIntCatchException(_FH_message));
   }
     
-  /** setter for message - sets Suffix before the Prompt for LLM 
+  /** setter for message - sets Suffix after the Prompt for LLM 
    * @generated
    * @param v value to set into the feature 
    */

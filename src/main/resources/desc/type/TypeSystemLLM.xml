@@ -23,7 +23,7 @@
         <typeDescription>
             <name>org.texttechnologylab.type.LLMSystemPrompt</name>
             <description>
-                System Prompt for LLM
+                System Prompt for LLM, it is optional, if not set, already System Prompt in the LLM will be used or No System Prompt will be used
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -42,7 +42,7 @@
         <typeDescription>
             <name>org.texttechnologylab.type.LLMPrefixPrompt</name>
             <description>
-               Prefix Prompt for LLM
+               Prefix Prompt for LLM. It is optional, if not set, will be placed before the user Prompt. For example adding additional information to the Prompt.
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -61,7 +61,7 @@
         <typeDescription>
             <name>org.texttechnologylab.type.LLMSuffixPrompt</name>
             <description>
-                Suffix Prompt for LLM
+                Suffix Prompt for LLM. It is optional, if not set, will be placed after the user Prompt. For example adding additional information to the Prompt.
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -69,7 +69,7 @@
 
                     <name>message</name>
 
-                    <description>Suffix before the Prompt for LLM</description>
+                    <description>Suffix after the Prompt for LLM</description>
 
                     <rangeTypeName>uima.cas.String</rangeTypeName>
 
@@ -80,7 +80,7 @@
         <typeDescription>
             <name>org.texttechnologylab.type.LLMPrompt</name>
             <description>
-                Prompt for LLM with the input text
+                Prompt for LLM with the input text. The user Prompt is mandatory, if not set, the LLM will not be called.
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -130,7 +130,7 @@
         <typeDescription>
             <name>org.texttechnologylab.type.LLMResult</name>
             <description>
-                Result of LLM with the input text
+                Result of LLM with the reference to the corresponding prompt.
             </description>
             <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
@@ -139,7 +139,7 @@
 
                     <name>meta</name>
 
-                    <description>Additional metadata</description>
+                    <description>Additional metadata (Parameter). Additionally the duration</description>
 
                     <rangeTypeName>uima.cas.String</rangeTypeName>
 
@@ -159,7 +159,7 @@
 
                     <name>result</name>
 
-                    <description>Result in a json-String Format</description>
+                    <description>Result in a json-String Format of LLM</description>
 
                     <rangeTypeName>uima.cas.String</rangeTypeName>
 
@@ -169,7 +169,7 @@
 
                     <name>content</name>
 
-                    <description>Content of result as string</description>
+                    <description>Content of result as string extracted from the result.</description>
 
                     <rangeTypeName>uima.cas.String</rangeTypeName>
 

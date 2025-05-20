@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon May 19 17:06:45 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue May 20 14:02:58 CEST 2025 */
 
 package org.texttechnologylab.type;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** System Prompt for LLM
- * Updated by JCasGen Mon May 19 17:06:45 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** System Prompt for LLM, it is optional, if not set, already System Prompt in the LLM will be used or No System Prompt will be used
+ * Updated by JCasGen Tue May 20 14:02:58 CEST 2025
+ * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMSystemPrompt extends Annotation {
  
