@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+          
+  
+  
+  <name>TAscore</name>
+          
+  
+  
+  <description>TextAnalyzer scores.</description>
+          
+  
+  
+  <version>1.0</version>
+        	
+  
+  
+  <vendor>TTLab, Universität Frankfurt</vendor>
+        
+  
+  
+  <types>
+                
+    
+    
+    <typeDescription>
+
+
+
+      <name>org.texttechnologylab.annotation.TAscore</name>
+                        
+      
+      
+      <description>TextAnalyzer scores.</description>
+                        
+      
+      
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+      
+      
+      <features>
+                                
+        
+        
+        <featureDescription>
+                                        
+          
+          
+          <name>name</name>
+                                        
+          
+          
+          <description>String-based value, e.g. a topic name like "politics" or "sports".</description>
+                                        
+          
+          
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                                
+        
+        
+        <featureDescription>
+                                        
+          
+          
+          <name>score</name>
+                                        
+          
+          
+          <description>Score, probability or confidence value for the category set in the "value" field.</description>
+                                        
+          
+          
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                                
+        
+        
+        <featureDescription>
+                                        
+          
+          
+          <name>group</name>
+                                        
+          
+          
+          <description>Feature class, e.g. pos-b (part of speech basic), pos-a, syntactic, coherence-l (token based), coherence-s (sentence based), etc.</description>
+                                        
+          
+          
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                              
+        
+        
+        <featureDescription>
+                                        
+          
+          
+          <name>ref</name>
+                                        
+          
+          
+          <description>This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results.</description>
+                                        
+          
+          
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                      
+        
+        
+        </featureDescription>
+                              
+      
+      
+      </features>
+                      
+    
+    
+    </typeDescription>
+              
+  
+  
+  </types>
+      
+
+
+</typeSystemDescription>
