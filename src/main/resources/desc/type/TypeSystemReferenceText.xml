@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemReferenceText</name>
+
+    <description>
+        Types for Reference Text of TextSearch. It can be a list of text or a single text or a summary of the text or a label of the text.
+    </description>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+        <import name="desc.type.TextTechnologyAnnotation"/>
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.type.search.TextSearch</name>
+            <description>
+                Text, which is used for searching in the web, for Reference Text or for other purposes.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>text</name>
+
+                    <description>Can be Same as covered text or a summary, topic, etc. of this text</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.search.ReferenceText</name>
+            <description>
+                Reference Text of TextSearch. Result of the search. It can be a list of text or a single text or a summary of the text or a label of the text.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>methods</name>
+                    <description>Which Method was used for the search, like Wikipedia, Google, Wikidata or something Class</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>group</name>
+                    <description>what is the group of Text, from which source it was extracted: web, wikipedia, wikidata,...</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>text</name>
+                    <description>Text of the Reference Text</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>url</name>
+                    <description>URL of the Reference Text</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>success</name>
+                    <description>Was the search or the extraction successful</description>
+                    <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>priority</name>
+                    <description>Result number of the search</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>dateTime</name>
+                    <description>dateTime of the search: dd:mm:yyyy hh:mm:ss</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>summary</name>
+                    <description>summary of the text</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>infos</name>
+                    <description>additional infos as json string</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>reference</name>
+                    <description>reference</description>
+                    <rangeTypeName>org.texttechnologylab.type.search.TextSearch</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
