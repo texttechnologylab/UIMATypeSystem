@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 21 16:48:28 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** TextAnalyzer scores.
- * Updated by JCasGen Wed May 21 16:48:28 CEST 2025
- * XML source: /home/mkonca/Gits/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TAscore extends Annotation {
  

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue May 20 14:02:58 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.type;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Result of LLM with the reference to the corresponding prompt.
- * Updated by JCasGen Tue May 20 14:02:58 CEST 2025
- * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMResult extends Annotation {
  

@@ -1,25 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed May 07 18:09:54 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.annotation.parliament;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.tcas.Annotation;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Wed May 07 18:09:54 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.tcas.Annotation;
+
+
+/** 
+ * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends Annotation {
  
@@ -53,6 +55,7 @@ public class Speaker extends Annotation {
   public final static String _FeatName_label = "label";
   public final static String _FeatName_firstname = "firstname";
   public final static String _FeatName_name = "name";
+  public final static String _FeatName_fullname_deducted = "fullname_deducted";
   public final static String _FeatName_nobility = "nobility";
   public final static String _FeatName_title = "title";
   public final static String _FeatName_role = "role";
@@ -69,6 +72,8 @@ public class Speaker extends Annotation {
   private final static MethodHandle _FH_firstname = _FC_firstname.dynamicInvoker();
   private final static CallSite _FC_name = TypeSystemImpl.createCallSite(Speaker.class, "name");
   private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
+  private final static CallSite _FC_fullname_deducted = TypeSystemImpl.createCallSite(Speaker.class, "fullname_deducted");
+  private final static MethodHandle _FH_fullname_deducted = _FC_fullname_deducted.dynamicInvoker();
   private final static CallSite _FC_nobility = TypeSystemImpl.createCallSite(Speaker.class, "nobility");
   private final static MethodHandle _FH_nobility = _FC_nobility.dynamicInvoker();
   private final static CallSite _FC_title = TypeSystemImpl.createCallSite(Speaker.class, "title");
@@ -192,6 +197,27 @@ public class Speaker extends Annotation {
    */
   public void setName(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: fullname_deducted
+
+  /** getter for fullname_deducted - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getFullname_deducted() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_fullname_deducted));
+  }
+    
+  /** setter for fullname_deducted - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setFullname_deducted(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_fullname_deducted), v);
   }    
     
    

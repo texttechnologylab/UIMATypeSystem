@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue May 20 14:02:58 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.type;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prefix Prompt for LLM. It is optional, if not set, will be placed before the user Prompt. For example adding additional information to the Prompt.
- * Updated by JCasGen Tue May 20 14:02:58 CEST 2025
- * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMPrefixPrompt extends Annotation {
  
