@@ -26,6 +26,11 @@
                     <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
                 <featureDescription>
+                    <name>fullname_deducted</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
                     <name>nobility</name>
                     <description/>
                     <rangeTypeName>uima.cas.String</rangeTypeName>

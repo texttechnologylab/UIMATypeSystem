@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue May 20 10:53:53 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.annotation.link;
  
@@ -19,8 +19,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Annotation represents a (unidirectional) Link between two Documents
- * Updated by JCasGen Tue May 20 10:53:53 CEST 2025
- * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DLink extends Link {
  

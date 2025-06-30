@@ -2,6 +2,7 @@
 
    
 /* Apache UIMA v3 - First created by JCasGen Mon May 26 16:30:33 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
