@@ -49,5 +49,25 @@
                 </featureDescription>
             </features>
         </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.ReadabilityAdvance</name>
+            <description>
+                Readability Output
+            </description>
+            <supertypeName>org.texttechnologylab.annotation.Readability</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>GroupName</name>
+
+                    <description>Group Name for the Text Readabilities</description>
+
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+
+                    <elementType>org.texttechnologylab.annotation.AnnotationComment</elementType>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
     </types>
 </typeSystemDescription>
