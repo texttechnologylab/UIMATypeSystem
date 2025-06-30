@@ -62,9 +62,7 @@
 
                     <description>Group Name for the Text Readabilities</description>
 
-                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-
-                    <elementType>org.texttechnologylab.annotation.AnnotationComment</elementType>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
 
                 </featureDescription>
             </features>

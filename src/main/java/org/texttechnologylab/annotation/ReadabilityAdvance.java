@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon Jun 30 13:13:31 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon Jun 30 15:39:57 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -16,11 +16,10 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.apache.uima.jcas.cas.FSArray;
 
 
 /** Readability Output
- * Updated by JCasGen Mon Jun 30 13:13:31 CEST 2025
+ * Updated by JCasGen Mon Jun 30 15:39:57 CEST 2025
  * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReadabilityAdvance extends Readability {
@@ -103,39 +102,18 @@ public class ReadabilityAdvance extends Readability {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<AnnotationComment> getGroupName() { 
-    return (FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_GroupName)));
+  public String getGroupName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_GroupName));
   }
     
   /** setter for GroupName - sets Group Name for the Text Readabilities 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setGroupName(FSArray<AnnotationComment> v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_GroupName), v);
+  public void setGroupName(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_GroupName), v);
   }    
     
-    
-  /** indexed getter for GroupName - gets an indexed value - Group Name for the Text Readabilities
-   * @generated
-   * @param i index in the array to get
-   * @return value of the element at index i 
-   */
-  @SuppressWarnings("unchecked")
-  public AnnotationComment getGroupName(int i) {
-     return (AnnotationComment)(((FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_GroupName)))).get(i));
-  } 
-
-  /** indexed setter for GroupName - sets an indexed value - Group Name for the Text Readabilities
-   * @generated
-   * @param i index in the array to set
-   * @param v value to set into the array 
-   */
-  @SuppressWarnings("unchecked")
-    public void setGroupName(int i, AnnotationComment v) {
-    ((FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_GroupName)))).set(i, v);
-  }  
   }
 
     
