@@ -1,171 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-                
+                  
+  
   
   
   
   
   
   <name>SpacyToken</name>
-                
+                  
+  
   
   
   
   
   
   <description>Token type by DKPro extended by spaCy features</description>
-                
+                  
+  
   
   
   
   
   
   <version>1.0</version>
-                
+                  
+  
   
   
   
   
   
   <vendor>TTLab</vendor>
-                
+                  
+  
   
   
   
   
   
   <imports>
-                    
+                        
+    
     
     
     
     <import name="desc.type.LexicalUnits_customized"/>
-                  
+                      
+  
   
   
   
   </imports>
-        
+          
+  
   
   
   <types>
-                                
+                                    
+    
     
     
     
     
     
     <typeDescription>
-                              
+                                    
+      
       
       
       
       <name>org.texttechnologylab.uima.type.spacy.SpacyToken</name>
-                              
+                                    
+      
       
       
       
       <description/>
-                              
+                                    
+      
       
       
       
       <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</supertypeName>
-                              
+                                    
+      
       
       
       
       <features>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                                  
+                                                            
+          
           
           
           
           <name>likeUrl</name>
-                                                  
+                                                            
+          
           
           
           
           <description/>
-                                                  
+                                                            
+          
           
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                                
+                                                          
+        
         
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                                  
+                                                            
+          
           
           
           
           <name>hasVector</name>
-                                                  
+                                                            
+          
           
           
           
           <description/>
-                                                  
+                                                            
+          
           
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                                
+                                                          
+        
         
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                                  
+                                                            
+          
           
           
           
           <name>vector</name>
-                                                  
+                                                            
+          
           
           
           
           <description/>
-                                                  
+                                                            
+          
           
           
           
           <rangeTypeName>uima.cas.FloatArray</rangeTypeName>
-                                                  
+                                                            
+          
           
           
           
           <multipleReferencesAllowed>false</multipleReferencesAllowed>
-                                                
+                                                          
+        
         
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                                  
+                                                            
+          
           
           
           
           <name>likeNum</name>
+                                                            
+          
+          
+          
+          
+          <description/>
+                                                            
+          
+          
+          
+          
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+                                                          
+        
+        
+        
+        
+        </featureDescription>
+                                        
+                
+        
+        
+        
+        
+        <featureDescription>
+                                                  
+          
+          
+          
+          <name>isStop</name>
                                                   
           
           
@@ -181,372 +242,445 @@
         
         
         </featureDescription>
-                                
-                
+                                                
         
-        
-        
-        <featureDescription>
-                                        
-          
-          
-          <name>isStop</name>
-                                        
-          
-          
-          <description/>
-                                        
-          
-          
-          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
-        
-        
-        </featureDescription>
-                                        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isOov</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isCurrency</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isQuote</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isBracket</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isSentStart</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isSentEnd</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isLeftPunct</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isRightPunct</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isPunct</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isTitle</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isUpper</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isLower</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isDigit</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isAscii</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                        
+                                                
+        
         
         
         
         <featureDescription>
-                                        
+                                                  
+          
           
           
           <name>isAlpha</name>
-                                        
+                                                  
+          
           
           
           <description/>
-                                        
+                                                  
+          
           
           
           <rangeTypeName>uima.cas.Boolean</rangeTypeName>
-                                      
+                                                
+        
         
         
         </featureDescription>
-                                      
+                                              
       
       
       
+      
+        <featureDescription>
+                    
+          <name>beneparLabels</name>
+                    
+          <description/>
+                    
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                    
+          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+                  
+        </featureDescription>
       </features>
-                            
+                                  
+    
     
     
     
     </typeDescription>
-              
+                  
   
     
+    
     <typeDescription>
-                  
+                        
+      
       
       <name>org.texttechnologylab.uima.type.spacy.SpacyNounChunk</name>
-                  
+                        
+      
       
       <description/>
-                  
+                        
+      
       
       <supertypeName>uima.tcas.Annotation</supertypeName>
-                
+                      
+    
     
     </typeDescription>
-      
+          
+  
   </types>
-            
+              
+
 
 
 

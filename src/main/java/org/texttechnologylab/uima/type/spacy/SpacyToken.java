@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Jul 02 11:20:52 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed Jul 02 12:38:50 CEST 2025 */
 
 package org.texttechnologylab.uima.type.spacy;
  
@@ -17,11 +17,12 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 import org.apache.uima.jcas.cas.FloatArray;
+import org.apache.uima.jcas.cas.StringArray;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Wed Jul 02 11:21:16 CEST 2025
+ * Updated by JCasGen Wed Jul 02 12:39:30 CEST 2025
  * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/SpacyToken.xml
  * @generated */
 public class SpacyToken extends Token {
@@ -73,6 +74,7 @@ public class SpacyToken extends Token {
   public final static String _FeatName_isDigit = "isDigit";
   public final static String _FeatName_isAscii = "isAscii";
   public final static String _FeatName_isAlpha = "isAlpha";
+  public final static String _FeatName_beneparLabels = "beneparLabels";
 
 
   /* Feature Adjusted Offsets */
@@ -116,6 +118,8 @@ public class SpacyToken extends Token {
   private final static MethodHandle _FH_isAscii = _FC_isAscii.dynamicInvoker();
   private final static CallSite _FC_isAlpha = TypeSystemImpl.createCallSite(SpacyToken.class, "isAlpha");
   private final static MethodHandle _FH_isAlpha = _FC_isAlpha.dynamicInvoker();
+  private final static CallSite _FC_beneparLabels = TypeSystemImpl.createCallSite(SpacyToken.class, "beneparLabels");
+  private final static MethodHandle _FH_beneparLabels = _FC_beneparLabels.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -602,6 +606,45 @@ public class SpacyToken extends Token {
     _setBooleanValueNfc(wrapGetIntCatchException(_FH_isAlpha), v);
   }    
     
+   
+    
+  //*--------------*
+  //* Feature: beneparLabels
+
+  /** getter for beneparLabels - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public StringArray getBeneparLabels() { 
+    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)));
+  }
+    
+  /** setter for beneparLabels - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setBeneparLabels(StringArray v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_beneparLabels), v);
+  }    
+    
+    
+  /** indexed getter for beneparLabels - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public String getBeneparLabels(int i) {
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).get(i);
+  } 
+
+  /** indexed setter for beneparLabels - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setBeneparLabels(int i, String v) {
+    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).set(i, v);
+  }  
   }
 
     

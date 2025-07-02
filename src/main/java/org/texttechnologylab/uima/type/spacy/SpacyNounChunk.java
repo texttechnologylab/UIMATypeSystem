@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Jul 02 12:13:32 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed Jul 02 12:38:50 CEST 2025 */
 
 package org.texttechnologylab.uima.type.spacy;
  
@@ -17,8 +17,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Jul 02 12:13:32 CEST 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed Jul 02 12:39:30 CEST 2025
+ * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/SpacyToken.xml
  * @generated */
 public class SpacyNounChunk extends Annotation {
  
