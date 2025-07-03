@@ -1,148 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-        
+          
+  
   
   <name>CohMetrix</name>
-        
+          
+  
   
   <description>Coh-Metrix Types for DUUI</description>
-        
+          
+  
   
   <version>1.0</version>
-        
+          
+  
   
   <vendor>TTLab</vendor>
-        
+          
+  
   
   <types>
-                
+                    
+    
     
     <typeDescription>
-                  
+                        
+      
       
       <name>org.texttechnologylab.uima.type.cohmetrix.Index</name>
-                  
+                        
+      
       
       <description>Coh-Metrix Index</description>
-                  
+                        
+      
       
       <supertypeName>uima.tcas.Annotation</supertypeName>
-                  
+                        
+      
       
       <features>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>index</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>typeName</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>labelV3</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>labelV2</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>description</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>value</name>
-                              
+                                        
+          
           
           <description/>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.Double</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-                        
+                                
+        
         
         <featureDescription>
-                              
+                                        
+          
           
           <name>error</name>
-                              
+                                        
+          
           
           <description>Optional error message</description>
-                              
+                                        
+          
           
           <rangeTypeName>uima.cas.String</rangeTypeName>
-                            
+                                      
+        
         
         </featureDescription>
-              
-      </features>
+                      
+      
+        <featureDescription>
+                    
+          <name>labelTTLab</name>
+                    
+          <description>New index added by the TTLab or significantly modified V3 index.</description>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
                 
+        <featureDescription>
+                    
+          <name>version</name>
+                    
+          <description/>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+      </features>
+                      
+    
     
     </typeDescription>
-          
+              
+  
   
   </types>
-    
+      
+
 
 </typeSystemDescription>

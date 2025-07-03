@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Jul 02 11:20:52 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu Jul 03 15:32:53 CEST 2025 */
 
 package org.texttechnologylab.uima.type.cohmetrix;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Coh-Metrix Index
- * Updated by JCasGen Wed Jul 02 11:20:52 CEST 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu Jul 03 15:32:54 CEST 2025
+ * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/CohMetrix.xml
  * @generated */
 public class Index extends Annotation {
  
@@ -59,6 +59,8 @@ public class Index extends Annotation {
   public final static String _FeatName_description = "description";
   public final static String _FeatName_value = "value";
   public final static String _FeatName_error = "error";
+  public final static String _FeatName_labelTTLab = "labelTTLab";
+  public final static String _FeatName_version = "version";
 
 
   /* Feature Adjusted Offsets */
@@ -76,6 +78,10 @@ public class Index extends Annotation {
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
   private final static CallSite _FC_error = TypeSystemImpl.createCallSite(Index.class, "error");
   private final static MethodHandle _FH_error = _FC_error.dynamicInvoker();
+  private final static CallSite _FC_labelTTLab = TypeSystemImpl.createCallSite(Index.class, "labelTTLab");
+  private final static MethodHandle _FH_labelTTLab = _FC_labelTTLab.dynamicInvoker();
+  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(Index.class, "version");
+  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -269,6 +275,48 @@ public class Index extends Annotation {
    */
   public void setError(String v) {
     _setStringValueNfc(wrapGetIntCatchException(_FH_error), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: labelTTLab
+
+  /** getter for labelTTLab - gets New index added by the TTLab or significantly modified V3 index.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getLabelTTLab() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_labelTTLab));
+  }
+    
+  /** setter for labelTTLab - sets New index added by the TTLab or significantly modified V3 index. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setLabelTTLab(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_labelTTLab), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: version
+
+  /** getter for version - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public String getVersion() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
+  }
+    
+  /** setter for version - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setVersion(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
   }    
     
   }
