@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemL2SCA</name>
+
+    <description>SCA features of the Text</description>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.L2SCA</name>
+            <description>
+                L2SCA Output
+            </description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>Value</name>
+
+                    <description>L2SCA Feature Value</description>
+
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Code</name>
+
+                    <description>L2SCA Feature Code</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>typeName</name>
+
+                    <description>L2SCA Feature typeName</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>typeNumber</name>
+
+                    <description>L2SCA Feature type Number</description>
+
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Measure</name>
+
+                    <description>L2SCA Feature Measure</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>definition</name>
+
+                    <description>L2SCA Feature definition</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description>Which Model or Process was used to Compute the L2SCA</description>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
