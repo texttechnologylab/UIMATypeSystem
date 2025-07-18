@@ -23,7 +23,7 @@
             <description>
                 L2SCA Output
             </description>
-            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
             <features>
 
                 <featureDescription>

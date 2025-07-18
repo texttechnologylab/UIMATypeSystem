@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jul 18 09:41:06 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jul 18 17:24:16 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -17,14 +17,14 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 import org.texttechnologylab.annotation.model.MetaData;
-import org.apache.uima.jcas.cas.AnnotationBase;
+import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** L2SCA Output
- * Updated by JCasGen Fri Jul 18 09:41:06 CEST 2025
+ * Updated by JCasGen Fri Jul 18 17:24:16 CEST 2025
  * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
-public class L2SCA extends AnnotationBase {
+public class L2SCA extends Annotation {
  
   /** @generated
    * @ordered 
@@ -103,6 +103,18 @@ public class L2SCA extends AnnotationBase {
     readObject();   
   } 
 
+
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs
+   * @param begin offset to the begin spot in the SofA
+   * @param end offset to the end spot in the SofA 
+  */  
+  public L2SCA(JCas jcas, int begin, int end) {
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
 
   /** 
    * <!-- begin-user-doc -->
