@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemLLMMetric</name>
+
+    <description>Different Features for detecting LLM written text</description>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.LLMMetric</name>
+            <description>
+                L2SCA Output
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Value</name>
+                    <description>Metric Feature Value</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>KeyName</name>
+                    <description>Metric Feature KeyName</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+
+                <featureDescription>
+                    <name>definition</name>
+                    <description>LLM Metric Feature definition</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+
+                <featureDescription>
+                    <name>model</name>
+                    <description>Which Model or Process was used to Compute the LLM Metric</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+                </featureDescription>
+
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
