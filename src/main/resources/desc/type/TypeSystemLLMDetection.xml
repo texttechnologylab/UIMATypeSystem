@@ -34,7 +34,7 @@
                 <featureDescription>
                     <name>KeyName</name>
                     <description>Metric Feature KeyName</description>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
 

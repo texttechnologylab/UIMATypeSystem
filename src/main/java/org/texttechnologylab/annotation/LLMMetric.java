@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon Jul 21 09:34:09 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Jul 22 10:37:42 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** L2SCA Output
- * Updated by JCasGen Mon Jul 21 09:34:09 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Jul 22 10:37:42 CEST 2025
+ * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMMetric extends Annotation {
  
@@ -146,16 +146,16 @@ public class LLMMetric extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getKeyName() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_KeyName));
+  public String getKeyName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_KeyName));
   }
     
   /** setter for KeyName - sets Metric Feature KeyName 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setKeyName(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_KeyName), v);
+  public void setKeyName(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_KeyName), v);
   }    
     
    
