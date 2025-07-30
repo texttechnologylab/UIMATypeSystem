@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemEssayScore</name>
+
+    <description>Different Features for score Essay</description>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.EssayScore</name>
+            <description>
+                Essay Score Output
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>Value</name>
+                    <description>Metric Feature Value</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>Name</name>
+                    <description>Metric Feature Name</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+
+                <featureDescription>
+                    <name>LLMResult</name>
+                    <description>LLM Results</description>
+                    <rangeTypeName>org.texttechnologylab.type.LLMResult</rangeTypeName>
+                </featureDescription>
+
+
+                <featureDescription>
+                    <name>model</name>
+                    <description>Which Model or Process was used to Compute the Information</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+                </featureDescription>
+
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
