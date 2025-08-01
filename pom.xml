@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>3.0.10</version>
+    <version>3.0.11</version>
 
     <licenses>
         <license>
@@ -84,7 +84,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <dkpro.core.version>2.4.0</dkpro.core.version>
-        <uima.version>3.5.0</uima.version>
+        <uima.version>3.6.0</uima.version>
     </properties>
 
     <build>
@@ -93,7 +93,7 @@
                 <!--generate types dynamically -->
                 <groupId>org.apache.uima</groupId>
                 <artifactId>jcasgen-maven-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>3.6.0</version>
                 <configuration>
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>

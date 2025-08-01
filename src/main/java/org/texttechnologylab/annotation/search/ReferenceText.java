@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu May 22 16:17:33 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
 
 package org.texttechnologylab.annotation.search;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Reference Text of TextSearch. Result of the search. It can be a list of text or a single text or a summary of the text or a label of the text.
- * Updated by JCasGen Thu May 22 16:17:33 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReferenceText extends Annotation {
  
