@@ -1,28 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Jul 22 10:37:42 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
 
 package org.texttechnologylab.annotation;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
-import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
+import org.texttechnologylab.annotation.model.MetaData;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
 /** L2SCA Output
- * Updated by JCasGen Tue Jul 22 10:37:42 CEST 2025
- * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMMetric extends Annotation {
  

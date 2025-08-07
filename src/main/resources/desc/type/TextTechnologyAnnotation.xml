@@ -10,9 +10,7 @@
   <vendor/>
       
   <imports>
-            
     <import name="desc.type.Anomalies"/>
-            
     <import name="desc.type.metadata_customized"/>
         
     <import name="desc.type.Semantics"/>
@@ -22,737 +20,443 @@
   </imports>
       
   <types>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.knowledge.KnowledgeEntry</name>
-                  
-      <description/>
-                  
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>uri</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>source</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.knowledge.KnowledgeEntry</name>
+        <description/>
+        <supertypeName>uima.tcas.Annotation</supertypeName>
+        <features>
+            <featureDescription>
+                <name>uri</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>source</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.sentence.Endmarker</name>
-                  
-      <description/>
-                  
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>value</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.sentence.Endmarker</name>
+        <description/>
+        <supertypeName>uima.tcas.Annotation</supertypeName>
+        <features>
+            <featureDescription>
+                <name>value</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.sentence.Anomaly</name>
-                  
-      <description/>
-                  
-      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>value</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.sentence.Anomaly</name>
+        <description/>
+        <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly</supertypeName>
+        <features>
+            <featureDescription>
+                <name>value</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.administration.FinishAnnotation</name>
-                  
-      <description/>
-                  
-      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>user</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>comment</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>tool</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.administration.FinishAnnotation</name>
+        <description/>
+        <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData</supertypeName>
+        <features>
+            <featureDescription>
+                <name>user</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>comment</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>tool</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.knowledge.WikidataEntry</name>
-                  
-      <description/>
-                  
-      <supertypeName>org.texttechnologylab.annotation.knowledge.KnowledgeEntry</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>P31</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.StringList</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>P279</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.StringList</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.knowledge.WikidataEntry</name>
+        <description/>
+        <supertypeName>org.texttechnologylab.annotation.knowledge.KnowledgeEntry</supertypeName>
+        <features>
+            <featureDescription>
+                <name>P31</name>
+                <description/>
+                <rangeTypeName>uima.cas.StringList</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>P279</name>
+                <description/>
+                <rangeTypeName>uima.cas.StringList</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.sentence.Discourse</name>
-                  
-      <description/>
-                  
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>value</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.sentence.Discourse</name>
+        <description/>
+        <supertypeName>uima.tcas.Annotation</supertypeName>
+        <features>
+            <featureDescription>
+                <name>value</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
-            
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.type.Unknown</name>
-                  
-      <description/>
-                  
-      <supertypeName>uima.tcas.Annotation</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>value</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.type.Unknown</name>
+        <description/>
+        <supertypeName>uima.tcas.Annotation</supertypeName>
+        <features>
+            <featureDescription>
+                <name>value</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
         
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.GeoNamesEntity</name>
-            
       <description/>
-            
       <supertypeName>uima.tcas.Annotation</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>id</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.Integer</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>mainclass</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>subclass</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>id</name>
+              <description/>
+              <rangeTypeName>uima.cas.Integer</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>mainclass</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>subclass</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.administration.Recommendation</name>
-            
       <description/>
-            
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>reference</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>reference</name>
+              <description/>
+              <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.SemanticSource</name>
-            
       <description/>
-            
       <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense</supertypeName>
           
       <features>
-                
-        <featureDescription>
-                    
-          <name>source</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
-        <featureDescription>
-                    
-          <name>searchResult</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>comment</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>source</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>searchResult</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>comment</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.administration.AnnotationStatus</name>
-            
       <description/>
-            
       <supertypeName>uima.tcas.Annotation</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>status</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>tool</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>status</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>tool</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.SubcatMatch</name>
-            
       <description/>
-            
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>status</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>context</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>elements</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-                    
-          <elementType>org.texttechnologylab.annotation.SemanticSource</elementType>
-                    
-          <multipleReferencesAllowed>false</multipleReferencesAllowed>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>status</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>context</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>elements</name>
+              <description/>
+              <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+              <elementType>org.texttechnologylab.annotation.SemanticSource</elementType>
+              <multipleReferencesAllowed>false</multipleReferencesAllowed>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.token.Correction</name>
-            
       <description/>
-            
       <supertypeName>uima.tcas.Annotation</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>value</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>value</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.AnnotationComment</name>
-            
       <description/>
-            
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>reference</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.TOP</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>value</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>key</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>reference</name>
+              <description/>
+              <rangeTypeName>uima.cas.TOP</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>value</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>key</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
         
     <typeDescription>
-              
-      <name>org.texttechnologylab.annotation.AnnotatorMetaData</name>
-              
-      <description/>
-              
-      <supertypeName>uima.cas.AnnotationBase</supertypeName>
-              
-      <features>
-                    
-        <featureDescription>
-                          
-          <name>reference</name>
-                          
-          <description/>
-                          
-          <rangeTypeName>uima.cas.TOP</rangeTypeName>
-                      
-        </featureDescription>
-                    
-        <featureDescription>
-                          
-          <name>name</name>
-                          
-          <description/>
-                          
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                      
-        </featureDescription>
-                    
-        <featureDescription>
-                          
-          <name>version</name>
-                          
-          <description/>
-                          
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                      
-        </featureDescription>
-                    
-        <featureDescription>
-                          
-          <name>modelName</name>
-                          
-          <description/>
-                          
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                      
-        </featureDescription>
-                    
-        <featureDescription>
-                          
-          <name>modelVersion</name>
-                          
-          <description/>
-                          
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                      
-        </featureDescription>
-                
-      </features>
+        <name>org.texttechnologylab.annotation.AnnotatorMetaData</name>
+        <description/>
+        <supertypeName>uima.cas.AnnotationBase</supertypeName>
+        <features>
+            <featureDescription>
+                <name>reference</name>
+                <description/>
+                <rangeTypeName>uima.cas.TOP</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>name</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>version</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelName</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelVersion</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
           
     </typeDescription>
         
     <typeDescription>
-                  
-      <name>org.texttechnologylab.annotation.SpacyAnnotatorMetaData</name>
-                  
-      <description/>
-                  
-      <supertypeName>org.texttechnologylab.annotation.AnnotatorMetaData</supertypeName>
-                  
-      <features>
-                        
-        <featureDescription>
-                              
-          <name>spacyVersion</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>modelLang</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>modelSpacyVersion</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                        
-        <featureDescription>
-                              
-          <name>modelSpacyGitVersion</name>
-                              
-          <description/>
-                              
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                          
-        </featureDescription>
-                    
-      </features>
-              
+        <name>org.texttechnologylab.annotation.SpacyAnnotatorMetaData</name>
+        <description/>
+        <supertypeName>org.texttechnologylab.annotation.AnnotatorMetaData</supertypeName>
+        <features>
+            <featureDescription>
+                <name>spacyVersion</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelLang</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelSpacyVersion</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+            <featureDescription>
+                <name>modelSpacyGitVersion</name>
+                <description/>
+                <rangeTypeName>uima.cas.String</rangeTypeName>
+            </featureDescription>
+        </features>
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.AnnotationBracket</name>
-            
       <description/>
-            
       <supertypeName>uima.tcas.Annotation</supertypeName>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.administration.activelearner.Decision</name>
-            
       <description/>
-            
       <supertypeName>org.texttechnologylab.annotation.type.Fingerprint</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>comment</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>comment</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
         
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.administration.activelearner.Accept</name>
-            
       <description/>
-            
       <supertypeName>org.texttechnologylab.annotation.administration.activelearner.Decision</supertypeName>
           
     </typeDescription>
         
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.administration.activelearner.Reject</name>
-            
       <description/>
-            
       <supertypeName>org.texttechnologylab.annotation.administration.activelearner.Decision</supertypeName>
           
     </typeDescription>
-      
-    <typeDescription>
-            
+      <typeDescription>
+          <name>org.texttechnologylab.annotation.administration.activelearner.Recommendation</name>
+          <description/>
+          <supertypeName>org.texttechnologylab.annotation.AnnotationComment</supertypeName>
+          <features>
+
+
+              <featureDescription>
+
+
+                  <name>hash</name>
+
+
+                  <description/>
+
+
+                  <rangeTypeName>uima.cas.String</rangeTypeName>
+
+
+              </featureDescription>
+
+
+              <featureDescription>
+
+
+                  <name>score</name>
+
+
+                  <description/>
+
+
+                  <rangeTypeName>uima.cas.Double</rangeTypeName>
+
+
+              </featureDescription>
+
+
+          </features>
+
+
+      </typeDescription>
+
+      <typeDescription>
       <name>org.texttechnologylab.annotation.AnnotationPerspective</name>
-            
       <description/>
-            
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>name</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>reference</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.TOP</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>name</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>reference</name>
+              <description/>
+              <rangeTypeName>uima.cas.TOP</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.SharedData</name>
-            
       <description/>
-            
       <supertypeName>uima.cas.AnnotationBase</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>value</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>value</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>
       
     <typeDescription>
-            
       <name>org.texttechnologylab.annotation.Language</name>
-            
       <description/>
-            
       <supertypeName>uima.tcas.Annotation</supertypeName>
-            
       <features>
-                
-        <featureDescription>
-                    
-          <name>value</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-                  
-        </featureDescription>
-                
-        <featureDescription>
-                    
-          <name>score</name>
-                    
-          <description/>
-                    
-          <rangeTypeName>uima.cas.Double</rangeTypeName>
-                  
-        </featureDescription>
-              
+          <featureDescription>
+              <name>value</name>
+              <description/>
+              <rangeTypeName>uima.cas.String</rangeTypeName>
+          </featureDescription>
+          <featureDescription>
+              <name>score</name>
+              <description/>
+              <rangeTypeName>uima.cas.Double</rangeTypeName>
+          </featureDescription>
       </features>
           
     </typeDescription>

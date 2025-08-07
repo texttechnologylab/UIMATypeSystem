@@ -1,32 +1,30 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jun 06 21:55:41 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
 
 package org.texttechnologylab.annotation.semaf.isobase;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
-import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.cas.FSList;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute;
 import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec3;
 import org.texttechnologylab.annotation.semaf.IsoSpatial.Vec4;
-import org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute;
-import org.apache.uima.jcas.tcas.Annotation;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
-/** 
- * Updated by JCasGen Fri Jun 06 21:55:41 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Entity extends Annotation {
  

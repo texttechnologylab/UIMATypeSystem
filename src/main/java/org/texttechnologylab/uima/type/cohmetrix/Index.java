@@ -1,27 +1,25 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Jul 03 15:32:53 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
 
 package org.texttechnologylab.uima.type.cohmetrix;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
 import org.apache.uima.jcas.tcas.Annotation;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
 /** Coh-Metrix Index
- * Updated by JCasGen Thu Jul 03 15:32:54 CEST 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/CohMetrix.xml
+ * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Index extends Annotation {
  
