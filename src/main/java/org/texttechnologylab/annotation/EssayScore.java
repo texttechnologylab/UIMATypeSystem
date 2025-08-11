@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Jul 30 12:10:08 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Mon Aug 11 11:31:37 CEST 2025 */
 
 package org.texttechnologylab.annotation;
  
@@ -16,13 +16,11 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.texttechnologylab.type.LLMResult;
-import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Essay Score Output
- * Updated by JCasGen Wed Jul 30 12:10:08 CEST 2025
+ * Updated by JCasGen Mon Aug 11 11:31:37 CEST 2025
  * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EssayScore extends Annotation {
@@ -56,8 +54,10 @@ public class EssayScore extends Annotation {
    
   public final static String _FeatName_Value = "Value";
   public final static String _FeatName_Name = "Name";
-  public final static String _FeatName_LLMResult = "LLMResult";
-  public final static String _FeatName_model = "model";
+  public final static String _FeatName_Reason = "Reason";
+  public final static String _FeatName_InputQuestion = "InputQuestion";
+  public final static String _FeatName_InputAnswer = "InputAnswer";
+  public final static String _FeatName_InputScene = "InputScene";
 
 
   /* Feature Adjusted Offsets */
@@ -65,10 +65,14 @@ public class EssayScore extends Annotation {
   private final static MethodHandle _FH_Value = _FC_Value.dynamicInvoker();
   private final static CallSite _FC_Name = TypeSystemImpl.createCallSite(EssayScore.class, "Name");
   private final static MethodHandle _FH_Name = _FC_Name.dynamicInvoker();
-  private final static CallSite _FC_LLMResult = TypeSystemImpl.createCallSite(EssayScore.class, "LLMResult");
-  private final static MethodHandle _FH_LLMResult = _FC_LLMResult.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(EssayScore.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
+  private final static CallSite _FC_Reason = TypeSystemImpl.createCallSite(EssayScore.class, "Reason");
+  private final static MethodHandle _FH_Reason = _FC_Reason.dynamicInvoker();
+  private final static CallSite _FC_InputQuestion = TypeSystemImpl.createCallSite(EssayScore.class, "InputQuestion");
+  private final static MethodHandle _FH_InputQuestion = _FC_InputQuestion.dynamicInvoker();
+  private final static CallSite _FC_InputAnswer = TypeSystemImpl.createCallSite(EssayScore.class, "InputAnswer");
+  private final static MethodHandle _FH_InputAnswer = _FC_InputAnswer.dynamicInvoker();
+  private final static CallSite _FC_InputScene = TypeSystemImpl.createCallSite(EssayScore.class, "InputScene");
+  private final static MethodHandle _FH_InputScene = _FC_InputScene.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -147,58 +151,100 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getName() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_Name));
+  public String getName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_Name));
   }
     
   /** setter for Name - sets Metric Feature Name 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setName(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Name), v);
+  public void setName(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_Name), v);
   }    
     
    
     
   //*--------------*
-  //* Feature: LLMResult
+  //* Feature: Reason
 
-  /** getter for LLMResult - gets LLM Results
+  /** getter for Reason - gets LLM Reason for chosen Score
    * @generated
    * @return value of the feature 
    */
-  public LLMResult getLLMResult() { 
-    return (LLMResult)(_getFeatureValueNc(wrapGetIntCatchException(_FH_LLMResult)));
+  public String getReason() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));
   }
     
-  /** setter for LLMResult - sets LLM Results 
+  /** setter for Reason - sets LLM Reason for chosen Score 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setLLMResult(LLMResult v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_LLMResult), v);
+  public void setReason(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_Reason), v);
   }    
     
    
     
   //*--------------*
-  //* Feature: model
+  //* Feature: InputQuestion
 
-  /** getter for model - gets Which Model or Process was used to Compute the Information
+  /** getter for InputQuestion - gets Chosen Question Div ID
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
+  public AnnotationComment getInputQuestion() { 
+    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputQuestion)));
   }
     
-  /** setter for model - sets Which Model or Process was used to Compute the Information 
+  /** setter for InputQuestion - sets Chosen Question Div ID 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
+  public void setInputQuestion(AnnotationComment v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputQuestion), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: InputAnswer
+
+  /** getter for InputAnswer - gets Chosen Answer Div ID
+   * @generated
+   * @return value of the feature 
+   */
+  public AnnotationComment getInputAnswer() { 
+    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputAnswer)));
+  }
+    
+  /** setter for InputAnswer - sets Chosen Answer Div ID 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setInputAnswer(AnnotationComment v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputAnswer), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: InputScene
+
+  /** getter for InputScene - gets Chosen Scene Div ID
+   * @generated
+   * @return value of the feature 
+   */
+  public AnnotationComment getInputScene() { 
+    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputScene)));
+  }
+    
+  /** setter for InputScene - sets Chosen Scene Div ID 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setInputScene(AnnotationComment v) {
+    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputScene), v);
   }    
     
   }

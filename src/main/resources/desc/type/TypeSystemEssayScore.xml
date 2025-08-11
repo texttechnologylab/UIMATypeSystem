@@ -34,24 +34,64 @@
                 <featureDescription>
                     <name>Name</name>
                     <description>Metric Feature Name</description>
-                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>Reason</name>
+                    <description>LLM Reason for chosen Score</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
                 </featureDescription>
 
 
                 <featureDescription>
-                    <name>LLMResult</name>
-                    <description>LLM Results</description>
-                    <rangeTypeName>org.texttechnologylab.type.LLMResult</rangeTypeName>
+                    <name>InputQuestion</name>
+                    <description>Chosen Question Div ID</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.AnnotationComment</rangeTypeName>
                 </featureDescription>
 
+                <featureDescription>
+                    <name>InputAnswer</name>
+                    <description>Chosen Answer Div ID</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.AnnotationComment</rangeTypeName>
+                </featureDescription>
 
                 <featureDescription>
-                    <name>model</name>
-                    <description>Which Model or Process was used to Compute the Information</description>
-                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+                    <name>InputScene</name>
+                    <description>Chosen Scene Div ID</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.AnnotationComment</rangeTypeName>
                 </featureDescription>
 
             </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.model.EssayScoreModel</name>
+            <description>
+                Essay Score Model Meta Data
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+                <featureDescription>
+
+                    <name>ScoreReference</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.EssayScore</rangeTypeName>
+
+                </featureDescription>
+            </features>
+
         </typeDescription>
     </types>
 </typeSystemDescription>
