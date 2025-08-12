@@ -91,7 +91,57 @@
 
                 </featureDescription>
             </features>
-
         </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.model.EssayScoreLLM</name>
+            <description>
+                Essay Score Model Meta Data LLM with Prompts and all additional information
+            </description>
+            <supertypeName>org.texttechnologylab.annotation.model.EssayScoreModel</supertypeName>
+            <features>
+                <featureDescription>
+
+                    <name>ModelName</name>
+
+                    <description>ModelName of used LLM</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Response</name>
+
+                    <description>Complete Response of LLM with all kind of Information as Json String</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>Contents</name>
+
+                    <description>The extracted output of the LLM response</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>AdditionalInformation</name>
+
+                    <description>Further Information like used port, url and more which are not included in responses</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+
     </types>
 </typeSystemDescription>
