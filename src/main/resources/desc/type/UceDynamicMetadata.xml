@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
-    <name>UceDynamicMetadata</name>
-    <description>For UCE, we don't know what kind of data we are importing. Consequently, we need some form of dynamic properties that hold additional data according to the corpus, that is interchangable and usable for filtering for example. This typesystem was created for this.</description>
-    <version>1.0</version>
-    <vendor>Text Technology Lab</vendor>
+  <name>UceDynamicMetadata</name>
+  <description>For UCE, we don't know what kind of data we are importing. Consequently, we need some form of dynamic properties that hold additional data according to the corpus, that is interchangable and usable for filtering for example. This typesystem was created for this.</description>
+  <version>1.0</version>
+  <vendor>Text Technology Lab</vendor>
   <imports>
     <import name="desc.type.LexicalUnits_customized"/>
   </imports>
@@ -63,6 +63,66 @@
         <value>
           <string>ENUM</string>
           <description>Category, Type, Dropdown lists...</description>
+        </value>
+      </allowedValues>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.uce.Permission</name>
+      <description>Provides permission details for a document. Note that this annotation can be included multiple times to configure access to multiple users.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>permissionType</name>
+          <description>Permission type, e.g. on user or group level.</description>
+          <rangeTypeName>org.texttechnologylab.annotation.uce.PermissionType</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>permissionLevel</name>
+          <description>Permission level.</description>
+          <rangeTypeName>org.texttechnologylab.annotation.uce.PermissionLevel</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>user</name>
+          <description>User or group name.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.uce.PermissionType</name>
+      <description>Permission type, currently "user" or "group" are supported.</description>
+      <supertypeName>uima.cas.String</supertypeName>
+      <allowedValues>
+        <value>
+          <string>GROUP</string>
+          <description>This permission will be evaluated based on the user's group.</description>
+        </value>
+        <value>
+          <string>USER</string>
+          <description>This permission will be evaluated based on the user's group.</description>
+        </value>
+      </allowedValues>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.annotation.uce.PermissionLevel</name>
+      <description>Permission level, note that internally they are stored as: NONE=0, READ=1, WRITE=2, OWNER=3.</description>
+      <supertypeName>uima.cas.String</supertypeName>
+      <allowedValues>
+        <value>
+          <string>NONE</string>
+          <description>No permission = no access</description>
+        </value>
+        <value>
+          <string>READ</string>
+          <description>Read access, this includes search/filter functionality.</description>
+        </value>
+        <value>
+          <string>WRITE</string>
+          <description>Document can be changed.</description>
+        </value>
+        <value>
+          <string>OWNER</string>
+          <description>Owner of the document.</description>
         </value>
       </allowedValues>
     </typeDescription>

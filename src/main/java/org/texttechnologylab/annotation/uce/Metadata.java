@@ -1,25 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Wed Sep 03 18:00:13 CEST 2025 */
 
 package org.texttechnologylab.annotation.uce;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.tcas.Annotation;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+
+
+import org.apache.uima.jcas.tcas.Annotation;
+
 
 /** Dynamic metadata triplets, consisting of a key, a value and the type modelling the value.
- * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Wed Sep 03 18:00:16 CEST 2025
+ * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/UceDynamicMetadata.xml
  * @generated */
 public class Metadata extends Annotation {
  
