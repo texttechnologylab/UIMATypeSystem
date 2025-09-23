@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Sep 03 18:00:13 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Sep 23 14:56:59 CEST 2025 */
 
 package org.texttechnologylab.annotation.uce;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Provides permission details for a document. Note that this annotation can be included multiple times to configure access to multiple users.
- * Updated by JCasGen Wed Sep 03 18:00:16 CEST 2025
- * XML source: /home/staff_homes/dbaumart/dev/git/UIMATypeSystem/src/main/resources/desc/type/UceDynamicMetadata.xml
+ * Updated by JCasGen Tue Sep 23 14:56:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Permission extends Annotation {
  

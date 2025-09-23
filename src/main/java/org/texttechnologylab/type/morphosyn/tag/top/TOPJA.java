@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Sep 23 14:56:59 CEST 2025 */
 
 package org.texttechnologylab.type.morphosyn.tag.top;
  
@@ -16,9 +16,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.texttechnologylab.type.morphosyn.tag.TOP;
 
 
-/**
- * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+/** 
+ * Updated by JCasGen Tue Sep 23 14:56:59 CEST 2025
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TOPJA extends TOP {
  
