@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:44:14 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:45:56 CEST 2025 */
 
 package org.hucompute.textimager.uima.type;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Typesystem for results of OpenIE (Stanford Open Information Extraction - https://nlp.stanford.edu/software/openie.html).
- * Updated by JCasGen Fri Sep 26 15:44:14 CEST 2025
+ * Updated by JCasGen Fri Sep 26 15:45:56 CEST 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OpenIERelation extends Annotation {

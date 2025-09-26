@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:44:15 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:45:56 CEST 2025 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
  
@@ -19,7 +19,7 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Paragraph of a recognized text.
- * Updated by JCasGen Fri Sep 26 15:44:15 CEST 2025
+ * Updated by JCasGen Fri Sep 26 15:45:56 CEST 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Paragraph extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Paragraph {
