@@ -146,16 +146,16 @@ public class LLMMetric extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getKeyName() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_KeyName));
+  public String getKeyName() { 
+    return _getStringValueNc(wrapGetIntCatchException(_FH_KeyName));
   }
     
   /** setter for KeyName - sets Metric Feature KeyName 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setKeyName(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_KeyName), v);
+  public void setKeyName(String v) {
+    _setStringValueNfc(wrapGetIntCatchException(_FH_KeyName), v);
   }    
     
    
