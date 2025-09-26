@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Sep 23 14:56:59 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:44:15 CEST 2025 */
 
 package org.texttechnologylab.duui;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 /** <p>ReproducibleAnnotation stores the information about a composer pipeline component in compressed form.
                 The reproducibility mainly stems from the strict naming of docker containers.</p>
- * Updated by JCasGen Tue Sep 23 14:56:59 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Sep 26 15:44:15 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReproducibleAnnotation extends TOP {
  

@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Sep 23 14:56:58 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:44:15 CEST 2025 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
  
@@ -21,8 +21,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** Type for gnfinder-recognized taxonomic names that have not been verified.
- * Updated by JCasGen Tue Sep 23 14:56:58 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Fri Sep 26 15:44:15 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
  
