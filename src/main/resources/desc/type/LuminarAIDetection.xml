@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>LuminarAIDetection</name>
+    <description>
+        The Types for annotating AI-generated content using the Luminar AI detector model.
+    </description>
+    <version>1.0</version>
+    <vendor/>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.luminar.AIDetection</name>
+            <description>
+                A typesystem for the Luminar AI detector, providing probabilities that a given document is AI-generated or not.
+                Depending on the model, this is done on document-level only or on sequence- and document-level.
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>detectionScore</name>
+                    <description>Ranging from 0 to 1, where near 0 means likely human and near 1 means likely AI.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>level</name>
+                    <description>The level on which this detection was applied, e.g. SEQUENCE or DOCUMENT level.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>model</name>
+                    <description>The model version used for this detection annotation.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+    </types>
+
+</typeSystemDescription>
