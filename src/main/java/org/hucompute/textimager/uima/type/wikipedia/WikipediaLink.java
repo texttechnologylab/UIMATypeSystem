@@ -1,24 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:45:56 CEST 2025 */
 
 package org.hucompute.textimager.uima.type.wikipedia;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.StringArray;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+
+
+import org.apache.uima.jcas.cas.StringArray;
+
 
 /** Wikipedia link
- * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
+ * Updated by JCasGen Fri Sep 26 15:45:56 CEST 2025
  * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink {

@@ -83,7 +83,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <dkpro.core.version>2.4.0</dkpro.core.version>
+        <dkpro.core.version>2.5.0</dkpro.core.version>
         <uima.version>3.6.0</uima.version>
     </properties>
 
@@ -98,7 +98,7 @@
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>
                                                 <include>src/main/resources/desc/**/*</include>
-<!--                        <include>src/main/resources/desc/type/TextTechnologyParliamentaryTypeSystem.xml</include>-->
+                        <!--                        <include>src/main/resources/desc/type/NegLabTypeSystem.xml</include>-->
                     </typeSystemIncludes>
                     <outputDirectory>
                         src/main/java/
@@ -127,17 +127,6 @@
         </plugins>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.dkpro.core</groupId>
-                <artifactId>dkpro-core-asl</artifactId>
-                <version>${dkpro.core.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
 
@@ -163,35 +152,49 @@
             <version>${uima.version}</version>
         </dependency>
 
+        <!--        <dependency>-->
+        <!--            <groupId>org.dkpro.core</groupId>-->
+        <!--            <artifactId>dkpro-core-asl</artifactId>-->
+        <!--            <version>${dkpro.core.version}</version>-->
+        <!--            <type>pom</type>-->
+        <!--        </dependency>-->
+
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-segmentation-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-metadata-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-ner-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-anomaly-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-syntax-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-semantics-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-tokit-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-tokit-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -199,23 +202,27 @@
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-opennlp-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-api-io-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-io-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-io-xmi-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-io-xmi-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-io-text-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-io-text-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -223,6 +230,22 @@
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-resources-asl</artifactId>
+            <version>${dkpro.core.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.github.texttechnologylab</groupId>
+            <artifactId>Utilities</artifactId>
+            <version>3.0.2</version>
         </dependency>
 
     </dependencies>

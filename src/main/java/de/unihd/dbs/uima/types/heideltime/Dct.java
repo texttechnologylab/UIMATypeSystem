@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Sep 10 10:35:43 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:45:56 CEST 2025 */
 
 package de.unihd.dbs.uima.types.heideltime;
  
@@ -19,9 +19,9 @@ import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Wed Sep 10 10:35:43 CEST 2025
- * XML source: C:/kevin/projects/duui/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Fri Sep 26 15:45:56 CEST 2025
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Dct extends Annotation {
  
