@@ -97,8 +97,8 @@
                 <configuration>
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>
-                                                <include>src/main/resources/desc/**/*</include>
-                        <!--                        <include>src/main/resources/desc/type/NegLabTypeSystem.xml</include>-->
+<!--                                <include>src/main/resources/desc/**/*</include>-->
+                        <include>src/main/resources/desc/type/ParliamentaryTypeSystem.xml</include>
                     </typeSystemIncludes>
                     <outputDirectory>
                         src/main/java/
