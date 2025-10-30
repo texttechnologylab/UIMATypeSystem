@@ -89,6 +89,7 @@
         </repository>
     </repositories>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <dkpro.core.version>2.5.0</dkpro.core.version>
@@ -97,31 +98,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <!--generate types dynamically -->
-                <groupId>org.apache.uima</groupId>
-                <artifactId>jcasgen-maven-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <limitToProject>true</limitToProject>
-                    <typeSystemIncludes>
-                        <include>src/main/resources/desc/**/*</include>
-                    </typeSystemIncludes>
-                    <outputDirectory>
-                        src/main/java/
-                    </outputDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <!--call it in the generate-source phase -->
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -135,6 +111,40 @@
     </build>
 
     <profiles>
+        <profile>
+            <id>jcasgen</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!--generate types dynamically -->
+                        <groupId>org.apache.uima</groupId>
+                        <artifactId>jcasgen-maven-plugin</artifactId>
+                        <version>3.6.0</version>
+                        <configuration>
+                            <limitToProject>true</limitToProject>
+                            <typeSystemIncludes>
+                                <include>src/main/resources/desc/**/*</include>
+                            </typeSystemIncludes>
+                            <outputDirectory>
+                                src/main/java/
+                            </outputDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <!--call it in the generate-source phase -->
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>release</id>
             <build>

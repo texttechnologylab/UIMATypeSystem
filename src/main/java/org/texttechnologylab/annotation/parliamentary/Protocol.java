@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Oct 14 18:13:27 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
 
 package org.texttechnologylab.annotation.parliamentary;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Oct 14 18:13:27 CEST 2025
- * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Protocol extends AnnotationBase {
  

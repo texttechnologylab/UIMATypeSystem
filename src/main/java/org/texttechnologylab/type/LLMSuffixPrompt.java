@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Sep 26 15:45:56 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
 
 package org.texttechnologylab.type;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Suffix Prompt for LLM. It is optional, if not set, will be placed after the user Prompt. For example adding additional information to the Prompt.
- * Updated by JCasGen Fri Sep 26 15:45:56 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMSuffixPrompt extends Annotation {
  
