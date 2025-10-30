@@ -97,8 +97,7 @@
                 <configuration>
                     <limitToProject>true</limitToProject>
                     <typeSystemIncludes>
-<!--                                <include>src/main/resources/desc/**/*</include>-->
-                        <include>src/main/resources/desc/type/ParliamentaryTypeSystem.xml</include>
+                        <include>src/main/resources/desc/**/*</include>
                     </typeSystemIncludes>
                     <outputDirectory>
                         src/main/java/
@@ -232,22 +231,6 @@
             <artifactId>dkpro-core-api-resources-asl</artifactId>
             <version>${dkpro.core.version}</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.1</version>
-            <scope>test</scope>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.github.texttechnologylab</groupId>
-            <artifactId>Utilities</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-
     </dependencies>
 
 </project>
