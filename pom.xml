@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>3.0.11</version>
+    <version>3.0.14</version>
 
     <licenses>
         <license>
@@ -70,6 +70,14 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/texttechnologylab/UIMATypeSystem</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>jitpack.io</id>
@@ -81,63 +89,99 @@
         </repository>
     </repositories>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <dkpro.core.version>2.4.0</dkpro.core.version>
+        <dkpro.core.version>2.5.0</dkpro.core.version>
         <uima.version>3.6.0</uima.version>
     </properties>
 
     <build>
         <plugins>
             <plugin>
-                <!--generate types dynamically -->
-                <groupId>org.apache.uima</groupId>
-                <artifactId>jcasgen-maven-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <limitToProject>true</limitToProject>
-                    <typeSystemIncludes>
-                                                <include>src/main/resources/desc/**/*</include>
-<!--                        <include>src/main/resources/desc/type/TextTechnologyParliamentaryTypeSystem.xml</include>-->
-                    </typeSystemIncludes>
-                    <outputDirectory>
-                        src/main/java/
-                    </outputDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <!--call it in the generate-source phase -->
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
+                <version>3.14.0</version>
             </plugin>
         </plugins>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.dkpro.core</groupId>
-                <artifactId>dkpro-core-asl</artifactId>
-                <version>${dkpro.core.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <profiles>
+        <profile>
+            <id>jcasgen</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!--generate types dynamically -->
+                        <groupId>org.apache.uima</groupId>
+                        <artifactId>jcasgen-maven-plugin</artifactId>
+                        <version>3.6.0</version>
+                        <configuration>
+                            <limitToProject>true</limitToProject>
+                            <typeSystemIncludes>
+                                <include>src/main/resources/desc/**/*</include>
+                            </typeSystemIncludes>
+                            <outputDirectory>
+                                src/main/java/
+                            </outputDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <!--call it in the generate-source phase -->
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>3.3.1</version>
+                        <configuration>
+                            <excludeResources>true</excludeResources>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.10.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                                <configuration>
+                                    <additionalOptions>-Xdoclint:none</additionalOptions>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <dependencies>
 
@@ -163,35 +207,49 @@
             <version>${uima.version}</version>
         </dependency>
 
+        <!--        <dependency>-->
+        <!--            <groupId>org.dkpro.core</groupId>-->
+        <!--            <artifactId>dkpro-core-asl</artifactId>-->
+        <!--            <version>${dkpro.core.version}</version>-->
+        <!--            <type>pom</type>-->
+        <!--        </dependency>-->
+
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-segmentation-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-metadata-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-ner-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-anomaly-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-syntax-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-semantics-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-tokit-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-tokit-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -199,23 +257,27 @@
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-opennlp-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-api-io-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-io-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-io-xmi-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-io-xmi-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dkpro.core/dkpro-core-io-text-asl -->
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-io-text-asl</artifactId>
+            <version>${dkpro.core.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -223,8 +285,8 @@
         <dependency>
             <groupId>org.dkpro.core</groupId>
             <artifactId>dkpro-core-api-resources-asl</artifactId>
+            <version>${dkpro.core.version}</version>
         </dependency>
-
     </dependencies>
 
 </project>

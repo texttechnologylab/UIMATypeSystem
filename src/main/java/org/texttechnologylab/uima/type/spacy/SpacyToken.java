@@ -1,27 +1,29 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Aug 01 12:46:51 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
 
 package org.texttechnologylab.uima.type.spacy;
-
-
-import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.FloatArray;
-import org.apache.uima.jcas.cas.StringArray;
+ 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Fri Aug 01 12:46:51 CEST 2025
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.cas.FloatArray;
+import org.apache.uima.jcas.cas.StringArray;
+import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
+
+
+/** 
+ * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
+ * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpacyToken extends Token {
  
