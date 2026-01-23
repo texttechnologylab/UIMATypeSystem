@@ -33,6 +33,29 @@
                     <description/>
                     <rangeTypeName>uima.cas.Float</rangeTypeName>
                 </featureDescription>
+                <featureDescription>
+                    <name>sequenceScore</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>sequenceScoreSum</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.neglab.TokenSuprisal</name>
+            <description/>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>value</name>
+                    <description/>
+                    <rangeTypeName>uima.cas.Float</rangeTypeName>
+                </featureDescription>
             </features>
         </typeDescription>
     </types>
