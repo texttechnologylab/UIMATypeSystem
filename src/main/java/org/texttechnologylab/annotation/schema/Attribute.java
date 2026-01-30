@@ -1,28 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jan 30 15:15:29 CET 2026 */
 
 package org.texttechnologylab.annotation.schema;
- 
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
-
-
-import org.apache.uima.jcas.cas.TOP;
 import org.apache.uima.jcas.cas.AnnotationBase;
+import org.apache.uima.jcas.cas.TOP;
+
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 
-/** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Fri Jan 30 15:15:29 CET 2026
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Attribute extends AnnotationBase {
  
