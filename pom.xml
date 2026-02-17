@@ -146,46 +146,7 @@
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>3.3.1</version>
-                        <configuration>
-                            <excludeResources>true</excludeResources>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <goals>
-                                    <goal>jar-no-fork</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
 
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.10.1</version>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                                <configuration>
-                                    <additionalOptions>-Xdoclint:none</additionalOptions>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
     </profiles>
 
     <dependencies>
@@ -193,7 +154,7 @@
         <dependency>
             <groupId>org.apache.uima</groupId>
             <artifactId>uimaj-core</artifactId>
-            <version>${uima.version}</version>
+            <version>3.3.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.uima</groupId>
@@ -206,13 +167,6 @@
             <artifactId>uimaj-tools</artifactId>
             <version>${uima.version}</version>
         </dependency>
-
-        <!--        <dependency>-->
-        <!--            <groupId>org.dkpro.core</groupId>-->
-        <!--            <artifactId>dkpro-core-asl</artifactId>-->
-        <!--            <version>${dkpro.core.version}</version>-->
-        <!--            <type>pom</type>-->
-        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.dkpro.core</groupId>
