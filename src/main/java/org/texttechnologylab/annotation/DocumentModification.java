@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DocumentModification extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.DocumentModification";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class DocumentModification extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_user = "user";
-  public final static String _FeatName_timestamp = "timestamp";
-  public final static String _FeatName_comment = "comment";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_user = TypeSystemImpl.createCallSite(DocumentModification.class, "user");
-  private final static MethodHandle _FH_user = _FC_user.dynamicInvoker();
-  private final static CallSite _FC_timestamp = TypeSystemImpl.createCallSite(DocumentModification.class, "timestamp");
-  private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
-  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(DocumentModification.class, "comment");
-  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected DocumentModification() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public DocumentModification(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public DocumentModification(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class DocumentModification extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -106,16 +71,19 @@ public class DocumentModification extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
+  public String getUser() {
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.DocumentModification");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_user);}
     
   /** setter for user - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUser(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
-  }    
-    
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.texttechnologylab.annotation.DocumentModification");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_user, v);}    
    
     
   //*--------------*
@@ -125,16 +93,19 @@ public class DocumentModification extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public long getTimestamp() { return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));}
+  public long getTimestamp() {
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentModification");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_timestamp);}
     
   /** setter for timestamp - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimestamp(long v) {
-    _setLongValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }    
-    
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentModification");
+    jcasType.ll_cas.ll_setLongValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_timestamp, v);}    
    
     
   //*--------------*
@@ -144,16 +115,19 @@ public class DocumentModification extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
+  public String getComment() {
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.DocumentModification");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_comment);}
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
-  }    
-    
+    if (DocumentModification_Type.featOkTst && ((DocumentModification_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.DocumentModification");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentModification_Type)jcasType).casFeatCode_comment, v);}    
   }
 
     

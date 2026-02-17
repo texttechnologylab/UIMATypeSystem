@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Hypothesis extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Hypothesis";
-  
   /** @generated
    * @ordered 
    */
@@ -47,30 +32,17 @@ public class Hypothesis extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Stances = "Stances";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Stances = TypeSystemImpl.createCallSite(Hypothesis.class, "Stances");
-  private final static MethodHandle _FH_Stances = _FC_Stances.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Hypothesis() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Hypothesis(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Hypothesis(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -81,7 +53,6 @@ public class Hypothesis extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -113,16 +84,19 @@ public class Hypothesis extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getStances() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Stances)));}
+  public FSArray getStances() {
+    if (Hypothesis_Type.featOkTst && ((Hypothesis_Type)jcasType).casFeat_Stances == null)
+      jcasType.jcas.throwFeatMissing("Stances", "org.texttechnologylab.annotation.Hypothesis");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances)));}
     
   /** setter for Stances - sets Stances 
    * @generated
    * @param v value to set into the feature 
    */
   public void setStances(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Stances), v);
-  }    
-    
+    if (Hypothesis_Type.featOkTst && ((Hypothesis_Type)jcasType).casFeat_Stances == null)
+      jcasType.jcas.throwFeatMissing("Stances", "org.texttechnologylab.annotation.Hypothesis");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for Stances - gets an indexed value - Stances
    * @generated
@@ -130,16 +104,21 @@ public class Hypothesis extends Annotation {
    * @return value of the element at index i 
    */
   public StanceSentence getStances(int i) {
-     return (StanceSentence)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Stances)))).get(i));} 
+    if (Hypothesis_Type.featOkTst && ((Hypothesis_Type)jcasType).casFeat_Stances == null)
+      jcasType.jcas.throwFeatMissing("Stances", "org.texttechnologylab.annotation.Hypothesis");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances), i);
+    return (StanceSentence)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances), i)));}
 
   /** indexed setter for Stances - sets an indexed value - Stances
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setStances(int i, StanceSentence v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Stances)))).set(i, v);
-  }  
+  public void setStances(int i, StanceSentence v) { 
+    if (Hypothesis_Type.featOkTst && ((Hypothesis_Type)jcasType).casFeat_Stances == null)
+      jcasType.jcas.throwFeatMissing("Stances", "org.texttechnologylab.annotation.Hypothesis");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Hypothesis_Type)jcasType).casFeatCode_Stances), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

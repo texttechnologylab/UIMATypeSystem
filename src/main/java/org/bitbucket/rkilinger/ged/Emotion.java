@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.bitbucket.rkilinger.ged;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Emotion extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.bitbucket.rkilinger.ged.Emotion";
-  
   /** @generated
    * @ordered 
    */
@@ -46,48 +31,17 @@ public class Emotion extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_joy = "joy";
-  public final static String _FeatName_anger = "anger";
-  public final static String _FeatName_mourning = "mourning";
-  public final static String _FeatName_fear = "fear";
-  public final static String _FeatName_surprise = "surprise";
-  public final static String _FeatName_contempt = "contempt";
-  public final static String _FeatName_disgust = "disgust";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_joy = TypeSystemImpl.createCallSite(Emotion.class, "joy");
-  private final static MethodHandle _FH_joy = _FC_joy.dynamicInvoker();
-  private final static CallSite _FC_anger = TypeSystemImpl.createCallSite(Emotion.class, "anger");
-  private final static MethodHandle _FH_anger = _FC_anger.dynamicInvoker();
-  private final static CallSite _FC_mourning = TypeSystemImpl.createCallSite(Emotion.class, "mourning");
-  private final static MethodHandle _FH_mourning = _FC_mourning.dynamicInvoker();
-  private final static CallSite _FC_fear = TypeSystemImpl.createCallSite(Emotion.class, "fear");
-  private final static MethodHandle _FH_fear = _FC_fear.dynamicInvoker();
-  private final static CallSite _FC_surprise = TypeSystemImpl.createCallSite(Emotion.class, "surprise");
-  private final static MethodHandle _FH_surprise = _FC_surprise.dynamicInvoker();
-  private final static CallSite _FC_contempt = TypeSystemImpl.createCallSite(Emotion.class, "contempt");
-  private final static MethodHandle _FH_contempt = _FC_contempt.dynamicInvoker();
-  private final static CallSite _FC_disgust = TypeSystemImpl.createCallSite(Emotion.class, "disgust");
-  private final static MethodHandle _FH_disgust = _FC_disgust.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Emotion() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Emotion(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Emotion(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -98,7 +52,6 @@ public class Emotion extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -130,16 +83,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getJoy() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_joy));}
+  public double getJoy() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_joy == null)
+      jcasType.jcas.throwFeatMissing("joy", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_joy);}
     
   /** setter for joy - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setJoy(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_joy), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_joy == null)
+      jcasType.jcas.throwFeatMissing("joy", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_joy, v);}    
    
     
   //*--------------*
@@ -149,16 +105,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getAnger() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_anger));}
+  public double getAnger() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_anger == null)
+      jcasType.jcas.throwFeatMissing("anger", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_anger);}
     
   /** setter for anger - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAnger(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_anger), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_anger == null)
+      jcasType.jcas.throwFeatMissing("anger", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_anger, v);}    
    
     
   //*--------------*
@@ -168,16 +127,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getMourning() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_mourning));}
+  public double getMourning() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_mourning == null)
+      jcasType.jcas.throwFeatMissing("mourning", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_mourning);}
     
   /** setter for mourning - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMourning(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_mourning), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_mourning == null)
+      jcasType.jcas.throwFeatMissing("mourning", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_mourning, v);}    
    
     
   //*--------------*
@@ -187,16 +149,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getFear() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_fear));}
+  public double getFear() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_fear == null)
+      jcasType.jcas.throwFeatMissing("fear", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_fear);}
     
   /** setter for fear - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFear(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_fear), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_fear == null)
+      jcasType.jcas.throwFeatMissing("fear", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_fear, v);}    
    
     
   //*--------------*
@@ -206,16 +171,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSurprise() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_surprise));}
+  public double getSurprise() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_surprise == null)
+      jcasType.jcas.throwFeatMissing("surprise", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_surprise);}
     
   /** setter for surprise - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSurprise(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_surprise), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_surprise == null)
+      jcasType.jcas.throwFeatMissing("surprise", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_surprise, v);}    
    
     
   //*--------------*
@@ -225,16 +193,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getContempt() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_contempt));}
+  public double getContempt() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_contempt == null)
+      jcasType.jcas.throwFeatMissing("contempt", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_contempt);}
     
   /** setter for contempt - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContempt(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_contempt), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_contempt == null)
+      jcasType.jcas.throwFeatMissing("contempt", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_contempt, v);}    
    
     
   //*--------------*
@@ -244,16 +215,19 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getDisgust() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_disgust));}
+  public double getDisgust() {
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_disgust == null)
+      jcasType.jcas.throwFeatMissing("disgust", "org.bitbucket.rkilinger.ged.Emotion");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_disgust);}
     
   /** setter for disgust - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDisgust(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_disgust), v);
-  }    
-    
+    if (Emotion_Type.featOkTst && ((Emotion_Type)jcasType).casFeat_disgust == null)
+      jcasType.jcas.throwFeatMissing("disgust", "org.bitbucket.rkilinger.ged.Emotion");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Emotion_Type)jcasType).casFeatCode_disgust, v);}    
   }
 
     

@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliament;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliament.Speaker";
-  
   /** @generated
    * @ordered 
    */
@@ -46,60 +31,17 @@ public class Speaker extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_label = "label";
-  public final static String _FeatName_firstname = "firstname";
-  public final static String _FeatName_name = "name";
-  public final static String _FeatName_fullname_deducted = "fullname_deducted";
-  public final static String _FeatName_nobility = "nobility";
-  public final static String _FeatName_title = "title";
-  public final static String _FeatName_role = "role";
-  public final static String _FeatName_party = "party";
-  public final static String _FeatName_party_deducted = "party_deducted";
-  public final static String _FeatName_electoral_county = "electoral_county";
-  public final static String _FeatName_electoral_county_deducted = "electoral_county_deducted";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_label = TypeSystemImpl.createCallSite(Speaker.class, "label");
-  private final static MethodHandle _FH_label = _FC_label.dynamicInvoker();
-  private final static CallSite _FC_firstname = TypeSystemImpl.createCallSite(Speaker.class, "firstname");
-  private final static MethodHandle _FH_firstname = _FC_firstname.dynamicInvoker();
-  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(Speaker.class, "name");
-  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
-  private final static CallSite _FC_fullname_deducted = TypeSystemImpl.createCallSite(Speaker.class, "fullname_deducted");
-  private final static MethodHandle _FH_fullname_deducted = _FC_fullname_deducted.dynamicInvoker();
-  private final static CallSite _FC_nobility = TypeSystemImpl.createCallSite(Speaker.class, "nobility");
-  private final static MethodHandle _FH_nobility = _FC_nobility.dynamicInvoker();
-  private final static CallSite _FC_title = TypeSystemImpl.createCallSite(Speaker.class, "title");
-  private final static MethodHandle _FH_title = _FC_title.dynamicInvoker();
-  private final static CallSite _FC_role = TypeSystemImpl.createCallSite(Speaker.class, "role");
-  private final static MethodHandle _FH_role = _FC_role.dynamicInvoker();
-  private final static CallSite _FC_party = TypeSystemImpl.createCallSite(Speaker.class, "party");
-  private final static MethodHandle _FH_party = _FC_party.dynamicInvoker();
-  private final static CallSite _FC_party_deducted = TypeSystemImpl.createCallSite(Speaker.class, "party_deducted");
-  private final static MethodHandle _FH_party_deducted = _FC_party_deducted.dynamicInvoker();
-  private final static CallSite _FC_electoral_county = TypeSystemImpl.createCallSite(Speaker.class, "electoral_county");
-  private final static MethodHandle _FH_electoral_county = _FC_electoral_county.dynamicInvoker();
-  private final static CallSite _FC_electoral_county_deducted = TypeSystemImpl.createCallSite(Speaker.class, "electoral_county_deducted");
-  private final static MethodHandle _FH_electoral_county_deducted = _FC_electoral_county_deducted.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Speaker() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Speaker(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Speaker(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -110,7 +52,6 @@ public class Speaker extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -142,16 +83,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
+  public String getLabel() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_label);}
     
   /** setter for label - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_label, v);}    
    
     
   //*--------------*
@@ -161,16 +105,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstname() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));}
+  public String getFirstname() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_firstname == null)
+      jcasType.jcas.throwFeatMissing("firstname", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_firstname);}
     
   /** setter for firstname - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFirstname(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_firstname), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_firstname == null)
+      jcasType.jcas.throwFeatMissing("firstname", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_firstname, v);}    
    
     
   //*--------------*
@@ -180,16 +127,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
+  public String getName() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_name, v);}    
    
     
   //*--------------*
@@ -199,16 +149,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFullname_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_fullname_deducted));}
+  public String getFullname_deducted() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_fullname_deducted == null)
+      jcasType.jcas.throwFeatMissing("fullname_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_fullname_deducted);}
     
   /** setter for fullname_deducted - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFullname_deducted(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_fullname_deducted), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_fullname_deducted == null)
+      jcasType.jcas.throwFeatMissing("fullname_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_fullname_deducted, v);}    
    
     
   //*--------------*
@@ -218,16 +171,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNobility() { return _getStringValueNc(wrapGetIntCatchException(_FH_nobility));}
+  public String getNobility() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_nobility == null)
+      jcasType.jcas.throwFeatMissing("nobility", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_nobility);}
     
   /** setter for nobility - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNobility(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_nobility), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_nobility == null)
+      jcasType.jcas.throwFeatMissing("nobility", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_nobility, v);}    
    
     
   //*--------------*
@@ -237,16 +193,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
+  public String getTitle() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_title, v);}    
    
     
   //*--------------*
@@ -256,16 +215,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
+  public String getRole() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_role);}
     
   /** setter for role - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRole(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_role), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_role, v);}    
    
     
   //*--------------*
@@ -275,16 +237,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getParty() { return _getStringValueNc(wrapGetIntCatchException(_FH_party));}
+  public String getParty() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_party == null)
+      jcasType.jcas.throwFeatMissing("party", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_party);}
     
   /** setter for party - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParty(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_party), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_party == null)
+      jcasType.jcas.throwFeatMissing("party", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_party, v);}    
    
     
   //*--------------*
@@ -294,16 +259,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getParty_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_party_deducted));}
+  public String getParty_deducted() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_party_deducted == null)
+      jcasType.jcas.throwFeatMissing("party_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_party_deducted);}
     
   /** setter for party_deducted - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParty_deducted(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_party_deducted), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_party_deducted == null)
+      jcasType.jcas.throwFeatMissing("party_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_party_deducted, v);}    
    
     
   //*--------------*
@@ -313,16 +281,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getElectoral_county() { return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county));}
+  public String getElectoral_county() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_electoral_county == null)
+      jcasType.jcas.throwFeatMissing("electoral_county", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_electoral_county);}
     
   /** setter for electoral_county - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setElectoral_county(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_electoral_county), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_electoral_county == null)
+      jcasType.jcas.throwFeatMissing("electoral_county", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_electoral_county, v);}    
    
     
   //*--------------*
@@ -332,16 +303,19 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getElectoral_county_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county_deducted));}
+  public String getElectoral_county_deducted() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_electoral_county_deducted == null)
+      jcasType.jcas.throwFeatMissing("electoral_county_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_electoral_county_deducted);}
     
   /** setter for electoral_county_deducted - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setElectoral_county_deducted(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_electoral_county_deducted), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_electoral_county_deducted == null)
+      jcasType.jcas.throwFeatMissing("electoral_county_deducted", "org.texttechnologylab.annotation.parliament.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_electoral_county_deducted, v);}    
   }
 
     

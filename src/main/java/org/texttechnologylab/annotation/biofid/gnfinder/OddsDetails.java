@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OddsDetails extends TOP {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class OddsDetails extends TOP {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_feature = "feature";
-  public final static String _FeatName_odds = "odds";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_feature = TypeSystemImpl.createCallSite(OddsDetails.class, "feature");
-  private final static MethodHandle _FH_feature = _FC_feature.dynamicInvoker();
-  private final static CallSite _FC_odds = TypeSystemImpl.createCallSite(OddsDetails.class, "odds");
-  private final static MethodHandle _FH_odds = _FC_odds.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected OddsDetails() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public OddsDetails(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public OddsDetails(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class OddsDetails extends TOP {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -103,16 +71,19 @@ public class OddsDetails extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getFeature() { return _getStringValueNc(wrapGetIntCatchException(_FH_feature));}
+  public String getFeature() {
+    if (OddsDetails_Type.featOkTst && ((OddsDetails_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OddsDetails_Type)jcasType).casFeatCode_feature);}
     
   /** setter for feature - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFeature(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_feature), v);
-  }    
-    
+    if (OddsDetails_Type.featOkTst && ((OddsDetails_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OddsDetails_Type)jcasType).casFeatCode_feature, v);}    
    
     
   //*--------------*
@@ -122,16 +93,19 @@ public class OddsDetails extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public float getOdds() { return _getFloatValueNc(wrapGetIntCatchException(_FH_odds));}
+  public float getOdds() {
+    if (OddsDetails_Type.featOkTst && ((OddsDetails_Type)jcasType).casFeat_odds == null)
+      jcasType.jcas.throwFeatMissing("odds", "org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((OddsDetails_Type)jcasType).casFeatCode_odds);}
     
   /** setter for odds - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOdds(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_odds), v);
-  }    
-    
+    if (OddsDetails_Type.featOkTst && ((OddsDetails_Type)jcasType).casFeat_odds == null)
+      jcasType.jcas.throwFeatMissing("odds", "org.texttechnologylab.annotation.biofid.gnfinder.OddsDetails");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((OddsDetails_Type)jcasType).casFeatCode_odds, v);}    
   }
 
     

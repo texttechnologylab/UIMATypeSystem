@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.type.llm.prompt;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** List of messages.
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Message extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.llm.prompt.Message";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class Message extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_role = "role";
-  public final static String _FeatName_content = "content";
-  public final static String _FeatName_classModule = "classModule";
-  public final static String _FeatName_className = "className";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_role = TypeSystemImpl.createCallSite(Message.class, "role");
-  private final static MethodHandle _FH_role = _FC_role.dynamicInvoker();
-  private final static CallSite _FC_content = TypeSystemImpl.createCallSite(Message.class, "content");
-  private final static MethodHandle _FH_content = _FC_content.dynamicInvoker();
-  private final static CallSite _FC_classModule = TypeSystemImpl.createCallSite(Message.class, "classModule");
-  private final static MethodHandle _FH_classModule = _FC_classModule.dynamicInvoker();
-  private final static CallSite _FC_className = TypeSystemImpl.createCallSite(Message.class, "className");
-  private final static MethodHandle _FH_className = _FC_className.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Message() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Message(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Message(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class Message extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
+  public String getRole() {
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.type.llm.prompt.Message");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Message_Type)jcasType).casFeatCode_role);}
     
   /** setter for role - sets Role, e.g. "system", "user", ... 
    * @generated
    * @param v value to set into the feature 
    */
   public void setRole(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_role), v);
-  }    
-    
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.type.llm.prompt.Message");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Message_Type)jcasType).casFeatCode_role, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getContent() { return _getStringValueNc(wrapGetIntCatchException(_FH_content));}
+  public String getContent() {
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_content == null)
+      jcasType.jcas.throwFeatMissing("content", "org.texttechnologylab.type.llm.prompt.Message");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Message_Type)jcasType).casFeatCode_content);}
     
   /** setter for content - sets Message content. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setContent(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_content), v);
-  }    
-    
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_content == null)
+      jcasType.jcas.throwFeatMissing("content", "org.texttechnologylab.type.llm.prompt.Message");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Message_Type)jcasType).casFeatCode_content, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getClassModule() { return _getStringValueNc(wrapGetIntCatchException(_FH_classModule));}
+  public String getClassModule() {
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_classModule == null)
+      jcasType.jcas.throwFeatMissing("classModule", "org.texttechnologylab.type.llm.prompt.Message");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Message_Type)jcasType).casFeatCode_classModule);}
     
   /** setter for classModule - sets Name of the module of the class to use for constructing the message 
    * @generated
    * @param v value to set into the feature 
    */
   public void setClassModule(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_classModule), v);
-  }    
-    
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_classModule == null)
+      jcasType.jcas.throwFeatMissing("classModule", "org.texttechnologylab.type.llm.prompt.Message");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Message_Type)jcasType).casFeatCode_classModule, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getClassName() { return _getStringValueNc(wrapGetIntCatchException(_FH_className));}
+  public String getClassName() {
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_className == null)
+      jcasType.jcas.throwFeatMissing("className", "org.texttechnologylab.type.llm.prompt.Message");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Message_Type)jcasType).casFeatCode_className);}
     
   /** setter for className - sets Name of the class to use for constructing the message 
    * @generated
    * @param v value to set into the feature 
    */
   public void setClassName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_className), v);
-  }    
-    
+    if (Message_Type.featOkTst && ((Message_Type)jcasType).casFeat_className == null)
+      jcasType.jcas.throwFeatMissing("className", "org.texttechnologylab.type.llm.prompt.Message");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Message_Type)jcasType).casFeatCode_className, v);}    
   }
 
     

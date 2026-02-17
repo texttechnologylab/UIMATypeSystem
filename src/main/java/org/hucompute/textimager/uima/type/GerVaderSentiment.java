@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Subtype of VADER sentiment results, specific for the german adaption (https://github.com/KarstenAMF/GerVADER)
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GerVaderSentiment extends VaderSentiment {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.GerVaderSentiment";
-  
   /** @generated
    * @ordered 
    */
@@ -45,27 +30,17 @@ public class GerVaderSentiment extends VaderSentiment {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-
-
-  /* Feature Adjusted Offsets */
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected GerVaderSentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public GerVaderSentiment(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public GerVaderSentiment(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -76,7 +51,6 @@ public class GerVaderSentiment extends VaderSentiment {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs

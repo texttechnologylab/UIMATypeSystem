@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package de.unihd.dbs.uima.types.heideltime;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Sentence extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "de.unihd.dbs.uima.types.heideltime.Sentence";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Sentence extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_filename = "filename";
-  public final static String _FeatName_sentenceId = "sentenceId";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_filename = TypeSystemImpl.createCallSite(Sentence.class, "filename");
-  private final static MethodHandle _FH_filename = _FC_filename.dynamicInvoker();
-  private final static CallSite _FC_sentenceId = TypeSystemImpl.createCallSite(Sentence.class, "sentenceId");
-  private final static MethodHandle _FH_sentenceId = _FC_sentenceId.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Sentence() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Sentence(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Sentence(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Sentence extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Sentence extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFilename() { return _getStringValueNc(wrapGetIntCatchException(_FH_filename));}
+  public String getFilename() {
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_filename == null)
+      jcasType.jcas.throwFeatMissing("filename", "de.unihd.dbs.uima.types.heideltime.Sentence");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Sentence_Type)jcasType).casFeatCode_filename);}
     
   /** setter for filename - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFilename(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_filename), v);
-  }    
-    
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_filename == null)
+      jcasType.jcas.throwFeatMissing("filename", "de.unihd.dbs.uima.types.heideltime.Sentence");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Sentence_Type)jcasType).casFeatCode_filename, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Sentence extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentenceId() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentenceId));}
+  public int getSentenceId() {
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_sentenceId == null)
+      jcasType.jcas.throwFeatMissing("sentenceId", "de.unihd.dbs.uima.types.heideltime.Sentence");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_sentenceId);}
     
   /** setter for sentenceId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentenceId(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_sentenceId), v);
-  }    
-    
+    if (Sentence_Type.featOkTst && ((Sentence_Type)jcasType).casFeat_sentenceId == null)
+      jcasType.jcas.throwFeatMissing("sentenceId", "de.unihd.dbs.uima.types.heideltime.Sentence");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Sentence_Type)jcasType).casFeatCode_sentenceId, v);}    
   }
 
     

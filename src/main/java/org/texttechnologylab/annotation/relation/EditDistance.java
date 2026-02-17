@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.relation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** An annotation that denotes an edit distance difference between two annotations.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EditDistance extends AnnotationRelation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.relation.EditDistance";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class EditDistance extends AnnotationRelation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_distance = "distance";
-  public final static String _FeatName_algorithm = "algorithm";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_distance = TypeSystemImpl.createCallSite(EditDistance.class, "distance");
-  private final static MethodHandle _FH_distance = _FC_distance.dynamicInvoker();
-  private final static CallSite _FC_algorithm = TypeSystemImpl.createCallSite(EditDistance.class, "algorithm");
-  private final static MethodHandle _FH_algorithm = _FC_algorithm.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected EditDistance() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public EditDistance(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public EditDistance(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class EditDistance extends AnnotationRelation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -114,16 +82,19 @@ public class EditDistance extends AnnotationRelation {
    * @generated
    * @return value of the feature 
    */
-  public int getDistance() { return _getIntValueNc(wrapGetIntCatchException(_FH_distance));}
+  public int getDistance() {
+    if (EditDistance_Type.featOkTst && ((EditDistance_Type)jcasType).casFeat_distance == null)
+      jcasType.jcas.throwFeatMissing("distance", "org.texttechnologylab.annotation.relation.EditDistance");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((EditDistance_Type)jcasType).casFeatCode_distance);}
     
   /** setter for distance - sets The edit distance as a 32-bit integer value. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDistance(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_distance), v);
-  }    
-    
+    if (EditDistance_Type.featOkTst && ((EditDistance_Type)jcasType).casFeat_distance == null)
+      jcasType.jcas.throwFeatMissing("distance", "org.texttechnologylab.annotation.relation.EditDistance");
+    jcasType.ll_cas.ll_setIntValue(addr, ((EditDistance_Type)jcasType).casFeatCode_distance, v);}    
    
     
   //*--------------*
@@ -133,16 +104,19 @@ public class EditDistance extends AnnotationRelation {
    * @generated
    * @return value of the feature 
    */
-  public String getAlgorithm() { return _getStringValueNc(wrapGetIntCatchException(_FH_algorithm));}
+  public String getAlgorithm() {
+    if (EditDistance_Type.featOkTst && ((EditDistance_Type)jcasType).casFeat_algorithm == null)
+      jcasType.jcas.throwFeatMissing("algorithm", "org.texttechnologylab.annotation.relation.EditDistance");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EditDistance_Type)jcasType).casFeatCode_algorithm);}
     
   /** setter for algorithm - sets The algorithm used to calculate the edit distance. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setAlgorithm(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_algorithm), v);
-  }    
-    
+    if (EditDistance_Type.featOkTst && ((EditDistance_Type)jcasType).casFeat_algorithm == null)
+      jcasType.jcas.throwFeatMissing("algorithm", "org.texttechnologylab.annotation.relation.EditDistance");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EditDistance_Type)jcasType).casFeatCode_algorithm, v);}    
   }
 
     

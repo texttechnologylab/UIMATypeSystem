@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.relation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Base type for annotation relations between two annotations (u, v).
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationRelation extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.relation.AnnotationRelation";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class AnnotationRelation extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_u = "u";
-  public final static String _FeatName_v = "v";
-  public final static String _FeatName_directed = "directed";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_u = TypeSystemImpl.createCallSite(AnnotationRelation.class, "u");
-  private final static MethodHandle _FH_u = _FC_u.dynamicInvoker();
-  private final static CallSite _FC_v = TypeSystemImpl.createCallSite(AnnotationRelation.class, "v");
-  private final static MethodHandle _FH_v = _FC_v.dynamicInvoker();
-  private final static CallSite _FC_directed = TypeSystemImpl.createCallSite(AnnotationRelation.class, "directed");
-  private final static MethodHandle _FH_directed = _FC_directed.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected AnnotationRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AnnotationRelation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public AnnotationRelation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class AnnotationRelation extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getU() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_u)));}
+  public Annotation getU() {
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_u == null)
+      jcasType.jcas.throwFeatMissing("u", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_u)));}
     
   /** setter for u - sets Annotation node 'u'. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setU(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_u), v);
-  }    
-    
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_u == null)
+      jcasType.jcas.throwFeatMissing("u", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_u, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getV() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_v)));}
+  public Annotation getV() {
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_v == null)
+      jcasType.jcas.throwFeatMissing("v", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_v)));}
     
   /** setter for v - sets Annotation node 'v'. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setV(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_v), v);
-  }    
-    
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_v == null)
+      jcasType.jcas.throwFeatMissing("v", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_v, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -156,16 +127,19 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getDirected() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_directed));}
+  public boolean getDirected() {
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_directed == null)
+      jcasType.jcas.throwFeatMissing("directed", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_directed);}
     
   /** setter for directed - sets If true, the relation only holds in direction (u, v). 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDirected(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_directed), v);
-  }    
-    
+    if (AnnotationRelation_Type.featOkTst && ((AnnotationRelation_Type)jcasType).casFeat_directed == null)
+      jcasType.jcas.throwFeatMissing("directed", "org.texttechnologylab.annotation.relation.AnnotationRelation");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((AnnotationRelation_Type)jcasType).casFeatCode_directed, v);}    
   }
 
     

@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** Type for gnfinder-recognized taxonomic names that have not been verified.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.biofid.gnfinder.Taxon";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_cardinality = "cardinality";
-  public final static String _FeatName_oddsLog10 = "oddsLog10";
-  public final static String _FeatName_oddsDetails = "oddsDetails";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_cardinality = TypeSystemImpl.createCallSite(Taxon.class, "cardinality");
-  private final static MethodHandle _FH_cardinality = _FC_cardinality.dynamicInvoker();
-  private final static CallSite _FC_oddsLog10 = TypeSystemImpl.createCallSite(Taxon.class, "oddsLog10");
-  private final static MethodHandle _FH_oddsLog10 = _FC_oddsLog10.dynamicInvoker();
-  private final static CallSite _FC_oddsDetails = TypeSystemImpl.createCallSite(Taxon.class, "oddsDetails");
-  private final static MethodHandle _FH_oddsDetails = _FC_oddsDetails.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Taxon() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Taxon(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Taxon(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -123,7 +88,10 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getCardinality() { return _getShortValueNc(wrapGetIntCatchException(_FH_cardinality));}
+  public short getCardinality() {
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_cardinality == null)
+      jcasType.jcas.throwFeatMissing("cardinality", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    return jcasType.ll_cas.ll_getShortValue(addr, ((Taxon_Type)jcasType).casFeatCode_cardinality);}
     
   /** setter for cardinality - sets Cardinality depicts the number of elements in a name.
                         0 - Could not determine cardinality,
@@ -134,9 +102,9 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @param v value to set into the feature 
    */
   public void setCardinality(short v) {
-    _setShortValueNfc(wrapGetIntCatchException(_FH_cardinality), v);
-  }    
-    
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_cardinality == null)
+      jcasType.jcas.throwFeatMissing("cardinality", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    jcasType.ll_cas.ll_setShortValue(addr, ((Taxon_Type)jcasType).casFeatCode_cardinality, v);}    
    
     
   //*--------------*
@@ -146,16 +114,19 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  public float getOddsLog10() { return _getFloatValueNc(wrapGetIntCatchException(_FH_oddsLog10));}
+  public float getOddsLog10() {
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsLog10 == null)
+      jcasType.jcas.throwFeatMissing("oddsLog10", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsLog10);}
     
   /** setter for oddsLog10 - sets Log10 of the odds (probability) that name detection was correct. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setOddsLog10(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_oddsLog10), v);
-  }    
-    
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsLog10 == null)
+      jcasType.jcas.throwFeatMissing("oddsLog10", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsLog10, v);}    
    
     
   //*--------------*
@@ -165,16 +136,19 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getOddsDetails() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)));}
+  public FSArray getOddsDetails() {
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsDetails == null)
+      jcasType.jcas.throwFeatMissing("oddsDetails", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails)));}
     
   /** setter for oddsDetails - sets A list of OddsDetails that describe how odds were calculated (optional). 
    * @generated
    * @param v value to set into the feature 
    */
   public void setOddsDetails(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_oddsDetails), v);
-  }    
-    
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsDetails == null)
+      jcasType.jcas.throwFeatMissing("oddsDetails", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for oddsDetails - gets an indexed value - A list of OddsDetails that describe how odds were calculated (optional).
    * @generated
@@ -182,16 +156,21 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @return value of the element at index i 
    */
   public TOP getOddsDetails(int i) {
-     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).get(i));} 
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsDetails == null)
+      jcasType.jcas.throwFeatMissing("oddsDetails", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails), i);
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails), i)));}
 
   /** indexed setter for oddsDetails - sets an indexed value - A list of OddsDetails that describe how odds were calculated (optional).
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setOddsDetails(int i, TOP v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).set(i, v);
-  }  
+  public void setOddsDetails(int i, TOP v) { 
+    if (Taxon_Type.featOkTst && ((Taxon_Type)jcasType).casFeat_oddsDetails == null)
+      jcasType.jcas.throwFeatMissing("oddsDetails", "org.texttechnologylab.annotation.biofid.gnfinder.Taxon");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Taxon_Type)jcasType).casFeatCode_oddsDetails), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

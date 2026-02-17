@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Typesystem for results of OpenIE (Stanford Open Information Extraction - https://nlp.stanford.edu/software/openie.html).
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OpenIERelation extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.OpenIERelation";
-  
   /** @generated
    * @ordered 
    */
@@ -46,57 +31,17 @@ public class OpenIERelation extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_confidence = "confidence";
-  public final static String _FeatName_beginArg1 = "beginArg1";
-  public final static String _FeatName_endArg1 = "endArg1";
-  public final static String _FeatName_valueArg1 = "valueArg1";
-  public final static String _FeatName_beginRel = "beginRel";
-  public final static String _FeatName_endRel = "endRel";
-  public final static String _FeatName_valueRel = "valueRel";
-  public final static String _FeatName_beginArg2 = "beginArg2";
-  public final static String _FeatName_endArg2 = "endArg2";
-  public final static String _FeatName_valueArg2 = "valueArg2";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_confidence = TypeSystemImpl.createCallSite(OpenIERelation.class, "confidence");
-  private final static MethodHandle _FH_confidence = _FC_confidence.dynamicInvoker();
-  private final static CallSite _FC_beginArg1 = TypeSystemImpl.createCallSite(OpenIERelation.class, "beginArg1");
-  private final static MethodHandle _FH_beginArg1 = _FC_beginArg1.dynamicInvoker();
-  private final static CallSite _FC_endArg1 = TypeSystemImpl.createCallSite(OpenIERelation.class, "endArg1");
-  private final static MethodHandle _FH_endArg1 = _FC_endArg1.dynamicInvoker();
-  private final static CallSite _FC_valueArg1 = TypeSystemImpl.createCallSite(OpenIERelation.class, "valueArg1");
-  private final static MethodHandle _FH_valueArg1 = _FC_valueArg1.dynamicInvoker();
-  private final static CallSite _FC_beginRel = TypeSystemImpl.createCallSite(OpenIERelation.class, "beginRel");
-  private final static MethodHandle _FH_beginRel = _FC_beginRel.dynamicInvoker();
-  private final static CallSite _FC_endRel = TypeSystemImpl.createCallSite(OpenIERelation.class, "endRel");
-  private final static MethodHandle _FH_endRel = _FC_endRel.dynamicInvoker();
-  private final static CallSite _FC_valueRel = TypeSystemImpl.createCallSite(OpenIERelation.class, "valueRel");
-  private final static MethodHandle _FH_valueRel = _FC_valueRel.dynamicInvoker();
-  private final static CallSite _FC_beginArg2 = TypeSystemImpl.createCallSite(OpenIERelation.class, "beginArg2");
-  private final static MethodHandle _FH_beginArg2 = _FC_beginArg2.dynamicInvoker();
-  private final static CallSite _FC_endArg2 = TypeSystemImpl.createCallSite(OpenIERelation.class, "endArg2");
-  private final static MethodHandle _FH_endArg2 = _FC_endArg2.dynamicInvoker();
-  private final static CallSite _FC_valueArg2 = TypeSystemImpl.createCallSite(OpenIERelation.class, "valueArg2");
-  private final static MethodHandle _FH_valueArg2 = _FC_valueArg2.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected OpenIERelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public OpenIERelation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public OpenIERelation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -107,7 +52,6 @@ public class OpenIERelation extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -139,16 +83,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_confidence));}
+  public double getConfidence() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_confidence == null)
+      jcasType.jcas.throwFeatMissing("confidence", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_confidence);}
     
   /** setter for confidence - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setConfidence(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_confidence), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_confidence == null)
+      jcasType.jcas.throwFeatMissing("confidence", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_confidence, v);}    
    
     
   //*--------------*
@@ -158,16 +105,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginArg1() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg1));}
+  public int getBeginArg1() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginArg1 == null)
+      jcasType.jcas.throwFeatMissing("beginArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginArg1);}
     
   /** setter for beginArg1 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeginArg1(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_beginArg1), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginArg1 == null)
+      jcasType.jcas.throwFeatMissing("beginArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginArg1, v);}    
    
     
   //*--------------*
@@ -177,16 +127,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndArg1() { return _getIntValueNc(wrapGetIntCatchException(_FH_endArg1));}
+  public int getEndArg1() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endArg1 == null)
+      jcasType.jcas.throwFeatMissing("endArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endArg1);}
     
   /** setter for endArg1 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEndArg1(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_endArg1), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endArg1 == null)
+      jcasType.jcas.throwFeatMissing("endArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endArg1, v);}    
    
     
   //*--------------*
@@ -196,16 +149,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueArg1() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg1));}
+  public String getValueArg1() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueArg1 == null)
+      jcasType.jcas.throwFeatMissing("valueArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueArg1);}
     
   /** setter for valueArg1 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValueArg1(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_valueArg1), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueArg1 == null)
+      jcasType.jcas.throwFeatMissing("valueArg1", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueArg1, v);}    
    
     
   //*--------------*
@@ -215,16 +171,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginRel() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginRel));}
+  public int getBeginRel() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginRel == null)
+      jcasType.jcas.throwFeatMissing("beginRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginRel);}
     
   /** setter for beginRel - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeginRel(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_beginRel), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginRel == null)
+      jcasType.jcas.throwFeatMissing("beginRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginRel, v);}    
    
     
   //*--------------*
@@ -234,16 +193,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndRel() { return _getIntValueNc(wrapGetIntCatchException(_FH_endRel));}
+  public int getEndRel() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endRel == null)
+      jcasType.jcas.throwFeatMissing("endRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endRel);}
     
   /** setter for endRel - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEndRel(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_endRel), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endRel == null)
+      jcasType.jcas.throwFeatMissing("endRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endRel, v);}    
    
     
   //*--------------*
@@ -253,16 +215,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueRel() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueRel));}
+  public String getValueRel() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueRel == null)
+      jcasType.jcas.throwFeatMissing("valueRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueRel);}
     
   /** setter for valueRel - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValueRel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_valueRel), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueRel == null)
+      jcasType.jcas.throwFeatMissing("valueRel", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueRel, v);}    
    
     
   //*--------------*
@@ -272,16 +237,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginArg2() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg2));}
+  public int getBeginArg2() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginArg2 == null)
+      jcasType.jcas.throwFeatMissing("beginArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginArg2);}
     
   /** setter for beginArg2 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeginArg2(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_beginArg2), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_beginArg2 == null)
+      jcasType.jcas.throwFeatMissing("beginArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_beginArg2, v);}    
    
     
   //*--------------*
@@ -291,16 +259,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndArg2() { return _getIntValueNc(wrapGetIntCatchException(_FH_endArg2));}
+  public int getEndArg2() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endArg2 == null)
+      jcasType.jcas.throwFeatMissing("endArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endArg2);}
     
   /** setter for endArg2 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEndArg2(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_endArg2), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_endArg2 == null)
+      jcasType.jcas.throwFeatMissing("endArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_endArg2, v);}    
    
     
   //*--------------*
@@ -310,16 +281,19 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueArg2() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg2));}
+  public String getValueArg2() {
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueArg2 == null)
+      jcasType.jcas.throwFeatMissing("valueArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueArg2);}
     
   /** setter for valueArg2 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValueArg2(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_valueArg2), v);
-  }    
-    
+    if (OpenIERelation_Type.featOkTst && ((OpenIERelation_Type)jcasType).casFeat_valueArg2 == null)
+      jcasType.jcas.throwFeatMissing("valueArg2", "org.hucompute.textimager.uima.type.OpenIERelation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OpenIERelation_Type)jcasType).casFeatCode_valueArg2, v);}    
   }
 
     

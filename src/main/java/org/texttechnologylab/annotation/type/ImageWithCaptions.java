@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.texttechnologylab.annotation.Caption;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ImageWithCaptions extends Image {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.ImageWithCaptions";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class ImageWithCaptions extends Image {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_captions = "captions";
-  public final static String _FeatName_captionLanguage = "captionLanguage";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_captions = TypeSystemImpl.createCallSite(ImageWithCaptions.class, "captions");
-  private final static MethodHandle _FH_captions = _FC_captions.dynamicInvoker();
-  private final static CallSite _FC_captionLanguage = TypeSystemImpl.createCallSite(ImageWithCaptions.class, "captionLanguage");
-  private final static MethodHandle _FH_captionLanguage = _FC_captionLanguage.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ImageWithCaptions() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ImageWithCaptions(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ImageWithCaptions(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class ImageWithCaptions extends Image {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -116,16 +84,19 @@ public class ImageWithCaptions extends Image {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getCaptions() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)));}
+  public FSArray getCaptions() {
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captions == null)
+      jcasType.jcas.throwFeatMissing("captions", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions)));}
     
   /** setter for captions - sets Set of image captions 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCaptions(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_captions), v);
-  }    
-    
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captions == null)
+      jcasType.jcas.throwFeatMissing("captions", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for captions - gets an indexed value - Set of image captions
    * @generated
@@ -133,16 +104,21 @@ public class ImageWithCaptions extends Image {
    * @return value of the element at index i 
    */
   public Caption getCaptions(int i) {
-     return (Caption)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).get(i));} 
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captions == null)
+      jcasType.jcas.throwFeatMissing("captions", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions), i);
+    return (Caption)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions), i)));}
 
   /** indexed setter for captions - sets an indexed value - Set of image captions
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCaptions(int i, Caption v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).set(i, v);
-  }  
+  public void setCaptions(int i, Caption v) { 
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captions == null)
+      jcasType.jcas.throwFeatMissing("captions", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captions), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -152,16 +128,19 @@ public class ImageWithCaptions extends Image {
    * @generated
    * @return value of the feature 
    */
-  public String getCaptionLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_captionLanguage));}
+  public String getCaptionLanguage() {
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captionLanguage == null)
+      jcasType.jcas.throwFeatMissing("captionLanguage", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captionLanguage);}
     
   /** setter for captionLanguage - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCaptionLanguage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_captionLanguage), v);
-  }    
-    
+    if (ImageWithCaptions_Type.featOkTst && ((ImageWithCaptions_Type)jcasType).casFeat_captionLanguage == null)
+      jcasType.jcas.throwFeatMissing("captionLanguage", "org.texttechnologylab.annotation.type.ImageWithCaptions");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ImageWithCaptions_Type)jcasType).casFeatCode_captionLanguage, v);}    
   }
 
     

@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.cas.FSArray;
@@ -21,17 +13,10 @@ import org.texttechnologylab.annotation.semaf.isospace.Measure;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Event extends Entity {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isobase.Event";
-  
   /** @generated
    * @ordered 
    */
@@ -48,78 +33,17 @@ public class Event extends Entity {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_event_class = "event_class";
-  public final static String _FeatName_polarity = "polarity";
-  public final static String _FeatName_mood = "mood";
-  public final static String _FeatName_pos = "pos";
-  public final static String _FeatName_tense = "tense";
-  public final static String _FeatName_aspect = "aspect";
-  public final static String _FeatName_vform = "vform";
-  public final static String _FeatName_domain = "domain";
-  public final static String _FeatName_lat = "lat";
-  public final static String _FeatName_long = "long";
-  public final static String _FeatName_elevation = "elevation";
-  public final static String _FeatName_countable = "countable";
-  public final static String _FeatName_gquant = "gquant";
-  public final static String _FeatName_scopes = "scopes";
-  public final static String _FeatName_scopes_array = "scopes_array";
-  public final static String _FeatName_event_frame = "event_frame";
-  public final static String _FeatName_event_type = "event_type";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_event_class = TypeSystemImpl.createCallSite(Event.class, "event_class");
-  private final static MethodHandle _FH_event_class = _FC_event_class.dynamicInvoker();
-  private final static CallSite _FC_polarity = TypeSystemImpl.createCallSite(Event.class, "polarity");
-  private final static MethodHandle _FH_polarity = _FC_polarity.dynamicInvoker();
-  private final static CallSite _FC_mood = TypeSystemImpl.createCallSite(Event.class, "mood");
-  private final static MethodHandle _FH_mood = _FC_mood.dynamicInvoker();
-  private final static CallSite _FC_pos = TypeSystemImpl.createCallSite(Event.class, "pos");
-  private final static MethodHandle _FH_pos = _FC_pos.dynamicInvoker();
-  private final static CallSite _FC_tense = TypeSystemImpl.createCallSite(Event.class, "tense");
-  private final static MethodHandle _FH_tense = _FC_tense.dynamicInvoker();
-  private final static CallSite _FC_aspect = TypeSystemImpl.createCallSite(Event.class, "aspect");
-  private final static MethodHandle _FH_aspect = _FC_aspect.dynamicInvoker();
-  private final static CallSite _FC_vform = TypeSystemImpl.createCallSite(Event.class, "vform");
-  private final static MethodHandle _FH_vform = _FC_vform.dynamicInvoker();
-  private final static CallSite _FC_domain = TypeSystemImpl.createCallSite(Event.class, "domain");
-  private final static MethodHandle _FH_domain = _FC_domain.dynamicInvoker();
-  private final static CallSite _FC_lat = TypeSystemImpl.createCallSite(Event.class, "lat");
-  private final static MethodHandle _FH_lat = _FC_lat.dynamicInvoker();
-  private final static CallSite _FC_long = TypeSystemImpl.createCallSite(Event.class, "long");
-  private final static MethodHandle _FH_long = _FC_long.dynamicInvoker();
-  private final static CallSite _FC_elevation = TypeSystemImpl.createCallSite(Event.class, "elevation");
-  private final static MethodHandle _FH_elevation = _FC_elevation.dynamicInvoker();
-  private final static CallSite _FC_countable = TypeSystemImpl.createCallSite(Event.class, "countable");
-  private final static MethodHandle _FH_countable = _FC_countable.dynamicInvoker();
-  private final static CallSite _FC_gquant = TypeSystemImpl.createCallSite(Event.class, "gquant");
-  private final static MethodHandle _FH_gquant = _FC_gquant.dynamicInvoker();
-  private final static CallSite _FC_scopes = TypeSystemImpl.createCallSite(Event.class, "scopes");
-  private final static MethodHandle _FH_scopes = _FC_scopes.dynamicInvoker();
-  private final static CallSite _FC_scopes_array = TypeSystemImpl.createCallSite(Event.class, "scopes_array");
-  private final static MethodHandle _FH_scopes_array = _FC_scopes_array.dynamicInvoker();
-  private final static CallSite _FC_event_frame = TypeSystemImpl.createCallSite(Event.class, "event_frame");
-  private final static MethodHandle _FH_event_frame = _FC_event_frame.dynamicInvoker();
-  private final static CallSite _FC_event_type = TypeSystemImpl.createCallSite(Event.class, "event_type");
-  private final static MethodHandle _FH_event_type = _FC_event_type.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Event() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Event(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Event(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -130,7 +54,6 @@ public class Event extends Entity {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -162,16 +85,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_class() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_class));}
+  public String getEvent_class() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_class == null)
+      jcasType.jcas.throwFeatMissing("event_class", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_class);}
     
   /** setter for event_class - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEvent_class(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_event_class), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_class == null)
+      jcasType.jcas.throwFeatMissing("event_class", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_class, v);}    
    
     
   //*--------------*
@@ -181,16 +107,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getPolarity() { return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));}
+  public String getPolarity() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_polarity == null)
+      jcasType.jcas.throwFeatMissing("polarity", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_polarity);}
     
   /** setter for polarity - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPolarity(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_polarity), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_polarity == null)
+      jcasType.jcas.throwFeatMissing("polarity", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_polarity, v);}    
    
     
   //*--------------*
@@ -200,16 +129,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getMood() { return _getStringValueNc(wrapGetIntCatchException(_FH_mood));}
+  public String getMood() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_mood == null)
+      jcasType.jcas.throwFeatMissing("mood", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_mood);}
     
   /** setter for mood - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMood(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mood), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_mood == null)
+      jcasType.jcas.throwFeatMissing("mood", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_mood, v);}    
    
     
   //*--------------*
@@ -219,16 +151,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
+  public String getPos() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_pos);}
     
   /** setter for pos - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPos(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_pos, v);}    
    
     
   //*--------------*
@@ -238,16 +173,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getTense() { return _getStringValueNc(wrapGetIntCatchException(_FH_tense));}
+  public String getTense() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_tense == null)
+      jcasType.jcas.throwFeatMissing("tense", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_tense);}
     
   /** setter for tense - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTense(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_tense), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_tense == null)
+      jcasType.jcas.throwFeatMissing("tense", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_tense, v);}    
    
     
   //*--------------*
@@ -257,16 +195,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getAspect() { return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));}
+  public String getAspect() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_aspect == null)
+      jcasType.jcas.throwFeatMissing("aspect", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_aspect);}
     
   /** setter for aspect - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAspect(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_aspect), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_aspect == null)
+      jcasType.jcas.throwFeatMissing("aspect", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_aspect, v);}    
    
     
   //*--------------*
@@ -276,16 +217,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getVform() { return _getStringValueNc(wrapGetIntCatchException(_FH_vform));}
+  public String getVform() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_vform == null)
+      jcasType.jcas.throwFeatMissing("vform", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_vform);}
     
   /** setter for vform - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVform(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_vform), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_vform == null)
+      jcasType.jcas.throwFeatMissing("vform", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_vform, v);}    
    
     
   //*--------------*
@@ -295,16 +239,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getDomain() { return _getStringValueNc(wrapGetIntCatchException(_FH_domain));}
+  public String getDomain() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_domain == null)
+      jcasType.jcas.throwFeatMissing("domain", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_domain);}
     
   /** setter for domain - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDomain(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_domain), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_domain == null)
+      jcasType.jcas.throwFeatMissing("domain", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_domain, v);}    
    
     
   //*--------------*
@@ -314,16 +261,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLat() { return _getStringValueNc(wrapGetIntCatchException(_FH_lat));}
+  public String getLat() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_lat == null)
+      jcasType.jcas.throwFeatMissing("lat", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_lat);}
     
   /** setter for lat - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLat(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_lat), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_lat == null)
+      jcasType.jcas.throwFeatMissing("lat", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_lat, v);}    
    
     
   //*--------------*
@@ -333,16 +283,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLong() { return _getStringValueNc(wrapGetIntCatchException(_FH_long));}
+  public String getLong() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_long == null)
+      jcasType.jcas.throwFeatMissing("long", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_long);}
     
   /** setter for long - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLong(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_long), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_long == null)
+      jcasType.jcas.throwFeatMissing("long", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_long, v);}    
    
     
   //*--------------*
@@ -352,16 +305,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public Measure getElevation() { return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));}
+  public Measure getElevation() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_elevation == null)
+      jcasType.jcas.throwFeatMissing("elevation", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return (Measure)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_elevation)));}
     
   /** setter for elevation - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setElevation(Measure v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elevation), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_elevation == null)
+      jcasType.jcas.throwFeatMissing("elevation", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Event_Type)jcasType).casFeatCode_elevation, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -371,16 +327,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getCountable() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));}
+  public boolean getCountable() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_countable == null)
+      jcasType.jcas.throwFeatMissing("countable", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Event_Type)jcasType).casFeatCode_countable);}
     
   /** setter for countable - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCountable(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_countable), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_countable == null)
+      jcasType.jcas.throwFeatMissing("countable", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Event_Type)jcasType).casFeatCode_countable, v);}    
    
     
   //*--------------*
@@ -390,16 +349,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getGquant() { return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));}
+  public String getGquant() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_gquant == null)
+      jcasType.jcas.throwFeatMissing("gquant", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_gquant);}
     
   /** setter for gquant - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGquant(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_gquant), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_gquant == null)
+      jcasType.jcas.throwFeatMissing("gquant", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_gquant, v);}    
    
     
   //*--------------*
@@ -409,16 +371,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public FSList getScopes() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));}
+  public FSList getScopes() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes == null)
+      jcasType.jcas.throwFeatMissing("scopes", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes)));}
     
   /** setter for scopes - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScopes(FSList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes == null)
+      jcasType.jcas.throwFeatMissing("scopes", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -428,16 +393,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getScopes_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));}
+  public FSArray getScopes_array() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array)));}
     
   /** setter for scopes_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScopes_array(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes_array), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for scopes_array - gets an indexed value - 
    * @generated
@@ -445,16 +413,21 @@ public class Event extends Entity {
    * @return value of the element at index i 
    */
   public Entity getScopes_array(int i) {
-     return (Entity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));} 
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array), i);
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array), i)));}
 
   /** indexed setter for scopes_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setScopes_array(int i, Entity v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
-  }  
+  public void setScopes_array(int i, Entity v) { 
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_scopes_array == null)
+      jcasType.jcas.throwFeatMissing("scopes_array", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Event_Type)jcasType).casFeatCode_scopes_array), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -464,16 +437,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_frame() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_frame));}
+  public String getEvent_frame() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_frame == null)
+      jcasType.jcas.throwFeatMissing("event_frame", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_frame);}
     
   /** setter for event_frame - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEvent_frame(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_event_frame), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_frame == null)
+      jcasType.jcas.throwFeatMissing("event_frame", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_frame, v);}    
    
     
   //*--------------*
@@ -483,16 +459,19 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_type));}
+  public String getEvent_type() {
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_type == null)
+      jcasType.jcas.throwFeatMissing("event_type", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_type);}
     
   /** setter for event_type - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEvent_type(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_event_type), v);
-  }    
-    
+    if (Event_Type.featOkTst && ((Event_Type)jcasType).casFeat_event_type == null)
+      jcasType.jcas.throwFeatMissing("event_type", "org.texttechnologylab.annotation.semaf.isobase.Event");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Event_Type)jcasType).casFeatCode_event_type, v);}    
   }
 
     

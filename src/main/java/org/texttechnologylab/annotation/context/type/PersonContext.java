@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.context.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.node.type.Context;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PersonContext extends Context {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.context.type.PersonContext";
-  
   /** @generated
    * @ordered 
    */
@@ -46,45 +31,17 @@ public class PersonContext extends Context {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_birthDate = "birthDate";
-  public final static String _FeatName_Name = "Name";
-  public final static String _FeatName_contextInf = "contextInf";
-  public final static String _FeatName_gender = "gender";
-  public final static String _FeatName_birthPlace = "birthPlace";
-  public final static String _FeatName_fieldOfWork = "fieldOfWork";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_birthDate = TypeSystemImpl.createCallSite(PersonContext.class, "birthDate");
-  private final static MethodHandle _FH_birthDate = _FC_birthDate.dynamicInvoker();
-  private final static CallSite _FC_Name = TypeSystemImpl.createCallSite(PersonContext.class, "Name");
-  private final static MethodHandle _FH_Name = _FC_Name.dynamicInvoker();
-  private final static CallSite _FC_contextInf = TypeSystemImpl.createCallSite(PersonContext.class, "contextInf");
-  private final static MethodHandle _FH_contextInf = _FC_contextInf.dynamicInvoker();
-  private final static CallSite _FC_gender = TypeSystemImpl.createCallSite(PersonContext.class, "gender");
-  private final static MethodHandle _FH_gender = _FC_gender.dynamicInvoker();
-  private final static CallSite _FC_birthPlace = TypeSystemImpl.createCallSite(PersonContext.class, "birthPlace");
-  private final static MethodHandle _FH_birthPlace = _FC_birthPlace.dynamicInvoker();
-  private final static CallSite _FC_fieldOfWork = TypeSystemImpl.createCallSite(PersonContext.class, "fieldOfWork");
-  private final static MethodHandle _FH_fieldOfWork = _FC_fieldOfWork.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected PersonContext() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public PersonContext(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public PersonContext(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -95,7 +52,6 @@ public class PersonContext extends Context {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -115,16 +71,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getBirthDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_birthDate));}
+  public String getBirthDate() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_birthDate == null)
+      jcasType.jcas.throwFeatMissing("birthDate", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_birthDate);}
     
   /** setter for birthDate - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBirthDate(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_birthDate), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_birthDate == null)
+      jcasType.jcas.throwFeatMissing("birthDate", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_birthDate, v);}    
    
     
   //*--------------*
@@ -134,16 +93,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_Name));}
+  public String getName() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_Name == null)
+      jcasType.jcas.throwFeatMissing("Name", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_Name);}
     
   /** setter for Name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Name), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_Name == null)
+      jcasType.jcas.throwFeatMissing("Name", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_Name, v);}    
    
     
   //*--------------*
@@ -153,16 +115,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getContextInf() { return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));}
+  public String getContextInf() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_contextInf == null)
+      jcasType.jcas.throwFeatMissing("contextInf", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_contextInf);}
     
   /** setter for contextInf - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContextInf(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_contextInf), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_contextInf == null)
+      jcasType.jcas.throwFeatMissing("contextInf", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_contextInf, v);}    
    
     
   //*--------------*
@@ -172,16 +137,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getGender() { return _getStringValueNc(wrapGetIntCatchException(_FH_gender));}
+  public String getGender() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_gender == null)
+      jcasType.jcas.throwFeatMissing("gender", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_gender);}
     
   /** setter for gender - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGender(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_gender), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_gender == null)
+      jcasType.jcas.throwFeatMissing("gender", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_gender, v);}    
    
     
   //*--------------*
@@ -191,16 +159,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getBirthPlace() { return _getStringValueNc(wrapGetIntCatchException(_FH_birthPlace));}
+  public String getBirthPlace() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_birthPlace == null)
+      jcasType.jcas.throwFeatMissing("birthPlace", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_birthPlace);}
     
   /** setter for birthPlace - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBirthPlace(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_birthPlace), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_birthPlace == null)
+      jcasType.jcas.throwFeatMissing("birthPlace", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_birthPlace, v);}    
    
     
   //*--------------*
@@ -210,16 +181,19 @@ public class PersonContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getFieldOfWork() { return _getStringValueNc(wrapGetIntCatchException(_FH_fieldOfWork));}
+  public String getFieldOfWork() {
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_fieldOfWork == null)
+      jcasType.jcas.throwFeatMissing("fieldOfWork", "org.texttechnologylab.annotation.context.type.PersonContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_fieldOfWork);}
     
   /** setter for fieldOfWork - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFieldOfWork(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_fieldOfWork), v);
-  }    
-    
+    if (PersonContext_Type.featOkTst && ((PersonContext_Type)jcasType).casFeat_fieldOfWork == null)
+      jcasType.jcas.throwFeatMissing("fieldOfWork", "org.texttechnologylab.annotation.context.type.PersonContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((PersonContext_Type)jcasType).casFeatCode_fieldOfWork, v);}    
   }
 
     

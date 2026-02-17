@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Sentence i and Sentence j which will be compared
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SentenceComparison extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.SentenceComparison";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class SentenceComparison extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_SentenceI = "SentenceI";
-  public final static String _FeatName_SentenceJ = "SentenceJ";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_SentenceI = TypeSystemImpl.createCallSite(SentenceComparison.class, "SentenceI");
-  private final static MethodHandle _FH_SentenceI = _FC_SentenceI.dynamicInvoker();
-  private final static CallSite _FC_SentenceJ = TypeSystemImpl.createCallSite(SentenceComparison.class, "SentenceJ");
-  private final static MethodHandle _FH_SentenceJ = _FC_SentenceJ.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected SentenceComparison() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public SentenceComparison(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public SentenceComparison(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class SentenceComparison extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -104,16 +72,19 @@ public class SentenceComparison extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getSentenceI() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceI)));}
+  public Annotation getSentenceI() {
+    if (SentenceComparison_Type.featOkTst && ((SentenceComparison_Type)jcasType).casFeat_SentenceI == null)
+      jcasType.jcas.throwFeatMissing("SentenceI", "org.texttechnologylab.annotation.SentenceComparison");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SentenceComparison_Type)jcasType).casFeatCode_SentenceI)));}
     
   /** setter for SentenceI - sets Sentence i which will be compared with Sentence j 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentenceI(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_SentenceI), v);
-  }    
-    
+    if (SentenceComparison_Type.featOkTst && ((SentenceComparison_Type)jcasType).casFeat_SentenceI == null)
+      jcasType.jcas.throwFeatMissing("SentenceI", "org.texttechnologylab.annotation.SentenceComparison");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SentenceComparison_Type)jcasType).casFeatCode_SentenceI, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -123,16 +94,19 @@ public class SentenceComparison extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getSentenceJ() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceJ)));}
+  public Annotation getSentenceJ() {
+    if (SentenceComparison_Type.featOkTst && ((SentenceComparison_Type)jcasType).casFeat_SentenceJ == null)
+      jcasType.jcas.throwFeatMissing("SentenceJ", "org.texttechnologylab.annotation.SentenceComparison");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SentenceComparison_Type)jcasType).casFeatCode_SentenceJ)));}
     
   /** setter for SentenceJ - sets Sentence j which will be compared with Sentence i 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentenceJ(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_SentenceJ), v);
-  }    
-    
+    if (SentenceComparison_Type.featOkTst && ((SentenceComparison_Type)jcasType).casFeat_SentenceJ == null)
+      jcasType.jcas.throwFeatMissing("SentenceJ", "org.texttechnologylab.annotation.SentenceComparison");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SentenceComparison_Type)jcasType).casFeatCode_SentenceJ, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

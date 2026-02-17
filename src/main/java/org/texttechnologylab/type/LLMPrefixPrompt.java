@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prefix Prompt for LLM. It is optional, if not set, will be placed before the user Prompt. For example adding additional information to the Prompt.
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMPrefixPrompt extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.LLMPrefixPrompt";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class LLMPrefixPrompt extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_message = "message";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_message = TypeSystemImpl.createCallSite(LLMPrefixPrompt.class, "message");
-  private final static MethodHandle _FH_message = _FC_message.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected LLMPrefixPrompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public LLMPrefixPrompt(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public LLMPrefixPrompt(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class LLMPrefixPrompt extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -112,16 +83,19 @@ public class LLMPrefixPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMessage() { return _getStringValueNc(wrapGetIntCatchException(_FH_message));}
+  public String getMessage() {
+    if (LLMPrefixPrompt_Type.featOkTst && ((LLMPrefixPrompt_Type)jcasType).casFeat_message == null)
+      jcasType.jcas.throwFeatMissing("message", "org.texttechnologylab.type.LLMPrefixPrompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LLMPrefixPrompt_Type)jcasType).casFeatCode_message);}
     
   /** setter for message - sets Prefix before the Prompt for LLM 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMessage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_message), v);
-  }    
-    
+    if (LLMPrefixPrompt_Type.featOkTst && ((LLMPrefixPrompt_Type)jcasType).casFeat_message == null)
+      jcasType.jcas.throwFeatMissing("message", "org.texttechnologylab.type.LLMPrefixPrompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LLMPrefixPrompt_Type)jcasType).casFeatCode_message, v);}    
   }
 
     

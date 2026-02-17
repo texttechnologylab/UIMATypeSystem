@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.IsoSpatial;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ObjectAttribute extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class ObjectAttribute extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_key = "key";
-  public final static String _FeatName_value = "value";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_key = TypeSystemImpl.createCallSite(ObjectAttribute.class, "key");
-  private final static MethodHandle _FH_key = _FC_key.dynamicInvoker();
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ObjectAttribute.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ObjectAttribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ObjectAttribute(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ObjectAttribute(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class ObjectAttribute extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -103,16 +71,19 @@ public class ObjectAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getKey() { return _getStringValueNc(wrapGetIntCatchException(_FH_key));}
+  public String getKey() {
+    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_key);}
     
   /** setter for key - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setKey(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_key), v);
-  }    
-    
+    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_key, v);}    
    
     
   //*--------------*
@@ -122,16 +93,19 @@ public class ObjectAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (ObjectAttribute_Type.featOkTst && ((ObjectAttribute_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.semaf.IsoSpatial.ObjectAttribute");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ObjectAttribute_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

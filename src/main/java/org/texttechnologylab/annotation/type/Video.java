@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Video extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.Video";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class Video extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_src = "src";
-  public final static String _FeatName_length = "length";
-  public final static String _FeatName_fps = "fps";
-  public final static String _FeatName_mimetype = "mimetype";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Video.class, "src");
-  private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
-  private final static CallSite _FC_length = TypeSystemImpl.createCallSite(Video.class, "length");
-  private final static MethodHandle _FH_length = _FC_length.dynamicInvoker();
-  private final static CallSite _FC_fps = TypeSystemImpl.createCallSite(Video.class, "fps");
-  private final static MethodHandle _FH_fps = _FC_fps.dynamicInvoker();
-  private final static CallSite _FC_mimetype = TypeSystemImpl.createCallSite(Video.class, "mimetype");
-  private final static MethodHandle _FH_mimetype = _FC_mimetype.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Video() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Video(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Video(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class Video extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class Video extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSrc() { return _getStringValueNc(wrapGetIntCatchException(_FH_src));}
+  public String getSrc() {
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Video");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Video_Type)jcasType).casFeatCode_src);}
     
   /** setter for src - sets path to the video or base64 value 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSrc(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
-  }    
-    
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Video");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Video_Type)jcasType).casFeatCode_src, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class Video extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getLength() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_length));}
+  public double getLength() {
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_length == null)
+      jcasType.jcas.throwFeatMissing("length", "org.texttechnologylab.annotation.type.Video");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Video_Type)jcasType).casFeatCode_length);}
     
   /** setter for length - sets Length of the video in seconds 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLength(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_length), v);
-  }    
-    
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_length == null)
+      jcasType.jcas.throwFeatMissing("length", "org.texttechnologylab.annotation.type.Video");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Video_Type)jcasType).casFeatCode_length, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class Video extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getFps() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_fps));}
+  public double getFps() {
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_fps == null)
+      jcasType.jcas.throwFeatMissing("fps", "org.texttechnologylab.annotation.type.Video");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Video_Type)jcasType).casFeatCode_fps);}
     
   /** setter for fps - sets Video fps 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFps(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_fps), v);
-  }    
-    
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_fps == null)
+      jcasType.jcas.throwFeatMissing("fps", "org.texttechnologylab.annotation.type.Video");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Video_Type)jcasType).casFeatCode_fps, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class Video extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMimetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));}
+  public String getMimetype() {
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Video");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Video_Type)jcasType).casFeatCode_mimetype);}
     
   /** setter for mimetype - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMimetype(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
-  }    
-    
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Video");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Video_Type)jcasType).casFeatCode_mimetype, v);}    
   }
 
     

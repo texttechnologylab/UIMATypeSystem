@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRParagraph extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.OCRParagraph";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class OCRParagraph extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_leftIndent = "leftIndent";
-  public final static String _FeatName_rightIndent = "rightIndent";
-  public final static String _FeatName_startIndent = "startIndent";
-  public final static String _FeatName_lineSpacing = "lineSpacing";
-  public final static String _FeatName_align = "align";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_leftIndent = TypeSystemImpl.createCallSite(OCRParagraph.class, "leftIndent");
-  private final static MethodHandle _FH_leftIndent = _FC_leftIndent.dynamicInvoker();
-  private final static CallSite _FC_rightIndent = TypeSystemImpl.createCallSite(OCRParagraph.class, "rightIndent");
-  private final static MethodHandle _FH_rightIndent = _FC_rightIndent.dynamicInvoker();
-  private final static CallSite _FC_startIndent = TypeSystemImpl.createCallSite(OCRParagraph.class, "startIndent");
-  private final static MethodHandle _FH_startIndent = _FC_startIndent.dynamicInvoker();
-  private final static CallSite _FC_lineSpacing = TypeSystemImpl.createCallSite(OCRParagraph.class, "lineSpacing");
-  private final static MethodHandle _FH_lineSpacing = _FC_lineSpacing.dynamicInvoker();
-  private final static CallSite _FC_align = TypeSystemImpl.createCallSite(OCRParagraph.class, "align");
-  private final static MethodHandle _FH_align = _FC_align.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected OCRParagraph() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public OCRParagraph(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public OCRParagraph(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class OCRParagraph extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -124,16 +83,19 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getLeftIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_leftIndent));}
+  public int getLeftIndent() {
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_leftIndent == null)
+      jcasType.jcas.throwFeatMissing("leftIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_leftIndent);}
     
   /** setter for leftIndent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLeftIndent(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_leftIndent), v);
-  }    
-    
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_leftIndent == null)
+      jcasType.jcas.throwFeatMissing("leftIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_leftIndent, v);}    
    
     
   //*--------------*
@@ -143,16 +105,19 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getRightIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_rightIndent));}
+  public int getRightIndent() {
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_rightIndent == null)
+      jcasType.jcas.throwFeatMissing("rightIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_rightIndent);}
     
   /** setter for rightIndent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRightIndent(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_rightIndent), v);
-  }    
-    
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_rightIndent == null)
+      jcasType.jcas.throwFeatMissing("rightIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_rightIndent, v);}    
    
     
   //*--------------*
@@ -162,16 +127,19 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getStartIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_startIndent));}
+  public int getStartIndent() {
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_startIndent == null)
+      jcasType.jcas.throwFeatMissing("startIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_startIndent);}
     
   /** setter for startIndent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setStartIndent(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_startIndent), v);
-  }    
-    
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_startIndent == null)
+      jcasType.jcas.throwFeatMissing("startIndent", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_startIndent, v);}    
    
     
   //*--------------*
@@ -181,16 +149,19 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getLineSpacing() { return _getIntValueNc(wrapGetIntCatchException(_FH_lineSpacing));}
+  public int getLineSpacing() {
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_lineSpacing == null)
+      jcasType.jcas.throwFeatMissing("lineSpacing", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_lineSpacing);}
     
   /** setter for lineSpacing - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLineSpacing(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_lineSpacing), v);
-  }    
-    
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_lineSpacing == null)
+      jcasType.jcas.throwFeatMissing("lineSpacing", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_lineSpacing, v);}    
    
     
   //*--------------*
@@ -200,16 +171,19 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAlign() { return _getStringValueNc(wrapGetIntCatchException(_FH_align));}
+  public String getAlign() {
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_align == null)
+      jcasType.jcas.throwFeatMissing("align", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_align);}
     
   /** setter for align - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAlign(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_align), v);
-  }    
-    
+    if (OCRParagraph_Type.featOkTst && ((OCRParagraph_Type)jcasType).casFeat_align == null)
+      jcasType.jcas.throwFeatMissing("align", "org.texttechnologylab.annotation.ocr.OCRParagraph");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OCRParagraph_Type)jcasType).casFeatCode_align, v);}    
   }
 
     

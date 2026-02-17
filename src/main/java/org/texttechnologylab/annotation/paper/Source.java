@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.paper;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Source extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.paper.Source";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class Source extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_doi = "doi";
-  public final static String _FeatName_title = "title";
-  public final static String _FeatName_authors = "authors";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_doi = TypeSystemImpl.createCallSite(Source.class, "doi");
-  private final static MethodHandle _FH_doi = _FC_doi.dynamicInvoker();
-  private final static CallSite _FC_title = TypeSystemImpl.createCallSite(Source.class, "title");
-  private final static MethodHandle _FH_title = _FC_title.dynamicInvoker();
-  private final static CallSite _FC_authors = TypeSystemImpl.createCallSite(Source.class, "authors");
-  private final static MethodHandle _FH_authors = _FC_authors.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Source() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Source(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Source(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class Source extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDoi() { return _getStringValueNc(wrapGetIntCatchException(_FH_doi));}
+  public String getDoi() {
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_doi == null)
+      jcasType.jcas.throwFeatMissing("doi", "org.texttechnologylab.annotation.paper.Source");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Source_Type)jcasType).casFeatCode_doi);}
     
   /** setter for doi - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDoi(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_doi), v);
-  }    
-    
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_doi == null)
+      jcasType.jcas.throwFeatMissing("doi", "org.texttechnologylab.annotation.paper.Source");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Source_Type)jcasType).casFeatCode_doi, v);}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
+  public String getTitle() {
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.paper.Source");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Source_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
-  }    
-    
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.paper.Source");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Source_Type)jcasType).casFeatCode_title, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getAuthors() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)));}
+  public StringArray getAuthors() {
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_authors == null)
+      jcasType.jcas.throwFeatMissing("authors", "org.texttechnologylab.annotation.paper.Source");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors)));}
     
   /** setter for authors - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAuthors(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_authors), v);
-  }    
-    
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_authors == null)
+      jcasType.jcas.throwFeatMissing("authors", "org.texttechnologylab.annotation.paper.Source");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for authors - gets an indexed value - 
    * @generated
@@ -174,16 +148,21 @@ public class Source extends Annotation {
    * @return value of the element at index i 
    */
   public String getAuthors(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).get(i);} 
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_authors == null)
+      jcasType.jcas.throwFeatMissing("authors", "org.texttechnologylab.annotation.paper.Source");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors), i);}
 
   /** indexed setter for authors - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setAuthors(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).set(i, v);
-  }  
+  public void setAuthors(int i, String v) { 
+    if (Source_Type.featOkTst && ((Source_Type)jcasType).casFeat_authors == null)
+      jcasType.jcas.throwFeatMissing("authors", "org.texttechnologylab.annotation.paper.Source");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Source_Type)jcasType).casFeatCode_authors), i, v);}
   }
 
     

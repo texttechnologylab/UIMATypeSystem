@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Type for verified gnfinder-recognized taxonomic names.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VerifiedTaxon extends Taxon {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon";
-  
   /** @generated
    * @ordered 
    */
@@ -45,66 +30,17 @@ public class VerifiedTaxon extends Taxon {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_dataSourceId = "dataSourceId";
-  public final static String _FeatName_recordId = "recordId";
-  public final static String _FeatName_globalId = "globalId";
-  public final static String _FeatName_localId = "localId";
-  public final static String _FeatName_outlink = "outlink";
-  public final static String _FeatName_sortScore = "sortScore";
-  public final static String _FeatName_matchedName = "matchedName";
-  public final static String _FeatName_matchedCanonicalSimple = "matchedCanonicalSimple";
-  public final static String _FeatName_matchedCanonicalFull = "matchedCanonicalFull";
-  public final static String _FeatName_taxonomicStatus = "taxonomicStatus";
-  public final static String _FeatName_currentName = "currentName";
-  public final static String _FeatName_matchType = "matchType";
-  public final static String _FeatName_editDistance = "editDistance";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_dataSourceId = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "dataSourceId");
-  private final static MethodHandle _FH_dataSourceId = _FC_dataSourceId.dynamicInvoker();
-  private final static CallSite _FC_recordId = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "recordId");
-  private final static MethodHandle _FH_recordId = _FC_recordId.dynamicInvoker();
-  private final static CallSite _FC_globalId = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "globalId");
-  private final static MethodHandle _FH_globalId = _FC_globalId.dynamicInvoker();
-  private final static CallSite _FC_localId = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "localId");
-  private final static MethodHandle _FH_localId = _FC_localId.dynamicInvoker();
-  private final static CallSite _FC_outlink = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "outlink");
-  private final static MethodHandle _FH_outlink = _FC_outlink.dynamicInvoker();
-  private final static CallSite _FC_sortScore = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "sortScore");
-  private final static MethodHandle _FH_sortScore = _FC_sortScore.dynamicInvoker();
-  private final static CallSite _FC_matchedName = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "matchedName");
-  private final static MethodHandle _FH_matchedName = _FC_matchedName.dynamicInvoker();
-  private final static CallSite _FC_matchedCanonicalSimple = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "matchedCanonicalSimple");
-  private final static MethodHandle _FH_matchedCanonicalSimple = _FC_matchedCanonicalSimple.dynamicInvoker();
-  private final static CallSite _FC_matchedCanonicalFull = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "matchedCanonicalFull");
-  private final static MethodHandle _FH_matchedCanonicalFull = _FC_matchedCanonicalFull.dynamicInvoker();
-  private final static CallSite _FC_taxonomicStatus = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "taxonomicStatus");
-  private final static MethodHandle _FH_taxonomicStatus = _FC_taxonomicStatus.dynamicInvoker();
-  private final static CallSite _FC_currentName = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "currentName");
-  private final static MethodHandle _FH_currentName = _FC_currentName.dynamicInvoker();
-  private final static CallSite _FC_matchType = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "matchType");
-  private final static MethodHandle _FH_matchType = _FC_matchType.dynamicInvoker();
-  private final static CallSite _FC_editDistance = TypeSystemImpl.createCallSite(VerifiedTaxon.class, "editDistance");
-  private final static MethodHandle _FH_editDistance = _FC_editDistance.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected VerifiedTaxon() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public VerifiedTaxon(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public VerifiedTaxon(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -115,7 +51,6 @@ public class VerifiedTaxon extends Taxon {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -147,16 +82,19 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getDataSourceId() { return _getShortValueNc(wrapGetIntCatchException(_FH_dataSourceId));}
+  public short getDataSourceId() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_dataSourceId == null)
+      jcasType.jcas.throwFeatMissing("dataSourceId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getShortValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_dataSourceId);}
     
   /** setter for dataSourceId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDataSourceId(short v) {
-    _setShortValueNfc(wrapGetIntCatchException(_FH_dataSourceId), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_dataSourceId == null)
+      jcasType.jcas.throwFeatMissing("dataSourceId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setShortValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_dataSourceId, v);}    
    
     
   //*--------------*
@@ -168,7 +106,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getRecordId() { return _getStringValueNc(wrapGetIntCatchException(_FH_recordId));}
+  public String getRecordId() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_recordId == null)
+      jcasType.jcas.throwFeatMissing("recordId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_recordId);}
     
   /** setter for recordId - sets RecordID from a data source. GNFinder tries its to return ID that corresponds to dwc:taxonID of
                         a DataSource. If such ID is not provided, this ID will be auto-generated. Auto-generated IDs
@@ -177,9 +118,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setRecordId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_recordId), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_recordId == null)
+      jcasType.jcas.throwFeatMissing("recordId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_recordId, v);}    
    
     
   //*--------------*
@@ -190,7 +131,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getGlobalId() { return _getStringValueNc(wrapGetIntCatchException(_FH_globalId));}
+  public String getGlobalId() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_globalId == null)
+      jcasType.jcas.throwFeatMissing("globalId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_globalId);}
     
   /** setter for globalId - sets GlobalID that is exposed globally by a DataSource. Such IDs are usually self-resolved, like for
                         example LSID, pURL, DOI etc. 
@@ -198,9 +142,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setGlobalId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_globalId), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_globalId == null)
+      jcasType.jcas.throwFeatMissing("globalId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_globalId, v);}    
    
     
   //*--------------*
@@ -211,7 +155,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getLocalId() { return _getStringValueNc(wrapGetIntCatchException(_FH_localId));}
+  public String getLocalId() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_localId == null)
+      jcasType.jcas.throwFeatMissing("localId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_localId);}
     
   /** setter for localId - sets LocalID used by a DataSource internally. If an OutLink field is provided, LocalID serves as a
                         'dynamic' component of the URL. 
@@ -219,9 +166,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setLocalId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_localId), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_localId == null)
+      jcasType.jcas.throwFeatMissing("localId", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_localId, v);}    
    
     
   //*--------------*
@@ -232,7 +179,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getOutlink() { return _getStringValueNc(wrapGetIntCatchException(_FH_outlink));}
+  public String getOutlink() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_outlink == null)
+      jcasType.jcas.throwFeatMissing("outlink", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_outlink);}
     
   /** setter for outlink - sets Outlink to the record in the DataSource. It consists of a 'stable' URL and an appended 'dynamic'
                         LocalID 
@@ -240,9 +190,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setOutlink(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_outlink), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_outlink == null)
+      jcasType.jcas.throwFeatMissing("outlink", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_outlink, v);}    
    
     
   //*--------------*
@@ -261,7 +211,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public float getSortScore() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sortScore));}
+  public float getSortScore() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_sortScore == null)
+      jcasType.jcas.throwFeatMissing("sortScore", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_sortScore);}
     
   /** setter for sortScore - sets SortScore is a numeric representation of the whole score. It can be used to find the BestMatch
                         overall, as well as the best match for every data-source.
@@ -277,9 +230,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setSortScore(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_sortScore), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_sortScore == null)
+      jcasType.jcas.throwFeatMissing("sortScore", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_sortScore, v);}    
    
     
   //*--------------*
@@ -290,7 +243,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedName() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedName));}
+  public String getMatchedName() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedName == null)
+      jcasType.jcas.throwFeatMissing("matchedName", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedName);}
     
   /** setter for matchedName - sets The name-string from the DataSource that was matched by GNames algorithm.
                         Often contains the author names. 
@@ -298,9 +254,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setMatchedName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_matchedName), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedName == null)
+      jcasType.jcas.throwFeatMissing("matchedName", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedName, v);}    
    
     
   //*--------------*
@@ -312,7 +268,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedCanonicalSimple() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalSimple));}
+  public String getMatchedCanonicalSimple() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedCanonicalSimple == null)
+      jcasType.jcas.throwFeatMissing("matchedCanonicalSimple", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedCanonicalSimple);}
     
   /** setter for matchedCanonicalSimple - sets A simplified canonical form without ranks for names lower than species, and with omitted hybrid
                         signs for named hybrids. Quite often simple canonical is the same as full canonical. Hybrid
@@ -321,9 +280,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setMatchedCanonicalSimple(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_matchedCanonicalSimple), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedCanonicalSimple == null)
+      jcasType.jcas.throwFeatMissing("matchedCanonicalSimple", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedCanonicalSimple, v);}    
    
     
   //*--------------*
@@ -333,16 +292,19 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedCanonicalFull() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalFull));}
+  public String getMatchedCanonicalFull() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedCanonicalFull == null)
+      jcasType.jcas.throwFeatMissing("matchedCanonicalFull", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedCanonicalFull);}
     
   /** setter for matchedCanonicalFull - sets A canonical form of the name that preserves hybrid signs and infraspecific ranks. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMatchedCanonicalFull(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_matchedCanonicalFull), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchedCanonicalFull == null)
+      jcasType.jcas.throwFeatMissing("matchedCanonicalFull", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchedCanonicalFull, v);}    
    
     
   //*--------------*
@@ -352,16 +314,19 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getTaxonomicStatus() { return _getStringValueNc(wrapGetIntCatchException(_FH_taxonomicStatus));}
+  public String getTaxonomicStatus() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_taxonomicStatus == null)
+      jcasType.jcas.throwFeatMissing("taxonomicStatus", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_taxonomicStatus);}
     
   /** setter for taxonomicStatus - sets Provides taxonomic status of a name. Can be "Accepted", "Synonym", "N/A". 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTaxonomicStatus(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_taxonomicStatus), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_taxonomicStatus == null)
+      jcasType.jcas.throwFeatMissing("taxonomicStatus", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_taxonomicStatus, v);}    
    
     
   //*--------------*
@@ -371,16 +336,19 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getCurrentName() { return _getStringValueNc(wrapGetIntCatchException(_FH_currentName));}
+  public String getCurrentName() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_currentName == null)
+      jcasType.jcas.throwFeatMissing("currentName", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_currentName);}
     
   /** setter for currentName - sets The currently accepted name, present if it differs from the matchedName. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCurrentName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_currentName), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_currentName == null)
+      jcasType.jcas.throwFeatMissing("currentName", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_currentName, v);}    
    
     
   //*--------------*
@@ -390,16 +358,19 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchType() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchType));}
+  public String getMatchType() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchType == null)
+      jcasType.jcas.throwFeatMissing("matchType", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchType);}
     
   /** setter for matchType - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMatchType(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_matchType), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_matchType == null)
+      jcasType.jcas.throwFeatMissing("matchType", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setStringValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_matchType, v);}    
    
     
   //*--------------*
@@ -410,7 +381,10 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getEditDistance() { return _getShortValueNc(wrapGetIntCatchException(_FH_editDistance));}
+  public short getEditDistance() {
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_editDistance == null)
+      jcasType.jcas.throwFeatMissing("editDistance", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    return jcasType.ll_cas.ll_getShortValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_editDistance);}
     
   /** setter for editDistance - sets The Levenshtein edit distance between canonical form of the input name-string and the matched
                         canonical form. If match type is EXACT, edit-distance will be 0. 
@@ -418,9 +392,9 @@ public class VerifiedTaxon extends Taxon {
    * @param v value to set into the feature 
    */
   public void setEditDistance(short v) {
-    _setShortValueNfc(wrapGetIntCatchException(_FH_editDistance), v);
-  }    
-    
+    if (VerifiedTaxon_Type.featOkTst && ((VerifiedTaxon_Type)jcasType).casFeat_editDistance == null)
+      jcasType.jcas.throwFeatMissing("editDistance", "org.texttechnologylab.annotation.biofid.gnfinder.VerifiedTaxon");
+    jcasType.ll_cas.ll_setShortValue(addr, ((VerifiedTaxon_Type)jcasType).casFeatCode_editDistance, v);}    
   }
 
     

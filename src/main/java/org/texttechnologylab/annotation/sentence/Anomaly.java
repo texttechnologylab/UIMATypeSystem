@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.sentence;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.sentence.Anomaly";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_value = "value";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Anomaly.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Anomaly() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Anomaly(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Anomaly(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -111,16 +82,19 @@ public class Anomaly extends de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anom
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (Anomaly_Type.featOkTst && ((Anomaly_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Anomaly_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (Anomaly_Type.featOkTst && ((Anomaly_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.sentence.Anomaly");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Anomaly_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Argument
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgumentExtraction extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ArgumentExtraction";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class ArgumentExtraction extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_reason = "reason";
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_reason = TypeSystemImpl.createCallSite(ArgumentExtraction.class, "reason");
-  private final static MethodHandle _FH_reason = _FC_reason.dynamicInvoker();
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ArgumentExtraction.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(ArgumentExtraction.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ArgumentExtraction() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ArgumentExtraction(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ArgumentExtraction(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class ArgumentExtraction extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_reason));}
+  public String getReason() {
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_reason == null)
+      jcasType.jcas.throwFeatMissing("reason", "org.texttechnologylab.annotation.ArgumentExtraction");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_reason);}
     
   /** setter for reason - sets reason for the output if its provided 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReason(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_reason), v);
-  }    
-    
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_reason == null)
+      jcasType.jcas.throwFeatMissing("reason", "org.texttechnologylab.annotation.ArgumentExtraction");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_reason, v);}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.ArgumentExtraction");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets output of the model 
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.ArgumentExtraction");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.ArgumentExtraction");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (ArgumentExtraction_Type.featOkTst && ((ArgumentExtraction_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.ArgumentExtraction");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ArgumentExtraction_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

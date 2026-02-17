@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.paper;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Author extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.paper.Author";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class Author extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_firstname = "firstname";
-  public final static String _FeatName_lastname = "lastname";
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_email = "email";
-  public final static String _FeatName_location = "location";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_firstname = TypeSystemImpl.createCallSite(Author.class, "firstname");
-  private final static MethodHandle _FH_firstname = _FC_firstname.dynamicInvoker();
-  private final static CallSite _FC_lastname = TypeSystemImpl.createCallSite(Author.class, "lastname");
-  private final static MethodHandle _FH_lastname = _FC_lastname.dynamicInvoker();
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Author.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_email = TypeSystemImpl.createCallSite(Author.class, "email");
-  private final static MethodHandle _FH_email = _FC_email.dynamicInvoker();
-  private final static CallSite _FC_location = TypeSystemImpl.createCallSite(Author.class, "location");
-  private final static MethodHandle _FH_location = _FC_location.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Author() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Author(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Author(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class Author extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -124,16 +83,19 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstname() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));}
+  public String getFirstname() {
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_firstname == null)
+      jcasType.jcas.throwFeatMissing("firstname", "org.texttechnologylab.annotation.paper.Author");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Author_Type)jcasType).casFeatCode_firstname);}
     
   /** setter for firstname - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFirstname(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_firstname), v);
-  }    
-    
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_firstname == null)
+      jcasType.jcas.throwFeatMissing("firstname", "org.texttechnologylab.annotation.paper.Author");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Author_Type)jcasType).casFeatCode_firstname, v);}    
    
     
   //*--------------*
@@ -143,16 +105,19 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLastname() { return _getStringValueNc(wrapGetIntCatchException(_FH_lastname));}
+  public String getLastname() {
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_lastname == null)
+      jcasType.jcas.throwFeatMissing("lastname", "org.texttechnologylab.annotation.paper.Author");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Author_Type)jcasType).casFeatCode_lastname);}
     
   /** setter for lastname - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLastname(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_lastname), v);
-  }    
-    
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_lastname == null)
+      jcasType.jcas.throwFeatMissing("lastname", "org.texttechnologylab.annotation.paper.Author");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Author_Type)jcasType).casFeatCode_lastname, v);}    
    
     
   //*--------------*
@@ -162,16 +127,19 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.paper.Author");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Author_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.paper.Author");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Author_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -181,16 +149,19 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getEmail() { return _getStringValueNc(wrapGetIntCatchException(_FH_email));}
+  public String getEmail() {
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_email == null)
+      jcasType.jcas.throwFeatMissing("email", "org.texttechnologylab.annotation.paper.Author");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Author_Type)jcasType).casFeatCode_email);}
     
   /** setter for email - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEmail(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_email), v);
-  }    
-    
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_email == null)
+      jcasType.jcas.throwFeatMissing("email", "org.texttechnologylab.annotation.paper.Author");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Author_Type)jcasType).casFeatCode_email, v);}    
    
     
   //*--------------*
@@ -200,16 +171,19 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLocation() { return _getStringValueNc(wrapGetIntCatchException(_FH_location));}
+  public String getLocation() {
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "org.texttechnologylab.annotation.paper.Author");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Author_Type)jcasType).casFeatCode_location);}
     
   /** setter for location - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLocation(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_location), v);
-  }    
-    
+    if (Author_Type.featOkTst && ((Author_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "org.texttechnologylab.annotation.paper.Author");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Author_Type)jcasType).casFeatCode_location, v);}    
   }
 
     

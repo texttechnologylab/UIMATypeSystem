@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationDescription extends Attribute {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.RelationDescription";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class RelationDescription extends Attribute {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_name = "name";
-  public final static String _FeatName_relationtype = "relationtype";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(RelationDescription.class, "name");
-  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
-  private final static CallSite _FC_relationtype = TypeSystemImpl.createCallSite(RelationDescription.class, "relationtype");
-  private final static MethodHandle _FH_relationtype = _FC_relationtype.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected RelationDescription() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public RelationDescription(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public RelationDescription(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class RelationDescription extends Attribute {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -102,16 +70,19 @@ public class RelationDescription extends Attribute {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
+  public String getName() {
+    if (RelationDescription_Type.featOkTst && ((RelationDescription_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.type.RelationDescription");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((RelationDescription_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
+    if (RelationDescription_Type.featOkTst && ((RelationDescription_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.type.RelationDescription");
+    jcasType.ll_cas.ll_setStringValue(addr, ((RelationDescription_Type)jcasType).casFeatCode_name, v);}    
    
     
   //*--------------*
@@ -121,16 +92,19 @@ public class RelationDescription extends Attribute {
    * @generated
    * @return value of the feature 
    */
-  public String getRelationtype() { return _getStringValueNc(wrapGetIntCatchException(_FH_relationtype));}
+  public String getRelationtype() {
+    if (RelationDescription_Type.featOkTst && ((RelationDescription_Type)jcasType).casFeat_relationtype == null)
+      jcasType.jcas.throwFeatMissing("relationtype", "org.texttechnologylab.annotation.type.RelationDescription");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((RelationDescription_Type)jcasType).casFeatCode_relationtype);}
     
   /** setter for relationtype - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRelationtype(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_relationtype), v);
-  }    
-    
+    if (RelationDescription_Type.featOkTst && ((RelationDescription_Type)jcasType).casFeat_relationtype == null)
+      jcasType.jcas.throwFeatMissing("relationtype", "org.texttechnologylab.annotation.type.RelationDescription");
+    jcasType.ll_cas.ll_setStringValue(addr, ((RelationDescription_Type)jcasType).casFeatCode_relationtype, v);}    
   }
 
     

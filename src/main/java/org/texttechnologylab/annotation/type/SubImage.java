@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubImage extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.SubImage";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class SubImage extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_coordinates = "coordinates";
-  public final static String _FeatName_parent = "parent";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_coordinates = TypeSystemImpl.createCallSite(SubImage.class, "coordinates");
-  private final static MethodHandle _FH_coordinates = _FC_coordinates.dynamicInvoker();
-  private final static CallSite _FC_parent = TypeSystemImpl.createCallSite(SubImage.class, "parent");
-  private final static MethodHandle _FH_parent = _FC_parent.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected SubImage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public SubImage(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public SubImage(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class SubImage extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -116,16 +84,19 @@ public class SubImage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getCoordinates() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)));}
+  public FSArray getCoordinates() {
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_coordinates == null)
+      jcasType.jcas.throwFeatMissing("coordinates", "org.texttechnologylab.annotation.type.SubImage");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates)));}
     
   /** setter for coordinates - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCoordinates(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_coordinates), v);
-  }    
-    
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_coordinates == null)
+      jcasType.jcas.throwFeatMissing("coordinates", "org.texttechnologylab.annotation.type.SubImage");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for coordinates - gets an indexed value - 
    * @generated
@@ -133,16 +104,21 @@ public class SubImage extends Annotation {
    * @return value of the element at index i 
    */
   public Coordinate getCoordinates(int i) {
-     return (Coordinate)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));} 
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_coordinates == null)
+      jcasType.jcas.throwFeatMissing("coordinates", "org.texttechnologylab.annotation.type.SubImage");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates), i);
+    return (Coordinate)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates), i)));}
 
   /** indexed setter for coordinates - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCoordinates(int i, Coordinate v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
-  }  
+  public void setCoordinates(int i, Coordinate v) { 
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_coordinates == null)
+      jcasType.jcas.throwFeatMissing("coordinates", "org.texttechnologylab.annotation.type.SubImage");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_coordinates), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -152,16 +128,19 @@ public class SubImage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Image getParent() { return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));}
+  public Image getParent() {
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.texttechnologylab.annotation.type.SubImage");
+    return (Image)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_parent)));}
     
   /** setter for parent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParent(Image v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_parent), v);
-  }    
-    
+    if (SubImage_Type.featOkTst && ((SubImage_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.texttechnologylab.annotation.type.SubImage");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SubImage_Type)jcasType).casFeatCode_parent, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

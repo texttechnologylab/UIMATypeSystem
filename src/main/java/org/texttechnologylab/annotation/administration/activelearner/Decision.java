@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.administration.activelearner;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.type.Fingerprint;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Decision extends Fingerprint {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.administration.activelearner.Decision";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class Decision extends Fingerprint {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_comment = "comment";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(Decision.class, "comment");
-  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Decision() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Decision(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Decision(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class Decision extends Fingerprint {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -100,16 +71,19 @@ public class Decision extends Fingerprint {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
+  public String getComment() {
+    if (Decision_Type.featOkTst && ((Decision_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.activelearner.Decision");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Decision_Type)jcasType).casFeatCode_comment);}
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
-  }    
-    
+    if (Decision_Type.featOkTst && ((Decision_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.administration.activelearner.Decision");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Decision_Type)jcasType).casFeatCode_comment, v);}    
   }
 
     

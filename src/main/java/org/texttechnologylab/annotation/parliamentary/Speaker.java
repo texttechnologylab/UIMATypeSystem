@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.Speaker";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class Speaker extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_id = "id";
-  public final static String _FeatName_firstName = "firstName";
-  public final static String _FeatName_lastName = "lastName";
-  public final static String _FeatName_group = "group";
-  public final static String _FeatName_role = "role";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_id = TypeSystemImpl.createCallSite(Speaker.class, "id");
-  private final static MethodHandle _FH_id = _FC_id.dynamicInvoker();
-  private final static CallSite _FC_firstName = TypeSystemImpl.createCallSite(Speaker.class, "firstName");
-  private final static MethodHandle _FH_firstName = _FC_firstName.dynamicInvoker();
-  private final static CallSite _FC_lastName = TypeSystemImpl.createCallSite(Speaker.class, "lastName");
-  private final static MethodHandle _FH_lastName = _FC_lastName.dynamicInvoker();
-  private final static CallSite _FC_group = TypeSystemImpl.createCallSite(Speaker.class, "group");
-  private final static MethodHandle _FH_group = _FC_group.dynamicInvoker();
-  private final static CallSite _FC_role = TypeSystemImpl.createCallSite(Speaker.class, "role");
-  private final static MethodHandle _FH_role = _FC_role.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Speaker() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Speaker(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Speaker(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class Speaker extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -112,16 +71,19 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
+  public String getId() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_id);}
     
   /** setter for id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_id), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_id, v);}    
    
     
   //*--------------*
@@ -131,16 +93,19 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstName() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstName));}
+  public String getFirstName() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_firstName == null)
+      jcasType.jcas.throwFeatMissing("firstName", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_firstName);}
     
   /** setter for firstName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFirstName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_firstName), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_firstName == null)
+      jcasType.jcas.throwFeatMissing("firstName", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_firstName, v);}    
    
     
   //*--------------*
@@ -150,16 +115,19 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLastName() { return _getStringValueNc(wrapGetIntCatchException(_FH_lastName));}
+  public String getLastName() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_lastName == null)
+      jcasType.jcas.throwFeatMissing("lastName", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_lastName);}
     
   /** setter for lastName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLastName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_lastName), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_lastName == null)
+      jcasType.jcas.throwFeatMissing("lastName", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_lastName, v);}    
    
     
   //*--------------*
@@ -169,16 +137,19 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getGroup() { return _getStringValueNc(wrapGetIntCatchException(_FH_group));}
+  public String getGroup() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_group);}
     
   /** setter for group - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGroup(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_group), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_group, v);}    
    
     
   //*--------------*
@@ -188,16 +159,19 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
+  public String getRole() {
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_role);}
     
   /** setter for role - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRole(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_role), v);
-  }    
-    
+    if (Speaker_Type.featOkTst && ((Speaker_Type)jcasType).casFeat_role == null)
+      jcasType.jcas.throwFeatMissing("role", "org.texttechnologylab.annotation.parliamentary.Speaker");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speaker_Type)jcasType).casFeatCode_role, v);}    
   }
 
     

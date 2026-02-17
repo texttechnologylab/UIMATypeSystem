@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgType extends ArgNode {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.ArgType";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class ArgType extends ArgNode {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_conclusion = "conclusion";
-  public final static String _FeatName_mode = "mode";
-  public final static String _FeatName_data = "data";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_conclusion = TypeSystemImpl.createCallSite(ArgType.class, "conclusion");
-  private final static MethodHandle _FH_conclusion = _FC_conclusion.dynamicInvoker();
-  private final static CallSite _FC_mode = TypeSystemImpl.createCallSite(ArgType.class, "mode");
-  private final static MethodHandle _FH_mode = _FC_mode.dynamicInvoker();
-  private final static CallSite _FC_data = TypeSystemImpl.createCallSite(ArgType.class, "data");
-  private final static MethodHandle _FH_data = _FC_data.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ArgType() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ArgType(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ArgType(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class ArgType extends ArgNode {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -106,16 +71,19 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getConclusion() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)));}
+  public FSArray getConclusion() {
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_conclusion == null)
+      jcasType.jcas.throwFeatMissing("conclusion", "org.texttechnologylab.annotation.type.ArgType");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion)));}
     
   /** setter for conclusion - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setConclusion(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_conclusion), v);
-  }    
-    
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_conclusion == null)
+      jcasType.jcas.throwFeatMissing("conclusion", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for conclusion - gets an indexed value - 
    * @generated
@@ -123,16 +91,21 @@ public class ArgType extends ArgNode {
    * @return value of the element at index i 
    */
   public ArgTextSegment getConclusion(int i) {
-     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).get(i));} 
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_conclusion == null)
+      jcasType.jcas.throwFeatMissing("conclusion", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion), i);
+    return (ArgTextSegment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion), i)));}
 
   /** indexed setter for conclusion - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setConclusion(int i, ArgTextSegment v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).set(i, v);
-  }  
+  public void setConclusion(int i, ArgTextSegment v) { 
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_conclusion == null)
+      jcasType.jcas.throwFeatMissing("conclusion", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_conclusion), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -142,16 +115,19 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  public String getMode() { return _getStringValueNc(wrapGetIntCatchException(_FH_mode));}
+  public String getMode() {
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_mode == null)
+      jcasType.jcas.throwFeatMissing("mode", "org.texttechnologylab.annotation.type.ArgType");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ArgType_Type)jcasType).casFeatCode_mode);}
     
   /** setter for mode - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMode(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mode), v);
-  }    
-    
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_mode == null)
+      jcasType.jcas.throwFeatMissing("mode", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ArgType_Type)jcasType).casFeatCode_mode, v);}    
    
     
   //*--------------*
@@ -161,16 +137,19 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getData() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)));}
+  public FSArray getData() {
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_data == null)
+      jcasType.jcas.throwFeatMissing("data", "org.texttechnologylab.annotation.type.ArgType");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data)));}
     
   /** setter for data - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setData(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_data), v);
-  }    
-    
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_data == null)
+      jcasType.jcas.throwFeatMissing("data", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for data - gets an indexed value - 
    * @generated
@@ -178,16 +157,21 @@ public class ArgType extends ArgNode {
    * @return value of the element at index i 
    */
   public ArgTextSegment getData(int i) {
-     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).get(i));} 
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_data == null)
+      jcasType.jcas.throwFeatMissing("data", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data), i);
+    return (ArgTextSegment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data), i)));}
 
   /** indexed setter for data - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setData(int i, ArgTextSegment v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).set(i, v);
-  }  
+  public void setData(int i, ArgTextSegment v) { 
+    if (ArgType_Type.featOkTst && ((ArgType_Type)jcasType).casFeat_data == null)
+      jcasType.jcas.throwFeatMissing("data", "org.texttechnologylab.annotation.type.ArgType");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgType_Type)jcasType).casFeatCode_data), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

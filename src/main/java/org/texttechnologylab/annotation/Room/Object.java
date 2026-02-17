@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.Room;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.texttechnologylab.annotation.Vector;
@@ -21,17 +13,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Object extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Room.Object";
-  
   /** @generated
    * @ordered 
    */
@@ -48,57 +33,17 @@ public class Object extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_name = "name";
-  public final static String _FeatName_fatherObject = "fatherObject";
-  public final static String _FeatName_nextTimeObject = "nextTimeObject";
-  public final static String _FeatName_prevTimeObject = "prevTimeObject";
-  public final static String _FeatName_timeReference = "timeReference";
-  public final static String _FeatName_shapeNetID = "shapeNetID";
-  public final static String _FeatName_scale = "scale";
-  public final static String _FeatName_location = "location";
-  public final static String _FeatName_rotation = "rotation";
-  public final static String _FeatName_objectFeature = "objectFeature";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(Object.class, "name");
-  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
-  private final static CallSite _FC_fatherObject = TypeSystemImpl.createCallSite(Object.class, "fatherObject");
-  private final static MethodHandle _FH_fatherObject = _FC_fatherObject.dynamicInvoker();
-  private final static CallSite _FC_nextTimeObject = TypeSystemImpl.createCallSite(Object.class, "nextTimeObject");
-  private final static MethodHandle _FH_nextTimeObject = _FC_nextTimeObject.dynamicInvoker();
-  private final static CallSite _FC_prevTimeObject = TypeSystemImpl.createCallSite(Object.class, "prevTimeObject");
-  private final static MethodHandle _FH_prevTimeObject = _FC_prevTimeObject.dynamicInvoker();
-  private final static CallSite _FC_timeReference = TypeSystemImpl.createCallSite(Object.class, "timeReference");
-  private final static MethodHandle _FH_timeReference = _FC_timeReference.dynamicInvoker();
-  private final static CallSite _FC_shapeNetID = TypeSystemImpl.createCallSite(Object.class, "shapeNetID");
-  private final static MethodHandle _FH_shapeNetID = _FC_shapeNetID.dynamicInvoker();
-  private final static CallSite _FC_scale = TypeSystemImpl.createCallSite(Object.class, "scale");
-  private final static MethodHandle _FH_scale = _FC_scale.dynamicInvoker();
-  private final static CallSite _FC_location = TypeSystemImpl.createCallSite(Object.class, "location");
-  private final static MethodHandle _FH_location = _FC_location.dynamicInvoker();
-  private final static CallSite _FC_rotation = TypeSystemImpl.createCallSite(Object.class, "rotation");
-  private final static MethodHandle _FH_rotation = _FC_rotation.dynamicInvoker();
-  private final static CallSite _FC_objectFeature = TypeSystemImpl.createCallSite(Object.class, "objectFeature");
-  private final static MethodHandle _FH_objectFeature = _FC_objectFeature.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Object() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Object(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Object(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -109,7 +54,6 @@ public class Object extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -141,16 +85,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
+  public String getName() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.Room.Object");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Object_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets Name of the object (group). 
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Object_Type)jcasType).casFeatCode_name, v);}    
    
     
   //*--------------*
@@ -160,16 +107,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getFatherObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_fatherObject)));}
+  public Object getFatherObject() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_fatherObject == null)
+      jcasType.jcas.throwFeatMissing("fatherObject", "org.texttechnologylab.annotation.Room.Object");
+    return (Object)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_fatherObject)));}
     
   /** setter for fatherObject - sets FatherObject in the hierarchy. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFatherObject(Object v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_fatherObject), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_fatherObject == null)
+      jcasType.jcas.throwFeatMissing("fatherObject", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_fatherObject, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -179,16 +129,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getNextTimeObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nextTimeObject)));}
+  public Object getNextTimeObject() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_nextTimeObject == null)
+      jcasType.jcas.throwFeatMissing("nextTimeObject", "org.texttechnologylab.annotation.Room.Object");
+    return (Object)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_nextTimeObject)));}
     
   /** setter for nextTimeObject - sets Reference to the same object the next time step. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setNextTimeObject(Object v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nextTimeObject), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_nextTimeObject == null)
+      jcasType.jcas.throwFeatMissing("nextTimeObject", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_nextTimeObject, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -198,16 +151,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getPrevTimeObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prevTimeObject)));}
+  public Object getPrevTimeObject() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_prevTimeObject == null)
+      jcasType.jcas.throwFeatMissing("prevTimeObject", "org.texttechnologylab.annotation.Room.Object");
+    return (Object)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_prevTimeObject)));}
     
   /** setter for prevTimeObject - sets Reference to the same object the previous time step. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPrevTimeObject(Object v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_prevTimeObject), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_prevTimeObject == null)
+      jcasType.jcas.throwFeatMissing("prevTimeObject", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_prevTimeObject, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -217,16 +173,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TimeChain getTimeReference() { return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_timeReference)));}
+  public TimeChain getTimeReference() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_timeReference == null)
+      jcasType.jcas.throwFeatMissing("timeReference", "org.texttechnologylab.annotation.Room.Object");
+    return (TimeChain)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_timeReference)));}
     
   /** setter for timeReference - sets Reference to time location. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimeReference(TimeChain v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_timeReference), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_timeReference == null)
+      jcasType.jcas.throwFeatMissing("timeReference", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_timeReference, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -236,16 +195,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getShapeNetID() { return _getStringValueNc(wrapGetIntCatchException(_FH_shapeNetID));}
+  public String getShapeNetID() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_shapeNetID == null)
+      jcasType.jcas.throwFeatMissing("shapeNetID", "org.texttechnologylab.annotation.Room.Object");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Object_Type)jcasType).casFeatCode_shapeNetID);}
     
   /** setter for shapeNetID - sets ShapeNetID of the object. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setShapeNetID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_shapeNetID), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_shapeNetID == null)
+      jcasType.jcas.throwFeatMissing("shapeNetID", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Object_Type)jcasType).casFeatCode_shapeNetID, v);}    
    
     
   //*--------------*
@@ -255,16 +217,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getScale() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_scale));}
+  public double getScale() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.Room.Object");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Object_Type)jcasType).casFeatCode_scale);}
     
   /** setter for scale - sets Scale of the object. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setScale(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_scale), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Object_Type)jcasType).casFeatCode_scale, v);}    
    
     
   //*--------------*
@@ -274,16 +239,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vector getLocation() { return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_location)));}
+  public Vector getLocation() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "org.texttechnologylab.annotation.Room.Object");
+    return (Vector)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_location)));}
     
   /** setter for location - sets 3D Location Vector. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLocation(Vector v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_location), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_location, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -293,16 +261,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vector getRotation() { return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));}
+  public Vector getRotation() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.Room.Object");
+    return (Vector)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_rotation)));}
     
   /** setter for rotation - sets 4D Rotation Quaternion 
    * @generated
    * @param v value to set into the feature 
    */
   public void setRotation(Vector v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rotation), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_rotation, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -312,16 +283,19 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getObjectFeature() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)));}
+  public FSArray getObjectFeature() {
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_objectFeature == null)
+      jcasType.jcas.throwFeatMissing("objectFeature", "org.texttechnologylab.annotation.Room.Object");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature)));}
     
   /** setter for objectFeature - sets All feature of the object 
    * @generated
    * @param v value to set into the feature 
    */
   public void setObjectFeature(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_objectFeature), v);
-  }    
-    
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_objectFeature == null)
+      jcasType.jcas.throwFeatMissing("objectFeature", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for objectFeature - gets an indexed value - All feature of the object
    * @generated
@@ -329,16 +303,21 @@ public class Object extends Annotation {
    * @return value of the element at index i 
    */
   public ObjectAttribute getObjectFeature(int i) {
-     return (ObjectAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).get(i));} 
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_objectFeature == null)
+      jcasType.jcas.throwFeatMissing("objectFeature", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature), i);
+    return (ObjectAttribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature), i)));}
 
   /** indexed setter for objectFeature - sets an indexed value - All feature of the object
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setObjectFeature(int i, ObjectAttribute v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).set(i, v);
-  }  
+  public void setObjectFeature(int i, ObjectAttribute v) { 
+    if (Object_Type.featOkTst && ((Object_Type)jcasType).casFeat_objectFeature == null)
+      jcasType.jcas.throwFeatMissing("objectFeature", "org.texttechnologylab.annotation.Room.Object");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Object_Type)jcasType).casFeatCode_objectFeature), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

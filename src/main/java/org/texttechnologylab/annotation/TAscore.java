@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** TextAnalyzer scores.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TAscore extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.TAscore";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class TAscore extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_name = "name";
-  public final static String _FeatName_score = "score";
-  public final static String _FeatName_group = "group";
-  public final static String _FeatName_ref = "ref";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(TAscore.class, "name");
-  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
-  private final static CallSite _FC_score = TypeSystemImpl.createCallSite(TAscore.class, "score");
-  private final static MethodHandle _FH_score = _FC_score.dynamicInvoker();
-  private final static CallSite _FC_group = TypeSystemImpl.createCallSite(TAscore.class, "group");
-  private final static MethodHandle _FH_group = _FC_group.dynamicInvoker();
-  private final static CallSite _FC_ref = TypeSystemImpl.createCallSite(TAscore.class, "ref");
-  private final static MethodHandle _FH_ref = _FC_ref.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TAscore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TAscore(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TAscore(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class TAscore extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class TAscore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
+  public String getName() {
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.TAscore");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TAscore_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets String-based value, e.g. a topic name like "politics" or "sports". 
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.TAscore");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TAscore_Type)jcasType).casFeatCode_name, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class TAscore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
+  public double getScore() {
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.TAscore");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((TAscore_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets Score, probability or confidence value for the category set in the "value" field. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setScore(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_score), v);
-  }    
-    
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.TAscore");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((TAscore_Type)jcasType).casFeatCode_score, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class TAscore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getGroup() { return _getStringValueNc(wrapGetIntCatchException(_FH_group));}
+  public String getGroup() {
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.TAscore");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TAscore_Type)jcasType).casFeatCode_group);}
     
   /** setter for group - sets Feature class, e.g. pos-b (part of speech basic), pos-a, syntactic, coherence-l (token based), coherence-s (sentence based), etc. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setGroup(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_group), v);
-  }    
-    
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.TAscore");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TAscore_Type)jcasType).casFeatCode_group, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class TAscore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getRef() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ref)));}
+  public Annotation getRef() {
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_ref == null)
+      jcasType.jcas.throwFeatMissing("ref", "org.texttechnologylab.annotation.TAscore");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TAscore_Type)jcasType).casFeatCode_ref)));}
     
   /** setter for ref - sets This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setRef(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_ref), v);
-  }    
-    
+    if (TAscore_Type.featOkTst && ((TAscore_Type)jcasType).casFeat_ref == null)
+      jcasType.jcas.throwFeatMissing("ref", "org.texttechnologylab.annotation.TAscore");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TAscore_Type)jcasType).casFeatCode_ref, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

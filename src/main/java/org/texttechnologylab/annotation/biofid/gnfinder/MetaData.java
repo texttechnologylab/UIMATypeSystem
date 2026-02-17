@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends TOP {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.biofid.gnfinder.MetaData";
-  
   /** @generated
    * @ordered 
    */
@@ -47,42 +32,17 @@ public class MetaData extends TOP {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_date = "date";
-  public final static String _FeatName_version = "version";
-  public final static String _FeatName_language = "language";
-  public final static String _FeatName_other = "other";
-  public final static String _FeatName_references = "references";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_date = TypeSystemImpl.createCallSite(MetaData.class, "date");
-  private final static MethodHandle _FH_date = _FC_date.dynamicInvoker();
-  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(MetaData.class, "version");
-  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
-  private final static CallSite _FC_language = TypeSystemImpl.createCallSite(MetaData.class, "language");
-  private final static MethodHandle _FH_language = _FC_language.dynamicInvoker();
-  private final static CallSite _FC_other = TypeSystemImpl.createCallSite(MetaData.class, "other");
-  private final static MethodHandle _FH_other = _FC_other.dynamicInvoker();
-  private final static CallSite _FC_references = TypeSystemImpl.createCallSite(MetaData.class, "references");
-  private final static MethodHandle _FH_references = _FC_references.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public MetaData(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public MetaData(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -93,7 +53,6 @@ public class MetaData extends TOP {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -113,16 +72,19 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_date));}
+  public String getDate() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_date);}
     
   /** setter for date - sets The date of running a GNfinder query. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDate(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_date), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_date, v);}    
    
     
   //*--------------*
@@ -132,16 +94,19 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
+  public String getVersion() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_version);}
     
   /** setter for version - sets The version of GNfinder. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setVersion(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_version, v);}    
    
     
   //*--------------*
@@ -151,16 +116,19 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_language));}
+  public String getLanguage() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_language == null)
+      jcasType.jcas.throwFeatMissing("language", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_language);}
     
   /** setter for language - sets Indicates the language that was used for calculation of Bayes' odds. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLanguage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_language), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_language == null)
+      jcasType.jcas.throwFeatMissing("language", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_language, v);}    
    
     
   //*--------------*
@@ -170,16 +138,19 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getOther() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)));}
+  public FSArray getOther() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_other == null)
+      jcasType.jcas.throwFeatMissing("other", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other)));}
     
   /** setter for other - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOther(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_other), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_other == null)
+      jcasType.jcas.throwFeatMissing("other", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.ll_cas.ll_setRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for other - gets an indexed value - 
    * @generated
@@ -187,16 +158,21 @@ public class MetaData extends TOP {
    * @return value of the element at index i 
    */
   public TOP getOther(int i) {
-     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).get(i));} 
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_other == null)
+      jcasType.jcas.throwFeatMissing("other", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other), i);
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other), i)));}
 
   /** indexed setter for other - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setOther(int i, TOP v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).set(i, v);
-  }  
+  public void setOther(int i, TOP v) { 
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_other == null)
+      jcasType.jcas.throwFeatMissing("other", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_other), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -206,16 +182,19 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getReferences() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)));}
+  public FSArray getReferences() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_references == null)
+      jcasType.jcas.throwFeatMissing("references", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references)));}
     
   /** setter for references - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReferences(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_references), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_references == null)
+      jcasType.jcas.throwFeatMissing("references", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.ll_cas.ll_setRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for references - gets an indexed value - 
    * @generated
@@ -223,16 +202,21 @@ public class MetaData extends TOP {
    * @return value of the element at index i 
    */
   public TOP getReferences(int i) {
-     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).get(i));} 
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_references == null)
+      jcasType.jcas.throwFeatMissing("references", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references), i);
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references), i)));}
 
   /** indexed setter for references - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setReferences(int i, TOP v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).set(i, v);
-  }  
+  public void setReferences(int i, TOP v) { 
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_references == null)
+      jcasType.jcas.throwFeatMissing("references", "org.texttechnologylab.annotation.biofid.gnfinder.MetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((MetaData_Type)jcasType).casFeatCode_references), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

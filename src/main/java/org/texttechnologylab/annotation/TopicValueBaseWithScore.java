@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TopicValueBaseWithScore extends TopicValueBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.TopicValueBaseWithScore";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class TopicValueBaseWithScore extends TopicValueBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_score = "score";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_score = TypeSystemImpl.createCallSite(TopicValueBaseWithScore.class, "score");
-  private final static MethodHandle _FH_score = _FC_score.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TopicValueBaseWithScore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TopicValueBaseWithScore(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TopicValueBaseWithScore(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class TopicValueBaseWithScore extends TopicValueBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -99,16 +70,19 @@ public class TopicValueBaseWithScore extends TopicValueBase {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
+  public double getScore() {
+    if (TopicValueBaseWithScore_Type.featOkTst && ((TopicValueBaseWithScore_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.TopicValueBaseWithScore");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((TopicValueBaseWithScore_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets Probability of the topic label 
    * @generated
    * @param v value to set into the feature 
    */
   public void setScore(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_score), v);
-  }    
-    
+    if (TopicValueBaseWithScore_Type.featOkTst && ((TopicValueBaseWithScore_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.TopicValueBaseWithScore");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((TopicValueBaseWithScore_Type)jcasType).casFeatCode_score, v);}    
   }
 
     

@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgTypeAnd extends ArgType {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.ArgTypeAnd";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class ArgTypeAnd extends ArgType {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_data2 = "data2";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_data2 = TypeSystemImpl.createCallSite(ArgTypeAnd.class, "data2");
-  private final static MethodHandle _FH_data2 = _FC_data2.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ArgTypeAnd() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ArgTypeAnd(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ArgTypeAnd(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class ArgTypeAnd extends ArgType {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -100,16 +71,19 @@ public class ArgTypeAnd extends ArgType {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getData2() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data2)));}
+  public FSArray getData2() {
+    if (ArgTypeAnd_Type.featOkTst && ((ArgTypeAnd_Type)jcasType).casFeat_data2 == null)
+      jcasType.jcas.throwFeatMissing("data2", "org.texttechnologylab.annotation.type.ArgTypeAnd");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2)));}
     
   /** setter for data2 - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setData2(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_data2), v);
-  }    
-    
+    if (ArgTypeAnd_Type.featOkTst && ((ArgTypeAnd_Type)jcasType).casFeat_data2 == null)
+      jcasType.jcas.throwFeatMissing("data2", "org.texttechnologylab.annotation.type.ArgTypeAnd");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for data2 - gets an indexed value - 
    * @generated
@@ -117,16 +91,21 @@ public class ArgTypeAnd extends ArgType {
    * @return value of the element at index i 
    */
   public ArgTextSegment getData2(int i) {
-     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data2)))).get(i));} 
+    if (ArgTypeAnd_Type.featOkTst && ((ArgTypeAnd_Type)jcasType).casFeat_data2 == null)
+      jcasType.jcas.throwFeatMissing("data2", "org.texttechnologylab.annotation.type.ArgTypeAnd");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2), i);
+    return (ArgTextSegment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2), i)));}
 
   /** indexed setter for data2 - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setData2(int i, ArgTextSegment v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data2)))).set(i, v);
-  }  
+  public void setData2(int i, ArgTextSegment v) { 
+    if (ArgTypeAnd_Type.featOkTst && ((ArgTypeAnd_Type)jcasType).casFeat_data2 == null)
+      jcasType.jcas.throwFeatMissing("data2", "org.texttechnologylab.annotation.type.ArgTypeAnd");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((ArgTypeAnd_Type)jcasType).casFeatCode_data2), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

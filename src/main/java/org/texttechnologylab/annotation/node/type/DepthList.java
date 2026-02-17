@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.node.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.type.Node;
 import org.apache.uima.jcas.cas.IntegerArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DepthList extends Node {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.node.type.DepthList";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class DepthList extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_displayName = "displayName";
-  public final static String _FeatName_hierarchie = "hierarchie";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_displayName = TypeSystemImpl.createCallSite(DepthList.class, "displayName");
-  private final static MethodHandle _FH_displayName = _FC_displayName.dynamicInvoker();
-  private final static CallSite _FC_hierarchie = TypeSystemImpl.createCallSite(DepthList.class, "hierarchie");
-  private final static MethodHandle _FH_hierarchie = _FC_hierarchie.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected DepthList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public DepthList(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public DepthList(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class DepthList extends Node {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -104,16 +72,19 @@ public class DepthList extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() { return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));}
+  public String getDisplayName() {
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_displayName == null)
+      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.DepthList");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DepthList_Type)jcasType).casFeatCode_displayName);}
     
   /** setter for displayName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDisplayName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_displayName), v);
-  }    
-    
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_displayName == null)
+      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.DepthList");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DepthList_Type)jcasType).casFeatCode_displayName, v);}    
    
     
   //*--------------*
@@ -123,16 +94,19 @@ public class DepthList extends Node {
    * @generated
    * @return value of the feature 
    */
-  public IntegerArray getHierarchie() { return (IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)));}
+  public IntegerArray getHierarchie() {
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_hierarchie == null)
+      jcasType.jcas.throwFeatMissing("hierarchie", "org.texttechnologylab.annotation.node.type.DepthList");
+    return (IntegerArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie)));}
     
   /** setter for hierarchie - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHierarchie(IntegerArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_hierarchie), v);
-  }    
-    
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_hierarchie == null)
+      jcasType.jcas.throwFeatMissing("hierarchie", "org.texttechnologylab.annotation.node.type.DepthList");
+    jcasType.ll_cas.ll_setRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for hierarchie - gets an indexed value - 
    * @generated
@@ -140,16 +114,21 @@ public class DepthList extends Node {
    * @return value of the element at index i 
    */
   public int getHierarchie(int i) {
-     return ((IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)))).get(i);} 
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_hierarchie == null)
+      jcasType.jcas.throwFeatMissing("hierarchie", "org.texttechnologylab.annotation.node.type.DepthList");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie), i);
+    return jcasType.ll_cas.ll_getIntArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie), i);}
 
   /** indexed setter for hierarchie - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setHierarchie(int i, int v) {
-    ((IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)))).set(i, v);
-  }  
+  public void setHierarchie(int i, int v) { 
+    if (DepthList_Type.featOkTst && ((DepthList_Type)jcasType).casFeat_hierarchie == null)
+      jcasType.jcas.throwFeatMissing("hierarchie", "org.texttechnologylab.annotation.node.type.DepthList");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie), i);
+    jcasType.ll_cas.ll_setIntArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((DepthList_Type)jcasType).casFeatCode_hierarchie), i, v);}
   }
 
     

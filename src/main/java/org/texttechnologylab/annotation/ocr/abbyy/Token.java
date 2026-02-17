@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr.abbyy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringList;
 
 
 /** Token type that denotes recognized words.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Token";
-  
   /** @generated
    * @ordered 
    */
@@ -46,51 +31,17 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_subTokenList = "subTokenList";
-  public final static String _FeatName_isWordFromDictionary = "isWordFromDictionary";
-  public final static String _FeatName_isWordNormal = "isWordNormal";
-  public final static String _FeatName_isWordNumeric = "isWordNumeric";
-  public final static String _FeatName_containsHyphen = "containsHyphen";
-  public final static String _FeatName_suspiciousChars = "suspiciousChars";
-  public final static String _FeatName_minCharConfidence = "minCharConfidence";
-  public final static String _FeatName_meanCharConfidence = "meanCharConfidence";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_subTokenList = TypeSystemImpl.createCallSite(Token.class, "subTokenList");
-  private final static MethodHandle _FH_subTokenList = _FC_subTokenList.dynamicInvoker();
-  private final static CallSite _FC_isWordFromDictionary = TypeSystemImpl.createCallSite(Token.class, "isWordFromDictionary");
-  private final static MethodHandle _FH_isWordFromDictionary = _FC_isWordFromDictionary.dynamicInvoker();
-  private final static CallSite _FC_isWordNormal = TypeSystemImpl.createCallSite(Token.class, "isWordNormal");
-  private final static MethodHandle _FH_isWordNormal = _FC_isWordNormal.dynamicInvoker();
-  private final static CallSite _FC_isWordNumeric = TypeSystemImpl.createCallSite(Token.class, "isWordNumeric");
-  private final static MethodHandle _FH_isWordNumeric = _FC_isWordNumeric.dynamicInvoker();
-  private final static CallSite _FC_containsHyphen = TypeSystemImpl.createCallSite(Token.class, "containsHyphen");
-  private final static MethodHandle _FH_containsHyphen = _FC_containsHyphen.dynamicInvoker();
-  private final static CallSite _FC_suspiciousChars = TypeSystemImpl.createCallSite(Token.class, "suspiciousChars");
-  private final static MethodHandle _FH_suspiciousChars = _FC_suspiciousChars.dynamicInvoker();
-  private final static CallSite _FC_minCharConfidence = TypeSystemImpl.createCallSite(Token.class, "minCharConfidence");
-  private final static MethodHandle _FH_minCharConfidence = _FC_minCharConfidence.dynamicInvoker();
-  private final static CallSite _FC_meanCharConfidence = TypeSystemImpl.createCallSite(Token.class, "meanCharConfidence");
-  private final static MethodHandle _FH_meanCharConfidence = _FC_meanCharConfidence.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Token() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Token(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Token(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -101,7 +52,6 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -133,16 +83,19 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public StringList getSubTokenList() { return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));}
+  public StringList getSubTokenList() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_subTokenList == null)
+      jcasType.jcas.throwFeatMissing("subTokenList", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Token_Type)jcasType).casFeatCode_subTokenList)));}
     
   /** setter for subTokenList - sets Present if a linebreak hyphen was recognized, contains the individual words. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubTokenList(StringList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_subTokenList), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_subTokenList == null)
+      jcasType.jcas.throwFeatMissing("subTokenList", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Token_Type)jcasType).casFeatCode_subTokenList, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -152,16 +105,19 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordFromDictionary() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));}
+  public boolean getIsWordFromDictionary() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordFromDictionary == null)
+      jcasType.jcas.throwFeatMissing("isWordFromDictionary", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordFromDictionary);}
     
   /** setter for isWordFromDictionary - sets Specifies whether the word was found in the ABBYY FineReader dictionary. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsWordFromDictionary(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordFromDictionary), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordFromDictionary == null)
+      jcasType.jcas.throwFeatMissing("isWordFromDictionary", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordFromDictionary, v);}    
    
     
   //*--------------*
@@ -172,7 +128,10 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNormal() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));}
+  public boolean getIsWordNormal() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordNormal == null)
+      jcasType.jcas.throwFeatMissing("isWordNormal", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordNormal);}
     
   /** setter for isWordNormal - sets Specifies whether the word was recognized with either a standard or user-defined language,
                         and that it is not a number or an identifier. 
@@ -180,9 +139,9 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @param v value to set into the feature 
    */
   public void setIsWordNormal(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordNormal), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordNormal == null)
+      jcasType.jcas.throwFeatMissing("isWordNormal", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordNormal, v);}    
    
     
   //*--------------*
@@ -192,16 +151,19 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNumeric() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));}
+  public boolean getIsWordNumeric() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordNumeric == null)
+      jcasType.jcas.throwFeatMissing("isWordNumeric", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordNumeric);}
     
   /** setter for isWordNumeric - sets Specifies whether the word is a number 
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsWordNumeric(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordNumeric), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_isWordNumeric == null)
+      jcasType.jcas.throwFeatMissing("isWordNumeric", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_isWordNumeric, v);}    
    
     
   //*--------------*
@@ -211,16 +173,19 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getContainsHyphen() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));}
+  public boolean getContainsHyphen() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_containsHyphen == null)
+      jcasType.jcas.throwFeatMissing("containsHyphen", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_containsHyphen);}
     
   /** setter for containsHyphen - sets Specifies if the word contains a recognized linebreak hyphen. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setContainsHyphen(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_containsHyphen), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_containsHyphen == null)
+      jcasType.jcas.throwFeatMissing("containsHyphen", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Token_Type)jcasType).casFeatCode_containsHyphen, v);}    
    
     
   //*--------------*
@@ -230,16 +195,19 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public int getSuspiciousChars() { return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));}
+  public int getSuspiciousChars() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_suspiciousChars == null)
+      jcasType.jcas.throwFeatMissing("suspiciousChars", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_suspiciousChars);}
     
   /** setter for suspiciousChars - sets The number of characters that were recognized uncertainly. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSuspiciousChars(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_suspiciousChars), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_suspiciousChars == null)
+      jcasType.jcas.throwFeatMissing("suspiciousChars", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_suspiciousChars, v);}    
    
     
   //*--------------*
@@ -252,7 +220,10 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public short getMinCharConfidence() { return _getShortValueNc(wrapGetIntCatchException(_FH_minCharConfidence));}
+  public short getMinCharConfidence() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_minCharConfidence == null)
+      jcasType.jcas.throwFeatMissing("minCharConfidence", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getShortValue(addr, ((Token_Type)jcasType).casFeatCode_minCharConfidence);}
     
   /** setter for minCharConfidence - sets The minimum character recognition confidence of all characters in this word.
                         Use with caution, as these numbers are not guaranteed to be positive and, according to the
@@ -262,9 +233,9 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @param v value to set into the feature 
    */
   public void setMinCharConfidence(short v) {
-    _setShortValueNfc(wrapGetIntCatchException(_FH_minCharConfidence), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_minCharConfidence == null)
+      jcasType.jcas.throwFeatMissing("minCharConfidence", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setShortValue(addr, ((Token_Type)jcasType).casFeatCode_minCharConfidence, v);}    
    
     
   //*--------------*
@@ -277,7 +248,10 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public float getMeanCharConfidence() { return _getFloatValueNc(wrapGetIntCatchException(_FH_meanCharConfidence));}
+  public float getMeanCharConfidence() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_meanCharConfidence == null)
+      jcasType.jcas.throwFeatMissing("meanCharConfidence", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((Token_Type)jcasType).casFeatCode_meanCharConfidence);}
     
   /** setter for meanCharConfidence - sets The average character recognition confidence of all characters in this word.
                         Use with caution, as these numbers are not guaranteed to be positive and, according to the
@@ -287,9 +261,9 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @param v value to set into the feature 
    */
   public void setMeanCharConfidence(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_meanCharConfidence), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_meanCharConfidence == null)
+      jcasType.jcas.throwFeatMissing("meanCharConfidence", "org.texttechnologylab.annotation.ocr.abbyy.Token");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((Token_Type)jcasType).casFeatCode_meanCharConfidence, v);}    
   }
 
     

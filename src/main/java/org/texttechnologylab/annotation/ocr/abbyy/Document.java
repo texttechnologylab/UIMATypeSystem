@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr.abbyy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Document metadata.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Document {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Document";
-  
   /** @generated
    * @ordered 
    */
@@ -45,45 +30,17 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_documentName = "documentName";
-  public final static String _FeatName_version = "version";
-  public final static String _FeatName_producer = "producer";
-  public final static String _FeatName_pagesCount = "pagesCount";
-  public final static String _FeatName_mainLanguage = "mainLanguage";
-  public final static String _FeatName_languages = "languages";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_documentName = TypeSystemImpl.createCallSite(Document.class, "documentName");
-  private final static MethodHandle _FH_documentName = _FC_documentName.dynamicInvoker();
-  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(Document.class, "version");
-  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
-  private final static CallSite _FC_producer = TypeSystemImpl.createCallSite(Document.class, "producer");
-  private final static MethodHandle _FH_producer = _FC_producer.dynamicInvoker();
-  private final static CallSite _FC_pagesCount = TypeSystemImpl.createCallSite(Document.class, "pagesCount");
-  private final static MethodHandle _FH_pagesCount = _FC_pagesCount.dynamicInvoker();
-  private final static CallSite _FC_mainLanguage = TypeSystemImpl.createCallSite(Document.class, "mainLanguage");
-  private final static MethodHandle _FH_mainLanguage = _FC_mainLanguage.dynamicInvoker();
-  private final static CallSite _FC_languages = TypeSystemImpl.createCallSite(Document.class, "languages");
-  private final static MethodHandle _FH_languages = _FC_languages.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Document() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Document(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Document(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -94,7 +51,6 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -126,16 +82,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentName() { return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));}
+  public String getDocumentName() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_documentName == null)
+      jcasType.jcas.throwFeatMissing("documentName", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_documentName);}
     
   /** setter for documentName - sets The name of this document in the XML files. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDocumentName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_documentName), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_documentName == null)
+      jcasType.jcas.throwFeatMissing("documentName", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_documentName, v);}    
    
     
   //*--------------*
@@ -145,16 +104,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
+  public String getVersion() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_version);}
     
   /** setter for version - sets The version of the source XML files. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setVersion(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_version, v);}    
    
     
   //*--------------*
@@ -164,16 +126,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getProducer() { return _getStringValueNc(wrapGetIntCatchException(_FH_producer));}
+  public String getProducer() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_producer == null)
+      jcasType.jcas.throwFeatMissing("producer", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_producer);}
     
   /** setter for producer - sets The producer of the source XML files. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setProducer(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_producer), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_producer == null)
+      jcasType.jcas.throwFeatMissing("producer", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_producer, v);}    
    
     
   //*--------------*
@@ -183,16 +148,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public int getPagesCount() { return _getIntValueNc(wrapGetIntCatchException(_FH_pagesCount));}
+  public int getPagesCount() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_pagesCount == null)
+      jcasType.jcas.throwFeatMissing("pagesCount", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Document_Type)jcasType).casFeatCode_pagesCount);}
     
   /** setter for pagesCount - sets The number of pages in this document (optional). 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPagesCount(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_pagesCount), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_pagesCount == null)
+      jcasType.jcas.throwFeatMissing("pagesCount", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Document_Type)jcasType).casFeatCode_pagesCount, v);}    
    
     
   //*--------------*
@@ -202,16 +170,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getMainLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_mainLanguage));}
+  public String getMainLanguage() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_mainLanguage == null)
+      jcasType.jcas.throwFeatMissing("mainLanguage", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_mainLanguage);}
     
   /** setter for mainLanguage - sets The main language of this document. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMainLanguage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mainLanguage), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_mainLanguage == null)
+      jcasType.jcas.throwFeatMissing("mainLanguage", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_mainLanguage, v);}    
    
     
   //*--------------*
@@ -221,16 +192,19 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getLanguages() { return _getStringValueNc(wrapGetIntCatchException(_FH_languages));}
+  public String getLanguages() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_languages == null)
+      jcasType.jcas.throwFeatMissing("languages", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_languages);}
     
   /** setter for languages - sets All languages used in this document (optional). 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLanguages(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_languages), v);
-  }    
-    
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_languages == null)
+      jcasType.jcas.throwFeatMissing("languages", "org.texttechnologylab.annotation.ocr.abbyy.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_languages, v);}    
   }
 
     

@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.uima.type.spacy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FloatArray;
 import org.apache.uima.jcas.cas.StringArray;
@@ -21,17 +13,10 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpacyToken extends Token {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.uima.type.spacy.SpacyToken";
-  
   /** @generated
    * @ordered 
    */
@@ -48,90 +33,17 @@ public class SpacyToken extends Token {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_likeUrl = "likeUrl";
-  public final static String _FeatName_hasVector = "hasVector";
-  public final static String _FeatName_vector = "vector";
-  public final static String _FeatName_likeNum = "likeNum";
-  public final static String _FeatName_isStop = "isStop";
-  public final static String _FeatName_isOov = "isOov";
-  public final static String _FeatName_isCurrency = "isCurrency";
-  public final static String _FeatName_isQuote = "isQuote";
-  public final static String _FeatName_isBracket = "isBracket";
-  public final static String _FeatName_isSentStart = "isSentStart";
-  public final static String _FeatName_isSentEnd = "isSentEnd";
-  public final static String _FeatName_isLeftPunct = "isLeftPunct";
-  public final static String _FeatName_isRightPunct = "isRightPunct";
-  public final static String _FeatName_isPunct = "isPunct";
-  public final static String _FeatName_isTitle = "isTitle";
-  public final static String _FeatName_isUpper = "isUpper";
-  public final static String _FeatName_isLower = "isLower";
-  public final static String _FeatName_isDigit = "isDigit";
-  public final static String _FeatName_isAscii = "isAscii";
-  public final static String _FeatName_isAlpha = "isAlpha";
-  public final static String _FeatName_beneparLabels = "beneparLabels";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_likeUrl = TypeSystemImpl.createCallSite(SpacyToken.class, "likeUrl");
-  private final static MethodHandle _FH_likeUrl = _FC_likeUrl.dynamicInvoker();
-  private final static CallSite _FC_hasVector = TypeSystemImpl.createCallSite(SpacyToken.class, "hasVector");
-  private final static MethodHandle _FH_hasVector = _FC_hasVector.dynamicInvoker();
-  private final static CallSite _FC_vector = TypeSystemImpl.createCallSite(SpacyToken.class, "vector");
-  private final static MethodHandle _FH_vector = _FC_vector.dynamicInvoker();
-  private final static CallSite _FC_likeNum = TypeSystemImpl.createCallSite(SpacyToken.class, "likeNum");
-  private final static MethodHandle _FH_likeNum = _FC_likeNum.dynamicInvoker();
-  private final static CallSite _FC_isStop = TypeSystemImpl.createCallSite(SpacyToken.class, "isStop");
-  private final static MethodHandle _FH_isStop = _FC_isStop.dynamicInvoker();
-  private final static CallSite _FC_isOov = TypeSystemImpl.createCallSite(SpacyToken.class, "isOov");
-  private final static MethodHandle _FH_isOov = _FC_isOov.dynamicInvoker();
-  private final static CallSite _FC_isCurrency = TypeSystemImpl.createCallSite(SpacyToken.class, "isCurrency");
-  private final static MethodHandle _FH_isCurrency = _FC_isCurrency.dynamicInvoker();
-  private final static CallSite _FC_isQuote = TypeSystemImpl.createCallSite(SpacyToken.class, "isQuote");
-  private final static MethodHandle _FH_isQuote = _FC_isQuote.dynamicInvoker();
-  private final static CallSite _FC_isBracket = TypeSystemImpl.createCallSite(SpacyToken.class, "isBracket");
-  private final static MethodHandle _FH_isBracket = _FC_isBracket.dynamicInvoker();
-  private final static CallSite _FC_isSentStart = TypeSystemImpl.createCallSite(SpacyToken.class, "isSentStart");
-  private final static MethodHandle _FH_isSentStart = _FC_isSentStart.dynamicInvoker();
-  private final static CallSite _FC_isSentEnd = TypeSystemImpl.createCallSite(SpacyToken.class, "isSentEnd");
-  private final static MethodHandle _FH_isSentEnd = _FC_isSentEnd.dynamicInvoker();
-  private final static CallSite _FC_isLeftPunct = TypeSystemImpl.createCallSite(SpacyToken.class, "isLeftPunct");
-  private final static MethodHandle _FH_isLeftPunct = _FC_isLeftPunct.dynamicInvoker();
-  private final static CallSite _FC_isRightPunct = TypeSystemImpl.createCallSite(SpacyToken.class, "isRightPunct");
-  private final static MethodHandle _FH_isRightPunct = _FC_isRightPunct.dynamicInvoker();
-  private final static CallSite _FC_isPunct = TypeSystemImpl.createCallSite(SpacyToken.class, "isPunct");
-  private final static MethodHandle _FH_isPunct = _FC_isPunct.dynamicInvoker();
-  private final static CallSite _FC_isTitle = TypeSystemImpl.createCallSite(SpacyToken.class, "isTitle");
-  private final static MethodHandle _FH_isTitle = _FC_isTitle.dynamicInvoker();
-  private final static CallSite _FC_isUpper = TypeSystemImpl.createCallSite(SpacyToken.class, "isUpper");
-  private final static MethodHandle _FH_isUpper = _FC_isUpper.dynamicInvoker();
-  private final static CallSite _FC_isLower = TypeSystemImpl.createCallSite(SpacyToken.class, "isLower");
-  private final static MethodHandle _FH_isLower = _FC_isLower.dynamicInvoker();
-  private final static CallSite _FC_isDigit = TypeSystemImpl.createCallSite(SpacyToken.class, "isDigit");
-  private final static MethodHandle _FH_isDigit = _FC_isDigit.dynamicInvoker();
-  private final static CallSite _FC_isAscii = TypeSystemImpl.createCallSite(SpacyToken.class, "isAscii");
-  private final static MethodHandle _FH_isAscii = _FC_isAscii.dynamicInvoker();
-  private final static CallSite _FC_isAlpha = TypeSystemImpl.createCallSite(SpacyToken.class, "isAlpha");
-  private final static MethodHandle _FH_isAlpha = _FC_isAlpha.dynamicInvoker();
-  private final static CallSite _FC_beneparLabels = TypeSystemImpl.createCallSite(SpacyToken.class, "beneparLabels");
-  private final static MethodHandle _FH_beneparLabels = _FC_beneparLabels.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected SpacyToken() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public SpacyToken(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public SpacyToken(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -142,7 +54,6 @@ public class SpacyToken extends Token {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -174,16 +85,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getLikeUrl() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeUrl));}
+  public boolean getLikeUrl() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_likeUrl == null)
+      jcasType.jcas.throwFeatMissing("likeUrl", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_likeUrl);}
     
   /** setter for likeUrl - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLikeUrl(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_likeUrl), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_likeUrl == null)
+      jcasType.jcas.throwFeatMissing("likeUrl", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_likeUrl, v);}    
    
     
   //*--------------*
@@ -193,16 +107,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getHasVector() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_hasVector));}
+  public boolean getHasVector() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_hasVector == null)
+      jcasType.jcas.throwFeatMissing("hasVector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_hasVector);}
     
   /** setter for hasVector - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHasVector(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_hasVector), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_hasVector == null)
+      jcasType.jcas.throwFeatMissing("hasVector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_hasVector, v);}    
    
     
   //*--------------*
@@ -212,16 +129,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getVector() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)));}
+  public FloatArray getVector() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_vector == null)
+      jcasType.jcas.throwFeatMissing("vector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return (FloatArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector)));}
     
   /** setter for vector - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVector(FloatArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_vector), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_vector == null)
+      jcasType.jcas.throwFeatMissing("vector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for vector - gets an indexed value - 
    * @generated
@@ -229,16 +149,21 @@ public class SpacyToken extends Token {
    * @return value of the element at index i 
    */
   public float getVector(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)))).get(i);} 
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_vector == null)
+      jcasType.jcas.throwFeatMissing("vector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector), i);
+    return jcasType.ll_cas.ll_getFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector), i);}
 
   /** indexed setter for vector - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setVector(int i, float v) {
-    ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)))).set(i, v);
-  }  
+  public void setVector(int i, float v) { 
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_vector == null)
+      jcasType.jcas.throwFeatMissing("vector", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector), i);
+    jcasType.ll_cas.ll_setFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_vector), i, v);}
    
     
   //*--------------*
@@ -248,16 +173,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getLikeNum() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeNum));}
+  public boolean getLikeNum() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_likeNum == null)
+      jcasType.jcas.throwFeatMissing("likeNum", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_likeNum);}
     
   /** setter for likeNum - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLikeNum(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_likeNum), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_likeNum == null)
+      jcasType.jcas.throwFeatMissing("likeNum", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_likeNum, v);}    
    
     
   //*--------------*
@@ -267,16 +195,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsStop() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isStop));}
+  public boolean getIsStop() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isStop == null)
+      jcasType.jcas.throwFeatMissing("isStop", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isStop);}
     
   /** setter for isStop - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsStop(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isStop), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isStop == null)
+      jcasType.jcas.throwFeatMissing("isStop", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isStop, v);}    
    
     
   //*--------------*
@@ -286,16 +217,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsOov() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isOov));}
+  public boolean getIsOov() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isOov == null)
+      jcasType.jcas.throwFeatMissing("isOov", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isOov);}
     
   /** setter for isOov - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsOov(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isOov), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isOov == null)
+      jcasType.jcas.throwFeatMissing("isOov", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isOov, v);}    
    
     
   //*--------------*
@@ -305,16 +239,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsCurrency() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isCurrency));}
+  public boolean getIsCurrency() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isCurrency == null)
+      jcasType.jcas.throwFeatMissing("isCurrency", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isCurrency);}
     
   /** setter for isCurrency - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsCurrency(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isCurrency), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isCurrency == null)
+      jcasType.jcas.throwFeatMissing("isCurrency", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isCurrency, v);}    
    
     
   //*--------------*
@@ -324,16 +261,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsQuote() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isQuote));}
+  public boolean getIsQuote() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isQuote == null)
+      jcasType.jcas.throwFeatMissing("isQuote", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isQuote);}
     
   /** setter for isQuote - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsQuote(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isQuote), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isQuote == null)
+      jcasType.jcas.throwFeatMissing("isQuote", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isQuote, v);}    
    
     
   //*--------------*
@@ -343,16 +283,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsBracket() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isBracket));}
+  public boolean getIsBracket() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isBracket == null)
+      jcasType.jcas.throwFeatMissing("isBracket", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isBracket);}
     
   /** setter for isBracket - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsBracket(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isBracket), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isBracket == null)
+      jcasType.jcas.throwFeatMissing("isBracket", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isBracket, v);}    
    
     
   //*--------------*
@@ -362,16 +305,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsSentStart() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentStart));}
+  public boolean getIsSentStart() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isSentStart == null)
+      jcasType.jcas.throwFeatMissing("isSentStart", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isSentStart);}
     
   /** setter for isSentStart - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsSentStart(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isSentStart), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isSentStart == null)
+      jcasType.jcas.throwFeatMissing("isSentStart", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isSentStart, v);}    
    
     
   //*--------------*
@@ -381,16 +327,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsSentEnd() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentEnd));}
+  public boolean getIsSentEnd() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isSentEnd == null)
+      jcasType.jcas.throwFeatMissing("isSentEnd", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isSentEnd);}
     
   /** setter for isSentEnd - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsSentEnd(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isSentEnd), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isSentEnd == null)
+      jcasType.jcas.throwFeatMissing("isSentEnd", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isSentEnd, v);}    
    
     
   //*--------------*
@@ -400,16 +349,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsLeftPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLeftPunct));}
+  public boolean getIsLeftPunct() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isLeftPunct == null)
+      jcasType.jcas.throwFeatMissing("isLeftPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isLeftPunct);}
     
   /** setter for isLeftPunct - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsLeftPunct(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isLeftPunct), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isLeftPunct == null)
+      jcasType.jcas.throwFeatMissing("isLeftPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isLeftPunct, v);}    
    
     
   //*--------------*
@@ -419,16 +371,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsRightPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isRightPunct));}
+  public boolean getIsRightPunct() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isRightPunct == null)
+      jcasType.jcas.throwFeatMissing("isRightPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isRightPunct);}
     
   /** setter for isRightPunct - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsRightPunct(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isRightPunct), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isRightPunct == null)
+      jcasType.jcas.throwFeatMissing("isRightPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isRightPunct, v);}    
    
     
   //*--------------*
@@ -438,16 +393,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isPunct));}
+  public boolean getIsPunct() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isPunct == null)
+      jcasType.jcas.throwFeatMissing("isPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isPunct);}
     
   /** setter for isPunct - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsPunct(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isPunct), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isPunct == null)
+      jcasType.jcas.throwFeatMissing("isPunct", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isPunct, v);}    
    
     
   //*--------------*
@@ -457,16 +415,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsTitle() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isTitle));}
+  public boolean getIsTitle() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isTitle == null)
+      jcasType.jcas.throwFeatMissing("isTitle", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isTitle);}
     
   /** setter for isTitle - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsTitle(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isTitle), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isTitle == null)
+      jcasType.jcas.throwFeatMissing("isTitle", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isTitle, v);}    
    
     
   //*--------------*
@@ -476,16 +437,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsUpper() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isUpper));}
+  public boolean getIsUpper() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isUpper == null)
+      jcasType.jcas.throwFeatMissing("isUpper", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isUpper);}
     
   /** setter for isUpper - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsUpper(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isUpper), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isUpper == null)
+      jcasType.jcas.throwFeatMissing("isUpper", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isUpper, v);}    
    
     
   //*--------------*
@@ -495,16 +459,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsLower() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLower));}
+  public boolean getIsLower() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isLower == null)
+      jcasType.jcas.throwFeatMissing("isLower", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isLower);}
     
   /** setter for isLower - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsLower(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isLower), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isLower == null)
+      jcasType.jcas.throwFeatMissing("isLower", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isLower, v);}    
    
     
   //*--------------*
@@ -514,16 +481,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsDigit() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isDigit));}
+  public boolean getIsDigit() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isDigit == null)
+      jcasType.jcas.throwFeatMissing("isDigit", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isDigit);}
     
   /** setter for isDigit - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsDigit(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isDigit), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isDigit == null)
+      jcasType.jcas.throwFeatMissing("isDigit", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isDigit, v);}    
    
     
   //*--------------*
@@ -533,16 +503,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsAscii() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAscii));}
+  public boolean getIsAscii() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isAscii == null)
+      jcasType.jcas.throwFeatMissing("isAscii", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isAscii);}
     
   /** setter for isAscii - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsAscii(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isAscii), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isAscii == null)
+      jcasType.jcas.throwFeatMissing("isAscii", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isAscii, v);}    
    
     
   //*--------------*
@@ -552,16 +525,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsAlpha() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAlpha));}
+  public boolean getIsAlpha() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isAlpha == null)
+      jcasType.jcas.throwFeatMissing("isAlpha", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isAlpha);}
     
   /** setter for isAlpha - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsAlpha(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isAlpha), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_isAlpha == null)
+      jcasType.jcas.throwFeatMissing("isAlpha", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_isAlpha, v);}    
    
     
   //*--------------*
@@ -571,16 +547,19 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getBeneparLabels() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)));}
+  public StringArray getBeneparLabels() {
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_beneparLabels == null)
+      jcasType.jcas.throwFeatMissing("beneparLabels", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels)));}
     
   /** setter for beneparLabels - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeneparLabels(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_beneparLabels), v);
-  }    
-    
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_beneparLabels == null)
+      jcasType.jcas.throwFeatMissing("beneparLabels", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for beneparLabels - gets an indexed value - 
    * @generated
@@ -588,16 +567,21 @@ public class SpacyToken extends Token {
    * @return value of the element at index i 
    */
   public String getBeneparLabels(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).get(i);} 
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_beneparLabels == null)
+      jcasType.jcas.throwFeatMissing("beneparLabels", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels), i);}
 
   /** indexed setter for beneparLabels - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setBeneparLabels(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).set(i, v);
-  }  
+  public void setBeneparLabels(int i, String v) { 
+    if (SpacyToken_Type.featOkTst && ((SpacyToken_Type)jcasType).casFeat_beneparLabels == null)
+      jcasType.jcas.throwFeatMissing("beneparLabels", "org.texttechnologylab.uima.type.spacy.SpacyToken");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((SpacyToken_Type)jcasType).casFeatCode_beneparLabels), i, v);}
   }
 
     

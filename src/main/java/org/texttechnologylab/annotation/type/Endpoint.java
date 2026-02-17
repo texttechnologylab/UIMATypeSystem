@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Endpoint extends GraphBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.Endpoint";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class Endpoint extends GraphBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_node = "node";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_node = TypeSystemImpl.createCallSite(Endpoint.class, "node");
-  private final static MethodHandle _FH_node = _FC_node.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Endpoint() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Endpoint(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Endpoint(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class Endpoint extends GraphBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -99,16 +70,19 @@ public class Endpoint extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Node getNode() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_node)));}
+  public Node getNode() {
+    if (Endpoint_Type.featOkTst && ((Endpoint_Type)jcasType).casFeat_node == null)
+      jcasType.jcas.throwFeatMissing("node", "org.texttechnologylab.annotation.type.Endpoint");
+    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Endpoint_Type)jcasType).casFeatCode_node)));}
     
   /** setter for node - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNode(Node v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_node), v);
-  }    
-    
+    if (Endpoint_Type.featOkTst && ((Endpoint_Type)jcasType).casFeat_node == null)
+      jcasType.jcas.throwFeatMissing("node", "org.texttechnologylab.annotation.type.Endpoint");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Endpoint_Type)jcasType).casFeatCode_node, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

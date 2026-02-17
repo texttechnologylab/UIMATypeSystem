@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringList;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRToken extends Token {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.OCRToken";
-  
   /** @generated
    * @ordered 
    */
@@ -47,45 +32,17 @@ public class OCRToken extends Token {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_subTokenList = "subTokenList";
-  public final static String _FeatName_isWordFromDictionary = "isWordFromDictionary";
-  public final static String _FeatName_isWordNormal = "isWordNormal";
-  public final static String _FeatName_isWordNumeric = "isWordNumeric";
-  public final static String _FeatName_containsHyphen = "containsHyphen";
-  public final static String _FeatName_suspiciousChars = "suspiciousChars";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_subTokenList = TypeSystemImpl.createCallSite(OCRToken.class, "subTokenList");
-  private final static MethodHandle _FH_subTokenList = _FC_subTokenList.dynamicInvoker();
-  private final static CallSite _FC_isWordFromDictionary = TypeSystemImpl.createCallSite(OCRToken.class, "isWordFromDictionary");
-  private final static MethodHandle _FH_isWordFromDictionary = _FC_isWordFromDictionary.dynamicInvoker();
-  private final static CallSite _FC_isWordNormal = TypeSystemImpl.createCallSite(OCRToken.class, "isWordNormal");
-  private final static MethodHandle _FH_isWordNormal = _FC_isWordNormal.dynamicInvoker();
-  private final static CallSite _FC_isWordNumeric = TypeSystemImpl.createCallSite(OCRToken.class, "isWordNumeric");
-  private final static MethodHandle _FH_isWordNumeric = _FC_isWordNumeric.dynamicInvoker();
-  private final static CallSite _FC_containsHyphen = TypeSystemImpl.createCallSite(OCRToken.class, "containsHyphen");
-  private final static MethodHandle _FH_containsHyphen = _FC_containsHyphen.dynamicInvoker();
-  private final static CallSite _FC_suspiciousChars = TypeSystemImpl.createCallSite(OCRToken.class, "suspiciousChars");
-  private final static MethodHandle _FH_suspiciousChars = _FC_suspiciousChars.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected OCRToken() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public OCRToken(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public OCRToken(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -96,7 +53,6 @@ public class OCRToken extends Token {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -128,16 +84,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public StringList getSubTokenList() { return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));}
+  public StringList getSubTokenList() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_subTokenList == null)
+      jcasType.jcas.throwFeatMissing("subTokenList", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return (StringList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((OCRToken_Type)jcasType).casFeatCode_subTokenList)));}
     
   /** setter for subTokenList - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubTokenList(StringList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_subTokenList), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_subTokenList == null)
+      jcasType.jcas.throwFeatMissing("subTokenList", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setRefValue(addr, ((OCRToken_Type)jcasType).casFeatCode_subTokenList, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -147,16 +106,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordFromDictionary() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));}
+  public boolean getIsWordFromDictionary() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordFromDictionary == null)
+      jcasType.jcas.throwFeatMissing("isWordFromDictionary", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordFromDictionary);}
     
   /** setter for isWordFromDictionary - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsWordFromDictionary(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordFromDictionary), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordFromDictionary == null)
+      jcasType.jcas.throwFeatMissing("isWordFromDictionary", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordFromDictionary, v);}    
    
     
   //*--------------*
@@ -166,16 +128,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNormal() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));}
+  public boolean getIsWordNormal() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordNormal == null)
+      jcasType.jcas.throwFeatMissing("isWordNormal", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordNormal);}
     
   /** setter for isWordNormal - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsWordNormal(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordNormal), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordNormal == null)
+      jcasType.jcas.throwFeatMissing("isWordNormal", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordNormal, v);}    
    
     
   //*--------------*
@@ -185,16 +150,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNumeric() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));}
+  public boolean getIsWordNumeric() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordNumeric == null)
+      jcasType.jcas.throwFeatMissing("isWordNumeric", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordNumeric);}
     
   /** setter for isWordNumeric - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsWordNumeric(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isWordNumeric), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_isWordNumeric == null)
+      jcasType.jcas.throwFeatMissing("isWordNumeric", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_isWordNumeric, v);}    
    
     
   //*--------------*
@@ -204,16 +172,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getContainsHyphen() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));}
+  public boolean getContainsHyphen() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_containsHyphen == null)
+      jcasType.jcas.throwFeatMissing("containsHyphen", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_containsHyphen);}
     
   /** setter for containsHyphen - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContainsHyphen(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_containsHyphen), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_containsHyphen == null)
+      jcasType.jcas.throwFeatMissing("containsHyphen", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((OCRToken_Type)jcasType).casFeatCode_containsHyphen, v);}    
    
     
   //*--------------*
@@ -223,16 +194,19 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public int getSuspiciousChars() { return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));}
+  public int getSuspiciousChars() {
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_suspiciousChars == null)
+      jcasType.jcas.throwFeatMissing("suspiciousChars", "org.texttechnologylab.annotation.ocr.OCRToken");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OCRToken_Type)jcasType).casFeatCode_suspiciousChars);}
     
   /** setter for suspiciousChars - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSuspiciousChars(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_suspiciousChars), v);
-  }    
-    
+    if (OCRToken_Type.featOkTst && ((OCRToken_Type)jcasType).casFeat_suspiciousChars == null)
+      jcasType.jcas.throwFeatMissing("suspiciousChars", "org.texttechnologylab.annotation.ocr.OCRToken");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OCRToken_Type)jcasType).casFeatCode_suspiciousChars, v);}    
   }
 
     

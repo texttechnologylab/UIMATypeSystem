@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Word that contributes to a topic in unsupervised models
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TopicWord extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.TopicWord";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class TopicWord extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_word = "word";
-  public final static String _FeatName_probability = "probability";
-  public final static String _FeatName_topic = "topic";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_word = TypeSystemImpl.createCallSite(TopicWord.class, "word");
-  private final static MethodHandle _FH_word = _FC_word.dynamicInvoker();
-  private final static CallSite _FC_probability = TypeSystemImpl.createCallSite(TopicWord.class, "probability");
-  private final static MethodHandle _FH_probability = _FC_probability.dynamicInvoker();
-  private final static CallSite _FC_topic = TypeSystemImpl.createCallSite(TopicWord.class, "topic");
-  private final static MethodHandle _FH_topic = _FC_topic.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TopicWord() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TopicWord(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TopicWord(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class TopicWord extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class TopicWord extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getWord() { return _getStringValueNc(wrapGetIntCatchException(_FH_word));}
+  public String getWord() {
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_word == null)
+      jcasType.jcas.throwFeatMissing("word", "org.texttechnologylab.annotation.TopicWord");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TopicWord_Type)jcasType).casFeatCode_word);}
     
   /** setter for word - sets The word associated with a topic 
    * @generated
    * @param v value to set into the feature 
    */
   public void setWord(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_word), v);
-  }    
-    
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_word == null)
+      jcasType.jcas.throwFeatMissing("word", "org.texttechnologylab.annotation.TopicWord");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TopicWord_Type)jcasType).casFeatCode_word, v);}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class TopicWord extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbability() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_probability));}
+  public double getProbability() {
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_probability == null)
+      jcasType.jcas.throwFeatMissing("probability", "org.texttechnologylab.annotation.TopicWord");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((TopicWord_Type)jcasType).casFeatCode_probability);}
     
   /** setter for probability - sets Probability of the word belonging to a topic 
    * @generated
    * @param v value to set into the feature 
    */
   public void setProbability(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_probability), v);
-  }    
-    
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_probability == null)
+      jcasType.jcas.throwFeatMissing("probability", "org.texttechnologylab.annotation.TopicWord");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((TopicWord_Type)jcasType).casFeatCode_probability, v);}    
    
     
   //*--------------*
@@ -156,16 +127,19 @@ public class TopicWord extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TopicValueBase getTopic() { return (TopicValueBase)(_getFeatureValueNc(wrapGetIntCatchException(_FH_topic)));}
+  public TopicValueBase getTopic() {
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_topic == null)
+      jcasType.jcas.throwFeatMissing("topic", "org.texttechnologylab.annotation.TopicWord");
+    return (TopicValueBase)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TopicWord_Type)jcasType).casFeatCode_topic)));}
     
   /** setter for topic - sets The topic associated with the word 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTopic(TopicValueBase v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_topic), v);
-  }    
-    
+    if (TopicWord_Type.featOkTst && ((TopicWord_Type)jcasType).casFeat_topic == null)
+      jcasType.jcas.throwFeatMissing("topic", "org.texttechnologylab.annotation.TopicWord");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TopicWord_Type)jcasType).casFeatCode_topic, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

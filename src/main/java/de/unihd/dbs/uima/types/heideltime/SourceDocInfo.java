@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package de.unihd.dbs.uima.types.heideltime;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SourceDocInfo extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "de.unihd.dbs.uima.types.heideltime.SourceDocInfo";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class SourceDocInfo extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_uri = "uri";
-  public final static String _FeatName_offsetInSource = "offsetInSource";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_uri = TypeSystemImpl.createCallSite(SourceDocInfo.class, "uri");
-  private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
-  private final static CallSite _FC_offsetInSource = TypeSystemImpl.createCallSite(SourceDocInfo.class, "offsetInSource");
-  private final static MethodHandle _FH_offsetInSource = _FC_offsetInSource.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected SourceDocInfo() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public SourceDocInfo(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public SourceDocInfo(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class SourceDocInfo extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class SourceDocInfo extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() { return _getStringValueNc(wrapGetIntCatchException(_FH_uri));}
+  public String getUri() {
+    if (SourceDocInfo_Type.featOkTst && ((SourceDocInfo_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "de.unihd.dbs.uima.types.heideltime.SourceDocInfo");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((SourceDocInfo_Type)jcasType).casFeatCode_uri);}
     
   /** setter for uri - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
-  }    
-    
+    if (SourceDocInfo_Type.featOkTst && ((SourceDocInfo_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "de.unihd.dbs.uima.types.heideltime.SourceDocInfo");
+    jcasType.ll_cas.ll_setStringValue(addr, ((SourceDocInfo_Type)jcasType).casFeatCode_uri, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class SourceDocInfo extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getOffsetInSource() { return _getIntValueNc(wrapGetIntCatchException(_FH_offsetInSource));}
+  public int getOffsetInSource() {
+    if (SourceDocInfo_Type.featOkTst && ((SourceDocInfo_Type)jcasType).casFeat_offsetInSource == null)
+      jcasType.jcas.throwFeatMissing("offsetInSource", "de.unihd.dbs.uima.types.heideltime.SourceDocInfo");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((SourceDocInfo_Type)jcasType).casFeatCode_offsetInSource);}
     
   /** setter for offsetInSource - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOffsetInSource(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_offsetInSource), v);
-  }    
-    
+    if (SourceDocInfo_Type.featOkTst && ((SourceDocInfo_Type)jcasType).casFeat_offsetInSource == null)
+      jcasType.jcas.throwFeatMissing("offsetInSource", "de.unihd.dbs.uima.types.heideltime.SourceDocInfo");
+    jcasType.ll_cas.ll_setIntValue(addr, ((SourceDocInfo_Type)jcasType).casFeatCode_offsetInSource, v);}    
   }
 
     

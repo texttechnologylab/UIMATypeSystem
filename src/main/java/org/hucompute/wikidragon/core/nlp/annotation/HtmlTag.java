@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.wikidragon.core.nlp.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class HtmlTag extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class HtmlTag extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_tag = "tag";
-  public final static String _FeatName_attr = "attr";
-  public final static String _FeatName_depth = "depth";
-  public final static String _FeatName_order = "order";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_tag = TypeSystemImpl.createCallSite(HtmlTag.class, "tag");
-  private final static MethodHandle _FH_tag = _FC_tag.dynamicInvoker();
-  private final static CallSite _FC_attr = TypeSystemImpl.createCallSite(HtmlTag.class, "attr");
-  private final static MethodHandle _FH_attr = _FC_attr.dynamicInvoker();
-  private final static CallSite _FC_depth = TypeSystemImpl.createCallSite(HtmlTag.class, "depth");
-  private final static MethodHandle _FH_depth = _FC_depth.dynamicInvoker();
-  private final static CallSite _FC_order = TypeSystemImpl.createCallSite(HtmlTag.class, "order");
-  private final static MethodHandle _FH_order = _FC_order.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected HtmlTag() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public HtmlTag(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public HtmlTag(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class HtmlTag extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class HtmlTag extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTag() { return _getStringValueNc(wrapGetIntCatchException(_FH_tag));}
+  public String getTag() {
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_tag == null)
+      jcasType.jcas.throwFeatMissing("tag", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_tag);}
     
   /** setter for tag - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTag(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_tag), v);
-  }    
-    
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_tag == null)
+      jcasType.jcas.throwFeatMissing("tag", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    jcasType.ll_cas.ll_setStringValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_tag, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class HtmlTag extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAttr() { return _getStringValueNc(wrapGetIntCatchException(_FH_attr));}
+  public String getAttr() {
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_attr == null)
+      jcasType.jcas.throwFeatMissing("attr", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_attr);}
     
   /** setter for attr - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAttr(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_attr), v);
-  }    
-    
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_attr == null)
+      jcasType.jcas.throwFeatMissing("attr", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    jcasType.ll_cas.ll_setStringValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_attr, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class HtmlTag extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getDepth() { return _getIntValueNc(wrapGetIntCatchException(_FH_depth));}
+  public int getDepth() {
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_depth == null)
+      jcasType.jcas.throwFeatMissing("depth", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_depth);}
     
   /** setter for depth - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDepth(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_depth), v);
-  }    
-    
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_depth == null)
+      jcasType.jcas.throwFeatMissing("depth", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    jcasType.ll_cas.ll_setIntValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_depth, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class HtmlTag extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getOrder() { return _getIntValueNc(wrapGetIntCatchException(_FH_order));}
+  public int getOrder() {
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_order == null)
+      jcasType.jcas.throwFeatMissing("order", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_order);}
     
   /** setter for order - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOrder(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_order), v);
-  }    
-    
+    if (HtmlTag_Type.featOkTst && ((HtmlTag_Type)jcasType).casFeat_order == null)
+      jcasType.jcas.throwFeatMissing("order", "org.hucompute.wikidragon.core.nlp.annotation.HtmlTag");
+    jcasType.ll_cas.ll_setIntValue(addr, ((HtmlTag_Type)jcasType).casFeatCode_order, v);}    
   }
 
     

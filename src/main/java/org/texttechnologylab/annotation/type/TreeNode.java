@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TreeNode extends Node {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.TreeNode";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class TreeNode extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_children = "children";
-  public final static String _FeatName_parent = "parent";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_children = TypeSystemImpl.createCallSite(TreeNode.class, "children");
-  private final static MethodHandle _FH_children = _FC_children.dynamicInvoker();
-  private final static CallSite _FC_parent = TypeSystemImpl.createCallSite(TreeNode.class, "parent");
-  private final static MethodHandle _FH_parent = _FC_parent.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TreeNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TreeNode(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TreeNode(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class TreeNode extends Node {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -103,16 +71,19 @@ public class TreeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getChildren() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)));}
+  public FSArray getChildren() {
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.texttechnologylab.annotation.type.TreeNode");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children)));}
     
   /** setter for children - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setChildren(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_children), v);
-  }    
-    
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.texttechnologylab.annotation.type.TreeNode");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for children - gets an indexed value - 
    * @generated
@@ -120,16 +91,21 @@ public class TreeNode extends Node {
    * @return value of the element at index i 
    */
   public Node getChildren(int i) {
-     return (Node)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).get(i));} 
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.texttechnologylab.annotation.type.TreeNode");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children), i);
+    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children), i)));}
 
   /** indexed setter for children - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setChildren(int i, Node v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).set(i, v);
-  }  
+  public void setChildren(int i, Node v) { 
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.texttechnologylab.annotation.type.TreeNode");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_children), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -139,16 +115,19 @@ public class TreeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public Node getParent() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));}
+  public Node getParent() {
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.texttechnologylab.annotation.type.TreeNode");
+    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_parent)));}
     
   /** setter for parent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParent(Node v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_parent), v);
-  }    
-    
+    if (TreeNode_Type.featOkTst && ((TreeNode_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.texttechnologylab.annotation.type.TreeNode");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TreeNode_Type)jcasType).casFeatCode_parent, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

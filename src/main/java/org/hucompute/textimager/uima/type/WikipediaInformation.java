@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaInformation extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.WikipediaInformation";
-  
   /** @generated
    * @ordered 
    */
@@ -47,51 +32,17 @@ public class WikipediaInformation extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_pageURL = "pageURL";
-  public final static String _FeatName_revisionID = "revisionID";
-  public final static String _FeatName_namespaceID = "namespaceID";
-  public final static String _FeatName_namespace = "namespace";
-  public final static String _FeatName_timestamp = "timestamp";
-  public final static String _FeatName_title = "title";
-  public final static String _FeatName_pageID = "pageID";
-  public final static String _FeatName_categories = "categories";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_pageURL = TypeSystemImpl.createCallSite(WikipediaInformation.class, "pageURL");
-  private final static MethodHandle _FH_pageURL = _FC_pageURL.dynamicInvoker();
-  private final static CallSite _FC_revisionID = TypeSystemImpl.createCallSite(WikipediaInformation.class, "revisionID");
-  private final static MethodHandle _FH_revisionID = _FC_revisionID.dynamicInvoker();
-  private final static CallSite _FC_namespaceID = TypeSystemImpl.createCallSite(WikipediaInformation.class, "namespaceID");
-  private final static MethodHandle _FH_namespaceID = _FC_namespaceID.dynamicInvoker();
-  private final static CallSite _FC_namespace = TypeSystemImpl.createCallSite(WikipediaInformation.class, "namespace");
-  private final static MethodHandle _FH_namespace = _FC_namespace.dynamicInvoker();
-  private final static CallSite _FC_timestamp = TypeSystemImpl.createCallSite(WikipediaInformation.class, "timestamp");
-  private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
-  private final static CallSite _FC_title = TypeSystemImpl.createCallSite(WikipediaInformation.class, "title");
-  private final static MethodHandle _FH_title = _FC_title.dynamicInvoker();
-  private final static CallSite _FC_pageID = TypeSystemImpl.createCallSite(WikipediaInformation.class, "pageID");
-  private final static MethodHandle _FH_pageID = _FC_pageID.dynamicInvoker();
-  private final static CallSite _FC_categories = TypeSystemImpl.createCallSite(WikipediaInformation.class, "categories");
-  private final static MethodHandle _FH_categories = _FC_categories.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected WikipediaInformation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public WikipediaInformation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public WikipediaInformation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -102,7 +53,6 @@ public class WikipediaInformation extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -134,16 +84,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageURL() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageURL));}
+  public String getPageURL() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_pageURL == null)
+      jcasType.jcas.throwFeatMissing("pageURL", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_pageURL);}
     
   /** setter for pageURL - sets Description of the Synset 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPageURL(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pageURL), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_pageURL == null)
+      jcasType.jcas.throwFeatMissing("pageURL", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_pageURL, v);}    
    
     
   //*--------------*
@@ -153,16 +106,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRevisionID() { return _getStringValueNc(wrapGetIntCatchException(_FH_revisionID));}
+  public String getRevisionID() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_revisionID == null)
+      jcasType.jcas.throwFeatMissing("revisionID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_revisionID);}
     
   /** setter for revisionID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRevisionID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_revisionID), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_revisionID == null)
+      jcasType.jcas.throwFeatMissing("revisionID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_revisionID, v);}    
    
     
   //*--------------*
@@ -172,16 +128,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNamespaceID() { return _getStringValueNc(wrapGetIntCatchException(_FH_namespaceID));}
+  public String getNamespaceID() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_namespaceID == null)
+      jcasType.jcas.throwFeatMissing("namespaceID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_namespaceID);}
     
   /** setter for namespaceID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNamespaceID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_namespaceID), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_namespaceID == null)
+      jcasType.jcas.throwFeatMissing("namespaceID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_namespaceID, v);}    
    
     
   //*--------------*
@@ -191,16 +150,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNamespace() { return _getStringValueNc(wrapGetIntCatchException(_FH_namespace));}
+  public String getNamespace() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_namespace == null)
+      jcasType.jcas.throwFeatMissing("namespace", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_namespace);}
     
   /** setter for namespace - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNamespace(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_namespace), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_namespace == null)
+      jcasType.jcas.throwFeatMissing("namespace", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_namespace, v);}    
    
     
   //*--------------*
@@ -210,16 +172,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimestamp() { return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));}
+  public String getTimestamp() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_timestamp);}
     
   /** setter for timestamp - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimestamp(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_timestamp, v);}    
    
     
   //*--------------*
@@ -229,16 +194,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
+  public String getTitle() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_title, v);}    
    
     
   //*--------------*
@@ -248,16 +216,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageID() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageID));}
+  public String getPageID() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_pageID == null)
+      jcasType.jcas.throwFeatMissing("pageID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_pageID);}
     
   /** setter for pageID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPageID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pageID), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_pageID == null)
+      jcasType.jcas.throwFeatMissing("pageID", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_pageID, v);}    
    
     
   //*--------------*
@@ -267,16 +238,19 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategories() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)));}
+  public StringArray getCategories() {
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_categories == null)
+      jcasType.jcas.throwFeatMissing("categories", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories)));}
     
   /** setter for categories - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCategories(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categories), v);
-  }    
-    
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_categories == null)
+      jcasType.jcas.throwFeatMissing("categories", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for categories - gets an indexed value - 
    * @generated
@@ -284,16 +258,21 @@ public class WikipediaInformation extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategories(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)))).get(i);} 
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_categories == null)
+      jcasType.jcas.throwFeatMissing("categories", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories), i);}
 
   /** indexed setter for categories - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCategories(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)))).set(i, v);
-  }  
+  public void setCategories(int i, String v) { 
+    if (WikipediaInformation_Type.featOkTst && ((WikipediaInformation_Type)jcasType).casFeat_categories == null)
+      jcasType.jcas.throwFeatMissing("categories", "org.hucompute.textimager.uima.type.WikipediaInformation");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaInformation_Type)jcasType).casFeatCode_categories), i, v);}
   }
 
     

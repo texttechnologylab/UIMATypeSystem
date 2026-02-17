@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.Room;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.texttechnologylab.annotation.Vector;
@@ -21,17 +13,10 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Roomwall
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RoomWall extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Room.RoomWall";
-  
   /** @generated
    * @ordered 
    */
@@ -48,36 +33,17 @@ public class RoomWall extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_vectorlist = "vectorlist";
-  public final static String _FeatName_height = "height";
-  public final static String _FeatName_feature = "feature";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_vectorlist = TypeSystemImpl.createCallSite(RoomWall.class, "vectorlist");
-  private final static MethodHandle _FH_vectorlist = _FC_vectorlist.dynamicInvoker();
-  private final static CallSite _FC_height = TypeSystemImpl.createCallSite(RoomWall.class, "height");
-  private final static MethodHandle _FH_height = _FC_height.dynamicInvoker();
-  private final static CallSite _FC_feature = TypeSystemImpl.createCallSite(RoomWall.class, "feature");
-  private final static MethodHandle _FH_feature = _FC_feature.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected RoomWall() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public RoomWall(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public RoomWall(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -88,7 +54,6 @@ public class RoomWall extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -108,16 +73,19 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getVectorlist() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)));}
+  public FSArray getVectorlist() {
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_vectorlist == null)
+      jcasType.jcas.throwFeatMissing("vectorlist", "org.texttechnologylab.annotation.Room.RoomWall");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist)));}
     
   /** setter for vectorlist - sets List of all Wallpoints 
    * @generated
    * @param v value to set into the feature 
    */
   public void setVectorlist(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_vectorlist), v);
-  }    
-    
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_vectorlist == null)
+      jcasType.jcas.throwFeatMissing("vectorlist", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.ll_cas.ll_setRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for vectorlist - gets an indexed value - List of all Wallpoints
    * @generated
@@ -125,16 +93,21 @@ public class RoomWall extends AnnotationBase {
    * @return value of the element at index i 
    */
   public Vector getVectorlist(int i) {
-     return (Vector)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).get(i));} 
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_vectorlist == null)
+      jcasType.jcas.throwFeatMissing("vectorlist", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist), i);
+    return (Vector)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist), i)));}
 
   /** indexed setter for vectorlist - sets an indexed value - List of all Wallpoints
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setVectorlist(int i, Vector v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).set(i, v);
-  }  
+  public void setVectorlist(int i, Vector v) { 
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_vectorlist == null)
+      jcasType.jcas.throwFeatMissing("vectorlist", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_vectorlist), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -144,16 +117,19 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getHeight() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_height));}
+  public double getHeight() {
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.Room.RoomWall");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((RoomWall_Type)jcasType).casFeatCode_height);}
     
   /** setter for height - sets Height of the wall 
    * @generated
    * @param v value to set into the feature 
    */
   public void setHeight(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_height), v);
-  }    
-    
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((RoomWall_Type)jcasType).casFeatCode_height, v);}    
    
     
   //*--------------*
@@ -163,16 +139,19 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getFeature() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)));}
+  public FSArray getFeature() {
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.Room.RoomWall");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature)));}
     
   /** setter for feature - sets Feature like color or texture. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFeature(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_feature), v);
-  }    
-    
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.ll_cas.ll_setRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for feature - gets an indexed value - Feature like color or texture.
    * @generated
@@ -180,16 +159,21 @@ public class RoomWall extends AnnotationBase {
    * @return value of the element at index i 
    */
   public ObjectAttribute getFeature(int i) {
-     return (ObjectAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).get(i));} 
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature), i);
+    return (ObjectAttribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature), i)));}
 
   /** indexed setter for feature - sets an indexed value - Feature like color or texture.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setFeature(int i, ObjectAttribute v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).set(i, v);
-  }  
+  public void setFeature(int i, ObjectAttribute v) { 
+    if (RoomWall_Type.featOkTst && ((RoomWall_Type)jcasType).casFeat_feature == null)
+      jcasType.jcas.throwFeatMissing("feature", "org.texttechnologylab.annotation.Room.RoomWall");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((RoomWall_Type)jcasType).casFeatCode_feature), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

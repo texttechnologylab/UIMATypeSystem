@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.node.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Context extends Node {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.node.type.Context";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class Context extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_ReferencedID = "ReferencedID";
-  public final static String _FeatName_displayName = "displayName";
-  public final static String _FeatName_wikiDataID = "wikiDataID";
-  public final static String _FeatName_image = "image";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_ReferencedID = TypeSystemImpl.createCallSite(Context.class, "ReferencedID");
-  private final static MethodHandle _FH_ReferencedID = _FC_ReferencedID.dynamicInvoker();
-  private final static CallSite _FC_displayName = TypeSystemImpl.createCallSite(Context.class, "displayName");
-  private final static MethodHandle _FH_displayName = _FC_displayName.dynamicInvoker();
-  private final static CallSite _FC_wikiDataID = TypeSystemImpl.createCallSite(Context.class, "wikiDataID");
-  private final static MethodHandle _FH_wikiDataID = _FC_wikiDataID.dynamicInvoker();
-  private final static CallSite _FC_image = TypeSystemImpl.createCallSite(Context.class, "image");
-  private final static MethodHandle _FH_image = _FC_image.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Context() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Context(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Context(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class Context extends Node {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -109,16 +71,19 @@ public class Context extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getReferencedID() { return _getIntValueNc(wrapGetIntCatchException(_FH_ReferencedID));}
+  public int getReferencedID() {
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_ReferencedID == null)
+      jcasType.jcas.throwFeatMissing("ReferencedID", "org.texttechnologylab.annotation.node.type.Context");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Context_Type)jcasType).casFeatCode_ReferencedID);}
     
   /** setter for ReferencedID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReferencedID(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_ReferencedID), v);
-  }    
-    
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_ReferencedID == null)
+      jcasType.jcas.throwFeatMissing("ReferencedID", "org.texttechnologylab.annotation.node.type.Context");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Context_Type)jcasType).casFeatCode_ReferencedID, v);}    
    
     
   //*--------------*
@@ -128,16 +93,19 @@ public class Context extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() { return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));}
+  public String getDisplayName() {
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_displayName == null)
+      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.Context");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Context_Type)jcasType).casFeatCode_displayName);}
     
   /** setter for displayName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDisplayName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_displayName), v);
-  }    
-    
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_displayName == null)
+      jcasType.jcas.throwFeatMissing("displayName", "org.texttechnologylab.annotation.node.type.Context");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Context_Type)jcasType).casFeatCode_displayName, v);}    
    
     
   //*--------------*
@@ -147,16 +115,19 @@ public class Context extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getWikiDataID() { return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));}
+  public String getWikiDataID() {
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_wikiDataID == null)
+      jcasType.jcas.throwFeatMissing("wikiDataID", "org.texttechnologylab.annotation.node.type.Context");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Context_Type)jcasType).casFeatCode_wikiDataID);}
     
   /** setter for wikiDataID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikiDataID(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_wikiDataID), v);
-  }    
-    
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_wikiDataID == null)
+      jcasType.jcas.throwFeatMissing("wikiDataID", "org.texttechnologylab.annotation.node.type.Context");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Context_Type)jcasType).casFeatCode_wikiDataID, v);}    
    
     
   //*--------------*
@@ -166,16 +137,19 @@ public class Context extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getImage() { return _getStringValueNc(wrapGetIntCatchException(_FH_image));}
+  public String getImage() {
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_image == null)
+      jcasType.jcas.throwFeatMissing("image", "org.texttechnologylab.annotation.node.type.Context");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Context_Type)jcasType).casFeatCode_image);}
     
   /** setter for image - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setImage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_image), v);
-  }    
-    
+    if (Context_Type.featOkTst && ((Context_Type)jcasType).casFeat_image == null)
+      jcasType.jcas.throwFeatMissing("image", "org.texttechnologylab.annotation.node.type.Context");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Context_Type)jcasType).casFeatCode_image, v);}    
   }
 
     

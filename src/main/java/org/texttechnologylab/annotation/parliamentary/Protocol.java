@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Protocol extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.Protocol";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class Protocol extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_electionPeriod = "electionPeriod";
-  public final static String _FeatName_sessionNumber = "sessionNumber";
-  public final static String _FeatName_date = "date";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_electionPeriod = TypeSystemImpl.createCallSite(Protocol.class, "electionPeriod");
-  private final static MethodHandle _FH_electionPeriod = _FC_electionPeriod.dynamicInvoker();
-  private final static CallSite _FC_sessionNumber = TypeSystemImpl.createCallSite(Protocol.class, "sessionNumber");
-  private final static MethodHandle _FH_sessionNumber = _FC_sessionNumber.dynamicInvoker();
-  private final static CallSite _FC_date = TypeSystemImpl.createCallSite(Protocol.class, "date");
-  private final static MethodHandle _FH_date = _FC_date.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Protocol() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Protocol(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Protocol(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class Protocol extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -106,16 +71,19 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getElectionPeriod() { return _getIntValueNc(wrapGetIntCatchException(_FH_electionPeriod));}
+  public int getElectionPeriod() {
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_electionPeriod == null)
+      jcasType.jcas.throwFeatMissing("electionPeriod", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Protocol_Type)jcasType).casFeatCode_electionPeriod);}
     
   /** setter for electionPeriod - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setElectionPeriod(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_electionPeriod), v);
-  }    
-    
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_electionPeriod == null)
+      jcasType.jcas.throwFeatMissing("electionPeriod", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Protocol_Type)jcasType).casFeatCode_electionPeriod, v);}    
    
     
   //*--------------*
@@ -125,16 +93,19 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getSessionNumber() { return _getIntValueNc(wrapGetIntCatchException(_FH_sessionNumber));}
+  public int getSessionNumber() {
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_sessionNumber == null)
+      jcasType.jcas.throwFeatMissing("sessionNumber", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Protocol_Type)jcasType).casFeatCode_sessionNumber);}
     
   /** setter for sessionNumber - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSessionNumber(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_sessionNumber), v);
-  }    
-    
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_sessionNumber == null)
+      jcasType.jcas.throwFeatMissing("sessionNumber", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Protocol_Type)jcasType).casFeatCode_sessionNumber, v);}    
    
     
   //*--------------*
@@ -144,16 +115,19 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getDate() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_date));}
+  public double getDate() {
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Protocol_Type)jcasType).casFeatCode_date);}
     
   /** setter for date - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDate(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_date), v);
-  }    
-    
+    if (Protocol_Type.featOkTst && ((Protocol_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.parliamentary.Protocol");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Protocol_Type)jcasType).casFeatCode_date, v);}    
   }
 
     

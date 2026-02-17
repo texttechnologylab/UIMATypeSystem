@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package de.unihd.dbs.uima.types.heideltime;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Timex3Interval extends Timex3 {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "de.unihd.dbs.uima.types.heideltime.Timex3Interval";
-  
   /** @generated
    * @ordered 
    */
@@ -45,48 +30,17 @@ public class Timex3Interval extends Timex3 {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_TimexValueEB = "TimexValueEB";
-  public final static String _FeatName_TimexValueLE = "TimexValueLE";
-  public final static String _FeatName_TimexValueEE = "TimexValueEE";
-  public final static String _FeatName_TimexValueLB = "TimexValueLB";
-  public final static String _FeatName_emptyValue = "emptyValue";
-  public final static String _FeatName_beginTimex = "beginTimex";
-  public final static String _FeatName_endTimex = "endTimex";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_TimexValueEB = TypeSystemImpl.createCallSite(Timex3Interval.class, "TimexValueEB");
-  private final static MethodHandle _FH_TimexValueEB = _FC_TimexValueEB.dynamicInvoker();
-  private final static CallSite _FC_TimexValueLE = TypeSystemImpl.createCallSite(Timex3Interval.class, "TimexValueLE");
-  private final static MethodHandle _FH_TimexValueLE = _FC_TimexValueLE.dynamicInvoker();
-  private final static CallSite _FC_TimexValueEE = TypeSystemImpl.createCallSite(Timex3Interval.class, "TimexValueEE");
-  private final static MethodHandle _FH_TimexValueEE = _FC_TimexValueEE.dynamicInvoker();
-  private final static CallSite _FC_TimexValueLB = TypeSystemImpl.createCallSite(Timex3Interval.class, "TimexValueLB");
-  private final static MethodHandle _FH_TimexValueLB = _FC_TimexValueLB.dynamicInvoker();
-  private final static CallSite _FC_emptyValue = TypeSystemImpl.createCallSite(Timex3Interval.class, "emptyValue");
-  private final static MethodHandle _FH_emptyValue = _FC_emptyValue.dynamicInvoker();
-  private final static CallSite _FC_beginTimex = TypeSystemImpl.createCallSite(Timex3Interval.class, "beginTimex");
-  private final static MethodHandle _FH_beginTimex = _FC_beginTimex.dynamicInvoker();
-  private final static CallSite _FC_endTimex = TypeSystemImpl.createCallSite(Timex3Interval.class, "endTimex");
-  private final static MethodHandle _FH_endTimex = _FC_endTimex.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Timex3Interval() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Timex3Interval(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Timex3Interval(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -97,7 +51,6 @@ public class Timex3Interval extends Timex3 {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -129,16 +82,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueEB() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEB));}
+  public String getTimexValueEB() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueEB == null)
+      jcasType.jcas.throwFeatMissing("TimexValueEB", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueEB);}
     
   /** setter for TimexValueEB - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimexValueEB(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_TimexValueEB), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueEB == null)
+      jcasType.jcas.throwFeatMissing("TimexValueEB", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueEB, v);}    
    
     
   //*--------------*
@@ -148,16 +104,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueLE() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLE));}
+  public String getTimexValueLE() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueLE == null)
+      jcasType.jcas.throwFeatMissing("TimexValueLE", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueLE);}
     
   /** setter for TimexValueLE - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimexValueLE(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_TimexValueLE), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueLE == null)
+      jcasType.jcas.throwFeatMissing("TimexValueLE", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueLE, v);}    
    
     
   //*--------------*
@@ -167,16 +126,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueEE() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEE));}
+  public String getTimexValueEE() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueEE == null)
+      jcasType.jcas.throwFeatMissing("TimexValueEE", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueEE);}
     
   /** setter for TimexValueEE - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimexValueEE(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_TimexValueEE), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueEE == null)
+      jcasType.jcas.throwFeatMissing("TimexValueEE", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueEE, v);}    
    
     
   //*--------------*
@@ -186,16 +148,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueLB() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLB));}
+  public String getTimexValueLB() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueLB == null)
+      jcasType.jcas.throwFeatMissing("TimexValueLB", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueLB);}
     
   /** setter for TimexValueLB - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimexValueLB(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_TimexValueLB), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_TimexValueLB == null)
+      jcasType.jcas.throwFeatMissing("TimexValueLB", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_TimexValueLB, v);}    
    
     
   //*--------------*
@@ -205,16 +170,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getEmptyValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_emptyValue));}
+  public String getEmptyValue() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_emptyValue == null)
+      jcasType.jcas.throwFeatMissing("emptyValue", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_emptyValue);}
     
   /** setter for emptyValue - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEmptyValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_emptyValue), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_emptyValue == null)
+      jcasType.jcas.throwFeatMissing("emptyValue", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_emptyValue, v);}    
    
     
   //*--------------*
@@ -224,16 +192,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getBeginTimex() { return _getStringValueNc(wrapGetIntCatchException(_FH_beginTimex));}
+  public String getBeginTimex() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_beginTimex == null)
+      jcasType.jcas.throwFeatMissing("beginTimex", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_beginTimex);}
     
   /** setter for beginTimex - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeginTimex(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_beginTimex), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_beginTimex == null)
+      jcasType.jcas.throwFeatMissing("beginTimex", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_beginTimex, v);}    
    
     
   //*--------------*
@@ -243,16 +214,19 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getEndTimex() { return _getStringValueNc(wrapGetIntCatchException(_FH_endTimex));}
+  public String getEndTimex() {
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_endTimex == null)
+      jcasType.jcas.throwFeatMissing("endTimex", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_endTimex);}
     
   /** setter for endTimex - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEndTimex(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_endTimex), v);
-  }    
-    
+    if (Timex3Interval_Type.featOkTst && ((Timex3Interval_Type)jcasType).casFeat_endTimex == null)
+      jcasType.jcas.throwFeatMissing("endTimex", "de.unihd.dbs.uima.types.heideltime.Timex3Interval");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Timex3Interval_Type)jcasType).casFeatCode_endTimex, v);}    
   }
 
     

@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.texttechnologylab.annotation.model.MetaData;
@@ -21,17 +13,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Type system for representing topics in BERTopic-based models
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class BertTopic extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.BertTopic";
-  
   /** @generated
    * @ordered 
    */
@@ -48,33 +33,17 @@ public class BertTopic extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Topics = "Topics";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Topics = TypeSystemImpl.createCallSite(BertTopic.class, "Topics");
-  private final static MethodHandle _FH_Topics = _FC_Topics.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(BertTopic.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected BertTopic() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public BertTopic(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public BertTopic(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -85,7 +54,6 @@ public class BertTopic extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -117,16 +85,19 @@ public class BertTopic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getTopics() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)));}
+  public FSArray getTopics() {
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_Topics == null)
+      jcasType.jcas.throwFeatMissing("Topics", "org.texttechnologylab.annotation.BertTopic");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics)));}
     
   /** setter for Topics - sets Set of topics with labels and probabilities 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTopics(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Topics), v);
-  }    
-    
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_Topics == null)
+      jcasType.jcas.throwFeatMissing("Topics", "org.texttechnologylab.annotation.BertTopic");
+    jcasType.ll_cas.ll_setRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for Topics - gets an indexed value - Set of topics with labels and probabilities
    * @generated
@@ -134,16 +105,21 @@ public class BertTopic extends Annotation {
    * @return value of the element at index i 
    */
   public TopicValue getTopics(int i) {
-     return (TopicValue)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).get(i));} 
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_Topics == null)
+      jcasType.jcas.throwFeatMissing("Topics", "org.texttechnologylab.annotation.BertTopic");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics), i);
+    return (TopicValue)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics), i)));}
 
   /** indexed setter for Topics - sets an indexed value - Set of topics with labels and probabilities
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setTopics(int i, TopicValue v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).set(i, v);
-  }  
+  public void setTopics(int i, TopicValue v) { 
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_Topics == null)
+      jcasType.jcas.throwFeatMissing("Topics", "org.texttechnologylab.annotation.BertTopic");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_Topics), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -153,16 +129,19 @@ public class BertTopic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.BertTopic");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets Metadata about the BERTopic model, such as its name, source and version 
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (BertTopic_Type.featOkTst && ((BertTopic_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.BertTopic");
+    jcasType.ll_cas.ll_setRefValue(addr, ((BertTopic_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.type.llm.prompt;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.TOP;
@@ -21,17 +13,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Prompt extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.llm.prompt.Prompt";
-  
   /** @generated
    * @ordered 
    */
@@ -48,39 +33,17 @@ public class Prompt extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_messages = "messages";
-  public final static String _FeatName_args = "args";
-  public final static String _FeatName_version = "version";
-  public final static String _FeatName_reference = "reference";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_messages = TypeSystemImpl.createCallSite(Prompt.class, "messages");
-  private final static MethodHandle _FH_messages = _FC_messages.dynamicInvoker();
-  private final static CallSite _FC_args = TypeSystemImpl.createCallSite(Prompt.class, "args");
-  private final static MethodHandle _FH_args = _FC_args.dynamicInvoker();
-  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(Prompt.class, "version");
-  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
-  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(Prompt.class, "reference");
-  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Prompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Prompt(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Prompt(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -91,7 +54,6 @@ public class Prompt extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -123,16 +85,19 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getMessages() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)));}
+  public FSArray getMessages() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_messages == null)
+      jcasType.jcas.throwFeatMissing("messages", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages)));}
     
   /** setter for messages - sets The list of messages for this prompt. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMessages(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_messages), v);
-  }    
-    
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_messages == null)
+      jcasType.jcas.throwFeatMissing("messages", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for messages - gets an indexed value - The list of messages for this prompt.
    * @generated
@@ -140,16 +105,21 @@ public class Prompt extends Annotation {
    * @return value of the element at index i 
    */
   public Message getMessages(int i) {
-     return (Message)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).get(i));} 
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_messages == null)
+      jcasType.jcas.throwFeatMissing("messages", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i);
+    return (Message)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i)));}
 
   /** indexed setter for messages - sets an indexed value - The list of messages for this prompt.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setMessages(int i, Message v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).set(i, v);
-  }  
+  public void setMessages(int i, Message v) { 
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_messages == null)
+      jcasType.jcas.throwFeatMissing("messages", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_messages), i, jcasType.ll_cas.ll_getFSRef(v));}
    
     
   //*--------------*
@@ -159,16 +129,19 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getArgs() { return _getStringValueNc(wrapGetIntCatchException(_FH_args));}
+  public String getArgs() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_args == null)
+      jcasType.jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_args);}
     
   /** setter for args - sets Prompt arguments 
    * @generated
    * @param v value to set into the feature 
    */
   public void setArgs(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_args), v);
-  }    
-    
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_args == null)
+      jcasType.jcas.throwFeatMissing("args", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_args, v);}    
    
     
   //*--------------*
@@ -178,16 +151,19 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
+  public String getVersion() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_version);}
     
   /** setter for version - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVersion(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
-  }    
-    
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Prompt_Type)jcasType).casFeatCode_version, v);}    
    
     
   //*--------------*
@@ -197,16 +173,19 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() { return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
+  public TOP getReference() {
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets Reference to another annotation 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(TOP v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
+    if (Prompt_Type.featOkTst && ((Prompt_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.type.llm.prompt.Prompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Prompt_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

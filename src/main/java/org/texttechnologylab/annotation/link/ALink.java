@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.link;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Annotation represents a (unidirectional) Link between two Annotations
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ALink extends Link {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.link.ALink";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class ALink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_from = "from";
-  public final static String _FeatName_to = "to";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_from = TypeSystemImpl.createCallSite(ALink.class, "from");
-  private final static MethodHandle _FH_from = _FC_from.dynamicInvoker();
-  private final static CallSite _FC_to = TypeSystemImpl.createCallSite(ALink.class, "to");
-  private final static MethodHandle _FH_to = _FC_to.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ALink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ALink(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ALink(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class ALink extends Link {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class ALink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getFrom() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_from)));}
+  public Annotation getFrom() {
+    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_from == null)
+      jcasType.jcas.throwFeatMissing("from", "org.texttechnologylab.annotation.link.ALink");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ALink_Type)jcasType).casFeatCode_from)));}
     
   /** setter for from - sets from (annotation) to (annotation) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFrom(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_from), v);
-  }    
-    
+    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_from == null)
+      jcasType.jcas.throwFeatMissing("from", "org.texttechnologylab.annotation.link.ALink");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ALink_Type)jcasType).casFeatCode_from, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class ALink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getTo() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_to)));}
+  public Annotation getTo() {
+    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_to == null)
+      jcasType.jcas.throwFeatMissing("to", "org.texttechnologylab.annotation.link.ALink");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ALink_Type)jcasType).casFeatCode_to)));}
     
   /** setter for to - sets from (annotation) to (annotation) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTo(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_to), v);
-  }    
-    
+    if (ALink_Type.featOkTst && ((ALink_Type)jcasType).casFeat_to == null)
+      jcasType.jcas.throwFeatMissing("to", "org.texttechnologylab.annotation.link.ALink");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ALink_Type)jcasType).casFeatCode_to, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

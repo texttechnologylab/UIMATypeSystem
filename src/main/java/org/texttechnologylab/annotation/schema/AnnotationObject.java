@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.schema;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationObject extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.schema.AnnotationObject";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class AnnotationObject extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_annotationType = "annotationType";
-  public final static String _FeatName_comment = "comment";
-  public final static String _FeatName_attributes = "attributes";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_annotationType = TypeSystemImpl.createCallSite(AnnotationObject.class, "annotationType");
-  private final static MethodHandle _FH_annotationType = _FC_annotationType.dynamicInvoker();
-  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(AnnotationObject.class, "comment");
-  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
-  private final static CallSite _FC_attributes = TypeSystemImpl.createCallSite(AnnotationObject.class, "attributes");
-  private final static MethodHandle _FH_attributes = _FC_attributes.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected AnnotationObject() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AnnotationObject(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public AnnotationObject(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class AnnotationObject extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class AnnotationObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationClass getAnnotationType() { return (AnnotationClass)(_getFeatureValueNc(wrapGetIntCatchException(_FH_annotationType)));}
+  public AnnotationClass getAnnotationType() {
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_annotationType == null)
+      jcasType.jcas.throwFeatMissing("annotationType", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    return (AnnotationClass)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_annotationType)));}
     
   /** setter for annotationType - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAnnotationType(AnnotationClass v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_annotationType), v);
-  }    
-    
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_annotationType == null)
+      jcasType.jcas.throwFeatMissing("annotationType", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_annotationType, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class AnnotationObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
+  public String getComment() {
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_comment);}
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
-  }    
-    
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_comment, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class AnnotationObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getAttributes() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));}
+  public FSArray getAttributes() {
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_attributes == null)
+      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes)));}
     
   /** setter for attributes - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAttributes(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attributes), v);
-  }    
-    
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_attributes == null)
+      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for attributes - gets an indexed value - 
    * @generated
@@ -174,16 +148,21 @@ public class AnnotationObject extends Annotation {
    * @return value of the element at index i 
    */
   public AnnotationAttribute getAttributes(int i) {
-     return (AnnotationAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).get(i));} 
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_attributes == null)
+      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes), i);
+    return (AnnotationAttribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes), i)));}
 
   /** indexed setter for attributes - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setAttributes(int i, AnnotationAttribute v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).set(i, v);
-  }  
+  public void setAttributes(int i, AnnotationAttribute v) { 
+    if (AnnotationObject_Type.featOkTst && ((AnnotationObject_Type)jcasType).casFeat_attributes == null)
+      jcasType.jcas.throwFeatMissing("attributes", "org.texttechnologylab.annotation.schema.AnnotationObject");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationObject_Type)jcasType).casFeatCode_attributes), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

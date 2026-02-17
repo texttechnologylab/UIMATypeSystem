@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package de.unihd.dbs.uima.types.heideltime;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Token extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "de.unihd.dbs.uima.types.heideltime.Token";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class Token extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_filename = "filename";
-  public final static String _FeatName_tokenId = "tokenId";
-  public final static String _FeatName_sentId = "sentId";
-  public final static String _FeatName_pos = "pos";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_filename = TypeSystemImpl.createCallSite(Token.class, "filename");
-  private final static MethodHandle _FH_filename = _FC_filename.dynamicInvoker();
-  private final static CallSite _FC_tokenId = TypeSystemImpl.createCallSite(Token.class, "tokenId");
-  private final static MethodHandle _FH_tokenId = _FC_tokenId.dynamicInvoker();
-  private final static CallSite _FC_sentId = TypeSystemImpl.createCallSite(Token.class, "sentId");
-  private final static MethodHandle _FH_sentId = _FC_sentId.dynamicInvoker();
-  private final static CallSite _FC_pos = TypeSystemImpl.createCallSite(Token.class, "pos");
-  private final static MethodHandle _FH_pos = _FC_pos.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Token() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Token(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Token(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class Token extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFilename() { return _getStringValueNc(wrapGetIntCatchException(_FH_filename));}
+  public String getFilename() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_filename == null)
+      jcasType.jcas.throwFeatMissing("filename", "de.unihd.dbs.uima.types.heideltime.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_filename);}
     
   /** setter for filename - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFilename(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_filename), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_filename == null)
+      jcasType.jcas.throwFeatMissing("filename", "de.unihd.dbs.uima.types.heideltime.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_filename, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTokenId() { return _getIntValueNc(wrapGetIntCatchException(_FH_tokenId));}
+  public int getTokenId() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_tokenId == null)
+      jcasType.jcas.throwFeatMissing("tokenId", "de.unihd.dbs.uima.types.heideltime.Token");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_tokenId);}
     
   /** setter for tokenId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTokenId(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_tokenId), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_tokenId == null)
+      jcasType.jcas.throwFeatMissing("tokenId", "de.unihd.dbs.uima.types.heideltime.Token");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_tokenId, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentId() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));}
+  public int getSentId() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_sentId == null)
+      jcasType.jcas.throwFeatMissing("sentId", "de.unihd.dbs.uima.types.heideltime.Token");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_sentId);}
     
   /** setter for sentId - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentId(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_sentId), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_sentId == null)
+      jcasType.jcas.throwFeatMissing("sentId", "de.unihd.dbs.uima.types.heideltime.Token");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_sentId, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
+  public String getPos() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "de.unihd.dbs.uima.types.heideltime.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_pos);}
     
   /** setter for pos - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPos(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pos), v);
-  }    
-    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_pos == null)
+      jcasType.jcas.throwFeatMissing("pos", "de.unihd.dbs.uima.types.heideltime.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_pos, v);}    
   }
 
     

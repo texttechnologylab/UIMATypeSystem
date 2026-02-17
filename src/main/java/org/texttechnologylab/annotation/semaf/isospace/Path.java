@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Path extends Location {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Path";
-  
   /** @generated
    * @ordered 
    */
@@ -47,39 +32,17 @@ public class Path extends Location {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_beginID = "beginID";
-  public final static String _FeatName_endID = "endID";
-  public final static String _FeatName_midIDs = "midIDs";
-  public final static String _FeatName_midID_array = "midID_array";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_beginID = TypeSystemImpl.createCallSite(Path.class, "beginID");
-  private final static MethodHandle _FH_beginID = _FC_beginID.dynamicInvoker();
-  private final static CallSite _FC_endID = TypeSystemImpl.createCallSite(Path.class, "endID");
-  private final static MethodHandle _FH_endID = _FC_endID.dynamicInvoker();
-  private final static CallSite _FC_midIDs = TypeSystemImpl.createCallSite(Path.class, "midIDs");
-  private final static MethodHandle _FH_midIDs = _FC_midIDs.dynamicInvoker();
-  private final static CallSite _FC_midID_array = TypeSystemImpl.createCallSite(Path.class, "midID_array");
-  private final static MethodHandle _FH_midID_array = _FC_midID_array.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Path() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Path(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Path(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -90,7 +53,6 @@ public class Path extends Location {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -122,16 +84,19 @@ public class Path extends Location {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getBeginID() { return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beginID)));}
+  public SpatialEntity getBeginID() {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_beginID == null)
+      jcasType.jcas.throwFeatMissing("beginID", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_beginID)));}
     
   /** setter for beginID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBeginID(SpatialEntity v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_beginID), v);
-  }    
-    
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_beginID == null)
+      jcasType.jcas.throwFeatMissing("beginID", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_beginID, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -141,16 +106,19 @@ public class Path extends Location {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getEndID() { return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endID)));}
+  public SpatialEntity getEndID() {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_endID == null)
+      jcasType.jcas.throwFeatMissing("endID", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_endID)));}
     
   /** setter for endID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEndID(SpatialEntity v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_endID), v);
-  }    
-    
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_endID == null)
+      jcasType.jcas.throwFeatMissing("endID", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_endID, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -160,16 +128,19 @@ public class Path extends Location {
    * @generated
    * @return value of the feature 
    */
-  public FSList getMidIDs() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midIDs)));}
+  public FSList getMidIDs() {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midIDs == null)
+      jcasType.jcas.throwFeatMissing("midIDs", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midIDs)));}
     
   /** setter for midIDs - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMidIDs(FSList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midIDs), v);
-  }    
-    
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midIDs == null)
+      jcasType.jcas.throwFeatMissing("midIDs", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_midIDs, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -179,16 +150,19 @@ public class Path extends Location {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getMidID_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)));}
+  public FSArray getMidID_array() {
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array)));}
     
   /** setter for midID_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMidID_array(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midID_array), v);
-  }    
-    
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for midID_array - gets an indexed value - 
    * @generated
@@ -196,16 +170,21 @@ public class Path extends Location {
    * @return value of the element at index i 
    */
   public SpatialEntity getMidID_array(int i) {
-     return (SpatialEntity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).get(i));} 
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i);
+    return (SpatialEntity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i)));}
 
   /** indexed setter for midID_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setMidID_array(int i, SpatialEntity v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).set(i, v);
-  }  
+  public void setMidID_array(int i, SpatialEntity v) { 
+    if (Path_Type.featOkTst && ((Path_Type)jcasType).casFeat_midID_array == null)
+      jcasType.jcas.throwFeatMissing("midID_array", "org.texttechnologylab.annotation.semaf.isospace.Path");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Path_Type)jcasType).casFeatCode_midID_array), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

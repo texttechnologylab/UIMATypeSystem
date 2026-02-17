@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationNode extends Node {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.AnnotationNode";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class AnnotationNode extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_begin = "begin";
-  public final static String _FeatName_end = "end";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_begin = TypeSystemImpl.createCallSite(AnnotationNode.class, "begin");
-  private final static MethodHandle _FH_begin = _FC_begin.dynamicInvoker();
-  private final static CallSite _FC_end = TypeSystemImpl.createCallSite(AnnotationNode.class, "end");
-  private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected AnnotationNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AnnotationNode(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public AnnotationNode(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class AnnotationNode extends Node {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -102,16 +70,19 @@ public class AnnotationNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_begin));}
+  public int getBegin() {
+    if (AnnotationNode_Type.featOkTst && ((AnnotationNode_Type)jcasType).casFeat_begin == null)
+      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.AnnotationNode");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((AnnotationNode_Type)jcasType).casFeatCode_begin);}
     
   /** setter for begin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBegin(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_begin), v);
-  }    
-    
+    if (AnnotationNode_Type.featOkTst && ((AnnotationNode_Type)jcasType).casFeat_begin == null)
+      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.AnnotationNode");
+    jcasType.ll_cas.ll_setIntValue(addr, ((AnnotationNode_Type)jcasType).casFeatCode_begin, v);}    
    
     
   //*--------------*
@@ -121,16 +92,19 @@ public class AnnotationNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_end));}
+  public int getEnd() {
+    if (AnnotationNode_Type.featOkTst && ((AnnotationNode_Type)jcasType).casFeat_end == null)
+      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.AnnotationNode");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((AnnotationNode_Type)jcasType).casFeatCode_end);}
     
   /** setter for end - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_end), v);
-  }    
-    
+    if (AnnotationNode_Type.featOkTst && ((AnnotationNode_Type)jcasType).casFeat_end == null)
+      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.AnnotationNode");
+    jcasType.ll_cas.ll_setIntValue(addr, ((AnnotationNode_Type)jcasType).casFeatCode_end, v);}    
   }
 
     

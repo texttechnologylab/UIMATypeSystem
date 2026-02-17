@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.administration.activelearner;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.AnnotationComment;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Recommendation extends AnnotationComment {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.administration.activelearner.Recommendation";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Recommendation extends AnnotationComment {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_hash = "hash";
-  public final static String _FeatName_score = "score";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_hash = TypeSystemImpl.createCallSite(Recommendation.class, "hash");
-  private final static MethodHandle _FH_hash = _FC_hash.dynamicInvoker();
-  private final static CallSite _FC_score = TypeSystemImpl.createCallSite(Recommendation.class, "score");
-  private final static MethodHandle _FH_score = _FC_score.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Recommendation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Recommendation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Recommendation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Recommendation extends AnnotationComment {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -103,16 +71,19 @@ public class Recommendation extends AnnotationComment {
    * @generated
    * @return value of the feature 
    */
-  public String getHash() { return _getStringValueNc(wrapGetIntCatchException(_FH_hash));}
+  public String getHash() {
+    if (Recommendation_Type.featOkTst && ((Recommendation_Type)jcasType).casFeat_hash == null)
+      jcasType.jcas.throwFeatMissing("hash", "org.texttechnologylab.annotation.administration.activelearner.Recommendation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Recommendation_Type)jcasType).casFeatCode_hash);}
     
   /** setter for hash - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHash(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_hash), v);
-  }    
-    
+    if (Recommendation_Type.featOkTst && ((Recommendation_Type)jcasType).casFeat_hash == null)
+      jcasType.jcas.throwFeatMissing("hash", "org.texttechnologylab.annotation.administration.activelearner.Recommendation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Recommendation_Type)jcasType).casFeatCode_hash, v);}    
    
     
   //*--------------*
@@ -122,16 +93,19 @@ public class Recommendation extends AnnotationComment {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
+  public double getScore() {
+    if (Recommendation_Type.featOkTst && ((Recommendation_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.administration.activelearner.Recommendation");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Recommendation_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScore(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_score), v);
-  }    
-    
+    if (Recommendation_Type.featOkTst && ((Recommendation_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.annotation.administration.activelearner.Recommendation");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Recommendation_Type)jcasType).casFeatCode_score, v);}    
   }
 
     

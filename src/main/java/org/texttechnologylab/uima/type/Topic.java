@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Topic extends Classification {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.uima.type.Topic";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class Topic extends Classification {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_topic = "topic";
-  public final static String _FeatName_score = "score";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_topic = TypeSystemImpl.createCallSite(Topic.class, "topic");
-  private final static MethodHandle _FH_topic = _FC_topic.dynamicInvoker();
-  private final static CallSite _FC_score = TypeSystemImpl.createCallSite(Topic.class, "score");
-  private final static MethodHandle _FH_score = _FC_score.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Topic() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Topic(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Topic(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class Topic extends Classification {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -114,16 +82,19 @@ public class Topic extends Classification {
    * @generated
    * @return value of the feature 
    */
-  public String getTopic() { return _getStringValueNc(wrapGetIntCatchException(_FH_topic));}
+  public String getTopic() {
+    if (Topic_Type.featOkTst && ((Topic_Type)jcasType).casFeat_topic == null)
+      jcasType.jcas.throwFeatMissing("topic", "org.texttechnologylab.uima.type.Topic");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Topic_Type)jcasType).casFeatCode_topic);}
     
   /** setter for topic - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTopic(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_topic), v);
-  }    
-    
+    if (Topic_Type.featOkTst && ((Topic_Type)jcasType).casFeat_topic == null)
+      jcasType.jcas.throwFeatMissing("topic", "org.texttechnologylab.uima.type.Topic");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Topic_Type)jcasType).casFeatCode_topic, v);}    
    
     
   //*--------------*
@@ -133,16 +104,19 @@ public class Topic extends Classification {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
+  public double getScore() {
+    if (Topic_Type.featOkTst && ((Topic_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.uima.type.Topic");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Topic_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScore(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_score), v);
-  }    
-    
+    if (Topic_Type.featOkTst && ((Topic_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "org.texttechnologylab.uima.type.Topic");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Topic_Type)jcasType).casFeatCode_score, v);}    
   }
 
     

@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type.wikipedia;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringArray;
 
 
 /** Wikipedia link
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_WikiData = "WikiData";
-  public final static String _FeatName_WikiDataHyponyms = "WikiDataHyponyms";
-  public final static String _FeatName_isInstance = "isInstance";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_WikiData = TypeSystemImpl.createCallSite(WikipediaLink.class, "WikiData");
-  private final static MethodHandle _FH_WikiData = _FC_WikiData.dynamicInvoker();
-  private final static CallSite _FC_WikiDataHyponyms = TypeSystemImpl.createCallSite(WikipediaLink.class, "WikiDataHyponyms");
-  private final static MethodHandle _FH_WikiDataHyponyms = _FC_WikiDataHyponyms.dynamicInvoker();
-  private final static CallSite _FC_isInstance = TypeSystemImpl.createCallSite(WikipediaLink.class, "isInstance");
-  private final static MethodHandle _FH_isInstance = _FC_isInstance.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected WikipediaLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public WikipediaLink(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public WikipediaLink(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public String getWikiData() { return _getStringValueNc(wrapGetIntCatchException(_FH_WikiData));}
+  public String getWikiData() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiData == null)
+      jcasType.jcas.throwFeatMissing("WikiData", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiData);}
     
   /** setter for WikiData - sets WikiData Id 
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikiData(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_WikiData), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiData == null)
+      jcasType.jcas.throwFeatMissing("WikiData", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiData, v);}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public StringArray getWikiDataHyponyms() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)));}
+  public StringArray getWikiDataHyponyms() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiDataHyponyms == null)
+      jcasType.jcas.throwFeatMissing("WikiDataHyponyms", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms)));}
     
   /** setter for WikiDataHyponyms - sets WikiData Hyponyms 
    * @generated
    * @param v value to set into the feature 
    */
   public void setWikiDataHyponyms(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_WikiDataHyponyms), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiDataHyponyms == null)
+      jcasType.jcas.throwFeatMissing("WikiDataHyponyms", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    jcasType.ll_cas.ll_setRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for WikiDataHyponyms - gets an indexed value - WikiData Hyponyms
    * @generated
@@ -154,16 +125,21 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @return value of the element at index i 
    */
   public String getWikiDataHyponyms(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)))).get(i);} 
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiDataHyponyms == null)
+      jcasType.jcas.throwFeatMissing("WikiDataHyponyms", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms), i);}
 
   /** indexed setter for WikiDataHyponyms - sets an indexed value - WikiData Hyponyms
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setWikiDataHyponyms(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)))).set(i, v);
-  }  
+  public void setWikiDataHyponyms(int i, String v) { 
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_WikiDataHyponyms == null)
+      jcasType.jcas.throwFeatMissing("WikiDataHyponyms", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_WikiDataHyponyms), i, v);}
    
     
   //*--------------*
@@ -173,16 +149,19 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsInstance() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isInstance));}
+  public boolean getIsInstance() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_isInstance == null)
+      jcasType.jcas.throwFeatMissing("isInstance", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_isInstance);}
     
   /** setter for isInstance - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIsInstance(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_isInstance), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_isInstance == null)
+      jcasType.jcas.throwFeatMissing("isInstance", "org.hucompute.textimager.uima.type.wikipedia.WikipediaLink");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_isInstance, v);}    
   }
 
     

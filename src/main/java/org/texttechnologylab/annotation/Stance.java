@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Stance Detection
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Stance extends StanceBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Stance";
-  
   /** @generated
    * @ordered 
    */
@@ -45,36 +30,17 @@ public class Stance extends StanceBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Support = "Support";
-  public final static String _FeatName_Oppose = "Oppose";
-  public final static String _FeatName_Neutral = "Neutral";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Support = TypeSystemImpl.createCallSite(Stance.class, "Support");
-  private final static MethodHandle _FH_Support = _FC_Support.dynamicInvoker();
-  private final static CallSite _FC_Oppose = TypeSystemImpl.createCallSite(Stance.class, "Oppose");
-  private final static MethodHandle _FH_Oppose = _FC_Oppose.dynamicInvoker();
-  private final static CallSite _FC_Neutral = TypeSystemImpl.createCallSite(Stance.class, "Neutral");
-  private final static MethodHandle _FH_Neutral = _FC_Neutral.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Stance() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Stance(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Stance(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -85,7 +51,6 @@ public class Stance extends StanceBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -117,16 +82,19 @@ public class Stance extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public double getSupport() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Support));}
+  public double getSupport() {
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Support == null)
+      jcasType.jcas.throwFeatMissing("Support", "org.texttechnologylab.annotation.Stance");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Support);}
     
   /** setter for Support - sets Probability of support 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSupport(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Support), v);
-  }    
-    
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Support == null)
+      jcasType.jcas.throwFeatMissing("Support", "org.texttechnologylab.annotation.Stance");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Support, v);}    
    
     
   //*--------------*
@@ -136,16 +104,19 @@ public class Stance extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public double getOppose() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Oppose));}
+  public double getOppose() {
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Oppose == null)
+      jcasType.jcas.throwFeatMissing("Oppose", "org.texttechnologylab.annotation.Stance");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Oppose);}
     
   /** setter for Oppose - sets Probability of oppose 
    * @generated
    * @param v value to set into the feature 
    */
   public void setOppose(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Oppose), v);
-  }    
-    
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Oppose == null)
+      jcasType.jcas.throwFeatMissing("Oppose", "org.texttechnologylab.annotation.Stance");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Oppose, v);}    
    
     
   //*--------------*
@@ -155,16 +126,19 @@ public class Stance extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public double getNeutral() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Neutral));}
+  public double getNeutral() {
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Neutral == null)
+      jcasType.jcas.throwFeatMissing("Neutral", "org.texttechnologylab.annotation.Stance");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Neutral);}
     
   /** setter for Neutral - sets Probability of neutral 
    * @generated
    * @param v value to set into the feature 
    */
   public void setNeutral(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Neutral), v);
-  }    
-    
+    if (Stance_Type.featOkTst && ((Stance_Type)jcasType).casFeat_Neutral == null)
+      jcasType.jcas.throwFeatMissing("Neutral", "org.texttechnologylab.annotation.Stance");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Stance_Type)jcasType).casFeatCode_Neutral, v);}    
   }
 
     

@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type.segmentation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Head extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.segmentation.Head";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class Head extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_typ = "typ";
-  public final static String _FeatName_id = "id";
-  public final static String _FeatName_parent = "parent";
-  public final static String _FeatName_rootEntries = "rootEntries";
-  public final static String _FeatName_children = "children";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_typ = TypeSystemImpl.createCallSite(Head.class, "typ");
-  private final static MethodHandle _FH_typ = _FC_typ.dynamicInvoker();
-  private final static CallSite _FC_id = TypeSystemImpl.createCallSite(Head.class, "id");
-  private final static MethodHandle _FH_id = _FC_id.dynamicInvoker();
-  private final static CallSite _FC_parent = TypeSystemImpl.createCallSite(Head.class, "parent");
-  private final static MethodHandle _FH_parent = _FC_parent.dynamicInvoker();
-  private final static CallSite _FC_rootEntries = TypeSystemImpl.createCallSite(Head.class, "rootEntries");
-  private final static MethodHandle _FH_rootEntries = _FC_rootEntries.dynamicInvoker();
-  private final static CallSite _FC_children = TypeSystemImpl.createCallSite(Head.class, "children");
-  private final static MethodHandle _FH_children = _FC_children.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Head() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Head(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Head(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class Head extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -124,16 +83,19 @@ public class Head extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTyp() { return _getStringValueNc(wrapGetIntCatchException(_FH_typ));}
+  public String getTyp() {
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_typ == null)
+      jcasType.jcas.throwFeatMissing("typ", "org.hucompute.textimager.uima.type.segmentation.Head");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Head_Type)jcasType).casFeatCode_typ);}
     
   /** setter for typ - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTyp(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_typ), v);
-  }    
-    
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_typ == null)
+      jcasType.jcas.throwFeatMissing("typ", "org.hucompute.textimager.uima.type.segmentation.Head");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Head_Type)jcasType).casFeatCode_typ, v);}    
    
     
   //*--------------*
@@ -143,16 +105,19 @@ public class Head extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
+  public String getId() {
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.hucompute.textimager.uima.type.segmentation.Head");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Head_Type)jcasType).casFeatCode_id);}
     
   /** setter for id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_id), v);
-  }    
-    
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.hucompute.textimager.uima.type.segmentation.Head");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Head_Type)jcasType).casFeatCode_id, v);}    
    
     
   //*--------------*
@@ -162,16 +127,19 @@ public class Head extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getParent() { return _getStringValueNc(wrapGetIntCatchException(_FH_parent));}
+  public String getParent() {
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.hucompute.textimager.uima.type.segmentation.Head");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Head_Type)jcasType).casFeatCode_parent);}
     
   /** setter for parent - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParent(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_parent), v);
-  }    
-    
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_parent == null)
+      jcasType.jcas.throwFeatMissing("parent", "org.hucompute.textimager.uima.type.segmentation.Head");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Head_Type)jcasType).casFeatCode_parent, v);}    
    
     
   //*--------------*
@@ -181,16 +149,19 @@ public class Head extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRootEntries() { return _getStringValueNc(wrapGetIntCatchException(_FH_rootEntries));}
+  public String getRootEntries() {
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_rootEntries == null)
+      jcasType.jcas.throwFeatMissing("rootEntries", "org.hucompute.textimager.uima.type.segmentation.Head");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Head_Type)jcasType).casFeatCode_rootEntries);}
     
   /** setter for rootEntries - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRootEntries(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_rootEntries), v);
-  }    
-    
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_rootEntries == null)
+      jcasType.jcas.throwFeatMissing("rootEntries", "org.hucompute.textimager.uima.type.segmentation.Head");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Head_Type)jcasType).casFeatCode_rootEntries, v);}    
    
     
   //*--------------*
@@ -200,16 +171,19 @@ public class Head extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getChildren() { return _getStringValueNc(wrapGetIntCatchException(_FH_children));}
+  public String getChildren() {
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.hucompute.textimager.uima.type.segmentation.Head");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Head_Type)jcasType).casFeatCode_children);}
     
   /** setter for children - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setChildren(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_children), v);
-  }    
-    
+    if (Head_Type.featOkTst && ((Head_Type)jcasType).casFeat_children == null)
+      jcasType.jcas.throwFeatMissing("children", "org.hucompute.textimager.uima.type.segmentation.Head");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Head_Type)jcasType).casFeatCode_children, v);}    
   }
 
     

@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpeechText extends SpeechSection {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.SpeechText";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class SpeechText extends SpeechSection {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_speaker = "speaker";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_speaker = TypeSystemImpl.createCallSite(SpeechText.class, "speaker");
-  private final static MethodHandle _FH_speaker = _FC_speaker.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected SpeechText() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public SpeechText(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public SpeechText(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class SpeechText extends SpeechSection {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -111,16 +82,19 @@ public class SpeechText extends SpeechSection {
    * @generated
    * @return value of the feature 
    */
-  public Speaker getSpeaker() { return (Speaker)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speaker)));}
+  public Speaker getSpeaker() {
+    if (SpeechText_Type.featOkTst && ((SpeechText_Type)jcasType).casFeat_speaker == null)
+      jcasType.jcas.throwFeatMissing("speaker", "org.texttechnologylab.annotation.parliamentary.SpeechText");
+    return (Speaker)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SpeechText_Type)jcasType).casFeatCode_speaker)));}
     
   /** setter for speaker - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSpeaker(Speaker v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_speaker), v);
-  }    
-    
+    if (SpeechText_Type.featOkTst && ((SpeechText_Type)jcasType).casFeat_speaker == null)
+      jcasType.jcas.throwFeatMissing("speaker", "org.texttechnologylab.annotation.parliamentary.SpeechText");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SpeechText_Type)jcasType).casFeatCode_speaker, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

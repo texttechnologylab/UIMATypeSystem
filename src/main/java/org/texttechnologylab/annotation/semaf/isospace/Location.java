@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isospace;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Location extends SpatialEntity {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isospace.Location";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class Location extends SpatialEntity {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_gazref = "gazref";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_gazref = TypeSystemImpl.createCallSite(Location.class, "gazref");
-  private final static MethodHandle _FH_gazref = _FC_gazref.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Location() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Location(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Location(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class Location extends SpatialEntity {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -111,16 +82,19 @@ public class Location extends SpatialEntity {
    * @generated
    * @return value of the feature 
    */
-  public String getGazref() { return _getStringValueNc(wrapGetIntCatchException(_FH_gazref));}
+  public String getGazref() {
+    if (Location_Type.featOkTst && ((Location_Type)jcasType).casFeat_gazref == null)
+      jcasType.jcas.throwFeatMissing("gazref", "org.texttechnologylab.annotation.semaf.isospace.Location");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Location_Type)jcasType).casFeatCode_gazref);}
     
   /** setter for gazref - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGazref(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_gazref), v);
-  }    
-    
+    if (Location_Type.featOkTst && ((Location_Type)jcasType).casFeat_gazref == null)
+      jcasType.jcas.throwFeatMissing("gazref", "org.texttechnologylab.annotation.semaf.isospace.Location");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Location_Type)jcasType).casFeatCode_gazref, v);}    
   }
 
     

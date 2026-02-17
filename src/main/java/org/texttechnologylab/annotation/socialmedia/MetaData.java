@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.socialmedia;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.socialmedia.MetaData";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class MetaData extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_name = "name";
-  public final static String _FeatName_description = "description";
-  public final static String _FeatName_url = "url";
-  public final static String _FeatName_createDate = "createDate";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_name = TypeSystemImpl.createCallSite(MetaData.class, "name");
-  private final static MethodHandle _FH_name = _FC_name.dynamicInvoker();
-  private final static CallSite _FC_description = TypeSystemImpl.createCallSite(MetaData.class, "description");
-  private final static MethodHandle _FH_description = _FC_description.dynamicInvoker();
-  private final static CallSite _FC_url = TypeSystemImpl.createCallSite(MetaData.class, "url");
-  private final static MethodHandle _FH_url = _FC_url.dynamicInvoker();
-  private final static CallSite _FC_createDate = TypeSystemImpl.createCallSite(MetaData.class, "createDate");
-  private final static MethodHandle _FH_createDate = _FC_createDate.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public MetaData(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public MetaData(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class MetaData extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -109,16 +71,19 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
+  public String getName() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_name);}
     
   /** setter for name - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_name), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_name == null)
+      jcasType.jcas.throwFeatMissing("name", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_name, v);}    
    
     
   //*--------------*
@@ -128,16 +93,19 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
+  public String getDescription() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_description == null)
+      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_description);}
     
   /** setter for description - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDescription(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_description), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_description == null)
+      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_description, v);}    
    
     
   //*--------------*
@@ -147,16 +115,19 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getUrl() { return _getStringValueNc(wrapGetIntCatchException(_FH_url));}
+  public String getUrl() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_url);}
     
   /** setter for url - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUrl(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_url), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((MetaData_Type)jcasType).casFeatCode_url, v);}    
    
     
   //*--------------*
@@ -166,16 +137,19 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getCreateDate() { return _getIntValueNc(wrapGetIntCatchException(_FH_createDate));}
+  public int getCreateDate() {
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_createDate == null)
+      jcasType.jcas.throwFeatMissing("createDate", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((MetaData_Type)jcasType).casFeatCode_createDate);}
     
   /** setter for createDate - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCreateDate(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_createDate), v);
-  }    
-    
+    if (MetaData_Type.featOkTst && ((MetaData_Type)jcasType).casFeat_createDate == null)
+      jcasType.jcas.throwFeatMissing("createDate", "org.texttechnologylab.annotation.socialmedia.MetaData");
+    jcasType.ll_cas.ll_setIntValue(addr, ((MetaData_Type)jcasType).casFeatCode_createDate, v);}    
   }
 
     

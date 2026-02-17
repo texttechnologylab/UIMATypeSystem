@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StarSentiment extends Sentiment {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.uima.type.StarSentiment";
-  
   /** @generated
    * @ordered 
    */
@@ -45,42 +30,17 @@ public class StarSentiment extends Sentiment {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_OneStar = "OneStar";
-  public final static String _FeatName_TwoStars = "TwoStars";
-  public final static String _FeatName_ThreeStars = "ThreeStars";
-  public final static String _FeatName_FourStars = "FourStars";
-  public final static String _FeatName_FiveStars = "FiveStars";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_OneStar = TypeSystemImpl.createCallSite(StarSentiment.class, "OneStar");
-  private final static MethodHandle _FH_OneStar = _FC_OneStar.dynamicInvoker();
-  private final static CallSite _FC_TwoStars = TypeSystemImpl.createCallSite(StarSentiment.class, "TwoStars");
-  private final static MethodHandle _FH_TwoStars = _FC_TwoStars.dynamicInvoker();
-  private final static CallSite _FC_ThreeStars = TypeSystemImpl.createCallSite(StarSentiment.class, "ThreeStars");
-  private final static MethodHandle _FH_ThreeStars = _FC_ThreeStars.dynamicInvoker();
-  private final static CallSite _FC_FourStars = TypeSystemImpl.createCallSite(StarSentiment.class, "FourStars");
-  private final static MethodHandle _FH_FourStars = _FC_FourStars.dynamicInvoker();
-  private final static CallSite _FC_FiveStars = TypeSystemImpl.createCallSite(StarSentiment.class, "FiveStars");
-  private final static MethodHandle _FH_FiveStars = _FC_FiveStars.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected StarSentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public StarSentiment(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public StarSentiment(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -91,7 +51,6 @@ public class StarSentiment extends Sentiment {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -123,16 +82,19 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getOneStar() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_OneStar));}
+  public double getOneStar() {
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_OneStar == null)
+      jcasType.jcas.throwFeatMissing("OneStar", "org.texttechnologylab.uima.type.StarSentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_OneStar);}
     
   /** setter for OneStar - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOneStar(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_OneStar), v);
-  }    
-    
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_OneStar == null)
+      jcasType.jcas.throwFeatMissing("OneStar", "org.texttechnologylab.uima.type.StarSentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_OneStar, v);}    
    
     
   //*--------------*
@@ -142,16 +104,19 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getTwoStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_TwoStars));}
+  public double getTwoStars() {
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_TwoStars == null)
+      jcasType.jcas.throwFeatMissing("TwoStars", "org.texttechnologylab.uima.type.StarSentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_TwoStars);}
     
   /** setter for TwoStars - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTwoStars(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_TwoStars), v);
-  }    
-    
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_TwoStars == null)
+      jcasType.jcas.throwFeatMissing("TwoStars", "org.texttechnologylab.uima.type.StarSentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_TwoStars, v);}    
    
     
   //*--------------*
@@ -161,16 +126,19 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getThreeStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_ThreeStars));}
+  public double getThreeStars() {
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_ThreeStars == null)
+      jcasType.jcas.throwFeatMissing("ThreeStars", "org.texttechnologylab.uima.type.StarSentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_ThreeStars);}
     
   /** setter for ThreeStars - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setThreeStars(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_ThreeStars), v);
-  }    
-    
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_ThreeStars == null)
+      jcasType.jcas.throwFeatMissing("ThreeStars", "org.texttechnologylab.uima.type.StarSentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_ThreeStars, v);}    
    
     
   //*--------------*
@@ -180,16 +148,19 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getFourStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_FourStars));}
+  public double getFourStars() {
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_FourStars == null)
+      jcasType.jcas.throwFeatMissing("FourStars", "org.texttechnologylab.uima.type.StarSentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_FourStars);}
     
   /** setter for FourStars - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFourStars(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_FourStars), v);
-  }    
-    
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_FourStars == null)
+      jcasType.jcas.throwFeatMissing("FourStars", "org.texttechnologylab.uima.type.StarSentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_FourStars, v);}    
    
     
   //*--------------*
@@ -199,16 +170,19 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getFiveStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_FiveStars));}
+  public double getFiveStars() {
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_FiveStars == null)
+      jcasType.jcas.throwFeatMissing("FiveStars", "org.texttechnologylab.uima.type.StarSentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_FiveStars);}
     
   /** setter for FiveStars - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFiveStars(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_FiveStars), v);
-  }    
-    
+    if (StarSentiment_Type.featOkTst && ((StarSentiment_Type)jcasType).casFeat_FiveStars == null)
+      jcasType.jcas.throwFeatMissing("FiveStars", "org.texttechnologylab.uima.type.StarSentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StarSentiment_Type)jcasType).casFeatCode_FiveStars, v);}    
   }
 
     

@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr.abbyy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Attributes of a line with uniform formatting.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Format extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Format";
-  
   /** @generated
    * @ordered 
    */
@@ -46,57 +31,17 @@ public class Format extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_lang = "lang";
-  public final static String _FeatName_ff = "ff";
-  public final static String _FeatName_fs = "fs";
-  public final static String _FeatName_bold = "bold";
-  public final static String _FeatName_italic = "italic";
-  public final static String _FeatName_subscript = "subscript";
-  public final static String _FeatName_superscript = "superscript";
-  public final static String _FeatName_smallcaps = "smallcaps";
-  public final static String _FeatName_underline = "underline";
-  public final static String _FeatName_strikeout = "strikeout";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_lang = TypeSystemImpl.createCallSite(Format.class, "lang");
-  private final static MethodHandle _FH_lang = _FC_lang.dynamicInvoker();
-  private final static CallSite _FC_ff = TypeSystemImpl.createCallSite(Format.class, "ff");
-  private final static MethodHandle _FH_ff = _FC_ff.dynamicInvoker();
-  private final static CallSite _FC_fs = TypeSystemImpl.createCallSite(Format.class, "fs");
-  private final static MethodHandle _FH_fs = _FC_fs.dynamicInvoker();
-  private final static CallSite _FC_bold = TypeSystemImpl.createCallSite(Format.class, "bold");
-  private final static MethodHandle _FH_bold = _FC_bold.dynamicInvoker();
-  private final static CallSite _FC_italic = TypeSystemImpl.createCallSite(Format.class, "italic");
-  private final static MethodHandle _FH_italic = _FC_italic.dynamicInvoker();
-  private final static CallSite _FC_subscript = TypeSystemImpl.createCallSite(Format.class, "subscript");
-  private final static MethodHandle _FH_subscript = _FC_subscript.dynamicInvoker();
-  private final static CallSite _FC_superscript = TypeSystemImpl.createCallSite(Format.class, "superscript");
-  private final static MethodHandle _FH_superscript = _FC_superscript.dynamicInvoker();
-  private final static CallSite _FC_smallcaps = TypeSystemImpl.createCallSite(Format.class, "smallcaps");
-  private final static MethodHandle _FH_smallcaps = _FC_smallcaps.dynamicInvoker();
-  private final static CallSite _FC_underline = TypeSystemImpl.createCallSite(Format.class, "underline");
-  private final static MethodHandle _FH_underline = _FC_underline.dynamicInvoker();
-  private final static CallSite _FC_strikeout = TypeSystemImpl.createCallSite(Format.class, "strikeout");
-  private final static MethodHandle _FH_strikeout = _FC_strikeout.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Format() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Format(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Format(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -107,7 +52,6 @@ public class Format extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -139,16 +83,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLang() { return _getStringValueNc(wrapGetIntCatchException(_FH_lang));}
+  public String getLang() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_lang == null)
+      jcasType.jcas.throwFeatMissing("lang", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Format_Type)jcasType).casFeatCode_lang);}
     
   /** setter for lang - sets Name of the language. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLang(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_lang), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_lang == null)
+      jcasType.jcas.throwFeatMissing("lang", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Format_Type)jcasType).casFeatCode_lang, v);}    
    
     
   //*--------------*
@@ -158,16 +105,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFf() { return _getStringValueNc(wrapGetIntCatchException(_FH_ff));}
+  public String getFf() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_ff == null)
+      jcasType.jcas.throwFeatMissing("ff", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Format_Type)jcasType).casFeatCode_ff);}
     
   /** setter for ff - sets The name of the font. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFf(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_ff), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_ff == null)
+      jcasType.jcas.throwFeatMissing("ff", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Format_Type)jcasType).casFeatCode_ff, v);}    
    
     
   //*--------------*
@@ -177,16 +127,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public float getFs() { return _getFloatValueNc(wrapGetIntCatchException(_FH_fs));}
+  public float getFs() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_fs == null)
+      jcasType.jcas.throwFeatMissing("fs", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((Format_Type)jcasType).casFeatCode_fs);}
     
   /** setter for fs - sets The size of the font. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFs(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_fs), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_fs == null)
+      jcasType.jcas.throwFeatMissing("fs", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((Format_Type)jcasType).casFeatCode_fs, v);}    
    
     
   //*--------------*
@@ -196,16 +149,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getBold() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_bold));}
+  public boolean getBold() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_bold == null)
+      jcasType.jcas.throwFeatMissing("bold", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_bold);}
     
   /** setter for bold - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBold(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_bold), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_bold == null)
+      jcasType.jcas.throwFeatMissing("bold", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_bold, v);}    
    
     
   //*--------------*
@@ -215,16 +171,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getItalic() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_italic));}
+  public boolean getItalic() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_italic == null)
+      jcasType.jcas.throwFeatMissing("italic", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_italic);}
     
   /** setter for italic - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setItalic(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_italic), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_italic == null)
+      jcasType.jcas.throwFeatMissing("italic", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_italic, v);}    
    
     
   //*--------------*
@@ -234,16 +193,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSubscript() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_subscript));}
+  public boolean getSubscript() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_subscript == null)
+      jcasType.jcas.throwFeatMissing("subscript", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_subscript);}
     
   /** setter for subscript - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubscript(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_subscript), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_subscript == null)
+      jcasType.jcas.throwFeatMissing("subscript", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_subscript, v);}    
    
     
   //*--------------*
@@ -253,16 +215,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSuperscript() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_superscript));}
+  public boolean getSuperscript() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_superscript == null)
+      jcasType.jcas.throwFeatMissing("superscript", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_superscript);}
     
   /** setter for superscript - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSuperscript(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_superscript), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_superscript == null)
+      jcasType.jcas.throwFeatMissing("superscript", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_superscript, v);}    
    
     
   //*--------------*
@@ -272,16 +237,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSmallcaps() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_smallcaps));}
+  public boolean getSmallcaps() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_smallcaps == null)
+      jcasType.jcas.throwFeatMissing("smallcaps", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_smallcaps);}
     
   /** setter for smallcaps - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSmallcaps(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_smallcaps), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_smallcaps == null)
+      jcasType.jcas.throwFeatMissing("smallcaps", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_smallcaps, v);}    
    
     
   //*--------------*
@@ -291,16 +259,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getUnderline() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_underline));}
+  public boolean getUnderline() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_underline == null)
+      jcasType.jcas.throwFeatMissing("underline", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_underline);}
     
   /** setter for underline - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUnderline(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_underline), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_underline == null)
+      jcasType.jcas.throwFeatMissing("underline", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_underline, v);}    
    
     
   //*--------------*
@@ -310,16 +281,19 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getStrikeout() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_strikeout));}
+  public boolean getStrikeout() {
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_strikeout == null)
+      jcasType.jcas.throwFeatMissing("strikeout", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_strikeout);}
     
   /** setter for strikeout - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setStrikeout(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_strikeout), v);
-  }    
-    
+    if (Format_Type.featOkTst && ((Format_Type)jcasType).casFeat_strikeout == null)
+      jcasType.jcas.throwFeatMissing("strikeout", "org.texttechnologylab.annotation.ocr.abbyy.Format");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Format_Type)jcasType).casFeatCode_strikeout, v);}    
   }
 
     

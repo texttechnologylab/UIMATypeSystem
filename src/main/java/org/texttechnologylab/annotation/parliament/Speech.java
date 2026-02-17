@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliament;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speech extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliament.Speech";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Speech extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_date = "date";
-  public final static String _FeatName_speaker = "speaker";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_date = TypeSystemImpl.createCallSite(Speech.class, "date");
-  private final static MethodHandle _FH_date = _FC_date.dynamicInvoker();
-  private final static CallSite _FC_speaker = TypeSystemImpl.createCallSite(Speech.class, "speaker");
-  private final static MethodHandle _FH_speaker = _FC_speaker.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Speech() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Speech(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Speech(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Speech extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Speech extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getDate() { return _getLongValueNc(wrapGetIntCatchException(_FH_date));}
+  public long getDate() {
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.parliament.Speech");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Speech_Type)jcasType).casFeatCode_date);}
     
   /** setter for date - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDate(long v) {
-    _setLongValueNfc(wrapGetIntCatchException(_FH_date), v);
-  }    
-    
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.parliament.Speech");
+    jcasType.ll_cas.ll_setLongValue(addr, ((Speech_Type)jcasType).casFeatCode_date, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Speech extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Speaker getSpeaker() { return (Speaker)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speaker)));}
+  public Speaker getSpeaker() {
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_speaker == null)
+      jcasType.jcas.throwFeatMissing("speaker", "org.texttechnologylab.annotation.parliament.Speech");
+    return (Speaker)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Speech_Type)jcasType).casFeatCode_speaker)));}
     
   /** setter for speaker - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSpeaker(Speaker v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_speaker), v);
-  }    
-    
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_speaker == null)
+      jcasType.jcas.throwFeatMissing("speaker", "org.texttechnologylab.annotation.parliament.Speech");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Speech_Type)jcasType).casFeatCode_speaker, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

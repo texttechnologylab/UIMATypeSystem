@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntailmentSentence extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.EntailmentSentence";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class EntailmentSentence extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_premise = "premise";
-  public final static String _FeatName_hypothesis = "hypothesis";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_premise = TypeSystemImpl.createCallSite(EntailmentSentence.class, "premise");
-  private final static MethodHandle _FH_premise = _FC_premise.dynamicInvoker();
-  private final static CallSite _FC_hypothesis = TypeSystemImpl.createCallSite(EntailmentSentence.class, "hypothesis");
-  private final static MethodHandle _FH_hypothesis = _FC_hypothesis.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected EntailmentSentence() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public EntailmentSentence(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public EntailmentSentence(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class EntailmentSentence extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -104,16 +72,19 @@ public class EntailmentSentence extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getPremise() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_premise)));}
+  public Annotation getPremise() {
+    if (EntailmentSentence_Type.featOkTst && ((EntailmentSentence_Type)jcasType).casFeat_premise == null)
+      jcasType.jcas.throwFeatMissing("premise", "org.texttechnologylab.annotation.EntailmentSentence");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EntailmentSentence_Type)jcasType).casFeatCode_premise)));}
     
   /** setter for premise - sets premise 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPremise(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_premise), v);
-  }    
-    
+    if (EntailmentSentence_Type.featOkTst && ((EntailmentSentence_Type)jcasType).casFeat_premise == null)
+      jcasType.jcas.throwFeatMissing("premise", "org.texttechnologylab.annotation.EntailmentSentence");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EntailmentSentence_Type)jcasType).casFeatCode_premise, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -123,16 +94,19 @@ public class EntailmentSentence extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getHypothesis() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hypothesis)));}
+  public Annotation getHypothesis() {
+    if (EntailmentSentence_Type.featOkTst && ((EntailmentSentence_Type)jcasType).casFeat_hypothesis == null)
+      jcasType.jcas.throwFeatMissing("hypothesis", "org.texttechnologylab.annotation.EntailmentSentence");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EntailmentSentence_Type)jcasType).casFeatCode_hypothesis)));}
     
   /** setter for hypothesis - sets hypothesis 
    * @generated
    * @param v value to set into the feature 
    */
   public void setHypothesis(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_hypothesis), v);
-  }    
-    
+    if (EntailmentSentence_Type.featOkTst && ((EntailmentSentence_Type)jcasType).casFeat_hypothesis == null)
+      jcasType.jcas.throwFeatMissing("hypothesis", "org.texttechnologylab.annotation.EntailmentSentence");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EntailmentSentence_Type)jcasType).casFeatCode_hypothesis, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

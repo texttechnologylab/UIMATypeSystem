@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Wikify extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.Wikify";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class Wikify extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_title = "title";
-  public final static String _FeatName_link = "link";
-  public final static String _FeatName_elements = "elements";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_title = TypeSystemImpl.createCallSite(Wikify.class, "title");
-  private final static MethodHandle _FH_title = _FC_title.dynamicInvoker();
-  private final static CallSite _FC_link = TypeSystemImpl.createCallSite(Wikify.class, "link");
-  private final static MethodHandle _FH_link = _FC_link.dynamicInvoker();
-  private final static CallSite _FC_elements = TypeSystemImpl.createCallSite(Wikify.class, "elements");
-  private final static MethodHandle _FH_elements = _FC_elements.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Wikify() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Wikify(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Wikify(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class Wikify extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class Wikify extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
+  public String getTitle() {
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.hucompute.textimager.uima.type.Wikify");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Wikify_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets start and end of the objects 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
-  }    
-    
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.hucompute.textimager.uima.type.Wikify");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Wikify_Type)jcasType).casFeatCode_title, v);}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class Wikify extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLink() { return _getStringValueNc(wrapGetIntCatchException(_FH_link));}
+  public String getLink() {
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.hucompute.textimager.uima.type.Wikify");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Wikify_Type)jcasType).casFeatCode_link);}
     
   /** setter for link - sets start and end of the objects 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLink(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_link), v);
-  }    
-    
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.hucompute.textimager.uima.type.Wikify");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Wikify_Type)jcasType).casFeatCode_link, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class Wikify extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getElements() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));}
+  public FSArray getElements() {
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.hucompute.textimager.uima.type.Wikify");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements)));}
     
   /** setter for elements - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setElements(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
-  }    
-    
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.hucompute.textimager.uima.type.Wikify");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for elements - gets an indexed value - 
    * @generated
@@ -174,16 +148,21 @@ public class Wikify extends Annotation {
    * @return value of the element at index i 
    */
   public Annotation getElements(int i) {
-     return (Annotation)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));} 
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.hucompute.textimager.uima.type.Wikify");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements), i);
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements), i)));}
 
   /** indexed setter for elements - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setElements(int i, Annotation v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).set(i, v);
-  }  
+  public void setElements(int i, Annotation v) { 
+    if (Wikify_Type.featOkTst && ((Wikify_Type)jcasType).casFeat_elements == null)
+      jcasType.jcas.throwFeatMissing("elements", "org.hucompute.textimager.uima.type.Wikify");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Wikify_Type)jcasType).casFeatCode_elements), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

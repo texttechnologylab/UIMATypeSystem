@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntailmentGPT extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.EntailmentGPT";
-  
   /** @generated
    * @ordered 
    */
@@ -47,42 +32,17 @@ public class EntailmentGPT extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_reference = "reference";
-  public final static String _FeatName_Label = "Label";
-  public final static String _FeatName_Confidence = "Confidence";
-  public final static String _FeatName_Reason = "Reason";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(EntailmentGPT.class, "reference");
-  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
-  private final static CallSite _FC_Label = TypeSystemImpl.createCallSite(EntailmentGPT.class, "Label");
-  private final static MethodHandle _FH_Label = _FC_Label.dynamicInvoker();
-  private final static CallSite _FC_Confidence = TypeSystemImpl.createCallSite(EntailmentGPT.class, "Confidence");
-  private final static MethodHandle _FH_Confidence = _FC_Confidence.dynamicInvoker();
-  private final static CallSite _FC_Reason = TypeSystemImpl.createCallSite(EntailmentGPT.class, "Reason");
-  private final static MethodHandle _FH_Reason = _FC_Reason.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(EntailmentGPT.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected EntailmentGPT() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public EntailmentGPT(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public EntailmentGPT(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -93,7 +53,6 @@ public class EntailmentGPT extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -113,16 +72,19 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public EntailmentSentence getReference() { return (EntailmentSentence)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
+  public EntailmentSentence getReference() {
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.EntailmentGPT");
+    return (EntailmentSentence)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets Entailment reference 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(EntailmentSentence v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.EntailmentGPT");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -132,16 +94,19 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_Label));}
+  public String getLabel() {
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Label == null)
+      jcasType.jcas.throwFeatMissing("Label", "org.texttechnologylab.annotation.EntailmentGPT");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Label);}
     
   /** setter for Label - sets Label entailment or contradiction 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Label), v);
-  }    
-    
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Label == null)
+      jcasType.jcas.throwFeatMissing("Label", "org.texttechnologylab.annotation.EntailmentGPT");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Label, v);}    
    
     
   //*--------------*
@@ -151,16 +116,19 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Confidence));}
+  public double getConfidence() {
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Confidence == null)
+      jcasType.jcas.throwFeatMissing("Confidence", "org.texttechnologylab.annotation.EntailmentGPT");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Confidence);}
     
   /** setter for Confidence - sets Confidence value 
    * @generated
    * @param v value to set into the feature 
    */
   public void setConfidence(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Confidence), v);
-  }    
-    
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Confidence == null)
+      jcasType.jcas.throwFeatMissing("Confidence", "org.texttechnologylab.annotation.EntailmentGPT");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Confidence, v);}    
    
     
   //*--------------*
@@ -170,16 +138,19 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));}
+  public String getReason() {
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.EntailmentGPT");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Reason);}
     
   /** setter for Reason - sets Reason for the decision 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReason(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Reason), v);
-  }    
-    
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.EntailmentGPT");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_Reason, v);}    
    
     
   //*--------------*
@@ -189,16 +160,19 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.EntailmentGPT");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (EntailmentGPT_Type.featOkTst && ((EntailmentGPT_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.EntailmentGPT");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EntailmentGPT_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

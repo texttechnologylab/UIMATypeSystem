@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** One Claim for different facts
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Claim extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Claim";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class Claim extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_Facts = "Facts";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Claim.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_Facts = TypeSystemImpl.createCallSite(Claim.class, "Facts");
-  private final static MethodHandle _FH_Facts = _FC_Facts.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Claim() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Claim(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Claim(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class Claim extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -116,16 +84,19 @@ public class Claim extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.Claim");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Claim_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets Information of Claim 
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.Claim");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Claim_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -135,16 +106,19 @@ public class Claim extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getFacts() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)));}
+  public FSArray getFacts() {
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_Facts == null)
+      jcasType.jcas.throwFeatMissing("Facts", "org.texttechnologylab.annotation.Claim");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts)));}
     
   /** setter for Facts - sets Set of Fact 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFacts(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Facts), v);
-  }    
-    
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_Facts == null)
+      jcasType.jcas.throwFeatMissing("Facts", "org.texttechnologylab.annotation.Claim");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for Facts - gets an indexed value - Set of Fact
    * @generated
@@ -152,16 +126,21 @@ public class Claim extends Annotation {
    * @return value of the element at index i 
    */
   public Fact getFacts(int i) {
-     return (Fact)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).get(i));} 
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_Facts == null)
+      jcasType.jcas.throwFeatMissing("Facts", "org.texttechnologylab.annotation.Claim");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts), i);
+    return (Fact)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts), i)));}
 
   /** indexed setter for Facts - sets an indexed value - Set of Fact
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setFacts(int i, Fact v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).set(i, v);
-  }  
+  public void setFacts(int i, Fact v) { 
+    if (Claim_Type.featOkTst && ((Claim_Type)jcasType).casFeat_Facts == null)
+      jcasType.jcas.throwFeatMissing("Facts", "org.texttechnologylab.annotation.Claim");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Claim_Type)jcasType).casFeatCode_Facts), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

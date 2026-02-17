@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type.segmentation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Div extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.segmentation.Div";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class Div extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_typ = "typ";
-  public final static String _FeatName_id = "id";
-  public final static String _FeatName_section = "section";
-  public final static String _FeatName_user = "user";
-  public final static String _FeatName_timestamp = "timestamp";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_typ = TypeSystemImpl.createCallSite(Div.class, "typ");
-  private final static MethodHandle _FH_typ = _FC_typ.dynamicInvoker();
-  private final static CallSite _FC_id = TypeSystemImpl.createCallSite(Div.class, "id");
-  private final static MethodHandle _FH_id = _FC_id.dynamicInvoker();
-  private final static CallSite _FC_section = TypeSystemImpl.createCallSite(Div.class, "section");
-  private final static MethodHandle _FH_section = _FC_section.dynamicInvoker();
-  private final static CallSite _FC_user = TypeSystemImpl.createCallSite(Div.class, "user");
-  private final static MethodHandle _FH_user = _FC_user.dynamicInvoker();
-  private final static CallSite _FC_timestamp = TypeSystemImpl.createCallSite(Div.class, "timestamp");
-  private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Div() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Div(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Div(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class Div extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -124,16 +83,19 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTyp() { return _getStringValueNc(wrapGetIntCatchException(_FH_typ));}
+  public String getTyp() {
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_typ == null)
+      jcasType.jcas.throwFeatMissing("typ", "org.hucompute.textimager.uima.type.segmentation.Div");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Div_Type)jcasType).casFeatCode_typ);}
     
   /** setter for typ - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTyp(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_typ), v);
-  }    
-    
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_typ == null)
+      jcasType.jcas.throwFeatMissing("typ", "org.hucompute.textimager.uima.type.segmentation.Div");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Div_Type)jcasType).casFeatCode_typ, v);}    
    
     
   //*--------------*
@@ -143,16 +105,19 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
+  public String getId() {
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.hucompute.textimager.uima.type.segmentation.Div");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Div_Type)jcasType).casFeatCode_id);}
     
   /** setter for id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_id), v);
-  }    
-    
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.hucompute.textimager.uima.type.segmentation.Div");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Div_Type)jcasType).casFeatCode_id, v);}    
    
     
   //*--------------*
@@ -162,16 +127,19 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSection() { return _getStringValueNc(wrapGetIntCatchException(_FH_section));}
+  public String getSection() {
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_section == null)
+      jcasType.jcas.throwFeatMissing("section", "org.hucompute.textimager.uima.type.segmentation.Div");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Div_Type)jcasType).casFeatCode_section);}
     
   /** setter for section - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSection(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_section), v);
-  }    
-    
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_section == null)
+      jcasType.jcas.throwFeatMissing("section", "org.hucompute.textimager.uima.type.segmentation.Div");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Div_Type)jcasType).casFeatCode_section, v);}    
    
     
   //*--------------*
@@ -181,16 +149,19 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
+  public String getUser() {
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.hucompute.textimager.uima.type.segmentation.Div");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Div_Type)jcasType).casFeatCode_user);}
     
   /** setter for user - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUser(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_user), v);
-  }    
-    
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_user == null)
+      jcasType.jcas.throwFeatMissing("user", "org.hucompute.textimager.uima.type.segmentation.Div");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Div_Type)jcasType).casFeatCode_user, v);}    
    
     
   //*--------------*
@@ -200,16 +171,19 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimestamp() { return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));}
+  public String getTimestamp() {
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.hucompute.textimager.uima.type.segmentation.Div");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Div_Type)jcasType).casFeatCode_timestamp);}
     
   /** setter for timestamp - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimestamp(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }    
-    
+    if (Div_Type.featOkTst && ((Div_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.hucompute.textimager.uima.type.segmentation.Div");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Div_Type)jcasType).casFeatCode_timestamp, v);}    
   }
 
     

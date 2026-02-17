@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Link extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isobase.Link";
-  
   /** @generated
    * @ordered 
    */
@@ -46,42 +31,17 @@ public class Link extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_comment = "comment";
-  public final static String _FeatName_figure = "figure";
-  public final static String _FeatName_ground = "ground";
-  public final static String _FeatName_trigger = "trigger";
-  public final static String _FeatName_rel_type = "rel_type";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(Link.class, "comment");
-  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
-  private final static CallSite _FC_figure = TypeSystemImpl.createCallSite(Link.class, "figure");
-  private final static MethodHandle _FH_figure = _FC_figure.dynamicInvoker();
-  private final static CallSite _FC_ground = TypeSystemImpl.createCallSite(Link.class, "ground");
-  private final static MethodHandle _FH_ground = _FC_ground.dynamicInvoker();
-  private final static CallSite _FC_trigger = TypeSystemImpl.createCallSite(Link.class, "trigger");
-  private final static MethodHandle _FH_trigger = _FC_trigger.dynamicInvoker();
-  private final static CallSite _FC_rel_type = TypeSystemImpl.createCallSite(Link.class, "rel_type");
-  private final static MethodHandle _FH_rel_type = _FC_rel_type.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Link() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Link(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Link(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -92,7 +52,6 @@ public class Link extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -112,16 +71,19 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
+  public String getComment() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Link_Type)jcasType).casFeatCode_comment);}
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Link_Type)jcasType).casFeatCode_comment, v);}    
    
     
   //*--------------*
@@ -131,16 +93,19 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getFigure() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_figure)));}
+  public Entity getFigure() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_figure == null)
+      jcasType.jcas.throwFeatMissing("figure", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Link_Type)jcasType).casFeatCode_figure)));}
     
   /** setter for figure - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFigure(Entity v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_figure), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_figure == null)
+      jcasType.jcas.throwFeatMissing("figure", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Link_Type)jcasType).casFeatCode_figure, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -150,16 +115,19 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getGround() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ground)));}
+  public Entity getGround() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_ground == null)
+      jcasType.jcas.throwFeatMissing("ground", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Link_Type)jcasType).casFeatCode_ground)));}
     
   /** setter for ground - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGround(Entity v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_ground), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_ground == null)
+      jcasType.jcas.throwFeatMissing("ground", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Link_Type)jcasType).casFeatCode_ground, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -169,16 +137,19 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getTrigger() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));}
+  public Entity getTrigger() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_trigger == null)
+      jcasType.jcas.throwFeatMissing("trigger", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    return (Entity)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Link_Type)jcasType).casFeatCode_trigger)));}
     
   /** setter for trigger - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTrigger(Entity v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_trigger), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_trigger == null)
+      jcasType.jcas.throwFeatMissing("trigger", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Link_Type)jcasType).casFeatCode_trigger, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -188,16 +159,19 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getRel_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_rel_type));}
+  public String getRel_type() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_rel_type == null)
+      jcasType.jcas.throwFeatMissing("rel_type", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Link_Type)jcasType).casFeatCode_rel_type);}
     
   /** setter for rel_type - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRel_type(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_rel_type), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_rel_type == null)
+      jcasType.jcas.throwFeatMissing("rel_type", "org.texttechnologylab.annotation.semaf.isobase.Link");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Link_Type)jcasType).casFeatCode_rel_type, v);}    
   }
 
     

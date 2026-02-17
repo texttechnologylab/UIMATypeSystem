@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Hate Output
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Hate extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Hate";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class Hate extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Hate = "Hate";
-  public final static String _FeatName_NonHate = "NonHate";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Hate = TypeSystemImpl.createCallSite(Hate.class, "Hate");
-  private final static MethodHandle _FH_Hate = _FC_Hate.dynamicInvoker();
-  private final static CallSite _FC_NonHate = TypeSystemImpl.createCallSite(Hate.class, "NonHate");
-  private final static MethodHandle _FH_NonHate = _FC_NonHate.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(Hate.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Hate() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Hate(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Hate(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class Hate extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class Hate extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getHate() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Hate));}
+  public double getHate() {
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_Hate == null)
+      jcasType.jcas.throwFeatMissing("Hate", "org.texttechnologylab.annotation.Hate");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Hate_Type)jcasType).casFeatCode_Hate);}
     
   /** setter for Hate - sets Probability of Hate 
    * @generated
    * @param v value to set into the feature 
    */
   public void setHate(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Hate), v);
-  }    
-    
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_Hate == null)
+      jcasType.jcas.throwFeatMissing("Hate", "org.texttechnologylab.annotation.Hate");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Hate_Type)jcasType).casFeatCode_Hate, v);}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class Hate extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getNonHate() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_NonHate));}
+  public double getNonHate() {
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_NonHate == null)
+      jcasType.jcas.throwFeatMissing("NonHate", "org.texttechnologylab.annotation.Hate");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Hate_Type)jcasType).casFeatCode_NonHate);}
     
   /** setter for NonHate - sets Probability of not Hate 
    * @generated
    * @param v value to set into the feature 
    */
   public void setNonHate(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_NonHate), v);
-  }    
-    
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_NonHate == null)
+      jcasType.jcas.throwFeatMissing("NonHate", "org.texttechnologylab.annotation.Hate");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Hate_Type)jcasType).casFeatCode_NonHate, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class Hate extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Hate");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Hate_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (Hate_Type.featOkTst && ((Hate_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Hate");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Hate_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Agenda extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.Agenda";
-  
   /** @generated
    * @ordered 
    */
@@ -47,39 +32,17 @@ public class Agenda extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_title = "title";
-  public final static String _FeatName_index = "index";
-  public final static String _FeatName_speeches = "speeches";
-  public final static String _FeatName_protocol = "protocol";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_title = TypeSystemImpl.createCallSite(Agenda.class, "title");
-  private final static MethodHandle _FH_title = _FC_title.dynamicInvoker();
-  private final static CallSite _FC_index = TypeSystemImpl.createCallSite(Agenda.class, "index");
-  private final static MethodHandle _FH_index = _FC_index.dynamicInvoker();
-  private final static CallSite _FC_speeches = TypeSystemImpl.createCallSite(Agenda.class, "speeches");
-  private final static MethodHandle _FH_speeches = _FC_speeches.dynamicInvoker();
-  private final static CallSite _FC_protocol = TypeSystemImpl.createCallSite(Agenda.class, "protocol");
-  private final static MethodHandle _FH_protocol = _FC_protocol.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Agenda() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Agenda(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Agenda(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -90,7 +53,6 @@ public class Agenda extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -122,16 +84,19 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
+  public String getTitle() {
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Agenda_Type)jcasType).casFeatCode_title);}
     
   /** setter for title - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_title), v);
-  }    
-    
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_title == null)
+      jcasType.jcas.throwFeatMissing("title", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Agenda_Type)jcasType).casFeatCode_title, v);}    
    
     
   //*--------------*
@@ -141,16 +106,19 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
+  public int getIndex() {
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Agenda_Type)jcasType).casFeatCode_index);}
     
   /** setter for index - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIndex(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_index), v);
-  }    
-    
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Agenda_Type)jcasType).casFeatCode_index, v);}    
    
     
   //*--------------*
@@ -160,16 +128,19 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSList getSpeeches() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speeches)));}
+  public FSList getSpeeches() {
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_speeches == null)
+      jcasType.jcas.throwFeatMissing("speeches", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Agenda_Type)jcasType).casFeatCode_speeches)));}
     
   /** setter for speeches - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSpeeches(FSList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_speeches), v);
-  }    
-    
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_speeches == null)
+      jcasType.jcas.throwFeatMissing("speeches", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Agenda_Type)jcasType).casFeatCode_speeches, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -179,16 +150,19 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Protocol getProtocol() { return (Protocol)(_getFeatureValueNc(wrapGetIntCatchException(_FH_protocol)));}
+  public Protocol getProtocol() {
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_protocol == null)
+      jcasType.jcas.throwFeatMissing("protocol", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    return (Protocol)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Agenda_Type)jcasType).casFeatCode_protocol)));}
     
   /** setter for protocol - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setProtocol(Protocol v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_protocol), v);
-  }    
-    
+    if (Agenda_Type.featOkTst && ((Agenda_Type)jcasType).casFeat_protocol == null)
+      jcasType.jcas.throwFeatMissing("protocol", "org.texttechnologylab.annotation.parliamentary.Agenda");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Agenda_Type)jcasType).casFeatCode_protocol, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

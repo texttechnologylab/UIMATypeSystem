@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Sentiment extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.Sentiment";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Sentiment extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_sentiment = "sentiment";
-  public final static String _FeatName_subjectivity = "subjectivity";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_sentiment = TypeSystemImpl.createCallSite(Sentiment.class, "sentiment");
-  private final static MethodHandle _FH_sentiment = _FC_sentiment.dynamicInvoker();
-  private final static CallSite _FC_subjectivity = TypeSystemImpl.createCallSite(Sentiment.class, "subjectivity");
-  private final static MethodHandle _FH_subjectivity = _FC_subjectivity.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Sentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Sentiment(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Sentiment(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Sentiment extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Sentiment extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSentiment() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_sentiment));}
+  public double getSentiment() {
+    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_sentiment == null)
+      jcasType.jcas.throwFeatMissing("sentiment", "org.hucompute.textimager.uima.type.Sentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_sentiment);}
     
   /** setter for sentiment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSentiment(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_sentiment), v);
-  }    
-    
+    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_sentiment == null)
+      jcasType.jcas.throwFeatMissing("sentiment", "org.hucompute.textimager.uima.type.Sentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_sentiment, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Sentiment extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSubjectivity() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_subjectivity));}
+  public double getSubjectivity() {
+    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_subjectivity == null)
+      jcasType.jcas.throwFeatMissing("subjectivity", "org.hucompute.textimager.uima.type.Sentiment");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_subjectivity);}
     
   /** setter for subjectivity - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubjectivity(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_subjectivity), v);
-  }    
-    
+    if (Sentiment_Type.featOkTst && ((Sentiment_Type)jcasType).casFeat_subjectivity == null)
+      jcasType.jcas.throwFeatMissing("subjectivity", "org.hucompute.textimager.uima.type.Sentiment");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Sentiment_Type)jcasType).casFeatCode_subjectivity, v);}    
   }
 
     

@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.duui;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** <p>ReproducibleAnnotation stores the information about a composer pipeline component in compressed form.
                 The reproducibility mainly stems from the strict naming of docker containers.</p>
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReproducibleAnnotation extends TOP {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.duui.ReproducibleAnnotation";
-  
   /** @generated
    * @ordered 
    */
@@ -47,39 +32,17 @@ public class ReproducibleAnnotation extends TOP {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_timestamp = "timestamp";
-  public final static String _FeatName_pipelineName = "pipelineName";
-  public final static String _FeatName_description = "description";
-  public final static String _FeatName_compression = "compression";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_timestamp = TypeSystemImpl.createCallSite(ReproducibleAnnotation.class, "timestamp");
-  private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
-  private final static CallSite _FC_pipelineName = TypeSystemImpl.createCallSite(ReproducibleAnnotation.class, "pipelineName");
-  private final static MethodHandle _FH_pipelineName = _FC_pipelineName.dynamicInvoker();
-  private final static CallSite _FC_description = TypeSystemImpl.createCallSite(ReproducibleAnnotation.class, "description");
-  private final static MethodHandle _FH_description = _FC_description.dynamicInvoker();
-  private final static CallSite _FC_compression = TypeSystemImpl.createCallSite(ReproducibleAnnotation.class, "compression");
-  private final static MethodHandle _FH_compression = _FC_compression.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ReproducibleAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ReproducibleAnnotation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ReproducibleAnnotation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -90,7 +53,6 @@ public class ReproducibleAnnotation extends TOP {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -110,16 +72,19 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public long getTimestamp() { return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));}
+  public long getTimestamp() {
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_timestamp);}
     
   /** setter for timestamp - sets The timestamp at which this annotation was added, this is important for chronological ordering. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimestamp(long v) {
-    _setLongValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }    
-    
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    jcasType.ll_cas.ll_setLongValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_timestamp, v);}    
    
     
   //*--------------*
@@ -129,16 +94,19 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getPipelineName() { return _getStringValueNc(wrapGetIntCatchException(_FH_pipelineName));}
+  public String getPipelineName() {
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_pipelineName == null)
+      jcasType.jcas.throwFeatMissing("pipelineName", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_pipelineName);}
     
   /** setter for pipelineName - sets Stores the pipeline name, this can be a good way to later group the analysis engines from one pipeline run 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPipelineName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pipelineName), v);
-  }    
-    
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_pipelineName == null)
+      jcasType.jcas.throwFeatMissing("pipelineName", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_pipelineName, v);}    
    
     
   //*--------------*
@@ -148,16 +116,19 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
+  public String getDescription() {
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_description == null)
+      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_description);}
     
   /** setter for description - sets Stores the actual information about the component, most of the time in compressed format with Base85 encoded. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDescription(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_description), v);
-  }    
-    
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_description == null)
+      jcasType.jcas.throwFeatMissing("description", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_description, v);}    
    
     
   //*--------------*
@@ -169,7 +140,10 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getCompression() { return _getStringValueNc(wrapGetIntCatchException(_FH_compression));}
+  public String getCompression() {
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_compression == null)
+      jcasType.jcas.throwFeatMissing("compression", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_compression);}
     
   /** setter for compression - sets The compression used to compress the description, since the compression of the description
                         happens at initialization time it is most of the time wise to use a compression method with a higher compression
@@ -178,9 +152,9 @@ public class ReproducibleAnnotation extends TOP {
    * @param v value to set into the feature 
    */
   public void setCompression(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_compression), v);
-  }    
-    
+    if (ReproducibleAnnotation_Type.featOkTst && ((ReproducibleAnnotation_Type)jcasType).casFeat_compression == null)
+      jcasType.jcas.throwFeatMissing("compression", "org.texttechnologylab.duui.ReproducibleAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReproducibleAnnotation_Type)jcasType).casFeatCode_compression, v);}    
   }
 
     

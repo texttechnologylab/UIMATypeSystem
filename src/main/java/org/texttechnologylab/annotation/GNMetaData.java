@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GNMetaData extends MetaData {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.GNMetaData";
-  
   /** @generated
    * @ordered 
    */
@@ -45,51 +30,17 @@ public class GNMetaData extends MetaData {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_date = "date";
-  public final static String _FeatName_version = "version";
-  public final static String _FeatName_withAllMatches = "withAllMatches";
-  public final static String _FeatName_withAmbiguousNames = "withAmbiguousNames";
-  public final static String _FeatName_withBayes = "withBayes";
-  public final static String _FeatName_wihUniqueNames = "wihUniqueNames";
-  public final static String _FeatName_withOddsAdjustment = "withOddsAdjustment";
-  public final static String _FeatName_withSources = "withSources";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_date = TypeSystemImpl.createCallSite(GNMetaData.class, "date");
-  private final static MethodHandle _FH_date = _FC_date.dynamicInvoker();
-  private final static CallSite _FC_version = TypeSystemImpl.createCallSite(GNMetaData.class, "version");
-  private final static MethodHandle _FH_version = _FC_version.dynamicInvoker();
-  private final static CallSite _FC_withAllMatches = TypeSystemImpl.createCallSite(GNMetaData.class, "withAllMatches");
-  private final static MethodHandle _FH_withAllMatches = _FC_withAllMatches.dynamicInvoker();
-  private final static CallSite _FC_withAmbiguousNames = TypeSystemImpl.createCallSite(GNMetaData.class, "withAmbiguousNames");
-  private final static MethodHandle _FH_withAmbiguousNames = _FC_withAmbiguousNames.dynamicInvoker();
-  private final static CallSite _FC_withBayes = TypeSystemImpl.createCallSite(GNMetaData.class, "withBayes");
-  private final static MethodHandle _FH_withBayes = _FC_withBayes.dynamicInvoker();
-  private final static CallSite _FC_wihUniqueNames = TypeSystemImpl.createCallSite(GNMetaData.class, "wihUniqueNames");
-  private final static MethodHandle _FH_wihUniqueNames = _FC_wihUniqueNames.dynamicInvoker();
-  private final static CallSite _FC_withOddsAdjustment = TypeSystemImpl.createCallSite(GNMetaData.class, "withOddsAdjustment");
-  private final static MethodHandle _FH_withOddsAdjustment = _FC_withOddsAdjustment.dynamicInvoker();
-  private final static CallSite _FC_withSources = TypeSystemImpl.createCallSite(GNMetaData.class, "withSources");
-  private final static MethodHandle _FH_withSources = _FC_withSources.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected GNMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public GNMetaData(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public GNMetaData(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -100,7 +51,6 @@ public class GNMetaData extends MetaData {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -132,16 +82,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_date));}
+  public String getDate() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_date);}
     
   /** setter for date - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDate(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_date), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_date == null)
+      jcasType.jcas.throwFeatMissing("date", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_date, v);}    
    
     
   //*--------------*
@@ -151,16 +104,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
+  public String getVersion() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_version);}
     
   /** setter for version - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setVersion(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_version), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_version == null)
+      jcasType.jcas.throwFeatMissing("version", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_version, v);}    
    
     
   //*--------------*
@@ -170,16 +126,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithAllMatches() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAllMatches));}
+  public boolean getWithAllMatches() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withAllMatches == null)
+      jcasType.jcas.throwFeatMissing("withAllMatches", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withAllMatches);}
     
   /** setter for withAllMatches - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWithAllMatches(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAllMatches), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withAllMatches == null)
+      jcasType.jcas.throwFeatMissing("withAllMatches", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withAllMatches, v);}    
    
     
   //*--------------*
@@ -189,16 +148,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithAmbiguousNames() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAmbiguousNames));}
+  public boolean getWithAmbiguousNames() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withAmbiguousNames == null)
+      jcasType.jcas.throwFeatMissing("withAmbiguousNames", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withAmbiguousNames);}
     
   /** setter for withAmbiguousNames - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWithAmbiguousNames(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_withAmbiguousNames), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withAmbiguousNames == null)
+      jcasType.jcas.throwFeatMissing("withAmbiguousNames", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withAmbiguousNames, v);}    
    
     
   //*--------------*
@@ -208,16 +170,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithBayes() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withBayes));}
+  public boolean getWithBayes() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withBayes == null)
+      jcasType.jcas.throwFeatMissing("withBayes", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withBayes);}
     
   /** setter for withBayes - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWithBayes(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_withBayes), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withBayes == null)
+      jcasType.jcas.throwFeatMissing("withBayes", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withBayes, v);}    
    
     
   //*--------------*
@@ -227,16 +192,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWihUniqueNames() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_wihUniqueNames));}
+  public boolean getWihUniqueNames() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_wihUniqueNames == null)
+      jcasType.jcas.throwFeatMissing("wihUniqueNames", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_wihUniqueNames);}
     
   /** setter for wihUniqueNames - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWihUniqueNames(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_wihUniqueNames), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_wihUniqueNames == null)
+      jcasType.jcas.throwFeatMissing("wihUniqueNames", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_wihUniqueNames, v);}    
    
     
   //*--------------*
@@ -246,16 +214,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithOddsAdjustment() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withOddsAdjustment));}
+  public boolean getWithOddsAdjustment() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withOddsAdjustment == null)
+      jcasType.jcas.throwFeatMissing("withOddsAdjustment", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withOddsAdjustment);}
     
   /** setter for withOddsAdjustment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWithOddsAdjustment(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_withOddsAdjustment), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withOddsAdjustment == null)
+      jcasType.jcas.throwFeatMissing("withOddsAdjustment", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withOddsAdjustment, v);}    
    
     
   //*--------------*
@@ -265,16 +236,19 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getWithSources() { return _getStringValueNc(wrapGetIntCatchException(_FH_withSources));}
+  public String getWithSources() {
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withSources == null)
+      jcasType.jcas.throwFeatMissing("withSources", "org.texttechnologylab.annotation.GNMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withSources);}
     
   /** setter for withSources - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWithSources(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_withSources), v);
-  }    
-    
+    if (GNMetaData_Type.featOkTst && ((GNMetaData_Type)jcasType).casFeat_withSources == null)
+      jcasType.jcas.throwFeatMissing("withSources", "org.texttechnologylab.annotation.GNMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GNMetaData_Type)jcasType).casFeatCode_withSources, v);}    
   }
 
     

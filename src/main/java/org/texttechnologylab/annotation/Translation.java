@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 
 
 /** Summary of input text
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Translation extends Language {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Translation";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class Translation extends Language {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_context = "context";
-  public final static String _FeatName_Reference = "Reference";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_context = TypeSystemImpl.createCallSite(Translation.class, "context");
-  private final static MethodHandle _FH_context = _FC_context.dynamicInvoker();
-  private final static CallSite _FC_Reference = TypeSystemImpl.createCallSite(Translation.class, "Reference");
-  private final static MethodHandle _FH_Reference = _FC_Reference.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(Translation.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Translation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Translation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Translation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class Translation extends Language {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class Translation extends Language {
    * @generated
    * @return value of the feature 
    */
-  public String getContext() { return _getStringValueNc(wrapGetIntCatchException(_FH_context));}
+  public String getContext() {
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_context == null)
+      jcasType.jcas.throwFeatMissing("context", "org.texttechnologylab.annotation.Translation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Translation_Type)jcasType).casFeatCode_context);}
     
   /** setter for context - sets Translated Text 
    * @generated
    * @param v value to set into the feature 
    */
   public void setContext(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_context), v);
-  }    
-    
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_context == null)
+      jcasType.jcas.throwFeatMissing("context", "org.texttechnologylab.annotation.Translation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Translation_Type)jcasType).casFeatCode_context, v);}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class Translation extends Language {
    * @generated
    * @return value of the feature 
    */
-  public Language getReference() { return (Language)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Reference)));}
+  public Language getReference() {
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_Reference == null)
+      jcasType.jcas.throwFeatMissing("Reference", "org.texttechnologylab.annotation.Translation");
+    return (Language)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Translation_Type)jcasType).casFeatCode_Reference)));}
     
   /** setter for Reference - sets Reference to given Input Language Annotation 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(Language v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Reference), v);
-  }    
-    
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_Reference == null)
+      jcasType.jcas.throwFeatMissing("Reference", "org.texttechnologylab.annotation.Translation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Translation_Type)jcasType).casFeatCode_Reference, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -156,16 +127,19 @@ public class Translation extends Language {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Translation");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Translation_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (Translation_Type.featOkTst && ((Translation_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Translation");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Translation_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

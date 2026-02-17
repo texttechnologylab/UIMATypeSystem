@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Coreference extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Coreference";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class Coreference extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_link = "link";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_link = TypeSystemImpl.createCallSite(Coreference.class, "link");
-  private final static MethodHandle _FH_link = _FC_link.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Coreference() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Coreference(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Coreference(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class Coreference extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -112,16 +83,19 @@ public class Coreference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Coreference getLink() { return (Coreference)(_getFeatureValueNc(wrapGetIntCatchException(_FH_link)));}
+  public Coreference getLink() {
+    if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    return (Coreference)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link)));}
     
   /** setter for link - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLink(Coreference v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_link), v);
-  }    
-    
+    if (Coreference_Type.featOkTst && ((Coreference_Type)jcasType).casFeat_link == null)
+      jcasType.jcas.throwFeatMissing("link", "org.texttechnologylab.annotation.Coreference");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Coreference_Type)jcasType).casFeatCode_link, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

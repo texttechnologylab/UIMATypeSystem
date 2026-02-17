@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for LLM with the input text. The user Prompt is mandatory, if not set, the LLM will not be called.
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMPrompt extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.LLMPrompt";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class LLMPrompt extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_prompt = "prompt";
-  public final static String _FeatName_prefix = "prefix";
-  public final static String _FeatName_suffix = "suffix";
-  public final static String _FeatName_systemPrompt = "systemPrompt";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_prompt = TypeSystemImpl.createCallSite(LLMPrompt.class, "prompt");
-  private final static MethodHandle _FH_prompt = _FC_prompt.dynamicInvoker();
-  private final static CallSite _FC_prefix = TypeSystemImpl.createCallSite(LLMPrompt.class, "prefix");
-  private final static MethodHandle _FH_prefix = _FC_prefix.dynamicInvoker();
-  private final static CallSite _FC_suffix = TypeSystemImpl.createCallSite(LLMPrompt.class, "suffix");
-  private final static MethodHandle _FH_suffix = _FC_suffix.dynamicInvoker();
-  private final static CallSite _FC_systemPrompt = TypeSystemImpl.createCallSite(LLMPrompt.class, "systemPrompt");
-  private final static MethodHandle _FH_systemPrompt = _FC_systemPrompt.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected LLMPrompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public LLMPrompt(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public LLMPrompt(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class LLMPrompt extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPrompt() { return _getStringValueNc(wrapGetIntCatchException(_FH_prompt));}
+  public String getPrompt() {
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_prompt == null)
+      jcasType.jcas.throwFeatMissing("prompt", "org.texttechnologylab.type.LLMPrompt");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_prompt);}
     
   /** setter for prompt - sets Prompt for LLM 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPrompt(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_prompt), v);
-  }    
-    
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_prompt == null)
+      jcasType.jcas.throwFeatMissing("prompt", "org.texttechnologylab.type.LLMPrompt");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_prompt, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMPrefixPrompt getPrefix() { return (LLMPrefixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prefix)));}
+  public LLMPrefixPrompt getPrefix() {
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_prefix == null)
+      jcasType.jcas.throwFeatMissing("prefix", "org.texttechnologylab.type.LLMPrompt");
+    return (LLMPrefixPrompt)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_prefix)));}
     
   /** setter for prefix - sets Prefix of the Prompt 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPrefix(LLMPrefixPrompt v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_prefix), v);
-  }    
-    
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_prefix == null)
+      jcasType.jcas.throwFeatMissing("prefix", "org.texttechnologylab.type.LLMPrompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_prefix, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMSuffixPrompt getSuffix() { return (LLMSuffixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_suffix)));}
+  public LLMSuffixPrompt getSuffix() {
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_suffix == null)
+      jcasType.jcas.throwFeatMissing("suffix", "org.texttechnologylab.type.LLMPrompt");
+    return (LLMSuffixPrompt)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_suffix)));}
     
   /** setter for suffix - sets Suffix after the Prompt for the LLM 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSuffix(LLMSuffixPrompt v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_suffix), v);
-  }    
-    
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_suffix == null)
+      jcasType.jcas.throwFeatMissing("suffix", "org.texttechnologylab.type.LLMPrompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_suffix, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMSystemPrompt getSystemPrompt() { return (LLMSystemPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_systemPrompt)));}
+  public LLMSystemPrompt getSystemPrompt() {
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_systemPrompt == null)
+      jcasType.jcas.throwFeatMissing("systemPrompt", "org.texttechnologylab.type.LLMPrompt");
+    return (LLMSystemPrompt)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_systemPrompt)));}
     
   /** setter for systemPrompt - sets System Prompt for LLM 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSystemPrompt(LLMSystemPrompt v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_systemPrompt), v);
-  }    
-    
+    if (LLMPrompt_Type.featOkTst && ((LLMPrompt_Type)jcasType).casFeat_systemPrompt == null)
+      jcasType.jcas.throwFeatMissing("systemPrompt", "org.texttechnologylab.type.LLMPrompt");
+    jcasType.ll_cas.ll_setRefValue(addr, ((LLMPrompt_Type)jcasType).casFeatCode_systemPrompt, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

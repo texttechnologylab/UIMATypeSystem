@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Essay Score Output
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EssayScore extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.EssayScore";
-  
   /** @generated
    * @ordered 
    */
@@ -46,45 +31,17 @@ public class EssayScore extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Value = "Value";
-  public final static String _FeatName_Name = "Name";
-  public final static String _FeatName_Reason = "Reason";
-  public final static String _FeatName_InputQuestion = "InputQuestion";
-  public final static String _FeatName_InputAnswer = "InputAnswer";
-  public final static String _FeatName_InputScene = "InputScene";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Value = TypeSystemImpl.createCallSite(EssayScore.class, "Value");
-  private final static MethodHandle _FH_Value = _FC_Value.dynamicInvoker();
-  private final static CallSite _FC_Name = TypeSystemImpl.createCallSite(EssayScore.class, "Name");
-  private final static MethodHandle _FH_Name = _FC_Name.dynamicInvoker();
-  private final static CallSite _FC_Reason = TypeSystemImpl.createCallSite(EssayScore.class, "Reason");
-  private final static MethodHandle _FH_Reason = _FC_Reason.dynamicInvoker();
-  private final static CallSite _FC_InputQuestion = TypeSystemImpl.createCallSite(EssayScore.class, "InputQuestion");
-  private final static MethodHandle _FH_InputQuestion = _FC_InputQuestion.dynamicInvoker();
-  private final static CallSite _FC_InputAnswer = TypeSystemImpl.createCallSite(EssayScore.class, "InputAnswer");
-  private final static MethodHandle _FH_InputAnswer = _FC_InputAnswer.dynamicInvoker();
-  private final static CallSite _FC_InputScene = TypeSystemImpl.createCallSite(EssayScore.class, "InputScene");
-  private final static MethodHandle _FH_InputScene = _FC_InputScene.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected EssayScore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public EssayScore(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public EssayScore(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -95,7 +52,6 @@ public class EssayScore extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -127,16 +83,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));}
+  public double getValue() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Value == null)
+      jcasType.jcas.throwFeatMissing("Value", "org.texttechnologylab.annotation.EssayScore");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Value);}
     
   /** setter for Value - sets Metric Feature Value 
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Value), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Value == null)
+      jcasType.jcas.throwFeatMissing("Value", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Value, v);}    
    
     
   //*--------------*
@@ -146,16 +105,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_Name));}
+  public String getName() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Name == null)
+      jcasType.jcas.throwFeatMissing("Name", "org.texttechnologylab.annotation.EssayScore");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Name);}
     
   /** setter for Name - sets Metric Feature Name 
    * @generated
    * @param v value to set into the feature 
    */
   public void setName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Name), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Name == null)
+      jcasType.jcas.throwFeatMissing("Name", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Name, v);}    
    
     
   //*--------------*
@@ -165,16 +127,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));}
+  public String getReason() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.EssayScore");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Reason);}
     
   /** setter for Reason - sets LLM Reason for chosen Score 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReason(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Reason), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScore_Type)jcasType).casFeatCode_Reason, v);}    
    
     
   //*--------------*
@@ -184,16 +149,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputQuestion() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputQuestion)));}
+  public AnnotationComment getInputQuestion() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputQuestion == null)
+      jcasType.jcas.throwFeatMissing("InputQuestion", "org.texttechnologylab.annotation.EssayScore");
+    return (AnnotationComment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputQuestion)));}
     
   /** setter for InputQuestion - sets Chosen Question Div ID 
    * @generated
    * @param v value to set into the feature 
    */
   public void setInputQuestion(AnnotationComment v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputQuestion), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputQuestion == null)
+      jcasType.jcas.throwFeatMissing("InputQuestion", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputQuestion, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -203,16 +171,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputAnswer() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputAnswer)));}
+  public AnnotationComment getInputAnswer() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputAnswer == null)
+      jcasType.jcas.throwFeatMissing("InputAnswer", "org.texttechnologylab.annotation.EssayScore");
+    return (AnnotationComment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputAnswer)));}
     
   /** setter for InputAnswer - sets Chosen Answer Div ID 
    * @generated
    * @param v value to set into the feature 
    */
   public void setInputAnswer(AnnotationComment v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputAnswer), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputAnswer == null)
+      jcasType.jcas.throwFeatMissing("InputAnswer", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputAnswer, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -222,16 +193,19 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputScene() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputScene)));}
+  public AnnotationComment getInputScene() {
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputScene == null)
+      jcasType.jcas.throwFeatMissing("InputScene", "org.texttechnologylab.annotation.EssayScore");
+    return (AnnotationComment)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputScene)));}
     
   /** setter for InputScene - sets Chosen Scene Div ID 
    * @generated
    * @param v value to set into the feature 
    */
   public void setInputScene(AnnotationComment v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_InputScene), v);
-  }    
-    
+    if (EssayScore_Type.featOkTst && ((EssayScore_Type)jcasType).casFeat_InputScene == null)
+      jcasType.jcas.throwFeatMissing("InputScene", "org.texttechnologylab.annotation.EssayScore");
+    jcasType.ll_cas.ll_setRefValue(addr, ((EssayScore_Type)jcasType).casFeatCode_InputScene, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

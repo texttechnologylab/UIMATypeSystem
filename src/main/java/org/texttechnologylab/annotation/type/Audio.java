@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** This represent an audio in base64
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Audio extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.Audio";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Audio extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_src = "src";
-  public final static String _FeatName_mimetype = "mimetype";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Audio.class, "src");
-  private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
-  private final static CallSite _FC_mimetype = TypeSystemImpl.createCallSite(Audio.class, "mimetype");
-  private final static MethodHandle _FH_mimetype = _FC_mimetype.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Audio() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Audio(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Audio(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Audio extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Audio extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSrc() { return _getStringValueNc(wrapGetIntCatchException(_FH_src));}
+  public String getSrc() {
+    if (Audio_Type.featOkTst && ((Audio_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Audio");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Audio_Type)jcasType).casFeatCode_src);}
     
   /** setter for src - sets file path or base64 value of the audio 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSrc(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
-  }    
-    
+    if (Audio_Type.featOkTst && ((Audio_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Audio");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Audio_Type)jcasType).casFeatCode_src, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Audio extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMimetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));}
+  public String getMimetype() {
+    if (Audio_Type.featOkTst && ((Audio_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Audio");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Audio_Type)jcasType).casFeatCode_mimetype);}
     
   /** setter for mimetype - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMimetype(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
-  }    
-    
+    if (Audio_Type.featOkTst && ((Audio_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Audio");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Audio_Type)jcasType).casFeatCode_mimetype, v);}    
   }
 
     

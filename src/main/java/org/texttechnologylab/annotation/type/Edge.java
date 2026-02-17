@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Edge extends GraphBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.Edge";
-  
   /** @generated
    * @ordered 
    */
@@ -45,39 +30,17 @@ public class Edge extends GraphBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_source = "source";
-  public final static String _FeatName_target = "target";
-  public final static String _FeatName_attribute = "attribute";
-  public final static String _FeatName_edgetype = "edgetype";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_source = TypeSystemImpl.createCallSite(Edge.class, "source");
-  private final static MethodHandle _FH_source = _FC_source.dynamicInvoker();
-  private final static CallSite _FC_target = TypeSystemImpl.createCallSite(Edge.class, "target");
-  private final static MethodHandle _FH_target = _FC_target.dynamicInvoker();
-  private final static CallSite _FC_attribute = TypeSystemImpl.createCallSite(Edge.class, "attribute");
-  private final static MethodHandle _FH_attribute = _FC_attribute.dynamicInvoker();
-  private final static CallSite _FC_edgetype = TypeSystemImpl.createCallSite(Edge.class, "edgetype");
-  private final static MethodHandle _FH_edgetype = _FC_edgetype.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Edge() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Edge(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Edge(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -88,7 +51,6 @@ public class Edge extends GraphBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -108,16 +70,19 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Node getSource() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));}
+  public Node getSource() {
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.type.Edge");
+    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Edge_Type)jcasType).casFeatCode_source)));}
     
   /** setter for source - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(Node v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_source), v);
-  }    
-    
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.type.Edge");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Edge_Type)jcasType).casFeatCode_source, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -127,16 +92,19 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Node getTarget() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_target)));}
+  public Node getTarget() {
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_target == null)
+      jcasType.jcas.throwFeatMissing("target", "org.texttechnologylab.annotation.type.Edge");
+    return (Node)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Edge_Type)jcasType).casFeatCode_target)));}
     
   /** setter for target - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTarget(Node v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_target), v);
-  }    
-    
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_target == null)
+      jcasType.jcas.throwFeatMissing("target", "org.texttechnologylab.annotation.type.Edge");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Edge_Type)jcasType).casFeatCode_target, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -146,16 +114,19 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Attribute getAttribute() { return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attribute)));}
+  public Attribute getAttribute() {
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_attribute == null)
+      jcasType.jcas.throwFeatMissing("attribute", "org.texttechnologylab.annotation.type.Edge");
+    return (Attribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Edge_Type)jcasType).casFeatCode_attribute)));}
     
   /** setter for attribute - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAttribute(Attribute v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attribute), v);
-  }    
-    
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_attribute == null)
+      jcasType.jcas.throwFeatMissing("attribute", "org.texttechnologylab.annotation.type.Edge");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Edge_Type)jcasType).casFeatCode_attribute, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -165,16 +136,19 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public String getEdgetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_edgetype));}
+  public String getEdgetype() {
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_edgetype == null)
+      jcasType.jcas.throwFeatMissing("edgetype", "org.texttechnologylab.annotation.type.Edge");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Edge_Type)jcasType).casFeatCode_edgetype);}
     
   /** setter for edgetype - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEdgetype(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_edgetype), v);
-  }    
-    
+    if (Edge_Type.featOkTst && ((Edge_Type)jcasType).casFeat_edgetype == null)
+      jcasType.jcas.throwFeatMissing("edgetype", "org.texttechnologylab.annotation.type.Edge");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Edge_Type)jcasType).casFeatCode_edgetype, v);}    
   }
 
     

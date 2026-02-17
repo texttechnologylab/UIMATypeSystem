@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.model;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Essay Score Model Meta Data LLM with Prompts and all additional information
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EssayScoreLLM extends EssayScoreModel {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.model.EssayScoreLLM";
-  
   /** @generated
    * @ordered 
    */
@@ -45,39 +30,17 @@ public class EssayScoreLLM extends EssayScoreModel {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_ModelName = "ModelName";
-  public final static String _FeatName_Response = "Response";
-  public final static String _FeatName_Contents = "Contents";
-  public final static String _FeatName_AdditionalInformation = "AdditionalInformation";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_ModelName = TypeSystemImpl.createCallSite(EssayScoreLLM.class, "ModelName");
-  private final static MethodHandle _FH_ModelName = _FC_ModelName.dynamicInvoker();
-  private final static CallSite _FC_Response = TypeSystemImpl.createCallSite(EssayScoreLLM.class, "Response");
-  private final static MethodHandle _FH_Response = _FC_Response.dynamicInvoker();
-  private final static CallSite _FC_Contents = TypeSystemImpl.createCallSite(EssayScoreLLM.class, "Contents");
-  private final static MethodHandle _FH_Contents = _FC_Contents.dynamicInvoker();
-  private final static CallSite _FC_AdditionalInformation = TypeSystemImpl.createCallSite(EssayScoreLLM.class, "AdditionalInformation");
-  private final static MethodHandle _FH_AdditionalInformation = _FC_AdditionalInformation.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected EssayScoreLLM() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public EssayScoreLLM(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public EssayScoreLLM(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -88,7 +51,6 @@ public class EssayScoreLLM extends EssayScoreModel {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -120,16 +82,19 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));}
+  public String getModelName() {
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_ModelName == null)
+      jcasType.jcas.throwFeatMissing("ModelName", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_ModelName);}
     
   /** setter for ModelName - sets ModelName of used LLM 
    * @generated
    * @param v value to set into the feature 
    */
   public void setModelName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_ModelName), v);
-  }    
-    
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_ModelName == null)
+      jcasType.jcas.throwFeatMissing("ModelName", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_ModelName, v);}    
    
     
   //*--------------*
@@ -139,16 +104,19 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getResponse() { return _getStringValueNc(wrapGetIntCatchException(_FH_Response));}
+  public String getResponse() {
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_Response == null)
+      jcasType.jcas.throwFeatMissing("Response", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_Response);}
     
   /** setter for Response - sets Complete Response of LLM with all kind of Information as Json String 
    * @generated
    * @param v value to set into the feature 
    */
   public void setResponse(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Response), v);
-  }    
-    
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_Response == null)
+      jcasType.jcas.throwFeatMissing("Response", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_Response, v);}    
    
     
   //*--------------*
@@ -158,16 +126,19 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getContents() { return _getStringValueNc(wrapGetIntCatchException(_FH_Contents));}
+  public String getContents() {
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_Contents == null)
+      jcasType.jcas.throwFeatMissing("Contents", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_Contents);}
     
   /** setter for Contents - sets The extracted output of the LLM response 
    * @generated
    * @param v value to set into the feature 
    */
   public void setContents(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Contents), v);
-  }    
-    
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_Contents == null)
+      jcasType.jcas.throwFeatMissing("Contents", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_Contents, v);}    
    
     
   //*--------------*
@@ -177,16 +148,19 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getAdditionalInformation() { return _getStringValueNc(wrapGetIntCatchException(_FH_AdditionalInformation));}
+  public String getAdditionalInformation() {
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_AdditionalInformation == null)
+      jcasType.jcas.throwFeatMissing("AdditionalInformation", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_AdditionalInformation);}
     
   /** setter for AdditionalInformation - sets Further Information like used port, url and more which are not included in responses 
    * @generated
    * @param v value to set into the feature 
    */
   public void setAdditionalInformation(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_AdditionalInformation), v);
-  }    
-    
+    if (EssayScoreLLM_Type.featOkTst && ((EssayScoreLLM_Type)jcasType).casFeat_AdditionalInformation == null)
+      jcasType.jcas.throwFeatMissing("AdditionalInformation", "org.texttechnologylab.annotation.model.EssayScoreLLM");
+    jcasType.ll_cas.ll_setStringValue(addr, ((EssayScoreLLM_Type)jcasType).casFeatCode_AdditionalInformation, v);}    
   }
 
     

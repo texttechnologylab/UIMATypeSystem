@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.neglab;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ConditionSentence extends Sentence {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.neglab.ConditionSentence";
-  
   /** @generated
    * @ordered 
    */
@@ -46,45 +31,17 @@ public class ConditionSentence extends Sentence {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_condition = "condition";
-  public final static String _FeatName_target = "target";
-  public final static String _FeatName_order = "order";
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_sequenceScore = "sequenceScore";
-  public final static String _FeatName_sequenceScoreSum = "sequenceScoreSum";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_condition = TypeSystemImpl.createCallSite(ConditionSentence.class, "condition");
-  private final static MethodHandle _FH_condition = _FC_condition.dynamicInvoker();
-  private final static CallSite _FC_target = TypeSystemImpl.createCallSite(ConditionSentence.class, "target");
-  private final static MethodHandle _FH_target = _FC_target.dynamicInvoker();
-  private final static CallSite _FC_order = TypeSystemImpl.createCallSite(ConditionSentence.class, "order");
-  private final static MethodHandle _FH_order = _FC_order.dynamicInvoker();
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ConditionSentence.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_sequenceScore = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScore");
-  private final static MethodHandle _FH_sequenceScore = _FC_sequenceScore.dynamicInvoker();
-  private final static CallSite _FC_sequenceScoreSum = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScoreSum");
-  private final static MethodHandle _FH_sequenceScoreSum = _FC_sequenceScoreSum.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ConditionSentence() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ConditionSentence(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ConditionSentence(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -95,7 +52,6 @@ public class ConditionSentence extends Sentence {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -127,16 +83,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public String getCondition() { return _getStringValueNc(wrapGetIntCatchException(_FH_condition));}
+  public String getCondition() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_condition == null)
+      jcasType.jcas.throwFeatMissing("condition", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_condition);}
     
   /** setter for condition - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCondition(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_condition), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_condition == null)
+      jcasType.jcas.throwFeatMissing("condition", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_condition, v);}    
    
     
   //*--------------*
@@ -146,16 +105,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public String getTarget() { return _getStringValueNc(wrapGetIntCatchException(_FH_target));}
+  public String getTarget() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_target == null)
+      jcasType.jcas.throwFeatMissing("target", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_target);}
     
   /** setter for target - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTarget(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_target), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_target == null)
+      jcasType.jcas.throwFeatMissing("target", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_target, v);}    
    
     
   //*--------------*
@@ -165,16 +127,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public int getOrder() { return _getIntValueNc(wrapGetIntCatchException(_FH_order));}
+  public int getOrder() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_order == null)
+      jcasType.jcas.throwFeatMissing("order", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_order);}
     
   /** setter for order - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setOrder(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_order), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_order == null)
+      jcasType.jcas.throwFeatMissing("order", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_order, v);}    
    
     
   //*--------------*
@@ -184,16 +149,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public float getValue() { return _getFloatValueNc(wrapGetIntCatchException(_FH_value));}
+  public float getValue() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -203,16 +171,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public float getSequenceScore() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScore));}
+  public float getSequenceScore() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_sequenceScore == null)
+      jcasType.jcas.throwFeatMissing("sequenceScore", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_sequenceScore);}
     
   /** setter for sequenceScore - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSequenceScore(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScore), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_sequenceScore == null)
+      jcasType.jcas.throwFeatMissing("sequenceScore", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_sequenceScore, v);}    
    
     
   //*--------------*
@@ -222,16 +193,19 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public float getSequenceScoreSum() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScoreSum));}
+  public float getSequenceScoreSum() {
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_sequenceScoreSum == null)
+      jcasType.jcas.throwFeatMissing("sequenceScoreSum", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    return jcasType.ll_cas.ll_getFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_sequenceScoreSum);}
     
   /** setter for sequenceScoreSum - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSequenceScoreSum(float v) {
-    _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScoreSum), v);
-  }    
-    
+    if (ConditionSentence_Type.featOkTst && ((ConditionSentence_Type)jcasType).casFeat_sequenceScoreSum == null)
+      jcasType.jcas.throwFeatMissing("sequenceScoreSum", "org.texttechnologylab.annotation.neglab.ConditionSentence");
+    jcasType.ll_cas.ll_setFloatValue(addr, ((ConditionSentence_Type)jcasType).casFeatCode_sequenceScoreSum, v);}    
   }
 
     

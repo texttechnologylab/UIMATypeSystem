@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WebImage extends Image {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.WebImage";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class WebImage extends Image {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_posX = "posX";
-  public final static String _FeatName_posY = "posY";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_posX = TypeSystemImpl.createCallSite(WebImage.class, "posX");
-  private final static MethodHandle _FH_posX = _FC_posX.dynamicInvoker();
-  private final static CallSite _FC_posY = TypeSystemImpl.createCallSite(WebImage.class, "posY");
-  private final static MethodHandle _FH_posY = _FC_posY.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected WebImage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public WebImage(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public WebImage(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class WebImage extends Image {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -114,16 +82,19 @@ public class WebImage extends Image {
    * @generated
    * @return value of the feature 
    */
-  public int getPosX() { return _getIntValueNc(wrapGetIntCatchException(_FH_posX));}
+  public int getPosX() {
+    if (WebImage_Type.featOkTst && ((WebImage_Type)jcasType).casFeat_posX == null)
+      jcasType.jcas.throwFeatMissing("posX", "org.texttechnologylab.annotation.type.WebImage");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((WebImage_Type)jcasType).casFeatCode_posX);}
     
   /** setter for posX - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPosX(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_posX), v);
-  }    
-    
+    if (WebImage_Type.featOkTst && ((WebImage_Type)jcasType).casFeat_posX == null)
+      jcasType.jcas.throwFeatMissing("posX", "org.texttechnologylab.annotation.type.WebImage");
+    jcasType.ll_cas.ll_setIntValue(addr, ((WebImage_Type)jcasType).casFeatCode_posX, v);}    
    
     
   //*--------------*
@@ -133,16 +104,19 @@ public class WebImage extends Image {
    * @generated
    * @return value of the feature 
    */
-  public int getPosY() { return _getIntValueNc(wrapGetIntCatchException(_FH_posY));}
+  public int getPosY() {
+    if (WebImage_Type.featOkTst && ((WebImage_Type)jcasType).casFeat_posY == null)
+      jcasType.jcas.throwFeatMissing("posY", "org.texttechnologylab.annotation.type.WebImage");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((WebImage_Type)jcasType).casFeatCode_posY);}
     
   /** setter for posY - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPosY(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_posY), v);
-  }    
-    
+    if (WebImage_Type.featOkTst && ((WebImage_Type)jcasType).casFeat_posY == null)
+      jcasType.jcas.throwFeatMissing("posY", "org.texttechnologylab.annotation.type.WebImage");
+    jcasType.ll_cas.ll_setIntValue(addr, ((WebImage_Type)jcasType).casFeatCode_posY, v);}    
   }
 
     

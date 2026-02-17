@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.GeoNamesEntity";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class GeoNamesEntity extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_id = "id";
-  public final static String _FeatName_mainclass = "mainclass";
-  public final static String _FeatName_subclass = "subclass";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_id = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "id");
-  private final static MethodHandle _FH_id = _FC_id.dynamicInvoker();
-  private final static CallSite _FC_mainclass = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "mainclass");
-  private final static MethodHandle _FH_mainclass = _FC_mainclass.dynamicInvoker();
-  private final static CallSite _FC_subclass = TypeSystemImpl.createCallSite(GeoNamesEntity.class, "subclass");
-  private final static MethodHandle _FH_subclass = _FC_subclass.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected GeoNamesEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public GeoNamesEntity(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public GeoNamesEntity(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class GeoNamesEntity extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getId() { return _getIntValueNc(wrapGetIntCatchException(_FH_id));}
+  public int getId() {
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.GeoNamesEntity");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_id);}
     
   /** setter for id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setId(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_id), v);
-  }    
-    
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.GeoNamesEntity");
+    jcasType.ll_cas.ll_setIntValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_id, v);}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMainclass() { return _getStringValueNc(wrapGetIntCatchException(_FH_mainclass));}
+  public String getMainclass() {
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_mainclass == null)
+      jcasType.jcas.throwFeatMissing("mainclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_mainclass);}
     
   /** setter for mainclass - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMainclass(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mainclass), v);
-  }    
-    
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_mainclass == null)
+      jcasType.jcas.throwFeatMissing("mainclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_mainclass, v);}    
    
     
   //*--------------*
@@ -156,16 +127,19 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSubclass() { return _getStringValueNc(wrapGetIntCatchException(_FH_subclass));}
+  public String getSubclass() {
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclass == null)
+      jcasType.jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclass);}
     
   /** setter for subclass - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubclass(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_subclass), v);
-  }    
-    
+    if (GeoNamesEntity_Type.featOkTst && ((GeoNamesEntity_Type)jcasType).casFeat_subclass == null)
+      jcasType.jcas.throwFeatMissing("subclass", "org.texttechnologylab.annotation.GeoNamesEntity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GeoNamesEntity_Type)jcasType).casFeatCode_subclass, v);}    
   }
 
     

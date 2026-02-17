@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.score;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextScoreEntry extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.score.TextScoreEntry";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class TextScoreEntry extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_key = "key";
-  public final static String _FeatName_label = "label";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TextScoreEntry.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_key = TypeSystemImpl.createCallSite(TextScoreEntry.class, "key");
-  private final static MethodHandle _FH_key = _FC_key.dynamicInvoker();
-  private final static CallSite _FC_label = TypeSystemImpl.createCallSite(TextScoreEntry.class, "label");
-  private final static MethodHandle _FH_label = _FC_label.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TextScoreEntry() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TextScoreEntry(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TextScoreEntry(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class TextScoreEntry extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -106,16 +71,19 @@ public class TextScoreEntry extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));}
+  public double getValue() {
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -125,16 +93,19 @@ public class TextScoreEntry extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getKey() { return _getStringValueNc(wrapGetIntCatchException(_FH_key));}
+  public String getKey() {
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key);}
     
   /** setter for key - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setKey(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_key), v);
-  }    
-    
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_key == null)
+      jcasType.jcas.throwFeatMissing("key", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_key, v);}    
    
     
   //*--------------*
@@ -144,16 +115,19 @@ public class TextScoreEntry extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
+  public String getLabel() {
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_label);}
     
   /** setter for label - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
-  }    
-    
+    if (TextScoreEntry_Type.featOkTst && ((TextScoreEntry_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.score.TextScoreEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((TextScoreEntry_Type)jcasType).casFeatCode_label, v);}    
   }
 
     

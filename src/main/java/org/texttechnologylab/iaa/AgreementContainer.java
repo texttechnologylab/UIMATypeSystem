@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.iaa;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.LongArray;
 import org.apache.uima.jcas.cas.StringArray;
@@ -22,17 +14,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AgreementContainer extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.iaa.AgreementContainer";
-  
   /** @generated
    * @ordered 
    */
@@ -49,45 +34,17 @@ public class AgreementContainer extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_overallAgreementValue = "overallAgreementValue";
-  public final static String _FeatName_agreementMeasure = "agreementMeasure";
-  public final static String _FeatName_categoryNames = "categoryNames";
-  public final static String _FeatName_categoryAgreementValues = "categoryAgreementValues";
-  public final static String _FeatName_categoryCounts = "categoryCounts";
-  public final static String _FeatName_categorySpecificAgreementValues = "categorySpecificAgreementValues";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_overallAgreementValue = TypeSystemImpl.createCallSite(AgreementContainer.class, "overallAgreementValue");
-  private final static MethodHandle _FH_overallAgreementValue = _FC_overallAgreementValue.dynamicInvoker();
-  private final static CallSite _FC_agreementMeasure = TypeSystemImpl.createCallSite(AgreementContainer.class, "agreementMeasure");
-  private final static MethodHandle _FH_agreementMeasure = _FC_agreementMeasure.dynamicInvoker();
-  private final static CallSite _FC_categoryNames = TypeSystemImpl.createCallSite(AgreementContainer.class, "categoryNames");
-  private final static MethodHandle _FH_categoryNames = _FC_categoryNames.dynamicInvoker();
-  private final static CallSite _FC_categoryAgreementValues = TypeSystemImpl.createCallSite(AgreementContainer.class, "categoryAgreementValues");
-  private final static MethodHandle _FH_categoryAgreementValues = _FC_categoryAgreementValues.dynamicInvoker();
-  private final static CallSite _FC_categoryCounts = TypeSystemImpl.createCallSite(AgreementContainer.class, "categoryCounts");
-  private final static MethodHandle _FH_categoryCounts = _FC_categoryCounts.dynamicInvoker();
-  private final static CallSite _FC_categorySpecificAgreementValues = TypeSystemImpl.createCallSite(AgreementContainer.class, "categorySpecificAgreementValues");
-  private final static MethodHandle _FH_categorySpecificAgreementValues = _FC_categorySpecificAgreementValues.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected AgreementContainer() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public AgreementContainer(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public AgreementContainer(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -98,7 +55,6 @@ public class AgreementContainer extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -130,16 +86,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getOverallAgreementValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_overallAgreementValue));}
+  public double getOverallAgreementValue() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_overallAgreementValue == null)
+      jcasType.jcas.throwFeatMissing("overallAgreementValue", "org.texttechnologylab.iaa.AgreementContainer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_overallAgreementValue);}
     
   /** setter for overallAgreementValue - sets The overall agreement for the entire document. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setOverallAgreementValue(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_overallAgreementValue), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_overallAgreementValue == null)
+      jcasType.jcas.throwFeatMissing("overallAgreementValue", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_overallAgreementValue, v);}    
    
     
   //*--------------*
@@ -149,16 +108,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAgreementMeasure() { return _getStringValueNc(wrapGetIntCatchException(_FH_agreementMeasure));}
+  public String getAgreementMeasure() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_agreementMeasure == null)
+      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.AgreementContainer");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_agreementMeasure);}
     
   /** setter for agreementMeasure - sets The agreement measure used to compute the values. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setAgreementMeasure(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_agreementMeasure), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_agreementMeasure == null)
+      jcasType.jcas.throwFeatMissing("agreementMeasure", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setStringValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_agreementMeasure, v);}    
    
     
   //*--------------*
@@ -168,16 +130,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategoryNames() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)));}
+  public StringArray getCategoryNames() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryNames == null)
+      jcasType.jcas.throwFeatMissing("categoryNames", "org.texttechnologylab.iaa.AgreementContainer");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames)));}
     
   /** setter for categoryNames - sets The categories as an array of Strings. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCategoryNames(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryNames), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryNames == null)
+      jcasType.jcas.throwFeatMissing("categoryNames", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for categoryNames - gets an indexed value - The categories as an array of Strings.
    * @generated
@@ -185,16 +150,21 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategoryNames(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)))).get(i);} 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryNames == null)
+      jcasType.jcas.throwFeatMissing("categoryNames", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames), i);}
 
   /** indexed setter for categoryNames - sets an indexed value - The categories as an array of Strings.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCategoryNames(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)))).set(i, v);
-  }  
+  public void setCategoryNames(int i, String v) { 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryNames == null)
+      jcasType.jcas.throwFeatMissing("categoryNames", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryNames), i, v);}
    
     
   //*--------------*
@@ -204,16 +174,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public DoubleArray getCategoryAgreementValues() { return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)));}
+  public DoubleArray getCategoryAgreementValues() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categoryAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    return (DoubleArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues)));}
     
   /** setter for categoryAgreementValues - sets An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCategoryAgreementValues(DoubleArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryAgreementValues), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categoryAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for categoryAgreementValues - gets an indexed value - An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.
    * @generated
@@ -221,16 +194,21 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public double getCategoryAgreementValues(int i) {
-     return ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)))).get(i);} 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categoryAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues), i);
+    return jcasType.ll_cas.ll_getDoubleArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues), i);}
 
   /** indexed setter for categoryAgreementValues - sets an indexed value - An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCategoryAgreementValues(int i, double v) {
-    ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)))).set(i, v);
-  }  
+  public void setCategoryAgreementValues(int i, double v) { 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categoryAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues), i);
+    jcasType.ll_cas.ll_setDoubleArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryAgreementValues), i, v);}
    
     
   //*--------------*
@@ -240,16 +218,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LongArray getCategoryCounts() { return (LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)));}
+  public LongArray getCategoryCounts() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryCounts == null)
+      jcasType.jcas.throwFeatMissing("categoryCounts", "org.texttechnologylab.iaa.AgreementContainer");
+    return (LongArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts)));}
     
   /** setter for categoryCounts - sets The count of items of each category for all annotators as an array of Longs. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCategoryCounts(LongArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categoryCounts), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryCounts == null)
+      jcasType.jcas.throwFeatMissing("categoryCounts", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for categoryCounts - gets an indexed value - The count of items of each category for all annotators as an array of Longs.
    * @generated
@@ -257,16 +238,21 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public long getCategoryCounts(int i) {
-     return ((LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)))).get(i);} 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryCounts == null)
+      jcasType.jcas.throwFeatMissing("categoryCounts", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i);
+    return jcasType.ll_cas.ll_getLongArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i);}
 
   /** indexed setter for categoryCounts - sets an indexed value - The count of items of each category for all annotators as an array of Longs.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCategoryCounts(int i, long v) {
-    ((LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)))).set(i, v);
-  }  
+  public void setCategoryCounts(int i, long v) { 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categoryCounts == null)
+      jcasType.jcas.throwFeatMissing("categoryCounts", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i);
+    jcasType.ll_cas.ll_setLongArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categoryCounts), i, v);}
    
     
   //*--------------*
@@ -276,16 +262,19 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategorySpecificAgreementValues() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)));}
+  public StringArray getCategorySpecificAgreementValues() {
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues)));}
     
   /** setter for categorySpecificAgreementValues - sets @deprecated 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCategorySpecificAgreementValues(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_categorySpecificAgreementValues), v);
-  }    
-    
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.ll_cas.ll_setRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for categorySpecificAgreementValues - gets an indexed value - @deprecated
    * @generated
@@ -293,16 +282,21 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategorySpecificAgreementValues(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)))).get(i);} 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);}
 
   /** indexed setter for categorySpecificAgreementValues - sets an indexed value - @deprecated
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setCategorySpecificAgreementValues(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)))).set(i, v);
-  }  
+  public void setCategorySpecificAgreementValues(int i, String v) { 
+    if (AgreementContainer_Type.featOkTst && ((AgreementContainer_Type)jcasType).casFeat_categorySpecificAgreementValues == null)
+      jcasType.jcas.throwFeatMissing("categorySpecificAgreementValues", "org.texttechnologylab.iaa.AgreementContainer");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((AgreementContainer_Type)jcasType).casFeatCode_categorySpecificAgreementValues), i, v);}
   }
 
     

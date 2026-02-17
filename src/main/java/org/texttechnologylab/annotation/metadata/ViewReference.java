@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.metadata;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** View Reference
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ViewReference extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.metadata.ViewReference";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class ViewReference extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_SourceViewName = "SourceViewName";
-  public final static String _FeatName_SourceBegin = "SourceBegin";
-  public final static String _FeatName_SourceEnd = "SourceEnd";
-  public final static String _FeatName_SourceType = "SourceType";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_SourceViewName = TypeSystemImpl.createCallSite(ViewReference.class, "SourceViewName");
-  private final static MethodHandle _FH_SourceViewName = _FC_SourceViewName.dynamicInvoker();
-  private final static CallSite _FC_SourceBegin = TypeSystemImpl.createCallSite(ViewReference.class, "SourceBegin");
-  private final static MethodHandle _FH_SourceBegin = _FC_SourceBegin.dynamicInvoker();
-  private final static CallSite _FC_SourceEnd = TypeSystemImpl.createCallSite(ViewReference.class, "SourceEnd");
-  private final static MethodHandle _FH_SourceEnd = _FC_SourceEnd.dynamicInvoker();
-  private final static CallSite _FC_SourceType = TypeSystemImpl.createCallSite(ViewReference.class, "SourceType");
-  private final static MethodHandle _FH_SourceType = _FC_SourceType.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ViewReference() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ViewReference(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ViewReference(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class ViewReference extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSourceViewName() { return _getStringValueNc(wrapGetIntCatchException(_FH_SourceViewName));}
+  public String getSourceViewName() {
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceViewName == null)
+      jcasType.jcas.throwFeatMissing("SourceViewName", "org.texttechnologylab.annotation.metadata.ViewReference");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceViewName);}
     
   /** setter for SourceViewName - sets The name of the view from source 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSourceViewName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_SourceViewName), v);
-  }    
-    
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceViewName == null)
+      jcasType.jcas.throwFeatMissing("SourceViewName", "org.texttechnologylab.annotation.metadata.ViewReference");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceViewName, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSourceBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_SourceBegin));}
+  public int getSourceBegin() {
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceBegin == null)
+      jcasType.jcas.throwFeatMissing("SourceBegin", "org.texttechnologylab.annotation.metadata.ViewReference");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceBegin);}
     
   /** setter for SourceBegin - sets Begin of the source 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSourceBegin(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_SourceBegin), v);
-  }    
-    
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceBegin == null)
+      jcasType.jcas.throwFeatMissing("SourceBegin", "org.texttechnologylab.annotation.metadata.ViewReference");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceBegin, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSourceEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_SourceEnd));}
+  public int getSourceEnd() {
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceEnd == null)
+      jcasType.jcas.throwFeatMissing("SourceEnd", "org.texttechnologylab.annotation.metadata.ViewReference");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceEnd);}
     
   /** setter for SourceEnd - sets End of the source 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSourceEnd(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_SourceEnd), v);
-  }    
-    
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceEnd == null)
+      jcasType.jcas.throwFeatMissing("SourceEnd", "org.texttechnologylab.annotation.metadata.ViewReference");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceEnd, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSourceType() { return _getStringValueNc(wrapGetIntCatchException(_FH_SourceType));}
+  public String getSourceType() {
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceType == null)
+      jcasType.jcas.throwFeatMissing("SourceType", "org.texttechnologylab.annotation.metadata.ViewReference");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceType);}
     
   /** setter for SourceType - sets Type of the source 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSourceType(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_SourceType), v);
-  }    
-    
+    if (ViewReference_Type.featOkTst && ((ViewReference_Type)jcasType).casFeat_SourceType == null)
+      jcasType.jcas.throwFeatMissing("SourceType", "org.texttechnologylab.annotation.metadata.ViewReference");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ViewReference_Type)jcasType).casFeatCode_SourceType, v);}    
   }
 
     

@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr.abbyy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** A recognized block.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Block extends StructuralElement {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Block";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class Block extends StructuralElement {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_blockType = "blockType";
-  public final static String _FeatName_blockName = "blockName";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_blockType = TypeSystemImpl.createCallSite(Block.class, "blockType");
-  private final static MethodHandle _FH_blockType = _FC_blockType.dynamicInvoker();
-  private final static CallSite _FC_blockName = TypeSystemImpl.createCallSite(Block.class, "blockName");
-  private final static MethodHandle _FH_blockName = _FC_blockName.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Block() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Block(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Block(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class Block extends StructuralElement {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -114,16 +82,19 @@ public class Block extends StructuralElement {
    * @generated
    * @return value of the feature 
    */
-  public String getBlockType() { return _getStringValueNc(wrapGetIntCatchException(_FH_blockType));}
+  public String getBlockType() {
+    if (Block_Type.featOkTst && ((Block_Type)jcasType).casFeat_blockType == null)
+      jcasType.jcas.throwFeatMissing("blockType", "org.texttechnologylab.annotation.ocr.abbyy.Block");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Block_Type)jcasType).casFeatCode_blockType);}
     
   /** setter for blockType - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBlockType(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_blockType), v);
-  }    
-    
+    if (Block_Type.featOkTst && ((Block_Type)jcasType).casFeat_blockType == null)
+      jcasType.jcas.throwFeatMissing("blockType", "org.texttechnologylab.annotation.ocr.abbyy.Block");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Block_Type)jcasType).casFeatCode_blockType, v);}    
    
     
   //*--------------*
@@ -133,16 +104,19 @@ public class Block extends StructuralElement {
    * @generated
    * @return value of the feature 
    */
-  public String getBlockName() { return _getStringValueNc(wrapGetIntCatchException(_FH_blockName));}
+  public String getBlockName() {
+    if (Block_Type.featOkTst && ((Block_Type)jcasType).casFeat_blockName == null)
+      jcasType.jcas.throwFeatMissing("blockName", "org.texttechnologylab.annotation.ocr.abbyy.Block");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Block_Type)jcasType).casFeatCode_blockName);}
     
   /** setter for blockName - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBlockName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_blockName), v);
-  }    
-    
+    if (Block_Type.featOkTst && ((Block_Type)jcasType).casFeat_blockName == null)
+      jcasType.jcas.throwFeatMissing("blockName", "org.texttechnologylab.annotation.ocr.abbyy.Block");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Block_Type)jcasType).casFeatCode_blockName, v);}    
   }
 
     

@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Stance Detection
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StanceGPT extends StanceBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.StanceGPT";
-  
   /** @generated
    * @ordered 
    */
@@ -45,36 +30,17 @@ public class StanceGPT extends StanceBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Label = "Label";
-  public final static String _FeatName_Confidence = "Confidence";
-  public final static String _FeatName_Reason = "Reason";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Label = TypeSystemImpl.createCallSite(StanceGPT.class, "Label");
-  private final static MethodHandle _FH_Label = _FC_Label.dynamicInvoker();
-  private final static CallSite _FC_Confidence = TypeSystemImpl.createCallSite(StanceGPT.class, "Confidence");
-  private final static MethodHandle _FH_Confidence = _FC_Confidence.dynamicInvoker();
-  private final static CallSite _FC_Reason = TypeSystemImpl.createCallSite(StanceGPT.class, "Reason");
-  private final static MethodHandle _FH_Reason = _FC_Reason.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected StanceGPT() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public StanceGPT(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public StanceGPT(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -85,7 +51,6 @@ public class StanceGPT extends StanceBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -117,16 +82,19 @@ public class StanceGPT extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_Label));}
+  public String getLabel() {
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Label == null)
+      jcasType.jcas.throwFeatMissing("Label", "org.texttechnologylab.annotation.StanceGPT");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Label);}
     
   /** setter for Label - sets Label support, oppose, neutral 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Label), v);
-  }    
-    
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Label == null)
+      jcasType.jcas.throwFeatMissing("Label", "org.texttechnologylab.annotation.StanceGPT");
+    jcasType.ll_cas.ll_setStringValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Label, v);}    
    
     
   //*--------------*
@@ -136,16 +104,19 @@ public class StanceGPT extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Confidence));}
+  public double getConfidence() {
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Confidence == null)
+      jcasType.jcas.throwFeatMissing("Confidence", "org.texttechnologylab.annotation.StanceGPT");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Confidence);}
     
   /** setter for Confidence - sets Confidence value 
    * @generated
    * @param v value to set into the feature 
    */
   public void setConfidence(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Confidence), v);
-  }    
-    
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Confidence == null)
+      jcasType.jcas.throwFeatMissing("Confidence", "org.texttechnologylab.annotation.StanceGPT");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Confidence, v);}    
    
     
   //*--------------*
@@ -155,16 +126,19 @@ public class StanceGPT extends StanceBase {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));}
+  public String getReason() {
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.StanceGPT");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Reason);}
     
   /** setter for Reason - sets Reason for the decision 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReason(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Reason), v);
-  }    
-    
+    if (StanceGPT_Type.featOkTst && ((StanceGPT_Type)jcasType).casFeat_Reason == null)
+      jcasType.jcas.throwFeatMissing("Reason", "org.texttechnologylab.annotation.StanceGPT");
+    jcasType.ll_cas.ll_setStringValue(addr, ((StanceGPT_Type)jcasType).casFeatCode_Reason, v);}    
   }
 
     

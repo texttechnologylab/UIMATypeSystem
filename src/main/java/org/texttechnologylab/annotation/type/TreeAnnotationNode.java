@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TreeAnnotationNode extends TreeNode {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.TreeAnnotationNode";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class TreeAnnotationNode extends TreeNode {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_begin = "begin";
-  public final static String _FeatName_end = "end";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_begin = TypeSystemImpl.createCallSite(TreeAnnotationNode.class, "begin");
-  private final static MethodHandle _FH_begin = _FC_begin.dynamicInvoker();
-  private final static CallSite _FC_end = TypeSystemImpl.createCallSite(TreeAnnotationNode.class, "end");
-  private final static MethodHandle _FH_end = _FC_end.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TreeAnnotationNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TreeAnnotationNode(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TreeAnnotationNode(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class TreeAnnotationNode extends TreeNode {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -102,16 +70,19 @@ public class TreeAnnotationNode extends TreeNode {
    * @generated
    * @return value of the feature 
    */
-  public int getBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_begin));}
+  public int getBegin() {
+    if (TreeAnnotationNode_Type.featOkTst && ((TreeAnnotationNode_Type)jcasType).casFeat_begin == null)
+      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TreeAnnotationNode");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((TreeAnnotationNode_Type)jcasType).casFeatCode_begin);}
     
   /** setter for begin - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setBegin(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_begin), v);
-  }    
-    
+    if (TreeAnnotationNode_Type.featOkTst && ((TreeAnnotationNode_Type)jcasType).casFeat_begin == null)
+      jcasType.jcas.throwFeatMissing("begin", "org.texttechnologylab.annotation.type.TreeAnnotationNode");
+    jcasType.ll_cas.ll_setIntValue(addr, ((TreeAnnotationNode_Type)jcasType).casFeatCode_begin, v);}    
    
     
   //*--------------*
@@ -121,16 +92,19 @@ public class TreeAnnotationNode extends TreeNode {
    * @generated
    * @return value of the feature 
    */
-  public int getEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_end));}
+  public int getEnd() {
+    if (TreeAnnotationNode_Type.featOkTst && ((TreeAnnotationNode_Type)jcasType).casFeat_end == null)
+      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TreeAnnotationNode");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((TreeAnnotationNode_Type)jcasType).casFeatCode_end);}
     
   /** setter for end - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEnd(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_end), v);
-  }    
-    
+    if (TreeAnnotationNode_Type.featOkTst && ((TreeAnnotationNode_Type)jcasType).casFeat_end == null)
+      jcasType.jcas.throwFeatMissing("end", "org.texttechnologylab.annotation.type.TreeAnnotationNode");
+    jcasType.ll_cas.ll_setIntValue(addr, ((TreeAnnotationNode_Type)jcasType).casFeatCode_end, v);}    
   }
 
     

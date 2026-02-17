@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.search;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.type.search.TextSearch;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Reference Text of TextSearch. Result of the search. It can be a list of text or a single text or a summary of the text or a label of the text.
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReferenceText extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.search.ReferenceText";
-  
   /** @generated
    * @ordered 
    */
@@ -47,57 +32,17 @@ public class ReferenceText extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_methods = "methods";
-  public final static String _FeatName_group = "group";
-  public final static String _FeatName_text = "text";
-  public final static String _FeatName_url = "url";
-  public final static String _FeatName_success = "success";
-  public final static String _FeatName_priority = "priority";
-  public final static String _FeatName_dateTime = "dateTime";
-  public final static String _FeatName_summary = "summary";
-  public final static String _FeatName_infos = "infos";
-  public final static String _FeatName_reference = "reference";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_methods = TypeSystemImpl.createCallSite(ReferenceText.class, "methods");
-  private final static MethodHandle _FH_methods = _FC_methods.dynamicInvoker();
-  private final static CallSite _FC_group = TypeSystemImpl.createCallSite(ReferenceText.class, "group");
-  private final static MethodHandle _FH_group = _FC_group.dynamicInvoker();
-  private final static CallSite _FC_text = TypeSystemImpl.createCallSite(ReferenceText.class, "text");
-  private final static MethodHandle _FH_text = _FC_text.dynamicInvoker();
-  private final static CallSite _FC_url = TypeSystemImpl.createCallSite(ReferenceText.class, "url");
-  private final static MethodHandle _FH_url = _FC_url.dynamicInvoker();
-  private final static CallSite _FC_success = TypeSystemImpl.createCallSite(ReferenceText.class, "success");
-  private final static MethodHandle _FH_success = _FC_success.dynamicInvoker();
-  private final static CallSite _FC_priority = TypeSystemImpl.createCallSite(ReferenceText.class, "priority");
-  private final static MethodHandle _FH_priority = _FC_priority.dynamicInvoker();
-  private final static CallSite _FC_dateTime = TypeSystemImpl.createCallSite(ReferenceText.class, "dateTime");
-  private final static MethodHandle _FH_dateTime = _FC_dateTime.dynamicInvoker();
-  private final static CallSite _FC_summary = TypeSystemImpl.createCallSite(ReferenceText.class, "summary");
-  private final static MethodHandle _FH_summary = _FC_summary.dynamicInvoker();
-  private final static CallSite _FC_infos = TypeSystemImpl.createCallSite(ReferenceText.class, "infos");
-  private final static MethodHandle _FH_infos = _FC_infos.dynamicInvoker();
-  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(ReferenceText.class, "reference");
-  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected ReferenceText() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public ReferenceText(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public ReferenceText(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -108,7 +53,6 @@ public class ReferenceText extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -140,16 +84,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMethods() { return _getStringValueNc(wrapGetIntCatchException(_FH_methods));}
+  public String getMethods() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_methods == null)
+      jcasType.jcas.throwFeatMissing("methods", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_methods);}
     
   /** setter for methods - sets Which Method was used for the search, like Wikipedia, Google, Wikidata or something Class 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMethods(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_methods), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_methods == null)
+      jcasType.jcas.throwFeatMissing("methods", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_methods, v);}    
    
     
   //*--------------*
@@ -159,16 +106,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getGroup() { return _getStringValueNc(wrapGetIntCatchException(_FH_group));}
+  public String getGroup() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_group);}
     
   /** setter for group - sets what is the group of Text, from which source it was extracted: web, wikipedia, wikidata,... 
    * @generated
    * @param v value to set into the feature 
    */
   public void setGroup(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_group), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_group == null)
+      jcasType.jcas.throwFeatMissing("group", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_group, v);}    
    
     
   //*--------------*
@@ -178,16 +128,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getText() { return _getStringValueNc(wrapGetIntCatchException(_FH_text));}
+  public String getText() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_text == null)
+      jcasType.jcas.throwFeatMissing("text", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_text);}
     
   /** setter for text - sets Text of the Reference Text 
    * @generated
    * @param v value to set into the feature 
    */
   public void setText(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_text), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_text == null)
+      jcasType.jcas.throwFeatMissing("text", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_text, v);}    
    
     
   //*--------------*
@@ -197,16 +150,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUrl() { return _getStringValueNc(wrapGetIntCatchException(_FH_url));}
+  public String getUrl() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_url);}
     
   /** setter for url - sets URL of the Reference Text 
    * @generated
    * @param v value to set into the feature 
    */
   public void setUrl(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_url), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_url, v);}    
    
     
   //*--------------*
@@ -216,16 +172,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSuccess() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_success));}
+  public boolean getSuccess() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_success == null)
+      jcasType.jcas.throwFeatMissing("success", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_success);}
     
   /** setter for success - sets Was the search or the extraction successful 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSuccess(boolean v) {
-    _setBooleanValueNfc(wrapGetIntCatchException(_FH_success), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_success == null)
+      jcasType.jcas.throwFeatMissing("success", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_success, v);}    
    
     
   //*--------------*
@@ -235,16 +194,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPriority() { return _getIntValueNc(wrapGetIntCatchException(_FH_priority));}
+  public int getPriority() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_priority == null)
+      jcasType.jcas.throwFeatMissing("priority", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_priority);}
     
   /** setter for priority - sets Result number of the search 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPriority(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_priority), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_priority == null)
+      jcasType.jcas.throwFeatMissing("priority", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setIntValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_priority, v);}    
    
     
   //*--------------*
@@ -254,16 +216,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDateTime() { return _getStringValueNc(wrapGetIntCatchException(_FH_dateTime));}
+  public String getDateTime() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_dateTime == null)
+      jcasType.jcas.throwFeatMissing("dateTime", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_dateTime);}
     
   /** setter for dateTime - sets dateTime of the search: dd:mm:yyyy hh:mm:ss 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDateTime(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_dateTime), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_dateTime == null)
+      jcasType.jcas.throwFeatMissing("dateTime", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_dateTime, v);}    
    
     
   //*--------------*
@@ -273,16 +238,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSummary() { return _getStringValueNc(wrapGetIntCatchException(_FH_summary));}
+  public String getSummary() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_summary == null)
+      jcasType.jcas.throwFeatMissing("summary", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_summary);}
     
   /** setter for summary - sets summary of the text 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSummary(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_summary), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_summary == null)
+      jcasType.jcas.throwFeatMissing("summary", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_summary, v);}    
    
     
   //*--------------*
@@ -292,16 +260,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getInfos() { return _getStringValueNc(wrapGetIntCatchException(_FH_infos));}
+  public String getInfos() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_infos == null)
+      jcasType.jcas.throwFeatMissing("infos", "org.texttechnologylab.annotation.search.ReferenceText");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_infos);}
     
   /** setter for infos - sets additional infos as json string 
    * @generated
    * @param v value to set into the feature 
    */
   public void setInfos(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_infos), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_infos == null)
+      jcasType.jcas.throwFeatMissing("infos", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setStringValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_infos, v);}    
    
     
   //*--------------*
@@ -311,16 +282,19 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TextSearch getReference() { return (TextSearch)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
+  public TextSearch getReference() {
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.search.ReferenceText");
+    return (TextSearch)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets reference 
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(TextSearch v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
+    if (ReferenceText_Type.featOkTst && ((ReferenceText_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.search.ReferenceText");
+    jcasType.ll_cas.ll_setRefValue(addr, ((ReferenceText_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

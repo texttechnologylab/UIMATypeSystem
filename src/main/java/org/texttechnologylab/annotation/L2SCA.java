@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** L2SCA Output
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class L2SCA extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.L2SCA";
-  
   /** @generated
    * @ordered 
    */
@@ -47,48 +32,17 @@ public class L2SCA extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Value = "Value";
-  public final static String _FeatName_Code = "Code";
-  public final static String _FeatName_typeName = "typeName";
-  public final static String _FeatName_typeNumber = "typeNumber";
-  public final static String _FeatName_Measure = "Measure";
-  public final static String _FeatName_definition = "definition";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Value = TypeSystemImpl.createCallSite(L2SCA.class, "Value");
-  private final static MethodHandle _FH_Value = _FC_Value.dynamicInvoker();
-  private final static CallSite _FC_Code = TypeSystemImpl.createCallSite(L2SCA.class, "Code");
-  private final static MethodHandle _FH_Code = _FC_Code.dynamicInvoker();
-  private final static CallSite _FC_typeName = TypeSystemImpl.createCallSite(L2SCA.class, "typeName");
-  private final static MethodHandle _FH_typeName = _FC_typeName.dynamicInvoker();
-  private final static CallSite _FC_typeNumber = TypeSystemImpl.createCallSite(L2SCA.class, "typeNumber");
-  private final static MethodHandle _FH_typeNumber = _FC_typeNumber.dynamicInvoker();
-  private final static CallSite _FC_Measure = TypeSystemImpl.createCallSite(L2SCA.class, "Measure");
-  private final static MethodHandle _FH_Measure = _FC_Measure.dynamicInvoker();
-  private final static CallSite _FC_definition = TypeSystemImpl.createCallSite(L2SCA.class, "definition");
-  private final static MethodHandle _FH_definition = _FC_definition.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(L2SCA.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected L2SCA() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public L2SCA(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public L2SCA(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -99,7 +53,6 @@ public class L2SCA extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -131,16 +84,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));}
+  public double getValue() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Value == null)
+      jcasType.jcas.throwFeatMissing("Value", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Value);}
     
   /** setter for Value - sets L2SCA Feature Value 
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Value), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Value == null)
+      jcasType.jcas.throwFeatMissing("Value", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Value, v);}    
    
     
   //*--------------*
@@ -150,16 +106,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getCode() { return _getStringValueNc(wrapGetIntCatchException(_FH_Code));}
+  public String getCode() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Code == null)
+      jcasType.jcas.throwFeatMissing("Code", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Code);}
     
   /** setter for Code - sets L2SCA Feature Code 
    * @generated
    * @param v value to set into the feature 
    */
   public void setCode(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Code), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Code == null)
+      jcasType.jcas.throwFeatMissing("Code", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Code, v);}    
    
     
   //*--------------*
@@ -169,16 +128,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTypeName() { return _getStringValueNc(wrapGetIntCatchException(_FH_typeName));}
+  public String getTypeName() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_typeName == null)
+      jcasType.jcas.throwFeatMissing("typeName", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_typeName);}
     
   /** setter for typeName - sets L2SCA Feature typeName 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTypeName(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_typeName), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_typeName == null)
+      jcasType.jcas.throwFeatMissing("typeName", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_typeName, v);}    
    
     
   //*--------------*
@@ -188,16 +150,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTypeNumber() { return _getIntValueNc(wrapGetIntCatchException(_FH_typeNumber));}
+  public int getTypeNumber() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_typeNumber == null)
+      jcasType.jcas.throwFeatMissing("typeNumber", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((L2SCA_Type)jcasType).casFeatCode_typeNumber);}
     
   /** setter for typeNumber - sets L2SCA Feature type Number 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTypeNumber(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_typeNumber), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_typeNumber == null)
+      jcasType.jcas.throwFeatMissing("typeNumber", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setIntValue(addr, ((L2SCA_Type)jcasType).casFeatCode_typeNumber, v);}    
    
     
   //*--------------*
@@ -207,16 +172,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMeasure() { return _getStringValueNc(wrapGetIntCatchException(_FH_Measure));}
+  public String getMeasure() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Measure == null)
+      jcasType.jcas.throwFeatMissing("Measure", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Measure);}
     
   /** setter for Measure - sets L2SCA Feature Measure 
    * @generated
    * @param v value to set into the feature 
    */
   public void setMeasure(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Measure), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_Measure == null)
+      jcasType.jcas.throwFeatMissing("Measure", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_Measure, v);}    
    
     
   //*--------------*
@@ -226,16 +194,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDefinition() { return _getStringValueNc(wrapGetIntCatchException(_FH_definition));}
+  public String getDefinition() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_definition == null)
+      jcasType.jcas.throwFeatMissing("definition", "org.texttechnologylab.annotation.L2SCA");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_definition);}
     
   /** setter for definition - sets L2SCA Feature definition 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDefinition(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_definition), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_definition == null)
+      jcasType.jcas.throwFeatMissing("definition", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setStringValue(addr, ((L2SCA_Type)jcasType).casFeatCode_definition, v);}    
    
     
   //*--------------*
@@ -245,16 +216,19 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.L2SCA");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((L2SCA_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets Which Model or Process was used to Compute the L2SCA 
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (L2SCA_Type.featOkTst && ((L2SCA_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.L2SCA");
+    jcasType.ll_cas.ll_setRefValue(addr, ((L2SCA_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

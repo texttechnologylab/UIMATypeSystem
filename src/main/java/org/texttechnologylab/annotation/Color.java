@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.type.AnnotationNode;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Color extends AnnotationNode {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Color";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class Color extends AnnotationNode {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_rgb = "rgb";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_rgb = TypeSystemImpl.createCallSite(Color.class, "rgb");
-  private final static MethodHandle _FH_rgb = _FC_rgb.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Color() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Color(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Color(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class Color extends AnnotationNode {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -100,16 +71,19 @@ public class Color extends AnnotationNode {
    * @generated
    * @return value of the feature 
    */
-  public String getRgb() { return _getStringValueNc(wrapGetIntCatchException(_FH_rgb));}
+  public String getRgb() {
+    if (Color_Type.featOkTst && ((Color_Type)jcasType).casFeat_rgb == null)
+      jcasType.jcas.throwFeatMissing("rgb", "org.texttechnologylab.annotation.Color");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Color_Type)jcasType).casFeatCode_rgb);}
     
   /** setter for rgb - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRgb(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_rgb), v);
-  }    
-    
+    if (Color_Type.featOkTst && ((Color_Type)jcasType).casFeat_rgb == null)
+      jcasType.jcas.throwFeatMissing("rgb", "org.texttechnologylab.annotation.Color");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Color_Type)jcasType).casFeatCode_rgb, v);}    
   }
 
     

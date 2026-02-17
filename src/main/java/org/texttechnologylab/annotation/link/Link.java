@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.link;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Base type for unidirectional links between entities
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Link extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.link.Link";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Link extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_linkType = "linkType";
-  public final static String _FeatName_linkId = "linkId";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_linkType = TypeSystemImpl.createCallSite(Link.class, "linkType");
-  private final static MethodHandle _FH_linkType = _FC_linkType.dynamicInvoker();
-  private final static CallSite _FC_linkId = TypeSystemImpl.createCallSite(Link.class, "linkId");
-  private final static MethodHandle _FH_linkId = _FC_linkId.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Link() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Link(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Link(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Link extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Link extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLinkType() { return _getStringValueNc(wrapGetIntCatchException(_FH_linkType));}
+  public String getLinkType() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_linkType == null)
+      jcasType.jcas.throwFeatMissing("linkType", "org.texttechnologylab.annotation.link.Link");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Link_Type)jcasType).casFeatCode_linkType);}
     
   /** setter for linkType - sets Type of the link 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLinkType(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_linkType), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_linkType == null)
+      jcasType.jcas.throwFeatMissing("linkType", "org.texttechnologylab.annotation.link.Link");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Link_Type)jcasType).casFeatCode_linkType, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Link extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getLinkId() { return _getLongValueNc(wrapGetIntCatchException(_FH_linkId));}
+  public long getLinkId() {
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_linkId == null)
+      jcasType.jcas.throwFeatMissing("linkId", "org.texttechnologylab.annotation.link.Link");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((Link_Type)jcasType).casFeatCode_linkId);}
     
   /** setter for linkId - sets Id of a Link 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLinkId(long v) {
-    _setLongValueNfc(wrapGetIntCatchException(_FH_linkId), v);
-  }    
-    
+    if (Link_Type.featOkTst && ((Link_Type)jcasType).casFeat_linkId == null)
+      jcasType.jcas.throwFeatMissing("linkId", "org.texttechnologylab.annotation.link.Link");
+    jcasType.ll_cas.ll_setLongValue(addr, ((Link_Type)jcasType).casFeatCode_linkId, v);}    
   }
 
     

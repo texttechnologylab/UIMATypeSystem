@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package de.tudarmstadt.ukp.dkpro.core.io.jwpl.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Wikipedia link
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink";
-  
   /** @generated
    * @ordered 
    */
@@ -46,36 +31,17 @@ public class WikipediaLink extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_LinkType = "LinkType";
-  public final static String _FeatName_Target = "Target";
-  public final static String _FeatName_Anchor = "Anchor";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_LinkType = TypeSystemImpl.createCallSite(WikipediaLink.class, "LinkType");
-  private final static MethodHandle _FH_LinkType = _FC_LinkType.dynamicInvoker();
-  private final static CallSite _FC_Target = TypeSystemImpl.createCallSite(WikipediaLink.class, "Target");
-  private final static MethodHandle _FH_Target = _FC_Target.dynamicInvoker();
-  private final static CallSite _FC_Anchor = TypeSystemImpl.createCallSite(WikipediaLink.class, "Anchor");
-  private final static MethodHandle _FH_Anchor = _FC_Anchor.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected WikipediaLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public WikipediaLink(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public WikipediaLink(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -86,7 +52,6 @@ public class WikipediaLink extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -118,16 +83,19 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLinkType() { return _getStringValueNc(wrapGetIntCatchException(_FH_LinkType));}
+  public String getLinkType() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_LinkType == null)
+      jcasType.jcas.throwFeatMissing("LinkType", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_LinkType);}
     
   /** setter for LinkType - sets The type of the link, e.g. internal, external, image, ... 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLinkType(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_LinkType), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_LinkType == null)
+      jcasType.jcas.throwFeatMissing("LinkType", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_LinkType, v);}    
    
     
   //*--------------*
@@ -137,16 +105,19 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTarget() { return _getStringValueNc(wrapGetIntCatchException(_FH_Target));}
+  public String getTarget() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_Target == null)
+      jcasType.jcas.throwFeatMissing("Target", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_Target);}
     
   /** setter for Target - sets The link target url 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTarget(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Target), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_Target == null)
+      jcasType.jcas.throwFeatMissing("Target", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_Target, v);}    
    
     
   //*--------------*
@@ -156,16 +127,19 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAnchor() { return _getStringValueNc(wrapGetIntCatchException(_FH_Anchor));}
+  public String getAnchor() {
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_Anchor == null)
+      jcasType.jcas.throwFeatMissing("Anchor", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_Anchor);}
     
   /** setter for Anchor - sets The anchor of the link 
    * @generated
    * @param v value to set into the feature 
    */
   public void setAnchor(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Anchor), v);
-  }    
-    
+    if (WikipediaLink_Type.featOkTst && ((WikipediaLink_Type)jcasType).casFeat_Anchor == null)
+      jcasType.jcas.throwFeatMissing("Anchor", "de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WikipediaLink_Type)jcasType).casFeatCode_Anchor, v);}    
   }
 
     

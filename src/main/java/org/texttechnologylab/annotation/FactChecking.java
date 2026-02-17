@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Does the assertion confirm the statement
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FactChecking extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.FactChecking";
-  
   /** @generated
    * @ordered 
    */
@@ -47,39 +32,17 @@ public class FactChecking extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Fact = "Fact";
-  public final static String _FeatName_Claim = "Claim";
-  public final static String _FeatName_consistency = "consistency";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Fact = TypeSystemImpl.createCallSite(FactChecking.class, "Fact");
-  private final static MethodHandle _FH_Fact = _FC_Fact.dynamicInvoker();
-  private final static CallSite _FC_Claim = TypeSystemImpl.createCallSite(FactChecking.class, "Claim");
-  private final static MethodHandle _FH_Claim = _FC_Claim.dynamicInvoker();
-  private final static CallSite _FC_consistency = TypeSystemImpl.createCallSite(FactChecking.class, "consistency");
-  private final static MethodHandle _FH_consistency = _FC_consistency.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(FactChecking.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected FactChecking() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public FactChecking(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public FactChecking(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -90,7 +53,6 @@ public class FactChecking extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -122,16 +84,19 @@ public class FactChecking extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Fact getFact() { return (Fact)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Fact)));}
+  public Fact getFact() {
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_Fact == null)
+      jcasType.jcas.throwFeatMissing("Fact", "org.texttechnologylab.annotation.FactChecking");
+    return (Fact)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_Fact)));}
     
   /** setter for Fact - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFact(Fact v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Fact), v);
-  }    
-    
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_Fact == null)
+      jcasType.jcas.throwFeatMissing("Fact", "org.texttechnologylab.annotation.FactChecking");
+    jcasType.ll_cas.ll_setRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_Fact, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -141,16 +106,19 @@ public class FactChecking extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Claim getClaim() { return (Claim)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Claim)));}
+  public Claim getClaim() {
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_Claim == null)
+      jcasType.jcas.throwFeatMissing("Claim", "org.texttechnologylab.annotation.FactChecking");
+    return (Claim)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_Claim)));}
     
   /** setter for Claim - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setClaim(Claim v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Claim), v);
-  }    
-    
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_Claim == null)
+      jcasType.jcas.throwFeatMissing("Claim", "org.texttechnologylab.annotation.FactChecking");
+    jcasType.ll_cas.ll_setRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_Claim, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -160,16 +128,19 @@ public class FactChecking extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getConsistency() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_consistency));}
+  public double getConsistency() {
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_consistency == null)
+      jcasType.jcas.throwFeatMissing("consistency", "org.texttechnologylab.annotation.FactChecking");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((FactChecking_Type)jcasType).casFeatCode_consistency);}
     
   /** setter for consistency - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setConsistency(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_consistency), v);
-  }    
-    
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_consistency == null)
+      jcasType.jcas.throwFeatMissing("consistency", "org.texttechnologylab.annotation.FactChecking");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((FactChecking_Type)jcasType).casFeatCode_consistency, v);}    
    
     
   //*--------------*
@@ -179,16 +150,19 @@ public class FactChecking extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.FactChecking");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (FactChecking_Type.featOkTst && ((FactChecking_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.FactChecking");
+    jcasType.ll_cas.ll_setRefValue(addr, ((FactChecking_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

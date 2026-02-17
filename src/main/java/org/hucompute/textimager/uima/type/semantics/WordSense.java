@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type.semantics;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WordSense extends de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.semantics.WordSense";
-  
   /** @generated
    * @ordered 
    */
@@ -45,33 +30,17 @@ public class WordSense extends de.tudarmstadt.ukp.dkpro.core.api.semantics.type.
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_value = "value";
-  public final static String _FeatName_confidence = "confidence";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(WordSense.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-  private final static CallSite _FC_confidence = TypeSystemImpl.createCallSite(WordSense.class, "confidence");
-  private final static MethodHandle _FH_confidence = _FC_confidence.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected WordSense() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public WordSense(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public WordSense(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -82,7 +51,6 @@ public class WordSense extends de.tudarmstadt.ukp.dkpro.core.api.semantics.type.
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -114,16 +82,19 @@ public class WordSense extends de.tudarmstadt.ukp.dkpro.core.api.semantics.type.
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (WordSense_Type.featOkTst && ((WordSense_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.hucompute.textimager.uima.type.semantics.WordSense");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((WordSense_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (WordSense_Type.featOkTst && ((WordSense_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.hucompute.textimager.uima.type.semantics.WordSense");
+    jcasType.ll_cas.ll_setStringValue(addr, ((WordSense_Type)jcasType).casFeatCode_value, v);}    
    
     
   //*--------------*
@@ -133,16 +104,19 @@ public class WordSense extends de.tudarmstadt.ukp.dkpro.core.api.semantics.type.
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_confidence));}
+  public double getConfidence() {
+    if (WordSense_Type.featOkTst && ((WordSense_Type)jcasType).casFeat_confidence == null)
+      jcasType.jcas.throwFeatMissing("confidence", "org.hucompute.textimager.uima.type.semantics.WordSense");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((WordSense_Type)jcasType).casFeatCode_confidence);}
     
   /** setter for confidence - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setConfidence(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_confidence), v);
-  }    
-    
+    if (WordSense_Type.featOkTst && ((WordSense_Type)jcasType).casFeat_confidence == null)
+      jcasType.jcas.throwFeatMissing("confidence", "org.hucompute.textimager.uima.type.semantics.WordSense");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((WordSense_Type)jcasType).casFeatCode_confidence, v);}    
   }
 
     

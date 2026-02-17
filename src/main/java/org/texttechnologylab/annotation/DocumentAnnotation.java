@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DocumentAnnotation extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.DocumentAnnotation";
-  
   /** @generated
    * @ordered 
    */
@@ -46,51 +31,17 @@ public class DocumentAnnotation extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_author = "author";
-  public final static String _FeatName_publisher = "publisher";
-  public final static String _FeatName_dateDay = "dateDay";
-  public final static String _FeatName_subtitle = "subtitle";
-  public final static String _FeatName_dateMonth = "dateMonth";
-  public final static String _FeatName_dateYear = "dateYear";
-  public final static String _FeatName_timestamp = "timestamp";
-  public final static String _FeatName_place = "place";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_author = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "author");
-  private final static MethodHandle _FH_author = _FC_author.dynamicInvoker();
-  private final static CallSite _FC_publisher = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "publisher");
-  private final static MethodHandle _FH_publisher = _FC_publisher.dynamicInvoker();
-  private final static CallSite _FC_dateDay = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "dateDay");
-  private final static MethodHandle _FH_dateDay = _FC_dateDay.dynamicInvoker();
-  private final static CallSite _FC_subtitle = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "subtitle");
-  private final static MethodHandle _FH_subtitle = _FC_subtitle.dynamicInvoker();
-  private final static CallSite _FC_dateMonth = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "dateMonth");
-  private final static MethodHandle _FH_dateMonth = _FC_dateMonth.dynamicInvoker();
-  private final static CallSite _FC_dateYear = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "dateYear");
-  private final static MethodHandle _FH_dateYear = _FC_dateYear.dynamicInvoker();
-  private final static CallSite _FC_timestamp = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "timestamp");
-  private final static MethodHandle _FH_timestamp = _FC_timestamp.dynamicInvoker();
-  private final static CallSite _FC_place = TypeSystemImpl.createCallSite(DocumentAnnotation.class, "place");
-  private final static MethodHandle _FH_place = _FC_place.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected DocumentAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public DocumentAnnotation(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public DocumentAnnotation(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -101,7 +52,6 @@ public class DocumentAnnotation extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -121,16 +71,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getAuthor() { return _getStringValueNc(wrapGetIntCatchException(_FH_author));}
+  public String getAuthor() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_author == null)
+      jcasType.jcas.throwFeatMissing("author", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_author);}
     
   /** setter for author - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAuthor(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_author), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_author == null)
+      jcasType.jcas.throwFeatMissing("author", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_author, v);}    
    
     
   //*--------------*
@@ -140,16 +93,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getPublisher() { return _getStringValueNc(wrapGetIntCatchException(_FH_publisher));}
+  public String getPublisher() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_publisher == null)
+      jcasType.jcas.throwFeatMissing("publisher", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_publisher);}
     
   /** setter for publisher - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPublisher(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_publisher), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_publisher == null)
+      jcasType.jcas.throwFeatMissing("publisher", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_publisher, v);}    
    
     
   //*--------------*
@@ -159,16 +115,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateDay() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateDay));}
+  public int getDateDay() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateDay == null)
+      jcasType.jcas.throwFeatMissing("dateDay", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateDay);}
     
   /** setter for dateDay - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDateDay(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_dateDay), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateDay == null)
+      jcasType.jcas.throwFeatMissing("dateDay", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateDay, v);}    
    
     
   //*--------------*
@@ -178,16 +137,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getSubtitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_subtitle));}
+  public String getSubtitle() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_subtitle == null)
+      jcasType.jcas.throwFeatMissing("subtitle", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_subtitle);}
     
   /** setter for subtitle - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSubtitle(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_subtitle), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_subtitle == null)
+      jcasType.jcas.throwFeatMissing("subtitle", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_subtitle, v);}    
    
     
   //*--------------*
@@ -197,16 +159,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateMonth() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateMonth));}
+  public int getDateMonth() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateMonth == null)
+      jcasType.jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateMonth);}
     
   /** setter for dateMonth - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDateMonth(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_dateMonth), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateMonth == null)
+      jcasType.jcas.throwFeatMissing("dateMonth", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateMonth, v);}    
    
     
   //*--------------*
@@ -216,16 +181,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateYear() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateYear));}
+  public int getDateYear() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateYear == null)
+      jcasType.jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateYear);}
     
   /** setter for dateYear - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setDateYear(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_dateYear), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_dateYear == null)
+      jcasType.jcas.throwFeatMissing("dateYear", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setIntValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_dateYear, v);}    
    
     
   //*--------------*
@@ -235,16 +203,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public long getTimestamp() { return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));}
+  public long getTimestamp() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getLongValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_timestamp);}
     
   /** setter for timestamp - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setTimestamp(long v) {
-    _setLongValueNfc(wrapGetIntCatchException(_FH_timestamp), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_timestamp == null)
+      jcasType.jcas.throwFeatMissing("timestamp", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setLongValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_timestamp, v);}    
    
     
   //*--------------*
@@ -254,16 +225,19 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getPlace() { return _getStringValueNc(wrapGetIntCatchException(_FH_place));}
+  public String getPlace() {
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_place == null)
+      jcasType.jcas.throwFeatMissing("place", "org.texttechnologylab.annotation.DocumentAnnotation");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_place);}
     
   /** setter for place - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPlace(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_place), v);
-  }    
-    
+    if (DocumentAnnotation_Type.featOkTst && ((DocumentAnnotation_Type)jcasType).casFeat_place == null)
+      jcasType.jcas.throwFeatMissing("place", "org.texttechnologylab.annotation.DocumentAnnotation");
+    jcasType.ll_cas.ll_setStringValue(addr, ((DocumentAnnotation_Type)jcasType).casFeatCode_place, v);}    
   }
 
     

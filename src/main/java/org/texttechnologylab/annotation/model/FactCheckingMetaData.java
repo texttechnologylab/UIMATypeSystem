@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.model;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FactCheckingMetaData extends MetaData {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.model.FactCheckingMetaData";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class FactCheckingMetaData extends MetaData {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Source = "Source";
-  public final static String _FeatName_DependeciesVersion = "DependeciesVersion";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Source = TypeSystemImpl.createCallSite(FactCheckingMetaData.class, "Source");
-  private final static MethodHandle _FH_Source = _FC_Source.dynamicInvoker();
-  private final static CallSite _FC_DependeciesVersion = TypeSystemImpl.createCallSite(FactCheckingMetaData.class, "DependeciesVersion");
-  private final static MethodHandle _FH_DependeciesVersion = _FC_DependeciesVersion.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected FactCheckingMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public FactCheckingMetaData(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public FactCheckingMetaData(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class FactCheckingMetaData extends MetaData {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class FactCheckingMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() { return _getStringValueNc(wrapGetIntCatchException(_FH_Source));}
+  public String getSource() {
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_Source == null)
+      jcasType.jcas.throwFeatMissing("Source", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_Source);}
     
   /** setter for Source - sets URL 
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_Source), v);
-  }    
-    
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_Source == null)
+      jcasType.jcas.throwFeatMissing("Source", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    jcasType.ll_cas.ll_setStringValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_Source, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class FactCheckingMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getDependeciesVersion() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)));}
+  public StringArray getDependeciesVersion() {
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
+      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    return (StringArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion)));}
     
   /** setter for DependeciesVersion - sets Dependency Library Version e.g. Pytorch... 
    * @generated
    * @param v value to set into the feature 
    */
   public void setDependeciesVersion(StringArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_DependeciesVersion), v);
-  }    
-    
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
+      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    jcasType.ll_cas.ll_setRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for DependeciesVersion - gets an indexed value - Dependency Library Version e.g. Pytorch...
    * @generated
@@ -151,16 +125,21 @@ public class FactCheckingMetaData extends MetaData {
    * @return value of the element at index i 
    */
   public String getDependeciesVersion(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).get(i);} 
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
+      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);
+    return jcasType.ll_cas.ll_getStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);}
 
   /** indexed setter for DependeciesVersion - sets an indexed value - Dependency Library Version e.g. Pytorch...
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setDependeciesVersion(int i, String v) {
-    ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).set(i, v);
-  }  
+  public void setDependeciesVersion(int i, String v) { 
+    if (FactCheckingMetaData_Type.featOkTst && ((FactCheckingMetaData_Type)jcasType).casFeat_DependeciesVersion == null)
+      jcasType.jcas.throwFeatMissing("DependeciesVersion", "org.texttechnologylab.annotation.model.FactCheckingMetaData");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i);
+    jcasType.ll_cas.ll_setStringArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((FactCheckingMetaData_Type)jcasType).casFeatCode_DependeciesVersion), i, v);}
   }
 
     

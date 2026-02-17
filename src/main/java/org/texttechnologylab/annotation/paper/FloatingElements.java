@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.paper;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FloatingElements extends AnnotationBase {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.paper.FloatingElements";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class FloatingElements extends AnnotationBase {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_caption = "caption";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_caption = TypeSystemImpl.createCallSite(FloatingElements.class, "caption");
-  private final static MethodHandle _FH_caption = _FC_caption.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected FloatingElements() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public FloatingElements(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public FloatingElements(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class FloatingElements extends AnnotationBase {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -100,16 +71,19 @@ public class FloatingElements extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Caption getCaption() { return (Caption)(_getFeatureValueNc(wrapGetIntCatchException(_FH_caption)));}
+  public Caption getCaption() {
+    if (FloatingElements_Type.featOkTst && ((FloatingElements_Type)jcasType).casFeat_caption == null)
+      jcasType.jcas.throwFeatMissing("caption", "org.texttechnologylab.annotation.paper.FloatingElements");
+    return (Caption)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((FloatingElements_Type)jcasType).casFeatCode_caption)));}
     
   /** setter for caption - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCaption(Caption v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_caption), v);
-  }    
-    
+    if (FloatingElements_Type.featOkTst && ((FloatingElements_Type)jcasType).casFeat_caption == null)
+      jcasType.jcas.throwFeatMissing("caption", "org.texttechnologylab.annotation.paper.FloatingElements");
+    jcasType.ll_cas.ll_setRefValue(addr, ((FloatingElements_Type)jcasType).casFeatCode_caption, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

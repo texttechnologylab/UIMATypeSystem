@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Language extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.Language";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class Language extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_language = "language";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_language = TypeSystemImpl.createCallSite(Language.class, "language");
-  private final static MethodHandle _FH_language = _FC_language.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Language() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Language(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Language(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class Language extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -112,16 +83,19 @@ public class Language extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_language));}
+  public String getLanguage() {
+    if (Language_Type.featOkTst && ((Language_Type)jcasType).casFeat_language == null)
+      jcasType.jcas.throwFeatMissing("language", "org.hucompute.textimager.uima.type.Language");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Language_Type)jcasType).casFeatCode_language);}
     
   /** setter for language - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLanguage(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_language), v);
-  }    
-    
+    if (Language_Type.featOkTst && ((Language_Type)jcasType).casFeat_language == null)
+      jcasType.jcas.throwFeatMissing("language", "org.hucompute.textimager.uima.type.Language");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Language_Type)jcasType).casFeatCode_language, v);}    
   }
 
     

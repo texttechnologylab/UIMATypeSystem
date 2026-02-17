@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speech extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.Speech";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Speech extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_id = "id";
-  public final static String _FeatName_index = "index";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_id = TypeSystemImpl.createCallSite(Speech.class, "id");
-  private final static MethodHandle _FH_id = _FC_id.dynamicInvoker();
-  private final static CallSite _FC_index = TypeSystemImpl.createCallSite(Speech.class, "index");
-  private final static MethodHandle _FH_index = _FC_index.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Speech() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Speech(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Speech(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Speech extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Speech extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
+  public String getId() {
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.parliamentary.Speech");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Speech_Type)jcasType).casFeatCode_id);}
     
   /** setter for id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setId(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_id), v);
-  }    
-    
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_id == null)
+      jcasType.jcas.throwFeatMissing("id", "org.texttechnologylab.annotation.parliamentary.Speech");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Speech_Type)jcasType).casFeatCode_id, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Speech extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
+  public int getIndex() {
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.parliamentary.Speech");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Speech_Type)jcasType).casFeatCode_index);}
     
   /** setter for index - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIndex(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_index), v);
-  }    
-    
+    if (Speech_Type.featOkTst && ((Speech_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.parliamentary.Speech");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Speech_Type)jcasType).casFeatCode_index, v);}    
   }
 
     

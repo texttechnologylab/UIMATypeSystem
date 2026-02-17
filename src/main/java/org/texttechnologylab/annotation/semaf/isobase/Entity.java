@@ -1,19 +1,11 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isobase;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.jcas.cas.FSArray;
@@ -24,17 +16,10 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Entity extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isobase.Entity";
-  
   /** @generated
    * @ordered 
    */
@@ -51,51 +36,17 @@ public class Entity extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_comment = "comment";
-  public final static String _FeatName_mod = "mod";
-  public final static String _FeatName_object_id = "object_id";
-  public final static String _FeatName_position = "position";
-  public final static String _FeatName_rotation = "rotation";
-  public final static String _FeatName_scale = "scale";
-  public final static String _FeatName_object_feature = "object_feature";
-  public final static String _FeatName_object_feature_array = "object_feature_array";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_comment = TypeSystemImpl.createCallSite(Entity.class, "comment");
-  private final static MethodHandle _FH_comment = _FC_comment.dynamicInvoker();
-  private final static CallSite _FC_mod = TypeSystemImpl.createCallSite(Entity.class, "mod");
-  private final static MethodHandle _FH_mod = _FC_mod.dynamicInvoker();
-  private final static CallSite _FC_object_id = TypeSystemImpl.createCallSite(Entity.class, "object_id");
-  private final static MethodHandle _FH_object_id = _FC_object_id.dynamicInvoker();
-  private final static CallSite _FC_position = TypeSystemImpl.createCallSite(Entity.class, "position");
-  private final static MethodHandle _FH_position = _FC_position.dynamicInvoker();
-  private final static CallSite _FC_rotation = TypeSystemImpl.createCallSite(Entity.class, "rotation");
-  private final static MethodHandle _FH_rotation = _FC_rotation.dynamicInvoker();
-  private final static CallSite _FC_scale = TypeSystemImpl.createCallSite(Entity.class, "scale");
-  private final static MethodHandle _FH_scale = _FC_scale.dynamicInvoker();
-  private final static CallSite _FC_object_feature = TypeSystemImpl.createCallSite(Entity.class, "object_feature");
-  private final static MethodHandle _FH_object_feature = _FC_object_feature.dynamicInvoker();
-  private final static CallSite _FC_object_feature_array = TypeSystemImpl.createCallSite(Entity.class, "object_feature_array");
-  private final static MethodHandle _FH_object_feature_array = _FC_object_feature_array.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Entity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Entity(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Entity(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -106,7 +57,6 @@ public class Entity extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -138,16 +88,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
+  public String getComment() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Entity_Type)jcasType).casFeatCode_comment);}
     
   /** setter for comment - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setComment(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_comment), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_comment == null)
+      jcasType.jcas.throwFeatMissing("comment", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Entity_Type)jcasType).casFeatCode_comment, v);}    
    
     
   //*--------------*
@@ -157,16 +110,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMod() { return _getStringValueNc(wrapGetIntCatchException(_FH_mod));}
+  public String getMod() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_mod == null)
+      jcasType.jcas.throwFeatMissing("mod", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Entity_Type)jcasType).casFeatCode_mod);}
     
   /** setter for mod - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMod(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mod), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_mod == null)
+      jcasType.jcas.throwFeatMissing("mod", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Entity_Type)jcasType).casFeatCode_mod, v);}    
    
     
   //*--------------*
@@ -176,16 +132,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getObject_id() { return _getStringValueNc(wrapGetIntCatchException(_FH_object_id));}
+  public String getObject_id() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_id == null)
+      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Entity_Type)jcasType).casFeatCode_object_id);}
     
   /** setter for object_id - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setObject_id(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_object_id), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_id == null)
+      jcasType.jcas.throwFeatMissing("object_id", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Entity_Type)jcasType).casFeatCode_object_id, v);}    
    
     
   //*--------------*
@@ -195,16 +154,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vec3 getPosition() { return (Vec3)(_getFeatureValueNc(wrapGetIntCatchException(_FH_position)));}
+  public Vec3 getPosition() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_position == null)
+      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_position)));}
     
   /** setter for position - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setPosition(Vec3 v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_position), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_position == null)
+      jcasType.jcas.throwFeatMissing("position", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_position, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -214,16 +176,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vec4 getRotation() { return (Vec4)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));}
+  public Vec4 getRotation() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec4)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_rotation)));}
     
   /** setter for rotation - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setRotation(Vec4 v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rotation), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_rotation, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -233,16 +198,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vec3 getScale() { return (Vec3)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scale)));}
+  public Vec3 getScale() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (Vec3)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_scale)));}
     
   /** setter for scale - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setScale(Vec3 v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scale), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_scale == null)
+      jcasType.jcas.throwFeatMissing("scale", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_scale, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -252,16 +220,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSList getObject_feature() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_object_feature)));}
+  public FSList getObject_feature() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature == null)
+      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature)));}
     
   /** setter for object_feature - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setObject_feature(FSList v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_object_feature), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature == null)
+      jcasType.jcas.throwFeatMissing("object_feature", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature, jcasType.ll_cas.ll_getFSRef(v));}    
    
     
   //*--------------*
@@ -271,16 +242,19 @@ public class Entity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public FSArray getObject_feature_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_object_feature_array)));}
+  public FSArray getObject_feature_array() {
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array)));}
     
   /** setter for object_feature_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setObject_feature_array(FSArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_object_feature_array), v);
-  }    
-    
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for object_feature_array - gets an indexed value - 
    * @generated
@@ -288,16 +262,21 @@ public class Entity extends Annotation {
    * @return value of the element at index i 
    */
   public ObjectAttribute getObject_feature_array(int i) {
-     return (ObjectAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_object_feature_array)))).get(i));} 
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i);
+    return (ObjectAttribute)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i)));}
 
   /** indexed setter for object_feature_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setObject_feature_array(int i, ObjectAttribute v) {
-    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_object_feature_array)))).set(i, v);
-  }  
+  public void setObject_feature_array(int i, ObjectAttribute v) { 
+    if (Entity_Type.featOkTst && ((Entity_Type)jcasType).casFeat_object_feature_array == null)
+      jcasType.jcas.throwFeatMissing("object_feature_array", "org.texttechnologylab.annotation.semaf.isobase.Entity");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i);
+    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Entity_Type)jcasType).casFeatCode_object_feature_array), i, jcasType.ll_cas.ll_getFSRef(v));}
   }
 
     

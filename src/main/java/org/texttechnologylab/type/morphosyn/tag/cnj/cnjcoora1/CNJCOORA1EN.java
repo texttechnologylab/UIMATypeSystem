@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:38 CET 2026 */
 package org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.type.morphosyn.tag.cnj.CNJCOORA1;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:38 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CNJCOORA1EN extends CNJCOORA1 {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.type.morphosyn.tag.cnj.cnjcoora1.CNJCOORA1EN";
-  
   /** @generated
    * @ordered 
    */
@@ -46,27 +31,17 @@ public class CNJCOORA1EN extends CNJCOORA1 {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-
-
-  /* Feature Adjusted Offsets */
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected CNJCOORA1EN() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public CNJCOORA1EN(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public CNJCOORA1EN(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -77,7 +52,6 @@ public class CNJCOORA1EN extends CNJCOORA1 {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs

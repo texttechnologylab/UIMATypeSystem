@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KnowledgeEntry extends Node {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.KnowledgeEntry";
-  
   /** @generated
    * @ordered 
    */
@@ -45,39 +30,17 @@ public class KnowledgeEntry extends Node {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_identifier = "identifier";
-  public final static String _FeatName_source = "source";
-  public final static String _FeatName_reference = "reference";
-  public final static String _FeatName_parentEntity = "parentEntity";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_identifier = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "identifier");
-  private final static MethodHandle _FH_identifier = _FC_identifier.dynamicInvoker();
-  private final static CallSite _FC_source = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "source");
-  private final static MethodHandle _FH_source = _FC_source.dynamicInvoker();
-  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "reference");
-  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
-  private final static CallSite _FC_parentEntity = TypeSystemImpl.createCallSite(KnowledgeEntry.class, "parentEntity");
-  private final static MethodHandle _FH_parentEntity = _FC_parentEntity.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected KnowledgeEntry() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public KnowledgeEntry(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public KnowledgeEntry(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -88,7 +51,6 @@ public class KnowledgeEntry extends Node {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -108,16 +70,19 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getIdentifier() { return _getStringValueNc(wrapGetIntCatchException(_FH_identifier));}
+  public String getIdentifier() {
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_identifier == null)
+      jcasType.jcas.throwFeatMissing("identifier", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_identifier);}
     
   /** setter for identifier - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setIdentifier(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_identifier), v);
-  }    
-    
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_identifier == null)
+      jcasType.jcas.throwFeatMissing("identifier", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_identifier, v);}    
    
     
   //*--------------*
@@ -127,16 +92,19 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() { return _getStringValueNc(wrapGetIntCatchException(_FH_source));}
+  public String getSource() {
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source);}
     
   /** setter for source - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSource(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_source), v);
-  }    
-    
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_source == null)
+      jcasType.jcas.throwFeatMissing("source", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_source, v);}    
    
     
   //*--------------*
@@ -146,16 +114,19 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getReference() { return _getStringValueNc(wrapGetIntCatchException(_FH_reference));}
+  public String getReference() {
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_reference);}
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_reference, v);}    
    
     
   //*--------------*
@@ -165,16 +136,19 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getParentEntity() { return _getStringValueNc(wrapGetIntCatchException(_FH_parentEntity));}
+  public String getParentEntity() {
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_parentEntity == null)
+      jcasType.jcas.throwFeatMissing("parentEntity", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_parentEntity);}
     
   /** setter for parentEntity - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setParentEntity(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_parentEntity), v);
-  }    
-    
+    if (KnowledgeEntry_Type.featOkTst && ((KnowledgeEntry_Type)jcasType).casFeat_parentEntity == null)
+      jcasType.jcas.throwFeatMissing("parentEntity", "org.texttechnologylab.annotation.type.KnowledgeEntry");
+    jcasType.ll_cas.ll_setStringValue(addr, ((KnowledgeEntry_Type)jcasType).casFeatCode_parentEntity, v);}    
   }
 
     

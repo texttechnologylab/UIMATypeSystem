@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.link;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** Annotation represents a (unidirectional) Link between a Document and another Document, linking offsets (can be in same Doc)
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OLink extends Link {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.link.OLink";
-  
   /** @generated
    * @ordered 
    */
@@ -45,45 +30,17 @@ public class OLink extends Link {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_from = "from";
-  public final static String _FeatName_to = "to";
-  public final static String _FeatName_fromBegin = "fromBegin";
-  public final static String _FeatName_fromEnd = "fromEnd";
-  public final static String _FeatName_toBegin = "toBegin";
-  public final static String _FeatName_toEnd = "toEnd";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_from = TypeSystemImpl.createCallSite(OLink.class, "from");
-  private final static MethodHandle _FH_from = _FC_from.dynamicInvoker();
-  private final static CallSite _FC_to = TypeSystemImpl.createCallSite(OLink.class, "to");
-  private final static MethodHandle _FH_to = _FC_to.dynamicInvoker();
-  private final static CallSite _FC_fromBegin = TypeSystemImpl.createCallSite(OLink.class, "fromBegin");
-  private final static MethodHandle _FH_fromBegin = _FC_fromBegin.dynamicInvoker();
-  private final static CallSite _FC_fromEnd = TypeSystemImpl.createCallSite(OLink.class, "fromEnd");
-  private final static MethodHandle _FH_fromEnd = _FC_fromEnd.dynamicInvoker();
-  private final static CallSite _FC_toBegin = TypeSystemImpl.createCallSite(OLink.class, "toBegin");
-  private final static MethodHandle _FH_toBegin = _FC_toBegin.dynamicInvoker();
-  private final static CallSite _FC_toEnd = TypeSystemImpl.createCallSite(OLink.class, "toEnd");
-  private final static MethodHandle _FH_toEnd = _FC_toEnd.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected OLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public OLink(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public OLink(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -94,7 +51,6 @@ public class OLink extends Link {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -126,16 +82,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getFrom() { return _getStringValueNc(wrapGetIntCatchException(_FH_from));}
+  public String getFrom() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_from == null)
+      jcasType.jcas.throwFeatMissing("from", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OLink_Type)jcasType).casFeatCode_from);}
     
   /** setter for from - sets from (document_id) to (document_id) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFrom(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_from), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_from == null)
+      jcasType.jcas.throwFeatMissing("from", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OLink_Type)jcasType).casFeatCode_from, v);}    
    
     
   //*--------------*
@@ -145,16 +104,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getTo() { return _getStringValueNc(wrapGetIntCatchException(_FH_to));}
+  public String getTo() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_to == null)
+      jcasType.jcas.throwFeatMissing("to", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((OLink_Type)jcasType).casFeatCode_to);}
     
   /** setter for to - sets from (document_id) to (document_id) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setTo(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_to), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_to == null)
+      jcasType.jcas.throwFeatMissing("to", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setStringValue(addr, ((OLink_Type)jcasType).casFeatCode_to, v);}    
    
     
   //*--------------*
@@ -164,16 +126,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public int getFromBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_fromBegin));}
+  public int getFromBegin() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_fromBegin == null)
+      jcasType.jcas.throwFeatMissing("fromBegin", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OLink_Type)jcasType).casFeatCode_fromBegin);}
     
   /** setter for fromBegin - sets Offset (begin) in (from) Doc 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFromBegin(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_fromBegin), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_fromBegin == null)
+      jcasType.jcas.throwFeatMissing("fromBegin", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OLink_Type)jcasType).casFeatCode_fromBegin, v);}    
    
     
   //*--------------*
@@ -183,16 +148,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public int getFromEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_fromEnd));}
+  public int getFromEnd() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_fromEnd == null)
+      jcasType.jcas.throwFeatMissing("fromEnd", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OLink_Type)jcasType).casFeatCode_fromEnd);}
     
   /** setter for fromEnd - sets Offset (end) in (from) Doc 
    * @generated
    * @param v value to set into the feature 
    */
   public void setFromEnd(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_fromEnd), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_fromEnd == null)
+      jcasType.jcas.throwFeatMissing("fromEnd", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OLink_Type)jcasType).casFeatCode_fromEnd, v);}    
    
     
   //*--------------*
@@ -202,16 +170,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public int getToBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_toBegin));}
+  public int getToBegin() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_toBegin == null)
+      jcasType.jcas.throwFeatMissing("toBegin", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OLink_Type)jcasType).casFeatCode_toBegin);}
     
   /** setter for toBegin - sets Offset (begin) in (to) Doc 
    * @generated
    * @param v value to set into the feature 
    */
   public void setToBegin(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_toBegin), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_toBegin == null)
+      jcasType.jcas.throwFeatMissing("toBegin", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OLink_Type)jcasType).casFeatCode_toBegin, v);}    
    
     
   //*--------------*
@@ -221,16 +192,19 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public int getToEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_toEnd));}
+  public int getToEnd() {
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_toEnd == null)
+      jcasType.jcas.throwFeatMissing("toEnd", "org.texttechnologylab.annotation.link.OLink");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((OLink_Type)jcasType).casFeatCode_toEnd);}
     
   /** setter for toEnd - sets Offset (end) in (to) Doc 
    * @generated
    * @param v value to set into the feature 
    */
   public void setToEnd(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_toEnd), v);
-  }    
-    
+    if (OLink_Type.featOkTst && ((OLink_Type)jcasType).casFeat_toEnd == null)
+      jcasType.jcas.throwFeatMissing("toEnd", "org.texttechnologylab.annotation.link.OLink");
+    jcasType.ll_cas.ll_setIntValue(addr, ((OLink_Type)jcasType).casFeatCode_toEnd, v);}    
   }
 
     

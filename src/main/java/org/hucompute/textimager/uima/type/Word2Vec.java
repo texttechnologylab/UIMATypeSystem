@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.hucompute.textimager.uima.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.DoubleArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Word2Vec extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.hucompute.textimager.uima.type.Word2Vec";
-  
   /** @generated
    * @ordered 
    */
@@ -47,33 +32,17 @@ public class Word2Vec extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_embedding = "embedding";
-  public final static String _FeatName_value = "value";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_embedding = TypeSystemImpl.createCallSite(Word2Vec.class, "embedding");
-  private final static MethodHandle _FH_embedding = _FC_embedding.dynamicInvoker();
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(Word2Vec.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Word2Vec() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Word2Vec(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Word2Vec(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -84,7 +53,6 @@ public class Word2Vec extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -116,16 +84,19 @@ public class Word2Vec extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public DoubleArray getEmbedding() { return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)));}
+  public DoubleArray getEmbedding() {
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_embedding == null)
+      jcasType.jcas.throwFeatMissing("embedding", "org.hucompute.textimager.uima.type.Word2Vec");
+    return (DoubleArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding)));}
     
   /** setter for embedding - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setEmbedding(DoubleArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_embedding), v);
-  }    
-    
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_embedding == null)
+      jcasType.jcas.throwFeatMissing("embedding", "org.hucompute.textimager.uima.type.Word2Vec");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for embedding - gets an indexed value - 
    * @generated
@@ -133,16 +104,21 @@ public class Word2Vec extends Annotation {
    * @return value of the element at index i 
    */
   public double getEmbedding(int i) {
-     return ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).get(i);} 
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_embedding == null)
+      jcasType.jcas.throwFeatMissing("embedding", "org.hucompute.textimager.uima.type.Word2Vec");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding), i);
+    return jcasType.ll_cas.ll_getDoubleArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding), i);}
 
   /** indexed setter for embedding - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setEmbedding(int i, double v) {
-    ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).set(i, v);
-  }  
+  public void setEmbedding(int i, double v) { 
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_embedding == null)
+      jcasType.jcas.throwFeatMissing("embedding", "org.hucompute.textimager.uima.type.Word2Vec");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding), i);
+    jcasType.ll_cas.ll_setDoubleArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_embedding), i, v);}
    
     
   //*--------------*
@@ -152,16 +128,19 @@ public class Word2Vec extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
+  public String getValue() {
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.hucompute.textimager.uima.type.Word2Vec");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_value);}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (Word2Vec_Type.featOkTst && ((Word2Vec_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.hucompute.textimager.uima.type.Word2Vec");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Word2Vec_Type)jcasType).casFeatCode_value, v);}    
   }
 
     

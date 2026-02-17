@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.paper;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Section extends TextContent {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.paper.Section";
-  
   /** @generated
    * @ordered 
    */
@@ -45,36 +30,17 @@ public class Section extends TextContent {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_level = "level";
-  public final static String _FeatName_label = "label";
-  public final static String _FeatName_index = "index";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_level = TypeSystemImpl.createCallSite(Section.class, "level");
-  private final static MethodHandle _FH_level = _FC_level.dynamicInvoker();
-  private final static CallSite _FC_label = TypeSystemImpl.createCallSite(Section.class, "label");
-  private final static MethodHandle _FH_label = _FC_label.dynamicInvoker();
-  private final static CallSite _FC_index = TypeSystemImpl.createCallSite(Section.class, "index");
-  private final static MethodHandle _FH_index = _FC_index.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Section() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Section(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Section(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -85,7 +51,6 @@ public class Section extends TextContent {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -117,16 +82,19 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public int getLevel() { return _getIntValueNc(wrapGetIntCatchException(_FH_level));}
+  public int getLevel() {
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_level == null)
+      jcasType.jcas.throwFeatMissing("level", "org.texttechnologylab.annotation.paper.Section");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Section_Type)jcasType).casFeatCode_level);}
     
   /** setter for level - sets Level of the section, 0 is top level 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLevel(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_level), v);
-  }    
-    
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_level == null)
+      jcasType.jcas.throwFeatMissing("level", "org.texttechnologylab.annotation.paper.Section");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Section_Type)jcasType).casFeatCode_level, v);}    
    
     
   //*--------------*
@@ -136,16 +104,19 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
+  public String getLabel() {
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.paper.Section");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Section_Type)jcasType).casFeatCode_label);}
     
   /** setter for label - sets The heading of a section 
    * @generated
    * @param v value to set into the feature 
    */
   public void setLabel(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_label), v);
-  }    
-    
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_label == null)
+      jcasType.jcas.throwFeatMissing("label", "org.texttechnologylab.annotation.paper.Section");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Section_Type)jcasType).casFeatCode_label, v);}    
    
     
   //*--------------*
@@ -155,16 +126,19 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public String getIndex() { return _getStringValueNc(wrapGetIntCatchException(_FH_index));}
+  public String getIndex() {
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.paper.Section");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Section_Type)jcasType).casFeatCode_index);}
     
   /** setter for index - sets The index of a section (1, 1.1, 1.1.1, ...) 
    * @generated
    * @param v value to set into the feature 
    */
   public void setIndex(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_index), v);
-  }    
-    
+    if (Section_Type.featOkTst && ((Section_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.paper.Section");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Section_Type)jcasType).casFeatCode_index, v);}    
   }
 
     

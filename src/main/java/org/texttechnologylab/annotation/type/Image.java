@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Image extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.Image";
-  
   /** @generated
    * @ordered 
    */
@@ -46,39 +31,17 @@ public class Image extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_src = "src";
-  public final static String _FeatName_width = "width";
-  public final static String _FeatName_height = "height";
-  public final static String _FeatName_mimetype = "mimetype";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_src = TypeSystemImpl.createCallSite(Image.class, "src");
-  private final static MethodHandle _FH_src = _FC_src.dynamicInvoker();
-  private final static CallSite _FC_width = TypeSystemImpl.createCallSite(Image.class, "width");
-  private final static MethodHandle _FH_width = _FC_width.dynamicInvoker();
-  private final static CallSite _FC_height = TypeSystemImpl.createCallSite(Image.class, "height");
-  private final static MethodHandle _FH_height = _FC_height.dynamicInvoker();
-  private final static CallSite _FC_mimetype = TypeSystemImpl.createCallSite(Image.class, "mimetype");
-  private final static MethodHandle _FH_mimetype = _FC_mimetype.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Image() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Image(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Image(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -89,7 +52,6 @@ public class Image extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -121,16 +83,19 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSrc() { return _getStringValueNc(wrapGetIntCatchException(_FH_src));}
+  public String getSrc() {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Image_Type)jcasType).casFeatCode_src);}
     
   /** setter for src - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setSrc(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_src), v);
-  }    
-    
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_src == null)
+      jcasType.jcas.throwFeatMissing("src", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Image_Type)jcasType).casFeatCode_src, v);}    
    
     
   //*--------------*
@@ -140,16 +105,19 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() { return _getIntValueNc(wrapGetIntCatchException(_FH_width));}
+  public int getWidth() {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_width == null)
+      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Image_Type)jcasType).casFeatCode_width);}
     
   /** setter for width - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setWidth(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_width), v);
-  }    
-    
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_width == null)
+      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Image_Type)jcasType).casFeatCode_width, v);}    
    
     
   //*--------------*
@@ -159,16 +127,19 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() { return _getIntValueNc(wrapGetIntCatchException(_FH_height));}
+  public int getHeight() {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Image_Type)jcasType).casFeatCode_height);}
     
   /** setter for height - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setHeight(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
-  }    
-    
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Image_Type)jcasType).casFeatCode_height, v);}    
    
     
   //*--------------*
@@ -178,16 +149,19 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMimetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));}
+  public String getMimetype() {
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Image");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Image_Type)jcasType).casFeatCode_mimetype);}
     
   /** setter for mimetype - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMimetype(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_mimetype), v);
-  }    
-    
+    if (Image_Type.featOkTst && ((Image_Type)jcasType).casFeat_mimetype == null)
+      jcasType.jcas.throwFeatMissing("mimetype", "org.texttechnologylab.annotation.type.Image");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Image_Type)jcasType).casFeatCode_mimetype, v);}    
   }
 
     

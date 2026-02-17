@@ -1,34 +1,19 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.parliamentary;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Video extends Speech {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.parliamentary.Video";
-  
   /** @generated
    * @ordered 
    */
@@ -45,30 +30,17 @@ public class Video extends Speech {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_url = "url";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_url = TypeSystemImpl.createCallSite(Video.class, "url");
-  private final static MethodHandle _FH_url = _FC_url.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Video() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Video(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Video(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -79,7 +51,6 @@ public class Video extends Speech {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -111,16 +82,19 @@ public class Video extends Speech {
    * @generated
    * @return value of the feature 
    */
-  public String getUrl() { return _getStringValueNc(wrapGetIntCatchException(_FH_url));}
+  public String getUrl() {
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.parliamentary.Video");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Video_Type)jcasType).casFeatCode_url);}
     
   /** setter for url - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setUrl(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_url), v);
-  }    
-    
+    if (Video_Type.featOkTst && ((Video_Type)jcasType).casFeat_url == null)
+      jcasType.jcas.throwFeatMissing("url", "org.texttechnologylab.annotation.parliamentary.Video");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Video_Type)jcasType).casFeatCode_url, v);}    
   }
 
     

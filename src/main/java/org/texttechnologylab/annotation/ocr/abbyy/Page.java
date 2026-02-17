@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.ocr.abbyy;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Page extends Div {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.ocr.abbyy.Page";
-  
   /** @generated
    * @ordered 
    */
@@ -46,48 +31,17 @@ public class Page extends Div {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_index = "index";
-  public final static String _FeatName_pageNumber = "pageNumber";
-  public final static String _FeatName_uri = "uri";
-  public final static String _FeatName_width = "width";
-  public final static String _FeatName_height = "height";
-  public final static String _FeatName_resolution = "resolution";
-  public final static String _FeatName_rotation = "rotation";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_index = TypeSystemImpl.createCallSite(Page.class, "index");
-  private final static MethodHandle _FH_index = _FC_index.dynamicInvoker();
-  private final static CallSite _FC_pageNumber = TypeSystemImpl.createCallSite(Page.class, "pageNumber");
-  private final static MethodHandle _FH_pageNumber = _FC_pageNumber.dynamicInvoker();
-  private final static CallSite _FC_uri = TypeSystemImpl.createCallSite(Page.class, "uri");
-  private final static MethodHandle _FH_uri = _FC_uri.dynamicInvoker();
-  private final static CallSite _FC_width = TypeSystemImpl.createCallSite(Page.class, "width");
-  private final static MethodHandle _FH_width = _FC_width.dynamicInvoker();
-  private final static CallSite _FC_height = TypeSystemImpl.createCallSite(Page.class, "height");
-  private final static MethodHandle _FH_height = _FC_height.dynamicInvoker();
-  private final static CallSite _FC_resolution = TypeSystemImpl.createCallSite(Page.class, "resolution");
-  private final static MethodHandle _FH_resolution = _FC_resolution.dynamicInvoker();
-  private final static CallSite _FC_rotation = TypeSystemImpl.createCallSite(Page.class, "rotation");
-  private final static MethodHandle _FH_rotation = _FC_rotation.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Page() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Page(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Page(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -98,7 +52,6 @@ public class Page extends Div {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -131,7 +84,10 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
+  public int getIndex() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Page_Type)jcasType).casFeatCode_index);}
     
   /** setter for index - sets The page index, i.e. a running number assigned during the processing.
                         Usually denoted in the file name as the first part, e.g. "1" for "01_123456789.xml" 
@@ -139,9 +95,9 @@ public class Page extends Div {
    * @param v value to set into the feature 
    */
   public void setIndex(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_index), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_index == null)
+      jcasType.jcas.throwFeatMissing("index", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Page_Type)jcasType).casFeatCode_index, v);}    
    
     
   //*--------------*
@@ -151,16 +107,19 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getPageNumber() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageNumber));}
+  public String getPageNumber() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_pageNumber == null)
+      jcasType.jcas.throwFeatMissing("pageNumber", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Page_Type)jcasType).casFeatCode_pageNumber);}
     
   /** setter for pageNumber - sets The page number *as a String* as cover pages etc. are commonly numbered using roman numbers. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setPageNumber(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_pageNumber), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_pageNumber == null)
+      jcasType.jcas.throwFeatMissing("pageNumber", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Page_Type)jcasType).casFeatCode_pageNumber, v);}    
    
     
   //*--------------*
@@ -170,16 +129,19 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() { return _getStringValueNc(wrapGetIntCatchException(_FH_uri));}
+  public String getUri() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Page_Type)jcasType).casFeatCode_uri);}
     
   /** setter for uri - sets URI of this page, i.e. a Visual Library link. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setUri(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_uri), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_uri == null)
+      jcasType.jcas.throwFeatMissing("uri", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Page_Type)jcasType).casFeatCode_uri, v);}    
    
     
   //*--------------*
@@ -189,16 +151,19 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() { return _getIntValueNc(wrapGetIntCatchException(_FH_width));}
+  public int getWidth() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_width == null)
+      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Page_Type)jcasType).casFeatCode_width);}
     
   /** setter for width - sets The image width in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setWidth(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_width), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_width == null)
+      jcasType.jcas.throwFeatMissing("width", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Page_Type)jcasType).casFeatCode_width, v);}    
    
     
   //*--------------*
@@ -208,16 +173,19 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() { return _getIntValueNc(wrapGetIntCatchException(_FH_height));}
+  public int getHeight() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Page_Type)jcasType).casFeatCode_height);}
     
   /** setter for height - sets The image height in pixels. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setHeight(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_height), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_height == null)
+      jcasType.jcas.throwFeatMissing("height", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Page_Type)jcasType).casFeatCode_height, v);}    
    
     
   //*--------------*
@@ -227,16 +195,19 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getResolution() { return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));}
+  public int getResolution() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_resolution == null)
+      jcasType.jcas.throwFeatMissing("resolution", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Page_Type)jcasType).casFeatCode_resolution);}
     
   /** setter for resolution - sets The image resolution in pixels per inch. 
    * @generated
    * @param v value to set into the feature 
    */
   public void setResolution(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_resolution), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_resolution == null)
+      jcasType.jcas.throwFeatMissing("resolution", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Page_Type)jcasType).casFeatCode_resolution, v);}    
    
     
   //*--------------*
@@ -247,7 +218,10 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getRotation() { return _getStringValueNc(wrapGetIntCatchException(_FH_rotation));}
+  public String getRotation() {
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Page_Type)jcasType).casFeatCode_rotation);}
     
   /** setter for rotation - sets The type of rotation applied to original page image before processing (optional).
                         It can be one of the following values: Normal, RotatedClockwise, RotatedUpsideDown, RotatedCounterclockwise 
@@ -255,9 +229,9 @@ public class Page extends Div {
    * @param v value to set into the feature 
    */
   public void setRotation(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_rotation), v);
-  }    
-    
+    if (Page_Type.featOkTst && ((Page_Type)jcasType).casFeat_rotation == null)
+      jcasType.jcas.throwFeatMissing("rotation", "org.texttechnologylab.annotation.ocr.abbyy.Page");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Page_Type)jcasType).casFeatCode_rotation, v);}    
   }
 
     

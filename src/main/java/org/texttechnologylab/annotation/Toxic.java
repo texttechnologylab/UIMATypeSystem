@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.model.MetaData;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Toxic Output
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Toxic extends Annotation {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.Toxic";
-  
   /** @generated
    * @ordered 
    */
@@ -47,36 +32,17 @@ public class Toxic extends Annotation {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_Toxic = "Toxic";
-  public final static String _FeatName_NonToxic = "NonToxic";
-  public final static String _FeatName_model = "model";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_Toxic = TypeSystemImpl.createCallSite(Toxic.class, "Toxic");
-  private final static MethodHandle _FH_Toxic = _FC_Toxic.dynamicInvoker();
-  private final static CallSite _FC_NonToxic = TypeSystemImpl.createCallSite(Toxic.class, "NonToxic");
-  private final static MethodHandle _FH_NonToxic = _FC_NonToxic.dynamicInvoker();
-  private final static CallSite _FC_model = TypeSystemImpl.createCallSite(Toxic.class, "model");
-  private final static MethodHandle _FH_model = _FC_model.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Toxic() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Toxic(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Toxic(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -87,7 +53,6 @@ public class Toxic extends Annotation {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -119,16 +84,19 @@ public class Toxic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getToxic() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Toxic));}
+  public double getToxic() {
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_Toxic == null)
+      jcasType.jcas.throwFeatMissing("Toxic", "org.texttechnologylab.annotation.Toxic");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Toxic_Type)jcasType).casFeatCode_Toxic);}
     
   /** setter for Toxic - sets Probability of Toxic 
    * @generated
    * @param v value to set into the feature 
    */
   public void setToxic(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_Toxic), v);
-  }    
-    
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_Toxic == null)
+      jcasType.jcas.throwFeatMissing("Toxic", "org.texttechnologylab.annotation.Toxic");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Toxic_Type)jcasType).casFeatCode_Toxic, v);}    
    
     
   //*--------------*
@@ -138,16 +106,19 @@ public class Toxic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getNonToxic() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_NonToxic));}
+  public double getNonToxic() {
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_NonToxic == null)
+      jcasType.jcas.throwFeatMissing("NonToxic", "org.texttechnologylab.annotation.Toxic");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Toxic_Type)jcasType).casFeatCode_NonToxic);}
     
   /** setter for NonToxic - sets Probability of not Toxic 
    * @generated
    * @param v value to set into the feature 
    */
   public void setNonToxic(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_NonToxic), v);
-  }    
-    
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_NonToxic == null)
+      jcasType.jcas.throwFeatMissing("NonToxic", "org.texttechnologylab.annotation.Toxic");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Toxic_Type)jcasType).casFeatCode_NonToxic, v);}    
    
     
   //*--------------*
@@ -157,16 +128,19 @@ public class Toxic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
+  public MetaData getModel() {
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Toxic");
+    return (MetaData)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Toxic_Type)jcasType).casFeatCode_model)));}
     
   /** setter for model - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setModel(MetaData v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_model), v);
-  }    
-    
+    if (Toxic_Type.featOkTst && ((Toxic_Type)jcasType).casFeat_model == null)
+      jcasType.jcas.throwFeatMissing("model", "org.texttechnologylab.annotation.Toxic");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Toxic_Type)jcasType).casFeatCode_model, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

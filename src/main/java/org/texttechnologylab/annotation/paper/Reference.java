@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.paper;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Reference extends NonTextContent {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.paper.Reference";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class Reference extends NonTextContent {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_reference = "reference";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_reference = TypeSystemImpl.createCallSite(Reference.class, "reference");
-  private final static MethodHandle _FH_reference = _FC_reference.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Reference() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Reference(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Reference(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class Reference extends NonTextContent {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -112,16 +83,19 @@ public class Reference extends NonTextContent {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() { return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
+  public TOP getReference() {
+    if (Reference_Type.featOkTst && ((Reference_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.paper.Reference");
+    return (TOP)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Reference_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setReference(TOP v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_reference), v);
-  }    
-    
+    if (Reference_Type.featOkTst && ((Reference_Type)jcasType).casFeat_reference == null)
+      jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.paper.Reference");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Reference_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

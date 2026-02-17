@@ -1,36 +1,21 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.context.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.node.type.Context;
 import org.apache.uima.jcas.cas.FloatArray;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LocationContext extends Context {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.context.type.LocationContext";
-  
   /** @generated
    * @ordered 
    */
@@ -47,51 +32,17 @@ public class LocationContext extends Context {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_markerPoint = "markerPoint";
-  public final static String _FeatName_geoJson = "geoJson";
-  public final static String _FeatName_latLngs = "latLngs";
-  public final static String _FeatName_contextInf = "contextInf";
-  public final static String _FeatName_country = "country";
-  public final static String _FeatName_numberOfCitizen = "numberOfCitizen";
-  public final static String _FeatName_geoNamesID = "geoNamesID";
-  public final static String _FeatName_areaSize = "areaSize";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_markerPoint = TypeSystemImpl.createCallSite(LocationContext.class, "markerPoint");
-  private final static MethodHandle _FH_markerPoint = _FC_markerPoint.dynamicInvoker();
-  private final static CallSite _FC_geoJson = TypeSystemImpl.createCallSite(LocationContext.class, "geoJson");
-  private final static MethodHandle _FH_geoJson = _FC_geoJson.dynamicInvoker();
-  private final static CallSite _FC_latLngs = TypeSystemImpl.createCallSite(LocationContext.class, "latLngs");
-  private final static MethodHandle _FH_latLngs = _FC_latLngs.dynamicInvoker();
-  private final static CallSite _FC_contextInf = TypeSystemImpl.createCallSite(LocationContext.class, "contextInf");
-  private final static MethodHandle _FH_contextInf = _FC_contextInf.dynamicInvoker();
-  private final static CallSite _FC_country = TypeSystemImpl.createCallSite(LocationContext.class, "country");
-  private final static MethodHandle _FH_country = _FC_country.dynamicInvoker();
-  private final static CallSite _FC_numberOfCitizen = TypeSystemImpl.createCallSite(LocationContext.class, "numberOfCitizen");
-  private final static MethodHandle _FH_numberOfCitizen = _FC_numberOfCitizen.dynamicInvoker();
-  private final static CallSite _FC_geoNamesID = TypeSystemImpl.createCallSite(LocationContext.class, "geoNamesID");
-  private final static MethodHandle _FH_geoNamesID = _FC_geoNamesID.dynamicInvoker();
-  private final static CallSite _FC_areaSize = TypeSystemImpl.createCallSite(LocationContext.class, "areaSize");
-  private final static MethodHandle _FH_areaSize = _FC_areaSize.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected LocationContext() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public LocationContext(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public LocationContext(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -102,7 +53,6 @@ public class LocationContext extends Context {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -122,16 +72,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getMarkerPoint() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)));}
+  public FloatArray getMarkerPoint() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_markerPoint == null)
+      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return (FloatArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint)));}
     
   /** setter for markerPoint - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setMarkerPoint(FloatArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_markerPoint), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_markerPoint == null)
+      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for markerPoint - gets an indexed value - 
    * @generated
@@ -139,16 +92,21 @@ public class LocationContext extends Context {
    * @return value of the element at index i 
    */
   public float getMarkerPoint(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).get(i);} 
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_markerPoint == null)
+      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint), i);
+    return jcasType.ll_cas.ll_getFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint), i);}
 
   /** indexed setter for markerPoint - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setMarkerPoint(int i, float v) {
-    ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).set(i, v);
-  }  
+  public void setMarkerPoint(int i, float v) { 
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_markerPoint == null)
+      jcasType.jcas.throwFeatMissing("markerPoint", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint), i);
+    jcasType.ll_cas.ll_setFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_markerPoint), i, v);}
    
     
   //*--------------*
@@ -158,16 +116,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getGeoJson() { return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));}
+  public String getGeoJson() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_geoJson == null)
+      jcasType.jcas.throwFeatMissing("geoJson", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_geoJson);}
     
   /** setter for geoJson - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGeoJson(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_geoJson), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_geoJson == null)
+      jcasType.jcas.throwFeatMissing("geoJson", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_geoJson, v);}    
    
     
   //*--------------*
@@ -177,16 +138,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getLatLngs() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)));}
+  public FloatArray getLatLngs() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_latLngs == null)
+      jcasType.jcas.throwFeatMissing("latLngs", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return (FloatArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs)));}
     
   /** setter for latLngs - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setLatLngs(FloatArray v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_latLngs), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_latLngs == null)
+      jcasType.jcas.throwFeatMissing("latLngs", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for latLngs - gets an indexed value - 
    * @generated
@@ -194,16 +158,21 @@ public class LocationContext extends Context {
    * @return value of the element at index i 
    */
   public float getLatLngs(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).get(i);} 
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_latLngs == null)
+      jcasType.jcas.throwFeatMissing("latLngs", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs), i);
+    return jcasType.ll_cas.ll_getFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs), i);}
 
   /** indexed setter for latLngs - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  public void setLatLngs(int i, float v) {
-    ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).set(i, v);
-  }  
+  public void setLatLngs(int i, float v) { 
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_latLngs == null)
+      jcasType.jcas.throwFeatMissing("latLngs", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs), i);
+    jcasType.ll_cas.ll_setFloatArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((LocationContext_Type)jcasType).casFeatCode_latLngs), i, v);}
    
     
   //*--------------*
@@ -213,16 +182,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getContextInf() { return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));}
+  public String getContextInf() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_contextInf == null)
+      jcasType.jcas.throwFeatMissing("contextInf", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_contextInf);}
     
   /** setter for contextInf - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setContextInf(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_contextInf), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_contextInf == null)
+      jcasType.jcas.throwFeatMissing("contextInf", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_contextInf, v);}    
    
     
   //*--------------*
@@ -232,16 +204,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getCountry() { return _getStringValueNc(wrapGetIntCatchException(_FH_country));}
+  public String getCountry() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_country == null)
+      jcasType.jcas.throwFeatMissing("country", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_country);}
     
   /** setter for country - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setCountry(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_country), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_country == null)
+      jcasType.jcas.throwFeatMissing("country", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_country, v);}    
    
     
   //*--------------*
@@ -251,16 +226,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public double getNumberOfCitizen() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_numberOfCitizen));}
+  public double getNumberOfCitizen() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_numberOfCitizen == null)
+      jcasType.jcas.throwFeatMissing("numberOfCitizen", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((LocationContext_Type)jcasType).casFeatCode_numberOfCitizen);}
     
   /** setter for numberOfCitizen - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setNumberOfCitizen(double v) {
-    _setDoubleValueNfc(wrapGetIntCatchException(_FH_numberOfCitizen), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_numberOfCitizen == null)
+      jcasType.jcas.throwFeatMissing("numberOfCitizen", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((LocationContext_Type)jcasType).casFeatCode_numberOfCitizen, v);}    
    
     
   //*--------------*
@@ -270,16 +248,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public int getGeoNamesID() { return _getIntValueNc(wrapGetIntCatchException(_FH_geoNamesID));}
+  public int getGeoNamesID() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_geoNamesID == null)
+      jcasType.jcas.throwFeatMissing("geoNamesID", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((LocationContext_Type)jcasType).casFeatCode_geoNamesID);}
     
   /** setter for geoNamesID - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setGeoNamesID(int v) {
-    _setIntValueNfc(wrapGetIntCatchException(_FH_geoNamesID), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_geoNamesID == null)
+      jcasType.jcas.throwFeatMissing("geoNamesID", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setIntValue(addr, ((LocationContext_Type)jcasType).casFeatCode_geoNamesID, v);}    
    
     
   //*--------------*
@@ -289,16 +270,19 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getAreaSize() { return _getStringValueNc(wrapGetIntCatchException(_FH_areaSize));}
+  public String getAreaSize() {
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_areaSize == null)
+      jcasType.jcas.throwFeatMissing("areaSize", "org.texttechnologylab.annotation.context.type.LocationContext");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_areaSize);}
     
   /** setter for areaSize - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setAreaSize(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_areaSize), v);
-  }    
-    
+    if (LocationContext_Type.featOkTst && ((LocationContext_Type)jcasType).casFeat_areaSize == null)
+      jcasType.jcas.throwFeatMissing("areaSize", "org.texttechnologylab.annotation.context.type.LocationContext");
+    jcasType.ll_cas.ll_setStringValue(addr, ((LocationContext_Type)jcasType).casFeatCode_areaSize, v);}    
   }
 
     

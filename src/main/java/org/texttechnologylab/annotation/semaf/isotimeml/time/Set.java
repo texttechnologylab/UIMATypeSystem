@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.semaf.isotimeml.time;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.texttechnologylab.annotation.semaf.isotimeml.TimeX3;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Set extends TimeX3 {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.semaf.isotimeml.time.Set";
-  
   /** @generated
    * @ordered 
    */
@@ -46,33 +31,17 @@ public class Set extends TimeX3 {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_quant = "quant";
-  public final static String _FeatName_freq = "freq";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_quant = TypeSystemImpl.createCallSite(Set.class, "quant");
-  private final static MethodHandle _FH_quant = _FC_quant.dynamicInvoker();
-  private final static CallSite _FC_freq = TypeSystemImpl.createCallSite(Set.class, "freq");
-  private final static MethodHandle _FH_freq = _FC_freq.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected Set() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public Set(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public Set(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -83,7 +52,6 @@ public class Set extends TimeX3 {
     super(jcas);
     readObject();   
   } 
-
 
   /** @generated
    * @param jcas JCas to which this Feature Structure belongs
@@ -115,16 +83,19 @@ public class Set extends TimeX3 {
    * @generated
    * @return value of the feature 
    */
-  public String getQuant() { return _getStringValueNc(wrapGetIntCatchException(_FH_quant));}
+  public String getQuant() {
+    if (Set_Type.featOkTst && ((Set_Type)jcasType).casFeat_quant == null)
+      jcasType.jcas.throwFeatMissing("quant", "org.texttechnologylab.annotation.semaf.isotimeml.time.Set");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Set_Type)jcasType).casFeatCode_quant);}
     
   /** setter for quant - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setQuant(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_quant), v);
-  }    
-    
+    if (Set_Type.featOkTst && ((Set_Type)jcasType).casFeat_quant == null)
+      jcasType.jcas.throwFeatMissing("quant", "org.texttechnologylab.annotation.semaf.isotimeml.time.Set");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Set_Type)jcasType).casFeatCode_quant, v);}    
    
     
   //*--------------*
@@ -134,16 +105,19 @@ public class Set extends TimeX3 {
    * @generated
    * @return value of the feature 
    */
-  public String getFreq() { return _getStringValueNc(wrapGetIntCatchException(_FH_freq));}
+  public String getFreq() {
+    if (Set_Type.featOkTst && ((Set_Type)jcasType).casFeat_freq == null)
+      jcasType.jcas.throwFeatMissing("freq", "org.texttechnologylab.annotation.semaf.isotimeml.time.Set");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Set_Type)jcasType).casFeatCode_freq);}
     
   /** setter for freq - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setFreq(String v) {
-    _setStringValueNfc(wrapGetIntCatchException(_FH_freq), v);
-  }    
-    
+    if (Set_Type.featOkTst && ((Set_Type)jcasType).casFeat_freq == null)
+      jcasType.jcas.throwFeatMissing("freq", "org.texttechnologylab.annotation.semaf.isotimeml.time.Set");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Set_Type)jcasType).casFeatCode_freq, v);}    
   }
 
     

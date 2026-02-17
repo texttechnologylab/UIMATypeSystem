@@ -1,35 +1,20 @@
 
 
-   
-/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
-
+/* First created by JCasGen Tue Feb 17 20:19:37 CET 2026 */
 package org.texttechnologylab.annotation.type;
 
-import java.lang.invoke.CallSite;
-import java.lang.invoke.MethodHandle;
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
-
+import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * Updated by JCasGen Tue Feb 17 20:19:37 CET 2026
  * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextElement extends Attribute {
- 
-  /** @generated
-   * @ordered 
-   */
-  @SuppressWarnings ("hiding")
-  public final static String _TypeName = "org.texttechnologylab.annotation.type.TextElement";
-  
   /** @generated
    * @ordered 
    */
@@ -46,30 +31,17 @@ public class TextElement extends Attribute {
   @Override
   public              int getTypeIndexID() {return typeIndexID;}
  
- 
-  /* *******************
-   *   Feature Offsets *
-   * *******************/ 
-   
-  public final static String _FeatName_value = "value";
-
-
-  /* Feature Adjusted Offsets */
-  private final static CallSite _FC_value = TypeSystemImpl.createCallSite(TextElement.class, "value");
-  private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-
-   
   /** Never called.  Disable default constructor
    * @generated */
   protected TextElement() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated
-   * @param casImpl the CAS this Feature Structure belongs to
+   * @param addr low level Feature Structure reference
    * @param type the type of this Feature Structure 
    */
-  public TextElement(TypeImpl type, CASImpl casImpl) {
-    super(type, casImpl);
+  public TextElement(int addr, TOP_Type type) {
+    super(addr, type);
     readObject();
   }
   
@@ -80,7 +52,6 @@ public class TextElement extends Attribute {
     super(jcas);
     readObject();   
   } 
-
 
   /** 
    * <!-- begin-user-doc -->
@@ -100,16 +71,19 @@ public class TextElement extends Attribute {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getValue() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_value)));}
+  public Annotation getValue() {
+    if (TextElement_Type.featOkTst && ((TextElement_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TextElement");
+    return (Annotation)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((TextElement_Type)jcasType).casFeatCode_value)));}
     
   /** setter for value - sets  
    * @generated
    * @param v value to set into the feature 
    */
   public void setValue(Annotation v) {
-    _setFeatureValueNcWj(wrapGetIntCatchException(_FH_value), v);
-  }    
-    
+    if (TextElement_Type.featOkTst && ((TextElement_Type)jcasType).casFeat_value == null)
+      jcasType.jcas.throwFeatMissing("value", "org.texttechnologylab.annotation.type.TextElement");
+    jcasType.ll_cas.ll_setRefValue(addr, ((TextElement_Type)jcasType).casFeatCode_value, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     
