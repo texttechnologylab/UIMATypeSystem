@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRToken extends Token {
  
@@ -78,8 +77,6 @@ public class OCRToken extends Token {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OCRToken() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -131,9 +128,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public StringList getSubTokenList() { 
-    return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));
-  }
+  public StringList getSubTokenList() { return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));}
     
   /** setter for subTokenList - sets  
    * @generated
@@ -152,9 +147,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordFromDictionary() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));
-  }
+  public boolean getIsWordFromDictionary() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));}
     
   /** setter for isWordFromDictionary - sets  
    * @generated
@@ -173,9 +166,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNormal() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));
-  }
+  public boolean getIsWordNormal() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));}
     
   /** setter for isWordNormal - sets  
    * @generated
@@ -194,9 +185,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNumeric() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));
-  }
+  public boolean getIsWordNumeric() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));}
     
   /** setter for isWordNumeric - sets  
    * @generated
@@ -215,9 +204,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getContainsHyphen() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));
-  }
+  public boolean getContainsHyphen() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));}
     
   /** setter for containsHyphen - sets  
    * @generated
@@ -236,9 +223,7 @@ public class OCRToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public int getSuspiciousChars() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));
-  }
+  public int getSuspiciousChars() { return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));}
     
   /** setter for suspiciousChars - sets  
    * @generated

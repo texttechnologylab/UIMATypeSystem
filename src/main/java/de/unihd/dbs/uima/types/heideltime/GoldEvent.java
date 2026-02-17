@@ -1,14 +1,16 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.unihd.dbs.uima.types.heideltime;
- 
 
+import java.lang.invoke.CallSite;
+import java.lang.invoke.MethodHandle;
 
 import org.apache.uima.cas.impl.CASImpl;
 import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 
@@ -16,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GoldEvent extends Event {
  
@@ -55,8 +57,6 @@ public class GoldEvent extends Event {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected GoldEvent() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 

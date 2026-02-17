@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.socialmedia.metadata;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -16,14 +15,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.texttechnologylab.annotation.socialmedia.metadata.youtube.Playlist;
 import org.apache.uima.jcas.cas.FSList;
 import org.texttechnologylab.annotation.socialmedia.MetaData;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class YouTube extends MetaData {
  
@@ -85,8 +83,6 @@ public class YouTube extends MetaData {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected YouTube() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -126,9 +122,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getChannelName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_channelName));
-  }
+  public String getChannelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_channelName));}
     
   /** setter for channelName - sets  
    * @generated
@@ -147,9 +141,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getChannelURL() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_channelURL));
-  }
+  public String getChannelURL() { return _getStringValueNc(wrapGetIntCatchException(_FH_channelURL));}
     
   /** setter for channelURL - sets  
    * @generated
@@ -168,16 +160,13 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Playlist> getPlaylist() { 
-    return (FSList<Playlist>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_playlist)));
-  }
+  public FSList getPlaylist() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_playlist)));}
     
   /** setter for playlist - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setPlaylist(FSList<Playlist> v) {
+  public void setPlaylist(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_playlist), v);
   }    
     
@@ -190,9 +179,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getLength() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_length));
-  }
+  public int getLength() { return _getIntValueNc(wrapGetIntCatchException(_FH_length));}
     
   /** setter for length - sets  
    * @generated
@@ -211,9 +198,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getViews() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_views));
-  }
+  public int getViews() { return _getIntValueNc(wrapGetIntCatchException(_FH_views));}
     
   /** setter for views - sets  
    * @generated
@@ -232,9 +217,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getLikes() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_likes));
-  }
+  public int getLikes() { return _getIntValueNc(wrapGetIntCatchException(_FH_likes));}
     
   /** setter for likes - sets  
    * @generated
@@ -253,9 +236,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getDislikes() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_dislikes));
-  }
+  public int getDislikes() { return _getIntValueNc(wrapGetIntCatchException(_FH_dislikes));}
     
   /** setter for dislikes - sets  
    * @generated
@@ -274,9 +255,7 @@ public class YouTube extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public int getDownloadDate() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_downloadDate));
-  }
+  public int getDownloadDate() { return _getIntValueNc(wrapGetIntCatchException(_FH_downloadDate));}
     
   /** setter for downloadDate - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Location extends SpatialEntity {
  
@@ -61,8 +60,6 @@ public class Location extends SpatialEntity {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Location() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -114,9 +111,7 @@ public class Location extends SpatialEntity {
    * @generated
    * @return value of the feature 
    */
-  public String getGazref() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_gazref));
-  }
+  public String getGazref() { return _getStringValueNc(wrapGetIntCatchException(_FH_gazref));}
     
   /** setter for gazref - sets  
    * @generated

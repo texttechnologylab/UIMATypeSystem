@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRPage extends Annotation {
  
@@ -77,8 +76,6 @@ public class OCRPage extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OCRPage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -130,9 +127,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_width));
-  }
+  public int getWidth() { return _getIntValueNc(wrapGetIntCatchException(_FH_width));}
     
   /** setter for width - sets  
    * @generated
@@ -151,9 +146,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_height));
-  }
+  public int getHeight() { return _getIntValueNc(wrapGetIntCatchException(_FH_height));}
     
   /** setter for height - sets  
    * @generated
@@ -172,9 +165,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getResolution() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));
-  }
+  public int getResolution() { return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));}
     
   /** setter for resolution - sets  
    * @generated
@@ -193,9 +184,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pageId));
-  }
+  public String getPageId() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageId));}
     
   /** setter for pageId - sets  
    * @generated
@@ -214,9 +203,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPageNumber() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_pageNumber));
-  }
+  public int getPageNumber() { return _getIntValueNc(wrapGetIntCatchException(_FH_pageNumber));}
     
   /** setter for pageNumber - sets  
    * @generated
@@ -235,9 +222,7 @@ public class OCRPage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
-  }
+  public String getUri() { return _getStringValueNc(wrapGetIntCatchException(_FH_uri));}
     
   /** setter for uri - sets  
    * @generated

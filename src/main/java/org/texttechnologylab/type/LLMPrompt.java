@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for LLM with the input text. The user Prompt is mandatory, if not set, the LLM will not be called.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMPrompt extends Annotation {
  
@@ -71,8 +70,6 @@ public class LLMPrompt extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected LLMPrompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPrompt() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_prompt));
-  }
+  public String getPrompt() { return _getStringValueNc(wrapGetIntCatchException(_FH_prompt));}
     
   /** setter for prompt - sets Prompt for LLM 
    * @generated
@@ -145,9 +140,7 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMPrefixPrompt getPrefix() { 
-    return (LLMPrefixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prefix)));
-  }
+  public LLMPrefixPrompt getPrefix() { return (LLMPrefixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prefix)));}
     
   /** setter for prefix - sets Prefix of the Prompt 
    * @generated
@@ -166,9 +159,7 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMSuffixPrompt getSuffix() { 
-    return (LLMSuffixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_suffix)));
-  }
+  public LLMSuffixPrompt getSuffix() { return (LLMSuffixPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_suffix)));}
     
   /** setter for suffix - sets Suffix after the Prompt for the LLM 
    * @generated
@@ -187,9 +178,7 @@ public class LLMPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMSystemPrompt getSystemPrompt() { 
-    return (LLMSystemPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_systemPrompt)));
-  }
+  public LLMSystemPrompt getSystemPrompt() { return (LLMSystemPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_systemPrompt)));}
     
   /** setter for systemPrompt - sets System Prompt for LLM 
    * @generated

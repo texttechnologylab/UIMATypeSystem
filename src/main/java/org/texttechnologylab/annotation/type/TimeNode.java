@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TimeNode extends Node {
  
@@ -93,8 +92,6 @@ public class TimeNode extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TimeNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -134,9 +131,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getXPos() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_xPos));
-  }
+  public int getXPos() { return _getIntValueNc(wrapGetIntCatchException(_FH_xPos));}
     
   /** setter for xPos - sets  
    * @generated
@@ -155,9 +150,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getDepth() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_depth));
-  }
+  public int getDepth() { return _getIntValueNc(wrapGetIntCatchException(_FH_depth));}
     
   /** setter for depth - sets  
    * @generated
@@ -176,9 +169,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -197,9 +188,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
-  }
+  public String getSubvalue() { return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));}
     
   /** setter for subvalue - sets  
    * @generated
@@ -218,9 +207,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getBegin() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_begin));
-  }
+  public int getBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_begin));}
     
   /** setter for begin - sets  
    * @generated
@@ -239,16 +226,13 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TOP> getNodes() { 
-    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));
-  }
+  public FSArray getNodes() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));}
     
   /** setter for nodes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setNodes(FSArray<TOP> v) {
+  public void setNodes(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nodes), v);
   }    
     
@@ -258,19 +242,16 @@ public class TimeNode extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TOP getNodes(int i) {
-     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));
-  } 
+     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));} 
 
   /** indexed setter for nodes - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setNodes(int i, TOP v) {
-    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
+  public void setNodes(int i, TOP v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
   }  
    
     
@@ -281,16 +262,13 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TOP> getEdges() { 
-    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));
-  }
+  public FSArray getEdges() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));}
     
   /** setter for edges - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setEdges(FSArray<TOP> v) {
+  public void setEdges(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_edges), v);
   }    
     
@@ -300,19 +278,16 @@ public class TimeNode extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TOP getEdges(int i) {
-     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));
-  } 
+     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));} 
 
   /** indexed setter for edges - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setEdges(int i, TOP v) {
-    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
+  public void setEdges(int i, TOP v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
   }  
    
     
@@ -323,9 +298,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
-  }
+  public String getEnd() { return _getStringValueNc(wrapGetIntCatchException(_FH_end));}
     
   /** setter for end - sets  
    * @generated
@@ -344,9 +317,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getX() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_x));
-  }
+  public int getX() { return _getIntValueNc(wrapGetIntCatchException(_FH_x));}
     
   /** setter for x - sets  
    * @generated
@@ -365,9 +336,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getY() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_y));
-  }
+  public int getY() { return _getIntValueNc(wrapGetIntCatchException(_FH_y));}
     
   /** setter for y - sets  
    * @generated
@@ -386,9 +355,7 @@ public class TimeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getAdditionalvalue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_additionalvalue));
-  }
+  public String getAdditionalvalue() { return _getStringValueNc(wrapGetIntCatchException(_FH_additionalvalue));}
     
   /** setter for additionalvalue - sets  
    * @generated

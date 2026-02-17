@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isobase;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Link extends AnnotationBase {
  
@@ -74,8 +73,6 @@ public class Link extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Link() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
-  }
+  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
     
   /** setter for comment - sets  
    * @generated
@@ -136,9 +131,7 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getFigure() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_figure)));
-  }
+  public Entity getFigure() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_figure)));}
     
   /** setter for figure - sets  
    * @generated
@@ -157,9 +150,7 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getGround() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ground)));
-  }
+  public Entity getGround() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ground)));}
     
   /** setter for ground - sets  
    * @generated
@@ -178,9 +169,7 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Entity getTrigger() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));
-  }
+  public Entity getTrigger() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));}
     
   /** setter for trigger - sets  
    * @generated
@@ -199,9 +188,7 @@ public class Link extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getRel_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_rel_type));
-  }
+  public String getRel_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_rel_type));}
     
   /** setter for rel_type - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.paper;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Source extends Annotation {
  
@@ -69,8 +68,6 @@ public class Source extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Source() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -122,9 +119,7 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDoi() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_doi));
-  }
+  public String getDoi() { return _getStringValueNc(wrapGetIntCatchException(_FH_doi));}
     
   /** setter for doi - sets  
    * @generated
@@ -143,9 +138,7 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_title));
-  }
+  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
     
   /** setter for title - sets  
    * @generated
@@ -164,9 +157,7 @@ public class Source extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getAuthors() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)));
-  }
+  public StringArray getAuthors() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)));}
     
   /** setter for authors - sets  
    * @generated
@@ -183,8 +174,7 @@ public class Source extends Annotation {
    * @return value of the element at index i 
    */
   public String getAuthors(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_authors)))).get(i);} 
 
   /** indexed setter for authors - sets an indexed value - 
    * @generated

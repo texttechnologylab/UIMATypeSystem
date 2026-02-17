@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaInformation extends Annotation {
  
@@ -84,8 +83,6 @@ public class WikipediaInformation extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected WikipediaInformation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -137,9 +134,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageURL() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pageURL));
-  }
+  public String getPageURL() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageURL));}
     
   /** setter for pageURL - sets Description of the Synset 
    * @generated
@@ -158,9 +153,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRevisionID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_revisionID));
-  }
+  public String getRevisionID() { return _getStringValueNc(wrapGetIntCatchException(_FH_revisionID));}
     
   /** setter for revisionID - sets  
    * @generated
@@ -179,9 +172,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNamespaceID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_namespaceID));
-  }
+  public String getNamespaceID() { return _getStringValueNc(wrapGetIntCatchException(_FH_namespaceID));}
     
   /** setter for namespaceID - sets  
    * @generated
@@ -200,9 +191,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNamespace() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_namespace));
-  }
+  public String getNamespace() { return _getStringValueNc(wrapGetIntCatchException(_FH_namespace));}
     
   /** setter for namespace - sets  
    * @generated
@@ -221,9 +210,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimestamp() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));
-  }
+  public String getTimestamp() { return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));}
     
   /** setter for timestamp - sets  
    * @generated
@@ -242,9 +229,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_title));
-  }
+  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
     
   /** setter for title - sets  
    * @generated
@@ -263,9 +248,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPageID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pageID));
-  }
+  public String getPageID() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageID));}
     
   /** setter for pageID - sets  
    * @generated
@@ -284,9 +267,7 @@ public class WikipediaInformation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategories() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)));
-  }
+  public StringArray getCategories() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)));}
     
   /** setter for categories - sets  
    * @generated
@@ -303,8 +284,7 @@ public class WikipediaInformation extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategories(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categories)))).get(i);} 
 
   /** indexed setter for categories - sets an indexed value - 
    * @generated

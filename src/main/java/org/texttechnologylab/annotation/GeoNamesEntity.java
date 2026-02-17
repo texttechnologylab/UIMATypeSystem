@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
  
@@ -68,8 +67,6 @@ public class GeoNamesEntity extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected GeoNamesEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_id));
-  }
+  public int getId() { return _getIntValueNc(wrapGetIntCatchException(_FH_id));}
     
   /** setter for id - sets  
    * @generated
@@ -142,9 +137,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMainclass() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_mainclass));
-  }
+  public String getMainclass() { return _getStringValueNc(wrapGetIntCatchException(_FH_mainclass));}
     
   /** setter for mainclass - sets  
    * @generated
@@ -163,9 +156,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSubclass() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_subclass));
-  }
+  public String getSubclass() { return _getStringValueNc(wrapGetIntCatchException(_FH_subclass));}
     
   /** setter for subclass - sets  
    * @generated

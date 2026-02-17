@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class KnowledgeEntry extends Node {
  
@@ -70,8 +69,6 @@ public class KnowledgeEntry extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected KnowledgeEntry() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -111,9 +108,7 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getIdentifier() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_identifier));
-  }
+  public String getIdentifier() { return _getStringValueNc(wrapGetIntCatchException(_FH_identifier));}
     
   /** setter for identifier - sets  
    * @generated
@@ -132,9 +127,7 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_source));
-  }
+  public String getSource() { return _getStringValueNc(wrapGetIntCatchException(_FH_source));}
     
   /** setter for source - sets  
    * @generated
@@ -153,9 +146,7 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getReference() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
-  }
+  public String getReference() { return _getStringValueNc(wrapGetIntCatchException(_FH_reference));}
     
   /** setter for reference - sets  
    * @generated
@@ -174,9 +165,7 @@ public class KnowledgeEntry extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getParentEntity() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_parentEntity));
-  }
+  public String getParentEntity() { return _getStringValueNc(wrapGetIntCatchException(_FH_parentEntity));}
     
   /** setter for parentEntity - sets  
    * @generated

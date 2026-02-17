@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.model;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends org.texttechnologylab.annotation.MetaData {
  
@@ -64,8 +63,6 @@ public class MetaData extends org.texttechnologylab.annotation.MetaData {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -117,9 +114,7 @@ public class MetaData extends org.texttechnologylab.annotation.MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getModelVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ModelVersion));
-  }
+  public String getModelVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_ModelVersion));}
     
   /** setter for ModelVersion - sets Version of the Model 
    * @generated
@@ -138,9 +133,7 @@ public class MetaData extends org.texttechnologylab.annotation.MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));
-  }
+  public String getModelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));}
     
   /** setter for ModelName - sets Name of the Model 
    * @generated

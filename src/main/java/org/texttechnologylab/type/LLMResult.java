@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Result of LLM with the reference to the corresponding prompt.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMResult extends Annotation {
  
@@ -71,8 +70,6 @@ public class LLMResult extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected LLMResult() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class LLMResult extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMeta() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_meta));
-  }
+  public String getMeta() { return _getStringValueNc(wrapGetIntCatchException(_FH_meta));}
     
   /** setter for meta - sets Additional metadata (Parameter). Additionally the duration 
    * @generated
@@ -145,9 +140,7 @@ public class LLMResult extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LLMPrompt getPrompt() { 
-    return (LLMPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prompt)));
-  }
+  public LLMPrompt getPrompt() { return (LLMPrompt)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prompt)));}
     
   /** setter for prompt - sets Reference to the corresponding prompt 
    * @generated
@@ -166,9 +159,7 @@ public class LLMResult extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getResult() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_result));
-  }
+  public String getResult() { return _getStringValueNc(wrapGetIntCatchException(_FH_result));}
     
   /** setter for result - sets Result in a json-String Format of LLM 
    * @generated
@@ -187,9 +178,7 @@ public class LLMResult extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getContent() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_content));
-  }
+  public String getContent() { return _getStringValueNc(wrapGetIntCatchException(_FH_content));}
     
   /** setter for content - sets Content of result as string extracted from the result. 
    * @generated

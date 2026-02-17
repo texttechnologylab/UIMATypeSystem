@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isotimeml;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Entity;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TimeX3 extends Entity {
  
@@ -71,8 +70,6 @@ public class TimeX3 extends Entity {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TimeX3() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getFunction_in_document() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_function_in_document));
-  }
+  public String getFunction_in_document() { return _getStringValueNc(wrapGetIntCatchException(_FH_function_in_document));}
     
   /** setter for function_in_document - sets  
    * @generated
@@ -145,9 +140,7 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getTemporal_function() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_temporal_function));
-  }
+  public boolean getTemporal_function() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_temporal_function));}
     
   /** setter for temporal_function - sets  
    * @generated
@@ -166,9 +159,7 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -187,9 +178,7 @@ public class TimeX3 extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public TimeX3 getAnchor_time_id() { 
-    return (TimeX3)(_getFeatureValueNc(wrapGetIntCatchException(_FH_anchor_time_id)));
-  }
+  public TimeX3 getAnchor_time_id() { return (TimeX3)(_getFeatureValueNc(wrapGetIntCatchException(_FH_anchor_time_id)));}
     
   /** setter for anchor_time_id - sets  
    * @generated

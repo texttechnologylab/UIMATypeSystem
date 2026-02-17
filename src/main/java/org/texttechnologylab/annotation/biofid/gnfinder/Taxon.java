@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** Type for gnfinder-recognized taxonomic names that have not been verified.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
  
@@ -69,8 +68,6 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Taxon() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -126,9 +123,7 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getCardinality() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_cardinality));
-  }
+  public short getCardinality() { return _getShortValueNc(wrapGetIntCatchException(_FH_cardinality));}
     
   /** setter for cardinality - sets Cardinality depicts the number of elements in a name.
                         0 - Could not determine cardinality,
@@ -151,9 +146,7 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  public float getOddsLog10() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_oddsLog10));
-  }
+  public float getOddsLog10() { return _getFloatValueNc(wrapGetIntCatchException(_FH_oddsLog10));}
     
   /** setter for oddsLog10 - sets Log10 of the odds (probability) that name detection was correct. 
    * @generated
@@ -172,16 +165,13 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TOP> getOddsDetails() { 
-    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)));
-  }
+  public FSArray getOddsDetails() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)));}
     
   /** setter for oddsDetails - sets A list of OddsDetails that describe how odds were calculated (optional). 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setOddsDetails(FSArray<TOP> v) {
+  public void setOddsDetails(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_oddsDetails), v);
   }    
     
@@ -191,19 +181,16 @@ public class Taxon extends org.texttechnologylab.annotation.biofid.Taxon {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TOP getOddsDetails(int i) {
-     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).get(i));
-  } 
+     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).get(i));} 
 
   /** indexed setter for oddsDetails - sets an indexed value - A list of OddsDetails that describe how odds were calculated (optional).
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setOddsDetails(int i, TOP v) {
-    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).set(i, v);
+  public void setOddsDetails(int i, TOP v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_oddsDetails)))).set(i, v);
   }  
   }
 

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** L2SCA Output
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class L2SCA extends Annotation {
  
@@ -81,8 +80,6 @@ public class L2SCA extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected L2SCA() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -134,9 +131,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));
-  }
+  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));}
     
   /** setter for Value - sets L2SCA Feature Value 
    * @generated
@@ -155,9 +150,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getCode() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Code));
-  }
+  public String getCode() { return _getStringValueNc(wrapGetIntCatchException(_FH_Code));}
     
   /** setter for Code - sets L2SCA Feature Code 
    * @generated
@@ -176,9 +169,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTypeName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_typeName));
-  }
+  public String getTypeName() { return _getStringValueNc(wrapGetIntCatchException(_FH_typeName));}
     
   /** setter for typeName - sets L2SCA Feature typeName 
    * @generated
@@ -197,9 +188,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTypeNumber() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_typeNumber));
-  }
+  public int getTypeNumber() { return _getIntValueNc(wrapGetIntCatchException(_FH_typeNumber));}
     
   /** setter for typeNumber - sets L2SCA Feature type Number 
    * @generated
@@ -218,9 +207,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMeasure() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Measure));
-  }
+  public String getMeasure() { return _getStringValueNc(wrapGetIntCatchException(_FH_Measure));}
     
   /** setter for Measure - sets L2SCA Feature Measure 
    * @generated
@@ -239,9 +226,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDefinition() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_definition));
-  }
+  public String getDefinition() { return _getStringValueNc(wrapGetIntCatchException(_FH_definition));}
     
   /** setter for definition - sets L2SCA Feature definition 
    * @generated
@@ -260,9 +245,7 @@ public class L2SCA extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets Which Model or Process was used to Compute the L2SCA 
    * @generated

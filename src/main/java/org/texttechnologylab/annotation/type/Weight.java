@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Weight extends Attribute {
  
@@ -61,8 +60,6 @@ public class Weight extends Attribute {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Weight() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -102,9 +99,7 @@ public class Weight extends Attribute {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated

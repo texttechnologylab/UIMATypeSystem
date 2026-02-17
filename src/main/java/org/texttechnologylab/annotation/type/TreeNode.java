@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TreeNode extends Node {
  
@@ -65,8 +64,6 @@ public class TreeNode extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TreeNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,16 +103,13 @@ public class TreeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Node> getChildren() { 
-    return (FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)));
-  }
+  public FSArray getChildren() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)));}
     
   /** setter for children - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setChildren(FSArray<Node> v) {
+  public void setChildren(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_children), v);
   }    
     
@@ -125,19 +119,16 @@ public class TreeNode extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Node getChildren(int i) {
-     return (Node)(((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).get(i));
-  } 
+     return (Node)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).get(i));} 
 
   /** indexed setter for children - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setChildren(int i, Node v) {
-    ((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).set(i, v);
+  public void setChildren(int i, Node v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_children)))).set(i, v);
   }  
    
     
@@ -148,9 +139,7 @@ public class TreeNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public Node getParent() { 
-    return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
-  }
+  public Node getParent() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));}
     
   /** setter for parent - sets  
    * @generated

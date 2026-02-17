@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.IsoSpatial;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ObjectAttribute extends AnnotationBase {
  
@@ -65,8 +64,6 @@ public class ObjectAttribute extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ObjectAttribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,9 +103,7 @@ public class ObjectAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getKey() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_key));
-  }
+  public String getKey() { return _getStringValueNc(wrapGetIntCatchException(_FH_key));}
     
   /** setter for key - sets  
    * @generated
@@ -127,9 +122,7 @@ public class ObjectAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated

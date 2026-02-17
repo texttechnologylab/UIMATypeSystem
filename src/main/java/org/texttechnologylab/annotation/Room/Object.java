@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.Room;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Object extends Annotation {
  
@@ -91,8 +90,6 @@ public class Object extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Object() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -144,9 +141,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets Name of the object (group). 
    * @generated
@@ -165,9 +160,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getFatherObject() { 
-    return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_fatherObject)));
-  }
+  public Object getFatherObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_fatherObject)));}
     
   /** setter for fatherObject - sets FatherObject in the hierarchy. 
    * @generated
@@ -186,9 +179,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getNextTimeObject() { 
-    return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nextTimeObject)));
-  }
+  public Object getNextTimeObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nextTimeObject)));}
     
   /** setter for nextTimeObject - sets Reference to the same object the next time step. 
    * @generated
@@ -207,9 +198,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Object getPrevTimeObject() { 
-    return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prevTimeObject)));
-  }
+  public Object getPrevTimeObject() { return (Object)(_getFeatureValueNc(wrapGetIntCatchException(_FH_prevTimeObject)));}
     
   /** setter for prevTimeObject - sets Reference to the same object the previous time step. 
    * @generated
@@ -228,9 +217,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TimeChain getTimeReference() { 
-    return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_timeReference)));
-  }
+  public TimeChain getTimeReference() { return (TimeChain)(_getFeatureValueNc(wrapGetIntCatchException(_FH_timeReference)));}
     
   /** setter for timeReference - sets Reference to time location. 
    * @generated
@@ -249,9 +236,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getShapeNetID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_shapeNetID));
-  }
+  public String getShapeNetID() { return _getStringValueNc(wrapGetIntCatchException(_FH_shapeNetID));}
     
   /** setter for shapeNetID - sets ShapeNetID of the object. 
    * @generated
@@ -270,9 +255,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getScale() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_scale));
-  }
+  public double getScale() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_scale));}
     
   /** setter for scale - sets Scale of the object. 
    * @generated
@@ -291,9 +274,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vector getLocation() { 
-    return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_location)));
-  }
+  public Vector getLocation() { return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_location)));}
     
   /** setter for location - sets 3D Location Vector. 
    * @generated
@@ -312,9 +293,7 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Vector getRotation() { 
-    return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));
-  }
+  public Vector getRotation() { return (Vector)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rotation)));}
     
   /** setter for rotation - sets 4D Rotation Quaternion 
    * @generated
@@ -333,16 +312,13 @@ public class Object extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ObjectAttribute> getObjectFeature() { 
-    return (FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)));
-  }
+  public FSArray getObjectFeature() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)));}
     
   /** setter for objectFeature - sets All feature of the object 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setObjectFeature(FSArray<ObjectAttribute> v) {
+  public void setObjectFeature(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_objectFeature), v);
   }    
     
@@ -352,19 +328,16 @@ public class Object extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ObjectAttribute getObjectFeature(int i) {
-     return (ObjectAttribute)(((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).get(i));
-  } 
+     return (ObjectAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).get(i));} 
 
   /** indexed setter for objectFeature - sets an indexed value - All feature of the object
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setObjectFeature(int i, ObjectAttribute v) {
-    ((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).set(i, v);
+  public void setObjectFeature(int i, ObjectAttribute v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_objectFeature)))).set(i, v);
   }  
   }
 

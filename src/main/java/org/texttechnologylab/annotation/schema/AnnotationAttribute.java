@@ -1,25 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jan 30 15:15:29 CET 2026 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.schema;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.AnnotationBase;
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Fri Jan 30 15:15:29 CET 2026
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.cas.AnnotationBase;
+
+
+/** 
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationAttribute extends AnnotationBase {
  
@@ -63,8 +64,6 @@ public class AnnotationAttribute extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnnotationAttribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -104,9 +103,7 @@ public class AnnotationAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Attribute getKey() { 
-    return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_key)));
-  }
+  public Attribute getKey() { return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_key)));}
     
   /** setter for key - sets  
    * @generated
@@ -125,9 +122,7 @@ public class AnnotationAttribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated

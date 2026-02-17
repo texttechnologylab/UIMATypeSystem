@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.parliament;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends Annotation {
  
@@ -92,8 +91,6 @@ public class Speaker extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Speaker() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -145,9 +142,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_label));
-  }
+  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
     
   /** setter for label - sets  
    * @generated
@@ -166,9 +161,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstname() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));
-  }
+  public String getFirstname() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));}
     
   /** setter for firstname - sets  
    * @generated
@@ -187,9 +180,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets  
    * @generated
@@ -208,9 +199,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFullname_deducted() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_fullname_deducted));
-  }
+  public String getFullname_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_fullname_deducted));}
     
   /** setter for fullname_deducted - sets  
    * @generated
@@ -229,9 +218,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNobility() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_nobility));
-  }
+  public String getNobility() { return _getStringValueNc(wrapGetIntCatchException(_FH_nobility));}
     
   /** setter for nobility - sets  
    * @generated
@@ -250,9 +237,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_title));
-  }
+  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
     
   /** setter for title - sets  
    * @generated
@@ -271,9 +256,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_role));
-  }
+  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
     
   /** setter for role - sets  
    * @generated
@@ -292,9 +275,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getParty() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_party));
-  }
+  public String getParty() { return _getStringValueNc(wrapGetIntCatchException(_FH_party));}
     
   /** setter for party - sets  
    * @generated
@@ -313,9 +294,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getParty_deducted() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_party_deducted));
-  }
+  public String getParty_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_party_deducted));}
     
   /** setter for party_deducted - sets  
    * @generated
@@ -334,9 +313,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getElectoral_county() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county));
-  }
+  public String getElectoral_county() { return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county));}
     
   /** setter for electoral_county - sets  
    * @generated
@@ -355,9 +332,7 @@ public class Speaker extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getElectoral_county_deducted() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county_deducted));
-  }
+  public String getElectoral_county_deducted() { return _getStringValueNc(wrapGetIntCatchException(_FH_electoral_county_deducted));}
     
   /** setter for electoral_county_deducted - sets  
    * @generated

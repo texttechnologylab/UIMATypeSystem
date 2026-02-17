@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.unihd.dbs.uima.types.heideltime;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Token extends Annotation {
  
@@ -71,8 +70,6 @@ public class Token extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Token() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFilename() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_filename));
-  }
+  public String getFilename() { return _getStringValueNc(wrapGetIntCatchException(_FH_filename));}
     
   /** setter for filename - sets  
    * @generated
@@ -145,9 +140,7 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTokenId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_tokenId));
-  }
+  public int getTokenId() { return _getIntValueNc(wrapGetIntCatchException(_FH_tokenId));}
     
   /** setter for tokenId - sets  
    * @generated
@@ -166,9 +159,7 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));
-  }
+  public int getSentId() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));}
     
   /** setter for sentId - sets  
    * @generated
@@ -187,9 +178,7 @@ public class Token extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
-  }
+  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
     
   /** setter for pos - sets  
    * @generated

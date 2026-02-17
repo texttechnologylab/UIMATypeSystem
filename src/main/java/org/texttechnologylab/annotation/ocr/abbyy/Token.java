@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.StringList;
 
 
 /** Token type that denotes recognized words.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token {
  
@@ -83,8 +82,6 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Token() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -136,9 +133,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public StringList getSubTokenList() { 
-    return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));
-  }
+  public StringList getSubTokenList() { return (StringList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_subTokenList)));}
     
   /** setter for subTokenList - sets Present if a linebreak hyphen was recognized, contains the individual words. 
    * @generated
@@ -157,9 +152,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordFromDictionary() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));
-  }
+  public boolean getIsWordFromDictionary() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordFromDictionary));}
     
   /** setter for isWordFromDictionary - sets Specifies whether the word was found in the ABBYY FineReader dictionary. 
    * @generated
@@ -179,9 +172,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNormal() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));
-  }
+  public boolean getIsWordNormal() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNormal));}
     
   /** setter for isWordNormal - sets Specifies whether the word was recognized with either a standard or user-defined language,
                         and that it is not a number or an identifier. 
@@ -201,9 +192,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsWordNumeric() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));
-  }
+  public boolean getIsWordNumeric() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isWordNumeric));}
     
   /** setter for isWordNumeric - sets Specifies whether the word is a number 
    * @generated
@@ -222,9 +211,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public boolean getContainsHyphen() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));
-  }
+  public boolean getContainsHyphen() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_containsHyphen));}
     
   /** setter for containsHyphen - sets Specifies if the word contains a recognized linebreak hyphen. 
    * @generated
@@ -243,9 +230,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public int getSuspiciousChars() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));
-  }
+  public int getSuspiciousChars() { return _getIntValueNc(wrapGetIntCatchException(_FH_suspiciousChars));}
     
   /** setter for suspiciousChars - sets The number of characters that were recognized uncertainly. 
    * @generated
@@ -267,9 +252,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public short getMinCharConfidence() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_minCharConfidence));
-  }
+  public short getMinCharConfidence() { return _getShortValueNc(wrapGetIntCatchException(_FH_minCharConfidence));}
     
   /** setter for minCharConfidence - sets The minimum character recognition confidence of all characters in this word.
                         Use with caution, as these numbers are not guaranteed to be positive and, according to the
@@ -294,9 +277,7 @@ public class Token extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.T
    * @generated
    * @return value of the feature 
    */
-  public float getMeanCharConfidence() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_meanCharConfidence));
-  }
+  public float getMeanCharConfidence() { return _getFloatValueNc(wrapGetIntCatchException(_FH_meanCharConfidence));}
     
   /** setter for meanCharConfidence - sets The average character recognition confidence of all characters in this word.
                         Use with caution, as these numbers are not guaranteed to be positive and, according to the

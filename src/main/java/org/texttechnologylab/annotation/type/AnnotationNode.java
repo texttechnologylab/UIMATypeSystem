@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationNode extends Node {
  
@@ -64,8 +63,6 @@ public class AnnotationNode extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnnotationNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -105,9 +102,7 @@ public class AnnotationNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getBegin() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_begin));
-  }
+  public int getBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_begin));}
     
   /** setter for begin - sets  
    * @generated
@@ -126,9 +121,7 @@ public class AnnotationNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getEnd() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_end));
-  }
+  public int getEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_end));}
     
   /** setter for end - sets  
    * @generated

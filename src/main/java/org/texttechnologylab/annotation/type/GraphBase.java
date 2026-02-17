@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GraphBase extends AnnotationBase {
  
@@ -74,8 +73,6 @@ public class GraphBase extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected GraphBase() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class GraphBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Id));
-  }
+  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_Id));}
     
   /** setter for Id - sets  
    * @generated
@@ -136,9 +131,7 @@ public class GraphBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_label));
-  }
+  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
     
   /** setter for label - sets  
    * @generated
@@ -157,9 +150,7 @@ public class GraphBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public long getCreate() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_create));
-  }
+  public long getCreate() { return _getLongValueNc(wrapGetIntCatchException(_FH_create));}
     
   /** setter for create - sets  
    * @generated
@@ -178,9 +169,7 @@ public class GraphBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public long getModified() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_modified));
-  }
+  public long getModified() { return _getLongValueNc(wrapGetIntCatchException(_FH_modified));}
     
   /** setter for modified - sets  
    * @generated
@@ -199,9 +188,7 @@ public class GraphBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
-  }
+  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
     
   /** setter for user - sets  
    * @generated

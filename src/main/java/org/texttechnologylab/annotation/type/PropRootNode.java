@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropRootNode extends PropNode {
  
@@ -62,8 +61,6 @@ public class PropRootNode extends PropNode {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected PropRootNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -103,9 +100,7 @@ public class PropRootNode extends PropNode {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getArguments() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)));
-  }
+  public StringArray getArguments() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)));}
     
   /** setter for arguments - sets  
    * @generated
@@ -122,8 +117,7 @@ public class PropRootNode extends PropNode {
    * @return value of the element at index i 
    */
   public String getArguments(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_arguments)))).get(i);} 
 
   /** indexed setter for arguments - sets an indexed value - 
    * @generated

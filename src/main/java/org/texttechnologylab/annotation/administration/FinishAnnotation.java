@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.administration;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FinishAnnotation extends DocumentMetaData {
  
@@ -68,8 +67,6 @@ public class FinishAnnotation extends DocumentMetaData {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected FinishAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class FinishAnnotation extends DocumentMetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
-  }
+  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
     
   /** setter for user - sets  
    * @generated
@@ -142,9 +137,7 @@ public class FinishAnnotation extends DocumentMetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
-  }
+  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
     
   /** setter for comment - sets  
    * @generated
@@ -163,9 +156,7 @@ public class FinishAnnotation extends DocumentMetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getTool() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_tool));
-  }
+  public String getTool() { return _getStringValueNc(wrapGetIntCatchException(_FH_tool));}
     
   /** setter for tool - sets  
    * @generated

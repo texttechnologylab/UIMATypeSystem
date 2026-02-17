@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.uce;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Provides permission details for a document. Note that this annotation can be included multiple times to configure access to multiple users.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Permission extends Annotation {
  
@@ -68,8 +67,6 @@ public class Permission extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Permission() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class Permission extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPermissionType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_permissionType));
-  }
+  public String getPermissionType() { return _getStringValueNc(wrapGetIntCatchException(_FH_permissionType));}
     
   /** setter for permissionType - sets Permission type, e.g. on user or group level. 
    * @generated
@@ -142,9 +137,7 @@ public class Permission extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPermissionLevel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_permissionLevel));
-  }
+  public String getPermissionLevel() { return _getStringValueNc(wrapGetIntCatchException(_FH_permissionLevel));}
     
   /** setter for permissionLevel - sets Permission level. 
    * @generated
@@ -163,9 +156,7 @@ public class Permission extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
-  }
+  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
     
   /** setter for user - sets User or group name. 
    * @generated

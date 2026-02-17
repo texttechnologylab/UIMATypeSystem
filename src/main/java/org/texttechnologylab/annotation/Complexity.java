@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Complexity Output
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Complexity extends AnnotationBase {
  
@@ -76,8 +75,6 @@ public class Complexity extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Complexity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -117,9 +114,7 @@ public class Complexity extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getKind() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Kind));
-  }
+  public String getKind() { return _getStringValueNc(wrapGetIntCatchException(_FH_Kind));}
     
   /** setter for Kind - sets Kind of Complexity 
    * @generated
@@ -138,9 +133,7 @@ public class Complexity extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getOutput() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_Output));
-  }
+  public double getOutput() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Output));}
     
   /** setter for Output - sets Output of Complexity 
    * @generated
@@ -159,9 +152,7 @@ public class Complexity extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getSentenceI() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceI)));
-  }
+  public Annotation getSentenceI() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceI)));}
     
   /** setter for SentenceI - sets Reference to SentenceI 
    * @generated
@@ -180,9 +171,7 @@ public class Complexity extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getSentenceJ() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceJ)));
-  }
+  public Annotation getSentenceJ() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_SentenceJ)));}
     
   /** setter for SentenceJ - sets Reference to SentenceJ 
    * @generated
@@ -201,9 +190,7 @@ public class Complexity extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets  
    * @generated

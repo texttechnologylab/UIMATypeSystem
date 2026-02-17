@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Graph extends Node {
  
@@ -65,8 +64,6 @@ public class Graph extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Graph() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,16 +103,13 @@ public class Graph extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Node> getNodes() { 
-    return (FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));
-  }
+  public FSArray getNodes() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)));}
     
   /** setter for nodes - sets Set of Nodes 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setNodes(FSArray<Node> v) {
+  public void setNodes(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_nodes), v);
   }    
     
@@ -125,19 +119,16 @@ public class Graph extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Node getNodes(int i) {
-     return (Node)(((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));
-  } 
+     return (Node)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).get(i));} 
 
   /** indexed setter for nodes - sets an indexed value - Set of Nodes
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setNodes(int i, Node v) {
-    ((FSArray<Node>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
+  public void setNodes(int i, Node v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_nodes)))).set(i, v);
   }  
    
     
@@ -148,16 +139,13 @@ public class Graph extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Edge> getEdges() { 
-    return (FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));
-  }
+  public FSArray getEdges() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)));}
     
   /** setter for edges - sets set of edges 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setEdges(FSArray<Edge> v) {
+  public void setEdges(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_edges), v);
   }    
     
@@ -167,19 +155,16 @@ public class Graph extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Edge getEdges(int i) {
-     return (Edge)(((FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));
-  } 
+     return (Edge)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).get(i));} 
 
   /** indexed setter for edges - sets an indexed value - set of edges
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setEdges(int i, Edge v) {
-    ((FSArray<Edge>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
+  public void setEdges(int i, Edge v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_edges)))).set(i, v);
   }  
   }
 

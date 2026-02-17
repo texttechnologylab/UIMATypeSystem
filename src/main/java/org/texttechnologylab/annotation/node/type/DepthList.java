@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.node.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.IntegerArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DepthList extends Node {
  
@@ -66,8 +65,6 @@ public class DepthList extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected DepthList() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -107,9 +104,7 @@ public class DepthList extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
-  }
+  public String getDisplayName() { return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));}
     
   /** setter for displayName - sets  
    * @generated
@@ -128,9 +123,7 @@ public class DepthList extends Node {
    * @generated
    * @return value of the feature 
    */
-  public IntegerArray getHierarchie() { 
-    return (IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)));
-  }
+  public IntegerArray getHierarchie() { return (IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)));}
     
   /** setter for hierarchie - sets  
    * @generated
@@ -147,8 +140,7 @@ public class DepthList extends Node {
    * @return value of the element at index i 
    */
   public int getHierarchie(int i) {
-     return ((IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)))).get(i);
-  } 
+     return ((IntegerArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hierarchie)))).get(i);} 
 
   /** indexed setter for hierarchie - sets an indexed value - 
    * @generated

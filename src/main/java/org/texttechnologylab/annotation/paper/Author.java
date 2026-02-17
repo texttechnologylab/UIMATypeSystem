@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.paper;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Author extends Annotation {
  
@@ -74,8 +73,6 @@ public class Author extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Author() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -127,9 +124,7 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstname() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));
-  }
+  public String getFirstname() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstname));}
     
   /** setter for firstname - sets  
    * @generated
@@ -148,9 +143,7 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLastname() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lastname));
-  }
+  public String getLastname() { return _getStringValueNc(wrapGetIntCatchException(_FH_lastname));}
     
   /** setter for lastname - sets  
    * @generated
@@ -169,9 +162,7 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -190,9 +181,7 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getEmail() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_email));
-  }
+  public String getEmail() { return _getStringValueNc(wrapGetIntCatchException(_FH_email));}
     
   /** setter for email - sets  
    * @generated
@@ -211,9 +200,7 @@ public class Author extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLocation() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_location));
-  }
+  public String getLocation() { return _getStringValueNc(wrapGetIntCatchException(_FH_location));}
     
   /** setter for location - sets  
    * @generated

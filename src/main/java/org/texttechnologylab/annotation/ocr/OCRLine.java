@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRLine extends Annotation {
  
@@ -77,8 +76,6 @@ public class OCRLine extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OCRLine() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -130,9 +127,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBaseline() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_baseline));
-  }
+  public int getBaseline() { return _getIntValueNc(wrapGetIntCatchException(_FH_baseline));}
     
   /** setter for baseline - sets  
    * @generated
@@ -151,9 +146,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTop() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_top));
-  }
+  public int getTop() { return _getIntValueNc(wrapGetIntCatchException(_FH_top));}
     
   /** setter for top - sets  
    * @generated
@@ -172,9 +165,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBottom() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));
-  }
+  public int getBottom() { return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));}
     
   /** setter for bottom - sets  
    * @generated
@@ -193,9 +184,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getLeft() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_left));
-  }
+  public int getLeft() { return _getIntValueNc(wrapGetIntCatchException(_FH_left));}
     
   /** setter for left - sets  
    * @generated
@@ -214,9 +203,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getRight() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_right));
-  }
+  public int getRight() { return _getIntValueNc(wrapGetIntCatchException(_FH_right));}
     
   /** setter for right - sets  
    * @generated
@@ -235,9 +222,7 @@ public class OCRLine extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFormat() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_format));
-  }
+  public String getFormat() { return _getStringValueNc(wrapGetIntCatchException(_FH_format));}
     
   /** setter for format - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Wed Oct 01 14:52:14 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.luminar;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 /** A typesystem for the Luminar AI detector, providing probabilities that a given document is AI-generated or not.
                 Depending on the model, this is done on document-level only or on sequence- and document-level.
- * Updated by JCasGen Wed Oct 01 14:52:14 CEST 2025
- * XML source: C:/kevin/projects/duui/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AIDetection extends Annotation {
  
@@ -69,8 +68,6 @@ public class AIDetection extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AIDetection() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -122,9 +119,7 @@ public class AIDetection extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getDetectionScore() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_detectionScore));
-  }
+  public double getDetectionScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_detectionScore));}
     
   /** setter for detectionScore - sets Ranging from 0 to 1, where near 0 means likely human and near 1 means likely AI. 
    * @generated
@@ -143,9 +138,7 @@ public class AIDetection extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLevel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_level));
-  }
+  public String getLevel() { return _getStringValueNc(wrapGetIntCatchException(_FH_level));}
     
   /** setter for level - sets The level on which this detection was applied, e.g. SEQUENCE or DOCUMENT level. 
    * @generated
@@ -164,9 +157,7 @@ public class AIDetection extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getModel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_model));
-  }
+  public String getModel() { return _getStringValueNc(wrapGetIntCatchException(_FH_model));}
     
   /** setter for model - sets The model version used for this detection annotation. 
    * @generated

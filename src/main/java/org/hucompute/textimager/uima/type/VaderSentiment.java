@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Specific type for VADER sentiment results (https://github.com/cjhutto/vaderSentiment)
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VaderSentiment extends Sentiment {
  
@@ -67,8 +66,6 @@ public class VaderSentiment extends Sentiment {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected VaderSentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -120,9 +117,7 @@ public class VaderSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getPos() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_pos));
-  }
+  public double getPos() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_pos));}
     
   /** setter for pos - sets  
    * @generated
@@ -141,9 +136,7 @@ public class VaderSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getNeu() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_neu));
-  }
+  public double getNeu() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_neu));}
     
   /** setter for neu - sets  
    * @generated
@@ -162,9 +155,7 @@ public class VaderSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getNeg() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_neg));
-  }
+  public double getNeg() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_neg));}
     
   /** setter for neg - sets  
    * @generated

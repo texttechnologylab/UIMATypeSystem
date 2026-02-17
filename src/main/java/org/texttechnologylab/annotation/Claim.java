@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** One Claim for different facts
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Claim extends Annotation {
  
@@ -66,8 +65,6 @@ public class Claim extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Claim() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -119,9 +116,7 @@ public class Claim extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets Information of Claim 
    * @generated
@@ -140,16 +135,13 @@ public class Claim extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Fact> getFacts() { 
-    return (FSArray<Fact>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)));
-  }
+  public FSArray getFacts() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)));}
     
   /** setter for Facts - sets Set of Fact 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setFacts(FSArray<Fact> v) {
+  public void setFacts(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Facts), v);
   }    
     
@@ -159,19 +151,16 @@ public class Claim extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Fact getFacts(int i) {
-     return (Fact)(((FSArray<Fact>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).get(i));
-  } 
+     return (Fact)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).get(i));} 
 
   /** indexed setter for Facts - sets an indexed value - Set of Fact
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setFacts(int i, Fact v) {
-    ((FSArray<Fact>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).set(i, v);
+  public void setFacts(int i, Fact v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Facts)))).set(i, v);
   }  
   }
 

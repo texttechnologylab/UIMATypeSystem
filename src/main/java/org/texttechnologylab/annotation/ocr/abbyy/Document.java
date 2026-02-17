@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Document metadata.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Document {
  
@@ -76,8 +75,6 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Document() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -129,9 +126,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));
-  }
+  public String getDocumentName() { return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));}
     
   /** setter for documentName - sets The name of this document in the XML files. 
    * @generated
@@ -150,9 +145,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets The version of the source XML files. 
    * @generated
@@ -171,9 +164,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getProducer() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_producer));
-  }
+  public String getProducer() { return _getStringValueNc(wrapGetIntCatchException(_FH_producer));}
     
   /** setter for producer - sets The producer of the source XML files. 
    * @generated
@@ -192,9 +183,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public int getPagesCount() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_pagesCount));
-  }
+  public int getPagesCount() { return _getIntValueNc(wrapGetIntCatchException(_FH_pagesCount));}
     
   /** setter for pagesCount - sets The number of pages in this document (optional). 
    * @generated
@@ -213,9 +202,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getMainLanguage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_mainLanguage));
-  }
+  public String getMainLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_mainLanguage));}
     
   /** setter for mainLanguage - sets The main language of this document. 
    * @generated
@@ -234,9 +221,7 @@ public class Document extends de.tudarmstadt.ukp.dkpro.core.api.segmentation.typ
    * @generated
    * @return value of the feature 
    */
-  public String getLanguages() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_languages));
-  }
+  public String getLanguages() { return _getStringValueNc(wrapGetIntCatchException(_FH_languages));}
     
   /** setter for languages - sets All languages used in this document (optional). 
    * @generated

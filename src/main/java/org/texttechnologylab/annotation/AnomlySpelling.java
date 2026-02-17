@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.anomaly.type.Anomaly;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnomlySpelling extends Anomaly {
  
@@ -65,8 +64,6 @@ public class AnomlySpelling extends Anomaly {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnomlySpelling() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class AnomlySpelling extends Anomaly {
    * @generated
    * @return value of the feature 
    */
-  public String getSpellingType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_SpellingType));
-  }
+  public String getSpellingType() { return _getStringValueNc(wrapGetIntCatchException(_FH_SpellingType));}
     
   /** setter for SpellingType - sets Output Type of the Spelling like wrong, skipped or unkown 
    * @generated
@@ -139,9 +134,7 @@ public class AnomlySpelling extends Anomaly {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));
-  }
+  public String getModelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));}
     
   /** setter for ModelName - sets The name of the Model 
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpatialEntity extends Entity {
  
@@ -100,8 +99,6 @@ public class SpatialEntity extends Entity {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SpatialEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -153,9 +150,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getSpatial_entitiy_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_spatial_entitiy_type));
-  }
+  public String getSpatial_entitiy_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_spatial_entitiy_type));}
     
   /** setter for spatial_entitiy_type - sets Spatial Entitiy Type ( FAC | VEHICLE | PERSON | DYNAMIC_EVENT | ARTIFACT ) 
    * @generated
@@ -174,9 +169,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getDimensionality() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_dimensionality));
-  }
+  public String getDimensionality() { return _getStringValueNc(wrapGetIntCatchException(_FH_dimensionality));}
     
   /** setter for dimensionality - sets ( POINT | LINE | AREA | VOLUME ) 
    * @generated
@@ -195,9 +188,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getForm() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_form));
-  }
+  public String getForm() { return _getStringValueNc(wrapGetIntCatchException(_FH_form));}
     
   /** setter for form - sets ( NAM | NOM ) 
    * @generated
@@ -216,9 +207,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getDcl() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_dcl));
-  }
+  public boolean getDcl() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_dcl));}
     
   /** setter for dcl - sets  
    * @generated
@@ -237,9 +226,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getDomain() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_domain));
-  }
+  public String getDomain() { return _getStringValueNc(wrapGetIntCatchException(_FH_domain));}
     
   /** setter for domain - sets ( CONTENT | STRUCTURE ) 
    * @generated
@@ -258,9 +245,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLat() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lat));
-  }
+  public String getLat() { return _getStringValueNc(wrapGetIntCatchException(_FH_lat));}
     
   /** setter for lat - sets  
    * @generated
@@ -279,9 +264,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLong() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_long));
-  }
+  public String getLong() { return _getStringValueNc(wrapGetIntCatchException(_FH_long));}
     
   /** setter for long - sets  
    * @generated
@@ -300,9 +283,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public Measure getElevation() { 
-    return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));
-  }
+  public Measure getElevation() { return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));}
     
   /** setter for elevation - sets  
    * @generated
@@ -321,9 +302,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getCountable() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));
-  }
+  public boolean getCountable() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));}
     
   /** setter for countable - sets  
    * @generated
@@ -342,9 +321,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getGquant() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));
-  }
+  public String getGquant() { return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));}
     
   /** setter for gquant - sets  
    * @generated
@@ -363,16 +340,13 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Entity> getScopes() { 
-    return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));
-  }
+  public FSList getScopes() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));}
     
   /** setter for scopes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setScopes(FSList<Entity> v) {
+  public void setScopes(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes), v);
   }    
     
@@ -385,16 +359,13 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Entity> getScopes_array() { 
-    return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));
-  }
+  public FSArray getScopes_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));}
     
   /** setter for scopes_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setScopes_array(FSArray<Entity> v) {
+  public void setScopes_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes_array), v);
   }    
     
@@ -404,19 +375,16 @@ public class SpatialEntity extends Entity {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Entity getScopes_array(int i) {
-     return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));
-  } 
+     return (Entity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));} 
 
   /** indexed setter for scopes_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setScopes_array(int i, Entity v) {
-    ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
+  public void setScopes_array(int i, Entity v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
   }  
    
     
@@ -427,9 +395,7 @@ public class SpatialEntity extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public double getCardinality() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_cardinality));
-  }
+  public double getCardinality() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_cardinality));}
     
   /** setter for cardinality - sets  
    * @generated

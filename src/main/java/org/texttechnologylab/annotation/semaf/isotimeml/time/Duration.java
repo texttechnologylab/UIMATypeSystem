@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isotimeml.time;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.semaf.isotimeml.TimeX3;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Duration extends TimeX3 {
  
@@ -65,8 +64,6 @@ public class Duration extends TimeX3 {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Duration() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class Duration extends TimeX3 {
    * @generated
    * @return value of the feature 
    */
-  public Date getBeginPoint() { 
-    return (Date)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beginPoint)));
-  }
+  public Date getBeginPoint() { return (Date)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beginPoint)));}
     
   /** setter for beginPoint - sets  
    * @generated
@@ -139,9 +134,7 @@ public class Duration extends TimeX3 {
    * @generated
    * @return value of the feature 
    */
-  public Date getEndPoint() { 
-    return (Date)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endPoint)));
-  }
+  public Date getEndPoint() { return (Date)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endPoint)));}
     
   /** setter for endPoint - sets  
    * @generated

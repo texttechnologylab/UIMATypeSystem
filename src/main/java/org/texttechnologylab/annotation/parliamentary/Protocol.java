@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.parliamentary;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Protocol extends AnnotationBase {
  
@@ -68,8 +67,6 @@ public class Protocol extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Protocol() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -109,9 +106,7 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getElectionPeriod() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_electionPeriod));
-  }
+  public int getElectionPeriod() { return _getIntValueNc(wrapGetIntCatchException(_FH_electionPeriod));}
     
   /** setter for electionPeriod - sets  
    * @generated
@@ -130,9 +125,7 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getSessionNumber() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_sessionNumber));
-  }
+  public int getSessionNumber() { return _getIntValueNc(wrapGetIntCatchException(_FH_sessionNumber));}
     
   /** setter for sessionNumber - sets  
    * @generated
@@ -151,9 +144,7 @@ public class Protocol extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getDate() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_date));
-  }
+  public double getDate() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_date));}
     
   /** setter for date - sets  
    * @generated

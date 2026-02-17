@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.type.dbpedia;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DBPediaObject extends Annotation {
  
@@ -72,8 +71,6 @@ public class DBPediaObject extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected DBPediaObject() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -125,9 +122,7 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSimilarityScore() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_similarityScore));
-  }
+  public double getSimilarityScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_similarityScore));}
     
   /** setter for similarityScore - sets  
    * @generated
@@ -146,9 +141,7 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getPercentageOfSecondRank() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_percentageOfSecondRank));
-  }
+  public double getPercentageOfSecondRank() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_percentageOfSecondRank));}
     
   /** setter for percentageOfSecondRank - sets  
    * @generated
@@ -167,9 +160,7 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
-  }
+  public String getUri() { return _getStringValueNc(wrapGetIntCatchException(_FH_uri));}
     
   /** setter for uri - sets  
    * @generated
@@ -188,16 +179,13 @@ public class DBPediaObject extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<DBPediaType> getTypes() { 
-    return (FSList<DBPediaType>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_types)));
-  }
+  public FSList getTypes() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_types)));}
     
   /** setter for types - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTypes(FSList<DBPediaType> v) {
+  public void setTypes(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_types), v);
   }    
     

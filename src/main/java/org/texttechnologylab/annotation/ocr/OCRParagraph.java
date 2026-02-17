@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OCRParagraph extends Annotation {
  
@@ -74,8 +73,6 @@ public class OCRParagraph extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OCRParagraph() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -127,9 +124,7 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getLeftIndent() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_leftIndent));
-  }
+  public int getLeftIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_leftIndent));}
     
   /** setter for leftIndent - sets  
    * @generated
@@ -148,9 +143,7 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getRightIndent() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_rightIndent));
-  }
+  public int getRightIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_rightIndent));}
     
   /** setter for rightIndent - sets  
    * @generated
@@ -169,9 +162,7 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getStartIndent() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_startIndent));
-  }
+  public int getStartIndent() { return _getIntValueNc(wrapGetIntCatchException(_FH_startIndent));}
     
   /** setter for startIndent - sets  
    * @generated
@@ -190,9 +181,7 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getLineSpacing() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_lineSpacing));
-  }
+  public int getLineSpacing() { return _getIntValueNc(wrapGetIntCatchException(_FH_lineSpacing));}
     
   /** setter for lineSpacing - sets  
    * @generated
@@ -211,9 +200,7 @@ public class OCRParagraph extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAlign() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_align));
-  }
+  public String getAlign() { return _getStringValueNc(wrapGetIntCatchException(_FH_align));}
     
   /** setter for align - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -23,8 +22,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MoveLink extends Link {
  
@@ -86,8 +85,6 @@ public class MoveLink extends Link {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MoveLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -127,9 +124,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getSource() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));
-  }
+  public Entity getSource() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));}
     
   /** setter for source - sets  
    * @generated
@@ -148,9 +143,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getGoal() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_goal)));
-  }
+  public Entity getGoal() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_goal)));}
     
   /** setter for goal - sets  
    * @generated
@@ -169,16 +162,13 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Entity> getMid_point() { 
-    return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point)));
-  }
+  public FSList getMid_point() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point)));}
     
   /** setter for mid_point - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMid_point(FSList<Entity> v) {
+  public void setMid_point(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_mid_point), v);
   }    
     
@@ -191,16 +181,13 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Entity> getMid_point_array() { 
-    return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)));
-  }
+  public FSArray getMid_point_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)));}
     
   /** setter for mid_point_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMid_point_array(FSArray<Entity> v) {
+  public void setMid_point_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_mid_point_array), v);
   }    
     
@@ -210,19 +197,16 @@ public class MoveLink extends Link {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Entity getMid_point_array(int i) {
-     return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)))).get(i));
-  } 
+     return (Entity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)))).get(i));} 
 
   /** indexed setter for mid_point_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setMid_point_array(int i, Entity v) {
-    ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)))).set(i, v);
+  public void setMid_point_array(int i, Entity v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_mid_point_array)))).set(i, v);
   }  
    
     
@@ -233,9 +217,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Path getPath_id() { 
-    return (Path)(_getFeatureValueNc(wrapGetIntCatchException(_FH_path_id)));
-  }
+  public Path getPath_id() { return (Path)(_getFeatureValueNc(wrapGetIntCatchException(_FH_path_id)));}
     
   /** setter for path_id - sets  
    * @generated
@@ -254,9 +236,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public SpatialSignal getAdjunct_id() { 
-    return (SpatialSignal)(_getFeatureValueNc(wrapGetIntCatchException(_FH_adjunct_id)));
-  }
+  public SpatialSignal getAdjunct_id() { return (SpatialSignal)(_getFeatureValueNc(wrapGetIntCatchException(_FH_adjunct_id)));}
     
   /** setter for adjunct_id - sets  
    * @generated
@@ -275,9 +255,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public MotionSignal getMotionsignal_id() { 
-    return (MotionSignal)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motionsignal_id)));
-  }
+  public MotionSignal getMotionsignal_id() { return (MotionSignal)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motionsignal_id)));}
     
   /** setter for motionsignal_id - sets  
    * @generated
@@ -296,9 +274,7 @@ public class MoveLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getGoal_reached() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_goal_reached));
-  }
+  public String getGoal_reached() { return _getStringValueNc(wrapGetIntCatchException(_FH_goal_reached));}
     
   /** setter for goal_reached - sets ( YES | NO | UNCERTAIN ) 
    * @generated

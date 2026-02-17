@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.Room;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Roomwall
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RoomWall extends AnnotationBase {
  
@@ -70,8 +69,6 @@ public class RoomWall extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected RoomWall() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -111,16 +108,13 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Vector> getVectorlist() { 
-    return (FSArray<Vector>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)));
-  }
+  public FSArray getVectorlist() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)));}
     
   /** setter for vectorlist - sets List of all Wallpoints 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setVectorlist(FSArray<Vector> v) {
+  public void setVectorlist(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_vectorlist), v);
   }    
     
@@ -130,19 +124,16 @@ public class RoomWall extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Vector getVectorlist(int i) {
-     return (Vector)(((FSArray<Vector>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).get(i));
-  } 
+     return (Vector)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).get(i));} 
 
   /** indexed setter for vectorlist - sets an indexed value - List of all Wallpoints
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setVectorlist(int i, Vector v) {
-    ((FSArray<Vector>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).set(i, v);
+  public void setVectorlist(int i, Vector v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vectorlist)))).set(i, v);
   }  
    
     
@@ -153,9 +144,7 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getHeight() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_height));
-  }
+  public double getHeight() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_height));}
     
   /** setter for height - sets Height of the wall 
    * @generated
@@ -174,16 +163,13 @@ public class RoomWall extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ObjectAttribute> getFeature() { 
-    return (FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)));
-  }
+  public FSArray getFeature() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)));}
     
   /** setter for feature - sets Feature like color or texture. 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setFeature(FSArray<ObjectAttribute> v) {
+  public void setFeature(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_feature), v);
   }    
     
@@ -193,19 +179,16 @@ public class RoomWall extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ObjectAttribute getFeature(int i) {
-     return (ObjectAttribute)(((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).get(i));
-  } 
+     return (ObjectAttribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).get(i));} 
 
   /** indexed setter for feature - sets an indexed value - Feature like color or texture.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setFeature(int i, ObjectAttribute v) {
-    ((FSArray<ObjectAttribute>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).set(i, v);
+  public void setFeature(int i, ObjectAttribute v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_feature)))).set(i, v);
   }  
   }
 

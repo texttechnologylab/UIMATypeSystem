@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.unihd.dbs.uima.types.heideltime;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Timex3 extends Annotation {
  
@@ -98,8 +97,6 @@ public class Timex3 extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Timex3() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -151,9 +148,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFilename() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_filename));
-  }
+  public String getFilename() { return _getStringValueNc(wrapGetIntCatchException(_FH_filename));}
     
   /** setter for filename - sets  
    * @generated
@@ -172,9 +167,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));
-  }
+  public int getSentId() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));}
     
   /** setter for sentId - sets  
    * @generated
@@ -193,9 +186,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getFirstTokId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_firstTokId));
-  }
+  public int getFirstTokId() { return _getIntValueNc(wrapGetIntCatchException(_FH_firstTokId));}
     
   /** setter for firstTokId - sets  
    * @generated
@@ -214,9 +205,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAllTokIds() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_allTokIds));
-  }
+  public String getAllTokIds() { return _getStringValueNc(wrapGetIntCatchException(_FH_allTokIds));}
     
   /** setter for allTokIds - sets  
    * @generated
@@ -235,9 +224,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexId));
-  }
+  public String getTimexId() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexId));}
     
   /** setter for timexId - sets  
    * @generated
@@ -256,9 +243,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTimexInstance() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_timexInstance));
-  }
+  public int getTimexInstance() { return _getIntValueNc(wrapGetIntCatchException(_FH_timexInstance));}
     
   /** setter for timexInstance - sets  
    * @generated
@@ -277,9 +262,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexType));
-  }
+  public String getTimexType() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexType));}
     
   /** setter for timexType - sets  
    * @generated
@@ -298,9 +281,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexValue));
-  }
+  public String getTimexValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexValue));}
     
   /** setter for timexValue - sets  
    * @generated
@@ -319,9 +300,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFoundByRule() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_foundByRule));
-  }
+  public String getFoundByRule() { return _getStringValueNc(wrapGetIntCatchException(_FH_foundByRule));}
     
   /** setter for foundByRule - sets  
    * @generated
@@ -340,9 +319,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexQuant() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexQuant));
-  }
+  public String getTimexQuant() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexQuant));}
     
   /** setter for timexQuant - sets  
    * @generated
@@ -361,9 +338,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexFreq() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexFreq));
-  }
+  public String getTimexFreq() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexFreq));}
     
   /** setter for timexFreq - sets  
    * @generated
@@ -382,9 +357,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexMod() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timexMod));
-  }
+  public String getTimexMod() { return _getStringValueNc(wrapGetIntCatchException(_FH_timexMod));}
     
   /** setter for timexMod - sets  
    * @generated
@@ -403,9 +376,7 @@ public class Timex3 extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getEmptyValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_emptyValue));
-  }
+  public String getEmptyValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_emptyValue));}
     
   /** setter for emptyValue - sets attribute to hold a value for "empty" timex3 tags 
    * @generated

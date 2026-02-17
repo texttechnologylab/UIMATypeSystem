@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.node.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationContext extends Node {
  
@@ -71,8 +70,6 @@ public class RelationContext extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected RelationContext() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -112,9 +109,7 @@ public class RelationContext extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getRelatesTo() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_relatesTo));
-  }
+  public String getRelatesTo() { return _getStringValueNc(wrapGetIntCatchException(_FH_relatesTo));}
     
   /** setter for relatesTo - sets  
    * @generated
@@ -133,9 +128,7 @@ public class RelationContext extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getReferencedID() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_ReferencedID));
-  }
+  public int getReferencedID() { return _getIntValueNc(wrapGetIntCatchException(_FH_ReferencedID));}
     
   /** setter for ReferencedID - sets  
    * @generated
@@ -154,9 +147,7 @@ public class RelationContext extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
-  }
+  public String getDisplayName() { return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));}
     
   /** setter for displayName - sets  
    * @generated
@@ -175,9 +166,7 @@ public class RelationContext extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getWikiDataID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));
-  }
+  public String getWikiDataID() { return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));}
     
   /** setter for wikiDataID - sets  
    * @generated

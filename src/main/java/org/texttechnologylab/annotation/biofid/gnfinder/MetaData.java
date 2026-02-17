@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends TOP {
  
@@ -75,8 +74,6 @@ public class MetaData extends TOP {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -116,9 +113,7 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getDate() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_date));
-  }
+  public String getDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_date));}
     
   /** setter for date - sets The date of running a GNfinder query. 
    * @generated
@@ -137,9 +132,7 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets The version of GNfinder. 
    * @generated
@@ -158,9 +151,7 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getLanguage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_language));
-  }
+  public String getLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_language));}
     
   /** setter for language - sets Indicates the language that was used for calculation of Bayes' odds. 
    * @generated
@@ -179,16 +170,13 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TOP> getOther() { 
-    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)));
-  }
+  public FSArray getOther() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)));}
     
   /** setter for other - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setOther(FSArray<TOP> v) {
+  public void setOther(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_other), v);
   }    
     
@@ -198,19 +186,16 @@ public class MetaData extends TOP {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TOP getOther(int i) {
-     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).get(i));
-  } 
+     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).get(i));} 
 
   /** indexed setter for other - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setOther(int i, TOP v) {
-    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).set(i, v);
+  public void setOther(int i, TOP v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_other)))).set(i, v);
   }  
    
     
@@ -221,16 +206,13 @@ public class MetaData extends TOP {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TOP> getReferences() { 
-    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)));
-  }
+  public FSArray getReferences() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)));}
     
   /** setter for references - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setReferences(FSArray<TOP> v) {
+  public void setReferences(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_references), v);
   }    
     
@@ -240,19 +222,16 @@ public class MetaData extends TOP {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TOP getReferences(int i) {
-     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).get(i));
-  } 
+     return (TOP)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).get(i));} 
 
   /** indexed setter for references - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setReferences(int i, TOP v) {
-    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).set(i, v);
+  public void setReferences(int i, TOP v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_references)))).set(i, v);
   }  
   }
 

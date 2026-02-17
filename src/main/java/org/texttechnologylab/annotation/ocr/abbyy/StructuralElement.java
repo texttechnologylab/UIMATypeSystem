@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div;
 
 
 /** Meta-Type for structural elements with pixel offsets in the ABBYY FineReader schema.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StructuralElement extends Div {
  
@@ -71,8 +70,6 @@ public class StructuralElement extends Div {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected StructuralElement() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class StructuralElement extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getTop() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_top));
-  }
+  public int getTop() { return _getIntValueNc(wrapGetIntCatchException(_FH_top));}
     
   /** setter for top - sets Coordinate of the top border, in pixels. 
    * @generated
@@ -145,9 +140,7 @@ public class StructuralElement extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getBottom() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));
-  }
+  public int getBottom() { return _getIntValueNc(wrapGetIntCatchException(_FH_bottom));}
     
   /** setter for bottom - sets Coordinate of the bottom border, in pixels. 
    * @generated
@@ -166,9 +159,7 @@ public class StructuralElement extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getLeft() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_left));
-  }
+  public int getLeft() { return _getIntValueNc(wrapGetIntCatchException(_FH_left));}
     
   /** setter for left - sets Coordinate of the left border, in pixels. 
    * @generated
@@ -187,9 +178,7 @@ public class StructuralElement extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getRight() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_right));
-  }
+  public int getRight() { return _getIntValueNc(wrapGetIntCatchException(_FH_right));}
     
   /** setter for right - sets Coordinate of the right border, in pixels. 
    * @generated

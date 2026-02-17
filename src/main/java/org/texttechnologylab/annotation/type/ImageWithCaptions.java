@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.texttechnologylab.annotation.Caption;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ImageWithCaptions extends Image {
  
@@ -66,8 +65,6 @@ public class ImageWithCaptions extends Image {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ImageWithCaptions() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -119,16 +116,13 @@ public class ImageWithCaptions extends Image {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Caption> getCaptions() { 
-    return (FSArray<Caption>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)));
-  }
+  public FSArray getCaptions() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)));}
     
   /** setter for captions - sets Set of image captions 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setCaptions(FSArray<Caption> v) {
+  public void setCaptions(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_captions), v);
   }    
     
@@ -138,19 +132,16 @@ public class ImageWithCaptions extends Image {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Caption getCaptions(int i) {
-     return (Caption)(((FSArray<Caption>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).get(i));
-  } 
+     return (Caption)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).get(i));} 
 
   /** indexed setter for captions - sets an indexed value - Set of image captions
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setCaptions(int i, Caption v) {
-    ((FSArray<Caption>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).set(i, v);
+  public void setCaptions(int i, Caption v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_captions)))).set(i, v);
   }  
    
     
@@ -161,9 +152,7 @@ public class ImageWithCaptions extends Image {
    * @generated
    * @return value of the feature 
    */
-  public String getCaptionLanguage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_captionLanguage));
-  }
+  public String getCaptionLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_captionLanguage));}
     
   /** setter for captionLanguage - sets  
    * @generated

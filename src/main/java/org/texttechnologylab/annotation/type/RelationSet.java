@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RelationSet extends AnnotationBase {
  
@@ -63,8 +62,6 @@ public class RelationSet extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected RelationSet() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -104,16 +101,13 @@ public class RelationSet extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<RelationDescription> getRelations() { 
-    return (FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)));
-  }
+  public FSArray getRelations() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)));}
     
   /** setter for relations - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setRelations(FSArray<RelationDescription> v) {
+  public void setRelations(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_relations), v);
   }    
     
@@ -123,19 +117,16 @@ public class RelationSet extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public RelationDescription getRelations(int i) {
-     return (RelationDescription)(((FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).get(i));
-  } 
+     return (RelationDescription)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).get(i));} 
 
   /** indexed setter for relations - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setRelations(int i, RelationDescription v) {
-    ((FSArray<RelationDescription>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).set(i, v);
+  public void setRelations(int i, RelationDescription v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_relations)))).set(i, v);
   }  
   }
 

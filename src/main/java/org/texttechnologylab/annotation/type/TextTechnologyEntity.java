@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextTechnologyEntity extends Node {
  
@@ -77,8 +76,6 @@ public class TextTechnologyEntity extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TextTechnologyEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -139,9 +134,7 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
-  }
+  public String getSubvalue() { return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));}
     
   /** setter for subvalue - sets  
    * @generated
@@ -160,16 +153,13 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<KnowledgeEntry> getKnowledgeEntries() { 
-    return (FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));
-  }
+  public FSArray getKnowledgeEntries() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));}
     
   /** setter for knowledgeEntries - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setKnowledgeEntries(FSArray<KnowledgeEntry> v) {
+  public void setKnowledgeEntries(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_knowledgeEntries), v);
   }    
     
@@ -179,19 +169,16 @@ public class TextTechnologyEntity extends Node {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public KnowledgeEntry getKnowledgeEntries(int i) {
-     return (KnowledgeEntry)(((FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i));
-  } 
+     return (KnowledgeEntry)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i));} 
 
   /** indexed setter for knowledgeEntries - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setKnowledgeEntries(int i, KnowledgeEntry v) {
-    ((FSArray<KnowledgeEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).set(i, v);
+  public void setKnowledgeEntries(int i, KnowledgeEntry v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).set(i, v);
   }  
    
     
@@ -202,9 +189,7 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getBegin() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
-  }
+  public String getBegin() { return _getStringValueNc(wrapGetIntCatchException(_FH_begin));}
     
   /** setter for begin - sets  
    * @generated
@@ -223,9 +208,7 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
-  }
+  public String getEnd() { return _getStringValueNc(wrapGetIntCatchException(_FH_end));}
     
   /** setter for end - sets  
    * @generated
@@ -244,9 +227,7 @@ public class TextTechnologyEntity extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
-  }
+  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
     
   /** setter for pos - sets  
    * @generated

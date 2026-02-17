@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** System Prompt for LLM, it is optional, if not set, already System Prompt in the LLM will be used or No System Prompt will be used
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LLMSystemPrompt extends Annotation {
  
@@ -62,8 +61,6 @@ public class LLMSystemPrompt extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected LLMSystemPrompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class LLMSystemPrompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMessage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_message));
-  }
+  public String getMessage() { return _getStringValueNc(wrapGetIntCatchException(_FH_message));}
     
   /** setter for message - sets System Prompt for LLM 
    * @generated

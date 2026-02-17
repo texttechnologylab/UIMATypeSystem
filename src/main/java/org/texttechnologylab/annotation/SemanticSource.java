@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.semantics.type.WordSense;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SemanticSource extends WordSense {
  
@@ -68,8 +67,6 @@ public class SemanticSource extends WordSense {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SemanticSource() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getSource() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_source));
-  }
+  public String getSource() { return _getStringValueNc(wrapGetIntCatchException(_FH_source));}
     
   /** setter for source - sets  
    * @generated
@@ -142,9 +137,7 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getSearchResult() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_searchResult));
-  }
+  public String getSearchResult() { return _getStringValueNc(wrapGetIntCatchException(_FH_searchResult));}
     
   /** setter for searchResult - sets  
    * @generated
@@ -163,9 +156,7 @@ public class SemanticSource extends WordSense {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
-  }
+  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
     
   /** setter for comment - sets  
    * @generated

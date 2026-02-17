@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.context.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.node.type.Context;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OrganisationContext extends Context {
  
@@ -77,8 +76,6 @@ public class OrganisationContext extends Context {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OrganisationContext() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getFoundingDate() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_foundingDate));
-  }
+  public String getFoundingDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_foundingDate));}
     
   /** setter for foundingDate - sets  
    * @generated
@@ -139,9 +134,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getContextInf() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));
-  }
+  public String getContextInf() { return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));}
     
   /** setter for contextInf - sets  
    * @generated
@@ -160,9 +153,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getWebsite() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_website));
-  }
+  public String getWebsite() { return _getStringValueNc(wrapGetIntCatchException(_FH_website));}
     
   /** setter for website - sets  
    * @generated
@@ -181,9 +172,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getHeadquarter() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_headquarter));
-  }
+  public String getHeadquarter() { return _getStringValueNc(wrapGetIntCatchException(_FH_headquarter));}
     
   /** setter for headquarter - sets  
    * @generated
@@ -202,9 +191,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getChiefExecutiveOfficer() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_chiefExecutiveOfficer));
-  }
+  public String getChiefExecutiveOfficer() { return _getStringValueNc(wrapGetIntCatchException(_FH_chiefExecutiveOfficer));}
     
   /** setter for chiefExecutiveOfficer - sets  
    * @generated
@@ -223,9 +210,7 @@ public class OrganisationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getSetLabel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_setLabel));
-  }
+  public String getSetLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_setLabel));}
     
   /** setter for setLabel - sets  
    * @generated

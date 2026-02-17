@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.uima.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.FloatArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Embedding extends ModelAnnotation {
  
@@ -63,8 +62,6 @@ public class Embedding extends ModelAnnotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Embedding() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -116,9 +113,7 @@ public class Embedding extends ModelAnnotation {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getEmbedding() { 
-    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)));
-  }
+  public FloatArray getEmbedding() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)));}
     
   /** setter for embedding - sets  
    * @generated
@@ -135,8 +130,7 @@ public class Embedding extends ModelAnnotation {
    * @return value of the element at index i 
    */
   public float getEmbedding(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).get(i);
-  } 
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_embedding)))).get(i);} 
 
   /** indexed setter for embedding - sets an indexed value - 
    * @generated

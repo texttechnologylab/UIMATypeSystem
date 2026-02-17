@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type.llm.prompt;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Prompt for a LLM containing a list of "messages".
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Prompt extends Annotation {
  
@@ -73,8 +72,6 @@ public class Prompt extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Prompt() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -126,16 +123,13 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Message> getMessages() { 
-    return (FSArray<Message>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)));
-  }
+  public FSArray getMessages() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)));}
     
   /** setter for messages - sets The list of messages for this prompt. 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMessages(FSArray<Message> v) {
+  public void setMessages(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_messages), v);
   }    
     
@@ -145,19 +139,16 @@ public class Prompt extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Message getMessages(int i) {
-     return (Message)(((FSArray<Message>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).get(i));
-  } 
+     return (Message)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).get(i));} 
 
   /** indexed setter for messages - sets an indexed value - The list of messages for this prompt.
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setMessages(int i, Message v) {
-    ((FSArray<Message>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).set(i, v);
+  public void setMessages(int i, Message v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_messages)))).set(i, v);
   }  
    
     
@@ -168,9 +159,7 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getArgs() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_args));
-  }
+  public String getArgs() { return _getStringValueNc(wrapGetIntCatchException(_FH_args));}
     
   /** setter for args - sets Prompt arguments 
    * @generated
@@ -189,9 +178,7 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets  
    * @generated
@@ -210,9 +197,7 @@ public class Prompt extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() { 
-    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-  }
+  public TOP getReference() { return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
     
   /** setter for reference - sets Reference to another annotation 
    * @generated

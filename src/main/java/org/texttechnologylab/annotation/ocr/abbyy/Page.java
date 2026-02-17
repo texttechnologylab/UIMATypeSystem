@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Div;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Page extends Div {
  
@@ -80,8 +79,6 @@ public class Page extends Div {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Page() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -134,9 +131,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_index));
-  }
+  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
     
   /** setter for index - sets The page index, i.e. a running number assigned during the processing.
                         Usually denoted in the file name as the first part, e.g. "1" for "01_123456789.xml" 
@@ -156,9 +151,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getPageNumber() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pageNumber));
-  }
+  public String getPageNumber() { return _getStringValueNc(wrapGetIntCatchException(_FH_pageNumber));}
     
   /** setter for pageNumber - sets The page number *as a String* as cover pages etc. are commonly numbered using roman numbers. 
    * @generated
@@ -177,9 +170,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getUri() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_uri));
-  }
+  public String getUri() { return _getStringValueNc(wrapGetIntCatchException(_FH_uri));}
     
   /** setter for uri - sets URI of this page, i.e. a Visual Library link. 
    * @generated
@@ -198,9 +189,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_width));
-  }
+  public int getWidth() { return _getIntValueNc(wrapGetIntCatchException(_FH_width));}
     
   /** setter for width - sets The image width in pixels. 
    * @generated
@@ -219,9 +208,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_height));
-  }
+  public int getHeight() { return _getIntValueNc(wrapGetIntCatchException(_FH_height));}
     
   /** setter for height - sets The image height in pixels. 
    * @generated
@@ -240,9 +227,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public int getResolution() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));
-  }
+  public int getResolution() { return _getIntValueNc(wrapGetIntCatchException(_FH_resolution));}
     
   /** setter for resolution - sets The image resolution in pixels per inch. 
    * @generated
@@ -262,9 +247,7 @@ public class Page extends Div {
    * @generated
    * @return value of the feature 
    */
-  public String getRotation() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_rotation));
-  }
+  public String getRotation() { return _getStringValueNc(wrapGetIntCatchException(_FH_rotation));}
     
   /** setter for rotation - sets The type of rotation applied to original page image before processing (optional).
                         It can be one of the following values: Normal, RotatedClockwise, RotatedUpsideDown, RotatedCounterclockwise 

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.bitbucket.rkilinger.ged;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Emotion extends Annotation {
  
@@ -80,8 +79,6 @@ public class Emotion extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Emotion() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -133,9 +130,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getJoy() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_joy));
-  }
+  public double getJoy() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_joy));}
     
   /** setter for joy - sets  
    * @generated
@@ -154,9 +149,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getAnger() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_anger));
-  }
+  public double getAnger() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_anger));}
     
   /** setter for anger - sets  
    * @generated
@@ -175,9 +168,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getMourning() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_mourning));
-  }
+  public double getMourning() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_mourning));}
     
   /** setter for mourning - sets  
    * @generated
@@ -196,9 +187,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getFear() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_fear));
-  }
+  public double getFear() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_fear));}
     
   /** setter for fear - sets  
    * @generated
@@ -217,9 +206,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getSurprise() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_surprise));
-  }
+  public double getSurprise() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_surprise));}
     
   /** setter for surprise - sets  
    * @generated
@@ -238,9 +225,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getContempt() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_contempt));
-  }
+  public double getContempt() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_contempt));}
     
   /** setter for contempt - sets  
    * @generated
@@ -259,9 +244,7 @@ public class Emotion extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getDisgust() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_disgust));
-  }
+  public double getDisgust() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_disgust));}
     
   /** setter for disgust - sets  
    * @generated

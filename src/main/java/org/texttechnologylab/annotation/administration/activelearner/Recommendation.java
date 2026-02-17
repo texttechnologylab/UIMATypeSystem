@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.administration.activelearner;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.AnnotationComment;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Recommendation extends AnnotationComment {
  
@@ -65,8 +64,6 @@ public class Recommendation extends AnnotationComment {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Recommendation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,9 +103,7 @@ public class Recommendation extends AnnotationComment {
    * @generated
    * @return value of the feature 
    */
-  public String getHash() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_hash));
-  }
+  public String getHash() { return _getStringValueNc(wrapGetIntCatchException(_FH_hash));}
     
   /** setter for hash - sets  
    * @generated
@@ -127,9 +122,7 @@ public class Recommendation extends AnnotationComment {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));
-  }
+  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
     
   /** setter for score - sets  
    * @generated

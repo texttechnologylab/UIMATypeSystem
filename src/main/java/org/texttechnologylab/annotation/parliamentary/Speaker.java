@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.parliamentary;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Speaker extends AnnotationBase {
  
@@ -74,8 +73,6 @@ public class Speaker extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Speaker() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_id));
-  }
+  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
     
   /** setter for id - sets  
    * @generated
@@ -136,9 +131,7 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getFirstName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_firstName));
-  }
+  public String getFirstName() { return _getStringValueNc(wrapGetIntCatchException(_FH_firstName));}
     
   /** setter for firstName - sets  
    * @generated
@@ -157,9 +150,7 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLastName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lastName));
-  }
+  public String getLastName() { return _getStringValueNc(wrapGetIntCatchException(_FH_lastName));}
     
   /** setter for lastName - sets  
    * @generated
@@ -178,9 +169,7 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getGroup() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_group));
-  }
+  public String getGroup() { return _getStringValueNc(wrapGetIntCatchException(_FH_group));}
     
   /** setter for group - sets  
    * @generated
@@ -199,9 +188,7 @@ public class Speaker extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_role));
-  }
+  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
     
   /** setter for role - sets  
    * @generated

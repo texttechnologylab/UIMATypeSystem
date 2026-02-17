@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Type system for representing topics in BERTopic-based models
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class BertTopic extends Annotation {
  
@@ -67,8 +66,6 @@ public class BertTopic extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected BertTopic() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -120,16 +117,13 @@ public class BertTopic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TopicValue> getTopics() { 
-    return (FSArray<TopicValue>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)));
-  }
+  public FSArray getTopics() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)));}
     
   /** setter for Topics - sets Set of topics with labels and probabilities 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTopics(FSArray<TopicValue> v) {
+  public void setTopics(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_Topics), v);
   }    
     
@@ -139,19 +133,16 @@ public class BertTopic extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TopicValue getTopics(int i) {
-     return (TopicValue)(((FSArray<TopicValue>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).get(i));
-  } 
+     return (TopicValue)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).get(i));} 
 
   /** indexed setter for Topics - sets an indexed value - Set of topics with labels and probabilities
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setTopics(int i, TopicValue v) {
-    ((FSArray<TopicValue>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).set(i, v);
+  public void setTopics(int i, TopicValue v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_Topics)))).set(i, v);
   }  
    
     
@@ -162,9 +153,7 @@ public class BertTopic extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets Metadata about the BERTopic model, such as its name, source and version 
    * @generated

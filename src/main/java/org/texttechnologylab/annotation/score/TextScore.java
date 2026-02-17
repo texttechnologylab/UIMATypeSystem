@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.score;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextScore extends AnnotationBase {
  
@@ -69,8 +68,6 @@ public class TextScore extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TextScore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -110,16 +107,13 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TextScoreEntry> getElements() { 
-    return (FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));
-  }
+  public FSArray getElements() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)));}
     
   /** setter for elements - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setElements(FSArray<TextScoreEntry> v) {
+  public void setElements(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_elements), v);
   }    
     
@@ -129,19 +123,16 @@ public class TextScore extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TextScoreEntry getElements(int i) {
-     return (TextScoreEntry)(((FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));
-  } 
+     return (TextScoreEntry)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).get(i));} 
 
   /** indexed setter for elements - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setElements(int i, TextScoreEntry v) {
-    ((FSArray<TextScoreEntry>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).set(i, v);
+  public void setElements(int i, TextScoreEntry v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elements)))).set(i, v);
   }  
    
     
@@ -152,9 +143,7 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentURI() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_documentURI));
-  }
+  public String getDocumentURI() { return _getStringValueNc(wrapGetIntCatchException(_FH_documentURI));}
     
   /** setter for documentURI - sets  
    * @generated
@@ -173,9 +162,7 @@ public class TextScore extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDocumentName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));
-  }
+  public String getDocumentName() { return _getStringValueNc(wrapGetIntCatchException(_FH_documentName));}
     
   /** setter for documentName - sets  
    * @generated

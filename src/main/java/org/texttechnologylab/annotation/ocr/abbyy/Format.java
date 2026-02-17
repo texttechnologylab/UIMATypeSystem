@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.ocr.abbyy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Attributes of a line with uniform formatting.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Format extends Annotation {
  
@@ -89,8 +88,6 @@ public class Format extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Format() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -142,9 +139,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLang() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lang));
-  }
+  public String getLang() { return _getStringValueNc(wrapGetIntCatchException(_FH_lang));}
     
   /** setter for lang - sets Name of the language. 
    * @generated
@@ -163,9 +158,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFf() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ff));
-  }
+  public String getFf() { return _getStringValueNc(wrapGetIntCatchException(_FH_ff));}
     
   /** setter for ff - sets The name of the font. 
    * @generated
@@ -184,9 +177,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public float getFs() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_fs));
-  }
+  public float getFs() { return _getFloatValueNc(wrapGetIntCatchException(_FH_fs));}
     
   /** setter for fs - sets The size of the font. 
    * @generated
@@ -205,9 +196,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getBold() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_bold));
-  }
+  public boolean getBold() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_bold));}
     
   /** setter for bold - sets  
    * @generated
@@ -226,9 +215,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getItalic() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_italic));
-  }
+  public boolean getItalic() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_italic));}
     
   /** setter for italic - sets  
    * @generated
@@ -247,9 +234,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSubscript() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_subscript));
-  }
+  public boolean getSubscript() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_subscript));}
     
   /** setter for subscript - sets  
    * @generated
@@ -268,9 +253,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSuperscript() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_superscript));
-  }
+  public boolean getSuperscript() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_superscript));}
     
   /** setter for superscript - sets  
    * @generated
@@ -289,9 +272,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSmallcaps() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_smallcaps));
-  }
+  public boolean getSmallcaps() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_smallcaps));}
     
   /** setter for smallcaps - sets  
    * @generated
@@ -310,9 +291,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getUnderline() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_underline));
-  }
+  public boolean getUnderline() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_underline));}
     
   /** setter for underline - sets  
    * @generated
@@ -331,9 +310,7 @@ public class Format extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getStrikeout() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_strikeout));
-  }
+  public boolean getStrikeout() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_strikeout));}
     
   /** setter for strikeout - sets  
    * @generated

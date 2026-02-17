@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class PropNode extends Node {
  
@@ -97,8 +96,6 @@ public class PropNode extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected PropNode() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -138,9 +135,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getGraphId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_graphId));
-  }
+  public String getGraphId() { return _getStringValueNc(wrapGetIntCatchException(_FH_graphId));}
     
   /** setter for graphId - sets  
    * @generated
@@ -159,9 +154,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getNodeId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_nodeId));
-  }
+  public String getNodeId() { return _getStringValueNc(wrapGetIntCatchException(_FH_nodeId));}
     
   /** setter for nodeId - sets  
    * @generated
@@ -180,9 +173,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getLemma() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lemma));
-  }
+  public String getLemma() { return _getStringValueNc(wrapGetIntCatchException(_FH_lemma));}
     
   /** setter for lemma - sets  
    * @generated
@@ -201,9 +192,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
-  }
+  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
     
   /** setter for pos - sets  
    * @generated
@@ -222,9 +211,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getText() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_text));
-  }
+  public String getText() { return _getStringValueNc(wrapGetIntCatchException(_FH_text));}
     
   /** setter for text - sets  
    * @generated
@@ -243,9 +230,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getX() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_x));
-  }
+  public String getX() { return _getStringValueNc(wrapGetIntCatchException(_FH_x));}
     
   /** setter for x - sets  
    * @generated
@@ -264,9 +249,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getY() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_y));
-  }
+  public String getY() { return _getStringValueNc(wrapGetIntCatchException(_FH_y));}
     
   /** setter for y - sets  
    * @generated
@@ -285,9 +268,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getReference() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_reference));
-  }
+  public String getReference() { return _getStringValueNc(wrapGetIntCatchException(_FH_reference));}
     
   /** setter for reference - sets  
    * @generated
@@ -306,9 +287,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getX2() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_x2));
-  }
+  public String getX2() { return _getStringValueNc(wrapGetIntCatchException(_FH_x2));}
     
   /** setter for x2 - sets  
    * @generated
@@ -327,9 +306,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getY2() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_y2));
-  }
+  public String getY2() { return _getStringValueNc(wrapGetIntCatchException(_FH_y2));}
     
   /** setter for y2 - sets  
    * @generated
@@ -348,9 +325,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getBegin() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_begin));
-  }
+  public String getBegin() { return _getStringValueNc(wrapGetIntCatchException(_FH_begin));}
     
   /** setter for begin - sets  
    * @generated
@@ -369,9 +344,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getEnd() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_end));
-  }
+  public String getEnd() { return _getStringValueNc(wrapGetIntCatchException(_FH_end));}
     
   /** setter for end - sets  
    * @generated
@@ -390,9 +363,7 @@ public class PropNode extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getColor() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_color));
-  }
+  public String getColor() { return _getStringValueNc(wrapGetIntCatchException(_FH_color));}
     
   /** setter for color - sets  
    * @generated

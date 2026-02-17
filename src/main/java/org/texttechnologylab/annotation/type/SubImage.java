@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SubImage extends Annotation {
  
@@ -66,8 +65,6 @@ public class SubImage extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SubImage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -119,16 +116,13 @@ public class SubImage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Coordinate> getCoordinates() { 
-    return (FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)));
-  }
+  public FSArray getCoordinates() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)));}
     
   /** setter for coordinates - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setCoordinates(FSArray<Coordinate> v) {
+  public void setCoordinates(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_coordinates), v);
   }    
     
@@ -138,19 +132,16 @@ public class SubImage extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Coordinate getCoordinates(int i) {
-     return (Coordinate)(((FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));
-  } 
+     return (Coordinate)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).get(i));} 
 
   /** indexed setter for coordinates - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setCoordinates(int i, Coordinate v) {
-    ((FSArray<Coordinate>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
+  public void setCoordinates(int i, Coordinate v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_coordinates)))).set(i, v);
   }  
    
     
@@ -161,9 +152,7 @@ public class SubImage extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Image getParent() { 
-    return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));
-  }
+  public Image getParent() { return (Image)(_getFeatureValueNc(wrapGetIntCatchException(_FH_parent)));}
     
   /** setter for parent - sets  
    * @generated

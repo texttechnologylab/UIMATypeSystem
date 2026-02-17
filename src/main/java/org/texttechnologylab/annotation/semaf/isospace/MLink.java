@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -23,8 +22,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MLink extends Link {
  
@@ -77,8 +76,6 @@ public class MLink extends Link {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Measure getVal() { 
-    return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_val)));
-  }
+  public Measure getVal() { return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_val)));}
     
   /** setter for val - sets  
    * @generated
@@ -139,9 +134,7 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getEnd_point1() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point1)));
-  }
+  public Entity getEnd_point1() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point1)));}
     
   /** setter for end_point1 - sets  
    * @generated
@@ -160,9 +153,7 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getEnd_point2() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point2)));
-  }
+  public Entity getEnd_point2() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_end_point2)));}
     
   /** setter for end_point2 - sets  
    * @generated
@@ -181,16 +172,13 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Entity> getBounds() { 
-    return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds)));
-  }
+  public FSList getBounds() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds)));}
     
   /** setter for bounds - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setBounds(FSList<Entity> v) {
+  public void setBounds(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_bounds), v);
   }    
     
@@ -203,16 +191,13 @@ public class MLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Entity> getBounds_array() { 
-    return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)));
-  }
+  public FSArray getBounds_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)));}
     
   /** setter for bounds_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setBounds_array(FSArray<Entity> v) {
+  public void setBounds_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_bounds_array), v);
   }    
     
@@ -222,19 +207,16 @@ public class MLink extends Link {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Entity getBounds_array(int i) {
-     return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).get(i));
-  } 
+     return (Entity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).get(i));} 
 
   /** indexed setter for bounds_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setBounds_array(int i, Entity v) {
-    ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).set(i, v);
+  public void setBounds_array(int i, Entity v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_bounds_array)))).set(i, v);
   }  
   }
 

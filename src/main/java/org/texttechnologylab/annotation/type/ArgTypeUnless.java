@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgTypeUnless extends ArgType {
  
@@ -65,8 +64,6 @@ public class ArgTypeUnless extends ArgType {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ArgTypeUnless() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,16 +103,13 @@ public class ArgTypeUnless extends ArgType {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ArgTextSegment> getCounterRebuttal() { 
-    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)));
-  }
+  public FSArray getCounterRebuttal() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)));}
     
   /** setter for counterRebuttal - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setCounterRebuttal(FSArray<ArgTextSegment> v) {
+  public void setCounterRebuttal(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_counterRebuttal), v);
   }    
     
@@ -125,19 +119,16 @@ public class ArgTypeUnless extends ArgType {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ArgTextSegment getCounterRebuttal(int i) {
-     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).get(i));
-  } 
+     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).get(i));} 
 
   /** indexed setter for counterRebuttal - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setCounterRebuttal(int i, ArgTextSegment v) {
-    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).set(i, v);
+  public void setCounterRebuttal(int i, ArgTextSegment v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_counterRebuttal)))).set(i, v);
   }  
    
     
@@ -148,16 +139,13 @@ public class ArgTypeUnless extends ArgType {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ArgTextSegment> getRebuttal() { 
-    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)));
-  }
+  public FSArray getRebuttal() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)));}
     
   /** setter for rebuttal - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setRebuttal(FSArray<ArgTextSegment> v) {
+  public void setRebuttal(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_rebuttal), v);
   }    
     
@@ -167,19 +155,16 @@ public class ArgTypeUnless extends ArgType {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ArgTextSegment getRebuttal(int i) {
-     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).get(i));
-  } 
+     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).get(i));} 
 
   /** indexed setter for rebuttal - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setRebuttal(int i, ArgTextSegment v) {
-    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).set(i, v);
+  public void setRebuttal(int i, ArgTextSegment v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_rebuttal)))).set(i, v);
   }  
   }
 

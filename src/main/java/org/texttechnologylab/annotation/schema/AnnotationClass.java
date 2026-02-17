@@ -1,26 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jan 30 15:15:29 CET 2026 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.schema;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.AnnotationBase;
-import org.apache.uima.jcas.cas.FSArray;
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Fri Jan 30 15:15:29 CET 2026
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.cas.AnnotationBase;
+
+
+/** 
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationClass extends AnnotationBase {
  
@@ -67,8 +68,6 @@ public class AnnotationClass extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnnotationClass() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -108,9 +107,7 @@ public class AnnotationClass extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets  
    * @generated
@@ -129,9 +126,7 @@ public class AnnotationClass extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
-  }
+  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
     
   /** setter for description - sets  
    * @generated
@@ -150,43 +145,33 @@ public class AnnotationClass extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Attribute> getAttributes() {
-      return (FSArray<Attribute>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));
-  }
+  public FSArray getAttributes() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));}
     
   /** setter for attributes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setAttributes(FSArray<Attribute> v) {
+  public void setAttributes(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attributes), v);
-  }
+  }    
+    
+    
+  /** indexed getter for attributes - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  public Attribute getAttributes(int i) {
+     return (Attribute)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).get(i));} 
 
-
-    /**
-     * indexed getter for attributes - gets an indexed value -
-     *
-     * @param i index in the array to get
-     * @return value of the element at index i
-     * @generated
-     */
-    @SuppressWarnings("unchecked")
-    public Attribute getAttributes(int i) {
-        return (Attribute) (((FSArray<Attribute>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).get(i));
-    }
-
-    /**
-     * indexed setter for attributes - sets an indexed value -
-     *
-     * @param i index in the array to set
-     * @param v value to set into the array
-     * @generated
-     */
-    @SuppressWarnings("unchecked")
-    public void setAttributes(int i, Attribute v) {
-        ((FSArray<Attribute>) (_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).set(i, v);
-    }
+  /** indexed setter for attributes - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  public void setAttributes(int i, Attribute v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).set(i, v);
+  }  
   }
 
     

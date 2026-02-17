@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.unihd.dbs.uima.types.heideltime;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Timex3Interval extends Timex3 {
  
@@ -79,8 +78,6 @@ public class Timex3Interval extends Timex3 {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Timex3Interval() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -132,9 +129,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueEB() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEB));
-  }
+  public String getTimexValueEB() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEB));}
     
   /** setter for TimexValueEB - sets  
    * @generated
@@ -153,9 +148,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueLE() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLE));
-  }
+  public String getTimexValueLE() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLE));}
     
   /** setter for TimexValueLE - sets  
    * @generated
@@ -174,9 +167,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueEE() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEE));
-  }
+  public String getTimexValueEE() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueEE));}
     
   /** setter for TimexValueEE - sets  
    * @generated
@@ -195,9 +186,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getTimexValueLB() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLB));
-  }
+  public String getTimexValueLB() { return _getStringValueNc(wrapGetIntCatchException(_FH_TimexValueLB));}
     
   /** setter for TimexValueLB - sets  
    * @generated
@@ -216,9 +205,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getEmptyValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_emptyValue));
-  }
+  public String getEmptyValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_emptyValue));}
     
   /** setter for emptyValue - sets  
    * @generated
@@ -237,9 +224,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getBeginTimex() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_beginTimex));
-  }
+  public String getBeginTimex() { return _getStringValueNc(wrapGetIntCatchException(_FH_beginTimex));}
     
   /** setter for beginTimex - sets  
    * @generated
@@ -258,9 +243,7 @@ public class Timex3Interval extends Timex3 {
    * @generated
    * @return value of the feature 
    */
-  public String getEndTimex() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_endTimex));
-  }
+  public String getEndTimex() { return _getStringValueNc(wrapGetIntCatchException(_FH_endTimex));}
     
   /** setter for endTimex - sets  
    * @generated

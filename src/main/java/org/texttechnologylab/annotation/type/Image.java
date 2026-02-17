@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Image extends Annotation {
  
@@ -71,8 +70,6 @@ public class Image extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Image() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSrc() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_src));
-  }
+  public String getSrc() { return _getStringValueNc(wrapGetIntCatchException(_FH_src));}
     
   /** setter for src - sets  
    * @generated
@@ -145,9 +140,7 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getWidth() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_width));
-  }
+  public int getWidth() { return _getIntValueNc(wrapGetIntCatchException(_FH_width));}
     
   /** setter for width - sets  
    * @generated
@@ -166,9 +159,7 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getHeight() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_height));
-  }
+  public int getHeight() { return _getIntValueNc(wrapGetIntCatchException(_FH_height));}
     
   /** setter for height - sets  
    * @generated
@@ -187,9 +178,7 @@ public class Image extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMimetype() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));
-  }
+  public String getMimetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_mimetype));}
     
   /** setter for mimetype - sets  
    * @generated

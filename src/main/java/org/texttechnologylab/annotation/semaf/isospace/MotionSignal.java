@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MotionSignal extends Signal {
  
@@ -62,8 +61,6 @@ public class MotionSignal extends Signal {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MotionSignal() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class MotionSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_signal_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_signal_type));
-  }
+  public String getMotion_signal_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_motion_signal_type));}
     
   /** setter for motion_signal_type - sets ( MANNER | PATH ) 
    * @generated

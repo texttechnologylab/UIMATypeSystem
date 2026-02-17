@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.geonames;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** GeoNames annotation base type.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GeoNamesEntity extends Annotation {
  
@@ -98,8 +97,6 @@ public class GeoNamesEntity extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected GeoNamesEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -151,9 +148,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_id));
-  }
+  public int getId() { return _getIntValueNc(wrapGetIntCatchException(_FH_id));}
     
   /** setter for id - sets Integer ID of this record in the GeoNames database. 
    * @generated
@@ -172,9 +167,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets Canonical name of this record, usually an English one. 
    * @generated
@@ -193,9 +186,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFeatureClass() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_featureClass));
-  }
+  public String getFeatureClass() { return _getStringValueNc(wrapGetIntCatchException(_FH_featureClass));}
     
   /** setter for featureClass - sets Single character feature class, see: http://www.geonames.org/export/codes.html 
    * @generated
@@ -215,9 +206,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFeatureCode() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_featureCode));
-  }
+  public String getFeatureCode() { return _getStringValueNc(wrapGetIntCatchException(_FH_featureCode));}
     
   /** setter for featureCode - sets Fine-grained feature code, see:
                         http://www.geonames.org/export/codes.html 
@@ -237,9 +226,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getCountryCode() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_countryCode));
-  }
+  public String getCountryCode() { return _getStringValueNc(wrapGetIntCatchException(_FH_countryCode));}
     
   /** setter for countryCode - sets ISO-3166 2-letter country code 
    * @generated
@@ -261,9 +248,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAdm1() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_adm1));
-  }
+  public String getAdm1() { return _getStringValueNc(wrapGetIntCatchException(_FH_adm1));}
     
   /** setter for adm1 - sets The code for top level administrative division, most of which are FIPS codes.
                         ISO codes are used for US, CH, BE and ME.
@@ -285,9 +270,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAdm2() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_adm2));
-  }
+  public String getAdm2() { return _getStringValueNc(wrapGetIntCatchException(_FH_adm2));}
     
   /** setter for adm2 - sets The code for the second level administrative division, i.e. a county in the US. 
    * @generated
@@ -306,9 +289,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAdm3() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_adm3));
-  }
+  public String getAdm3() { return _getStringValueNc(wrapGetIntCatchException(_FH_adm3));}
     
   /** setter for adm3 - sets The code for third level administrative division. 
    * @generated
@@ -327,9 +308,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAdm4() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_adm4));
-  }
+  public String getAdm4() { return _getStringValueNc(wrapGetIntCatchException(_FH_adm4));}
     
   /** setter for adm4 - sets The code for fourth level administrative division. 
    * @generated
@@ -348,9 +327,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public float getLatitude() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_latitude));
-  }
+  public float getLatitude() { return _getFloatValueNc(wrapGetIntCatchException(_FH_latitude));}
     
   /** setter for latitude - sets Latitude as a 32-bit floating point number. 
    * @generated
@@ -369,9 +346,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public float getLongitude() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_longitude));
-  }
+  public float getLongitude() { return _getFloatValueNc(wrapGetIntCatchException(_FH_longitude));}
     
   /** setter for longitude - sets Longitude as a 32-bit floating point number. 
    * @generated
@@ -391,9 +366,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public short getElevation() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_elevation));
-  }
+  public short getElevation() { return _getShortValueNc(wrapGetIntCatchException(_FH_elevation));}
     
   /** setter for elevation - sets Elevation in meters above/below normal as a 16-bit signed integer number;
                         optional, defaults to 0. 
@@ -414,9 +387,7 @@ public class GeoNamesEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getReferenceAnnotation() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_referenceAnnotation)));
-  }
+  public Annotation getReferenceAnnotation() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_referenceAnnotation)));}
     
   /** setter for referenceAnnotation - sets The annotation this GeoName annotation is in reference to. By default, this should be a
                         'de.tudarmstadt.ukp.dkpro.core.api.ner.type.Location' annotation. 

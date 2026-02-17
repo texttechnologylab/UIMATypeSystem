@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Tue Aug 12 08:54:05 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.model;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Essay Score Model Meta Data LLM with Prompts and all additional information
- * Updated by JCasGen Tue Aug 12 08:54:05 CEST 2025
- * XML source: /home/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EssayScoreLLM extends EssayScoreModel {
  
@@ -70,8 +69,6 @@ public class EssayScoreLLM extends EssayScoreModel {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EssayScoreLLM() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -123,9 +120,7 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));
-  }
+  public String getModelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_ModelName));}
     
   /** setter for ModelName - sets ModelName of used LLM 
    * @generated
@@ -144,9 +139,7 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getResponse() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Response));
-  }
+  public String getResponse() { return _getStringValueNc(wrapGetIntCatchException(_FH_Response));}
     
   /** setter for Response - sets Complete Response of LLM with all kind of Information as Json String 
    * @generated
@@ -165,9 +158,7 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getContents() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Contents));
-  }
+  public String getContents() { return _getStringValueNc(wrapGetIntCatchException(_FH_Contents));}
     
   /** setter for Contents - sets The extracted output of the LLM response 
    * @generated
@@ -186,9 +177,7 @@ public class EssayScoreLLM extends EssayScoreModel {
    * @generated
    * @return value of the feature 
    */
-  public String getAdditionalInformation() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_AdditionalInformation));
-  }
+  public String getAdditionalInformation() { return _getStringValueNc(wrapGetIntCatchException(_FH_AdditionalInformation));}
     
   /** setter for AdditionalInformation - sets Further Information like used port, url and more which are not included in responses 
    * @generated

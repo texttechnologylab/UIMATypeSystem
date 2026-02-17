@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>3.0.15</version>
+    <version>2.0.0</version>
 
     <licenses>
         <license>
@@ -90,10 +90,10 @@
     </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <dkpro.core.version>2.5.0</dkpro.core.version>
-        <uima.version>3.6.0</uima.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <dkpro.core.version>1.12.0</dkpro.core.version>
+        <uima.version>2.4.0</uima.version>
     </properties>
 
     <build>
@@ -101,7 +101,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.14.0</version>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -118,12 +122,12 @@
                         <!--generate types dynamically -->
                         <groupId>org.apache.uima</groupId>
                         <artifactId>jcasgen-maven-plugin</artifactId>
-                        <version>3.6.0</version>
+                        <version>3.0.0</version>
                         <configuration>
                             <limitToProject>true</limitToProject>
                             <typeSystemIncludes>
-                                <include>src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml</include>
-                                <!--                                <include>src/main/resources/desc/**/*</include>-->
+<!--                                <include>src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml</include>-->
+                            <include>src/main/resources/desc/**/*</include>
                             </typeSystemIncludes>
                             <outputDirectory>
                                 src/main/java/
@@ -194,11 +198,6 @@
         <dependency>
             <groupId>org.apache.uima</groupId>
             <artifactId>uimafit-core</artifactId>
-            <version>${uima.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.uima</groupId>
-            <artifactId>uimaj-json</artifactId>
             <version>${uima.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.uima/uimaj-tools -->

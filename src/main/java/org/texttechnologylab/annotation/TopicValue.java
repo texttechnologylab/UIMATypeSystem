@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Represents a topic instance with a value/label and associated probability
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TopicValue extends AnnotationBase {
  
@@ -65,8 +64,6 @@ public class TopicValue extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TopicValue() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,9 +103,7 @@ public class TopicValue extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets Topic label for the topic instance 
    * @generated
@@ -127,9 +122,7 @@ public class TopicValue extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getProbability() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probability));
-  }
+  public double getProbability() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_probability));}
     
   /** setter for probability - sets The probability associated with the topic instance 
    * @generated

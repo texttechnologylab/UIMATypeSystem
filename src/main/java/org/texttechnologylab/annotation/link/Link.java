@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.link;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Base type for unidirectional links between entities
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Link extends Annotation {
  
@@ -65,8 +64,6 @@ public class Link extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Link() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class Link extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLinkType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_linkType));
-  }
+  public String getLinkType() { return _getStringValueNc(wrapGetIntCatchException(_FH_linkType));}
     
   /** setter for linkType - sets Type of the link 
    * @generated
@@ -139,9 +134,7 @@ public class Link extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getLinkId() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_linkId));
-  }
+  public long getLinkId() { return _getLongValueNc(wrapGetIntCatchException(_FH_linkId));}
     
   /** setter for linkId - sets Id of a Link 
    * @generated

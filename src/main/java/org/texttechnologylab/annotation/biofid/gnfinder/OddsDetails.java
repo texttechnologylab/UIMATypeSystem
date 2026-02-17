@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OddsDetails extends TOP {
  
@@ -65,8 +64,6 @@ public class OddsDetails extends TOP {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OddsDetails() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -106,9 +103,7 @@ public class OddsDetails extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getFeature() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_feature));
-  }
+  public String getFeature() { return _getStringValueNc(wrapGetIntCatchException(_FH_feature));}
     
   /** setter for feature - sets  
    * @generated
@@ -127,9 +122,7 @@ public class OddsDetails extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public float getOdds() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_odds));
-  }
+  public float getOdds() { return _getFloatValueNc(wrapGetIntCatchException(_FH_odds));}
     
   /** setter for odds - sets  
    * @generated

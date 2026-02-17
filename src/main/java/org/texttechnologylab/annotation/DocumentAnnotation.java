@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class DocumentAnnotation extends AnnotationBase {
  
@@ -83,8 +82,6 @@ public class DocumentAnnotation extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected DocumentAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getAuthor() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_author));
-  }
+  public String getAuthor() { return _getStringValueNc(wrapGetIntCatchException(_FH_author));}
     
   /** setter for author - sets  
    * @generated
@@ -145,9 +140,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getPublisher() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_publisher));
-  }
+  public String getPublisher() { return _getStringValueNc(wrapGetIntCatchException(_FH_publisher));}
     
   /** setter for publisher - sets  
    * @generated
@@ -166,9 +159,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateDay() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_dateDay));
-  }
+  public int getDateDay() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateDay));}
     
   /** setter for dateDay - sets  
    * @generated
@@ -187,9 +178,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getSubtitle() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_subtitle));
-  }
+  public String getSubtitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_subtitle));}
     
   /** setter for subtitle - sets  
    * @generated
@@ -208,9 +197,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateMonth() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_dateMonth));
-  }
+  public int getDateMonth() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateMonth));}
     
   /** setter for dateMonth - sets  
    * @generated
@@ -229,9 +216,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getDateYear() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_dateYear));
-  }
+  public int getDateYear() { return _getIntValueNc(wrapGetIntCatchException(_FH_dateYear));}
     
   /** setter for dateYear - sets  
    * @generated
@@ -250,9 +235,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public long getTimestamp() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));
-  }
+  public long getTimestamp() { return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));}
     
   /** setter for timestamp - sets  
    * @generated
@@ -271,9 +254,7 @@ public class DocumentAnnotation extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getPlace() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_place));
-  }
+  public String getPlace() { return _getStringValueNc(wrapGetIntCatchException(_FH_place));}
     
   /** setter for place - sets  
    * @generated

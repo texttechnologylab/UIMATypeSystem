@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TopicValueBase extends AnnotationBase {
  
@@ -66,8 +65,6 @@ public class TopicValueBase extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TopicValueBase() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -107,9 +104,7 @@ public class TopicValueBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets Topic Label 
    * @generated
@@ -128,16 +123,13 @@ public class TopicValueBase extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<TopicWord> getWords() { 
-    return (FSArray<TopicWord>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)));
-  }
+  public FSArray getWords() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)));}
     
   /** setter for words - sets Set of words with probabilities 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setWords(FSArray<TopicWord> v) {
+  public void setWords(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_words), v);
   }    
     
@@ -147,19 +139,16 @@ public class TopicValueBase extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public TopicWord getWords(int i) {
-     return (TopicWord)(((FSArray<TopicWord>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)))).get(i));
-  } 
+     return (TopicWord)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)))).get(i));} 
 
   /** indexed setter for words - sets an indexed value - Set of words with probabilities
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setWords(int i, TopicWord v) {
-    ((FSArray<TopicWord>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)))).set(i, v);
+  public void setWords(int i, TopicWord v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_words)))).set(i, v);
   }  
   }
 

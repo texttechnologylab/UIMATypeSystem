@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type.id;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** URI (Uniform Resource Identifier) type
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class URI extends Annotation {
  
@@ -83,8 +82,6 @@ public class URI extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected URI() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -136,9 +133,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getScheme() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_scheme));
-  }
+  public String getScheme() { return _getStringValueNc(wrapGetIntCatchException(_FH_scheme));}
     
   /** setter for scheme - sets  
    * @generated
@@ -157,9 +152,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
-  }
+  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
     
   /** setter for user - sets  
    * @generated
@@ -178,9 +171,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPassword() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_password));
-  }
+  public String getPassword() { return _getStringValueNc(wrapGetIntCatchException(_FH_password));}
     
   /** setter for password - sets  
    * @generated
@@ -199,9 +190,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getHost() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_host));
-  }
+  public String getHost() { return _getStringValueNc(wrapGetIntCatchException(_FH_host));}
     
   /** setter for host - sets  
    * @generated
@@ -220,9 +209,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPort() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_port));
-  }
+  public int getPort() { return _getIntValueNc(wrapGetIntCatchException(_FH_port));}
     
   /** setter for port - sets  
    * @generated
@@ -241,9 +228,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPath() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_path));
-  }
+  public String getPath() { return _getStringValueNc(wrapGetIntCatchException(_FH_path));}
     
   /** setter for path - sets  
    * @generated
@@ -262,9 +247,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getQuery() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_query));
-  }
+  public String getQuery() { return _getStringValueNc(wrapGetIntCatchException(_FH_query));}
     
   /** setter for query - sets  
    * @generated
@@ -283,9 +266,7 @@ public class URI extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFragment() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_fragment));
-  }
+  public String getFragment() { return _getStringValueNc(wrapGetIntCatchException(_FH_fragment));}
     
   /** setter for fragment - sets  
    * @generated

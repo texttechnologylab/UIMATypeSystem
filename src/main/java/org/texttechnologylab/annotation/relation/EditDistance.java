@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.relation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** An annotation that denotes an edit distance difference between two annotations.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EditDistance extends AnnotationRelation {
  
@@ -64,8 +63,6 @@ public class EditDistance extends AnnotationRelation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EditDistance() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -117,9 +114,7 @@ public class EditDistance extends AnnotationRelation {
    * @generated
    * @return value of the feature 
    */
-  public int getDistance() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_distance));
-  }
+  public int getDistance() { return _getIntValueNc(wrapGetIntCatchException(_FH_distance));}
     
   /** setter for distance - sets The edit distance as a 32-bit integer value. 
    * @generated
@@ -138,9 +133,7 @@ public class EditDistance extends AnnotationRelation {
    * @generated
    * @return value of the feature 
    */
-  public String getAlgorithm() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_algorithm));
-  }
+  public String getAlgorithm() { return _getStringValueNc(wrapGetIntCatchException(_FH_algorithm));}
     
   /** setter for algorithm - sets The algorithm used to calculate the edit distance. 
    * @generated

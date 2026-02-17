@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type.segmentation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Div extends Annotation {
  
@@ -74,8 +73,6 @@ public class Div extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Div() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -127,9 +124,7 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTyp() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_typ));
-  }
+  public String getTyp() { return _getStringValueNc(wrapGetIntCatchException(_FH_typ));}
     
   /** setter for typ - sets  
    * @generated
@@ -148,9 +143,7 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_id));
-  }
+  public String getId() { return _getStringValueNc(wrapGetIntCatchException(_FH_id));}
     
   /** setter for id - sets  
    * @generated
@@ -169,9 +162,7 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSection() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_section));
-  }
+  public String getSection() { return _getStringValueNc(wrapGetIntCatchException(_FH_section));}
     
   /** setter for section - sets  
    * @generated
@@ -190,9 +181,7 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUser() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_user));
-  }
+  public String getUser() { return _getStringValueNc(wrapGetIntCatchException(_FH_user));}
     
   /** setter for user - sets  
    * @generated
@@ -211,9 +200,7 @@ public class Div extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTimestamp() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));
-  }
+  public String getTimestamp() { return _getStringValueNc(wrapGetIntCatchException(_FH_timestamp));}
     
   /** setter for timestamp - sets  
    * @generated

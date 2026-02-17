@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.node.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.type.Node;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntityVis extends Node {
  
@@ -77,8 +76,6 @@ public class EntityVis extends Node {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EntityVis() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public int getGeonamesID() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_geonamesID));
-  }
+  public int getGeonamesID() { return _getIntValueNc(wrapGetIntCatchException(_FH_geonamesID));}
     
   /** setter for geonamesID - sets  
    * @generated
@@ -139,9 +134,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getGeoJson() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));
-  }
+  public String getGeoJson() { return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));}
     
   /** setter for geoJson - sets  
    * @generated
@@ -160,9 +153,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getDisplayName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));
-  }
+  public String getDisplayName() { return _getStringValueNc(wrapGetIntCatchException(_FH_displayName));}
     
   /** setter for displayName - sets  
    * @generated
@@ -181,9 +172,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getOfClass() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ofClass));
-  }
+  public String getOfClass() { return _getStringValueNc(wrapGetIntCatchException(_FH_ofClass));}
     
   /** setter for ofClass - sets  
    * @generated
@@ -202,9 +191,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getImage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_image));
-  }
+  public String getImage() { return _getStringValueNc(wrapGetIntCatchException(_FH_image));}
     
   /** setter for image - sets  
    * @generated
@@ -223,9 +210,7 @@ public class EntityVis extends Node {
    * @generated
    * @return value of the feature 
    */
-  public String getWikiDataID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));
-  }
+  public String getWikiDataID() { return _getStringValueNc(wrapGetIntCatchException(_FH_wikiDataID));}
     
   /** setter for wikiDataID - sets  
    * @generated

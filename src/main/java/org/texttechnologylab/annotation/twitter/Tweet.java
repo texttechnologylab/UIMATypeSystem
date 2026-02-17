@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.twitter;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Tweet extends Annotation {
  
@@ -96,8 +95,6 @@ public class Tweet extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Tweet() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -149,9 +146,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUserName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_userName));
-  }
+  public String getUserName() { return _getStringValueNc(wrapGetIntCatchException(_FH_userName));}
     
   /** setter for userName - sets  
    * @generated
@@ -170,9 +165,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getCreate() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_create));
-  }
+  public long getCreate() { return _getLongValueNc(wrapGetIntCatchException(_FH_create));}
     
   /** setter for create - sets  
    * @generated
@@ -191,9 +184,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLanguage() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_language));
-  }
+  public String getLanguage() { return _getStringValueNc(wrapGetIntCatchException(_FH_language));}
     
   /** setter for language - sets  
    * @generated
@@ -212,9 +203,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getRetweet() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_retweet));
-  }
+  public long getRetweet() { return _getLongValueNc(wrapGetIntCatchException(_FH_retweet));}
     
   /** setter for retweet - sets  
    * @generated
@@ -233,9 +222,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getTwitterID() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_twitterID));
-  }
+  public long getTwitterID() { return _getLongValueNc(wrapGetIntCatchException(_FH_twitterID));}
     
   /** setter for twitterID - sets  
    * @generated
@@ -254,9 +241,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getGeo() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_geo));
-  }
+  public String getGeo() { return _getStringValueNc(wrapGetIntCatchException(_FH_geo));}
     
   /** setter for geo - sets  
    * @generated
@@ -275,9 +260,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getHashTags() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)));
-  }
+  public StringArray getHashTags() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)));}
     
   /** setter for hashTags - sets  
    * @generated
@@ -294,8 +277,7 @@ public class Tweet extends Annotation {
    * @return value of the element at index i 
    */
   public String getHashTags(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_hashTags)))).get(i);} 
 
   /** indexed setter for hashTags - sets an indexed value - 
    * @generated
@@ -314,9 +296,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getUrls() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)));
-  }
+  public StringArray getUrls() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)));}
     
   /** setter for urls - sets  
    * @generated
@@ -333,8 +313,7 @@ public class Tweet extends Annotation {
    * @return value of the element at index i 
    */
   public String getUrls(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_urls)))).get(i);} 
 
   /** indexed setter for urls - sets an indexed value - 
    * @generated
@@ -353,9 +332,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getUserId() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_userId));
-  }
+  public long getUserId() { return _getLongValueNc(wrapGetIntCatchException(_FH_userId));}
     
   /** setter for userId - sets  
    * @generated
@@ -374,9 +351,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getRepliedTo() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_repliedTo));
-  }
+  public long getRepliedTo() { return _getLongValueNc(wrapGetIntCatchException(_FH_repliedTo));}
     
   /** setter for repliedTo - sets  
    * @generated
@@ -395,9 +370,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public long getQuoted() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_quoted));
-  }
+  public long getQuoted() { return _getLongValueNc(wrapGetIntCatchException(_FH_quoted));}
     
   /** setter for quoted - sets  
    * @generated
@@ -416,9 +389,7 @@ public class Tweet extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getOriginalText() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_originalText));
-  }
+  public String getOriginalText() { return _getStringValueNc(wrapGetIntCatchException(_FH_originalText));}
     
   /** setter for originalText - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.iaa;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -23,8 +22,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AgreementContainer extends Annotation {
  
@@ -80,8 +79,6 @@ public class AgreementContainer extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AgreementContainer() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -133,9 +130,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getOverallAgreementValue() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_overallAgreementValue));
-  }
+  public double getOverallAgreementValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_overallAgreementValue));}
     
   /** setter for overallAgreementValue - sets The overall agreement for the entire document. 
    * @generated
@@ -154,9 +149,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAgreementMeasure() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_agreementMeasure));
-  }
+  public String getAgreementMeasure() { return _getStringValueNc(wrapGetIntCatchException(_FH_agreementMeasure));}
     
   /** setter for agreementMeasure - sets The agreement measure used to compute the values. 
    * @generated
@@ -175,9 +168,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategoryNames() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)));
-  }
+  public StringArray getCategoryNames() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)));}
     
   /** setter for categoryNames - sets The categories as an array of Strings. 
    * @generated
@@ -194,8 +185,7 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategoryNames(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryNames)))).get(i);} 
 
   /** indexed setter for categoryNames - sets an indexed value - The categories as an array of Strings.
    * @generated
@@ -214,9 +204,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public DoubleArray getCategoryAgreementValues() { 
-    return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)));
-  }
+  public DoubleArray getCategoryAgreementValues() { return (DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)));}
     
   /** setter for categoryAgreementValues - sets An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values. 
    * @generated
@@ -233,8 +221,7 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public double getCategoryAgreementValues(int i) {
-     return ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)))).get(i);
-  } 
+     return ((DoubleArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryAgreementValues)))).get(i);} 
 
   /** indexed setter for categoryAgreementValues - sets an indexed value - An array of strings, that contains pairs of categories and their category specific agreement value. Elements with even indices are category Strings, elements with odd indices are the corresponding agreement values.
    * @generated
@@ -253,9 +240,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public LongArray getCategoryCounts() { 
-    return (LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)));
-  }
+  public LongArray getCategoryCounts() { return (LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)));}
     
   /** setter for categoryCounts - sets The count of items of each category for all annotators as an array of Longs. 
    * @generated
@@ -272,8 +257,7 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public long getCategoryCounts(int i) {
-     return ((LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)))).get(i);
-  } 
+     return ((LongArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categoryCounts)))).get(i);} 
 
   /** indexed setter for categoryCounts - sets an indexed value - The count of items of each category for all annotators as an array of Longs.
    * @generated
@@ -292,9 +276,7 @@ public class AgreementContainer extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getCategorySpecificAgreementValues() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)));
-  }
+  public StringArray getCategorySpecificAgreementValues() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)));}
     
   /** setter for categorySpecificAgreementValues - sets @deprecated 
    * @generated
@@ -311,8 +293,7 @@ public class AgreementContainer extends Annotation {
    * @return value of the element at index i 
    */
   public String getCategorySpecificAgreementValues(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_categorySpecificAgreementValues)))).get(i);} 
 
   /** indexed setter for categorySpecificAgreementValues - sets an indexed value - @deprecated
    * @generated

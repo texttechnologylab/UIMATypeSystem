@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotatorMetaData extends AnnotationBase {
  
@@ -75,8 +74,6 @@ public class AnnotatorMetaData extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnnotatorMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -116,9 +113,7 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getReference() { 
-    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-  }
+  public TOP getReference() { return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
     
   /** setter for reference - sets  
    * @generated
@@ -137,9 +132,7 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets  
    * @generated
@@ -158,9 +151,7 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets  
    * @generated
@@ -179,9 +170,7 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getModelName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_modelName));
-  }
+  public String getModelName() { return _getStringValueNc(wrapGetIntCatchException(_FH_modelName));}
     
   /** setter for modelName - sets  
    * @generated
@@ -200,9 +189,7 @@ public class AnnotatorMetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getModelVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_modelVersion));
-  }
+  public String getModelVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_modelVersion));}
     
   /** setter for modelVersion - sets  
    * @generated

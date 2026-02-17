@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.parliamentary;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Agenda extends Annotation {
  
@@ -72,8 +71,6 @@ public class Agenda extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Agenda() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -125,9 +122,7 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTitle() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_title));
-  }
+  public String getTitle() { return _getStringValueNc(wrapGetIntCatchException(_FH_title));}
     
   /** setter for title - sets  
    * @generated
@@ -146,9 +141,7 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_index));
-  }
+  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
     
   /** setter for index - sets  
    * @generated
@@ -167,16 +160,13 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Speech> getSpeeches() { 
-    return (FSList<Speech>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speeches)));
-  }
+  public FSList getSpeeches() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_speeches)));}
     
   /** setter for speeches - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSpeeches(FSList<Speech> v) {
+  public void setSpeeches(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_speeches), v);
   }    
     
@@ -189,9 +179,7 @@ public class Agenda extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Protocol getProtocol() { 
-    return (Protocol)(_getFeatureValueNc(wrapGetIntCatchException(_FH_protocol)));
-  }
+  public Protocol getProtocol() { return (Protocol)(_getFeatureValueNc(wrapGetIntCatchException(_FH_protocol)));}
     
   /** setter for protocol - sets  
    * @generated

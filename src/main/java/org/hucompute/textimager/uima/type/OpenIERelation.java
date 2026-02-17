@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Typesystem for results of OpenIE (Stanford Open Information Extraction - https://nlp.stanford.edu/software/openie.html).
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OpenIERelation extends Annotation {
  
@@ -89,8 +88,6 @@ public class OpenIERelation extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OpenIERelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -142,9 +139,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_confidence));
-  }
+  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_confidence));}
     
   /** setter for confidence - sets  
    * @generated
@@ -163,9 +158,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginArg1() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg1));
-  }
+  public int getBeginArg1() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg1));}
     
   /** setter for beginArg1 - sets  
    * @generated
@@ -184,9 +177,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndArg1() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_endArg1));
-  }
+  public int getEndArg1() { return _getIntValueNc(wrapGetIntCatchException(_FH_endArg1));}
     
   /** setter for endArg1 - sets  
    * @generated
@@ -205,9 +196,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueArg1() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg1));
-  }
+  public String getValueArg1() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg1));}
     
   /** setter for valueArg1 - sets  
    * @generated
@@ -226,9 +215,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginRel() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_beginRel));
-  }
+  public int getBeginRel() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginRel));}
     
   /** setter for beginRel - sets  
    * @generated
@@ -247,9 +234,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndRel() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_endRel));
-  }
+  public int getEndRel() { return _getIntValueNc(wrapGetIntCatchException(_FH_endRel));}
     
   /** setter for endRel - sets  
    * @generated
@@ -268,9 +253,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueRel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_valueRel));
-  }
+  public String getValueRel() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueRel));}
     
   /** setter for valueRel - sets  
    * @generated
@@ -289,9 +272,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getBeginArg2() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg2));
-  }
+  public int getBeginArg2() { return _getIntValueNc(wrapGetIntCatchException(_FH_beginArg2));}
     
   /** setter for beginArg2 - sets  
    * @generated
@@ -310,9 +291,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEndArg2() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_endArg2));
-  }
+  public int getEndArg2() { return _getIntValueNc(wrapGetIntCatchException(_FH_endArg2));}
     
   /** setter for endArg2 - sets  
    * @generated
@@ -331,9 +310,7 @@ public class OpenIERelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueArg2() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg2));
-  }
+  public String getValueArg2() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueArg2));}
     
   /** setter for valueArg2 - sets  
    * @generated

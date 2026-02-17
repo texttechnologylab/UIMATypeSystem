@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.context.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.FloatArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class LocationContext extends Context {
  
@@ -84,8 +83,6 @@ public class LocationContext extends Context {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected LocationContext() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -125,9 +122,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getMarkerPoint() { 
-    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)));
-  }
+  public FloatArray getMarkerPoint() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)));}
     
   /** setter for markerPoint - sets  
    * @generated
@@ -144,8 +139,7 @@ public class LocationContext extends Context {
    * @return value of the element at index i 
    */
   public float getMarkerPoint(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).get(i);
-  } 
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_markerPoint)))).get(i);} 
 
   /** indexed setter for markerPoint - sets an indexed value - 
    * @generated
@@ -164,9 +158,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getGeoJson() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));
-  }
+  public String getGeoJson() { return _getStringValueNc(wrapGetIntCatchException(_FH_geoJson));}
     
   /** setter for geoJson - sets  
    * @generated
@@ -185,9 +177,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getLatLngs() { 
-    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)));
-  }
+  public FloatArray getLatLngs() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)));}
     
   /** setter for latLngs - sets  
    * @generated
@@ -204,8 +194,7 @@ public class LocationContext extends Context {
    * @return value of the element at index i 
    */
   public float getLatLngs(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).get(i);
-  } 
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_latLngs)))).get(i);} 
 
   /** indexed setter for latLngs - sets an indexed value - 
    * @generated
@@ -224,9 +213,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getContextInf() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));
-  }
+  public String getContextInf() { return _getStringValueNc(wrapGetIntCatchException(_FH_contextInf));}
     
   /** setter for contextInf - sets  
    * @generated
@@ -245,9 +232,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getCountry() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_country));
-  }
+  public String getCountry() { return _getStringValueNc(wrapGetIntCatchException(_FH_country));}
     
   /** setter for country - sets  
    * @generated
@@ -266,9 +251,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public double getNumberOfCitizen() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_numberOfCitizen));
-  }
+  public double getNumberOfCitizen() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_numberOfCitizen));}
     
   /** setter for numberOfCitizen - sets  
    * @generated
@@ -287,9 +270,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public int getGeoNamesID() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_geoNamesID));
-  }
+  public int getGeoNamesID() { return _getIntValueNc(wrapGetIntCatchException(_FH_geoNamesID));}
     
   /** setter for geoNamesID - sets  
    * @generated
@@ -308,9 +289,7 @@ public class LocationContext extends Context {
    * @generated
    * @return value of the feature 
    */
-  public String getAreaSize() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_areaSize));
-  }
+  public String getAreaSize() { return _getStringValueNc(wrapGetIntCatchException(_FH_areaSize));}
     
   /** setter for areaSize - sets  
    * @generated

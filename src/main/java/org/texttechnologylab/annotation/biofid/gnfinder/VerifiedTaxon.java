@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.biofid.gnfinder;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** Type for verified gnfinder-recognized taxonomic names.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VerifiedTaxon extends Taxon {
  
@@ -97,8 +96,6 @@ public class VerifiedTaxon extends Taxon {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected VerifiedTaxon() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -150,9 +147,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getDataSourceId() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_dataSourceId));
-  }
+  public short getDataSourceId() { return _getShortValueNc(wrapGetIntCatchException(_FH_dataSourceId));}
     
   /** setter for dataSourceId - sets  
    * @generated
@@ -173,9 +168,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getRecordId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_recordId));
-  }
+  public String getRecordId() { return _getStringValueNc(wrapGetIntCatchException(_FH_recordId));}
     
   /** setter for recordId - sets RecordID from a data source. GNFinder tries its to return ID that corresponds to dwc:taxonID of
                         a DataSource. If such ID is not provided, this ID will be auto-generated. Auto-generated IDs
@@ -197,9 +190,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getGlobalId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_globalId));
-  }
+  public String getGlobalId() { return _getStringValueNc(wrapGetIntCatchException(_FH_globalId));}
     
   /** setter for globalId - sets GlobalID that is exposed globally by a DataSource. Such IDs are usually self-resolved, like for
                         example LSID, pURL, DOI etc. 
@@ -220,9 +211,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getLocalId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_localId));
-  }
+  public String getLocalId() { return _getStringValueNc(wrapGetIntCatchException(_FH_localId));}
     
   /** setter for localId - sets LocalID used by a DataSource internally. If an OutLink field is provided, LocalID serves as a
                         'dynamic' component of the URL. 
@@ -243,9 +232,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getOutlink() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_outlink));
-  }
+  public String getOutlink() { return _getStringValueNc(wrapGetIntCatchException(_FH_outlink));}
     
   /** setter for outlink - sets Outlink to the record in the DataSource. It consists of a 'stable' URL and an appended 'dynamic'
                         LocalID 
@@ -274,9 +261,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public float getSortScore() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_sortScore));
-  }
+  public float getSortScore() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sortScore));}
     
   /** setter for sortScore - sets SortScore is a numeric representation of the whole score. It can be used to find the BestMatch
                         overall, as well as the best match for every data-source.
@@ -305,9 +290,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_matchedName));
-  }
+  public String getMatchedName() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedName));}
     
   /** setter for matchedName - sets The name-string from the DataSource that was matched by GNames algorithm.
                         Often contains the author names. 
@@ -329,9 +312,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedCanonicalSimple() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalSimple));
-  }
+  public String getMatchedCanonicalSimple() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalSimple));}
     
   /** setter for matchedCanonicalSimple - sets A simplified canonical form without ranks for names lower than species, and with omitted hybrid
                         signs for named hybrids. Quite often simple canonical is the same as full canonical. Hybrid
@@ -352,9 +333,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchedCanonicalFull() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalFull));
-  }
+  public String getMatchedCanonicalFull() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchedCanonicalFull));}
     
   /** setter for matchedCanonicalFull - sets A canonical form of the name that preserves hybrid signs and infraspecific ranks. 
    * @generated
@@ -373,9 +352,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getTaxonomicStatus() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_taxonomicStatus));
-  }
+  public String getTaxonomicStatus() { return _getStringValueNc(wrapGetIntCatchException(_FH_taxonomicStatus));}
     
   /** setter for taxonomicStatus - sets Provides taxonomic status of a name. Can be "Accepted", "Synonym", "N/A". 
    * @generated
@@ -394,9 +371,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getCurrentName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_currentName));
-  }
+  public String getCurrentName() { return _getStringValueNc(wrapGetIntCatchException(_FH_currentName));}
     
   /** setter for currentName - sets The currently accepted name, present if it differs from the matchedName. 
    * @generated
@@ -415,9 +390,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public String getMatchType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_matchType));
-  }
+  public String getMatchType() { return _getStringValueNc(wrapGetIntCatchException(_FH_matchType));}
     
   /** setter for matchType - sets  
    * @generated
@@ -437,9 +410,7 @@ public class VerifiedTaxon extends Taxon {
    * @generated
    * @return value of the feature 
    */
-  public short getEditDistance() { 
-    return _getShortValueNc(wrapGetIntCatchException(_FH_editDistance));
-  }
+  public short getEditDistance() { return _getShortValueNc(wrapGetIntCatchException(_FH_editDistance));}
     
   /** setter for editDistance - sets The Levenshtein edit distance between canonical form of the input name-string and the matched
                         canonical form. If match type is EXACT, edit-distance will be 0. 

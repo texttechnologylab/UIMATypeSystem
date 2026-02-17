@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.uce;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Dynamic metadata triplets, consisting of a key, a value and the type modelling the value.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Metadata extends Annotation {
  
@@ -71,8 +70,6 @@ public class Metadata extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Metadata() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class Metadata extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getKey() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_key));
-  }
+  public String getKey() { return _getStringValueNc(wrapGetIntCatchException(_FH_key));}
     
   /** setter for key - sets  
    * @generated
@@ -145,9 +140,7 @@ public class Metadata extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -166,9 +159,7 @@ public class Metadata extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValueType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_valueType));
-  }
+  public String getValueType() { return _getStringValueNc(wrapGetIntCatchException(_FH_valueType));}
     
   /** setter for valueType - sets  
    * @generated
@@ -187,9 +178,7 @@ public class Metadata extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getComment() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_comment));
-  }
+  public String getComment() { return _getStringValueNc(wrapGetIntCatchException(_FH_comment));}
     
   /** setter for comment - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SentimentBert extends Annotation {
  
@@ -71,8 +70,6 @@ public class SentimentBert extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SentimentBert() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentiment() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_sentiment));
-  }
+  public int getSentiment() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentiment));}
     
   /** setter for sentiment - sets  
    * @generated
@@ -145,9 +140,7 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityPositive() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityPositive));
-  }
+  public double getProbabilityPositive() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityPositive));}
     
   /** setter for probabilityPositive - sets  
    * @generated
@@ -166,9 +159,7 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityNeutral() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNeutral));
-  }
+  public double getProbabilityNeutral() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNeutral));}
     
   /** setter for probabilityNeutral - sets  
    * @generated
@@ -187,9 +178,7 @@ public class SentimentBert extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getProbabilityNegative() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNegative));
-  }
+  public double getProbabilityNegative() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_probabilityNegative));}
     
   /** setter for probabilityNegative - sets  
    * @generated

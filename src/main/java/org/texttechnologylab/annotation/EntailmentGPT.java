@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EntailmentGPT extends AnnotationBase {
  
@@ -75,8 +74,6 @@ public class EntailmentGPT extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EntailmentGPT() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -116,9 +113,7 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public EntailmentSentence getReference() { 
-    return (EntailmentSentence)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-  }
+  public EntailmentSentence getReference() { return (EntailmentSentence)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
     
   /** setter for reference - sets Entailment reference 
    * @generated
@@ -137,9 +132,7 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Label));
-  }
+  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_Label));}
     
   /** setter for Label - sets Label entailment or contradiction 
    * @generated
@@ -158,9 +151,7 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getConfidence() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_Confidence));
-  }
+  public double getConfidence() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Confidence));}
     
   /** setter for Confidence - sets Confidence value 
    * @generated
@@ -179,9 +170,7 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));
-  }
+  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));}
     
   /** setter for Reason - sets Reason for the decision 
    * @generated
@@ -200,9 +189,7 @@ public class EntailmentGPT extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets  
    * @generated

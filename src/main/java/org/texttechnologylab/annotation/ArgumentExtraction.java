@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Argument
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgumentExtraction extends Annotation {
  
@@ -69,8 +68,6 @@ public class ArgumentExtraction extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ArgumentExtraction() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -122,9 +119,7 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_reason));
-  }
+  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_reason));}
     
   /** setter for reason - sets reason for the output if its provided 
    * @generated
@@ -143,9 +138,7 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets output of the model 
    * @generated
@@ -164,9 +157,7 @@ public class ArgumentExtraction extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets  
    * @generated

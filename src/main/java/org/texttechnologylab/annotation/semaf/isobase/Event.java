@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isobase;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.texttechnologylab.annotation.semaf.isospace.Measure;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Event extends Entity {
  
@@ -112,8 +111,6 @@ public class Event extends Entity {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Event() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -165,9 +162,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_class() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_event_class));
-  }
+  public String getEvent_class() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_class));}
     
   /** setter for event_class - sets  
    * @generated
@@ -186,9 +181,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getPolarity() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));
-  }
+  public String getPolarity() { return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));}
     
   /** setter for polarity - sets  
    * @generated
@@ -207,9 +200,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getMood() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_mood));
-  }
+  public String getMood() { return _getStringValueNc(wrapGetIntCatchException(_FH_mood));}
     
   /** setter for mood - sets  
    * @generated
@@ -228,9 +219,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getPos() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pos));
-  }
+  public String getPos() { return _getStringValueNc(wrapGetIntCatchException(_FH_pos));}
     
   /** setter for pos - sets  
    * @generated
@@ -249,9 +238,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getTense() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_tense));
-  }
+  public String getTense() { return _getStringValueNc(wrapGetIntCatchException(_FH_tense));}
     
   /** setter for tense - sets  
    * @generated
@@ -270,9 +257,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getAspect() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));
-  }
+  public String getAspect() { return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));}
     
   /** setter for aspect - sets  
    * @generated
@@ -291,9 +276,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getVform() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_vform));
-  }
+  public String getVform() { return _getStringValueNc(wrapGetIntCatchException(_FH_vform));}
     
   /** setter for vform - sets  
    * @generated
@@ -312,9 +295,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getDomain() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_domain));
-  }
+  public String getDomain() { return _getStringValueNc(wrapGetIntCatchException(_FH_domain));}
     
   /** setter for domain - sets  
    * @generated
@@ -333,9 +314,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLat() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_lat));
-  }
+  public String getLat() { return _getStringValueNc(wrapGetIntCatchException(_FH_lat));}
     
   /** setter for lat - sets  
    * @generated
@@ -354,9 +333,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getLong() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_long));
-  }
+  public String getLong() { return _getStringValueNc(wrapGetIntCatchException(_FH_long));}
     
   /** setter for long - sets  
    * @generated
@@ -375,9 +352,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public Measure getElevation() { 
-    return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));
-  }
+  public Measure getElevation() { return (Measure)(_getFeatureValueNc(wrapGetIntCatchException(_FH_elevation)));}
     
   /** setter for elevation - sets  
    * @generated
@@ -396,9 +371,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public boolean getCountable() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));
-  }
+  public boolean getCountable() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_countable));}
     
   /** setter for countable - sets  
    * @generated
@@ -417,9 +390,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getGquant() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));
-  }
+  public String getGquant() { return _getStringValueNc(wrapGetIntCatchException(_FH_gquant));}
     
   /** setter for gquant - sets  
    * @generated
@@ -438,16 +409,13 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<Entity> getScopes() { 
-    return (FSList<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));
-  }
+  public FSList getScopes() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes)));}
     
   /** setter for scopes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setScopes(FSList<Entity> v) {
+  public void setScopes(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes), v);
   }    
     
@@ -460,16 +428,13 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Entity> getScopes_array() { 
-    return (FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));
-  }
+  public FSArray getScopes_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)));}
     
   /** setter for scopes_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setScopes_array(FSArray<Entity> v) {
+  public void setScopes_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scopes_array), v);
   }    
     
@@ -479,19 +444,16 @@ public class Event extends Entity {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Entity getScopes_array(int i) {
-     return (Entity)(((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));
-  } 
+     return (Entity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).get(i));} 
 
   /** indexed setter for scopes_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setScopes_array(int i, Entity v) {
-    ((FSArray<Entity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
+  public void setScopes_array(int i, Entity v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scopes_array)))).set(i, v);
   }  
    
     
@@ -502,9 +464,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_frame() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_event_frame));
-  }
+  public String getEvent_frame() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_frame));}
     
   /** setter for event_frame - sets  
    * @generated
@@ -523,9 +483,7 @@ public class Event extends Entity {
    * @generated
    * @return value of the feature 
    */
-  public String getEvent_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_event_type));
-  }
+  public String getEvent_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_event_type));}
     
   /** setter for event_type - sets  
    * @generated

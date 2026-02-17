@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TexttechnologyNamedEntity extends Annotation {
  
@@ -78,8 +77,6 @@ public class TexttechnologyNamedEntity extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TexttechnologyNamedEntity() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -131,9 +128,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSubvalue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));
-  }
+  public String getSubvalue() { return _getStringValueNc(wrapGetIntCatchException(_FH_subvalue));}
     
   /** setter for subvalue - sets  
    * @generated
@@ -152,9 +147,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TexttechnologyNamedEntity getBelongsTo() { 
-    return (TexttechnologyNamedEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_belongsTo)));
-  }
+  public TexttechnologyNamedEntity getBelongsTo() { return (TexttechnologyNamedEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_belongsTo)));}
     
   /** setter for belongsTo - sets  
    * @generated
@@ -173,9 +166,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -194,9 +185,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getKnowledgeEntries() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));
-  }
+  public StringArray getKnowledgeEntries() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)));}
     
   /** setter for knowledgeEntries - sets  
    * @generated
@@ -213,8 +202,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @return value of the element at index i 
    */
   public String getKnowledgeEntries(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_knowledgeEntries)))).get(i);} 
 
   /** indexed setter for knowledgeEntries - sets an indexed value - 
    * @generated
@@ -233,9 +221,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getWikipediaID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_wikipediaID));
-  }
+  public String getWikipediaID() { return _getStringValueNc(wrapGetIntCatchException(_FH_wikipediaID));}
     
   /** setter for wikipediaID - sets  
    * @generated
@@ -254,9 +240,7 @@ public class TexttechnologyNamedEntity extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getWikidataID() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_wikidataID));
-  }
+  public String getWikidataID() { return _getStringValueNc(wrapGetIntCatchException(_FH_wikidataID));}
     
   /** setter for wikidataID - sets  
    * @generated

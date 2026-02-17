@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Vector in a room
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Vector extends AnnotationBase {
  
@@ -71,8 +70,6 @@ public class Vector extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Vector() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -112,9 +109,7 @@ public class Vector extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getX() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_x));
-  }
+  public double getX() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_x));}
     
   /** setter for x - sets x Element 
    * @generated
@@ -133,9 +128,7 @@ public class Vector extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getY() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_y));
-  }
+  public double getY() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_y));}
     
   /** setter for y - sets y Element 
    * @generated
@@ -154,9 +147,7 @@ public class Vector extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getZ() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_z));
-  }
+  public double getZ() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_z));}
     
   /** setter for z - sets z Element 
    * @generated
@@ -175,9 +166,7 @@ public class Vector extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public double getW() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_w));
-  }
+  public double getW() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_w));}
     
   /** setter for w - sets w Element (optimal) 
    * @generated

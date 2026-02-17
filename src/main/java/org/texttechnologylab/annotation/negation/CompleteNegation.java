@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.negation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CompleteNegation extends Annotation {
  
@@ -79,8 +78,6 @@ public class CompleteNegation extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected CompleteNegation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -132,9 +129,7 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getNegType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_negType));
-  }
+  public String getNegType() { return _getStringValueNc(wrapGetIntCatchException(_FH_negType));}
     
   /** setter for negType - sets Syntactic|Lexical|Morphological 
    * @generated
@@ -153,9 +148,7 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Token getCue() { 
-    return (Token)(_getFeatureValueNc(wrapGetIntCatchException(_FH_cue)));
-  }
+  public Token getCue() { return (Token)(_getFeatureValueNc(wrapGetIntCatchException(_FH_cue)));}
     
   /** setter for cue - sets Cue is a lexical item that modifies the truth value of the propositions that is within its scope 
    * @generated
@@ -174,16 +167,13 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Token> getEvent() { 
-    return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)));
-  }
+  public FSArray getEvent() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)));}
     
   /** setter for event - sets Event that is directly negated by the negation cue, usually a verb, a noun, or an adjective 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setEvent(FSArray<Token> v) {
+  public void setEvent(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_event), v);
   }    
     
@@ -193,19 +183,16 @@ public class CompleteNegation extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Token getEvent(int i) {
-     return (Token)(((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)))).get(i));
-  } 
+     return (Token)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)))).get(i));} 
 
   /** indexed setter for event - sets an indexed value - Event that is directly negated by the negation cue, usually a verb, a noun, or an adjective
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setEvent(int i, Token v) {
-    ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)))).set(i, v);
+  public void setEvent(int i, Token v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_event)))).set(i, v);
   }  
    
     
@@ -216,16 +203,13 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Token> getFocus() { 
-    return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)));
-  }
+  public FSArray getFocus() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)));}
     
   /** setter for focus - sets Part of the scope that is most prominently or explicitly negated 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setFocus(FSArray<Token> v) {
+  public void setFocus(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_focus), v);
   }    
     
@@ -235,19 +219,16 @@ public class CompleteNegation extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Token getFocus(int i) {
-     return (Token)(((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)))).get(i));
-  } 
+     return (Token)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)))).get(i));} 
 
   /** indexed setter for focus - sets an indexed value - Part of the scope that is most prominently or explicitly negated
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setFocus(int i, Token v) {
-    ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)))).set(i, v);
+  public void setFocus(int i, Token v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_focus)))).set(i, v);
   }  
    
     
@@ -258,16 +239,13 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Token> getScope() { 
-    return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)));
-  }
+  public FSArray getScope() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)));}
     
   /** setter for scope - sets Part of the sentence affected by the negation cue 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setScope(FSArray<Token> v) {
+  public void setScope(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_scope), v);
   }    
     
@@ -277,19 +255,16 @@ public class CompleteNegation extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Token getScope(int i) {
-     return (Token)(((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)))).get(i));
-  } 
+     return (Token)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)))).get(i));} 
 
   /** indexed setter for scope - sets an indexed value - Part of the sentence affected by the negation cue
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setScope(int i, Token v) {
-    ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)))).set(i, v);
+  public void setScope(int i, Token v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_scope)))).set(i, v);
   }  
    
     
@@ -300,16 +275,13 @@ public class CompleteNegation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<Token> getXscope() { 
-    return (FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)));
-  }
+  public FSArray getXscope() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)));}
     
   /** setter for xscope - sets Part affected by the negation cue, but outside of sentence (expanded context) 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setXscope(FSArray<Token> v) {
+  public void setXscope(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_xscope), v);
   }    
     
@@ -319,19 +291,16 @@ public class CompleteNegation extends Annotation {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public Token getXscope(int i) {
-     return (Token)(((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).get(i));
-  } 
+     return (Token)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).get(i));} 
 
   /** indexed setter for xscope - sets an indexed value - Part affected by the negation cue, but outside of sentence (expanded context)
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setXscope(int i, Token v) {
-    ((FSArray<Token>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).set(i, v);
+  public void setXscope(int i, Token v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_xscope)))).set(i, v);
   }  
   }
 

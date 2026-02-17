@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.duui;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.TOP;
 
 /** <p>ReproducibleAnnotation stores the information about a composer pipeline component in compressed form.
                 The reproducibility mainly stems from the strict naming of docker containers.</p>
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReproducibleAnnotation extends TOP {
  
@@ -72,8 +71,6 @@ public class ReproducibleAnnotation extends TOP {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ReproducibleAnnotation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -113,9 +110,7 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public long getTimestamp() { 
-    return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));
-  }
+  public long getTimestamp() { return _getLongValueNc(wrapGetIntCatchException(_FH_timestamp));}
     
   /** setter for timestamp - sets The timestamp at which this annotation was added, this is important for chronological ordering. 
    * @generated
@@ -134,9 +129,7 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getPipelineName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_pipelineName));
-  }
+  public String getPipelineName() { return _getStringValueNc(wrapGetIntCatchException(_FH_pipelineName));}
     
   /** setter for pipelineName - sets Stores the pipeline name, this can be a good way to later group the analysis engines from one pipeline run 
    * @generated
@@ -155,9 +148,7 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
-  }
+  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
     
   /** setter for description - sets Stores the actual information about the component, most of the time in compressed format with Base85 encoded. 
    * @generated
@@ -178,9 +169,7 @@ public class ReproducibleAnnotation extends TOP {
    * @generated
    * @return value of the feature 
    */
-  public String getCompression() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_compression));
-  }
+  public String getCompression() { return _getStringValueNc(wrapGetIntCatchException(_FH_compression));}
     
   /** setter for compression - sets The compression used to compress the description, since the compression of the description
                         happens at initialization time it is most of the time wise to use a compression method with a higher compression

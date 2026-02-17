@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type.llm.prompt;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** This message is supposed to be filled by an LLM by using the previous messages as input/history.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class FillableMessage extends Message {
  
@@ -61,8 +60,6 @@ public class FillableMessage extends Message {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected FillableMessage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -114,9 +111,7 @@ public class FillableMessage extends Message {
    * @generated
    * @return value of the feature 
    */
-  public String getContextName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_contextName));
-  }
+  public String getContextName() { return _getStringValueNc(wrapGetIntCatchException(_FH_contextName));}
     
   /** setter for contextName - sets If a contextName is given, the "content" of this message will be added to the model invocation to be used in a template placeholder 
    * @generated

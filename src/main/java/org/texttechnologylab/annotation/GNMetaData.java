@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class GNMetaData extends MetaData {
  
@@ -82,8 +81,6 @@ public class GNMetaData extends MetaData {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected GNMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -135,9 +132,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getDate() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_date));
-  }
+  public String getDate() { return _getStringValueNc(wrapGetIntCatchException(_FH_date));}
     
   /** setter for date - sets  
    * @generated
@@ -156,9 +151,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets  
    * @generated
@@ -177,9 +170,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithAllMatches() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAllMatches));
-  }
+  public boolean getWithAllMatches() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAllMatches));}
     
   /** setter for withAllMatches - sets  
    * @generated
@@ -198,9 +189,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithAmbiguousNames() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAmbiguousNames));
-  }
+  public boolean getWithAmbiguousNames() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withAmbiguousNames));}
     
   /** setter for withAmbiguousNames - sets  
    * @generated
@@ -219,9 +208,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithBayes() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_withBayes));
-  }
+  public boolean getWithBayes() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withBayes));}
     
   /** setter for withBayes - sets  
    * @generated
@@ -240,9 +227,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWihUniqueNames() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_wihUniqueNames));
-  }
+  public boolean getWihUniqueNames() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_wihUniqueNames));}
     
   /** setter for wihUniqueNames - sets  
    * @generated
@@ -261,9 +246,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public boolean getWithOddsAdjustment() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_withOddsAdjustment));
-  }
+  public boolean getWithOddsAdjustment() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_withOddsAdjustment));}
     
   /** setter for withOddsAdjustment - sets  
    * @generated
@@ -282,9 +265,7 @@ public class GNMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getWithSources() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_withSources));
-  }
+  public String getWithSources() { return _getStringValueNc(wrapGetIntCatchException(_FH_withSources));}
     
   /** setter for withSources - sets  
    * @generated

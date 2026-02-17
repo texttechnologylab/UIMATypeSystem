@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Place extends Location {
  
@@ -73,8 +72,6 @@ public class Place extends Location {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Place() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -126,9 +123,7 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCountry() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_country));
-  }
+  public String getCountry() { return _getStringValueNc(wrapGetIntCatchException(_FH_country));}
     
   /** setter for country - sets  
    * @generated
@@ -147,9 +142,7 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getState() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_state));
-  }
+  public String getState() { return _getStringValueNc(wrapGetIntCatchException(_FH_state));}
     
   /** setter for state - sets  
    * @generated
@@ -168,9 +161,7 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCtv() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_ctv));
-  }
+  public String getCtv() { return _getStringValueNc(wrapGetIntCatchException(_FH_ctv));}
     
   /** setter for ctv - sets ( CITY | TOWN | VILLAGE ) 
    * @generated
@@ -189,9 +180,7 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getContinent() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_continent));
-  }
+  public String getContinent() { return _getStringValueNc(wrapGetIntCatchException(_FH_continent));}
     
   /** setter for continent - sets ( AF | AN | AI | AU | GO | LA | NA | PA | SA ) 
    * @generated
@@ -210,9 +199,7 @@ public class Place extends Location {
    * @generated
    * @return value of the feature 
    */
-  public String getCounty() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_county));
-  }
+  public String getCounty() { return _getStringValueNc(wrapGetIntCatchException(_FH_county));}
     
   /** setter for county - sets  
    * @generated

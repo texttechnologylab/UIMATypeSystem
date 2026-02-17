@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.uima.type.cohmetrix;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Coh-Metrix Index
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Index extends Annotation {
  
@@ -86,8 +85,6 @@ public class Index extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Index() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -139,9 +136,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getIndex() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_index));
-  }
+  public int getIndex() { return _getIntValueNc(wrapGetIntCatchException(_FH_index));}
     
   /** setter for index - sets  
    * @generated
@@ -160,9 +155,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTypeName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_typeName));
-  }
+  public String getTypeName() { return _getStringValueNc(wrapGetIntCatchException(_FH_typeName));}
     
   /** setter for typeName - sets  
    * @generated
@@ -181,9 +174,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLabelV3() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_labelV3));
-  }
+  public String getLabelV3() { return _getStringValueNc(wrapGetIntCatchException(_FH_labelV3));}
     
   /** setter for labelV3 - sets  
    * @generated
@@ -202,9 +193,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLabelV2() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_labelV2));
-  }
+  public String getLabelV2() { return _getStringValueNc(wrapGetIntCatchException(_FH_labelV2));}
     
   /** setter for labelV2 - sets  
    * @generated
@@ -223,9 +212,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
-  }
+  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
     
   /** setter for description - sets  
    * @generated
@@ -244,9 +231,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -265,9 +250,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getError() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_error));
-  }
+  public String getError() { return _getStringValueNc(wrapGetIntCatchException(_FH_error));}
     
   /** setter for error - sets Optional error message 
    * @generated
@@ -286,9 +269,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLabelTTLab() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_labelTTLab));
-  }
+  public String getLabelTTLab() { return _getStringValueNc(wrapGetIntCatchException(_FH_labelTTLab));}
     
   /** setter for labelTTLab - sets New index added by the TTLab or significantly modified V3 index. 
    * @generated
@@ -307,9 +288,7 @@ public class Index extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_version));
-  }
+  public String getVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_version));}
     
   /** setter for version - sets  
    * @generated

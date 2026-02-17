@@ -1,25 +1,26 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jan 23 11:37:37 CET 2026 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.neglab;
-
-
-import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Fri Jan 23 11:37:37 CET 2026
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
+
+
+/** 
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ConditionSentence extends Sentence {
  
@@ -54,8 +55,8 @@ public class ConditionSentence extends Sentence {
   public final static String _FeatName_target = "target";
   public final static String _FeatName_order = "order";
   public final static String _FeatName_value = "value";
-    public final static String _FeatName_sequenceScore = "sequenceScore";
-    public final static String _FeatName_sequenceScoreSum = "sequenceScoreSum";
+  public final static String _FeatName_sequenceScore = "sequenceScore";
+  public final static String _FeatName_sequenceScoreSum = "sequenceScoreSum";
 
 
   /* Feature Adjusted Offsets */
@@ -67,16 +68,14 @@ public class ConditionSentence extends Sentence {
   private final static MethodHandle _FH_order = _FC_order.dynamicInvoker();
   private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ConditionSentence.class, "value");
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
-    private final static CallSite _FC_sequenceScore = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScore");
-    private final static MethodHandle _FH_sequenceScore = _FC_sequenceScore.dynamicInvoker();
-    private final static CallSite _FC_sequenceScoreSum = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScoreSum");
-    private final static MethodHandle _FH_sequenceScoreSum = _FC_sequenceScoreSum.dynamicInvoker();
+  private final static CallSite _FC_sequenceScore = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScore");
+  private final static MethodHandle _FH_sequenceScore = _FC_sequenceScore.dynamicInvoker();
+  private final static CallSite _FC_sequenceScoreSum = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScoreSum");
+  private final static MethodHandle _FH_sequenceScoreSum = _FC_sequenceScoreSum.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ConditionSentence() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -128,9 +127,7 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public String getCondition() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_condition));
-  }
+  public String getCondition() { return _getStringValueNc(wrapGetIntCatchException(_FH_condition));}
     
   /** setter for condition - sets  
    * @generated
@@ -149,9 +146,7 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public String getTarget() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_target));
-  }
+  public String getTarget() { return _getStringValueNc(wrapGetIntCatchException(_FH_target));}
     
   /** setter for target - sets  
    * @generated
@@ -170,9 +165,7 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public int getOrder() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_order));
-  }
+  public int getOrder() { return _getIntValueNc(wrapGetIntCatchException(_FH_order));}
     
   /** setter for order - sets  
    * @generated
@@ -191,9 +184,7 @@ public class ConditionSentence extends Sentence {
    * @generated
    * @return value of the feature 
    */
-  public float getValue() { 
-    return _getFloatValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public float getValue() { return _getFloatValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated
@@ -201,54 +192,44 @@ public class ConditionSentence extends Sentence {
    */
   public void setValue(float v) {
     _setFloatValueNfc(wrapGetIntCatchException(_FH_value), v);
-  }
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: sequenceScore
 
+  /** getter for sequenceScore - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public float getSequenceScore() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScore));}
+    
+  /** setter for sequenceScore - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSequenceScore(float v) {
+    _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScore), v);
+  }    
+    
+   
+    
+  //*--------------*
+  //* Feature: sequenceScoreSum
 
-    //*--------------*
-    //* Feature: sequenceScore
-
-    /**
-     * getter for sequenceScore - gets
-     *
-     * @return value of the feature
-     * @generated
-     */
-    public float getSequenceScore() {
-        return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScore));
-    }
-
-    /**
-     * setter for sequenceScore - sets
-     *
-     * @param v value to set into the feature
-     * @generated
-     */
-    public void setSequenceScore(float v) {
-        _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScore), v);
-    }
-
-
-    //*--------------*
-    //* Feature: sequenceScoreSum
-
-    /**
-     * getter for sequenceScoreSum - gets
-     *
-     * @return value of the feature
-     * @generated
-     */
-    public float getSequenceScoreSum() {
-        return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScoreSum));
-    }
-
-    /**
-     * setter for sequenceScoreSum - sets
-     *
-     * @param v value to set into the feature
-     * @generated
-     */
-    public void setSequenceScoreSum(float v) {
-        _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScoreSum), v);
+  /** getter for sequenceScoreSum - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public float getSequenceScoreSum() { return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScoreSum));}
+    
+  /** setter for sequenceScoreSum - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSequenceScoreSum(float v) {
+    _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScoreSum), v);
   }    
     
   }

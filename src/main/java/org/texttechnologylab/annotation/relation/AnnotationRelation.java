@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.relation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Base type for annotation relations between two annotations (u, v).
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationRelation extends Annotation {
  
@@ -68,8 +67,6 @@ public class AnnotationRelation extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected AnnotationRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getU() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_u)));
-  }
+  public Annotation getU() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_u)));}
     
   /** setter for u - sets Annotation node 'u'. 
    * @generated
@@ -142,9 +137,7 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getV() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_v)));
-  }
+  public Annotation getV() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_v)));}
     
   /** setter for v - sets Annotation node 'v'. 
    * @generated
@@ -163,9 +156,7 @@ public class AnnotationRelation extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getDirected() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_directed));
-  }
+  public boolean getDirected() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_directed));}
     
   /** setter for directed - sets If true, the relation only holds in direction (u, v). 
    * @generated

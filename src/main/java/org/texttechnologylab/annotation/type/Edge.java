@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Edge extends GraphBase {
  
@@ -70,8 +69,6 @@ public class Edge extends GraphBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Edge() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -111,9 +108,7 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Node getSource() { 
-    return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));
-  }
+  public Node getSource() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_source)));}
     
   /** setter for source - sets  
    * @generated
@@ -132,9 +127,7 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Node getTarget() { 
-    return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_target)));
-  }
+  public Node getTarget() { return (Node)(_getFeatureValueNc(wrapGetIntCatchException(_FH_target)));}
     
   /** setter for target - sets  
    * @generated
@@ -153,9 +146,7 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public Attribute getAttribute() { 
-    return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attribute)));
-  }
+  public Attribute getAttribute() { return (Attribute)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attribute)));}
     
   /** setter for attribute - sets  
    * @generated
@@ -174,9 +165,7 @@ public class Edge extends GraphBase {
    * @generated
    * @return value of the feature 
    */
-  public String getEdgetype() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_edgetype));
-  }
+  public String getEdgetype() { return _getStringValueNc(wrapGetIntCatchException(_FH_edgetype));}
     
   /** setter for edgetype - sets  
    * @generated

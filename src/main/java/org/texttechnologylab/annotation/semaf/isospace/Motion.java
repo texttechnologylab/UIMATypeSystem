@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Event;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Motion extends Event {
  
@@ -75,8 +74,6 @@ public class Motion extends Event {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Motion() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -128,9 +125,7 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_type));
-  }
+  public String getMotion_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_motion_type));}
     
   /** setter for motion_type - sets ( MANNER | PATH | COMPOUND ) 
    * @generated
@@ -149,9 +144,7 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_class() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_class));
-  }
+  public String getMotion_class() { return _getStringValueNc(wrapGetIntCatchException(_FH_motion_class));}
     
   /** setter for motion_class - sets ( MOVE | MOVE_EXTERNAL | MOVE_INTERNAL | LEAVE | REACH | CROSS | DETACH | HIT | FOLLOW | DEVIATE | STAY ) 
    * @generated
@@ -170,9 +163,7 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public String getMotion_sense() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_motion_sense));
-  }
+  public String getMotion_sense() { return _getStringValueNc(wrapGetIntCatchException(_FH_motion_sense));}
     
   /** setter for motion_sense - sets ( LITERAL | FICTIVE | INTRINSIC_CHANGE ) 
    * @generated
@@ -191,9 +182,7 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public Entity getManner() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_manner)));
-  }
+  public Entity getManner() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_manner)));}
     
   /** setter for manner - sets  
    * @generated
@@ -212,9 +201,7 @@ public class Motion extends Event {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getMotion_goal() { 
-    return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motion_goal)));
-  }
+  public SpatialEntity getMotion_goal() { return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_motion_goal)));}
     
   /** setter for motion_goal - sets  
    * @generated

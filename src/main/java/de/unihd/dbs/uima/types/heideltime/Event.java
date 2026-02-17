@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.unihd.dbs.uima.types.heideltime;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Event extends Annotation {
  
@@ -89,8 +88,6 @@ public class Event extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Event() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -142,9 +139,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getFilename() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_filename));
-  }
+  public String getFilename() { return _getStringValueNc(wrapGetIntCatchException(_FH_filename));}
     
   /** setter for filename - sets  
    * @generated
@@ -163,9 +158,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSentId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));
-  }
+  public int getSentId() { return _getIntValueNc(wrapGetIntCatchException(_FH_sentId));}
     
   /** setter for sentId - sets  
    * @generated
@@ -184,9 +177,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getTokId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_tokId));
-  }
+  public int getTokId() { return _getIntValueNc(wrapGetIntCatchException(_FH_tokId));}
     
   /** setter for tokId - sets  
    * @generated
@@ -205,9 +196,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getEventId() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_eventId));
-  }
+  public String getEventId() { return _getStringValueNc(wrapGetIntCatchException(_FH_eventId));}
     
   /** setter for eventId - sets  
    * @generated
@@ -226,9 +215,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getEventInstanceId() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_eventInstanceId));
-  }
+  public int getEventInstanceId() { return _getIntValueNc(wrapGetIntCatchException(_FH_eventInstanceId));}
     
   /** setter for eventInstanceId - sets  
    * @generated
@@ -247,9 +234,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAspect() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));
-  }
+  public String getAspect() { return _getStringValueNc(wrapGetIntCatchException(_FH_aspect));}
     
   /** setter for aspect - sets  
    * @generated
@@ -268,9 +253,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getModality() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_modality));
-  }
+  public String getModality() { return _getStringValueNc(wrapGetIntCatchException(_FH_modality));}
     
   /** setter for modality - sets  
    * @generated
@@ -289,9 +272,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getPolarity() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));
-  }
+  public String getPolarity() { return _getStringValueNc(wrapGetIntCatchException(_FH_polarity));}
     
   /** setter for polarity - sets  
    * @generated
@@ -310,9 +291,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTense() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_tense));
-  }
+  public String getTense() { return _getStringValueNc(wrapGetIntCatchException(_FH_tense));}
     
   /** setter for tense - sets  
    * @generated
@@ -331,9 +310,7 @@ public class Event extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Token getToken() { 
-    return (Token)(_getFeatureValueNc(wrapGetIntCatchException(_FH_token)));
-  }
+  public Token getToken() { return (Token)(_getFeatureValueNc(wrapGetIntCatchException(_FH_token)));}
     
   /** setter for token - sets  
    * @generated

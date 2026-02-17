@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WebImage extends Image {
  
@@ -64,8 +63,6 @@ public class WebImage extends Image {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected WebImage() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -117,9 +114,7 @@ public class WebImage extends Image {
    * @generated
    * @return value of the feature 
    */
-  public int getPosX() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_posX));
-  }
+  public int getPosX() { return _getIntValueNc(wrapGetIntCatchException(_FH_posX));}
     
   /** setter for posX - sets  
    * @generated
@@ -138,9 +133,7 @@ public class WebImage extends Image {
    * @generated
    * @return value of the feature 
    */
-  public int getPosY() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_posY));
-  }
+  public int getPosY() { return _getIntValueNc(wrapGetIntCatchException(_FH_posY));}
     
   /** setter for posY - sets  
    * @generated

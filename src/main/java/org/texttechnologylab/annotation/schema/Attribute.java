@@ -1,26 +1,27 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jan 30 15:15:29 CET 2026 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.schema;
-
-
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.JCasRegistry;
-import org.apache.uima.jcas.cas.AnnotationBase;
-import org.apache.uima.jcas.cas.TOP;
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
 
-/**
- * Updated by JCasGen Fri Jan 30 15:15:29 CET 2026
- * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
+
+import org.apache.uima.jcas.cas.TOP;
+import org.apache.uima.jcas.cas.AnnotationBase;
+
+
+/** 
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Attribute extends AnnotationBase {
  
@@ -70,8 +71,6 @@ public class Attribute extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Attribute() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -111,9 +110,7 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets  
    * @generated
@@ -132,9 +129,7 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
-  }
+  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
     
   /** setter for description - sets  
    * @generated
@@ -153,9 +148,7 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public TOP getRange() { 
-    return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_range)));
-  }
+  public TOP getRange() { return (TOP)(_getFeatureValueNc(wrapGetIntCatchException(_FH_range)));}
     
   /** setter for range - sets  
    * @generated
@@ -174,9 +167,7 @@ public class Attribute extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public boolean getMandatory() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_mandatory));
-  }
+  public boolean getMandatory() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_mandatory));}
     
   /** setter for mandatory - sets  
    * @generated

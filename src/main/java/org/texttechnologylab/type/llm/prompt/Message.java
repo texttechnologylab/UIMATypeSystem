@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type.llm.prompt;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** List of messages.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Message extends Annotation {
  
@@ -71,8 +70,6 @@ public class Message extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Message() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getRole() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_role));
-  }
+  public String getRole() { return _getStringValueNc(wrapGetIntCatchException(_FH_role));}
     
   /** setter for role - sets Role, e.g. "system", "user", ... 
    * @generated
@@ -145,9 +140,7 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getContent() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_content));
-  }
+  public String getContent() { return _getStringValueNc(wrapGetIntCatchException(_FH_content));}
     
   /** setter for content - sets Message content. 
    * @generated
@@ -166,9 +159,7 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getClassModule() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_classModule));
-  }
+  public String getClassModule() { return _getStringValueNc(wrapGetIntCatchException(_FH_classModule));}
     
   /** setter for classModule - sets Name of the module of the class to use for constructing the message 
    * @generated
@@ -187,9 +178,7 @@ public class Message extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getClassName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_className));
-  }
+  public String getClassName() { return _getStringValueNc(wrapGetIntCatchException(_FH_className));}
     
   /** setter for className - sets Name of the class to use for constructing the message 
    * @generated

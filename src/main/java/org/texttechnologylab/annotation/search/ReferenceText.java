@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.search;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Reference Text of TextSearch. Result of the search. It can be a list of text or a single text or a summary of the text or a label of the text.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ReferenceText extends Annotation {
  
@@ -90,8 +89,6 @@ public class ReferenceText extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ReferenceText() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -143,9 +140,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getMethods() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_methods));
-  }
+  public String getMethods() { return _getStringValueNc(wrapGetIntCatchException(_FH_methods));}
     
   /** setter for methods - sets Which Method was used for the search, like Wikipedia, Google, Wikidata or something Class 
    * @generated
@@ -164,9 +159,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getGroup() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_group));
-  }
+  public String getGroup() { return _getStringValueNc(wrapGetIntCatchException(_FH_group));}
     
   /** setter for group - sets what is the group of Text, from which source it was extracted: web, wikipedia, wikidata,... 
    * @generated
@@ -185,9 +178,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getText() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_text));
-  }
+  public String getText() { return _getStringValueNc(wrapGetIntCatchException(_FH_text));}
     
   /** setter for text - sets Text of the Reference Text 
    * @generated
@@ -206,9 +197,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getUrl() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_url));
-  }
+  public String getUrl() { return _getStringValueNc(wrapGetIntCatchException(_FH_url));}
     
   /** setter for url - sets URL of the Reference Text 
    * @generated
@@ -227,9 +216,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public boolean getSuccess() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_success));
-  }
+  public boolean getSuccess() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_success));}
     
   /** setter for success - sets Was the search or the extraction successful 
    * @generated
@@ -248,9 +235,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getPriority() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_priority));
-  }
+  public int getPriority() { return _getIntValueNc(wrapGetIntCatchException(_FH_priority));}
     
   /** setter for priority - sets Result number of the search 
    * @generated
@@ -269,9 +254,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getDateTime() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_dateTime));
-  }
+  public String getDateTime() { return _getStringValueNc(wrapGetIntCatchException(_FH_dateTime));}
     
   /** setter for dateTime - sets dateTime of the search: dd:mm:yyyy hh:mm:ss 
    * @generated
@@ -290,9 +273,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSummary() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_summary));
-  }
+  public String getSummary() { return _getStringValueNc(wrapGetIntCatchException(_FH_summary));}
     
   /** setter for summary - sets summary of the text 
    * @generated
@@ -311,9 +292,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getInfos() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_infos));
-  }
+  public String getInfos() { return _getStringValueNc(wrapGetIntCatchException(_FH_infos));}
     
   /** setter for infos - sets additional infos as json string 
    * @generated
@@ -332,9 +311,7 @@ public class ReferenceText extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public TextSearch getReference() { 
-    return (TextSearch)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));
-  }
+  public TextSearch getReference() { return (TextSearch)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference)));}
     
   /** setter for reference - sets reference 
    * @generated

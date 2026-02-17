@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.uima.type.spacy;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpacyToken extends Token {
  
@@ -124,8 +123,6 @@ public class SpacyToken extends Token {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SpacyToken() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -177,9 +174,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getLikeUrl() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeUrl));
-  }
+  public boolean getLikeUrl() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeUrl));}
     
   /** setter for likeUrl - sets  
    * @generated
@@ -198,9 +193,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getHasVector() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_hasVector));
-  }
+  public boolean getHasVector() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_hasVector));}
     
   /** setter for hasVector - sets  
    * @generated
@@ -219,9 +212,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public FloatArray getVector() { 
-    return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)));
-  }
+  public FloatArray getVector() { return (FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)));}
     
   /** setter for vector - sets  
    * @generated
@@ -238,8 +229,7 @@ public class SpacyToken extends Token {
    * @return value of the element at index i 
    */
   public float getVector(int i) {
-     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)))).get(i);
-  } 
+     return ((FloatArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_vector)))).get(i);} 
 
   /** indexed setter for vector - sets an indexed value - 
    * @generated
@@ -258,9 +248,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getLikeNum() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeNum));
-  }
+  public boolean getLikeNum() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_likeNum));}
     
   /** setter for likeNum - sets  
    * @generated
@@ -279,9 +267,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsStop() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isStop));
-  }
+  public boolean getIsStop() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isStop));}
     
   /** setter for isStop - sets  
    * @generated
@@ -300,9 +286,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsOov() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isOov));
-  }
+  public boolean getIsOov() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isOov));}
     
   /** setter for isOov - sets  
    * @generated
@@ -321,9 +305,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsCurrency() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isCurrency));
-  }
+  public boolean getIsCurrency() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isCurrency));}
     
   /** setter for isCurrency - sets  
    * @generated
@@ -342,9 +324,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsQuote() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isQuote));
-  }
+  public boolean getIsQuote() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isQuote));}
     
   /** setter for isQuote - sets  
    * @generated
@@ -363,9 +343,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsBracket() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isBracket));
-  }
+  public boolean getIsBracket() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isBracket));}
     
   /** setter for isBracket - sets  
    * @generated
@@ -384,9 +362,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsSentStart() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentStart));
-  }
+  public boolean getIsSentStart() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentStart));}
     
   /** setter for isSentStart - sets  
    * @generated
@@ -405,9 +381,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsSentEnd() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentEnd));
-  }
+  public boolean getIsSentEnd() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isSentEnd));}
     
   /** setter for isSentEnd - sets  
    * @generated
@@ -426,9 +400,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsLeftPunct() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLeftPunct));
-  }
+  public boolean getIsLeftPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLeftPunct));}
     
   /** setter for isLeftPunct - sets  
    * @generated
@@ -447,9 +419,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsRightPunct() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isRightPunct));
-  }
+  public boolean getIsRightPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isRightPunct));}
     
   /** setter for isRightPunct - sets  
    * @generated
@@ -468,9 +438,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsPunct() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isPunct));
-  }
+  public boolean getIsPunct() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isPunct));}
     
   /** setter for isPunct - sets  
    * @generated
@@ -489,9 +457,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsTitle() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isTitle));
-  }
+  public boolean getIsTitle() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isTitle));}
     
   /** setter for isTitle - sets  
    * @generated
@@ -510,9 +476,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsUpper() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isUpper));
-  }
+  public boolean getIsUpper() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isUpper));}
     
   /** setter for isUpper - sets  
    * @generated
@@ -531,9 +495,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsLower() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLower));
-  }
+  public boolean getIsLower() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isLower));}
     
   /** setter for isLower - sets  
    * @generated
@@ -552,9 +514,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsDigit() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isDigit));
-  }
+  public boolean getIsDigit() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isDigit));}
     
   /** setter for isDigit - sets  
    * @generated
@@ -573,9 +533,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsAscii() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAscii));
-  }
+  public boolean getIsAscii() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAscii));}
     
   /** setter for isAscii - sets  
    * @generated
@@ -594,9 +552,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsAlpha() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAlpha));
-  }
+  public boolean getIsAlpha() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isAlpha));}
     
   /** setter for isAlpha - sets  
    * @generated
@@ -615,9 +571,7 @@ public class SpacyToken extends Token {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getBeneparLabels() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)));
-  }
+  public StringArray getBeneparLabels() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)));}
     
   /** setter for beneparLabels - sets  
    * @generated
@@ -634,8 +588,7 @@ public class SpacyToken extends Token {
    * @return value of the element at index i 
    */
   public String getBeneparLabels(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_beneparLabels)))).get(i);} 
 
   /** indexed setter for beneparLabels - sets an indexed value - 
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SRelation extends Signal {
  
@@ -68,8 +67,6 @@ public class SRelation extends Signal {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SRelation() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getRelation_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_relation_type));
-  }
+  public String getRelation_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_relation_type));}
     
   /** setter for relation_type - sets  
    * @generated
@@ -142,9 +137,7 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getCluster() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));
-  }
+  public String getCluster() { return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));}
     
   /** setter for cluster - sets  
    * @generated
@@ -163,9 +156,7 @@ public class SRelation extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets  
    * @generated

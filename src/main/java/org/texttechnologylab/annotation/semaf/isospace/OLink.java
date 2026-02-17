@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Link;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class OLink extends Link {
  
@@ -72,8 +71,6 @@ public class OLink extends Link {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected OLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -113,9 +110,7 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public boolean getProjective() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_projective));
-  }
+  public boolean getProjective() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_projective));}
     
   /** setter for projective - sets  
    * @generated
@@ -134,9 +129,7 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getFrame_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_frame_type));
-  }
+  public String getFrame_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_frame_type));}
     
   /** setter for frame_type - sets ( ABSOLUTE | INTRINSIC | RELATIVE ) 
    * @generated
@@ -155,9 +148,7 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public Entity getReference_pt() { 
-    return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference_pt)));
-  }
+  public Entity getReference_pt() { return (Entity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_reference_pt)));}
     
   /** setter for reference_pt - sets  
    * @generated
@@ -176,9 +167,7 @@ public class OLink extends Link {
    * @generated
    * @return value of the feature 
    */
-  public String getReference_pt_str() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_reference_pt_str));
-  }
+  public String getReference_pt_str() { return _getStringValueNc(wrapGetIntCatchException(_FH_reference_pt_str));}
     
   /** setter for reference_pt_str - sets  
    * @generated

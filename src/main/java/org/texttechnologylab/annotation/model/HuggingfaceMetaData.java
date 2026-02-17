@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.model;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.StringArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class HuggingfaceMetaData extends MetaData {
  
@@ -65,8 +64,6 @@ public class HuggingfaceMetaData extends MetaData {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected HuggingfaceMetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class HuggingfaceMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public String getHuggingfaceVersion() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_HuggingfaceVersion));
-  }
+  public String getHuggingfaceVersion() { return _getStringValueNc(wrapGetIntCatchException(_FH_HuggingfaceVersion));}
     
   /** setter for HuggingfaceVersion - sets Transformer Library Version 
    * @generated
@@ -139,9 +134,7 @@ public class HuggingfaceMetaData extends MetaData {
    * @generated
    * @return value of the feature 
    */
-  public StringArray getDependeciesVersion() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)));
-  }
+  public StringArray getDependeciesVersion() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)));}
     
   /** setter for DependeciesVersion - sets Dependency Library Version e.g. Pytorch... 
    * @generated
@@ -158,8 +151,7 @@ public class HuggingfaceMetaData extends MetaData {
    * @return value of the element at index i 
    */
   public String getDependeciesVersion(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_DependeciesVersion)))).get(i);} 
 
   /** indexed setter for DependeciesVersion - sets an indexed value - Dependency Library Version e.g. Pytorch...
    * @generated

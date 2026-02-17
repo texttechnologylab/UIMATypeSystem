@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.metadata;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** View Reference
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ViewReference extends Annotation {
  
@@ -71,8 +70,6 @@ public class ViewReference extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ViewReference() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSourceViewName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_SourceViewName));
-  }
+  public String getSourceViewName() { return _getStringValueNc(wrapGetIntCatchException(_FH_SourceViewName));}
     
   /** setter for SourceViewName - sets The name of the view from source 
    * @generated
@@ -145,9 +140,7 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSourceBegin() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_SourceBegin));
-  }
+  public int getSourceBegin() { return _getIntValueNc(wrapGetIntCatchException(_FH_SourceBegin));}
     
   /** setter for SourceBegin - sets Begin of the source 
    * @generated
@@ -166,9 +159,7 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public int getSourceEnd() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_SourceEnd));
-  }
+  public int getSourceEnd() { return _getIntValueNc(wrapGetIntCatchException(_FH_SourceEnd));}
     
   /** setter for SourceEnd - sets End of the source 
    * @generated
@@ -187,9 +178,7 @@ public class ViewReference extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getSourceType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_SourceType));
-  }
+  public String getSourceType() { return _getStringValueNc(wrapGetIntCatchException(_FH_SourceType));}
     
   /** setter for SourceType - sets Type of the source 
    * @generated

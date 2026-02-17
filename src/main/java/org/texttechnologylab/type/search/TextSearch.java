@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.type.search;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Text, which is used for searching in the web, for Reference Text or for other purposes.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class TextSearch extends Annotation {
  
@@ -62,8 +61,6 @@ public class TextSearch extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected TextSearch() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -115,9 +112,7 @@ public class TextSearch extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getText() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_text));
-  }
+  public String getText() { return _getStringValueNc(wrapGetIntCatchException(_FH_text));}
     
   /** setter for text - sets Can be Same as covered text or a summary, topic, etc. of this text 
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -22,8 +21,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** Readability Output
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Readability extends AnnotationBase {
  
@@ -67,8 +66,6 @@ public class Readability extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Readability() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -108,16 +105,13 @@ public class Readability extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<AnnotationComment> getTextReadabilities() { 
-    return (FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)));
-  }
+  public FSArray getTextReadabilities() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)));}
     
   /** setter for TextReadabilities - sets Set of Text Readability with key and Value 
    * @generated
    * @param v value to set into the feature 
    */
-  public void setTextReadabilities(FSArray<AnnotationComment> v) {
+  public void setTextReadabilities(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_TextReadabilities), v);
   }    
     
@@ -127,19 +121,16 @@ public class Readability extends AnnotationBase {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public AnnotationComment getTextReadabilities(int i) {
-     return (AnnotationComment)(((FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)))).get(i));
-  } 
+     return (AnnotationComment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)))).get(i));} 
 
   /** indexed setter for TextReadabilities - sets an indexed value - Set of Text Readability with key and Value
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setTextReadabilities(int i, AnnotationComment v) {
-    ((FSArray<AnnotationComment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)))).set(i, v);
+  public void setTextReadabilities(int i, AnnotationComment v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_TextReadabilities)))).set(i, v);
   }  
    
     
@@ -150,9 +141,7 @@ public class Readability extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public MetaData getModel() { 
-    return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));
-  }
+  public MetaData getModel() { return (MetaData)(_getFeatureValueNc(wrapGetIntCatchException(_FH_model)));}
     
   /** setter for model - sets Which Model or Process was used to Compute the TextReadability 
    * @generated

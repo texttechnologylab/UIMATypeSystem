@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.paper;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Section extends TextContent {
  
@@ -67,8 +66,6 @@ public class Section extends TextContent {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected Section() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -120,9 +117,7 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public int getLevel() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_level));
-  }
+  public int getLevel() { return _getIntValueNc(wrapGetIntCatchException(_FH_level));}
     
   /** setter for level - sets Level of the section, 0 is top level 
    * @generated
@@ -141,9 +136,7 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public String getLabel() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_label));
-  }
+  public String getLabel() { return _getStringValueNc(wrapGetIntCatchException(_FH_label));}
     
   /** setter for label - sets The heading of a section 
    * @generated
@@ -162,9 +155,7 @@ public class Section extends TextContent {
    * @generated
    * @return value of the feature 
    */
-  public String getIndex() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_index));
-  }
+  public String getIndex() { return _getStringValueNc(wrapGetIntCatchException(_FH_index));}
     
   /** setter for index - sets The index of a section (1, 1.1, 1.1.1, ...) 
    * @generated

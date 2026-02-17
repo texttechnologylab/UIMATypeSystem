@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Mon Aug 11 11:31:37 CEST 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Essay Score Output
- * Updated by JCasGen Mon Aug 11 11:31:37 CEST 2025
- * XML source: /home/staff_homes/bagci/projects/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EssayScore extends Annotation {
  
@@ -77,8 +76,6 @@ public class EssayScore extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EssayScore() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -130,9 +127,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getValue() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));
-  }
+  public double getValue() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_Value));}
     
   /** setter for Value - sets Metric Feature Value 
    * @generated
@@ -151,9 +146,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_Name));}
     
   /** setter for Name - sets Metric Feature Name 
    * @generated
@@ -172,9 +165,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getReason() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));
-  }
+  public String getReason() { return _getStringValueNc(wrapGetIntCatchException(_FH_Reason));}
     
   /** setter for Reason - sets LLM Reason for chosen Score 
    * @generated
@@ -193,9 +184,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputQuestion() { 
-    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputQuestion)));
-  }
+  public AnnotationComment getInputQuestion() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputQuestion)));}
     
   /** setter for InputQuestion - sets Chosen Question Div ID 
    * @generated
@@ -214,9 +203,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputAnswer() { 
-    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputAnswer)));
-  }
+  public AnnotationComment getInputAnswer() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputAnswer)));}
     
   /** setter for InputAnswer - sets Chosen Answer Div ID 
    * @generated
@@ -235,9 +222,7 @@ public class EssayScore extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationComment getInputScene() { 
-    return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputScene)));
-  }
+  public AnnotationComment getInputScene() { return (AnnotationComment)(_getFeatureValueNc(wrapGetIntCatchException(_FH_InputScene)));}
     
   /** setter for InputScene - sets Chosen Scene Div ID 
    * @generated

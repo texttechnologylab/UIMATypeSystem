@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ArgType extends ArgNode {
  
@@ -68,8 +67,6 @@ public class ArgType extends ArgNode {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected ArgType() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -109,16 +106,13 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ArgTextSegment> getConclusion() { 
-    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)));
-  }
+  public FSArray getConclusion() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)));}
     
   /** setter for conclusion - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setConclusion(FSArray<ArgTextSegment> v) {
+  public void setConclusion(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_conclusion), v);
   }    
     
@@ -128,19 +122,16 @@ public class ArgType extends ArgNode {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ArgTextSegment getConclusion(int i) {
-     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).get(i));
-  } 
+     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).get(i));} 
 
   /** indexed setter for conclusion - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setConclusion(int i, ArgTextSegment v) {
-    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).set(i, v);
+  public void setConclusion(int i, ArgTextSegment v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_conclusion)))).set(i, v);
   }  
    
     
@@ -151,9 +142,7 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  public String getMode() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_mode));
-  }
+  public String getMode() { return _getStringValueNc(wrapGetIntCatchException(_FH_mode));}
     
   /** setter for mode - sets  
    * @generated
@@ -172,16 +161,13 @@ public class ArgType extends ArgNode {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<ArgTextSegment> getData() { 
-    return (FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)));
-  }
+  public FSArray getData() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)));}
     
   /** setter for data - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setData(FSArray<ArgTextSegment> v) {
+  public void setData(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_data), v);
   }    
     
@@ -191,19 +177,16 @@ public class ArgType extends ArgNode {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public ArgTextSegment getData(int i) {
-     return (ArgTextSegment)(((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).get(i));
-  } 
+     return (ArgTextSegment)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).get(i));} 
 
   /** indexed setter for data - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setData(int i, ArgTextSegment v) {
-    ((FSArray<ArgTextSegment>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).set(i, v);
+  public void setData(int i, ArgTextSegment v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_data)))).set(i, v);
   }  
   }
 

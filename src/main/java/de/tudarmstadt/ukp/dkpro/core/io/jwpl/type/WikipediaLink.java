@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package de.tudarmstadt.ukp.dkpro.core.io.jwpl.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Wikipedia link
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends Annotation {
  
@@ -68,8 +67,6 @@ public class WikipediaLink extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected WikipediaLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getLinkType() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_LinkType));
-  }
+  public String getLinkType() { return _getStringValueNc(wrapGetIntCatchException(_FH_LinkType));}
     
   /** setter for LinkType - sets The type of the link, e.g. internal, external, image, ... 
    * @generated
@@ -142,9 +137,7 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTarget() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Target));
-  }
+  public String getTarget() { return _getStringValueNc(wrapGetIntCatchException(_FH_Target));}
     
   /** setter for Target - sets The link target url 
    * @generated
@@ -163,9 +156,7 @@ public class WikipediaLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getAnchor() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_Anchor));
-  }
+  public String getAnchor() { return _getStringValueNc(wrapGetIntCatchException(_FH_Anchor));}
     
   /** setter for Anchor - sets The anchor of the link 
    * @generated

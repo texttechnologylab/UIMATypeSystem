@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.texttechnologylab.annotation.semaf.isobase.Signal;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class SpatialSignal extends Signal {
  
@@ -65,8 +64,6 @@ public class SpatialSignal extends Signal {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected SpatialSignal() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -118,9 +115,7 @@ public class SpatialSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getCluster() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));
-  }
+  public String getCluster() { return _getStringValueNc(wrapGetIntCatchException(_FH_cluster));}
     
   /** setter for cluster - sets  
    * @generated
@@ -139,9 +134,7 @@ public class SpatialSignal extends Signal {
    * @generated
    * @return value of the feature 
    */
-  public String getSemantic_type() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_semantic_type));
-  }
+  public String getSemantic_type() { return _getStringValueNc(wrapGetIntCatchException(_FH_semantic_type));}
     
   /** setter for semantic_type - sets ( DIRECTIONAL | TOPOLOGICAL | DIR_TOP ) 
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type.wikipedia;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.StringArray;
 
 
 /** Wikipedia link
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink {
  
@@ -68,8 +67,6 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected WikipediaLink() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -121,9 +118,7 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public String getWikiData() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_WikiData));
-  }
+  public String getWikiData() { return _getStringValueNc(wrapGetIntCatchException(_FH_WikiData));}
     
   /** setter for WikiData - sets WikiData Id 
    * @generated
@@ -142,9 +137,7 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public StringArray getWikiDataHyponyms() { 
-    return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)));
-  }
+  public StringArray getWikiDataHyponyms() { return (StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)));}
     
   /** setter for WikiDataHyponyms - sets WikiData Hyponyms 
    * @generated
@@ -161,8 +154,7 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @return value of the element at index i 
    */
   public String getWikiDataHyponyms(int i) {
-     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)))).get(i);
-  } 
+     return ((StringArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_WikiDataHyponyms)))).get(i);} 
 
   /** indexed setter for WikiDataHyponyms - sets an indexed value - WikiData Hyponyms
    * @generated
@@ -181,9 +173,7 @@ public class WikipediaLink extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.Wi
    * @generated
    * @return value of the feature 
    */
-  public boolean getIsInstance() { 
-    return _getBooleanValueNc(wrapGetIntCatchException(_FH_isInstance));
-  }
+  public boolean getIsInstance() { return _getBooleanValueNc(wrapGetIntCatchException(_FH_isInstance));}
     
   /** setter for isInstance - sets  
    * @generated

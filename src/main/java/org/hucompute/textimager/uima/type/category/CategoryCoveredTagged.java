@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.hucompute.textimager.uima.type.category;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Generic "category" type that can be used for e.g. classification results and other categorical data.
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class CategoryCoveredTagged extends Annotation {
  
@@ -71,8 +70,6 @@ public class CategoryCoveredTagged extends Annotation {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected CategoryCoveredTagged() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -124,9 +121,7 @@ public class CategoryCoveredTagged extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getValue() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_value));
-  }
+  public String getValue() { return _getStringValueNc(wrapGetIntCatchException(_FH_value));}
     
   /** setter for value - sets String-based value, e.g. a topic name like "politics" or "sports". 
    * @generated
@@ -145,9 +140,7 @@ public class CategoryCoveredTagged extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public double getScore() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));
-  }
+  public double getScore() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_score));}
     
   /** setter for score - sets Score, probability or confidence value for the category set in the "value" field. 
    * @generated
@@ -166,9 +159,7 @@ public class CategoryCoveredTagged extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public String getTags() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_tags));
-  }
+  public String getTags() { return _getStringValueNc(wrapGetIntCatchException(_FH_tags));}
     
   /** setter for tags - sets Free-form field for tags, has internally often been used to store model name and version. 
    * @generated
@@ -187,9 +178,7 @@ public class CategoryCoveredTagged extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public Annotation getRef() { 
-    return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ref)));
-  }
+  public Annotation getRef() { return (Annotation)(_getFeatureValueNc(wrapGetIntCatchException(_FH_ref)));}
     
   /** setter for ref - sets This field can reference any other annotation in the CAS, can be used to e.g. directly point to a span in the text to differentiate sentence- and paragraph-based classification results. 
    * @generated

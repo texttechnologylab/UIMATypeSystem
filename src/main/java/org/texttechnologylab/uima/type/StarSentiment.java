@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:39 CET 2026 */
 
 package org.texttechnologylab.uima.type;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -19,8 +18,8 @@ import org.apache.uima.jcas.JCasRegistry;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:39 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class StarSentiment extends Sentiment {
  
@@ -73,8 +72,6 @@ public class StarSentiment extends Sentiment {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected StarSentiment() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -126,9 +123,7 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getOneStar() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_OneStar));
-  }
+  public double getOneStar() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_OneStar));}
     
   /** setter for OneStar - sets  
    * @generated
@@ -147,9 +142,7 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getTwoStars() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_TwoStars));
-  }
+  public double getTwoStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_TwoStars));}
     
   /** setter for TwoStars - sets  
    * @generated
@@ -168,9 +161,7 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getThreeStars() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_ThreeStars));
-  }
+  public double getThreeStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_ThreeStars));}
     
   /** setter for ThreeStars - sets  
    * @generated
@@ -189,9 +180,7 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getFourStars() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_FourStars));
-  }
+  public double getFourStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_FourStars));}
     
   /** setter for FourStars - sets  
    * @generated
@@ -210,9 +199,7 @@ public class StarSentiment extends Sentiment {
    * @generated
    * @return value of the feature 
    */
-  public double getFiveStars() { 
-    return _getDoubleValueNc(wrapGetIntCatchException(_FH_FiveStars));
-  }
+  public double getFiveStars() { return _getDoubleValueNc(wrapGetIntCatchException(_FH_FiveStars));}
     
   /** setter for FiveStars - sets  
    * @generated

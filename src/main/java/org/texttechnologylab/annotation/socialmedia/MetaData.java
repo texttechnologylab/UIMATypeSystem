@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.socialmedia;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -20,8 +19,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class MetaData extends AnnotationBase {
  
@@ -71,8 +70,6 @@ public class MetaData extends AnnotationBase {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected MetaData() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -112,9 +109,7 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getName() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_name));
-  }
+  public String getName() { return _getStringValueNc(wrapGetIntCatchException(_FH_name));}
     
   /** setter for name - sets  
    * @generated
@@ -133,9 +128,7 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getDescription() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_description));
-  }
+  public String getDescription() { return _getStringValueNc(wrapGetIntCatchException(_FH_description));}
     
   /** setter for description - sets  
    * @generated
@@ -154,9 +147,7 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public String getUrl() { 
-    return _getStringValueNc(wrapGetIntCatchException(_FH_url));
-  }
+  public String getUrl() { return _getStringValueNc(wrapGetIntCatchException(_FH_url));}
     
   /** setter for url - sets  
    * @generated
@@ -175,9 +166,7 @@ public class MetaData extends AnnotationBase {
    * @generated
    * @return value of the feature 
    */
-  public int getCreateDate() { 
-    return _getIntValueNc(wrapGetIntCatchException(_FH_createDate));
-  }
+  public int getCreateDate() { return _getIntValueNc(wrapGetIntCatchException(_FH_createDate));}
     
   /** setter for createDate - sets  
    * @generated

@@ -1,10 +1,9 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Tue Feb 17 20:04:38 CET 2026 */
 
 package org.texttechnologylab.annotation.semaf.isospace;
- 
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
@@ -21,8 +20,8 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Tue Feb 17 20:04:38 CET 2026
+ * XML source: /home/gabrami/Projects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class EventPath extends Location {
  
@@ -81,8 +80,6 @@ public class EventPath extends Location {
    
   /** Never called.  Disable default constructor
    * @generated */
-  @Deprecated
-  @SuppressWarnings ("deprecation")
   protected EventPath() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
@@ -134,9 +131,7 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  public Motion getTrigger() { 
-    return (Motion)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));
-  }
+  public Motion getTrigger() { return (Motion)(_getFeatureValueNc(wrapGetIntCatchException(_FH_trigger)));}
     
   /** setter for trigger - sets  
    * @generated
@@ -155,9 +150,7 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getStartID() { 
-    return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_startID)));
-  }
+  public SpatialEntity getStartID() { return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_startID)));}
     
   /** setter for startID - sets  
    * @generated
@@ -176,16 +169,13 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<SpatialEntity> getMidIDs() { 
-    return (FSList<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midIDs)));
-  }
+  public FSList getMidIDs() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midIDs)));}
     
   /** setter for midIDs - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMidIDs(FSList<SpatialEntity> v) {
+  public void setMidIDs(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midIDs), v);
   }    
     
@@ -198,16 +188,13 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<SpatialEntity> getMidID_array() { 
-    return (FSArray<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)));
-  }
+  public FSArray getMidID_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)));}
     
   /** setter for midID_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setMidID_array(FSArray<SpatialEntity> v) {
+  public void setMidID_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_midID_array), v);
   }    
     
@@ -217,19 +204,16 @@ public class EventPath extends Location {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public SpatialEntity getMidID_array(int i) {
-     return (SpatialEntity)(((FSArray<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).get(i));
-  } 
+     return (SpatialEntity)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).get(i));} 
 
   /** indexed setter for midID_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setMidID_array(int i, SpatialEntity v) {
-    ((FSArray<SpatialEntity>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).set(i, v);
+  public void setMidID_array(int i, SpatialEntity v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_midID_array)))).set(i, v);
   }  
    
     
@@ -240,9 +224,7 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  public SpatialEntity getEndID() { 
-    return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endID)));
-  }
+  public SpatialEntity getEndID() { return (SpatialEntity)(_getFeatureValueNc(wrapGetIntCatchException(_FH_endID)));}
     
   /** setter for endID - sets  
    * @generated
@@ -261,16 +243,13 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSList<SpatialSignal> getSpatial_relator() { 
-    return (FSList<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator)));
-  }
+  public FSList getSpatial_relator() { return (FSList)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator)));}
     
   /** setter for spatial_relator - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSpatial_relator(FSList<SpatialSignal> v) {
+  public void setSpatial_relator(FSList v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_spatial_relator), v);
   }    
     
@@ -283,16 +262,13 @@ public class EventPath extends Location {
    * @generated
    * @return value of the feature 
    */
-  @SuppressWarnings("unchecked")
-  public FSArray<SpatialSignal> getSpatial_relator_array() { 
-    return (FSArray<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)));
-  }
+  public FSArray getSpatial_relator_array() { return (FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)));}
     
   /** setter for spatial_relator_array - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setSpatial_relator_array(FSArray<SpatialSignal> v) {
+  public void setSpatial_relator_array(FSArray v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_spatial_relator_array), v);
   }    
     
@@ -302,19 +278,16 @@ public class EventPath extends Location {
    * @param i index in the array to get
    * @return value of the element at index i 
    */
-  @SuppressWarnings("unchecked")
   public SpatialSignal getSpatial_relator_array(int i) {
-     return (SpatialSignal)(((FSArray<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)))).get(i));
-  } 
+     return (SpatialSignal)(((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)))).get(i));} 
 
   /** indexed setter for spatial_relator_array - sets an indexed value - 
    * @generated
    * @param i index in the array to set
    * @param v value to set into the array 
    */
-  @SuppressWarnings("unchecked")
-    public void setSpatial_relator_array(int i, SpatialSignal v) {
-    ((FSArray<SpatialSignal>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)))).set(i, v);
+  public void setSpatial_relator_array(int i, SpatialSignal v) {
+    ((FSArray)(_getFeatureValueNc(wrapGetIntCatchException(_FH_spatial_relator_array)))).set(i, v);
   }  
   }
 
