@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemTrainedModel</name>
+    <description>Types for storing trained model artifacts and evaluation metrics.</description>
+    <version>1.0</version>
+    <vendor/>
+
+    <imports>
+        <!-- Optional: keep only if you actually need shared base types from your project -->
+        <!-- <import name="desc.type.TextTechnologyAnnotation"/> -->
+        <!-- <import name="desc.type.TypeSystemModelMeta"/> -->
+    </imports>
+
+    <types>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.model.TrainedModelBase</name>
+            <description>
+                Base feature structure for storing a trained model artifact without text span offsets.
+            </description>
+            <supertypeName>uima.cas.TOP</supertypeName>
+            <features>
+
+                <featureDescription>
+                    <name>modelBase64</name>
+                    <description>Base64-encoded serialized model.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+            </features>
+        </typeDescription>
+
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.model.TrainedModelDetail</name>
+            <description>
+                Extended trained model structure including evaluation and training metadata.
+            </description>
+            <supertypeName>org.texttechnologylab.annotation.model.TrainedModelBase</supertypeName>
+            <features>
+
+                <featureDescription>
+                    <name>modelName</name>
+                    <description>Human-readable model name.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>modelVersion</name>
+                    <description>Version identifier of the trained model.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>accuracy</name>
+                    <description>Overall accuracy score.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>loss</name>
+                    <description>Final loss value.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>f1Macro</name>
+                    <description>Macro-averaged F1 score.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>f1Weighted</name>
+                    <description>Weighted F1 score.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>precisionMacro</name>
+                    <description>Macro-averaged precision.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>precisionWeighted</name>
+                    <description>Weighted precision.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>recallMacro</name>
+                    <description>Macro-averaged recall.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>recallWeighted</name>
+                    <description>Weighted recall.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>valAccuracy</name>
+                    <description>Validation accuracy.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>valLoss</name>
+                    <description>Validation loss.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>testAccuracy</name>
+                    <description>Test accuracy.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>testLoss</name>
+                    <description>Test loss.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>epochs</name>
+                    <description>Number of training epochs.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>learningRate</name>
+                    <description>Learning rate used during training.</description>
+                    <rangeTypeName>uima.cas.Double</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>trainSamples</name>
+                    <description>Number of training samples.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>valSamples</name>
+                    <description>Number of validation samples.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>testSamples</name>
+                    <description>Number of test samples.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>framework</name>
+                    <description>Framework used for training, for example Ray Train or PyTorch.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+
+            </features>
+        </typeDescription>
+
+    </types>
+</typeSystemDescription>
