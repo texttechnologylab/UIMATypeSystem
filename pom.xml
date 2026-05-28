@@ -122,7 +122,7 @@
                         <configuration>
                             <limitToProject>true</limitToProject>
                             <typeSystemIncludes>
-<!--                                <include>src/main/resources/desc/type/TypeSystemAnnotationSchema.xml</include>-->
+<!--                                <include>src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml</include>-->
                                                                 <include>src/main/resources/desc/**/*</include>
                             </typeSystemIncludes>
                             <outputDirectory>
