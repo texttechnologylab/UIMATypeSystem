@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+
+    <name>TypeSystemClimate</name>
+
+    <description/>
+
+    <version>1.0</version>
+
+    <vendor/>
+
+    <imports>
+
+        <import name="desc.type.TextTechnologyAnnotation"/>
+
+        <import name="desc.type.TypeSystemModelMeta"/>
+
+
+    </imports>
+    <types>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.Climate</name>
+            <description>
+                Climate Output
+            </description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+
+                <featureDescription>
+
+                    <name>Climates</name>
+
+                    <description>Set of climate related keys and Value</description>
+
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+
+                    <elementType>org.texttechnologylab.annotation.AnnotationComment</elementType>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>ClimateType</name>
+
+                    <description>Type of climate classification</description>
+
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+
+                </featureDescription>
+
+                <featureDescription>
+
+                    <name>model</name>
+
+                    <description/>
+
+                    <rangeTypeName>org.texttechnologylab.annotation.model.MetaData</rangeTypeName>
+
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
