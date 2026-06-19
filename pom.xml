@@ -6,7 +6,7 @@
 
     <groupId>org.texttechnologylab.annotation</groupId>
     <artifactId>typesystem</artifactId>
-    <version>3.0.15</version>
+    <version>3.0.16</version>
 
     <licenses>
         <license>
@@ -122,8 +122,8 @@
                         <configuration>
                             <limitToProject>true</limitToProject>
                             <typeSystemIncludes>
-                                <include>src/main/resources/desc/type/TextTechnologyAnnotationSchema.xml</include>
-                                <!--                                <include>src/main/resources/desc/**/*</include>-->
+                                <include>src/main/resources/desc/type/TextTechnologyTypes.xml</include>
+<!--                                    <include>src/main/resources/desc/**/*</include>-->
                             </typeSystemIncludes>
                             <outputDirectory>
                                 src/main/java/

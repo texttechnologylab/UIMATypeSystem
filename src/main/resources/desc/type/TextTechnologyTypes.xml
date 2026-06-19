@@ -596,5 +596,284 @@
             <supertypeName>uima.tcas.Annotation</supertypeName>
         </typeDescription>
 
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.RecognizedTaxon</name>
+            <description>Annotation type for recognized taxon mentions.</description>
+            <supertypeName>org.texttechnologylab.annotation.type.Taxon</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>resolutions</name>
+                    <description>List of taxon resolutions associated with this recognized taxon.</description>
+                    <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+                    <elementType>org.texttechnologylab.annotation.type.TaxonResolution</elementType>
+                    <multipleReferencesAllowed>true</multipleReferencesAllowed>
+                </featureDescription>
+                <featureDescription>
+                    <name>text</name>
+                    <description>The text of the recognized taxon.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>org.texttechnologylab.annotation.type.TaxonResolution</name>
+            <description>Annotation type for matching taxon information to a taxonomic database.</description>
+            <supertypeName>uima.cas.AnnotationBase</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>recognizedTaxon</name>
+                    <description>Reference to the taxon in the document that was recognized.</description>
+                    <rangeTypeName>org.texttechnologylab.annotation.type.RecognizedTaxon</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>provider</name>
+                    <description>The provider of the taxon resolution information.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>taxonId</name>
+                    <description>The identifier of the taxon in the taxonomic database.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>kingdomName</name>
+                    <description>The name of the kingdom to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>kingdomId</name>
+                    <description>The identifier of the kingdom to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>phylumName</name>
+                    <description>The name of the phylum to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>phylumId</name>
+                    <description>The identifier of the phylum to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>className</name>
+                    <description>The name of the class to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>classId</name>
+                    <description>The identifier of the class to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>orderName</name>
+                    <description>The name of the order to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>orderId</name>
+                    <description>The identifier of the order to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>superfamilyName</name>
+                    <description>The name of the superfamily to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>superfamilyId</name>
+                    <description>The identifier of the superfamily to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>familyName</name>
+                    <description>The name of the family to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>familyId</name>
+                    <description>The identifier of the family to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subfamilyName</name>
+                    <description>The name of the subfamily to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subfamilyId</name>
+                    <description>The identifier of the subfamily to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>tribeName</name>
+                    <description>The name of the tribe to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>tribeId</name>
+                    <description>The identifier of the tribe to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subtribeName</name>
+                    <description>The name of the subtribe to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subtribeId</name>
+                    <description>The identifier of the subtribe to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>genusName</name>
+                    <description>The name of the genus to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>genusId</name>
+                    <description>The identifier of the genus to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subgenusName</name>
+                    <description>The name of the subgenus to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>subgenusId</name>
+                    <description>The identifier of the subgenus to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>speciesName</name>
+                    <description>The name of the species to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>speciesId</name>
+                    <description>The identifier of the species to which the taxon belongs, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>parentName</name>
+                    <description>The name of the parent taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>parentId</name>
+                    <description>The identifier of the parent taxon, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+
+                <featureDescription>
+                    <name>scientificName</name>
+                    <description>The scientific name of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>canonicalName</name>
+                    <description>The canonical name of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>vernacularName</name>
+                    <description>The vernacular name of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>acceptedNameUsage</name>
+                    <description>The accepted name usage of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>authorship</name>
+                    <description>The authorship information for the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>nameType</name>
+                    <description>The type of the taxon name, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>rank</name>
+                    <description>The taxonomic rank of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>origin</name>
+                    <description>The origin of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>taxonomicStatus</name>
+                    <description>The taxonomic status of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>remarks</name>
+                    <description>Any additional remarks about the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>references</name>
+                    <description>References for the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>publishedIn</name>
+                    <description>The publication in which the taxon was published, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>numDescendants</name>
+                    <description>The number of descendant taxa, if available.</description>
+                    <rangeTypeName>uima.cas.Integer</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>lastCrawled</name>
+                    <description>The date and time when the taxon was last crawled, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>lastInterpreted</name>
+                    <description>The date and time when the taxon was last interpreted, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>speciesEpithet</name>
+                    <description>The species epithet of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>infraspecificEpithet</name>
+                    <description>The infraspecific epithet of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>cultivarEpithet</name>
+                    <description>The cultivar epithet of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>url</name>
+                    <description>A web URL associated with the taxon, provided by the taxonomic database, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>wikidataId</name>
+                    <description>The Wikidata ID of the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>wikidataUrl</name>
+                    <description>The URL of the Wikidata page for the taxon, if available.</description>
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+
+
     </types>
 </typeSystemDescription>
