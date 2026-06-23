@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jun 19 13:50:52 CEST 2026 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 19 13:53:31 CEST 2026 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -17,7 +17,7 @@ import org.texttechnologylab.annotation.NamedEntity;
 
 
 /** 
- * Updated by JCasGen Fri Jun 19 13:50:52 CEST 2026
+ * Updated by JCasGen Fri Jun 19 13:53:31 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Quantity_Amount extends NamedEntity {

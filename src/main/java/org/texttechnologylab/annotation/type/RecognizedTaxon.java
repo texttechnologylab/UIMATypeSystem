@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Fri Jun 19 13:50:52 CEST 2026 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jun 19 13:53:31 CEST 2026 */
 
 package org.texttechnologylab.annotation.type;
  
@@ -20,7 +20,7 @@ import org.apache.uima.jcas.cas.FSArray;
 
 
 /** Annotation type for recognized taxon mentions.
- * Updated by JCasGen Fri Jun 19 13:50:52 CEST 2026
+ * Updated by JCasGen Fri Jun 19 13:53:31 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class RecognizedTaxon extends Taxon {
