@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
 package org.texttechnologylab.type.id;
 
 import org.apache.uima.jcas.JCas;
@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** URL (Uniform Resource Locator) type
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
  * @generated */
 public class URL_Type extends URI_Type {
   /** @generated */

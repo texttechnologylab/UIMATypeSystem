@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
 package org.texttechnologylab.duui;
 
 import org.apache.uima.jcas.JCas;
@@ -12,7 +12,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 /** <p>ReproducibleAnnotation stores the information about a composer pipeline component in compressed form.
                 The reproducibility mainly stems from the strict naming of docker containers.</p>
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
  * @generated */
 public class ReproducibleAnnotation_Type extends TOP_Type {
   /** @generated */

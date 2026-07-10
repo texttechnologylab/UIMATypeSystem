@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
 package org.texttechnologylab.annotation.Room;
 
 import org.apache.uima.jcas.JCas; 
@@ -13,7 +13,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** Can be a single object or a group of objects
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Object extends Annotation {

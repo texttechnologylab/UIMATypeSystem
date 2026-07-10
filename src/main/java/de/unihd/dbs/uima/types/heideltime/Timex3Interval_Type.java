@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
 package de.unihd.dbs.uima.types.heideltime;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** 
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
  * @generated */
 public class Timex3Interval_Type extends Timex3_Type {
   /** @generated */

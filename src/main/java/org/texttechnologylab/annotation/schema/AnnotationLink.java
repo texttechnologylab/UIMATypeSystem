@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas; 
@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationLink extends Annotation {
@@ -83,16 +83,16 @@ public class AnnotationLink extends Annotation {
    * @generated
    * @return value of the feature 
    */
-  public AnnotationClass getReference() {
+  public AnnotationObject getReference() {
     if (AnnotationLink_Type.featOkTst && ((AnnotationLink_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.schema.AnnotationLink");
-    return (AnnotationClass)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationLink_Type)jcasType).casFeatCode_reference)));}
+    return (AnnotationObject)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnnotationLink_Type)jcasType).casFeatCode_reference)));}
     
   /** setter for reference - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setReference(AnnotationClass v) {
+  public void setReference(AnnotationObject v) {
     if (AnnotationLink_Type.featOkTst && ((AnnotationLink_Type)jcasType).casFeat_reference == null)
       jcasType.jcas.throwFeatMissing("reference", "org.texttechnologylab.annotation.schema.AnnotationLink");
     jcasType.ll_cas.ll_setRefValue(addr, ((AnnotationLink_Type)jcasType).casFeatCode_reference, jcasType.ll_cas.ll_getFSRef(v));}    

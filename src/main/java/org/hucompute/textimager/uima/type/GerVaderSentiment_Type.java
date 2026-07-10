@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
 package org.hucompute.textimager.uima.type;
 
 import org.apache.uima.jcas.JCas;
@@ -8,7 +8,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** Subtype of VADER sentiment results, specific for the german adaption (https://github.com/KarstenAMF/GerVADER)
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
  * @generated */
 public class GerVaderSentiment_Type extends VaderSentiment_Type {
   /** @generated */

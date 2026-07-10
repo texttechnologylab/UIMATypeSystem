@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
 package org.texttechnologylab.annotation.schema;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
+ * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
  * @generated */
 public class AnnotationLink_Type extends Annotation_Type {
   /** @generated */
@@ -58,7 +58,7 @@ public class AnnotationLink_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_reference = jcas.getRequiredFeatureDE(casType, "reference", "org.texttechnologylab.annotation.schema.AnnotationClass", featOkTst);
+    casFeat_reference = jcas.getRequiredFeatureDE(casType, "reference", "org.texttechnologylab.annotation.schema.AnnotationObject", featOkTst);
     casFeatCode_reference  = (null == casFeat_reference) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_reference).getCode();
 
   }

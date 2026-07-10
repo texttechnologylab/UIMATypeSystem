@@ -77,7 +77,7 @@
               <featureDescription>
                   <name>reference</name>
                   <description/>
-                  <rangeTypeName>org.texttechnologylab.annotation.schema.AnnotationClass</rangeTypeName>
+                  <rangeTypeName>org.texttechnologylab.annotation.schema.AnnotationObject</rangeTypeName>
               </featureDescription>
           </features>
       </typeDescription>
