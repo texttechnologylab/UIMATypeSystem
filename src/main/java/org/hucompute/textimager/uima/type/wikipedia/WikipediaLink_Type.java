@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:16:06 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
 package org.hucompute.textimager.uima.type.wikipedia;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** Wikipedia link
- * Updated by JCasGen Fri Jul 10 09:16:06 CEST 2026
+ * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
  * @generated */
 public class WikipediaLink_Type extends de.tudarmstadt.ukp.dkpro.core.io.jwpl.type.WikipediaLink_Type {
   /** @generated */

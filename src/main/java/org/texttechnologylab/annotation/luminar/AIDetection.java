@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Jul 10 09:16:06 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
 package org.texttechnologylab.annotation.luminar;
 
 import org.apache.uima.jcas.JCas; 
@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 /** A typesystem for the Luminar AI detector, providing probabilities that a given document is AI-generated or not.
                 Depending on the model, this is done on document-level only or on sequence- and document-level.
- * Updated by JCasGen Fri Jul 10 09:16:06 CEST 2026
+ * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AIDetection extends Annotation {

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:16:06 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
 package org.texttechnologylab.type;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Prefix Prompt for LLM. It is optional, if not set, will be placed before the user Prompt. For example adding additional information to the Prompt.
- * Updated by JCasGen Fri Jul 10 09:16:06 CEST 2026
+ * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
  * @generated */
 public class LLMPrefixPrompt_Type extends Annotation_Type {
   /** @generated */

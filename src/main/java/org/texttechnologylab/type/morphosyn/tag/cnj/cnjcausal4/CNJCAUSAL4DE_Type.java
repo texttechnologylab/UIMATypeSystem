@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:16:06 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
 package org.texttechnologylab.type.morphosyn.tag.cnj.cnjcausal4;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.type.morphosyn.tag.cnj.CNJCAUSAL4_Type;
 
 /** 
- * Updated by JCasGen Fri Jul 10 09:16:06 CEST 2026
+ * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
  * @generated */
 public class CNJCAUSAL4DE_Type extends CNJCAUSAL4_Type {
   /** @generated */

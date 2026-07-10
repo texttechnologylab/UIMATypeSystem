@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 09:16:06 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 09:22:49 CEST 2026 */
 package org.texttechnologylab.annotation.model;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** Essay Score Model Meta Data
- * Updated by JCasGen Fri Jul 10 09:16:06 CEST 2026
+ * Updated by JCasGen Fri Jul 10 09:22:49 CEST 2026
  * @generated */
 public class EssayScoreModel_Type extends Annotation_Type {
   /** @generated */
