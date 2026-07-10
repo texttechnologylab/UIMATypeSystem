@@ -69,6 +69,18 @@
         </featureDescription>
       </features>
     </typeDescription>
+      <typeDescription>
+          <name>org.texttechnologylab.annotation.schema.AnnotationLink</name>
+          <description/>
+          <supertypeName>uima.tcas.Annotation</supertypeName>
+          <features>
+              <featureDescription>
+                  <name>reference</name>
+                  <description/>
+                  <rangeTypeName>org.texttechnologylab.annotation.schema.AnnotationClass</rangeTypeName>
+              </featureDescription>
+          </features>
+      </typeDescription>
     <typeDescription>
       <name>org.texttechnologylab.annotation.schema.AnnotationObject</name>
       <description/>
