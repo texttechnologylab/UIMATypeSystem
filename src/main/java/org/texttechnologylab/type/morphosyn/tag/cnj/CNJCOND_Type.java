@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.type.morphosyn.tag.cnj;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.type.morphosyn.tag.CNJ_Type;
 
 /** 
- * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class CNJCOND_Type extends CNJ_Type {
   /** @generated */

@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.annotation.biofid;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity_Type;
 
 /** Base-Type for recognized taxonomic entities.
- * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class Taxon_Type extends NamedEntity_Type {
   /** @generated */

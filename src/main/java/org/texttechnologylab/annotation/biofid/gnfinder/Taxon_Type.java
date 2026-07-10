@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.annotation.biofid.gnfinder;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** Type for gnfinder-recognized taxonomic names that have not been verified.
- * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class Taxon_Type extends org.texttechnologylab.annotation.biofid.Taxon_Type {
   /** @generated */

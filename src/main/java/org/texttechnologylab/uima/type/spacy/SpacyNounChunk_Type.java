@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.uima.type.spacy;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class SpacyNounChunk_Type extends Annotation_Type {
   /** @generated */

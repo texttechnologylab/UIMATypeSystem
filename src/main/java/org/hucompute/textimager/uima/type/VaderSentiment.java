@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.hucompute.textimager.uima.type;
 
 import org.apache.uima.jcas.JCas; 
@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** Specific type for VADER sentiment results (https://github.com/cjhutto/vaderSentiment)
- * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class VaderSentiment extends Sentiment {

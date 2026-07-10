@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:13 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.annotation.administration;
 
 import org.apache.uima.jcas.JCas;
@@ -11,7 +11,7 @@ import org.apache.uima.cas.Feature;
 import de.tudarmstadt.ukp.dkpro.core.api.metadata.type.DocumentMetaData_Type;
 
 /** 
- * Updated by JCasGen Fri Jul 10 13:24:13 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class FinishAnnotation_Type extends DocumentMetaData_Type {
   /** @generated */

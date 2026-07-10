@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.annotation.type.wikidata;
 
 import org.apache.uima.jcas.JCas;
@@ -9,7 +9,7 @@ import org.apache.uima.cas.Type;
 import org.texttechnologylab.annotation.NamedEntity_Type;
 
 /** open-access journal
- * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class Q773668_Type extends NamedEntity_Type {
   /** @generated */

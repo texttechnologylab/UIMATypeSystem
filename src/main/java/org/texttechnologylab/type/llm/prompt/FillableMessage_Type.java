@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Fri Jul 10 13:24:14 CEST 2026 */
+/* First created by JCasGen Fri Jul 10 17:01:28 CEST 2026 */
 package org.texttechnologylab.type.llm.prompt;
 
 import org.apache.uima.jcas.JCas;
@@ -10,7 +10,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** This message is supposed to be filled by an LLM by using the previous messages as input/history.
- * Updated by JCasGen Fri Jul 10 13:24:14 CEST 2026
+ * Updated by JCasGen Fri Jul 10 17:01:28 CEST 2026
  * @generated */
 public class FillableMessage_Type extends Message_Type {
   /** @generated */
