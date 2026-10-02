@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>TexttechnologyCohMetrix</name>
+  <description>Type system for Coh-Metrix indices and index groups.</description>
+  <version>1.0</version>
+  <vendor>Text Technology Lab</vendor>
+  <types>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.Index</name>
+      <description>Stores one Coh-Metrix index result and its labels, value, diagnostic, and implementation version.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>index</name>
+          <description>Numeric index identifier.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>typeName</name>
+          <description>Coh-Metrix index group.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>labelTTLab</name>
+          <description>TTLab implementation label.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>labelV3</name>
+          <description>Coh-Metrix 3.0 label.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>labelV2</name>
+          <description>Coh-Metrix 2.0 label.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>description</name>
+          <description>Runtime index description.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>value</name>
+          <description>Calculated index value or NaN if undefined.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>error</name>
+          <description>Optional calculation diagnostic.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>version</name>
+          <description>Index implementation version.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</name>
+      <description>Describes basic counts and length distributions of paragraphs, sentences, words, syllables, and characters.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESPC</name>
+      <description>Reports the number of non-empty paragraphs in the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESSC</name>
+      <description>Reports the number of non-empty sentences in the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESWC</name>
+      <description>Reports the number of words in the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESPL</name>
+      <description>Reports the mean number of sentences per paragraph.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESPLd</name>
+      <description>Reports the standard deviation of sentence counts across non-empty paragraphs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESSL</name>
+      <description>Reports the mean sentence length in words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESSLd</name>
+      <description>Reports the standard deviation of word counts across non-empty sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESWLsy</name>
+      <description>Reports the mean number of syllables per word.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESWLsyd</name>
+      <description>Reports the population standard deviation of syllable counts per word.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESWLlt</name>
+      <description>Reports the mean number of characters per non-punctuation token.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DESWLltd</name>
+      <description>Reports the population standard deviation of character counts per non-punctuation token.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.DescriptiveIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</name>
+      <description>Represents the z-scores and percentiles of the Coh-Metrix text-easability principal components.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCNARz</name>
+      <description>Reports the z-score of the Text Easability narrativity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCNARp</name>
+      <description>Reports the percentile of the Text Easability narrativity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCSYNz</name>
+      <description>Reports the z-score of the Text Easability syntactic-simplicity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCSYNp</name>
+      <description>Reports the percentile of the Text Easability syntactic-simplicity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCCNCz</name>
+      <description>Reports the z-score of the Text Easability word-concreteness component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCCNCp</name>
+      <description>Reports the percentile of the Text Easability word-concreteness component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCREFz</name>
+      <description>Reports the z-score of the Text Easability referential-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCREFp</name>
+      <description>Reports the percentile of the Text Easability referential-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCDCz</name>
+      <description>Reports the z-score of the Text Easability deep-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCDCp</name>
+      <description>Reports the percentile of the Text Easability deep-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCVERBz</name>
+      <description>Reports the z-score of the Text Easability verb-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCVERBp</name>
+      <description>Reports the percentile of the Text Easability verb-cohesion component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCCONNz</name>
+      <description>Reports the z-score of the Text Easability connectivity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCCONNp</name>
+      <description>Reports the percentile of the Text Easability connectivity component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCTEMPz</name>
+      <description>Reports the z-score of the Text Easability temporality component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.PCTEMPp</name>
+      <description>Reports the percentile of the Text Easability temporality component.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.TextEasabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</name>
+      <description>Measures lexical and referential overlap across adjacent or non-adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFNO1</name>
+      <description>Reports the proportion of adjacent sentence pairs that share at least one noun.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFAO1</name>
+      <description>Reports the proportion of adjacent sentence pairs that share at least one argument.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFSO1</name>
+      <description>Reports the mean binary stem overlap between adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFNOa</name>
+      <description>Reports the proportion of all unordered sentence pairs that share at least one noun.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFAOa</name>
+      <description>Reports the proportion of all unordered sentence pairs that share at least one argument.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFSOa</name>
+      <description>Reports the mean binary stem overlap across all unordered sentence pairs in the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFCWO1</name>
+      <description>Reports the mean proportional content-word overlap between adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFCWO1d</name>
+      <description>Reports the population standard deviation of the directed pair values available for CRFCWO1.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFCWOa</name>
+      <description>Reports the mean proportional content-word overlap across all unordered sentence pairs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CRFCWOad</name>
+      <description>Reports the population standard deviation of the directed pair values available for CRFCWOa.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReferentialCohesionIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</name>
+      <description>Measures semantic overlap and given-new information using token-vector-based approximations.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSASS1</name>
+      <description>Reports the mean semantic similarity between adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSASS1d</name>
+      <description>Reports the population standard deviation of valid cosine similarities between adjacent sentence vectors.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSASSp</name>
+      <description>Reports the mean semantic similarity of all evaluable sentence pairs within the same paragraph.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSASSpd</name>
+      <description>Reports the population standard deviation of the cosine similarities available for LSASSp.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSAPP1</name>
+      <description>Reports the mean semantic similarity between adjacent paragraphs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSAPP1d</name>
+      <description>Reports the population standard deviation of valid cosine similarities between adjacent paragraph vectors.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSAGN</name>
+      <description>Approximates each sentence's semantic given-new proportion relative to all preceding evaluable sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LSAGNd</name>
+      <description>Reports the population standard deviation of the evaluable sentence-level given-new ratios.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LsaIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LexicalDiversityIndex</name>
+      <description>Measures vocabulary variation using type-token ratio, MTLD, or VOCD.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LDTTRc</name>
+      <description>Reports the ratio of distinct content-word lemmas to the total number of content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LexicalDiversityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LDTTRa</name>
+      <description>Reports the ratio of distinct alphabetic word forms to the total number of alphabetic word tokens.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LexicalDiversityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LDMTLDa</name>
+      <description>Reports the lexical diversity of the text as the Measure of Textual Lexical Diversity.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LexicalDiversityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.LDVOCDa</name>
+      <description>Reports the lexical diversity of the text using the LexicalRichness VOCD method.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.LexicalDiversityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</name>
+      <description>Reports the incidence of connectives grouped by discourse-relation category.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCAll</name>
+      <description>Reports all accepted connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCCaus</name>
+      <description>Reports accepted causal connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCLogic</name>
+      <description>Reports accepted logical connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCADC</name>
+      <description>Reports accepted adversative or contrastive connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCTemp</name>
+      <description>Reports accepted temporal connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCTempx</name>
+      <description>Reports accepted expanded temporal connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCAdd</name>
+      <description>Reports accepted additive connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCPos</name>
+      <description>Reports accepted positive connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.CNCNeg</name>
+      <description>Reports accepted negative connective occurrences per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ConnectivesIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</name>
+      <description>Measures causal, intentional, semantic, and temporal cohesion between events and states.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMCAUSv</name>
+      <description>Reports the incidence of causal verbs per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMCAUSvp</name>
+      <description>Reports the combined incidence of causal verbs and causal particles per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMINTEp</name>
+      <description>Reports the incidence of intentional verbs per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMCAUSr</name>
+      <description>Reports the ratio of causal particles to causal verbs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMINTEr</name>
+      <description>Reports the ratio of intentional purpose particles to intentional verbs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMCAUSlsa</name>
+      <description>Reports the mean semantic similarity of all unordered verb pairs in the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMCAUSwn</name>
+      <description>Reports the proportion of evaluable unordered verb pairs that share at least one synset.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SMTEMP</name>
+      <description>Measures order-sensitive temporal cohesion through tense and aspect agreement between adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SituationModelIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</name>
+      <description>Measures left-embeddedness, noun-phrase modification, sequence distance, and structural similarity.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNLE</name>
+      <description>Reports the mean number of non-punctuation words preceding a sentence's syntactic main predicate.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNNP</name>
+      <description>Reports the mean number of modifiers per noun phrase.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNMEDpos</name>
+      <description>Reports the mean normalized minimum edit distance between the part-of-speech sequences of adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNMEDwrd</name>
+      <description>Reports the mean normalized minimum edit distance between the word sequences of adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNMEDlem</name>
+      <description>Reports the mean normalized minimum edit distance between the lemma sequences of adjacent sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNSTRUTa</name>
+      <description>Approximates Coh-Metrix parse-tree similarity between adjacent sentences using hierarchical dependency trees.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SYNSTRUTt</name>
+      <description>Approximates global Coh-Metrix parse-tree similarity using hierarchical dependency trees across sentences from different paragraphs.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticComplexityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</name>
+      <description>Reports the incidence of syntactic constructions such as phrases, passives, negation, gerunds, and infinitives.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRNP</name>
+      <description>Reports the incidence of noun phrases per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRVP</name>
+      <description>Reports the incidence of verbal projections per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRAP</name>
+      <description>Reports the incidence of adverbial-phrase approximations per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRPP</name>
+      <description>Reports the incidence of prepositions or prepositional-phrase approximations per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRPVAL</name>
+      <description>Reports the incidence of sentences containing a passive construction per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRNEG</name>
+      <description>Reports the incidence of negation expressions per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRGERUND</name>
+      <description>Reports the incidence of English VBG forms per 1,000 non-punctuation words as an approximation of the Coh-Metrix gerund and -ing category.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.DRINF</name>
+      <description>Reports the incidence of infinitive forms per 1,000 non-punctuation words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.SyntacticPatternDensityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</name>
+      <description>Reports grammatical, frequency-based, psycholinguistic, and semantic properties of words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDNOUN</name>
+      <description>Reports the incidence of nouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDVERB</name>
+      <description>Reports the incidence of verbs per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDADJ</name>
+      <description>Reports the incidence of adjectives per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDADV</name>
+      <description>Reports the incidence of adverbs per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRO</name>
+      <description>Reports the incidence of all pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRP1s</name>
+      <description>Reports the incidence of first-person singular pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRP1p</name>
+      <description>Reports the incidence of first-person plural pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRP2</name>
+      <description>Reports the incidence of second-person pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRP3s</name>
+      <description>Reports the incidence of third-person singular pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPRP3p</name>
+      <description>Reports the incidence of third-person plural pronouns per 1,000 words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDFRQc</name>
+      <description>Reports the mean corpus frequency of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDFRQa</name>
+      <description>Reports the mean logarithmic corpus frequency of covered words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDFRQmc</name>
+      <description>Reports the mean minimum logarithmic corpus frequency of covered content words across sentences.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDAOAc</name>
+      <description>Reports the mean age-of-acquisition rating of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDFAMc</name>
+      <description>Reports the mean familiarity rating of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDCNCc</name>
+      <description>Reports the mean concreteness rating of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDIMGc</name>
+      <description>Reports the mean imageability rating of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDMEAc</name>
+      <description>Reports the mean meaningfulness rating of covered content words.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDPOLc</name>
+      <description>Reports the mean number of lexical meanings or synsets for covered content-word lemmas.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDHYPn</name>
+      <description>Reports the mean maximum hypernym depth of covered noun lemmas.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDHYPv</name>
+      <description>Reports the mean maximum hypernym depth of covered verb lemmas.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.WRDHYPnv</name>
+      <description>Reports the combined mean hypernym depth of covered noun and verb lemmas.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.WordInformationIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</name>
+      <description>Reports traditional readability formulas and the Coh-Metrix second-language readability score.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.Index</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDL2</name>
+      <description>Reports the Coh-Metrix second-language readability score based on word concreteness, syntactic similarity, and content-word overlap.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDFRE</name>
+      <description>Reports the Flesch Reading Ease score of the raw text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDFKGL</name>
+      <description>Reports the Flesch-Kincaid Grade Level score of the raw text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDFOG_textstat</name>
+      <description>Reports the Gunning Fog Index of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDSMOG_textstat</name>
+      <description>Reports the Simple Measure of Gobbledygook index of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDARI_textstat</name>
+      <description>Reports the Automated Readability Index of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDCLI_textstat</name>
+      <description>Reports the Coleman-Liau Index of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDLW_textstat</name>
+      <description>Reports the Linsear Write Formula score of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDDCRS_textstat</name>
+      <description>Reports the Dale-Chall Readability Score of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDSPACHE_textstat</name>
+      <description>Reports the Spache Readability Formula score of the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDWSTF1_textstat</name>
+      <description>Reports variant 1 of the Wiener Sachtextformel for the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDWSTF2_textstat</name>
+      <description>Reports variant 2 of the Wiener Sachtextformel for the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDWSTF3_textstat</name>
+      <description>Reports variant 3 of the Wiener Sachtextformel for the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.cohmetrix.RDWSTF4_textstat</name>
+      <description>Reports variant 4 of the Wiener Sachtextformel for the text.</description>
+      <supertypeName>org.texttechnologylab.uima.type.cohmetrix.ReadabilityIndex</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
