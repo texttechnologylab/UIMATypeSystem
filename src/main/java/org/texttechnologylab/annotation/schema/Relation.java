@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 28 16:03:07 CEST 2026 */
 
 package org.texttechnologylab.annotation.schema;
  
@@ -16,13 +16,13 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
 
 
-import org.apache.uima.jcas.cas.FSList;
+import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.cas.TOP;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu May 28 16:03:07 CEST 2026
+ * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class Relation extends Attribute {
  
@@ -105,18 +105,38 @@ public class Relation extends Attribute {
    * @return value of the feature 
    */
   @SuppressWarnings("unchecked")
-  public FSList<TOP> getAttributes() { 
-    return (FSList<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));
+  public FSArray<TOP> getAttributes() { 
+    return (FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)));
   }
     
   /** setter for attributes - sets  
    * @generated
    * @param v value to set into the feature 
    */
-  public void setAttributes(FSList<TOP> v) {
+  public void setAttributes(FSArray<TOP> v) {
     _setFeatureValueNcWj(wrapGetIntCatchException(_FH_attributes), v);
   }    
     
+    
+  /** indexed getter for attributes - gets an indexed value - 
+   * @generated
+   * @param i index in the array to get
+   * @return value of the element at index i 
+   */
+  @SuppressWarnings("unchecked")
+  public TOP getAttributes(int i) {
+     return (TOP)(((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).get(i));
+  } 
+
+  /** indexed setter for attributes - sets an indexed value - 
+   * @generated
+   * @param i index in the array to set
+   * @param v value to set into the array 
+   */
+  @SuppressWarnings("unchecked")
+    public void setAttributes(int i, TOP v) {
+    ((FSArray<TOP>)(_getFeatureValueNc(wrapGetIntCatchException(_FH_attributes)))).set(i, v);
+  }  
   }
 
     
