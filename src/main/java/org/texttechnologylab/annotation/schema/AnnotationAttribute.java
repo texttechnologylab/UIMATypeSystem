@@ -1,7 +1,7 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Thu May 28 16:03:07 CEST 2026 */
 
 package org.texttechnologylab.annotation.schema;
  
@@ -20,8 +20,8 @@ import org.apache.uima.jcas.cas.AnnotationBase;
 
 
 /** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+ * Updated by JCasGen Thu May 28 16:03:07 CEST 2026
+ * XML source: /home/staff_homes/abrami/Projects/GitHub/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class AnnotationAttribute extends AnnotationBase {
  

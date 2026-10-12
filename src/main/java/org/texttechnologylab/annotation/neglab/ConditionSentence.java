@@ -1,27 +1,25 @@
 
 
    
-/* Apache UIMA v3 - First created by JCasGen Thu Oct 30 18:05:17 CET 2025 */
+/* Apache UIMA v3 - First created by JCasGen Fri Jan 23 11:37:37 CET 2026 */
 
 package org.texttechnologylab.annotation.neglab;
- 
+
+
+import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
+import org.apache.uima.cas.impl.CASImpl;
+import org.apache.uima.cas.impl.TypeImpl;
+import org.apache.uima.cas.impl.TypeSystemImpl;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.JCasRegistry;
 
 import java.lang.invoke.CallSite;
 import java.lang.invoke.MethodHandle;
 
-import org.apache.uima.cas.impl.CASImpl;
-import org.apache.uima.cas.impl.TypeImpl;
-import org.apache.uima.cas.impl.TypeSystemImpl;
-import org.apache.uima.jcas.JCas; 
-import org.apache.uima.jcas.JCasRegistry;
 
-
-import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence;
-
-
-/** 
- * Updated by JCasGen Thu Oct 30 18:05:17 CET 2025
- * XML source: /nvme/projects/TTLab/UIMATypeSystem/target/jcasgen/typesystem.xml
+/**
+ * Updated by JCasGen Fri Jan 23 11:37:37 CET 2026
+ * XML source: /home/staff_homes/abrami/Projects/GitProjects/UIMATypeSystem/target/jcasgen/typesystem.xml
  * @generated */
 public class ConditionSentence extends Sentence {
  
@@ -56,6 +54,8 @@ public class ConditionSentence extends Sentence {
   public final static String _FeatName_target = "target";
   public final static String _FeatName_order = "order";
   public final static String _FeatName_value = "value";
+    public final static String _FeatName_sequenceScore = "sequenceScore";
+    public final static String _FeatName_sequenceScoreSum = "sequenceScoreSum";
 
 
   /* Feature Adjusted Offsets */
@@ -67,6 +67,10 @@ public class ConditionSentence extends Sentence {
   private final static MethodHandle _FH_order = _FC_order.dynamicInvoker();
   private final static CallSite _FC_value = TypeSystemImpl.createCallSite(ConditionSentence.class, "value");
   private final static MethodHandle _FH_value = _FC_value.dynamicInvoker();
+    private final static CallSite _FC_sequenceScore = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScore");
+    private final static MethodHandle _FH_sequenceScore = _FC_sequenceScore.dynamicInvoker();
+    private final static CallSite _FC_sequenceScoreSum = TypeSystemImpl.createCallSite(ConditionSentence.class, "sequenceScoreSum");
+    private final static MethodHandle _FH_sequenceScoreSum = _FC_sequenceScoreSum.dynamicInvoker();
 
    
   /** Never called.  Disable default constructor
@@ -197,6 +201,54 @@ public class ConditionSentence extends Sentence {
    */
   public void setValue(float v) {
     _setFloatValueNfc(wrapGetIntCatchException(_FH_value), v);
+  }
+
+
+    //*--------------*
+    //* Feature: sequenceScore
+
+    /**
+     * getter for sequenceScore - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public float getSequenceScore() {
+        return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScore));
+    }
+
+    /**
+     * setter for sequenceScore - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setSequenceScore(float v) {
+        _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScore), v);
+    }
+
+
+    //*--------------*
+    //* Feature: sequenceScoreSum
+
+    /**
+     * getter for sequenceScoreSum - gets
+     *
+     * @return value of the feature
+     * @generated
+     */
+    public float getSequenceScoreSum() {
+        return _getFloatValueNc(wrapGetIntCatchException(_FH_sequenceScoreSum));
+    }
+
+    /**
+     * setter for sequenceScoreSum - sets
+     *
+     * @param v value to set into the feature
+     * @generated
+     */
+    public void setSequenceScoreSum(float v) {
+        _setFloatValueNfc(wrapGetIntCatchException(_FH_sequenceScoreSum), v);
   }    
     
   }

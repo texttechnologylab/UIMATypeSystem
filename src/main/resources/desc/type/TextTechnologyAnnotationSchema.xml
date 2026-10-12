@@ -23,7 +23,7 @@
         <featureDescription>
           <name>attributes</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+            <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.schema.Attribute</elementType>
         </featureDescription>
       </features>
@@ -64,7 +64,7 @@
         <featureDescription>
           <name>attributes</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+            <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>uima.cas.TOP</elementType>
         </featureDescription>
       </features>
@@ -87,7 +87,7 @@
         <featureDescription>
           <name>attributes</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+            <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>org.texttechnologylab.annotation.schema.AnnotationAttribute</elementType>
         </featureDescription>
       </features>
@@ -117,7 +117,7 @@
         <featureDescription>
           <name>attributes</name>
           <description/>
-          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+            <rangeTypeName>uima.cas.FSArray</rangeTypeName>
           <elementType>uima.cas.TOP</elementType>
         </featureDescription>
       </features>
