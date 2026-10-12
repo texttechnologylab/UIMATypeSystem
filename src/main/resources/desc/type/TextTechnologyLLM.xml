@@ -80,6 +80,11 @@
           <description>Reference to the corresponding message inside a prompt</description>
           <rangeTypeName>org.texttechnologylab.type.llm.prompt.Message</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>thinking</name>
+          <description>The model's reasoning/thinking text for this result, if the model produced one and it was requested; null otherwise</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
