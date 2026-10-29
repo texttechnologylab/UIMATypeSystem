@@ -88,14 +88,38 @@
                             
       
       </features>
-                    
-    
+
+
     </typeDescription>
-                
-    
+
+
     <typeDescription>
-                        
-      
+      <name>org.texttechnologylab.uima.type.WordEmbedding</name>
+      <description>Vector of one word (token), e.g. from a spaCy, fastText or word2vec model. The span is the span of the token.</description>
+      <supertypeName>org.texttechnologylab.uima.type.Embedding</supertypeName>
+      <features>
+        <featureDescription>
+          <name>reference</name>
+          <description>The token this vector belongs to.</description>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>oov</name>
+          <description>True if the word is not in the model's vocabulary, i.e. the vector is not one of the model's own word vectors (e.g. built from subwords by fastText).</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>shortName</name>
+          <description>Short name of the vector space, chosen by the tool or the user (e.g. SPACYlg), so tools using the vectors can select them by name without knowing the model (e.g. Coh-Metrix, where it becomes part of the index label).</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+
+    <typeDescription>
+
+
       <name>org.texttechnologylab.uima.type.Classification</name>
                         
       
