@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>StanzaToken</name>
+  <description>Token and sentence layer written by Stanza (DUUI component duui-stanza). Subtypes of the DKPro types, so that a
+    CAS can hold the Stanza layer next to the layers of other tools (e.g. SpacyToken) and a consumer can select one of them.
+    The words of a split multi-word token (German "zum" = "zu" + "dem") are separate StanzaTokens over the same span; the
+    word is in Token.form (TokenForm).</description>
+  <version>1.0</version>
+  <vendor>TTLab</vendor>
+  <imports>
+    <import name="desc.type.LexicalUnits_customized"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.stanza.StanzaToken</name>
+      <description>A word as annotated by Stanza (UD). For a split multi-word token, one StanzaToken per word, all over the
+        span of the surface token, each with its word in Token.form.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.texttechnologylab.uima.type.stanza.StanzaSentence</name>
+      <description>A sentence as parsed by Stanza. A complete sentence layer: the given sentences, except that a sentence too
+        long for the parser is split into the pieces it was parsed in.</description>
+      <supertypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
